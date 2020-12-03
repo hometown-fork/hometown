@@ -61,6 +61,11 @@ aliases:
           sudo apt-get update
           sudo apt-get install -y libicu-dev libidn11-dev libprotobuf-dev protobuf-compiler
 
+  - &install_bundler
+      run:
+        name: Install bundler
+        command: gem install bundler:1.17.2 --conservative
+
   - &install_ruby_dependencies
       steps:
         - *attach_workspace
@@ -69,6 +74,7 @@ aliases:
             name: Set Ruby version
             command: ruby -e 'puts RUBY_VERSION' | tee /tmp/.ruby-version
         - *restore_ruby_dependencies
+        - *install_bundler
         - run:
             name: Set bundler settings
             command: |
@@ -97,6 +103,7 @@ aliases:
       steps:
         - *attach_workspace
         - *install_system_dependencies
+        - *install_bundler
         - run:
             name: Install FFMPEG
             command: sudo apt-get install -y ffmpeg
@@ -202,6 +209,7 @@ jobs:
     steps:
       - *attach_workspace
       - *install_system_dependencies
+      - *install_bundler
       - run:
           name: Check locale file normalization
           command: bundle exec i18n-tasks check-normalized
