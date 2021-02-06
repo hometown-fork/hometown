@@ -2,25 +2,25 @@
 pl:
   about:
     about_hashtag_html: Znajdują się tu publiczne wpisy oznaczone hashtagiem <strong>#%{hashtag}</strong>. Możesz dołączyć do dyskusji, jeżeli posiadasz konto gdziekolwiek w Fediwersum.
-    about_mastodon_html: Mastodon jest wolną i otwartą siecią społecznościową, zdecentralizowaną alternatywą dla zamkniętych, komercyjnych platform.
+    about_mastodon_html: Hometown jest opartą o Mastodona, zdecentralizowaną, etycznie zaprojektowaną siecią społecznościową bez reklam i śledzenia.
     about_this: O tej instancji
     active_count_after: aktywni
     active_footnote: Aktywni użytkownicy miesięcznie (MAU)
     administered_by: 'Administrowana przez:'
     api: API
     apps: Aplikacje
-    apps_platforms: Korzystaj z Mastodona z poziomu iOS-a, Androida i innych
+    apps_platforms: Korzystaj z %{title} z poziomu iOS-a, Androida i innych
     browse_directory: Przeglądaj katalog profilów i filtruj z uwzględnieniem zainteresowań
     browse_local_posts: Przeglądaj strumień publicznych wpisów z tego serwera
-    browse_public_posts: Przeglądaj strumień publicznych wpisów na Mastodonie na żywo
+    browse_public_posts: Przeglądaj strumień publicznych wpisów na %{title} na żywo
     contact: Kontakt
     contact_missing: Nie ustawiono
     contact_unavailable: Nie dotyczy
     discover_users: Odkrywaj użytkowników
     documentation: Dokumentacja
-    federation_hint_html: Z kontem na %{instance}, możesz śledzić użytkowników każdego serwera Mastodona i nie tylko.
+    federation_hint_html: Z kontem na %{instance}, możesz śledzić użytkowników każdego serwera Hometown, Mastodona i nie tylko.
     get_apps: Spróbuj aplikacji mobilnej
-    hosted_on: Mastodon uruchomiony na %{domain}
+    hosted_on: Hometown uruchomiony na %{domain}
     instance_actor_flash: |
       To konto jest wirtualnym nadawcą, używanym do reprezentacji serwera, a nie jakiegokolwiek użytkownika.
       Jest używane w celu federowania i nie powinno być blokowane, chyba że chcesz zablokować całą instację, w takim przypadku użyj blokady domeny.
@@ -54,7 +54,7 @@ pl:
       one: użytkownik
       other: użytkowników
     user_count_before: Z serwera korzysta
-    what_is_mastodon: Czym jest Mastodon?
+    what_is_mastodon: Czym jest Hometown/Mastodon?
   accounts:
     choices_html: 'Polecani przez %{name}:'
     endorsements_hint: Możesz promować ludzi, których obserwujesz, z poziomu interfejsu webowego - wtedy oni pojawią się w tym miejscu.
@@ -631,7 +631,7 @@ pl:
         desc_html: Dobre miejsce na zasady użytkowania, wprowadzenie i inne rzeczy, które wyróżniają ten serwer. Możesz korzystać ze znaczników HTML
         title: Niestandardowy opis strony
       site_short_description:
-        desc_html: Wyświetlany na pasku bocznym i w znacznikach meta. Opisz w jednym akapicie, czym jest Mastodon i czym wyróżnia się ten serwer. Jeżeli pusty, zostanie użyty opis serwera.
+        desc_html: Wyświetlany na pasku bocznym i w znacznikach meta. Opisz w jednym akapicie, czym jest Hometown i czym wyróżnia się ten serwer. Jeżeli pusty, zostanie użyty opis serwera.
         title: Krótki opis serwera
       site_terms:
         desc_html: Miejsce na własną politykę prywatności, zasady użytkowania i inne unormowania prawne. Możesz korzystać ze znaczników HTML
@@ -859,7 +859,7 @@ pl:
       content: Przepraszamy, coś poszło nie tak, po naszej stronie.
       title: Ta strona jest nieprawidłowa
     '503': Strona nie może zostać wyświetlona z powodu tymczasowego niepowodzenia serwera.
-    noscript_html: Aby korzystać z aplikacji Mastodon, włącz JavaScript. Możesz też skorzystać z jednej z <a href="%{apps_path}">natywnych aplikacji</a> obsługującej Twoje urządzenie.
+    noscript_html: Aby korzystać z aplikacji %{title}, włącz JavaScript. Możesz też skorzystać z jednej z <a href="%{apps_path}">natywnych aplikacji</a> obsługującej Twoje urządzenie.
   existing_username_validator:
     not_found: nie znaleziono lokalnego użytkownika o tej nazwie
     not_found_multiple: nie znaleziono %{usernames}
@@ -1244,6 +1244,7 @@ pl:
     errors:
       in_reply_not_found: Post, na który próbujesz odpowiedzieć, nie istnieje.
     language_detection: Automatycznie wykrywaj język
+    local_only: Tylko lokalne
     open_in_web: Otwórz w przeglądarce
     over_character_limit: limit %{max} znaków przekroczony
     pin_errors:
@@ -1290,7 +1291,7 @@ pl:
       <ul>
       <li><em>Podstawowe informacje o koncie</em>: Podczas rejestracji na tym serwerze, możesz zostać poproszony(-a) o wprowadzenie nazwy użytkownika, adresu e-mail i hasła. Możesz także wprowadzić dodatkowe informacje o profilu, takie jak nazwa wyświetlana i biografia oraz wysłać awatar i obraz nagłówka. Nazwa użytkownika, nazwa wyświetlana, biografia, awatar i obraz nagłówka są zawsze widoczne dla wszystkich.</li>
       <li><em>Wpisy, śledzenie i inne publiczne informacje</em>: Lista osób które śledzisz jest widoczna publicznie, tak jak lista osób, które Cię śledzą. Jeżeli dodasz wpis, data i czas jego utworzenia i aplikacja, z której go wysłano są przechowywane. Wiadomości mogą zawierać załączniki multimedialne, takie jak zdjęcia i filmy. Publiczne i niewidoczne wpisy są dostępne publicznie. Udostępniony wpis również jest widoczny publicznie. Twoje wpisy są dostarczane obserwującym, co oznacza że jego kopie mogą zostać dostarczone i być przechowywane na innych serwerach. Kiedy usuniesz wpis, przestaje być widoczny również dla osób śledzących Cię. „Podbijanie” i dodanie do ulubionych jest zawsze publiczne.</li>
-      <li><em>Wpisy bezpośrednie i tylko dla śledzących</em>: Wszystkie wpisy są przechowywane i przetwarzane na serwerze. Wpisy przeznaczone tylko dla śledzących są widoczne tylko dla nich i osób wspomnianych we wpisie, a wpisy bezpośrednie tylko dla wspomnianych. W wielu przypadkach oznacza to, że ich kopie są dostarczane i przechowywane na innych serwerach. Staramy się ograniczać zasięg tych wpisów wyłącznie do właściwych odbiorców, ale inne serwery mogą tego nie robić. Ważne jest, aby sprawdzać jakich serwerów używają osoby, które Cię śledzą. Możesz aktywować opcję pozwalającą na ręczne akceptowanie i odrzucanie nowych śledzących. <em>Pamiętaj, że właściciele serwerów mogą zobaczyć te wiadomości</em>, a odbiorcy mogą wykonać zrzut ekranu, skopiować lub udostępniać ten wpis. <em>Nie udostępniaj wrażliwych danych z użyciem Mastodona.</em></li>
+      <li><em>Wpisy bezpośrednie i tylko dla śledzących</em>: Wszystkie wpisy są przechowywane i przetwarzane na serwerze. Wpisy przeznaczone tylko dla śledzących są widoczne tylko dla nich i osób wspomnianych we wpisie, a wpisy bezpośrednie tylko dla wspomnianych. W wielu przypadkach oznacza to, że ich kopie są dostarczane i przechowywane na innych serwerach. Staramy się ograniczać zasięg tych wpisów wyłącznie do właściwych odbiorców, ale inne serwery mogą tego nie robić. Ważne jest, aby sprawdzać jakich serwerów używają osoby, które Cię śledzą. Możesz aktywować opcję pozwalającą na ręczne akceptowanie i odrzucanie nowych śledzących. <em>Pamiętaj, że właściciele serwerów mogą zobaczyć te wiadomości</em>, a odbiorcy mogą wykonać zrzut ekranu, skopiować lub udostępniać ten wpis. <em>Nie udostępniaj wrażliwych danych z użyciem Hometown/Mastodona.</em></li>
       <li><em>Adresy IP i inne metadane</em>: Kiedy zalogujesz się, przechowujemy adres IP użyty w trakcie logowania wraz z nazwą używanej przeglądarki. Wszystkie aktywne sesje możesz zobaczyć (i wygasić) w ustawieniach. Ostatnio używany adres IP jest przechowywany przez nas do 12 miesięcy. Możemy również przechowywać adresy IP wykorzystywane przy każdym działaniu na serwerze.</li>
       </ul>
 
@@ -1301,7 +1302,7 @@ pl:
       <p>Zebrane informacje mogą zostać użyte w następujące sposoby:</p>
 
       <ul>
-      <li>Aby dostarczyć podstawową funkcjonalność Mastodona. Możesz wchodzić w interakcje z zawartością tworzoną przez innych tylko gdy jesteś zalogowany. Na przykład, możesz śledzić innych, aby widzieć ich wpisy w dostosowanej osi czasu.</li>
+      <li>Aby dostarczyć podstawową funkcjonalność Hometown/Mastodona. Możesz wchodzić w interakcje z zawartością tworzoną przez innych tylko gdy jesteś zalogowany. Na przykład, możesz śledzić innych, aby widzieć ich wpisy w dostosowanej osi czasu.</li>
       <li>Aby wspomóc moderację społeczności, na przykład porównując Twój adres IP ze znanymi, aby rozpoznać próbę obejścia blokady i inne naruszenia.</li>
       <li>Adres e-mail może zostać wykorzystany, aby wysyłać Ci informacje, powiadomienia o osobach wchodzących w interakcje z tworzoną przez Ciebie zawartością, wysyłających Ci wiadomości, odpowiadać na zgłoszenia i inne żądania lub zapytania.</li>
       </ul>
@@ -1369,6 +1370,8 @@ pl:
     contrast: Mastodon (Wysoki kontrast)
     default: Mastodon (Ciemny)
     mastodon-light: Mastodon (Jasny)
+    macaron: Macaron (Pastelowy jasny)
+    fairy-floss: Fairy Floss (Pastelowy ciemny)
   time:
     formats:
       default: "%d. %b %Y, %H:%M"
@@ -1390,7 +1393,7 @@ pl:
     webauthn: Klucze bezpieczeństwa
   user_mailer:
     backup_ready:
-      explanation: Zażądałeś pełnej kopii zapasowej konta na Mastodonie. Jest ona dostępna do pobrania!
+      explanation: Zażądałeś pełnej kopii zapasowej konta na %{title}. Jest ona dostępna do pobrania!
       subject: Twoje archiwum jest gotowe do pobrania
       title: Odbiór archiwum
     sign_in_token:
@@ -1430,11 +1433,11 @@ pl:
       full_handle_hint: Ten adres możesz podać znajomym, aby mogli skontaktować się z Tobą lub zacząć śledzić z innego serwera.
       review_preferences_action: Zmień ustawienia
       review_preferences_step: Upewnij się, że zmieniłeś(-aś) ustawienia, takie jak maile, które chciałbyś otrzymywać lub domyślne opcje prywatności. Jeżeli nie masz choroby lokomocyjnej, możesz włączyć automatyczne odtwarzanie animacji GIF.
-      subject: Witaj w Mastodonie
-      tip_federated_timeline: Oś czasu federacji przedstawia całą sieć Mastodona. Wyświetla tylko wpisy osób, które śledzą użytkownicy Twojej instancji, więc nie jest kompletna.
+      subject: Witaj w %{title}
+      tip_federated_timeline: Oś czasu federacji przedstawia szerszą sieć. Wyświetla tylko wpisy osób, które śledzą użytkownicy Twojej instancji, więc nie jest kompletna.
       tip_following: Domyślnie śledzisz administratora/ów swojej instancji. Aby znaleźć więcej ciekawych ludzi, zajrzyj na lokalną i federalną oś czasu.
       tip_local_timeline: Lokalna oś czasu przedstawia osoby z %{instance}. To Twoi najbliżsi sąsiedzi!
-      tip_mobile_webapp: Jeżeli Twoja przeglądarka pozwala na dodanie Mastodona na ekran główny, będziesz otrzymywać natychmiastowe powiadomienia. Działa to prawie jak natywna aplikacja!
+      tip_mobile_webapp: Jeżeli Twoja przeglądarka na Androidzie poprosi Cię o dodanie %{instance} na ekran główny, będziesz otrzymywać natychmiastowe powiadomienia z aplikacji webowej. Działa to prawie jak natywna aplikacja! Na iOS, możesz przypiąć %{instance} do ekranu głównego, ale nie będziesz otrzymywać powiadomień.
       tips: Wskazówki
       title: Witaj na pokładzie, %{name}!
   users:
@@ -1450,7 +1453,7 @@ pl:
     signed_in_as: 'Zalogowany jako:'
     suspicious_sign_in_confirmation: Wygląda na to, że nie logowałeś się wcześniej z tego urządzenia i przez jakiś czas nie logowałeś się, więc wysłaliśmy na Twój adres e-mail kod zabezpieczający, aby potwierdzić, że to Ty.
   verification:
-    explanation_html: 'Możesz <strong>zweryfikować siebie jako właściciela stron, do których odnośniki znajdują się w metadanych</strong>. Aby to zrobić, strona musi zawierać odnośnik do Twojego profilu na Mastodonie. Odnośnik <strong>musi</strong> zawierać atrybut <code>rel="me"</code>. Jego zawartość nie ma znaczenia. Przykład:'
+    explanation_html: 'Możesz <strong>zweryfikować siebie jako właściciela stron, do których odnośniki znajdują się w metadanych</strong>. Aby to zrobić, strona musi zawierać odnośnik do Twojego profilu na %{instance}. Odnośnik <strong>musi</strong> zawierać atrybut <code>rel="me"</code>. Jego zawartość nie ma znaczenia. Przykład:'
     verification: Weryfikacja
   webauthn_credentials:
     add: Dodaj nowy klucz bezpieczeństwa
