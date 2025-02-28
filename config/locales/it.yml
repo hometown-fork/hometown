@@ -1097,7 +1097,7 @@ it:
       content: Siamo spiacenti, ma qualcosa non ha funzionato dal nostro lato.
       title: Questa pagina non è corretta
     '503': La pagina non può essere trasmessa a causa di un errore temporaneo del server.
-    noscript_html: Per usare l'interfaccia web di %{title} dovi abilitare JavaScript. In alternativa puoi provare una delle <a href="%{apps_path}">app native</a> per Hometown/Mastodon per la tua piattaforma.
+    noscript_html: Per usare l'interfaccia web di Mastodon devi abilitare JavaScript. In alternativa puoi provare una delle <a href="%{apps_path}">app native</a> per Mastodon per la tua piattaforma.
   existing_username_validator:
     not_found: impossibile trovare un utente locale con quel nome utente
     not_found_multiple: impossibile trovare %{usernames}
@@ -1427,7 +1427,7 @@ it:
       weibo: Weibo
     current_session: Sessione corrente
     description: "%{browser} su %{platform}"
-    explanation: Questi sono i browser da cui attualmente è avvenuto l'accesso al tuo account %{title}.
+    explanation: Questi sono i browser da cui attualmente è avvenuto l'accesso al tuo account Mastodon.
     ip: IP
     platforms:
       adobe_air: Adobe Air
@@ -1600,7 +1600,7 @@ it:
       subject: Il tuo appello del %{date} è stato respinto
       title: Appello respinto
     backup_ready:
-      explanation: Hai richiesto un backup completo del tuo account %{title}. È pronto per essere scaricato!
+      explanation: Hai richiesto un backup completo del tuo account Mastodon}. È pronto per essere scaricato!
       subject: Il tuo archivio è pronto per essere scaricato
       title: Esportazione archivio
     suspicious_sign_in:
@@ -1649,7 +1649,7 @@ it:
       final_step: 'Inizia a pubblicare! Anche senza seguaci, i tuoi post pubblici possono essere visti da altri, ad esempio sulla timeline locale o negli hashtag. Potresti presentarti con l''hashtag #presentazione.'
       full_handle: Il tuo nome utente completo
       full_handle_hint: Questo è ciò che diresti ai tuoi amici in modo che possano seguirti o contattarti da un altro server.
-      subject: Benvenuto/a su %{title}
+      subject: Benvenuto/a su Mastodon}
       title: Benvenuto a bordo, %{name}!
   users:
     follow_limit_reached: Non puoi seguire più di %{limit} persone
