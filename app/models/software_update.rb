@@ -24,7 +24,7 @@ class SoftwareUpdate < ApplicationRecord
 
   class << self
     def check_enabled?
-      ENV['UPDATE_CHECK_URL'] != ''
+      false
     end
 
     def pending_to_a

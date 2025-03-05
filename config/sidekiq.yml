@@ -62,6 +62,7 @@
       interval: 30 minutes
       class: Scheduler::SoftwareUpdateCheckScheduler
       queue: scheduler
+      enabled: false
     auto_close_registrations_scheduler:
       interval: 1 hour
       class: Scheduler::AutoCloseRegistrationsScheduler
