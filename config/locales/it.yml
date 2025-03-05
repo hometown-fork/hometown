@@ -1649,7 +1649,7 @@ it:
       final_step: 'Inizia a pubblicare! Anche senza seguaci, i tuoi post pubblici possono essere visti da altri, ad esempio sulla timeline locale o negli hashtag. Potresti presentarti con l''hashtag #presentazione.'
       full_handle: Il tuo nome utente completo
       full_handle_hint: Questo è ciò che diresti ai tuoi amici in modo che possano seguirti o contattarti da un altro server.
-      subject: Benvenuto/a su Mastodon}
+      subject: Benvenuto/a su Mastodon
       title: Benvenuto a bordo, %{name}!
   users:
     follow_limit_reached: Non puoi seguire più di %{limit} persone
