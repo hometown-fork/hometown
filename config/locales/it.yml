@@ -1600,7 +1600,7 @@ it:
       subject: Il tuo appello del %{date} è stato respinto
       title: Appello respinto
     backup_ready:
-      explanation: Hai richiesto un backup completo del tuo account Mastodon}. È pronto per essere scaricato!
+      explanation: Hai richiesto un backup completo del tuo account Mastodon. È pronto per essere scaricato!
       subject: Il tuo archivio è pronto per essere scaricato
       title: Esportazione archivio
     suspicious_sign_in:
