@@ -78,8 +78,8 @@ class ActivityPub::Activity::Create < ActivityPub::Activity
     @silenced_account_ids = []
     @params               = {}
 
-    process_inline_images if @object['content'].present? && @object['type'] == 'Article'
     process_status_params
+    process_inline_images if @object['content'].present? && @object['type'] == 'Article'
     process_tags
     process_audience
 
@@ -117,7 +117,7 @@ class ActivityPub::Activity::Create < ActivityPub::Activity
       account: @account,
       text: converted_object_type? ? converted_text : (@status_parser.text || ''),
       language: @status_parser.language,
-      spoiler_text: converted_object_type? ? '' : (@status_parser.spoiler_text || (@object['type'] == 'Article' && text_from_name) || ''),
+      spoiler_text: converted_object_type? ? '' : ((@object['type'] == 'Article' && text_from_name) || @status_parser.spoiler_text || ''),
       created_at: @status_parser.created_at,
       edited_at: @status_parser.edited_at && @status_parser.edited_at != @status_parser.created_at ? @status_parser.edited_at : nil,
       override_timestamps: @options[:override_timestamps],
@@ -132,14 +132,15 @@ class ActivityPub::Activity::Create < ActivityPub::Activity
     }
   end
 
-  class Handler < ::Ox::Sax
-    attr_reader :srcs, :alts
+  class TextHandler < ::Ox::Sax
+    attr_reader :srcs, :alts, :original_srcs
 
-    def initialize(_block)
+    def initialize
       super
       @stack = []
       @srcs = []
       @alts = {}
+      @original_srcs = []
     end
 
     def start_element(element_name)
@@ -148,8 +149,10 @@ class ActivityPub::Activity::Create < ActivityPub::Activity
 
     def end_element(_element_name)
       self_name, self_attributes = @stack[-1]
+      # Create a list of image srcs and their alt text
       if self_name == :img && !self_attributes[:src].nil?
         @srcs << self_attributes[:src]
+        @original_srcs << self_attributes[:src].clone
         @alts[self_attributes[:src]] = self_attributes[:alt]
       end
       @stack.pop
@@ -163,11 +166,10 @@ class ActivityPub::Activity::Create < ActivityPub::Activity
   end
 
   def process_inline_images
-    proc = proc { |name| Rails.logger.debug name }
-    handler = Handler.new(proc)
+    handler = TextHandler.new
     Ox.sax_parse(handler, @object['content'])
     handler.srcs.each do |src|
-      # Handle images where the src is formatted as "/foo/bar.png"
+      # Handle images where the src is formatted as "/foo/bar.biz"
       # we assume that the `url` field is populated which lets us infer
       # the protocol and domain of the _original_ article, as though
       # we were looking at it via a web browser
@@ -176,11 +178,15 @@ class ActivityPub::Activity::Create < ActivityPub::Activity
         src = site + src
       end
 
+      # if media is set to reject from this domain, replace the src with an empty string
       if skip_download?
         @object['content'].gsub!(src, '')
         next
       end
 
+      # Create a local proxy media file for each image in the post
+      # TODO: what about <video> or <audio> elements? should we handle them?
+      # TODO: is there a max number of images we should be handling? maybe if there's more than that or there is just too much rich media, we should not render the post at all and do a converted stub?
       media_attachment = MediaAttachment.create(account: @account, remote_url: src, description: handler.alts[src], focus: nil)
       media_attachment.download_file!
       media_attachment.save
@@ -323,6 +329,12 @@ class ActivityPub::Activity::Create < ActivityPub::Activity
       next if media_attachment_parser.remote_url.blank? || media_attachments.size >= 4
 
       begin
+        # get the src values of embedded images in a post, skip creating attachments for them since
+        # they will have attachments created in the process_inline_images method
+        handler = TextHandler.new
+        Ox.sax_parse(handler, @object['content'])
+        next if handler.original_srcs.include?(media_attachment_parser.remote_url)
+
         media_attachment = MediaAttachment.create(
           account: @account,
           remote_url: media_attachment_parser.remote_url,

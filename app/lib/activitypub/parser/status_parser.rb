@@ -31,7 +31,9 @@ class ActivityPub::Parser::StatusParser
   end
 
   def text
-    if @object['content'].present?
+    if @object['content'].present? && @object['name'].present?
+      @object['content'].prepend("<h1>#{@object['name']}</h1>")
+    elsif @object['content'].present?
       @object['content']
     elsif content_language_map?
       @object['contentMap'].values.first

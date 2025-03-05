@@ -55,26 +55,17 @@ class Sanitize
       current_node.replace(Nokogiri::XML::Text.new(current_node.text, current_node.document)) unless LINK_PROTOCOLS.include?(scheme)
     end
 
-    UNSUPPORTED_ELEMENTS_TRANSFORMER = lambda do |env|
-      return unless %w(h6).include?(env[:node_name])
-
-      current_node = env[:node]
-
-      current_node.name = 'strong'
-      current_node.wrap('<p></p>')
-    end
-
     MASTODON_STRICT ||= freeze_config(
-      elements: %w(p br span a abbr del pre blockquote code b strong i em h1 h2 h3 h4 h5 ul ol li img u),
+      elements: %w(p br span a del s pre blockquote code b strong i em ul ol li ruby rt rp img h1 h2 h3 h4 h5 h6),
 
       attributes: {
-        'abbr' => %w(title),
-        'blockquote' => %w(cite),
-        'img' => %w(src alt),
         'a' => %w(href rel class translate title),
         'span' => %w(class translate),
         'ol' => %w(start reversed),
         'li' => %w(value),
+        'img' => %w(src alt title),
+        'abbr' => %w(title),
+        'blockquote' => %w(cite),
       },
 
       add_attributes: {
@@ -84,12 +75,14 @@ class Sanitize
         },
       },
 
-      protocols: {},
+      protocols: {
+        'a' => { 'href' => HTTP_PROTOCOLS },
+        'blockquote' => { 'cite' => HTTP_PROTOCOLS },
+      },
 
       transformers: [
         CLASS_WHITELIST_TRANSFORMER,
         TRANSLATE_TRANSFORMER,
-        UNSUPPORTED_ELEMENTS_TRANSFORMER,
         UNSUPPORTED_HREF_TRANSFORMER,
       ]
     )
