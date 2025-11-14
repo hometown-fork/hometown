@@ -19,7 +19,7 @@ import type { StatusLike } from 'mastodon/components/hashtag_bar';
 import { getHashtagBarForStatus } from 'mastodon/components/hashtag_bar';
 import { Icon } from 'mastodon/components/icon';
 import { IconLogo } from 'mastodon/components/logo';
-import Permalink from 'mastodon/components/permalink';
+import { Permalink } from 'mastodon/components/permalink';
 import PictureInPicturePlaceholder from 'mastodon/components/picture_in_picture_placeholder';
 import { VisibilityIcon } from 'mastodon/components/visibility_icon';
 

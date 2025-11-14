@@ -4,7 +4,7 @@ import { useCallback } from 'react';
 import { FormattedMessage, defineMessages, useIntl } from 'react-intl';
 
 import classNames from 'classnames';
-import Permalink from 'mastodon/components/permalink';
+import { Permalink } from 'mastodon/components/permalink';
 
 import {
   followAccount,
