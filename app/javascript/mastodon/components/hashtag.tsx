@@ -103,7 +103,7 @@ export const Hashtag: React.FC<HashtagProps> = ({
 }) => (
   <div className={classNames('trends__item', className)}>
     <div className='trends__item__name'>
-      <Permalink to={to}>
+      <Permalink to={to} href={href}>
         {name ? (
           <>
             #<span>{name}</span>
