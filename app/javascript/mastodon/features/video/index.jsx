@@ -647,7 +647,7 @@ class Video extends PureComponent {
               </div>
 
               <div className='video-player__buttons right'>
-                {!alt && <button type='button' title={intl.formatMessage(messages.no_descriptive_text)} aria-label={intl.formatMessage(messages.no_descriptive_text)} className='player-button no-action media__no-description-icon' ><Icon id='exclamation-triangle' fixedWidth /></button>}
+                {!alt && <button type='button' title={intl.formatMessage(messages.no_descriptive_text)} aria-label={intl.formatMessage(messages.no_descriptive_text)} className='player-button no-action media__no-description-icon' ><Icon id='exclamation-triangle' icon={WarningIcon} fixedWidth /></button>}
                 {(!onCloseVideo && !editable && !fullscreen && !this.props.alwaysVisible) && <button type='button' title={intl.formatMessage(messages.hide)} aria-label={intl.formatMessage(messages.hide)} className='player-button' onClick={this.toggleReveal}><Icon id='eye-slash' icon={VisibilityOffIcon} /></button>}
                 {(!fullscreen && onOpenVideo) && <button type='button' title={intl.formatMessage(messages.expand)} aria-label={intl.formatMessage(messages.expand)} className='player-button' onClick={this.handleOpenVideo}><Icon id='expand' icon={RectangleIcon} /></button>}
                 {onCloseVideo && <button type='button' title={intl.formatMessage(messages.close)} aria-label={intl.formatMessage(messages.close)} className='player-button' onClick={this.handleCloseVideo}><Icon id='compress' icon={FullscreenExitIcon} /></button>}

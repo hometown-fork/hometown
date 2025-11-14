@@ -251,7 +251,7 @@ class StatusContent extends PureComponent {
 
     const readArticleButton = (
       <button className='status__content__read-more-button' onClick={this.props.onClick} key='read-more'>
-        <FormattedMessage id='status.read_article' defaultMessage='Read article' /><Icon id='angle-right' fixedWidth />
+        <FormattedMessage id='status.read_article' defaultMessage='Read article' /><Icon id='angle-right' icon={ChevronRightIcon} fixedWidth />
       </button>
     );
 
