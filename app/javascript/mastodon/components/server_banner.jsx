@@ -3,6 +3,8 @@ import { PureComponent } from 'react';
 
 import { FormattedMessage, defineMessages, injectIntl } from 'react-intl';
 
+import { Link } from 'react-router-dom';
+
 import { connect } from 'react-redux';
 
 import { fetchServer } from 'mastodon/actions/server';
