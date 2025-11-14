@@ -28,7 +28,7 @@ export const ReplyIndicator = () => {
       </Permalink>
 
       <div className='reply-indicator__main'>
-        <Permalink href={account.get('url')}} to={`/@${account.get('acct')}`} className='detailed-status__display-name'>
+        <Permalink href={account.get('url')} to={`/@${account.get('acct')}`} className='detailed-status__display-name'>
           <DisplayName account={account} />
         </Permalink>
 
