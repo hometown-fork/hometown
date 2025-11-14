@@ -56,7 +56,7 @@ class Explore extends PureComponent {
       <Column bindToDocument={!multiColumn} ref={this.setRef} label={intl.formatMessage(messages.title)}>
         <ColumnHeader
           icon='search'
-          iconComponent=SearchIcon
+          iconComponent={SearchIcon}
           title={intl.formatMessage(isSearching ? messages.searchResults : messages.title)}
           onClick={this.handleHeaderClick}
           multiColumn={multiColumn}
