@@ -8,6 +8,8 @@ import classNames from 'classnames';
 import { supportsPassiveEvents } from 'detect-passive-events';
 import Overlay from 'react-overlays/Overlay';
 
+import Link from '@/material-icons/400-24px/link.svg?react';
+import LinkOff from '@/material-icons/400-24px/link_off.svg?react';
 import { Icon } from 'mastodon/components/icon';
 
 import { IconButton } from '../../../components/icon_button';
@@ -119,7 +121,7 @@ class FederationDropdownMenu extends PureComponent {
         {items.map(item => (
           <div role='option' tabIndex={0} key={item.value} data-index={item.value} onKeyDown={this.handleKeyDown} onClick={this.handleClick} className={classNames('privacy-dropdown__option', { active: item.value === value })} aria-selected={item.value === value} ref={item.value === value ? this.setFocusRef : null}>
             <div className='privacy-dropdown__option__icon'>
-              <Icon id={item.icon} fixedWidth />
+              <Icon id={item.icon} icon={item.iconComponent} fixedWidth />
             </div>
 
             <div className='privacy-dropdown__option__content'>
@@ -221,8 +223,8 @@ class FederationDropdown extends PureComponent {
     const { intl: { formatMessage } } = this.props;
 
     this.options = [
-      { icon: 'link', value: true, text: formatMessage(messages.federate_short), meta: formatMessage(messages.federate_long) },
-      { icon: 'chain-broken', value: false, text: formatMessage(messages.local_only_short), meta: formatMessage(messages.local_only_long) },
+      { icon: 'link', iconComponent: Link, value: true, text: formatMessage(messages.federate_short), meta: formatMessage(messages.federate_long) },
+      { icon: 'chain-broken', iconComponent: LinkOff, value: false, text: formatMessage(messages.local_only_short), meta: formatMessage(messages.local_only_long) },
     ];
   }
 
