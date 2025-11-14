@@ -21,10 +21,6 @@ RSpec.describe ActivityPub::LinkedDataSignature do
   let(:signed_json) { raw_json.merge('signature' => signature) }
   let(:json) { signed_json }
 
-  before do
-    stub_jsonld_contexts!
-  end
-
   describe '#verify_actor!' do
     context 'when signature matches' do
       let(:raw_signature) do

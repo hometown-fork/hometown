@@ -145,8 +145,10 @@ namespace :admin do
   end
 
   resources :users, only: [] do
-    resource :two_factor_authentication, only: [:destroy], controller: 'users/two_factor_authentications'
-    resource :role, only: [:show, :update], controller: 'users/roles'
+    scope module: :users do
+      resource :two_factor_authentication, only: [:destroy]
+      resource :role, only: [:show, :update]
+    end
   end
 
   resources :custom_emojis, only: [:index, :new, :create] do
@@ -164,7 +166,7 @@ namespace :admin do
   resources :roles, except: [:show]
   resources :account_moderation_notes, only: [:create, :destroy]
   resource :follow_recommendations, only: [:show, :update]
-  resources :tags, only: [:show, :update]
+  resources :tags, only: [:index, :show, :update]
 
   namespace :trends do
     resources :links, only: [:index] do

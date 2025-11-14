@@ -52,7 +52,7 @@ class ProcessMentionsService < BaseService
       # If after resolving it still isn't found or isn't the right
       # protocol, or it's a federated account and the status is local-only,
       # then give up
-      next match if mention_undeliverable?(mentioned_account) || mentioned_account&.suspended? || (!mentioned_account.local? && @status.local_only?)
+      next match if mention_undeliverable?(mentioned_account) || mentioned_account&.unavailable? || (!mentioned_account.local? && @status.local_only?)
 
       mention   = @previous_mentions.find { |x| x.account_id == mentioned_account.id }
       mention ||= @current_mentions.find  { |x| x.account_id == mentioned_account.id }

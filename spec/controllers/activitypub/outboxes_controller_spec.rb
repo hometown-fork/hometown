@@ -5,22 +5,6 @@ require 'rails_helper'
 RSpec.describe ActivityPub::OutboxesController do
   let!(:account) { Fabricate(:account) }
 
-  shared_examples 'cacheable response' do
-    it 'does not set cookies' do
-      expect(response.cookies).to be_empty
-      expect(response.headers['Set-Cookies']).to be_nil
-    end
-
-    it 'does not set sessions' do
-      response
-      expect(session).to be_empty
-    end
-
-    it 'returns public Cache-Control header' do
-      expect(response.headers['Cache-Control']).to include 'public'
-    end
-  end
-
   before do
     Fabricate(:status, account: account, visibility: :public)
     Fabricate(:status, account: account, visibility: :unlisted)
@@ -35,28 +19,19 @@ RSpec.describe ActivityPub::OutboxesController do
     context 'without signature' do
       subject(:response) { get :show, params: { account_username: account.username, page: page } }
 
-      let(:body) { body_as_json }
       let(:remote_account) { nil }
 
       context 'with page not requested' do
         let(:page) { nil }
 
-        it 'returns http success' do
-          expect(response).to have_http_status(200)
-        end
+        it 'returns http success and correct media type and headers and items count' do
+          expect(response)
+            .to have_http_status(200)
+            .and have_cacheable_headers
 
-        it 'returns application/activity+json' do
           expect(response.media_type).to eq 'application/activity+json'
-        end
-
-        it 'returns totalItems' do
-          expect(body[:totalItems]).to eq 4
-        end
-
-        it_behaves_like 'cacheable response'
-
-        it 'does not have a Vary header' do
           expect(response.headers['Vary']).to be_nil
+          expect(response.parsed_body[:totalItems]).to eq 4
         end
 
         it 'does not have a Vary header' do
@@ -88,24 +63,20 @@ RSpec.describe ActivityPub::OutboxesController do
       context 'with page requested' do
         let(:page) { 'true' }
 
-        it 'returns http success' do
-          expect(response).to have_http_status(200)
-        end
+        it 'returns http success and correct media type and vary header and items' do
+          expect(response)
+            .to have_http_status(200)
+            .and have_cacheable_headers
 
-        it 'returns application/activity+json' do
           expect(response.media_type).to eq 'application/activity+json'
-        end
-
-        it 'returns orderedItems with public or unlisted statuses' do
-          expect(body[:orderedItems]).to be_an Array
-          expect(body[:orderedItems].size).to eq 2
-          expect(body[:orderedItems].all? { |item| item[:to].include?(ActivityPub::TagManager::COLLECTIONS[:public]) || item[:cc].include?(ActivityPub::TagManager::COLLECTIONS[:public]) }).to be true
-        end
-
-        it_behaves_like 'cacheable response'
-
-        it 'returns Vary header with Signature' do
           expect(response.headers['Vary']).to include 'Signature'
+
+          expect(response.parsed_body)
+            .to include(
+              orderedItems: be_an(Array)
+              .and(have_attributes(size: 2))
+              .and(all(satisfy { |item| targets_public_collection?(item) }))
+            )
         end
 
         it 'returns Vary header with Signature' do
@@ -144,23 +115,17 @@ RSpec.describe ActivityPub::OutboxesController do
           get :show, params: { account_username: account.username, page: page }
         end
 
-        it 'returns http success' do
+        it 'returns http success and correct media type and headers and items' do
           expect(response).to have_http_status(200)
-        end
-
-        it 'returns application/activity+json' do
           expect(response.media_type).to eq 'application/activity+json'
-        end
-
-        it 'returns orderedItems with public or unlisted statuses' do
-          json = body_as_json
-          expect(json[:orderedItems]).to be_an Array
-          expect(json[:orderedItems].size).to eq 2
-          expect(json[:orderedItems].all? { |item| item[:to].include?(ActivityPub::TagManager::COLLECTIONS[:public]) || item[:cc].include?(ActivityPub::TagManager::COLLECTIONS[:public]) }).to be true
-        end
-
-        it 'returns private Cache-Control header' do
           expect(response.headers['Cache-Control']).to eq 'max-age=60, private'
+
+          expect(response.parsed_body)
+            .to include(
+              orderedItems: be_an(Array)
+              .and(have_attributes(size: 2))
+              .and(all(satisfy { |item| targets_public_collection?(item) }))
+            )
         end
       end
 
@@ -170,23 +135,17 @@ RSpec.describe ActivityPub::OutboxesController do
           get :show, params: { account_username: account.username, page: page }
         end
 
-        it 'returns http success' do
+        it 'returns http success and correct media type and headers and items' do
           expect(response).to have_http_status(200)
-        end
-
-        it 'returns application/activity+json' do
           expect(response.media_type).to eq 'application/activity+json'
-        end
-
-        it 'returns orderedItems with private statuses' do
-          json = body_as_json
-          expect(json[:orderedItems]).to be_an Array
-          expect(json[:orderedItems].size).to eq 3
-          expect(json[:orderedItems].all? { |item| item[:to].include?(ActivityPub::TagManager::COLLECTIONS[:public]) || item[:cc].include?(ActivityPub::TagManager::COLLECTIONS[:public]) || item[:to].include?(account_followers_url(account, ActionMailer::Base.default_url_options)) }).to be true
-        end
-
-        it 'returns private Cache-Control header' do
           expect(response.headers['Cache-Control']).to eq 'max-age=60, private'
+
+          expect(response.parsed_body)
+            .to include(
+              orderedItems: be_an(Array)
+              .and(have_attributes(size: 3))
+              .and(all(satisfy { |item| targets_public_collection?(item) || targets_followers_collection?(item, account) }))
+            )
         end
       end
 
@@ -196,22 +155,15 @@ RSpec.describe ActivityPub::OutboxesController do
           get :show, params: { account_username: account.username, page: page }
         end
 
-        it 'returns http success' do
+        it 'returns http success and correct media type and headers and items' do
           expect(response).to have_http_status(200)
-        end
-
-        it 'returns application/activity+json' do
           expect(response.media_type).to eq 'application/activity+json'
-        end
-
-        it 'returns empty orderedItems' do
-          json = body_as_json
-          expect(json[:orderedItems]).to be_an Array
-          expect(json[:orderedItems].size).to eq 0
-        end
-
-        it 'returns private Cache-Control header' do
           expect(response.headers['Cache-Control']).to eq 'max-age=60, private'
+
+          expect(response.parsed_body)
+            .to include(
+              orderedItems: be_an(Array).and(be_empty)
+            )
         end
       end
 
@@ -221,24 +173,33 @@ RSpec.describe ActivityPub::OutboxesController do
           get :show, params: { account_username: account.username, page: page }
         end
 
-        it 'returns http success' do
+        it 'returns http success and correct media type and headers and items' do
           expect(response).to have_http_status(200)
-        end
-
-        it 'returns application/activity+json' do
           expect(response.media_type).to eq 'application/activity+json'
-        end
-
-        it 'returns empty orderedItems' do
-          json = body_as_json
-          expect(json[:orderedItems]).to be_an Array
-          expect(json[:orderedItems].size).to eq 0
-        end
-
-        it 'returns private Cache-Control header' do
           expect(response.headers['Cache-Control']).to eq 'max-age=60, private'
+
+          expect(response.parsed_body)
+            .to include(
+              orderedItems: be_an(Array).and(be_empty)
+            )
         end
       end
     end
+  end
+
+  private
+
+  def ap_public_collection
+    ActivityPub::TagManager::COLLECTIONS[:public]
+  end
+
+  def targets_public_collection?(item)
+    item[:to].include?(ap_public_collection) || item[:cc].include?(ap_public_collection)
+  end
+
+  def targets_followers_collection?(item, account)
+    item[:to].include?(
+      account_followers_url(account, ActionMailer::Base.default_url_options)
+    )
   end
 end

@@ -18,7 +18,7 @@ defaults: &defaults
   preview_sensitive_media: false
   noindex: false
   norss: false
-  theme: 'default'
+  theme: 'system'
   trends: true
   trends_as_landing_page: false
   trendable_by_default: false
