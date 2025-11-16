@@ -11,6 +11,7 @@ import { connect } from 'react-redux';
 
 import BookmarkIcon from '@/material-icons/400-24px/bookmark-fill.svg';
 import BookmarkBorderIcon from '@/material-icons/400-24px/bookmark.svg?react';
+import LinkOff from '@/material-icons/400-24px/link_off.svg?react';
 import MoreHorizIcon from '@/material-icons/400-24px/more_horiz.svg?react';
 import RepeatIcon from '@/material-icons/400-24px/repeat.svg?react';
 import ReplyIcon from '@/material-icons/400-24px/reply.svg?react';
@@ -391,9 +392,9 @@ class StatusActionBar extends ImmutablePureComponent {
         </div>
         <div className='status__action-bar__button-wrapper'>
 
-        { !federated &&
-          <IconButton className='status__action-bar-button' disabled title={intl.formatMessage(messages.local_only)} icon='chain-broken' />
-        }
+          { !federated &&
+          <IconButton className='status__action-bar-button' disabled title={intl.formatMessage(messages.local_only)} icon='linkoff' iconComponent={LinkOff} />
+          }
 
           <DropdownMenuContainer
             scrollKey={scrollKey}

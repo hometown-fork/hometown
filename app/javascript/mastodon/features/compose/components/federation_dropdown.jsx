@@ -5,14 +5,12 @@ import { injectIntl, defineMessages } from 'react-intl';
 
 import classNames from 'classnames';
 
-import { supportsPassiveEvents } from 'detect-passive-events';
 import Overlay from 'react-overlays/Overlay';
 
 import Link from '@/material-icons/400-24px/link.svg?react';
 import LinkOff from '@/material-icons/400-24px/link_off.svg?react';
+import { DropdownSelector } from 'mastodon/components/dropdown_selector';
 import { Icon } from 'mastodon/components/icon';
-
-import { IconButton } from '../../../components/icon_button';
 
 const messages = defineMessages({
   federate_short: { id: 'federation.federated.short', defaultMessage: 'Federated' },
@@ -21,120 +19,6 @@ const messages = defineMessages({
   local_only_long: { id: 'federation.local_only.long', defaultMessage: 'Restrict this post only to my instance' },
   change_federation: { id: 'federation.change', defaultMessage: 'Adjust status federation' },
 });
-
-const listenerOptions = supportsPassiveEvents ? { passive: true, capture: true } : true;
-
-class FederationDropdownMenu extends PureComponent {
-
-  static propTypes = {
-    style: PropTypes.object,
-    items: PropTypes.array.isRequired,
-    value: PropTypes.string.isRequired,
-    onClose: PropTypes.func.isRequired,
-    onChange: PropTypes.func.isRequired,
-  };
-
-  handleDocumentClick = e => {
-    if (this.node && !this.node.contains(e.target)) {
-      this.props.onClose();
-      e.stopPropagation();
-    }
-  };
-
-  handleKeyDown = e => {
-    const { items } = this.props;
-    const value = e.currentTarget.getAttribute('data-index');
-    const index = items.findIndex(item => {
-      return (item.value === value);
-    });
-    let element = null;
-
-    switch (e.key) {
-      case 'Escape':
-        this.props.onClose();
-        break;
-      case 'Enter':
-        this.handleClick(e);
-        break;
-      case 'ArrowDown':
-        element = this.node.childNodes[index + 1] || this.node.firstChild;
-        break;
-      case 'ArrowUp':
-        element = this.node.childNodes[index - 1] || this.node.lastChild;
-        break;
-      case 'Tab':
-        if (e.shiftKey) {
-          element = this.node.childNodes[index - 1] || this.node.lastChild;
-        } else {
-          element = this.node.childNodes[index + 1] || this.node.firstChild;
-        }
-        break;
-      case 'Home':
-        element = this.node.firstChild;
-        break;
-      case 'End':
-        element = this.node.lastChild;
-        break;
-    }
-
-    if (element) {
-      element.focus();
-      this.props.onChange(element.getAttribute('data-index'));
-      e.preventDefault();
-      e.stopPropagation();
-    }
-  };
-
-  handleClick = e => {
-    const value = e.currentTarget.getAttribute('data-index');
-
-    e.preventDefault();
-
-    this.props.onClose();
-    this.props.onChange(value);
-  };
-
-  componentDidMount() {
-    document.addEventListener('click', this.handleDocumentClick, { capture: true });
-    document.addEventListener('touchend', this.handleDocumentClick, listenerOptions);
-    if (this.focusedItem) this.focusedItem.focus({ preventScroll: true });
-  }
-
-  componentWillUnmount() {
-    document.removeEventListener('click', this.handleDocumentClick, { capture: true });
-    document.removeEventListener('touchend', this.handleDocumentClick, listenerOptions);
-  }
-
-  setRef = c => {
-    this.node = c;
-  };
-
-  setFocusRef = c => {
-    this.focusedItem = c;
-  };
-
-  render() {
-    const { style, items, value } = this.props;
-
-    return (
-      <div style={{ ...style }} role='listbox' ref={this.setRef}>
-        {items.map(item => (
-          <div role='option' tabIndex={0} key={item.value} data-index={item.value} onKeyDown={this.handleKeyDown} onClick={this.handleClick} className={classNames('privacy-dropdown__option', { active: item.value === value })} aria-selected={item.value === value} ref={item.value === value ? this.setFocusRef : null}>
-            <div className='privacy-dropdown__option__icon'>
-              <Icon id={item.icon} icon={item.iconComponent} fixedWidth />
-            </div>
-
-            <div className='privacy-dropdown__option__content'>
-              <strong>{item.text}</strong>
-              {item.meta}
-            </div>
-          </div>
-        ))}
-      </div>
-    );
-  }
-
-}
 
 class FederationDropdown extends PureComponent {
 
@@ -184,9 +68,9 @@ class FederationDropdown extends PureComponent {
 
   handleKeyDown = e => {
     switch (e.key) {
-      case 'Escape':
-        this.handleClose();
-        break;
+    case 'Escape':
+      this.handleClose();
+      break;
     }
   };
 
@@ -198,10 +82,10 @@ class FederationDropdown extends PureComponent {
 
   handleButtonKeyDown = (e) => {
     switch (e.key) {
-      case ' ':
-      case 'Enter':
-        this.handleMouseDown();
-        break;
+    case ' ':
+    case 'Enter':
+      this.handleMouseDown();
+      break;
     }
   };
 
@@ -241,35 +125,32 @@ class FederationDropdown extends PureComponent {
   };
 
   render() {
-    const { value, container, disabled, intl } = this.props;
+    const { value, container, disabled } = this.props;
     const { open, placement } = this.state;
 
     const valueOption = this.options.find(item => item.value === value);
 
     return (
-      <div className={classNames('privacy-dropdown', placement, { active: open })} onKeyDown={this.handleKeyDown}>
-        <div className={classNames('privacy-dropdown__value', { active: this.options.indexOf(valueOption) === (placement === 'bottom' ? 0 : (this.options.length - 1)) })} ref={this.setTargetRef}>
-          <IconButton
-            className='privacy-dropdown__value-icon'
-            icon={valueOption.icon}
-            title={intl.formatMessage(messages.change_federation)}
-            size={18}
-            expanded={open}
-            active={open}
-            inverted
-            onClick={this.handleToggle}
-            onMouseDown={this.handleMouseDown}
-            onKeyDown={this.handleButtonKeyDown}
-            style={{ height: null, lineHeight: '27px' }}
-            disabled={disabled}
-          />
-        </div>
+      <div ref={this.setTargetRef} onKeyDown={this.handleKeyDown}>
+        <button
+          type='button'
+          title={valueOption.text}
+          aria-expanded={open}
+          onClick={this.handleToggle}
+          onMouseDown={this.handleMouseDown}
+          onKeyDown={this.handleButtonKeyDown}
+          disabled={disabled}
+          className={classNames('dropdown-button', { active: open })}
+        >
+          <Icon id={valueOption.icon} icon={valueOption.iconComponent} />
+          <span className='dropdown-button__label'>{valueOption.text}</span>
+        </button>
 
-        <Overlay show={open} placement={'bottom'} flip target={this.findTarget} container={container} popperConfig={{ strategy: 'fixed', onFirstUpdate: this.handleOverlayEnter }}>
+        <Overlay show={open} offset={[5, 5]} placement={placement} flip target={this.findTarget} container={container} popperConfig={{ strategy: 'fixed', onFirstUpdate: this.handleOverlayEnter }}>
           {({ props, placement }) => (
             <div {...props}>
               <div className={`dropdown-animation privacy-dropdown__dropdown ${placement}`}>
-                <FederationDropdownMenu
+                <DropdownSelector
                   items={this.options}
                   value={value}
                   onClose={this.handleClose}
