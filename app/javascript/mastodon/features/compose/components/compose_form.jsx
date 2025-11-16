@@ -289,6 +289,7 @@ class ComposeForm extends ImmutablePureComponent {
             <div className='compose-form__dropdowns'>
               <PrivacyDropdownContainer disabled={this.props.isEditing} />
               <LanguageDropdown />
+              <FederationDropdownContainer disabled={this.props.isEditing} />
             </div>
 
             <div className='compose-form__actions'>
@@ -296,7 +297,6 @@ class ComposeForm extends ImmutablePureComponent {
                 <UploadButtonContainer />
                 <PollButtonContainer />
                 <SpoilerButtonContainer />
-                <FederationDropdownContainer disabled={this.props.isEditing} />
                 <EmojiPickerDropdown onPickEmoji={this.handleEmojiPick} />
                 <CharacterCounter max={maxChars} text={this.getFulltextForCharacterCounting()} />
               </div>

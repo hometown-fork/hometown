@@ -391,11 +391,9 @@ class StatusActionBar extends ImmutablePureComponent {
           <IconButton className='status__action-bar__button bookmark-icon' disabled={!signedIn} active={status.get('bookmarked')} title={intl.formatMessage(messages.bookmark)} icon='bookmark' iconComponent={status.get('bookmarked') ? BookmarkIcon : BookmarkBorderIcon} onClick={this.handleBookmarkClick} />
         </div>
         <div className='status__action-bar__button-wrapper'>
-
-          { !federated &&
-          <IconButton className='status__action-bar-button' disabled title={intl.formatMessage(messages.local_only)} icon='linkoff' iconComponent={LinkOff} />
-          }
-
+          { !federated && <IconButton className='status__action-bar-button' disabled title={intl.formatMessage(messages.local_only)} icon='linkoff' iconComponent={LinkOff} />}
+        </div>
+        <div className='status__action-bar__button-wrapper'>
           <DropdownMenuContainer
             scrollKey={scrollKey}
             status={status}
