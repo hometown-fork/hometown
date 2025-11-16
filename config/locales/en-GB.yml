@@ -4,7 +4,7 @@ en-GB:
     about_mastodon_html: 'The social network of the future: No ads, no corporate surveillance, ethical design, and decentralisation! Own your data with %{title}!'
     contact_missing: Not set
     contact_unavailable: N/A
-    hosted_on: %{title} hosted on %{domain}
+    hosted_on: '%{title} hosted on %{domain}'
     title: About
   accounts:
     followers:
@@ -1063,7 +1063,7 @@ en-GB:
     confirmation_dialogs: Confirmation dialogues
     discovery: Discovery
     localization:
-      body: %{title} is translated by volunteers.
+      body: '%{title} is translated by volunteers.'
       guide_link: https://crowdin.com/project/mastodon
       guide_link_text: Everyone can contribute.
     sensitive_content: Sensitive content
@@ -1901,13 +1901,13 @@ en-GB:
       edit_profile_title: Personalise your profile
       explanation: Here are some tips to get you started
       feature_action: Learn more
-      feature_audience: %{title} provides you with a unique possibility of managing your audience without middlemen. %{title} deployed on your own infrastructure allows you to follow and be followed from any other %{title} server online and is under no one's control but yours.
+      feature_audience: "%{title} provides you with a unique possibility of managing your audience without middlemen. %{title} deployed on your own infrastructure allows you to follow and be followed from any other %{title} server online and is under no one's control but yours."
       feature_audience_title: Build your audience in confidence
       feature_control: You know best what you want to see on your home feed. No algorithms or ads to waste your time. Follow anyone across any %{title} server from a single account and receive their posts in chronological order, and make your corner of the Internet a little more like you.
       feature_control_title: Stay in control of your own timeline
-      feature_creativity: %{title} supports audio, video and picture posts, accessibility descriptions, polls, content warnings, animated avatars, custom emojis, thumbnail crop control, and more, to help you express yourself online. Whether you're publishing your art, your music, or your podcast, %{title} is there for you.
+      feature_creativity: "%{title} supports audio, video and picture posts, accessibility descriptions, polls, content warnings, animated avatars, custom emojis, thumbnail crop control, and more, to help you express yourself online. Whether you're publishing your art, your music, or your podcast, %{title} is there for you."
       feature_creativity_title: Unparalleled creativity
-      feature_moderation: %{title} puts decision making back in your hands. Each server creates their own rules and regulations, which are enforced locally and not top-down like corporate social media, making it the most flexible in responding to the needs of different groups of people. Join a server with the rules you agree with, or host your own.
+      feature_moderation: "%{title} puts decision making back in your hands. Each server creates their own rules and regulations, which are enforced locally and not top-down like corporate social media, making it the most flexible in responding to the needs of different groups of people. Join a server with the rules you agree with, or host your own."
       feature_moderation_title: Moderating the way it should be
       follow_action: Follow
       follow_step: Following interesting people is what %{title} is all about.
