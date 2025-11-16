@@ -40,30 +40,11 @@ class FederationDropdown extends PureComponent {
   };
 
   handleToggle = () => {
-    if (this.props.isUserTouching && this.props.isUserTouching()) {
-      if (this.state.open) {
-        this.props.onModalClose();
-      } else {
-        this.props.onModalOpen({
-          actions: this.options.map(option => ({ ...option, active: option.value === this.props.value })),
-          onClick: this.handleModalActionClick,
-        });
-      }
-    } else {
-      if (this.state.open && this.activeElement) {
-        this.activeElement.focus({ preventScroll: true });
-      }
-      this.setState({ open: !this.state.open });
+    if (this.state.open && this.activeElement) {
+      this.activeElement.focus({ preventScroll: true });
     }
-  };
 
-  handleModalActionClick = (e) => {
-    e.preventDefault();
-
-    const { value } = this.options[e.currentTarget.getAttribute('data-index')];
-
-    this.props.onModalClose();
-    this.props.onChange(value);
+    this.setState({ open: !this.state.open });
   };
 
   handleKeyDown = e => {
@@ -97,9 +78,6 @@ class FederationDropdown extends PureComponent {
   };
 
   handleChange = value => {
-    // handleChange receives the values as string, therefore we need to convert them
-    // to proper JS booleans.
-    value = value === "true";
     this.props.onChange(value);
   };
 
