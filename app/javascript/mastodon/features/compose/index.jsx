@@ -145,7 +145,6 @@ class Compose extends PureComponent {
           onClick={this.handleHeaderClick}
           multiColumn={multiColumn}
         />
-        <NavigationContainer onClose={this.onBlur} />
         <ComposeFormContainer />
 
         <Helmet>
