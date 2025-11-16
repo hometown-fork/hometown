@@ -510,11 +510,8 @@ body.admin {
 
 // Change the text colors on inverted background
 .privacy-dropdown__option.active,
-.privacy-dropdown__option:hover,
 .privacy-dropdown__option.active .privacy-dropdown__option__content,
 .privacy-dropdown__option.active .privacy-dropdown__option__content strong,
-.privacy-dropdown__option:hover .privacy-dropdown__option__content,
-.privacy-dropdown__option:hover .privacy-dropdown__option__content strong,
 .dropdown-menu__item a:active,
 .dropdown-menu__item a:focus,
 .dropdown-menu__item a:hover,
@@ -1231,4 +1228,36 @@ button.icon-button.disabled i.fa-retweet {
 
 .button.button-tertiary {
   color: $darker-text-color;
+}
+
+.navigation-panel {
+  background: $ui-base-color;
+}
+
+.layout-single-column {
+  .ui__header {
+    display: flex;
+    background: $ui-base-color;
+    border-bottom: 1px solid lighten($ui-base-color, 8%);
+  }
+}
+
+.button.button-secondary {
+  border-color: $ui-button-secondary-border-color;
+  color: $ui-button-secondary-color;
+  flex: 0 0 auto;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background: $ui-button-secondary-focus-background-color;
+    border-color: $ui-button-secondary-focus-background-color;
+    color: $ui-button-secondary-focus-color;
+  }
+}
+
+.column-link {
+  &.active {
+    color: $ui-button-secondary-color;
+  }
 }
