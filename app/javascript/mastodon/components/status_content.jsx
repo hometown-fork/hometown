@@ -231,6 +231,7 @@ class StatusContent extends PureComponent {
     const { status, intl, statusContent } = this.props;
 
     const renderReadMore = this.props.onClick && status.get('collapsed');
+    const renderReadArticle = status.get('activity_pub_type') === 'Article' && status.get('collapsed') && !this.props.onClick;
     const contentLocale = intl.locale.replace(/[_-].*/, '');
     const targetLanguages = this.props.languages?.get(status.get('language') || 'und');
     const renderTranslate = this.props.onTranslate && this.props.identity.signedIn && ['public', 'unlisted'].includes(status.get('visibility')) && status.get('search_index').trim().length > 0 && targetLanguages?.includes(contentLocale);
@@ -248,7 +249,7 @@ class StatusContent extends PureComponent {
       </button>
     );
 
-    const readArticleButton = (
+    const readArticleButton = renderReadArticle && (
       <button className='status__content__read-more-button' onClick={this.props.onClick} key='read-more'>
         <FormattedMessage id='status.read_article' defaultMessage='Read article' /><Icon id='angle-right' icon={ChevronRightIcon} fixedWidth />
       </button>
@@ -277,12 +278,16 @@ class StatusContent extends PureComponent {
       );
     } else {
       return (
-        <div className={classNames} ref={this.setRef} tabIndex={0} onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeave}>
-          <div className='status__content__text status__content__text--visible translate' lang={language} dangerouslySetInnerHTML={content} />
+        <>
+          <div className={classNames} ref={this.setRef} tabIndex={0} onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeave}>
+            <div className='status__content__text status__content__text--visible translate' lang={language} dangerouslySetInnerHTML={content} />
 
-          {poll}
-          {translateButton}
-        </div>
+            {poll}
+            {translateButton}
+          </div>
+
+          {readArticleButton}
+        </>
       );
     }
   }
