@@ -42,4 +42,4 @@
     = content_for?(:content) ? yield(:content) : yield
 
     .logo-resources{ 'tabindex' => '-1', 'inert' => true, 'aria-hidden' => 'true' }
-      = raw render file: Rails.root.join('app', 'javascript', 'images', 'hometown.svg')
+      = inline_svg_tag 'hometown.svg'
