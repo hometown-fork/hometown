@@ -1,9 +1,14 @@
 on:
   workflow_call:
     inputs:
+      platforms:
+        required: true
+        type: string
       cache:
         type: boolean
         default: true
+      use_native_arm64_builder:
+        type: boolean
       push_to_images:
         type: string
       version_prerelease:
@@ -19,20 +24,9 @@ on:
       file_to_build:
         type: string
 
-# This builds multiple images with one runner each, allowing us to build for multiple architectures
-# using Github's runners.
-# The two-step process is adapted form:
-# https://docs.docker.com/build/ci/github-actions/multi-platform/#distribute-build-across-multiple-runners
 jobs:
-  # Build each (amd64 and arm64) image separately
   build-image:
-    runs-on: ${{ startsWith(matrix.platform, 'linux/arm') && 'ubuntu-24.04-arm' || 'ubuntu-24.04' }}
-    strategy:
-      fail-fast: false
-      matrix:
-        platform:
-          - linux/amd64
-          - linux/arm64
+    runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v4
@@ -84,86 +78,6 @@ jobs:
 
       - uses: docker/metadata-action@v5
         id: meta
-        uses: docker/metadata-action@v5
-        if: ${{ inputs.push_to_images != '' }}
-        with:
-          images: ${{ inputs.push_to_images }}
-          flavor: ${{ inputs.flavor }}
-          labels: ${{ inputs.labels }}
-
-      - name: Build and push by digest
-        id: build
-        uses: docker/build-push-action@v6
-        with:
-          context: .
-          build-args: |
-            MASTODON_VERSION_PRERELEASE=${{ inputs.version_prerelease }}
-            MASTODON_VERSION_METADATA=${{ inputs.version_metadata }}
-            SOURCE_COMMIT=${{ github.sha }}
-          platforms: ${{ matrix.platform }}
-          provenance: false
-          push: ${{ inputs.push_to_images != '' }}
-          cache-from: ${{ inputs.cache && 'type=gha' || '' }}
-          cache-to: ${{ inputs.cache && 'type=gha,mode=max' || '' }}
-          outputs: type=image,"name=${{ env.IMAGE_NAMES }}",push-by-digest=true,name-canonical=true,push=${{ inputs.push_to_images != '' }}
-
-      - name: Export digest
-        if: ${{ inputs.push_to_images != '' }}
-        run: |
-          mkdir -p "${{ runner.temp }}/digests"
-          digest="${{ steps.build.outputs.digest }}"
-          touch "${{ runner.temp }}/digests/${digest#sha256:}"
-
-      - name: Upload digest
-        if: ${{ inputs.push_to_images != '' }}
-        uses: actions/upload-artifact@v4
-        with:
-          name: digests-${{ env.PLATFORM_PAIR }}
-          path: ${{ runner.temp }}/digests/*
-          if-no-files-found: error
-          retention-days: 1
-
-  # Then merge the docker images into a single one
-  merge-images:
-    if: ${{ inputs.push_to_images != '' }}
-    runs-on: ubuntu-24.04
-    needs:
-      - build-image
-
-    env:
-      PUSH_TO_IMAGES: ${{ inputs.push_to_images }}
-
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Download digests
-        uses: actions/download-artifact@v4
-        with:
-          path: ${{ runner.temp }}/digests
-          pattern: digests-*
-          merge-multiple: true
-
-      - name: Log in to Docker Hub
-        if: contains(inputs.push_to_images, 'tootsuite')
-        uses: docker/login-action@v3
-        with:
-          username: ${{ secrets.DOCKERHUB_USERNAME }}
-          password: ${{ secrets.DOCKERHUB_TOKEN }}
-
-      - name: Log in to the GitHub Container registry
-        if: contains(inputs.push_to_images, 'ghcr.io')
-        uses: docker/login-action@v3
-        with:
-          registry: ghcr.io
-          username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v3
-
-      - name: Docker meta
-        id: meta
-        uses: docker/metadata-action@v5
         if: ${{ inputs.push_to_images != '' }}
         with:
           images: ${{ inputs.push_to_images }}
