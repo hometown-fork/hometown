@@ -11,6 +11,7 @@ import ImmutablePropTypes from 'react-immutable-proptypes';
 import { debounce } from 'lodash';
 
 import { AltTextBadge } from 'mastodon/components/alt_text_badge';
+import { NoAltTextBadge } from 'mastodon/components/no_alt_text_badge';
 import { Blurhash } from 'mastodon/components/blurhash';
 import { formatTime } from 'mastodon/features/video';
 
@@ -100,6 +101,8 @@ class Item extends PureComponent {
     const hasMediaDescription = attachment.get('description')?.length > 0;
     if (hasMediaDescription) {
       badges.push(<AltTextBadge key='alt' description={attachment.get('description')} />);
+    } else {
+      badges.push(<NoAltTextBadge key='no-alt' />);
     }
 
     const description = attachment.getIn(['translation', 'description']) || attachment.get('description');

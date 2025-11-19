@@ -17,6 +17,8 @@ import VolumeOffIcon from '@/material-icons/400-24px/volume_off-fill.svg?react';
 import VolumeUpIcon from '@/material-icons/400-24px/volume_up-fill.svg?react';
 import { Icon }  from 'mastodon/components/icon';
 import { formatTime, getPointerPosition, fileNameFromURL } from 'mastodon/features/video';
+import { AltTextBadge } from 'mastodon/components/alt_text_badge';
+import { NoAltTextBadge } from 'mastodon/components/no_alt_text_badge';
 
 import { Blurhash } from '../../components/blurhash';
 import { displayMedia, useBlurhash } from '../../initial_state';
@@ -582,7 +584,8 @@ class Audio extends PureComponent {
             </div>
 
             <div className='video-player__buttons right'>
-              {!alt && <button type='button' title={intl.formatMessage(messages.no_descriptive_text)} aria-label={intl.formatMessage(messages.no_descriptive_text)} className='player-button no-action media__no-description-icon' ><Icon id='exclamation-triangle' icon={WarningIcon} fixedWidth /></button>}
+              {alt && <button type='button' title={intl.formatMessage(messages.no_descriptive_text)} aria-label={intl.formatMessage(messages.no_descriptive_text)} className='player-button no-action media__no-description-icon' ><AltTextBadge key='alt' description={alt} /></button>}
+              {!alt && <button type='button' title={intl.formatMessage(messages.no_descriptive_text)} aria-label={intl.formatMessage(messages.no_descriptive_text)} className='player-button no-action media__no-description-icon' ><NoAltTextBadge key='no-alt' /></button>}
               {!editable && <button type='button' title={intl.formatMessage(messages.hide)} aria-label={intl.formatMessage(messages.hide)} className='player-button' onClick={this.toggleReveal}><Icon id='eye-slash' icon={VisibilityOffIcon} /></button>}
               <a title={intl.formatMessage(messages.download)} aria-label={intl.formatMessage(messages.download)} className='video-player__download__icon player-button' href={this.props.src} download>
                 <Icon id={'download'} icon={DownloadIcon} />
