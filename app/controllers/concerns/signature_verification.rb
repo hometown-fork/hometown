@@ -155,14 +155,14 @@ module SignatureVerification
   def build_signed_string(include_query_string: true)
     signed_headers.map do |signed_header|
       case signed_header
-      when Request::REQUEST_TARGET
+      when HttpSignatureDraft::REQUEST_TARGET
         if include_query_string
-          "#{Request::REQUEST_TARGET}: #{request.method.downcase} #{request.original_fullpath}"
+          "#{HttpSignatureDraft::REQUEST_TARGET}: #{request.method.downcase} #{request.original_fullpath}"
         else
           # Current versions of Mastodon incorrectly omit the query string from the (request-target) pseudo-header.
           # Therefore, temporarily support such incorrect signatures for compatibility.
           # TODO: remove eventually some time after release of the fixed version
-          "#{Request::REQUEST_TARGET}: #{request.method.downcase} #{request.path}"
+          "#{HttpSignatureDraft::REQUEST_TARGET}: #{request.method.downcase} #{request.path}"
         end
       when '(created)'
         raise SignatureVerificationError, 'Invalid pseudo-header (created) for rsa-sha256' unless signature_algorithm == 'hs2019'
