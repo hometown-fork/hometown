@@ -44,15 +44,6 @@
   display: none;
 }
 
-// app/views/statuses/_simple_status.html.haml
-// Set width and height for the local-only indicator
-.status__action-bar-button.icon-button:has(.fw.fa-chain-broken) {
-  font-size: 18px;
-  width: 23.1429px;
-  height: 23.1429px;
-  line-height: 23.15px;
-}
-
 // app/javascript/mastodon/features/compose/components/poll_form.jsx
 // Add some custom styling for the "multiple choice" selection button
 .compose-form__poll-wrapper .is-multiple-toggle {
