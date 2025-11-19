@@ -5,6 +5,21 @@
   color: inherit;
 }
 
+.account__header {
+  h1 {
+    div {
+      display: flex;
+
+      a, span {
+        display: inline-flex;
+      }
+    }
+  }
+  .account-header__open-in-new__icon > svg {
+    height: 20px;
+  }
+}
+
 // app/javascript/mastodon/features/ui/components/navigation_panel.jsx
 // We hide the logo from the sidebar. It's kept in the JSX, to keep the modifications of the React
 // codebase as small as possible.

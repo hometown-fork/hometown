@@ -4,17 +4,18 @@ import { useCallback } from 'react';
 import { FormattedMessage, defineMessages, useIntl } from 'react-intl';
 
 import classNames from 'classnames';
-import { Permalink } from 'mastodon/components/permalink';
 
 import {
   followAccount,
   unblockAccount,
   unmuteAccount,
 } from 'mastodon/actions/accounts';
+
 import { openModal } from 'mastodon/actions/modal';
 import { Avatar } from 'mastodon/components/avatar';
 import { Button } from 'mastodon/components/button';
 import { DisplayName } from 'mastodon/components/display_name';
+import { Permalink } from 'mastodon/components/permalink';
 import { ShortNumber } from 'mastodon/components/short_number';
 import { autoPlayGif, me } from 'mastodon/initial_state';
 import type { Account } from 'mastodon/models/account';

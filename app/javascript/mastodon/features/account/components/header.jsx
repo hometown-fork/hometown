@@ -14,6 +14,7 @@ import LockIcon from '@/material-icons/400-24px/lock.svg?react';
 import MoreHorizIcon from '@/material-icons/400-24px/more_horiz.svg?react';
 import NotificationsIcon from '@/material-icons/400-24px/notifications.svg?react';
 import NotificationsActiveIcon from '@/material-icons/400-24px/notifications_active-fill.svg?react';
+import OpenInNewIcon from '@/material-icons/400-24px/open_in_new.svg?react';
 import ShareIcon from '@/material-icons/400-24px/share.svg?react';
 import { Avatar } from 'mastodon/components/avatar';
 import { Badge, AutomatedBadge, GroupBadge } from 'mastodon/components/badge';
@@ -437,7 +438,9 @@ class Header extends ImmutablePureComponent {
 
           <div className='account__header__tabs__name'>
             <h1>
-              <a href={account.get('url')} target='_blank' rel='noopener noreferrer'><span dangerouslySetInnerHTML={displayNameHtml} /></a>{isRemote ? <span> <IconButton icon='external-link' size={14} onClick={this.handleDisplayNameClick} /></span> : null}
+              <div>
+                <a href={account.get('url')} target='_blank' rel='noopener noreferrer'><span dangerouslySetInnerHTML={displayNameHtml} /></a>{isRemote ? <span> <IconButton className="account-header__open-in-new__icon" icon='open_in_new' iconComponent={OpenInNewIcon} onClick={this.handleDisplayNameClick} /></span> : null}
+              </div>
               <small>
                 <span>@{username}<span className='invisible'>@{domain}</span></span>
                 <DomainPill username={username} domain={domain} isSelf={me === account.get('id')} />
