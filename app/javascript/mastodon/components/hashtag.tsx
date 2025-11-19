@@ -9,7 +9,7 @@ import type Immutable from 'immutable';
 
 import { Sparklines, SparklinesCurve } from 'react-sparklines';
 
-import { Permalink } from 'mastodon/components/permalink';
+import { Link } from 'react-router-dom';
 import { ShortNumber } from 'mastodon/components/short_number';
 import { Skeleton } from 'mastodon/components/skeleton';
 
@@ -103,7 +103,7 @@ export const Hashtag: React.FC<HashtagProps> = ({
 }) => (
   <div className={classNames('trends__item', className)}>
     <div className='trends__item__name'>
-      <Permalink to={to} href={href}>
+      <Link to={to}>
         {name ? (
           <>
             #<span>{name}</span>
@@ -111,7 +111,7 @@ export const Hashtag: React.FC<HashtagProps> = ({
         ) : (
           <Skeleton width={50} />
         )}
-      </Permalink>
+      </Link>
 
       {description ? (
         <span>{description}</span>
