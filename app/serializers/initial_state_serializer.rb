@@ -52,11 +52,11 @@ class InitialStateSerializer < ActiveModel::Serializer
     store = {}
 
     if object.current_account
-      store[:me]                = object.current_account.id.to_s
-      store[:default_privacy]   = object.visibility || object_account_user.setting_default_privacy
-      store[:default_sensitive] = object_account_user.setting_default_sensitive
+      store[:me]                 = object.current_account.id.to_s
+      store[:default_privacy]    = object.visibility || object_account_user.setting_default_privacy
+      store[:default_sensitive]  = object_account_user.setting_default_sensitive
       store[:default_federation] = object_account_user.setting_default_federation
-      store[:default_language]  = object_account_user.preferred_posting_language
+      store[:default_language]   = object_account_user.preferred_posting_language
     end
 
     store[:text] = object.text if object.text

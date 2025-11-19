@@ -198,8 +198,4 @@ class Auth::SessionsController < Devise::SessionsController
       format.all { super }
     end
   end
-
-  def second_factor_attempts_key(user)
-    "2fa_auth_attempts:#{user.id}:#{Time.now.utc.hour}"
-  end
 end

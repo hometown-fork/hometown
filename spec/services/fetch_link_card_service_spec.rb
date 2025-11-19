@@ -199,14 +199,6 @@ RSpec.describe FetchLinkCardService do
       end
     end
 
-    context 'with a URL of a page in ISO-8859-1 encoding, that charlock_holmes cannot detect' do
-      let(:status) { Fabricate(:status, text: 'Check out http://example.com/low_confidence_latin1') }
-
-      it 'decodes the HTML' do
-        expect(status.preview_card.title).to eq("Tofu á l'orange")
-      end
-    end
-
     context 'with a Japanese path URL' do
       let(:status) { Fabricate(:status, text: 'テストhttp://example.com/日本語') }
 

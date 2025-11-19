@@ -109,7 +109,7 @@ class ActivityPub::Activity::Create < ActivityPub::Activity
     attr_reader :srcs, :alts
 
     def initialize
-      super()
+      super
       @stack = []
       @srcs = []
       @alts = {}

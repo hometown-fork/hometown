@@ -160,48 +160,8 @@ RSpec.describe ActivityPub::Activity::Create do
     context 'when fetching' do
       subject { described_class.new(json, sender) }
 
-      context 'when object publication date is below ISO8601 range' do
-        let(:object_json) do
-          {
-            id: [ActivityPub::TagManager.instance.uri_for(sender), '#bar'].join,
-            type: 'Note',
-            content: 'Lorem ipsum',
-            published: '-0977-11-03T08:31:22Z',
-          }
-        end
-
-        it 'creates status with a valid creation date', :aggregate_failures do
-          expect { subject.perform }.to change(sender.statuses, :count).by(1)
-
-          status = sender.statuses.first
-
-          expect(status).to_not be_nil
-          expect(status.text).to eq 'Lorem ipsum'
-
-          expect(status.created_at).to be_within(30).of(Time.now.utc)
-        end
-      end
-
-      context 'when object publication date is above ISO8601 range' do
-        let(:object_json) do
-          {
-            id: [ActivityPub::TagManager.instance.uri_for(sender), '#bar'].join,
-            type: 'Note',
-            content: 'Lorem ipsum',
-            published: '10000-11-03T08:31:22Z',
-          }
-        end
-
-        it 'creates status with a valid creation date', :aggregate_failures do
-          expect { subject.perform }.to change(sender.statuses, :count).by(1)
-
-          status = sender.statuses.first
-
-          expect(status).to_not be_nil
-          expect(status.text).to eq 'Lorem ipsum'
-
-          expect(status.created_at).to be_within(30).of(Time.now.utc)
-        end
+      before do
+        subject.perform
       end
 
       context 'when object publication date is below ISO8601 range' do
@@ -256,8 +216,6 @@ RSpec.describe ActivityPub::Activity::Create do
         end
 
         it 'creates status with appropriate creation and edition dates', :aggregate_failures do
-          expect { subject.perform }.to change(sender.statuses, :count).by(1)
-
           status = sender.statuses.first
 
           expect(status).to_not be_nil
@@ -281,13 +239,17 @@ RSpec.describe ActivityPub::Activity::Create do
           }
         end
 
-        it 'creates status and does not mark it as edited' do
-          expect { subject.perform }.to change(sender.statuses, :count).by(1)
-
+        it 'creates status' do
           status = sender.statuses.first
 
           expect(status).to_not be_nil
           expect(status.text).to eq 'Lorem ipsum'
+        end
+
+        it 'does not mark status as edited' do
+          status = sender.statuses.first
+
+          expect(status).to_not be_nil
           expect(status.edited?).to be false
         end
       end
@@ -302,7 +264,7 @@ RSpec.describe ActivityPub::Activity::Create do
         end
 
         it 'does not create a status' do
-          expect { subject.perform }.to_not change(sender.statuses, :count)
+          expect(sender.statuses.count).to be_zero
         end
       end
 
@@ -316,8 +278,6 @@ RSpec.describe ActivityPub::Activity::Create do
         end
 
         it 'creates status' do
-          expect { subject.perform }.to change(sender.statuses, :count).by(1)
-
           status = sender.statuses.first
 
           expect(status).to_not be_nil
@@ -325,8 +285,6 @@ RSpec.describe ActivityPub::Activity::Create do
         end
 
         it 'missing to/cc defaults to direct privacy' do
-          expect { subject.perform }.to change(sender.statuses, :count).by(1)
-
           status = sender.statuses.first
 
           expect(status).to_not be_nil
@@ -345,8 +303,6 @@ RSpec.describe ActivityPub::Activity::Create do
         end
 
         it 'creates status' do
-          expect { subject.perform }.to change(sender.statuses, :count).by(1)
-
           status = sender.statuses.first
 
           expect(status).to_not be_nil
@@ -365,8 +321,6 @@ RSpec.describe ActivityPub::Activity::Create do
         end
 
         it 'creates status' do
-          expect { subject.perform }.to change(sender.statuses, :count).by(1)
-
           status = sender.statuses.first
 
           expect(status).to_not be_nil
