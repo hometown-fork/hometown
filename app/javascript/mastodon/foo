@@ -1,0 +1,96 @@
+components/__tests__/__snapshots__/avatar-test.jsx.snap:  style={
+components/__tests__/__snapshots__/avatar-test.jsx.snap:  style={
+components/__tests__/__snapshots__/avatar_overlay-test.jsx.snap:  style={
+components/__tests__/__snapshots__/avatar_overlay-test.jsx.snap:      style={
+components/__tests__/__snapshots__/avatar_overlay-test.jsx.snap:      style={
+components/animated_number.tsx:              style={{
+components/autosuggest_input.jsx:              <div className='autosuggest-textarea__suggestions' style={{ width: this.input?.clientWidth }}>
+components/autosuggest_textarea.jsx:            <div className='autosuggest-textarea__suggestions' style={{ width: textareaRef.current?.clientWidth }}>
+components/avatar.tsx:      style={style}
+components/avatar.tsx:          style={{ borderColor: counterBorderColor }}
+components/avatar_composite.jsx:      <div key={account.get('id')} style={style}>
+components/avatar_composite.jsx:      <div className='account__avatar-composite' style={{ width: `${size}px`, height: `${size}px` }}>
+components/avatar_overlay.tsx:      style={{ width: size, height: size }}
+components/avatar_overlay.tsx:          style={{ width: `${baseSize}px`, height: `${baseSize}px` }}
+components/avatar_overlay.tsx:          style={{ width: `${overlaySize}px`, height: `${overlaySize}px` }}
+components/dropdown_selector.tsx:    <ul style={style} role='listbox' ref={nodeRef}>
+components/gifv.tsx:    <div className='gifv' style={{ position: 'relative' }}>
+components/gifv.tsx:        style={{ position: loading ? 'absolute' : 'static', top: 0, left: 0 }}
+components/hashtag.tsx:            <SparklinesCurve style={{ fill: 'none' }} />
+components/icon_button.tsx:        style={style}
+components/intersection_observer_article.jsx:          style={{ height: `${this.height || cachedHeight}px`, opacity: 0, overflow: 'hidden' }}
+components/load_more.tsx:      style={{ visibility: visible ? 'visible' : 'hidden' }}
+components/media_attachments.jsx:      <div className='media-gallery' style={{ height, width }} />
+components/media_attachments.jsx:      <div className='video-player' style={{ height, width }} />
+components/media_attachments.jsx:      <div className='audio-player' style={{ height, width }} />
+components/media_gallery.jsx:          <a className='media-gallery__item-thumbnail' href={attachment.get('remote_url') || attachment.get('url')} style={{ cursor: 'pointer' }} title={description} lang={lang} target='_blank' rel='noopener noreferrer'>
+components/media_gallery.jsx:            style={{ objectPosition: `${x}% ${y}%` }}
+components/media_gallery.jsx:      <div className={`media-gallery media-gallery--layout-${size}`} style={style} ref={this.handleRef}>
+components/modal_root.jsx:        <div className='modal-root' ref={this.setRef} style={{ opacity: 0 }} />
+components/modal_root.jsx:        <div style={{ pointerEvents: visible ? 'auto' : 'none' }}>
+components/modal_root.jsx:          <div role='presentation' className='modal-root__overlay' onClick={onClose} style={{ backgroundColor: backgroundColor ? `rgba(${backgroundColor.r}, ${backgroundColor.g}, ${backgroundColor.b}, 0.9)` : null }} />
+components/picture_in_picture_placeholder.jsx:      <div className='picture-in-picture-placeholder' style={{ aspectRatio }} role='button' tabIndex={0} onClick={this.handleClick}>
+components/poll.jsx:          <Motion defaultStyle={{ width: 0 }} style={{ width: spring(percent, { stiffness: 180, damping: 12 }) }}>
+components/poll.jsx:              <span className={classNames('poll__chart', { leading })} style={{ width: `${width}%` }} />
+components/skeleton.tsx:  <span className='skeleton' style={{ width, height }}>
+components/status.jsx:      <div className='media-gallery' style={{ aspectRatio: this.getAttachmentAspectRatio() }} />
+components/status.jsx:      <div className='video-player' style={{ aspectRatio: this.getAttachmentAspectRatio() }} />
+components/status.jsx:      <div className='audio-player' style={{ aspectRatio: this.getAttachmentAspectRatio() }} />
+features/account/components/account_note.jsx:      <span aria-live='polite' role='status' className='inline-alert' style={{ opacity: show ? 1 : 0 }}>
+features/account_gallery/components/media_item.tsx:        style={{ objectPosition: `${x}% ${y}%` }}
+features/audio/index.jsx:      <div className={classNames('audio-player', { editable, inactive: !revealed, 'media-missing-description': !alt })} ref={this.setPlayerRef} style={{ backgroundColor: this._getBackgroundColor(), color: this._getForegroundColor(), aspectRatio: '16 / 9' }} onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeave} tabIndex={0} onKeyDown={this.handleKeyDown}>
+features/audio/index.jsx:          style={{ width: '100%', position: 'absolute', top: 0, left: 0 }}
+features/audio/index.jsx:          style={{
+features/audio/index.jsx:          <div className='video-player__seek__buffer' style={{ width: `${buffer}%` }} />
+features/audio/index.jsx:          <div className='video-player__seek__progress' style={{ width: `${progress}%`, backgroundColor: this._getAccentColor() }} />
+features/audio/index.jsx:            style={{ left: `${progress}%`, backgroundColor: this._getAccentColor() }}
+features/audio/index.jsx:                <div className='video-player__volume__current' style={{ width: `${muted ? 0 : volume * 100}%`, backgroundColor: this._getAccentColor() }} />
+features/audio/index.jsx:                  style={{ left: `${muted ? 0 : volume * 100}%`, backgroundColor: this._getAccentColor() }}
+features/compose/components/emoji_picker_dropdown.jsx:      <div className='emoji-picker-dropdown__modifiers__menu' style={{ display: active ? 'block' : 'none' }} ref={this.setRef}>
+features/compose/components/emoji_picker_dropdown.jsx:      return <div style={{ width: 299 }} />;
+features/compose/components/emoji_picker_dropdown.jsx:      <div className={classNames('emoji-picker-dropdown__menu', { selecting: modifierOpen })} style={style} ref={this.setRef}>
+features/compose/components/emoji_picker_dropdown.jsx:            <div {...props} style={{ ...props.style }}>
+features/compose/components/poll_button.jsx:          style={iconStyle}
+features/compose/components/text_icon_button.jsx:        aria-controls={ariaControls} style={iconStyle}
+features/compose/components/upload.tsx:      style={style}
+features/compose/components/upload.tsx:        style={{
+features/compose/components/upload_button.jsx:        <IconButton icon='paperclip' iconComponent={PhotoLibraryIcon} title={message} disabled={disabled} onClick={this.handleClick} className='compose-form__upload-button-icon' size={18} inverted style={iconStyle} />
+features/compose/components/upload_button.jsx:          <span style={{ display: 'none' }}>{message}</span>
+features/compose/components/upload_button.jsx:            style={{ display: 'none' }}
+features/compose/components/upload_progress.jsx:          <Motion defaultStyle={{ width: 0 }} style={{ width: spring(progress) }}>
+features/compose/components/upload_progress.jsx:              <div className='upload-progress__tracker' style={{ width: `${width}%` }} />
+features/compose/components/warning.jsx:      <Motion defaultStyle={{ opacity: 0, scaleX: 0.85, scaleY: 0.75 }} style={{ opacity: spring(1, { damping: 35, stiffness: 400 }), scaleX: spring(1, { damping: 35, stiffness: 400 }), scaleY: spring(1, { damping: 35, stiffness: 400 }) }}>
+features/compose/components/warning.jsx:          <div className='compose-form__warning' style={{ opacity: opacity, transform: `scale(${scaleX}, ${scaleY})` }}>
+features/compose/index.jsx:            <Motion defaultStyle={{ x: -100 }} style={{ x: spring(showSearch ? 0 : -100, { stiffness: 210, damping: 20 }) }}>
+features/compose/index.jsx:                <div className='drawer__inner darker' style={{ transform: `translateX(${x}%)`, visibility: x === -100 ? 'hidden' : 'visible' }}>
+features/getting_started/components/announcements.jsx:      <button className={classNames('reactions-bar__item', { active: reaction.get('me') })} onClick={this.handleClick} onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeave} title={`:${shortCode}:`} style={this.props.style}>
+features/getting_started/components/announcements.jsx:                style={{ transform: `scale(${style.scale})`, position: style.scale < 0.5 ? 'absolute' : 'static' }}
+features/interaction_modal/index.jsx:          style={{display: 'none'}}
+features/list_editor/components/search.jsx:          <span style={{ display: 'none' }}>{intl.formatMessage(messages.search)}</span>
+features/list_editor/index.jsx:          <Motion defaultStyle={{ x: -100 }} style={{ x: spring(showSearch ? 0 : -100, { stiffness: 210, damping: 20 }) }}>
+features/list_editor/index.jsx:              <div className='drawer__inner backdrop' style={{ transform: x === 0 ? null : `translateX(${x}%)`, visibility: x === -100 ? 'hidden' : 'visible' }}>
+features/lists/components/new_list_form.jsx:          <span style={{ display: 'none' }}>{label}</span>
+features/status/components/card.jsx:        style={{ aspectRatio: '16 / 9' }}
+features/status/components/card.jsx:    const thumbnail = <img src={card.get('image')} alt={thumbnailDescription} title={thumbnailDescription} lang={language} style={thumbnailStyle} onLoad={this.handleImageLoad} className='status-card__image-image' />;
+features/status/components/detailed_status.tsx:    <div style={outerStyle}>
+features/ui/components/focal_point_modal.jsx:      <div className='modal-root__modal report-modal' style={{ maxWidth: 960 }}>
+features/ui/components/focal_point_modal.jsx:                  <span style={{ display: 'none' }}>{intl.formatMessage(messages.chooseImage)}</span>
+features/ui/components/focal_point_modal.jsx:                    style={{ display: 'none' }}
+features/ui/components/focal_point_modal.jsx:                  <div style={{ width: previewWidth, height: previewHeight, backgroundImage: `url(${media.get('preview_url')})`, backgroundSize: 'cover', backgroundPosition: `${x * 100}% ${y * 100}%` }} />
+features/ui/components/focal_point_modal.jsx:                <div className='focal-point__reticle' style={{ top: `${y * 100}%`, left: `${x * 100}%` }} />
+features/ui/components/image_loader.jsx:            <div className='loading-bar__container' style={{ width: this.state.width || width }}>
+features/ui/components/media_modal.jsx:            style={swipeableViewsStyle}
+features/ui/components/upload_area.jsx:      <Motion defaultStyle={{ backgroundOpacity: 0, backgroundScale: 0.95 }} style={{ backgroundOpacity: spring(active ? 1 : 0, { stiffness: 150, damping: 15 }), backgroundScale: spring(active ? 1 : 0.95, { stiffness: 200, damping: 3 }) }}>
+features/ui/components/upload_area.jsx:          <div className='upload-area' style={{ visibility: active ? 'visible' : 'hidden', opacity: backgroundOpacity }}>
+features/ui/components/upload_area.jsx:              <div className='upload-area__background' style={{ transform: `scale(${backgroundScale})` }} />
+features/ui/components/zoomable_image.jsx:        style={{ overflow, cursor, userSelect: 'none' }}
+features/ui/components/zoomable_image.jsx:          style={{
+features/ui/util/reduced_motion.jsx:      <Motion style={style} defaultStyle={defaultStyle}>
+features/video/index.jsx:      <div style={{ aspectRatio }}>
+features/video/index.jsx:          style={{ aspectRatio }}
+features/video/index.jsx:            style={{ width: '100%' }}
+features/video/index.jsx:              <div className='video-player__seek__buffer' style={{ width: `${buffer}%` }} />
+features/video/index.jsx:              <div className='video-player__seek__progress' style={{ width: `${progress}%` }} />
+features/video/index.jsx:                style={{ left: `${progress}%` }}
+features/video/index.jsx:                  <div className='video-player__volume__current' style={{ width: `${muted ? 0 : volume * 100}%` }} />
+features/video/index.jsx:                    style={{ left: `${muted ? 0 : volume * 100}%` }}
