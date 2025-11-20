@@ -76,8 +76,13 @@ class Request
     @http_client = options.delete(:http_client)
     @allow_local = options.delete(:allow_local)
     @full_path   = !options.delete(:omit_query_string)
-    @options     = options.merge(socket_class: use_proxy? || @allow_local ? ProxySocket : Socket)
-    @options     = @options.merge(timeout_class: PerOperationWithDeadline, timeout_options: TIMEOUT)
+    @options     = {
+      follow: {
+        max_hops: 3,
+        on_redirect: ->(response, request) { re_sign_on_redirect(response, request) },
+      },
+      socket_class: use_proxy? || @allow_local ? ProxySocket : Socket,
+    }.merge(options)
     @options     = @options.merge(proxy_url) if use_proxy?
     @headers     = {}
 
@@ -156,14 +161,6 @@ class Request
 
   def set_digest!
     @headers['Digest'] = "SHA-256=#{Digest::SHA256.base64digest(@options[:body])}"
-  end
-
-  def request_target
-    if @url.query.nil? || !@full_path
-      "#{@verb} #{@url.path}"
-    else
-      "#{@verb} #{@url.path}?#{@url.query}"
-    end
   end
 
   def signature
