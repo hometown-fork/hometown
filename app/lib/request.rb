@@ -148,7 +148,6 @@ class Request
   private
 
   def set_common_headers!
-    @headers[HttpSignatureDraft::REQUEST_TARGET] = request_target
     @headers['User-Agent']      = Mastodon::Version.user_agent
     @headers['Host']            = @url.host
     @headers['Date']            = Time.now.utc.httpdate
