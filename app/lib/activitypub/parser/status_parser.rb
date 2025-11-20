@@ -42,6 +42,8 @@ class ActivityPub::Parser::StatusParser
   def spoiler_text
     if @object['summary'].present?
       @object['summary']
+    elsif @object['preview'].present? && @object['preview']['type'] == 'Note' && @object['preview']['content'].present?
+      @object['preview']['content']
     elsif summary_language_map?
       @object['summaryMap'].values.first
     end

@@ -81,7 +81,9 @@ class StatusContent extends PureComponent {
     // from react-router
     match: PropTypes.object.isRequired,
     location: PropTypes.object.isRequired,
-    history: PropTypes.object.isRequired
+    history: PropTypes.object.isRequired,
+    // from hometown
+    statusActivityObjectType: PropTypes.string,
   };
 
   _updateStatusLinks () {
@@ -231,7 +233,7 @@ class StatusContent extends PureComponent {
     const { status, intl, statusContent } = this.props;
 
     const renderReadMore = this.props.onClick && status.get('collapsed');
-    const renderReadArticle = status.get('activity_pub_type') === 'Article' && status.get('collapsed') && !this.props.onClick;
+    const renderReadArticle = status.get('activity_pub_type') === 'Article' && !status.get('collapsed') && this.props.onClick;
     const contentLocale = intl.locale.replace(/[_-].*/, '');
     const targetLanguages = this.props.languages?.get(status.get('language') || 'und');
     const renderTranslate = this.props.onTranslate && this.props.identity.signedIn && ['public', 'unlisted'].includes(status.get('visibility')) && status.get('search_index').trim().length > 0 && targetLanguages?.includes(contentLocale);
@@ -263,7 +265,17 @@ class StatusContent extends PureComponent {
       <PollContainer pollId={status.get('poll')} lang={language} />
     );
 
-    if (this.props.onClick) {
+    if (this.props.statusActivityObjectType === 'Article') {
+      const title = status.get('title');
+      const summary = status.get('spoilerHtml');
+      return (
+        <>
+          {title && <div className='status__content article'><h2>Title: {status.get('title')}</h2></div>}
+          {summary && <div className='status__content article'><em>Summary: {status.get('spoiler_text')}</em></div>}
+          {readArticleButton}
+        </>
+      );
+    } else if (this.props.onClick) {
       return (
         <>
           <div className={classNames} ref={this.setRef} tabIndex={0} onMouseDown={this.handleMouseDown} onMouseUp={this.handleMouseUp} key='status-content' onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeave}>
@@ -274,20 +286,18 @@ class StatusContent extends PureComponent {
           </div>
 
           {readMoreButton}
+
+          {readArticleButton}
         </>
       );
     } else {
       return (
-        <>
-          <div className={classNames} ref={this.setRef} tabIndex={0} onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeave}>
-            <div className='status__content__text status__content__text--visible translate' lang={language} dangerouslySetInnerHTML={content} />
+        <div className={classNames} ref={this.setRef} tabIndex={0} onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeave}>
+          <div className='status__content__text status__content__text--visible translate' lang={language} dangerouslySetInnerHTML={content} />
 
-            {poll}
-            {translateButton}
-          </div>
-
-          {readArticleButton}
-        </>
+          {poll}
+          {translateButton}
+        </div>
       );
     }
   }

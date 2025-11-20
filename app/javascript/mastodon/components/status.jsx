@@ -537,6 +537,7 @@ class Status extends ImmutablePureComponent {
       statusAvatar = <AvatarOverlay account={status.get('account')} friend={account} />;
     }
 
+    const statusActivityObjectType = status.get('activity_pub_type');
     const {statusContentProps, hashtagBar} = getHashtagBarForStatus(status);
     const expanded = (!matchedFilters || this.state.showDespiteFilter) && (!status.get('hidden') || status.get('spoiler_text').length === 0);
 
@@ -566,7 +567,8 @@ class Status extends ImmutablePureComponent {
 
             {matchedFilters && <FilterWarning title={matchedFilters.join(', ')} expanded={this.state.showDespiteFilter} onClick={this.handleFilterToggle} />}
 
-            {(status.get('spoiler_text').length > 0 && (!matchedFilters || this.state.showDespiteFilter)) && <ContentWarning text={status.getIn(['translation', 'spoilerHtml']) || status.get('spoilerHtml')} expanded={expanded} onClick={this.handleExpandedToggle} />}
+            {(statusActivityObjectType !== 'Article' && status.get('spoiler_text').length > 0 && (!matchedFilters || this.state.showDespiteFilter)) && <ContentWarning text={status.getIn(['translation', 'spoilerHtml']) || status.get('spoilerHtml')} expanded={expanded} onClick={this.handleExpandedToggle} />}
+            {(statusActivityObjectType === 'Article' && (!matchedFilters || this.state.showDespiteFilter)) && <StatusContent status={status} onClick={this.handleClick} onTranslate={this.handleTranslate} collapsible onCollapsedToggle={this.handleCollapsedToggle} statusActivityObjectType={statusActivityObjectType} {...statusContentProps} />}
 
             {expanded && (
               <>
@@ -576,12 +578,12 @@ class Status extends ImmutablePureComponent {
                   onTranslate={this.handleTranslate}
                   collapsible
                   onCollapsedToggle={this.handleCollapsedToggle}
+                  statusActivityObjectType={statusActivityObjectType}
                   {...statusContentProps}
                 />
 
-                {status.get('activity_pub_type') === 'Article' ? null : media}
+                {statusActivityObjectType === 'Article' ? null : media}
 
-                {media}
                 {hashtagBar}
               </>
             )}

@@ -10,11 +10,13 @@
     div {
       display: flex;
 
-      a, span {
+      a,
+      span {
         display: inline-flex;
       }
     }
   }
+
   .account-header__open-in-new__icon > svg {
     height: 20px;
   }
@@ -66,4 +68,16 @@
   display: inline-flex;
   align-items: center;
   gap: 10px; // same as the padding
+}
+
+.status__content.article {
+  h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+
+  em {
+    font-style: italic;
+  }
 }
