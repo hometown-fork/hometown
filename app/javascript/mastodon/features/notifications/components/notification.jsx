@@ -459,7 +459,7 @@ class Notification extends ImmutablePureComponent {
     const { notification } = this.props;
     const account          = notification.get('account');
     const displayNameHtml  = { __html: account.get('display_name_html') };
-    const link             = <bdi><Permalink className='notification__display-name' to={`/@${account.get('acct')}`} title={account.get('acct')} data-hover-card-account={account.get('id')} href={account.get('url')} to={`/@${account.get('acct')}`} dangerouslySetInnerHTML={displayNameHtml} /></bdi>;
+    const link             = <bdi><Permalink className='notification__display-name' to={`/@${account.get('acct')}`} title={account.get('acct')} data-hover-card-account={account.get('id')} href={account.get('url')} dangerouslySetInnerHTML={displayNameHtml} /></bdi>;
 
     switch(notification.get('type')) {
     case 'follow':

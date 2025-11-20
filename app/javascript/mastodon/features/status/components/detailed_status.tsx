@@ -53,6 +53,7 @@ export const DetailedStatus: React.FC<{
   pictureInPicture: any;
   onToggleHidden?: (status: any) => void;
   onToggleMediaVisibility?: () => void;
+  statusActivityObjectType?: string;
 }> = ({
   status,
   onOpenMedia,
@@ -66,6 +67,7 @@ export const DetailedStatus: React.FC<{
   pictureInPicture,
   onToggleMediaVisibility,
   onToggleHidden,
+  statusActivityObjectType,
 }) => {
   const properStatus = status?.get('reblog') ?? status;
   const [height, setHeight] = useState(0);
@@ -292,7 +294,9 @@ export const DetailedStatus: React.FC<{
     status as StatusLike,
   );
   const expanded =
-    !status.get('hidden') || status.get('spoiler_text').length === 0;
+    !status.get('hidden') ||
+    status.get('spoiler_text').length === 0 ||
+    statusActivityObjectType === 'Article';
 
   return (
     <div style={outerStyle}>
@@ -330,18 +334,25 @@ export const DetailedStatus: React.FC<{
           )}
         </Permalink>
 
-        {status.get('spoiler_text').length > 0 && (
-          <ContentWarning
-            text={
-              status.getIn(['translation', 'spoilerHtml']) ||
-              status.get('spoilerHtml')
-            }
-            expanded={expanded}
-            onClick={handleExpandedToggle}
-          />
+        {statusActivityObjectType !== 'Article' &&
+          status.get('spoiler_text').length > 0 && (
+            <ContentWarning
+              text={
+                status.getIn(['translation', 'spoilerHtml']) ||
+                status.get('spoilerHtml')
+              }
+              expanded={expanded}
+              onClick={handleExpandedToggle}
+            />
+          )}
+
+        {statusActivityObjectType === 'Article' && status.get('title') && (
+          <div className='status__content article'>
+            <h2>Title: {status.get('title')}</h2>
+          </div>
         )}
 
-        {expanded && (
+        {statusActivityObjectType !== 'Article' && expanded && (
           <>
             <StatusContent
               status={status}
@@ -352,6 +363,16 @@ export const DetailedStatus: React.FC<{
             {media}
             {hashtagBar}
           </>
+        )}
+
+        {statusActivityObjectType === 'Article' && expanded && (
+          <div className='status__content article'>
+            <StatusContent
+              status={status}
+              onTranslate={handleTranslate}
+              {...(statusContentProps as any)}
+            />
+          </div>
         )}
 
         <div className='detailed-status__meta'>
