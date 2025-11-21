@@ -16,13 +16,14 @@ class InitialStateSerializer < ActiveModel::Serializer
     StatusLengthValidator::MAX_CHARS
   end
 
-  def meta
+  def meta # rubocop:disable Metrics/AbcSize
     store = default_meta_store
 
     if object.current_account
       store[:me]                = object.current_account.id.to_s
       store[:boost_modal]       = object_account_user.setting_boost_modal
       store[:delete_modal]      = object_account_user.setting_delete_modal
+      store[:missing_alt_text_modal] = object_account_user.settings['web.missing_alt_text_modal']
       store[:auto_play_gif]     = object_account_user.setting_auto_play_gif
       store[:display_media]     = object_account_user.setting_display_media
       store[:expand_spoilers]   = object_account_user.setting_expand_spoilers
@@ -97,7 +98,7 @@ class InitialStateSerializer < ActiveModel::Serializer
       activity_api_enabled: Setting.activity_api_enabled,
       admin: object.admin&.id&.to_s,
       domain: Addressable::IDNA.to_unicode(instance_presenter.domain),
-      limited_federation_mode: Rails.configuration.x.limited_federation_mode,
+      limited_federation_mode: Rails.configuration.x.mastodon.limited_federation_mode,
       locale: I18n.locale,
       mascot: instance_presenter.mascot&.file&.url,
       profile_directory: Setting.profile_directory,
@@ -114,6 +115,7 @@ class InitialStateSerializer < ActiveModel::Serializer
       trends_as_landing_page: Setting.trends_as_landing_page,
       trends_enabled: Setting.trends,
       version: instance_presenter.version,
+      terms_of_service_enabled: TermsOfService.current.present?,
     }
   end
 

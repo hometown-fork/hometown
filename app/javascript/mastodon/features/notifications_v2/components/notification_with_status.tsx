@@ -12,7 +12,8 @@ import {
 } from 'mastodon/actions/statuses';
 import type { IconProp } from 'mastodon/components/icon';
 import { Icon } from 'mastodon/components/icon';
-import Status from 'mastodon/containers/status_container';
+import { StatusQuoteManager } from 'mastodon/components/status_quoted';
+import { getStatusHidden } from 'mastodon/selectors/filters';
 import { useAppSelector, useAppDispatch } from 'mastodon/store';
 
 import { DisplayedName } from './displayed_name';
@@ -48,6 +49,12 @@ export const NotificationWithStatus: React.FC<{
     (state) => state.statuses.getIn([statusId, 'visibility']) === 'direct',
   );
 
+  const isFiltered = useAppSelector(
+    (state) =>
+      statusId &&
+      getStatusHidden(state, { id: statusId, contextType: 'notifications' }),
+  );
+
   const handlers = useMemo(
     () => ({
       open: () => {
@@ -73,7 +80,7 @@ export const NotificationWithStatus: React.FC<{
     [dispatch, statusId],
   );
 
-  if (!statusId) return null;
+  if (!statusId || isFiltered) return null;
 
   return (
     <HotKeys handlers={handlers}>
@@ -95,8 +102,7 @@ export const NotificationWithStatus: React.FC<{
           {label}
         </div>
 
-        <Status
-          // @ts-expect-error -- <Status> is not yet typed
+        <StatusQuoteManager
           id={statusId}
           contextType='notifications'
           withDismiss

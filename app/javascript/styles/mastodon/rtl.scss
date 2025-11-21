@@ -1,3 +1,6 @@
+@use 'functions' as *;
+@use 'variables' as *;
+
 body.rtl {
   direction: rtl;
 
@@ -33,6 +36,10 @@ body.rtl {
 
   .react-swipeable-view-container > * {
     direction: rtl;
+  }
+
+  .column-back-button__icon {
+    transform: scale(-1, 1);
   }
 
   .simple_form select {

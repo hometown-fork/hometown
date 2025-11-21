@@ -53,7 +53,7 @@ class REST::InstanceSerializer < ActiveModel::Serializer
   def usage
     {
       users: {
-        active_month: object.active_user_count(4),
+        active_month: limited_federation? ? 0 : object.active_user_count(4),
       },
     }
   end
@@ -63,10 +63,13 @@ class REST::InstanceSerializer < ActiveModel::Serializer
       urls: {
         streaming: Rails.configuration.x.streaming_api_base_url,
         status: object.status_page_url,
+        about: about_url,
+        privacy_policy: privacy_policy_url,
+        terms_of_service: TermsOfService.current.present? ? terms_of_service_url : nil,
       },
 
       vapid: {
-        public_key: Rails.configuration.x.vapid_public_key,
+        public_key: Rails.configuration.x.vapid.public_key,
       },
 
       accounts: {
@@ -81,12 +84,13 @@ class REST::InstanceSerializer < ActiveModel::Serializer
       },
 
       media_attachments: {
-        supported_mime_types: MediaAttachment.supported_mime_types,
-        image_size_limit: MediaAttachment::IMAGE_LIMIT,
+        description_limit: MediaAttachment::MAX_DESCRIPTION_LENGTH,
         image_matrix_limit: Attachmentable::MAX_MATRIX_LIMIT,
-        video_size_limit: MediaAttachment::VIDEO_LIMIT,
+        image_size_limit: MediaAttachment::IMAGE_LIMIT,
+        supported_mime_types: MediaAttachment.supported_mime_types,
         video_frame_rate_limit: MediaAttachment::MAX_VIDEO_FRAME_RATE,
         video_matrix_limit: MediaAttachment::MAX_VIDEO_MATRIX_LIMIT,
+        video_size_limit: MediaAttachment::VIDEO_LIMIT,
       },
 
       polls: {
@@ -99,6 +103,8 @@ class REST::InstanceSerializer < ActiveModel::Serializer
       translation: {
         enabled: TranslationService.configured?,
       },
+
+      limited_federation: limited_federation?,
     }
   end
 
@@ -106,7 +112,9 @@ class REST::InstanceSerializer < ActiveModel::Serializer
     {
       enabled: registrations_enabled?,
       approval_required: Setting.registrations_mode == 'approved',
+      reason_required: Setting.registrations_mode == 'approved' && Setting.require_invite_text,
       message: registrations_enabled? ? nil : registrations_message,
+      min_age: Setting.min_age.presence,
       url: ENV.fetch('SSO_ACCOUNT_SIGN_UP', nil),
     }
   end
@@ -123,6 +131,10 @@ class REST::InstanceSerializer < ActiveModel::Serializer
 
   def registrations_message
     markdown.render(Setting.closed_registrations_message) if Setting.closed_registrations_message.present?
+  end
+
+  def limited_federation?
+    Rails.configuration.x.mastodon.limited_federation_mode
   end
 
   def markdown

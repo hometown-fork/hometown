@@ -27,9 +27,10 @@ RSpec.describe Admin::SystemCheck::SoftwareVersionCheck do
 
       context 'when checks are disabled' do
         around do |example|
-          ClimateControl.modify UPDATE_CHECK_URL: '' do
-            example.run
-          end
+          original = Rails.configuration.x.mastodon.software_update_url
+          Rails.configuration.x.mastodon.software_update_url = ''
+          example.run
+          Rails.configuration.x.mastodon.software_update_url = original
         end
 
         it 'returns true' do
@@ -126,7 +127,7 @@ RSpec.describe Admin::SystemCheck::SoftwareVersionCheck do
         check.message
 
         expect(Admin::SystemCheck::Message).to have_received(:new)
-          .with(:software_version_critical_check, nil, admin_software_updates_path, true)
+          .with(:software_version_critical_check, nil, admin_software_updates_path, critical: true)
       end
     end
   end

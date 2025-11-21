@@ -9,7 +9,6 @@
         indexable: Dine offentlige innlegg kan vises i søkeresultat på Mastodon. Personer som har samhandlet med innleggene dine kan finne de uansett.
         note: 'Du kan @nevne andre eller #emneknagger.'
         show_collections: Folk vil kunne bla gjennom de du følger og dine følgere. Folk du følger vil uansett se at du følger dem.
-        unlocked: Folk vil kunne følge deg uten å be om godkjenning. Fjern markeringen om du vil gjennomgå følge-forespørsler og velge om du vil akseptere eller avvise nye følgere.
       account_alias:
         acct: Spesifiser brukernavn@domene til kontoen du vil flytte fra
       account_migration:
@@ -81,7 +80,7 @@
         closed_registrations_message: Vises når det er stengt for registrering
         custom_css: Du kan bruke egendefinerte stiler på nettversjonen av Mastodon.
         mascot: Overstyrer illustrasjonen i det avanserte webgrensesnittet.
-        peers_api_enabled: En liste over domenenavn denne serveren har oppstått i fødiverset. Det finnes ikke data om du føderer med en gitt server, for akkurat det serveren din vet om. Dette brukes av tjenester som i all hovedsak innhenter føderasjonsstatistikk.
+        peers_api_enabled: En liste over domenenavn denne serveren har oppdaget i fødiverset. Dette er ikke noen indikasjon på om du fødererer med en gitt server, kun at din server vet om den. Dette brukes av tjenester som samler statistikk om fødiverset generelt.
         profile_directory: Profilkatalogen viser alle brukere som har valgt å kunne bli oppdaget.
         require_invite_text: Når registreringer krever manuell godkjenning, må du gjøre «Hvorfor vil du bli med?»-tekstinput obligatorisk i stedet for valgfritt
         site_contact_email: Hvordan mennesker får tak i deg for rettslige spørsmål eller brukerstøtte.
@@ -235,6 +234,7 @@
           warn: Skjul med en advarsel
       form_admin_settings:
         activity_api_enabled: Publiser samlet statistikk om brukeraktivitet i API
+        app_icon: App-ikon
         backups_retention_period: Brukers oppbevaringsperiode for arkiv
         bootstrap_timeline_accounts: Anbefaler alltid disse kontoene til nye brukere
         closed_registrations_message: Egendefinert melding når registrering ikke er tilgjengelig
@@ -302,6 +302,10 @@
         listable: Tillat denne emneknaggen å vises i søk og på profilmappen
         name: Emneknagg
         trendable: Tillat denne emneknaggen til å vises under trender
+      terms_of_service:
+        text: Bruksvilkår
+      terms_of_service_generator:
+        domain: Domene
       user:
         role: Rolle
         time_zone: Tidssone

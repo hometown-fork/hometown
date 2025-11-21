@@ -13,6 +13,7 @@ import { debounce } from 'lodash';
 import { AltTextBadge } from 'mastodon/components/alt_text_badge';
 import { NoAltTextBadge } from 'mastodon/components/no_alt_text_badge';
 import { Blurhash } from 'mastodon/components/blurhash';
+import { SpoilerButton } from 'mastodon/components/spoiler_button';
 import { formatTime } from 'mastodon/features/video';
 
 import { autoPlayGif, displayMedia, useBlurhash } from '../initial_state';
@@ -39,6 +40,7 @@ class Item extends PureComponent {
 
   state = {
     loaded: false,
+    error: false,
   };
 
   handleMouseEnter = (e) => {
@@ -82,7 +84,15 @@ class Item extends PureComponent {
     this.setState({ loaded: true });
   };
 
+<<<<<<< HEAD
   render() {
+=======
+  handleImageError = () => {
+    this.setState({ error: true });
+  };
+
+  render () {
+>>>>>>> v4.4.0
     const { attachment, lang, index, size, standalone, displayWidth, visible } = this.props;
 
     let badges = [], thumbnail;
@@ -98,6 +108,7 @@ class Item extends PureComponent {
       height = 50;
     }
 
+<<<<<<< HEAD
     const hasMediaDescription = attachment.get('description')?.length > 0;
     if (hasMediaDescription) {
       badges.push(<AltTextBadge key='alt' description={attachment.get('description')} />);
@@ -105,12 +116,23 @@ class Item extends PureComponent {
       badges.push(<NoAltTextBadge key='no-alt' />);
     }
 
+=======
+>>>>>>> v4.4.0
     const description = attachment.getIn(['translation', 'description']) || attachment.get('description');
+
+    if (description?.length > 0) {
+      badges.push(<AltTextBadge key='alt' description={description} />);
+    }
 
     if (attachment.get('type') === 'unknown') {
       return (
+<<<<<<< HEAD
         <div className={classNames('media-gallery__item', { standalone, 'media-gallery__item--tall': height === 100, 'media-gallery__item--wide': width === 100, 'media-missing-description': !hasMediaDescription })} key={attachment.get('id')}>
           <a className='media-gallery__item-thumbnail' href={attachment.get('remote_url') || attachment.get('url')} style={{ cursor: 'pointer' }} title={description} lang={lang} target='_blank' rel='noopener noreferrer'>
+=======
+        <div className={classNames('media-gallery__item', { standalone, 'media-gallery__item--tall': height === 100, 'media-gallery__item--wide': width === 100 })} key={attachment.get('id')}>
+          <a className='media-gallery__item-thumbnail' href={attachment.get('remote_url') || attachment.get('url')} style={{ cursor: 'pointer' }} title={description} lang={lang} target='_blank' rel='noopener'>
+>>>>>>> v4.4.0
             <Blurhash
               hash={attachment.get('blurhash')}
               className='media-gallery__preview'
@@ -142,17 +164,17 @@ class Item extends PureComponent {
           href={attachment.get('remote_url') || originalUrl}
           onClick={this.handleClick}
           target='_blank'
-          rel='noopener noreferrer'
+          rel='noopener'
         >
           <img
             src={previewUrl}
             srcSet={srcSet}
             sizes={sizes}
             alt={description}
-            title={description}
             lang={lang}
             style={{ objectPosition: `${x}% ${y}%` }}
             onLoad={this.handleImageLoad}
+            onError={this.handleImageError}
           />
         </a>
       );
@@ -171,7 +193,6 @@ class Item extends PureComponent {
           <video
             className={classNames("media-gallery__item-gifv-thumbnail", { "media-missing-description": !hasMediaDescription })}
             aria-label={description}
-            title={description}
             lang={lang}
             role='application'
             src={attachment.get('url')}
@@ -189,7 +210,7 @@ class Item extends PureComponent {
     }
 
     return (
-      <div className={classNames('media-gallery__item', { standalone, 'media-gallery__item--tall': height === 100, 'media-gallery__item--wide': width === 100 })} key={attachment.get('id')}>
+      <div className={classNames('media-gallery__item', { standalone, 'media-gallery__item--error': this.state.error, 'media-gallery__item--tall': height === 100, 'media-gallery__item--wide': width === 100 })} key={attachment.get('id')}>
         <Blurhash
           hash={attachment.get('blurhash')}
           dummy={!useBlurhash}
@@ -225,6 +246,7 @@ class MediaGallery extends PureComponent {
     visible: PropTypes.bool,
     autoplay: PropTypes.bool,
     onToggleVisibility: PropTypes.func,
+    matchedFilters: PropTypes.arrayOf(PropTypes.string),
   };
 
   state = {
@@ -295,11 +317,11 @@ class MediaGallery extends PureComponent {
   }
 
   render () {
-    const { media, lang, sensitive, defaultWidth, autoplay } = this.props;
+    const { media, lang, sensitive, defaultWidth, autoplay, matchedFilters } = this.props;
     const { visible } = this.state;
     const width = this.state.width || defaultWidth;
 
-    let children, spoilerButton;
+    let children;
 
     const style = {};
 
@@ -318,35 +340,19 @@ class MediaGallery extends PureComponent {
       children = media.map((attachment, i) => <Item key={attachment.get('id')} autoplay={autoplay} onClick={this.handleClick} attachment={attachment} index={i} lang={lang} size={size} displayWidth={width} visible={visible || uncached} />);
     }
 
-    if (uncached) {
-      spoilerButton = (
-        <button type='button' disabled className='spoiler-button__overlay'>
-          <span className='spoiler-button__overlay__label'>
-            <FormattedMessage id='status.uncached_media_warning' defaultMessage='Preview not available' />
-            <span className='spoiler-button__overlay__action'><FormattedMessage id='status.media.open' defaultMessage='Click to open' /></span>
-          </span>
-        </button>
-      );
-    } else if (!visible) {
-      spoilerButton = (
-        <button type='button' onClick={this.handleOpen} className='spoiler-button__overlay'>
-          <span className='spoiler-button__overlay__label'>
-            {sensitive ? <FormattedMessage id='status.sensitive_warning' defaultMessage='Sensitive content' /> : <FormattedMessage id='status.media_hidden' defaultMessage='Media hidden' />}
-            <span className='spoiler-button__overlay__action'><FormattedMessage id='status.media.show' defaultMessage='Click to show' /></span>
-          </span>
-        </button>
-      );
-    }
-
     return (
       <div className={`media-gallery media-gallery--layout-${size}`} style={style} ref={this.handleRef}>
         {children}
 
+<<<<<<< HEAD
         {(!visible || uncached) && (
           <div className={classNames('spoiler-button', { 'spoiler-button--click-thru': uncached })}>
             {spoilerButton}
           </div>
         )}
+=======
+        {(!visible || uncached) && <SpoilerButton uncached={uncached} sensitive={sensitive} onClick={this.handleOpen} matchedFilters={matchedFilters} />}
+>>>>>>> v4.4.0
 
         {(visible && !uncached) && (
           <div className='media-gallery__actions'>

@@ -8,11 +8,12 @@ module Mastodon
   class LengthValidationError < ValidationError; end
   class DimensionsValidationError < ValidationError; end
   class StreamValidationError < ValidationError; end
-  class FilterValidationError < ValidationError; end
   class RaceConditionError < Error; end
   class RateLimitExceededError < Error; end
   class SyntaxError < Error; end
   class InvalidParameterError < Error; end
+  class SignatureVerificationError < Error; end
+  class MalformedHeaderError < Error; end
 
   class UnexpectedResponseError < Error
     attr_reader :response
@@ -36,4 +37,11 @@ module Mastodon
       super()
     end
   end
+
+  HTTP_CONNECTION_ERRORS = [
+    HTTP::ConnectionError,
+    HTTP::Error,
+    HTTP::TimeoutError,
+    OpenSSL::SSL::SSLError,
+  ].freeze
 end

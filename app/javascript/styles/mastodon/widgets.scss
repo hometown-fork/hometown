@@ -1,3 +1,6 @@
+@use 'variables' as *;
+@use 'functions' as *;
+
 .directory {
   &__tag {
     box-sizing: border-box;
@@ -84,6 +87,7 @@
   width: 100%;
 
   .account {
+    max-width: calc(56px + 30ch);
     padding: 0;
     border: 0;
   }

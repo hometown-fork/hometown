@@ -4,7 +4,6 @@ import { parseIntFromEnvValue } from './utils.js';
 
 /**
  * @typedef RedisConfiguration
- * @property {string|undefined} namespace
  * @property {string|undefined} url
  * @property {import('ioredis').RedisOptions} options
  */
@@ -50,9 +49,9 @@ function getSentinelConfiguration(env, commonOptions) {
   return {
     db: redisDatabase,
     name: env.REDIS_SENTINEL_MASTER,
-    username: env.REDIS_USERNAME,
+    username: env.REDIS_USER,
     password: env.REDIS_PASSWORD,
-    sentinelUsername: env.REDIS_SENTINEL_USERNAME ?? env.REDIS_USERNAME,
+    sentinelUsername: env.REDIS_SENTINEL_USERNAME ?? env.REDIS_USER,
     sentinelPassword: env.REDIS_SENTINEL_PASSWORD ?? env.REDIS_PASSWORD,
     sentinels,
     ...commonOptions,
@@ -64,8 +63,6 @@ function getSentinelConfiguration(env, commonOptions) {
  * @returns {RedisConfiguration} configuration for the Redis connection
  */
 export function configFromEnv(env) {
-  const redisNamespace = env.REDIS_NAMESPACE;
-
   // These options apply for both REDIS_URL based connections and connections
   // using the other REDIS_* environment variables:
   const commonOptions = {
@@ -82,16 +79,14 @@ export function configFromEnv(env) {
   if (typeof env.REDIS_URL === 'string' && env.REDIS_URL.length > 0) {
     return {
       url: env.REDIS_URL,
-      options: commonOptions,
-      namespace: redisNamespace
+      options: commonOptions
     };
   }
 
   // If we have configuration for Redis Sentinel mode, prefer that:
   if (hasSentinelConfiguration(env)) {
     return {
-      options: getSentinelConfiguration(env, commonOptions),
-      namespace: redisNamespace
+      options: getSentinelConfiguration(env, commonOptions)
     };
   }
 
@@ -104,14 +99,13 @@ export function configFromEnv(env) {
     host: env.REDIS_HOST ?? '127.0.0.1',
     port: redisPort,
     db: redisDatabase,
-    username: env.REDIS_USERNAME,
+    username: env.REDIS_USER,
     password: env.REDIS_PASSWORD,
     ...commonOptions,
   };
 
   return {
-    options,
-    namespace: redisNamespace
+    options
   };
 }
 

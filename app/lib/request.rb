@@ -20,7 +20,7 @@ class PerOperationWithDeadline < HTTP::Timeout::PerOperation
     @read_deadline = options.fetch(:read_deadline, READ_DEADLINE)
   end
 
-  def connect(socket_class, host, port, nodelay = false)
+  def connect(socket_class, host, port, nodelay = false) # rubocop:disable Style/OptionalBooleanParameter
     @socket = socket_class.open(host, port)
     @socket.setsockopt(Socket::IPPROTO_TCP, Socket::TCP_NODELAY, 1) if nodelay
   end
@@ -75,14 +75,16 @@ class Request
     @url         = Addressable::URI.parse(url).normalize
     @http_client = options.delete(:http_client)
     @allow_local = options.delete(:allow_local)
-    @full_path   = !options.delete(:omit_query_string)
     @options     = {
       follow: {
         max_hops: 3,
         on_redirect: ->(response, request) { re_sign_on_redirect(response, request) },
       },
+    }.merge(options).merge(
       socket_class: use_proxy? || @allow_local ? ProxySocket : Socket,
-    }.merge(options)
+      timeout_class: PerOperationWithDeadline,
+      timeout_options: TIMEOUT
+    )
     @options     = @options.merge(proxy_url) if use_proxy?
     @headers     = {}
 
@@ -99,7 +101,7 @@ class Request
 
     key_id = ActivityPub::TagManager.instance.key_uri_for(actor)
     keypair = sign_with.present? ? OpenSSL::PKey::RSA.new(sign_with) : actor.keypair
-    @signing = HttpSignatureDraft.new(keypair, key_id, full_path: @full_path)
+    @signing = HttpSignatureDraft.new(keypair, key_id)
 
     self
   end
@@ -117,16 +119,10 @@ class Request
     end
 
     begin
-      # If we are using a persistent connection, we have to
-      # read every response to be able to move forward at all.
-      # However, simply calling #to_s or #flush may not be safe,
-      # as the response body, if malicious, could be too big
-      # for our memory. So we use the #body_with_limit method
-      response.body_with_limit if http_client.persistent?
-
       yield response if block_given?
     ensure
-      http_client.close unless http_client.persistent?
+      response.truncated_body if http_client.persistent? && !response.connection.finished_request?
+      http_client.close unless http_client.persistent? && response.connection.finished_request?
     end
   end
 
@@ -336,13 +332,9 @@ class Request
       def check_private_address(address, host)
         addr = IPAddr.new(address.to_s)
 
-        return if Rails.env.development? || private_address_exceptions.any? { |range| range.include?(addr) }
+        return if Rails.env.development? || Rails.configuration.x.private_address_exceptions.any? { |range| range.include?(addr) }
 
         raise Mastodon::PrivateNetworkAddressError, host if PrivateAddressCheck.private_address?(addr)
-      end
-
-      def private_address_exceptions
-        @private_address_exceptions = (ENV['ALLOWED_PRIVATE_ADDRESSES'] || '').split(/(?:\s*,\s*|\s+)/).map { |addr| IPAddr.new(addr) }
       end
     end
   end

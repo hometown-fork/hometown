@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class OauthMetadataPresenter < ActiveModelSerializers::Model
+class OAuthMetadataPresenter < ActiveModelSerializers::Model
   include RoutingHelper
 
   attributes :issuer, :authorization_endpoint, :token_endpoint,
@@ -24,6 +24,10 @@ class OauthMetadataPresenter < ActiveModelSerializers::Model
 
   def token_endpoint
     oauth_token_url
+  end
+
+  def userinfo_endpoint
+    oauth_userinfo_url
   end
 
   # As the api_v1_apps route doesn't technically conform to the specification
@@ -61,7 +65,7 @@ class OauthMetadataPresenter < ActiveModelSerializers::Model
   end
 
   def code_challenge_methods_supported
-    %w(S256)
+    doorkeeper.pkce_code_challenge_methods_supported
   end
 
   private

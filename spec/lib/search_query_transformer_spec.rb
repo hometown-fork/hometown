@@ -16,6 +16,7 @@ RSpec.describe SearchQueryTransformer do
       ['"2022-01-01"', '2022-01-01'],
       ['12345678', '12345678'],
       ['"12345678"', '12345678'],
+      ['"2024-10-31T23:47:20Z"', '2024-10-31T23:47:20Z'],
     ].each do |value, parsed|
       context "with #{operator}:#{value}" do
         let(:query) { "#{operator}:#{value}" }
@@ -34,7 +35,7 @@ RSpec.describe SearchQueryTransformer do
       let(:query) { "#{operator}:\"abc\"" }
 
       it 'raises an exception' do
-        expect { subject }.to raise_error(Mastodon::FilterValidationError, 'Invalid date abc')
+        expect { subject }.to raise_error(Date::Error)
       end
     end
   end
@@ -126,6 +127,26 @@ RSpec.describe SearchQueryTransformer do
       it_behaves_like 'date operator', 'during' do
         let(:statement_operations) { [:gte, :lte] }
       end
+    end
+  end
+
+  context 'with multiple prefix clauses before a search term' do
+    let(:query) { 'from:me has:media foo' }
+
+    it 'transforms clauses' do
+      expect(subject.send(:must_clauses).map(&:term)).to contain_exactly('foo')
+      expect(subject.send(:must_not_clauses)).to be_empty
+      expect(subject.send(:filter_clauses).map(&:prefix)).to contain_exactly('from', 'has')
+    end
+  end
+
+  context 'with a search term between two prefix clauses' do
+    let(:query) { 'from:me foo has:media' }
+
+    it 'transforms clauses' do
+      expect(subject.send(:must_clauses).map(&:term)).to contain_exactly('foo')
+      expect(subject.send(:must_not_clauses)).to be_empty
+      expect(subject.send(:filter_clauses).map(&:prefix)).to contain_exactly('from', 'has')
     end
   end
 end

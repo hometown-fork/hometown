@@ -15,6 +15,7 @@ class UserSettings
   setting :default_language, default: nil
   setting :default_sensitive, default: false
   setting :default_privacy, default: nil, in: %w(public unlisted private)
+  setting :default_quote_policy, default: 'public', in: %w(public followers nobody)
 
   # Hometown-specific: Opt-out of RSS feeds for public posts
   setting :norss, default: false
@@ -29,10 +30,12 @@ class UserSettings
     setting :use_blurhash, default: true
     setting :use_pending_items, default: false
     setting :use_system_font, default: false
+    setting :use_system_scrollbars, default: false
     setting :disable_swiping, default: false
     setting :disable_hover_cards, default: false
     setting :delete_modal, default: true
     setting :reblog_modal, default: false
+    setting :missing_alt_text_modal, default: true
     setting :reduce_motion, default: false
     setting :expand_content_warnings, default: false
     setting :display_media, default: 'default', in: %w(default show_all hide_all)

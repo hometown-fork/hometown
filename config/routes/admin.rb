@@ -33,15 +33,33 @@ namespace :admin do
   resources :action_logs, only: [:index]
   resources :warning_presets, except: [:new, :show]
 
+  namespace :terms_of_service do
+    resource :generate, only: [:show, :create]
+    resource :history, only: [:show]
+    resource :draft, only: [:show, :update]
+  end
+
+  resources :terms_of_service, only: [:index] do
+    resource :preview, only: [:show], module: :terms_of_service
+    resource :test, only: [:create], module: :terms_of_service
+    resource :distribution, only: [:create], module: :terms_of_service
+  end
+
   resources :announcements, except: [:show] do
     member do
       post :publish
       post :unpublish
     end
+
+    resource :preview, only: [:show], module: :announcements
+    resource :test, only: [:create], module: :announcements
+    resource :distribution, only: [:create], module: :announcements
   end
 
-  get '/settings', to: redirect('/admin/settings/branding')
-  get '/settings/edit', to: redirect('/admin/settings/branding')
+  with_options to: redirect('/admin/settings/branding') do
+    get '/settings'
+    get '/settings/edit'
+  end
 
   namespace :settings do
     resource :branding, only: [:show, :update], controller: 'branding'
@@ -74,9 +92,16 @@ namespace :admin do
       post :restart_delivery
       post :stop_delivery
     end
+
+    resources :moderation_notes, controller: 'instances/moderation_notes', only: [:create, :destroy]
   end
 
-  resources :rules, only: [:index, :create, :edit, :update, :destroy]
+  resources :rules, only: [:index, :new, :create, :edit, :update, :destroy] do
+    member do
+      post :move_up
+      post :move_down
+    end
+  end
 
   resources :webhooks do
     member do

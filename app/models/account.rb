@@ -65,6 +65,8 @@ class Account < ApplicationRecord
   )
 
   BACKGROUND_REFRESH_INTERVAL = 1.week.freeze
+  REFRESH_DEADLINE = 6.hours
+  STALE_THRESHOLD = 1.day
   DEFAULT_FIELDS_SIZE = 4
   INSTANCE_ACTOR_ID = -99
 
@@ -83,12 +85,17 @@ class Account < ApplicationRecord
   include Account::Associations
   include Account::Avatar
   include Account::Counters
+  include Account::FaspConcern
   include Account::FinderConcern
   include Account::Header
   include Account::Interactions
+  include Account::Mappings
   include Account::Merging
   include Account::Search
+  include Account::Sensitizes
+  include Account::Silences
   include Account::StatusesSearch
+  include Account::Suspensions
   include Account::AttributionDomains
   include DomainMaterializable
   include DomainNormalizable
@@ -102,23 +109,26 @@ class Account < ApplicationRecord
   validates_with UniqueUsernameValidator, if: -> { will_save_change_to_username? }
 
   # Remote user validations, also applies to internal actors
-  validates :username, format: { with: USERNAME_ONLY_RE }, if: -> { (!local? || actor_type == 'Application') && will_save_change_to_username? }
+  validates :username, format: { with: USERNAME_ONLY_RE }, if: -> { (remote? || actor_type_application?) && will_save_change_to_username? }
 
   # Remote user validations
   validates :uri, presence: true, unless: :local?, on: :create
 
   # Local user validations
-  validates :username, format: { with: /\A[a-z0-9_]+\z/i }, length: { maximum: USERNAME_LENGTH_LIMIT }, if: -> { local? && will_save_change_to_username? && actor_type != 'Application' }
-  validates_with UnreservedUsernameValidator, if: -> { local? && will_save_change_to_username? && actor_type != 'Application' }
+  validates :username, format: { with: /\A[a-z0-9_]+\z/i }, length: { maximum: USERNAME_LENGTH_LIMIT }, if: -> { local? && will_save_change_to_username? && !actor_type_application? }
+  validates_with UnreservedUsernameValidator, if: -> { local? && will_save_change_to_username? && !actor_type_application? }
   validates :display_name, length: { maximum: DISPLAY_NAME_LENGTH_LIMIT }, if: -> { local? && will_save_change_to_display_name? }
   validates :note, note_length: { maximum: NOTE_LENGTH_LIMIT }, if: -> { local? && will_save_change_to_note? }
   validates :fields, length: { maximum: DEFAULT_FIELDS_SIZE }, if: -> { local? && will_save_change_to_fields? }
-  with_options on: :create do
-    validates :uri, absence: true, if: :local?
-    validates :inbox_url, absence: true, if: :local?
-    validates :shared_inbox_url, absence: true, if: :local?
-    validates :followers_url, absence: true, if: :local?
+  validates_with EmptyProfileFieldNamesValidator, if: -> { local? && will_save_change_to_fields? }
+  with_options on: :create, if: :local? do
+    validates :followers_url, absence: true
+    validates :inbox_url, absence: true
+    validates :shared_inbox_url, absence: true
+    validates :uri, absence: true
   end
+
+  validates :domain, exclusion: { in: [''] }
 
   normalizes :username, with: ->(username) { username.squish }
 
@@ -126,17 +136,9 @@ class Account < ApplicationRecord
   scope :remote, -> { where.not(domain: nil) }
   scope :local, -> { where(domain: nil) }
   scope :partitioned, -> { order(Arel.sql('row_number() over (partition by domain)')) }
-  scope :silenced, -> { where.not(silenced_at: nil) }
-  scope :suspended, -> { where.not(suspended_at: nil) }
-  scope :sensitized, -> { where.not(sensitized_at: nil) }
-  scope :without_suspended, -> { where(suspended_at: nil) }
-  scope :without_silenced, -> { where(silenced_at: nil) }
   scope :without_instance_actor, -> { where.not(id: INSTANCE_ACTOR_ID) }
   scope :recent, -> { reorder(id: :desc) }
-  scope :bots, -> { where(actor_type: AUTOMATED_ACTOR_TYPES) }
   scope :non_automated, -> { where.not(actor_type: AUTOMATED_ACTOR_TYPES) }
-  scope :groups, -> { where(actor_type: 'Group') }
-  scope :alphabetic, -> { order(domain: :asc, username: :asc) }
   scope :matches_uri_prefix, ->(value) { where(arel_table[:uri].matches("#{sanitize_sql_like(value)}/%", false, true)).or(where(uri: value)) }
   scope :matches_username, ->(value) { where('lower((username)::text) LIKE lower(?)', "#{value}%") }
   scope :matches_display_name, ->(value) { where(arel_table[:display_name].matches("#{value}%")) }
@@ -150,7 +152,7 @@ class Account < ApplicationRecord
   scope :not_excluded_by_account, ->(account) { where.not(id: account.excluded_from_timeline_account_ids) }
   scope :not_domain_blocked_by_account, ->(account) { where(arel_table[:domain].eq(nil).or(arel_table[:domain].not_in(account.excluded_from_timeline_domains))) }
   scope :dormant, -> { joins(:account_stat).merge(AccountStat.without_recent_activity) }
-  scope :with_username, ->(value) { where arel_table[:username].lower.eq(value.to_s.downcase) }
+  scope :with_username, ->(value) { value.is_a?(Array) ? where(arel_table[:username].lower.in(value.map { |x| x.to_s.downcase })) : where(arel_table[:username].lower.eq(value.to_s.downcase)) }
   scope :with_domain, ->(value) { where arel_table[:domain].lower.eq(value&.to_s&.downcase) }
   scope :without_memorial, -> { where(memorial: false) }
   scope :duplicate_uris, -> { select(:uri, Arel.star.count).group(:uri).having(Arel.star.count.gt(1)) }
@@ -158,6 +160,7 @@ class Account < ApplicationRecord
   after_update_commit :trigger_update_webhooks
 
   delegate :email,
+           :email_domain,
            :unconfirmed_email,
            :current_sign_in_at,
            :created_at,
@@ -185,6 +188,10 @@ class Account < ApplicationRecord
     domain.nil?
   end
 
+  def remote?
+    !domain.nil?
+  end
+
   def moved?
     moved_to_account_id.present?
   end
@@ -201,6 +208,10 @@ class Account < ApplicationRecord
 
   def bot=(val)
     self.actor_type = ActiveModel::Type::Boolean.new.cast(val) ? 'Service' : 'Person'
+  end
+
+  def actor_type_application?
+    actor_type == 'Application'
   end
 
   def group?
@@ -230,76 +241,17 @@ class Account < ApplicationRecord
   end
 
   def possibly_stale?
-    last_webfingered_at.nil? || last_webfingered_at <= 1.day.ago
+    last_webfingered_at.nil? || last_webfingered_at <= STALE_THRESHOLD.ago
   end
 
   def schedule_refresh_if_stale!
     return unless last_webfingered_at.present? && last_webfingered_at <= BACKGROUND_REFRESH_INTERVAL.ago
 
-    AccountRefreshWorker.perform_in(rand(6.hours.to_i), id)
+    AccountRefreshWorker.perform_in(rand(REFRESH_DEADLINE), id)
   end
 
   def refresh!
     ResolveAccountService.new.call(acct) unless local?
-  end
-
-  def silenced?
-    silenced_at.present?
-  end
-
-  def silence!(date = Time.now.utc)
-    update!(silenced_at: date)
-  end
-
-  def unsilence!
-    update!(silenced_at: nil)
-  end
-
-  def suspended?
-    suspended_at.present? && !instance_actor?
-  end
-
-  def suspended_locally?
-    suspended? && suspension_origin_local?
-  end
-
-  def suspended_permanently?
-    suspended? && deletion_request.nil?
-  end
-
-  def suspended_temporarily?
-    suspended? && deletion_request.present?
-  end
-
-  alias unavailable? suspended?
-  alias permanently_unavailable? suspended_permanently?
-
-  def suspend!(date: Time.now.utc, origin: :local, block_email: true)
-    transaction do
-      create_deletion_request!
-      update!(suspended_at: date, suspension_origin: origin)
-      create_canonical_email_block! if block_email
-    end
-  end
-
-  def unsuspend!
-    transaction do
-      deletion_request&.destroy!
-      update!(suspended_at: nil, suspension_origin: nil)
-      destroy_canonical_email_block!
-    end
-  end
-
-  def sensitized?
-    sensitized_at.present?
-  end
-
-  def sensitize!(date = Time.now.utc)
-    update!(sensitized_at: date)
-  end
-
-  def unsensitize!
-    update!(sensitized_at: nil)
   end
 
   def memorialize!
@@ -359,7 +311,7 @@ class Account < ApplicationRecord
 
     if attributes.is_a?(Hash)
       attributes.each_value do |attr|
-        next if attr[:name].blank?
+        next if attr[:name].blank? && attr[:value].blank?
 
         previous = old_fields.find { |item| item['value'] == attr[:value] }
 

@@ -79,7 +79,7 @@ module ApplicationHelper
 
   def html_title
     safe_join(
-      [content_for(:page_title).to_s.chomp, title]
+      [content_for(:page_title), title]
       .compact_blank,
       ' - '
     )
@@ -120,18 +120,6 @@ module ApplicationHelper
     inline_svg_tag 'check.svg'
   end
 
-  def visibility_icon(status)
-    if status.public_visibility?
-      material_symbol('globe', title: I18n.t('statuses.visibilities.public'))
-    elsif status.unlisted_visibility?
-      material_symbol('lock_open', title: I18n.t('statuses.visibilities.unlisted'))
-    elsif status.private_visibility? || status.limited_visibility?
-      material_symbol('lock', title: I18n.t('statuses.visibilities.private'))
-    elsif status.direct_visibility?
-      material_symbol('alternate_email', title: I18n.t('statuses.visibilities.direct'))
-    end
-  end
-
   def interrelationships_icon(relationships, account_id)
     if relationships.following[account_id] && relationships.followed_by[account_id]
       material_symbol('sync_alt', title: I18n.t('relationships.mutual'), class: 'active passive')
@@ -155,10 +143,11 @@ module ApplicationHelper
   end
 
   def body_classes
-    output = body_class_string.split
+    output = []
     output << content_for(:body_classes)
     output << "theme-#{current_theme.parameterize}"
     output << 'system-font' if current_account&.user&.setting_system_font_ui
+    output << 'custom-scrollbars' unless current_account&.user&.setting_system_scrollbars_ui
     output << (current_account&.user&.setting_reduce_motion ? 'reduce-motion' : 'no-reduce-motion')
     output << 'rtl' if locale_direction == 'rtl'
     output.compact_blank.join(' ')
@@ -242,6 +231,19 @@ module ApplicationHelper
 
   def copyable_input(options = {})
     tag.input(type: :text, maxlength: 999, spellcheck: false, readonly: true, **options)
+  end
+
+  def recent_tag_usage(tag)
+    people = tag.history.aggregate(2.days.ago.to_date..Time.zone.today).accounts
+    I18n.t 'user_mailer.welcome.hashtags_recent_count', people: number_with_delimiter(people), count: people
+  end
+
+  def app_store_url_ios
+    'https://apps.apple.com/app/mastodon-for-iphone-and-ipad/id1571998974'
+  end
+
+  def app_store_url_android
+    'https://play.google.com/store/apps/details?id=org.joinmastodon.android'
   end
 
   private

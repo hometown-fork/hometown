@@ -1,6 +1,5 @@
 # frozen_string_literal: true
 
-require 'set'
 require_relative 'base'
 
 module Mastodon::CLI
@@ -80,7 +79,14 @@ module Mastodon::CLI
 
       account  = Account.new(username: username)
       password = SecureRandom.hex
-      user     = User.new(email: options[:email], password: password, agreement: true, role_id: role_id, confirmed_at: options[:confirmed] ? Time.now.utc : nil, bypass_invite_request_check: true)
+      user = User.new(
+        email: options[:email],
+        password: password,
+        agreement: true,
+        role_id: role_id,
+        confirmed_at: options[:confirmed] ? Time.now.utc : nil,
+        bypass_registration_checks: true
+      )
 
       if options[:reattach]
         account = Account.find_local(username) || Account.new(username: username)
@@ -165,7 +171,7 @@ module Mastodon::CLI
       user.disabled = false if options[:enable]
       user.disabled = true if options[:disable]
       user.approved = true if options[:approve]
-      user.otp_required_for_login = false if options[:disable_2fa]
+      user.disable_two_factor! if options[:disable_2fa]
 
       if user.save
         user.confirm if options[:confirm]
@@ -305,7 +311,7 @@ module Mastodon::CLI
 
         begin
           code = Request.new(:head, account.uri).perform(&:code)
-        rescue HTTP::TimeoutError, HTTP::ConnectionError, OpenSSL::SSL::SSLError, Mastodon::PrivateNetworkAddressError
+        rescue *Mastodon::HTTP_CONNECTION_ERRORS, Mastodon::PrivateNetworkAddressError
           skip_domains << account.domain
         end
 
@@ -322,7 +328,9 @@ module Mastodon::CLI
 
       unless skip_domains.empty?
         say('The following domains were not available during the check:', :yellow)
-        skip_domains.each { |domain| say("    #{domain}") }
+        shell.indent(2) do
+          skip_domains.each { |domain| say(domain) }
+        end
       end
     end
 

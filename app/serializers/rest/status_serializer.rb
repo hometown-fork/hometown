@@ -29,8 +29,13 @@ class REST::StatusSerializer < ActiveModel::Serializer
   has_many :tags
   has_many :emojis, serializer: REST::CustomEmojiSerializer
 
+  has_one :quote, key: :quote, serializer: REST::QuoteSerializer
   has_one :preview_card, key: :card, serializer: REST::PreviewCardSerializer
   has_one :preloadable_poll, key: :poll, serializer: REST::PollSerializer
+
+  def quote
+    object.quote if object.quote&.acceptable?
+  end
 
   def id
     object.id.to_s
@@ -88,11 +93,11 @@ class REST::StatusSerializer < ActiveModel::Serializer
   end
 
   def reblogs_count
-    relationships&.attributes_map&.dig(object.id, :reblogs_count) || object.reblogs_count
+    object.untrusted_reblogs_count || relationships&.attributes_map&.dig(object.id, :reblogs_count) || object.reblogs_count
   end
 
   def favourites_count
-    relationships&.attributes_map&.dig(object.id, :favourites_count) || object.favourites_count
+    object.untrusted_favourites_count || relationships&.attributes_map&.dig(object.id, :favourites_count) || object.favourites_count
   end
 
   def favourited

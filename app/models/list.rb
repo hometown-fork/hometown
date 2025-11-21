@@ -18,12 +18,13 @@ class List < ApplicationRecord
 
   PER_ACCOUNT_LIMIT = 50
 
-  enum :replies_policy, { list: 0, followed: 1, none: 2 }, prefix: :show
+  enum :replies_policy, { list: 0, followed: 1, none: 2 }, prefix: :show, validate: true
 
   belongs_to :account
 
   has_many :list_accounts, inverse_of: :list, dependent: :destroy
   has_many :accounts, through: :list_accounts
+  has_many :active_accounts, -> { merge(ListAccount.active) }, through: :list_accounts, source: :account
 
   validates :title, presence: true
 
@@ -34,7 +35,7 @@ class List < ApplicationRecord
   private
 
   def validate_account_lists_limit
-    errors.add(:base, I18n.t('lists.errors.limit')) if account.lists.count >= PER_ACCOUNT_LIMIT
+    errors.add(:base, I18n.t('lists.errors.limit')) if account.owned_lists.count >= PER_ACCOUNT_LIMIT
   end
 
   def clean_feed_manager

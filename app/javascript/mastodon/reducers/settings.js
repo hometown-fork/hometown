@@ -20,6 +20,7 @@ const initialState = ImmutableMap({
 
   home: ImmutableMap({
     shows: ImmutableMap({
+      quote: true,
       reblog: true,
       reply: true,
     }),
@@ -77,6 +78,10 @@ const initialState = ImmutableMap({
       update: true,
       'admin.sign_up': true,
       'admin.report': true,
+    }),
+
+    group: ImmutableMap({
+      follow: true
     }),
   }),
 

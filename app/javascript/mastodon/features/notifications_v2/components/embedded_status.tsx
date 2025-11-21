@@ -13,7 +13,6 @@ import { Avatar } from 'mastodon/components/avatar';
 import { ContentWarning } from 'mastodon/components/content_warning';
 import { DisplayName } from 'mastodon/components/display_name';
 import { Icon } from 'mastodon/components/icon';
-import type { Status } from 'mastodon/models/status';
 import { useAppSelector, useAppDispatch } from 'mastodon/store';
 
 import { EmbeddedStatusContent } from './embedded_status_content';
@@ -27,9 +26,7 @@ export const EmbeddedStatus: React.FC<{ statusId: string }> = ({
   const clickCoordinatesRef = useRef<[number, number] | null>();
   const dispatch = useAppDispatch();
 
-  const status = useAppSelector(
-    (state) => state.statuses.get(statusId) as Status | undefined,
-  );
+  const status = useAppSelector((state) => state.statuses.get(statusId));
 
   const account = useAppSelector((state) =>
     state.accounts.get(status?.get('account') as string),
@@ -43,7 +40,7 @@ export const EmbeddedStatus: React.FC<{ statusId: string }> = ({
   );
 
   const handleMouseUp = useCallback<React.MouseEventHandler<HTMLDivElement>>(
-    ({ clientX, clientY, target, button }) => {
+    ({ clientX, clientY, target, button, ctrlKey, metaKey }) => {
       const [startX, startY] = clickCoordinatesRef.current ?? [0, 0];
       const [deltaX, deltaY] = [
         Math.abs(clientX - startX),
@@ -64,8 +61,14 @@ export const EmbeddedStatus: React.FC<{ statusId: string }> = ({
         element = element.parentNode as HTMLDivElement | null;
       }
 
-      if (deltaX + deltaY < 5 && button === 0 && account) {
-        history.push(`/@${account.acct}/${statusId}`);
+      if (deltaX + deltaY < 5 && account) {
+        const path = `/@${account.acct}/${statusId}`;
+
+        if (button === 0 && !(ctrlKey || metaKey)) {
+          history.push(path);
+        } else if (button === 1 || (button === 0 && (ctrlKey || metaKey))) {
+          window.open(path, '_blank', 'noopener');
+        }
       }
 
       clickCoordinatesRef.current = null;

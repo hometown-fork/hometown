@@ -23,6 +23,8 @@ ia:
       models:
         account:
           attributes:
+            fields:
+              fields_with_values_missing_labels: contine valores con etiquettas perdite
             username:
               invalid: debe continer solmente litteras, numeros e lineettas basse
               reserved: es reservate
@@ -38,12 +40,19 @@ ia:
           attributes:
             data:
               malformed: es mal formate
+        list_account:
+          attributes:
+            account_id:
+              taken: jam es in le lista
+          must_be_following: debe esser un conto sequite
         status:
           attributes:
             reblog:
               taken: del message jam existe
         user:
           attributes:
+            date_of_birth:
+              below_limit: es infra le limite de etate
             email:
               blocked: usa un fornitor de e-mail prohibite
               unreachable: non pare exister
