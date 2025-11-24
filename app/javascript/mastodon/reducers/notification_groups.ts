@@ -208,11 +208,7 @@ function processNewNotification(
   notification: ApiNotificationJSON,
   groupedTypes: NotificationType[],
 ) {
-<<<<<<< HEAD
-  if (!shouldGroupNotificationType(notification.type)) {
-=======
   if (!groupedTypes.includes(notification.type)) {
->>>>>>> v4.4.0
     notification = {
       ...notification,
       group_key: `ungrouped-${notification.id}`,

@@ -43,14 +43,10 @@
         = material_symbol visibility_icon(status)
         = t("statuses.visibilities.#{status.visibility}")
         ·
-<<<<<<< HEAD
-        = material_symbol('visibility_off')
-        = t('stream_entries.sensitive_content')
       - if status.proper.local_only
         ·
         = fa_icon('chain-broken fw')
         = t('statuses.local_only')
-=======
 
         = link_to ActivityPub::TagManager.instance.url_for(status.proper), class: 'detailed-status__link', rel: 'noopener' do
           = t('admin.statuses.view_publicly')
@@ -59,4 +55,3 @@
           ·
           = material_symbol('visibility_off')
           = t('stream_entries.sensitive_content')
->>>>>>> v4.4.0

@@ -209,17 +209,10 @@ class ActivityPub::ProcessStatusUpdateService < BaseService
 
     removed_tags = previous_tags - current_tags
 
-<<<<<<< HEAD
-    return if removed_tags.empty?
-
-    @account.featured_tags.where(tag_id: removed_tags.pluck(:id)).find_each do |featured_tag|
-      featured_tag.decrement(@status)
-=======
     unless removed_tags.empty?
       @account.featured_tags.where(tag_id: removed_tags.pluck(:id)).find_each do |featured_tag|
         featured_tag.decrement(@status)
       end
->>>>>>> v4.4.0
     end
   end
 
