@@ -3,7 +3,6 @@ import { useCallback, useMemo } from 'react';
 import { defineMessages, useIntl, FormattedMessage } from 'react-intl';
 
 import classNames from 'classnames';
-import { Permalink } from 'react-router-dom';
 
 import MoreHorizIcon from '@/material-icons/400-24px/more_horiz.svg?react';
 import {
@@ -25,6 +24,7 @@ import { FollowersCounter } from 'mastodon/components/counters';
 import { DisplayName } from 'mastodon/components/display_name';
 import { Dropdown } from 'mastodon/components/dropdown_menu';
 import { FollowButton } from 'mastodon/components/follow_button';
+import { Permalink } from 'mastodon/components/permalink';
 import { RelativeTimestamp } from 'mastodon/components/relative_timestamp';
 import { ShortNumber } from 'mastodon/components/short_number';
 import { Skeleton } from 'mastodon/components/skeleton';
@@ -296,7 +296,7 @@ export const Account: React.FC<AccountProps> = ({
           <Permalink
             className='account__display-name'
             title={account?.acct}
-            href={account.get('url')}
+            href={account?.get('url')}
             to={`/@${account?.acct}`}
             data-hover-card-account={id}
           >

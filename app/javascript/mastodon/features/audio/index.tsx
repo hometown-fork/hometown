@@ -13,11 +13,11 @@ import PlayArrowIcon from '@/material-icons/400-24px/play_arrow-fill.svg?react';
 import Replay5Icon from '@/material-icons/400-24px/replay_5-fill.svg?react';
 import VolumeOffIcon from '@/material-icons/400-24px/volume_off-fill.svg?react';
 import VolumeUpIcon from '@/material-icons/400-24px/volume_up-fill.svg?react';
+import { AltTextBadge } from 'mastodon/components/alt_text_badge';
 import { Blurhash } from 'mastodon/components/blurhash';
 import { Icon } from 'mastodon/components/icon';
-import { SpoilerButton } from 'mastodon/components/spoiler_button';
-import { AltTextBadge } from 'mastodon/components/alt_text_badge';
 import { NoAltTextBadge } from 'mastodon/components/no_alt_text_badge';
+import { SpoilerButton } from 'mastodon/components/spoiler_button';
 import { formatTime, getPointerPosition } from 'mastodon/features/video';
 import { useAudioContext } from 'mastodon/hooks/useAudioContext';
 import { useAudioVisualizer } from 'mastodon/hooks/useAudioVisualizer';
@@ -33,6 +33,10 @@ const messages = defineMessages({
   hide: { id: 'audio.hide', defaultMessage: 'Hide audio' },
   skipForward: { id: 'video.skip_forward', defaultMessage: 'Skip forward' },
   skipBackward: { id: 'video.skip_backward', defaultMessage: 'Skip backward' },
+  no_descriptive_text: {
+    id: 'media.no_descriptive_text',
+    defaultMessage: 'No descriptive text was provided for this media.',
+  },
 });
 
 const persistVolume = (volume: number, muted: boolean) => {
@@ -810,8 +814,26 @@ export const Audio: React.FC<{
           </div>
 
           <div className='video-player__buttons right'>
-						{alt && <button type='button' title={intl.formatMessage(messages.no_descriptive_text)} aria-label={intl.formatMessage(messages.no_descriptive_text)} className='player-button no-action media__no-description-icon' ><AltTextBadge key='alt' description={alt} /></button>}
-						{!alt && <button type='button' title={intl.formatMessage(messages.no_descriptive_text)} aria-label={intl.formatMessage(messages.no_descriptive_text)} className='player-button no-action media__no-description-icon' ><NoAltTextBadge key='no-alt' /></button>}
+            {alt && (
+              <button
+                type='button'
+                title={intl.formatMessage(messages.no_descriptive_text)}
+                aria-label={intl.formatMessage(messages.no_descriptive_text)}
+                className='player-button no-action media__no-description-icon'
+              >
+                <AltTextBadge key='alt' description={alt} />
+              </button>
+            )}
+            {!alt && (
+              <button
+                type='button'
+                title={intl.formatMessage(messages.no_descriptive_text)}
+                aria-label={intl.formatMessage(messages.no_descriptive_text)}
+                className='player-button no-action media__no-description-icon'
+              >
+                <NoAltTextBadge key='no-alt' />
+              </button>
+            )}
             {!editable && (
               <>
                 <button

@@ -4,12 +4,12 @@ import { Component } from 'react';
 import { FormattedMessage } from 'react-intl';
 
 import classNames from 'classnames';
+import { Link } from 'react-router-dom';
 
 import type Immutable from 'immutable';
 
 import { Sparklines, SparklinesCurve } from 'react-sparklines';
 
-import { Link } from 'react-router-dom';
 import { ShortNumber } from 'mastodon/components/short_number';
 import { Skeleton } from 'mastodon/components/skeleton';
 import type { Hashtag as HashtagType } from 'mastodon/models/tags';

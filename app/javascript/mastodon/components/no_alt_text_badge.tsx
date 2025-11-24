@@ -8,13 +8,13 @@ import type {
   UsePopperOptions,
 } from 'react-overlays/esm/usePopper';
 
-import { Icon }  from 'mastodon/components/icon';
 import WarningIcon from '@/material-icons/400-24px/warning.svg?react';
+import { Icon } from 'mastodon/components/icon';
 
 const offset = [0, 4] as OffsetValue;
 const popperConfig = { strategy: 'fixed' } as UsePopperOptions;
 
-export const NoAltTextBadge: React.FC<{}> = () => {
+export const NoAltTextBadge: React.FC = () => {
   const anchorRef = useRef<HTMLButtonElement>(null);
   const [open, setOpen] = useState(false);
 

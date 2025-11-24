@@ -10,7 +10,6 @@ import {
   unblockAccount,
   unmuteAccount,
 } from 'mastodon/actions/accounts';
-
 import { openModal } from 'mastodon/actions/modal';
 import { Avatar } from 'mastodon/components/avatar';
 import { Button } from 'mastodon/components/button';
@@ -166,7 +165,11 @@ export const AccountCard: React.FC<{ accountId: string }> = ({ accountId }) => {
 
   return (
     <div className='account-card'>
-      <Permalink href={account.get('url')} to={`/@${account.get('acct')}`} className='account-card__permalink'>
+      <Permalink
+        href={account.get('url')}
+        to={`/@${account.get('acct')}`}
+        className='account-card__permalink'
+      >
         <div className='account-card__header'>
           <img
             src={

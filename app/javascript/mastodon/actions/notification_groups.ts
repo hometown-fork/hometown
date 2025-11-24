@@ -78,10 +78,6 @@ function selectNotificationGroupedTypes(state: RootState) {
   return types;
 }
 
-export function shouldGroupNotificationType(type: string) {
-  return supportedGroupedNotificationTypes.includes(type);
-}
-
 export const fetchNotifications = createDataLoadingThunk(
   'notificationGroups/fetch',
   async (_params, { getState }) =>
