@@ -23,15 +23,11 @@ import type { StatusLike } from 'mastodon/components/hashtag_bar';
 import { getHashtagBarForStatus } from 'mastodon/components/hashtag_bar';
 import { Icon } from 'mastodon/components/icon';
 import { IconLogo } from 'mastodon/components/logo';
-<<<<<<< HEAD
 import { Permalink } from 'mastodon/components/permalink';
-import PictureInPicturePlaceholder from 'mastodon/components/picture_in_picture_placeholder';
-=======
 import MediaGallery from 'mastodon/components/media_gallery';
 import { PictureInPicturePlaceholder } from 'mastodon/components/picture_in_picture_placeholder';
 import StatusContent from 'mastodon/components/status_content';
 import { QuotedStatus } from 'mastodon/components/status_quoted';
->>>>>>> v4.4.0
 import { VisibilityIcon } from 'mastodon/components/visibility_icon';
 import { Audio } from 'mastodon/features/audio';
 import scheduleIdleTask from 'mastodon/features/ui/util/schedule_idle_task';
@@ -309,14 +305,9 @@ export const DetailedStatus: React.FC<{
   const matchedFilters = status.get('matched_filters');
 
   const expanded =
-<<<<<<< HEAD
-    !status.get('hidden') ||
-    status.get('spoiler_text').length === 0 ||
-    statusActivityObjectType === 'Article';
-=======
     (!matchedFilters || showDespiteFilter) &&
-    (!status.get('hidden') || status.get('spoiler_text').length === 0);
->>>>>>> v4.4.0
+    (!status.get('hidden') || status.get('spoiler_text').length === 0) ||
+    statusActivityObjectType === 'Article';
 
   return (
     <div style={outerStyle}>
@@ -363,27 +354,6 @@ export const DetailedStatus: React.FC<{
           )}
         </Permalink>
 
-<<<<<<< HEAD
-        {statusActivityObjectType !== 'Article' &&
-          status.get('spoiler_text').length > 0 && (
-            <ContentWarning
-              text={
-                status.getIn(['translation', 'spoilerHtml']) ||
-                status.get('spoilerHtml')
-              }
-              expanded={expanded}
-              onClick={handleExpandedToggle}
-            />
-          )}
-
-        {statusActivityObjectType === 'Article' && status.get('title') && (
-          <div className='status__content article'>
-            <h2>Title: {status.get('title')}</h2>
-          </div>
-        )}
-
-        {statusActivityObjectType !== 'Article' && expanded && (
-=======
         {matchedFilters && (
           <FilterWarning
             title={matchedFilters.join(', ')}
@@ -392,7 +362,8 @@ export const DetailedStatus: React.FC<{
           />
         )}
 
-        {status.get('spoiler_text').length > 0 &&
+        {statusActivityObjectType !== 'Article' &&
+          status.get('spoiler_text').length > 0 &&
           (!matchedFilters || showDespiteFilter) && (
             <ContentWarning
               text={
@@ -404,8 +375,7 @@ export const DetailedStatus: React.FC<{
             />
           )}
 
-        {expanded && (
->>>>>>> v4.4.0
+        {statusActivityObjectType !== 'Article' && expanded && (
           <>
             <StatusContent
               status={status}

@@ -70,6 +70,14 @@ export const LinkFooter: React.FC<{
         )}
       </p>
 
+			<p>
+				<strong>Hometown</strong>:{' '}
+				<a href='https://github.com/hometown-fork/hometown/wiki' target='_blank' rel='noopener noreferrer'><FormattedMessage id='footer.about' defaultMessage='About' /></a>
+        <DividingCircle />
+				<a href='https://github.com/hometown-fork/hometown/' rel='noopener noreferrer' target='_blank'><FormattedMessage id='footer.source_code' defaultMessage='View source code' /></a>
+        <DividingCircle />
+				v{version}
+			</p>
       <p>
         <strong>Mastodon</strong>:{' '}
         <a href='https://joinmastodon.org' target='_blank' rel='noopener'>
@@ -93,8 +101,6 @@ export const LinkFooter: React.FC<{
             defaultMessage='View source code'
           />
         </a>
-        <DividingCircle />
-        <span className='version'>v{version}</span>
       </p>
     </div>
   );

@@ -91,11 +91,8 @@ export const activityApiEnabled = getMeta('activity_api_enabled');
 export const autoPlayGif = getMeta('auto_play_gif');
 export const boostModal = getMeta('boost_modal');
 export const deleteModal = getMeta('delete_modal');
-<<<<<<< HEAD
 export const maxChars = (initialState && initialState.max_toot_chars) || 500;
-=======
 export const missingAltTextModal = getMeta('missing_alt_text_modal');
->>>>>>> v4.4.0
 export const disableSwiping = getMeta('disable_swiping');
 export const disableHoverCards = getMeta('disable_hover_cards');
 export const disabledAccountId = getMeta('disabled_account_id');

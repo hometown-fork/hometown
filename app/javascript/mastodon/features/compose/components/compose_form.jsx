@@ -10,15 +10,6 @@ import ImmutablePureComponent from 'react-immutable-pure-component';
 
 import { length } from 'stringz';
 
-<<<<<<< HEAD
-import AutosuggestInput from '../../../components/autosuggest_input';
-import AutosuggestTextarea from '../../../components/autosuggest_textarea';
-import { Button } from '../../../components/button';
-import { maxChars } from '../../../initial_state';
-import EmojiPickerDropdown from '../containers/emoji_picker_dropdown_container';
-import FederationDropdownContainer from '../containers/federation_dropdown_container';
-import LanguageDropdown from '../containers/language_dropdown_container';
-=======
 import { missingAltTextModal } from 'mastodon/initial_state';
 
 import AutosuggestInput from 'mastodon/components/autosuggest_input';
@@ -26,7 +17,7 @@ import AutosuggestTextarea from 'mastodon/components/autosuggest_textarea';
 import { Button } from 'mastodon/components/button';
 import { LoadingIndicator } from 'mastodon/components/loading_indicator';
 import EmojiPickerDropdown from '../containers/emoji_picker_dropdown_container';
->>>>>>> v4.4.0
+import FederationDropdownContainer from '../containers/federation_dropdown_container';
 import PollButtonContainer from '../containers/poll_button_container';
 import PrivacyDropdownContainer from '../containers/privacy_dropdown_container';
 import SpoilerButtonContainer from '../containers/spoiler_button_container';
@@ -236,11 +227,7 @@ class ComposeForm extends ImmutablePureComponent {
   };
 
   render () {
-<<<<<<< HEAD
-    const { intl, onPaste, autoFocus, withoutNavigation } = this.props;
-=======
     const { intl, onPaste, autoFocus, withoutNavigation, maxChars, isSubmitting } = this.props;
->>>>>>> v4.4.0
     const { highlighted } = this.state;
 
     return (

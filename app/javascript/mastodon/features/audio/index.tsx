@@ -16,6 +16,8 @@ import VolumeUpIcon from '@/material-icons/400-24px/volume_up-fill.svg?react';
 import { Blurhash } from 'mastodon/components/blurhash';
 import { Icon } from 'mastodon/components/icon';
 import { SpoilerButton } from 'mastodon/components/spoiler_button';
+import { AltTextBadge } from 'mastodon/components/alt_text_badge';
+import { NoAltTextBadge } from 'mastodon/components/no_alt_text_badge';
 import { formatTime, getPointerPosition } from 'mastodon/features/video';
 import { useAudioContext } from 'mastodon/hooks/useAudioContext';
 import { useAudioVisualizer } from 'mastodon/hooks/useAudioVisualizer';
@@ -808,6 +810,8 @@ export const Audio: React.FC<{
           </div>
 
           <div className='video-player__buttons right'>
+						{alt && <button type='button' title={intl.formatMessage(messages.no_descriptive_text)} aria-label={intl.formatMessage(messages.no_descriptive_text)} className='player-button no-action media__no-description-icon' ><AltTextBadge key='alt' description={alt} /></button>}
+						{!alt && <button type='button' title={intl.formatMessage(messages.no_descriptive_text)} aria-label={intl.formatMessage(messages.no_descriptive_text)} className='player-button no-action media__no-description-icon' ><NoAltTextBadge key='no-alt' /></button>}
             {!editable && (
               <>
                 <button

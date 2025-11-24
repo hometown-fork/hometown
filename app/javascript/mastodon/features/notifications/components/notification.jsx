@@ -20,13 +20,8 @@ import RepeatIcon from '@/material-icons/400-24px/repeat.svg?react';
 import StarIcon from '@/material-icons/400-24px/star-fill.svg?react';
 import { Account } from 'mastodon/components/account';
 import { Icon }  from 'mastodon/components/icon';
-<<<<<<< HEAD
 import { Permalink } from 'mastodon/components/permalink';
-import AccountContainer from 'mastodon/containers/account_container';
-import StatusContainer from 'mastodon/containers/status_container';
-=======
 import { StatusQuoteManager } from 'mastodon/components/status_quoted';
->>>>>>> v4.4.0
 import { me } from 'mastodon/initial_state';
 import { WithRouterPropTypes } from 'mastodon/utils/react_router';
 
