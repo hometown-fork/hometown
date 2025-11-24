@@ -100,8 +100,6 @@
   "alert.unexpected.message": "Váratlan hiba történt.",
   "alert.unexpected.title": "Hoppá!",
   "alt_text_badge.title": "Helyettesítő szöveg",
-<<<<<<< HEAD
-=======
   "alt_text_modal.add_alt_text": "Helyettesítő szöveg hozzáadása",
   "alt_text_modal.add_text_from_image": "Szöveg hozzáadása a képből",
   "alt_text_modal.cancel": "Mégse",
@@ -109,7 +107,6 @@
   "alt_text_modal.describe_for_people_with_hearing_impairments": "Írd le a hallássérültek számára…",
   "alt_text_modal.describe_for_people_with_visual_impairments": "Írd le a látássérültek számára…",
   "alt_text_modal.done": "Kész",
->>>>>>> v4.4.0
   "announcement.announcement": "Közlemény",
   "annual_report.summary.archetype.booster": "A cool-vadász",
   "annual_report.summary.archetype.lurker": "A settenkedő",
@@ -344,19 +341,16 @@
   "explore.trending_links": "Hírek",
   "explore.trending_statuses": "Bejegyzések",
   "explore.trending_tags": "Hashtagek",
-<<<<<<< HEAD
   "federation.change": "Adjust status federation",
   "federation.federated.long": "Allow toot to reach other instances",
   "federation.federated.short": "Federated",
   "federation.local_only.long": "Restrict this toot only to my instance",
   "federation.local_only.short": "Local-only",
-=======
   "featured_carousel.header": "{count, plural, one {Kiemelt bejegyzés} other {Kiemelt bejegyzések}}",
   "featured_carousel.next": "Következő",
   "featured_carousel.post": "Bejegyzés",
   "featured_carousel.previous": "Előző",
   "featured_carousel.slide": "{index} / {total}",
->>>>>>> v4.4.0
   "filter_modal.added.context_mismatch_explanation": "Ez a szűrőkategória nem érvényes abban a környezetben, amelyből elérted ezt a bejegyzést. Ha ebben a környezetben is szűrni szeretnéd a bejegyzést, akkor szerkesztened kell a szűrőt.",
   "filter_modal.added.context_mismatch_title": "Környezeti eltérés.",
   "filter_modal.added.expired_explanation": "Ez a szűrőkategória elévült, a használatához módosítanod kell az elévülési dátumot.",
@@ -942,11 +936,6 @@
   "upload_button.label": "Képek, videó vagy audiófájl hozzáadása",
   "upload_error.limit": "A fájlfeltöltési korlát elérésre került.",
   "upload_error.poll": "Szavazásnál nem lehet fájlt feltölteni.",
-<<<<<<< HEAD
-  "upload_form.audio_description": "Leírás siket vagy hallássérült emberek számára",
-  "upload_form.description": "Leírás vak vagy gyengénlátó emberek számára",
-=======
->>>>>>> v4.4.0
   "upload_form.drag_and_drop.instructions": "Egy médiamelléklet kiválasztásához nyomj Szóközt vagy Entert. Húzás közben használd a nyílgombokat a médiamelléklet adott irányba történő mozgatásához. A médiamelléklet új pozícióba helyezéséhez nyomd meg a Szóközt vagy az Entert, vagy a megszakításhoz nyomd meg az Esc gombot.",
   "upload_form.drag_and_drop.on_drag_cancel": "Az áthúzás megszakítva. A(z) {item} médiamelléklet el lett dobva.",
   "upload_form.drag_and_drop.on_drag_end": "A(z) {item} médiamelléklet el lett dobva.",

@@ -165,10 +165,7 @@
   "column.direct": "Özel mesajlar",
   "column.directory": "Profillere göz at",
   "column.domain_blocks": "Engellenen alan adları",
-<<<<<<< HEAD
-=======
   "column.edit_list": "Listeyi düzenle",
->>>>>>> v4.4.0
   "column.favourites": "Gözdelerin",
   "column.firehose": "Anlık Akışlar",
   "column.follow_requests": "Takip istekleri",
@@ -933,11 +930,6 @@
   "upload_button.label": "Resim, video veya ses dosyası ekleyin",
   "upload_error.limit": "Dosya yükleme sınırı aşıldı.",
   "upload_error.poll": "Anketlerde dosya yüklemesine izin verilmez.",
-<<<<<<< HEAD
-  "upload_form.audio_description": "İşitme kaybı olan kişiler için yazı ekleyiniz",
-  "upload_form.description": "Görme engelliler için açıklama",
-=======
->>>>>>> v4.4.0
   "upload_form.drag_and_drop.instructions": "Bir medya eklentisini taşımak için, boşluk veya enter tuşuna basın. Sürükleme sırasında medya eklentisini herhangi bir yöne hareket ettirmek için ok tuşlarını kullanın. Medya eklentisini yeni konumuna bırakmak için tekrar boşluk veya enter tuşuna basın veya işlemi iptal etmek için escape tuşuna basın.",
   "upload_form.drag_and_drop.on_drag_cancel": "Sürükleme iptal edildi. Medya eklentisi {item} bırakıldı.",
   "upload_form.drag_and_drop.on_drag_end": "Medya eklentisi {item} bırakıldı.",

@@ -52,13 +52,8 @@
   "account.hide_reblogs": "Geteilte Beiträge von @{name} ausblenden",
   "account.in_memoriam": "Zum Andenken.",
   "account.joined_short": "Mitglied seit",
-<<<<<<< HEAD
-  "account.languages": "Ausgewählte Sprachen ändern",
-  "account.link_verified_on": "Das Profil mit dieser E-Mail-Adresse wurde bereits am {date} bestätigt",
-=======
   "account.languages": "Sprache ändern.",
   "account.link_verified_on": "Das Profil mit dieser E-Mail-Adresse wurde bereits am {date} verifiziert",
->>>>>>> v4.4.0
   "account.locked_info": "Die Privatsphäre dieses Kontos wurde auf „geschützt“ gesetzt. Die Person bestimmt manuell, wer ihrem Profil folgen darf.",
   "account.media": "Medien",
   "account.mention": "@{name} erwähnen",
@@ -346,19 +341,16 @@
   "explore.trending_links": "Neuigkeiten",
   "explore.trending_statuses": "Beiträge",
   "explore.trending_tags": "Hashtags",
-<<<<<<< HEAD
   "federation.change": "Status-Föderation bearbeiten",
   "federation.federated.long": "Status erlauben, andere Instanzen zu erreichen",
   "federation.federated.short": "Föderiert",
   "federation.local_only.long": "Status auf diese Instanz beschränken",
   "federation.local_only.short": "Nur lokal",
-=======
   "featured_carousel.header": "{count, plural, one {Angehefteter Beitrag} other {Angeheftete Beiträge}}",
   "featured_carousel.next": "Vor",
   "featured_carousel.post": "Beitrag",
   "featured_carousel.previous": "Zurück",
   "featured_carousel.slide": "{index} von {total}",
->>>>>>> v4.4.0
   "filter_modal.added.context_mismatch_explanation": "Diese Filterkategorie gilt nicht für den Kontext, in welchem du auf diesen Beitrag zugegriffen hast. Wenn der Beitrag auch in diesem Kontext gefiltert werden soll, musst du den Filter bearbeiten.",
   "filter_modal.added.context_mismatch_title": "Kontext stimmt nicht überein!",
   "filter_modal.added.expired_explanation": "Diese Filterkategorie ist abgelaufen. Du musst das Ablaufdatum für diese Kategorie ändern.",
@@ -634,11 +626,7 @@
   "notification.relationships_severance_event.domain_block": "Ein Admin von {from} hat {target} blockiert – darunter {followersCount} deiner Follower und {followingCount, plural, one {# Konto, dem} other {# Konten, denen}} du folgst.",
   "notification.relationships_severance_event.learn_more": "Mehr erfahren",
   "notification.relationships_severance_event.user_domain_block": "Du hast {target} blockiert – {followersCount} deiner Follower und {followingCount, plural, one {# Konto, dem} other {# Konten, denen}} du folgst, wurden entfernt.",
-<<<<<<< HEAD
-  "notification.status": "{name} veröffentlichte gerade",
-=======
   "notification.status": "{name} postete …",
->>>>>>> v4.4.0
   "notification.update": "{name} bearbeitete einen Beitrag",
   "notification_requests.accept": "Akzeptieren",
   "notification_requests.accept_multiple": "{count, plural, one {# Anfrage akzeptieren …} other {# Anfragen akzeptieren …}}",

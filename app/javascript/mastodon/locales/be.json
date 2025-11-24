@@ -82,12 +82,8 @@
   "alert.rate_limited.title": "Ліміт перавышаны",
   "alert.unexpected.message": "Узнікла нечаканая памылка.",
   "alert.unexpected.title": "Вой!",
-<<<<<<< HEAD
-  "alt_text_badge.title": "Альтернативный текст",
-=======
   "alt_text_badge.title": "Альтэрнатыўны тэкст",
   "alt_text_modal.done": "Гатова",
->>>>>>> v4.4.0
   "announcement.announcement": "Аб'ява",
   "annual_report.summary.archetype.booster": "Трэнда-сьледнік",
   "annual_report.summary.archetype.lurker": "Назіральнік",

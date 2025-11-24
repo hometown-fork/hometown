@@ -310,16 +310,12 @@
   "explore.trending_links": "Novaji",
   "explore.trending_statuses": "Posti",
   "explore.trending_tags": "Hashtagi",
-<<<<<<< HEAD
   "federation.change": "Adjust status federation",
   "federation.federated.long": "Allow toot to reach other instances",
   "federation.federated.short": "Federated",
   "federation.local_only.long": "Restrict this toot only to my instance",
   "federation.local_only.short": "Local-only",
-  "filter_modal.added.context_mismatch_explanation": "Ca filtrilgrupo ne relatesas kun informo de ca acesesita posto. Se vu volas posto filtresar kun ca informo anke, vu bezonas modifikar filtrilo.",
-=======
   "filter_modal.added.context_mismatch_explanation": "Ca filtrilgrupo ne uzesis ad informo di ca adirita afisho.",
->>>>>>> v4.4.0
   "filter_modal.added.context_mismatch_title": "Kontenajneparigeso!",
   "filter_modal.added.expired_explanation": "Ca filtrilgrupo expiris, vu bezonas chanjar expirtempo por apliko.",
   "filter_modal.added.expired_title": "Expirinta filtrilo!",
@@ -815,14 +811,9 @@
   "status.favourites": "{count, plural, one {stelumo} other {stelumi}}",
   "status.filter": "Filtragez ca posto",
   "status.history.created": "{name} kreis ye {date}",
-<<<<<<< HEAD
-  "status.history.edited": "{name} modifikis ye {date}",
-  "status.load_more": "Kargar pluse",
-  "status.local_only": "This post is only visible by other users of your instance",
-=======
   "status.history.edited": "{name} redaktis ye {date}",
   "status.load_more": "Kargar plu",
->>>>>>> v4.4.0
+  "status.local_only": "This post is only visible by other users of your instance",
   "status.media.open": "Klikez por apertar",
   "status.media.show": "Klikez por montrar",
   "status.media_hidden": "Audvidaji es celita",

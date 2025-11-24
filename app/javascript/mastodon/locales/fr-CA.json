@@ -920,17 +920,11 @@
   "upload_button.label": "Ajouter des images, une vidéo ou un fichier audio",
   "upload_error.limit": "Taille maximale d'envoi de fichier dépassée.",
   "upload_error.poll": "L’envoi de fichiers n’est pas autorisé avec les sondages.",
-<<<<<<< HEAD
-  "upload_form.audio_description": "Décrire pour les personnes ayant des difficultés d’audition",
-  "upload_form.description": "Décrire pour les malvoyants",
-  "upload_form.drag_and_drop.instructions": "Pour choisir un média joint, appuyez sur la touche espace ou entrée. Tout en faisant glisser, utilisez les touches fléchées pour déplacer le fichier média dans une direction donnée. Appuyez à nouveau sur la touche espace ou entrée pour déposer le fichier média dans sa nouvelle position, ou appuyez sur la touche Echap pour annuler.",
-=======
   "upload_form.drag_and_drop.instructions": "Pour choisir un média joint, appuyez sur la touche espace ou entrée. Tout en faisant glisser, utilisez les touches fléchées pour déplacer le fichier média dans une direction donnée. Appuyez à nouveau sur la touche espace ou entrée pour déposer le fichier média dans sa nouvelle position, ou appuyez sur la touche Echap pour annuler.",
   "upload_form.drag_and_drop.on_drag_cancel": "Le glissement a été annulé. La pièce jointe {item} n'a pas été ajoutée.",
   "upload_form.drag_and_drop.on_drag_end": "La pièce jointe du média {item} a été déplacée.",
   "upload_form.drag_and_drop.on_drag_over": "La pièce jointe du média {item} a été déplacée.",
   "upload_form.drag_and_drop.on_drag_start": "A récupéré la pièce jointe {item}.",
->>>>>>> v4.4.0
   "upload_form.edit": "Modifier",
   "upload_progress.label": "Envoi en cours...",
   "upload_progress.processing": "Traitement en cours…",

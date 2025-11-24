@@ -317,18 +317,15 @@
   "explore.trending_links": "ข่าว",
   "explore.trending_statuses": "โพสต์",
   "explore.trending_tags": "แฮชแท็ก",
-<<<<<<< HEAD
   "federation.change": "Adjust status federation",
   "federation.federated.long": "Allow toot to reach other instances",
   "federation.federated.short": "Federated",
   "federation.local_only.long": "Restrict this toot only to my instance",
   "federation.local_only.short": "Local-only",
-=======
   "featured_carousel.next": "ถัดไป",
   "featured_carousel.post": "โพสต์",
   "featured_carousel.previous": "ก่อนหน้า",
   "featured_carousel.slide": "{index} จาก {total}",
->>>>>>> v4.4.0
   "filter_modal.added.context_mismatch_explanation": "หมวดหมู่ตัวกรองนี้ไม่นำไปใช้กับบริบทที่คุณได้เข้าถึงโพสต์นี้ หากคุณต้องการกรองโพสต์ในบริบทนี้ด้วย คุณจะต้องแก้ไขตัวกรอง",
   "filter_modal.added.context_mismatch_title": "บริบทไม่ตรงกัน!",
   "filter_modal.added.expired_explanation": "หมวดหมู่ตัวกรองนี้หมดอายุแล้ว คุณจะต้องเปลี่ยนวันหมดอายุสำหรับหมวดหมู่เพื่อนำไปใช้",

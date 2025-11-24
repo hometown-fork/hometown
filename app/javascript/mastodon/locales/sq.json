@@ -336,19 +336,16 @@
   "explore.trending_links": "Lajme",
   "explore.trending_statuses": "Postime",
   "explore.trending_tags": "Hashtagë",
-<<<<<<< HEAD
   "federation.change": "Adjust status federation",
   "federation.federated.long": "Allow toot to reach other instances",
   "federation.federated.short": "Federated",
   "federation.local_only.long": "Restrict this toot only to my instance",
   "federation.local_only.short": "Local-only",
-=======
   "featured_carousel.header": "{count, plural, one {Postim i Fiksuar} other {Postime të Fiksuar}}",
   "featured_carousel.next": "Pasuesi",
   "featured_carousel.post": "Postim",
   "featured_carousel.previous": "I mëparshmi",
   "featured_carousel.slide": "{index} nga {total}",
->>>>>>> v4.4.0
   "filter_modal.added.context_mismatch_explanation": "Kjo kategori filtrash nuk aplikohet për kontekstin nën të cilin po merreni me këtë postim. Nëse doni që postimi të filtrohet edhe në këtë kontekst, do t’ju duhet të përpunoni filtrin.",
   "filter_modal.added.context_mismatch_title": "Mospërputhje kontekstesh!",
   "filter_modal.added.expired_explanation": "Kjo kategori filtrash ka skaduar, do t’ju duhet të ndryshoni datën e skadimit për të, pa të aplikohet.",
@@ -932,11 +929,6 @@
   "upload_button.label": "Shtoni figura, një video ose një kartelë audio",
   "upload_error.limit": "U tejkalua kufi ngarkimi kartelash.",
   "upload_error.poll": "Me pyetësorët s’lejohet ngarkim kartelash.",
-<<<<<<< HEAD
-  "upload_form.audio_description": "Përshkruajeni për persona me dëgjim të kufizuar",
-  "upload_form.description": "Përshkruajeni për persona me probleme shikimi",
-=======
->>>>>>> v4.4.0
   "upload_form.drag_and_drop.instructions": "Që të merrni një bashkëngjitje media, shtypni tastin Space ose Enter. Teksa bëhet tërheqje, përdorni tastet shigjetë për ta shpënë bashkëngjitjen media në cilëndo drejtori që doni. Shtypni sërish Space ose Enter që të lihet bashkëngjitja media në pozicionin e vet të ri, ose shtypni Esc, që të anulohet veprimi.",
   "upload_form.drag_and_drop.on_drag_cancel": "Tërheqja u anulua. Bashkëngjitja media {item} u la.",
   "upload_form.drag_and_drop.on_drag_end": "Bashkëngjitja media {item} u la.",

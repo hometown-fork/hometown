@@ -100,8 +100,6 @@
   "alert.unexpected.message": "Προέκυψε απροσδόκητο σφάλμα.",
   "alert.unexpected.title": "Ουπς!",
   "alt_text_badge.title": "Εναλλακτικό κείμενο",
-<<<<<<< HEAD
-=======
   "alt_text_modal.add_alt_text": "Προσθήκη εναλλακτικού κειμένου",
   "alt_text_modal.add_text_from_image": "Προσθήκη κειμένου από εικόνα",
   "alt_text_modal.cancel": "Ακύρωση",
@@ -109,7 +107,6 @@
   "alt_text_modal.describe_for_people_with_hearing_impairments": "Περιέγραψε αυτό για άτομα με προβλήματα ακοής…",
   "alt_text_modal.describe_for_people_with_visual_impairments": "Περιέγραψε αυτό για άτομα με προβλήματα όρασης…",
   "alt_text_modal.done": "Ολοκληρώθηκε",
->>>>>>> v4.4.0
   "announcement.announcement": "Ανακοίνωση",
   "annual_report.summary.archetype.booster": "Ο κυνηγός των φοβερών",
   "annual_report.summary.archetype.lurker": "Ο διακριτικός",
@@ -339,19 +336,16 @@
   "explore.trending_links": "Νέα",
   "explore.trending_statuses": "Αναρτήσεις",
   "explore.trending_tags": "Ετικέτες",
-<<<<<<< HEAD
   "federation.change": "Adjust status federation",
   "federation.federated.long": "Allow toot to reach other instances",
   "federation.federated.short": "Federated",
   "federation.local_only.long": "Restrict this toot only to my instance",
   "federation.local_only.short": "Local-only",
-=======
   "featured_carousel.header": "{count, plural, one {Καρφιτσωμένη Ανάρτηση} other {Καρφιτσωμένες Αναρτήσεις}}",
   "featured_carousel.next": "Επόμενο",
   "featured_carousel.post": "Ανάρτηση",
   "featured_carousel.previous": "Προηγούμενο",
   "featured_carousel.slide": "{index} από {total}",
->>>>>>> v4.4.0
   "filter_modal.added.context_mismatch_explanation": "Αυτή η κατηγορία φίλτρων δεν ισχύει για το περιεχόμενο εντός του οποίου προσπελάσατε αυτή την ανάρτηση. Αν θέλετε να φιλτραριστεί η ανάρτηση και εντός αυτού του πλαισίου, θα πρέπει να τροποποιήσετε το φίλτρο.",
   "filter_modal.added.context_mismatch_title": "Ασυμφωνία περιεχομένου!",
   "filter_modal.added.expired_explanation": "Αυτή η κατηγορία φίλτρων έχει λήξει, πρέπει να αλλάξετε την ημερομηνία λήξης για να ισχύσει.",
@@ -935,11 +929,6 @@
   "upload_button.label": "Πρόσθεσε εικόνες, ένα βίντεο ή ένα αρχείο ήχου",
   "upload_error.limit": "Υπέρβαση ορίου μεγέθους ανεβασμένων αρχείων.",
   "upload_error.poll": "Στις δημοσκοπήσεις δεν επιτρέπεται η μεταφόρτωση αρχείου.",
-<<<<<<< HEAD
-  "upload_form.audio_description": "Περιγραφή για άτομα με προβλήματα ακοής",
-  "upload_form.description": "Περιγραφή για άτομα με προβλήματα όρασης",
-=======
->>>>>>> v4.4.0
   "upload_form.drag_and_drop.instructions": "Για να επιλέξετε ένα συνημμένο αρχείο πολυμέσων, πατήστε το Space ή το Enter. Ενώ το σέρνετε, χρησιμοποιήστε τα πλήκτρα βέλους για να μετακινήσετε το συνημμένο αρχείο πολυμέσων προς οποιαδήποτε κατεύθυνση. Πατήστε ξανά το Space ή το Enter για να αποθέσετε το συνημμένο αρχείο πολυμέσων στη νέα του θέση ή πατήστε το Escape για ακύρωση.",
   "upload_form.drag_and_drop.on_drag_cancel": "Η μετακίνηση ακυρώθηκε. Έγινε απόθεση του συνημμένου αρχείου πολυμέσων «{item}».",
   "upload_form.drag_and_drop.on_drag_end": "Έγινε απόθεση του συνημμένου αρχείου πολυμέσων «{item}».",

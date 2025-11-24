@@ -341,19 +341,16 @@
   "explore.trending_links": "Nieuws",
   "explore.trending_statuses": "Berichten",
   "explore.trending_tags": "Hashtags",
-<<<<<<< HEAD
   "federation.change": "Adjust status federation",
   "federation.federated.long": "Allow toot to reach other instances",
   "federation.federated.short": "Federated",
   "federation.local_only.long": "Restrict this toot only to my instance",
   "federation.local_only.short": "Local-only",
-=======
   "featured_carousel.header": "{count, plural, one {Vastgezet bericht} other {Vastgezette berichten}}",
   "featured_carousel.next": "Volgende",
   "featured_carousel.post": "Bericht",
   "featured_carousel.previous": "Vorige",
   "featured_carousel.slide": "{index} van {total}",
->>>>>>> v4.4.0
   "filter_modal.added.context_mismatch_explanation": "Deze filtercategorie is niet van toepassing op de context waarin je dit bericht hebt benaderd. Als je wilt dat het bericht ook in deze context wordt gefilterd, moet je het filter bewerken.",
   "filter_modal.added.context_mismatch_title": "Context komt niet overeen!",
   "filter_modal.added.expired_explanation": "Deze filtercategorie is verlopen. Je moet de vervaldatum wijzigen om de categorie toe te kunnen passen.",
@@ -595,12 +592,6 @@
   "notification.admin.report_statuses_other": "{name} rapporteerde {target}",
   "notification.admin.sign_up": "{name} heeft zich geregistreerd",
   "notification.admin.sign_up.name_and_others": "{name} en {count, plural, one {# ander persoon} other {# andere personen}} hebben zich geregistreerd",
-<<<<<<< HEAD
-  "notification.favourite": "{name} markeerde jouw bericht als favoriet",
-  "notification.favourite.name_and_others_with_link": "{name} en <a>{count, plural, one {# ander persoon} other {# andere personen}}</a> hebben jouw bericht als favoriet gemarkeerd",
-  "notification.follow": "{name} volgt jou nu",
-  "notification.follow.name_and_others": "{name} en {count, plural, one {# ander persoon} other {# andere personen}} hebben je gevolgd",
-=======
   "notification.annual_report.message": "Jouw {year} #Wrapstodon staat klaar! Laat de hoogtepunten en memorabele momenten van jouw jaar zien op Mastodon!",
   "notification.annual_report.view": "#Wrapstodon bekijken",
   "notification.favourite": "{name} markeerde jouw bericht als favoriet",
@@ -609,7 +600,6 @@
   "notification.favourite_pm.name_and_others_with_link": "{name} en <a>{count, plural, one {# ander} other {# anderen}}</a> hebben je privébericht als favoriet gemarkeerd",
   "notification.follow": "{name} volgt jou nu",
   "notification.follow.name_and_others": "{name} en <a>{count, plural, one {# ander persoon} other {# andere personen}}</a> volgen jou nou",
->>>>>>> v4.4.0
   "notification.follow_request": "{name} wil jou graag volgen",
   "notification.follow_request.name_and_others": "{name} en {count, plural, one {# ander persoon} other {# andere personen}} hebben gevraagd om je te volgen",
   "notification.label.mention": "Vermelding",

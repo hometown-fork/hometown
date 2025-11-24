@@ -334,19 +334,16 @@
   "explore.trending_links": "Nyheter",
   "explore.trending_statuses": "Innlegg",
   "explore.trending_tags": "Emneknagger",
-<<<<<<< HEAD
   "federation.change": "Adjust status federation",
   "federation.federated.long": "Allow toot to reach other instances",
   "federation.federated.short": "Federated",
   "federation.local_only.long": "Restrict this toot only to my instance",
   "federation.local_only.short": "Local-only",
-=======
   "featured_carousel.header": "{count, plural, one {{counter} festet innlegg} other {{counter} festede innlegg}}",
   "featured_carousel.next": "Neste",
   "featured_carousel.post": "Innlegg",
   "featured_carousel.previous": "Forrige",
   "featured_carousel.slide": "{index} av {total}",
->>>>>>> v4.4.0
   "filter_modal.added.context_mismatch_explanation": "Denne filterkategorien gjelder ikke for den konteksten du har åpnet dette innlegget i. Hvis du vil at innlegget skal filtreres i denne konteksten også, må du redigere filteret.",
   "filter_modal.added.context_mismatch_title": "Feil sammenheng!",
   "filter_modal.added.expired_explanation": "Denne filterkategorien er utløpt, du må endre utløpsdato for at den skal gjelde.",
@@ -616,9 +613,6 @@
   "notification.relationships_severance_event.user_domain_block": "Du har blokkert {target} og fjernet {followersCount} av følgerne dine og {followingCount, plural, one {# konto} other {# kontoer}} du følger.",
   "notification.status": "{name} la nettopp ut",
   "notification.update": "{name} redigerte et innlegg",
-<<<<<<< HEAD
-  "notification_requests.minimize_banner": "Minimer banneret for filtrerte varsler",
-=======
   "notification_requests.accept": "Aksepter",
   "notification_requests.accept_multiple": "{count, plural, one {Aksepter # forespørsel…} other {Aksepter # forespørsler…}}",
   "notification_requests.confirm_accept_multiple.button": "{count, plural, one {Aksepter forespørsel} other {Aksepter forespørsler}}",
@@ -631,7 +625,6 @@
   "notification_requests.minimize_banner": "Minimer banneret for filtrerte varsler",
   "notification_requests.notifications_from": "Varsler fra {name}",
   "notification_requests.title": "Filtrerte varlser",
->>>>>>> v4.4.0
   "notification_requests.view": "Vis varsler",
   "notifications.clear": "Fjern varsler",
   "notifications.clear_confirmation": "Er du sikker på at du vil fjerne alle dine varsler permanent?",

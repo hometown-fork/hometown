@@ -91,12 +91,9 @@
   "alert.unexpected.message": "Vyskytla sa nečakaná chyba.",
   "alert.unexpected.title": "Ups!",
   "alt_text_badge.title": "Alternatívny popis",
-<<<<<<< HEAD
-=======
   "alt_text_modal.add_text_from_image": "Pridaj text z obrázka",
   "alt_text_modal.cancel": "Zrušiť",
   "alt_text_modal.done": "Hotovo",
->>>>>>> v4.4.0
   "announcement.announcement": "Oznámenie",
   "annual_report.summary.archetype.oracle": "Veštec",
   "annual_report.summary.followers.followers": "sledovatelia",

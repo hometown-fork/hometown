@@ -341,19 +341,16 @@
   "explore.trending_links": "소식",
   "explore.trending_statuses": "게시물",
   "explore.trending_tags": "해시태그",
-<<<<<<< HEAD
   "federation.change": "Adjust status federation",
   "federation.federated.long": "Allow toot to reach other instances",
   "federation.federated.short": "Federated",
   "federation.local_only.long": "Restrict this toot only to my instance",
   "federation.local_only.short": "Local-only",
-=======
   "featured_carousel.header": "{count, plural, other {고정된 게시물}}",
   "featured_carousel.next": "다음",
   "featured_carousel.post": "게시물",
   "featured_carousel.previous": "이전",
   "featured_carousel.slide": "{total} 중 {index}",
->>>>>>> v4.4.0
   "filter_modal.added.context_mismatch_explanation": "이 필터 카테고리는 당신이 이 게시물에 접근한 문맥에 적용되지 않습니다. 만약 이 문맥에서도 필터되길 원한다면, 필터를 수정해야 합니다.",
   "filter_modal.added.context_mismatch_title": "문맥 불일치!",
   "filter_modal.added.expired_explanation": "이 필터 카테고리는 만료되었습니다, 적용하려면 만료 일자를 변경할 필요가 있습니다.",
@@ -870,12 +867,8 @@
   "status.filter": "이 게시물을 필터",
   "status.history.created": "{name} 님이 {date}에 게시함",
   "status.history.edited": "{name} 님이 {date}에 수정함",
-<<<<<<< HEAD
-  "status.load_more": "더 보기",
-  "status.local_only": "This post is only visible by other users of your instance",
-=======
   "status.load_more": "더보기",
->>>>>>> v4.4.0
+  "status.local_only": "This post is only visible by other users of your instance",
   "status.media.open": "클릭하여 열기",
   "status.media.show": "클릭하여 보기",
   "status.media_hidden": "미디어 숨겨짐",

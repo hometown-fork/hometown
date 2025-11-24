@@ -341,16 +341,11 @@
   "explore.trending_links": "Notícias",
   "explore.trending_statuses": "Publicações",
   "explore.trending_tags": "#Etiquetas",
-<<<<<<< HEAD
   "federation.change": "Ajustar federação do post",
   "federation.federated.long": "Permitir que o post chegue a outras instâncias",
   "federation.federated.short": "Federado",
   "federation.local_only.long": "Restringir o post somente à minha instância",
   "federation.local_only.short": "Somente local",
-  "filter_modal.added.context_mismatch_explanation": "Esta categoria de filtro não se aplica ao contexto em que acedeu a esta publicação. Se pretender que esta publicação seja filtrada também neste contexto, terá que editar o filtro.",
-  "filter_modal.added.context_mismatch_title": "Contexto incoerente!",
-  "filter_modal.added.expired_explanation": "Esta categoria de filtro expirou, necessita alterar a data de validade para que ele seja aplicado.",
-=======
   "featured_carousel.header": "{count, plural, one {Publicação Afixada} other {Publicações Afixadas}}",
   "featured_carousel.next": "Seguinte",
   "featured_carousel.post": "Publicação",
@@ -359,7 +354,6 @@
   "filter_modal.added.context_mismatch_explanation": "Esta categoria de filtro não se aplica ao contexto em que acedeste a esta publicação. Se pretenderes que esta publicação seja filtrada também neste contexto, terás que editar o filtro.",
   "filter_modal.added.context_mismatch_title": "O contexto não coincide!",
   "filter_modal.added.expired_explanation": "Esta categoria de filtro expirou, tens de alterar a data de validade para que ele seja aplicado.",
->>>>>>> v4.4.0
   "filter_modal.added.expired_title": "Filtro expirado!",
   "filter_modal.added.review_and_configure": "Para rever e configurar mais detalhadamente esta categoria de filtro, vai a {settings_link}.",
   "filter_modal.added.review_and_configure_title": "Definições do filtro",
@@ -874,16 +868,10 @@
   "status.history.created": "{name} criado em {date}",
   "status.history.edited": "{name} editado em {date}",
   "status.load_more": "Carregar mais",
-<<<<<<< HEAD
   "status.local_only": "Esse post só é visível para outros usuários da sua instância",
-  "status.media.open": "Clique para abrir",
-  "status.media.show": "Clique para ver",
-  "status.media_hidden": "Media escondida",
-=======
   "status.media.open": "Clicar para abrir",
   "status.media.show": "Clicar para ver",
   "status.media_hidden": "Multimédia oculta",
->>>>>>> v4.4.0
   "status.mention": "Mencionar @{name}",
   "status.more": "Mais",
   "status.mute": "Ocultar @{name}",

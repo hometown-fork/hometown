@@ -100,8 +100,6 @@
   "alert.unexpected.message": "Thachair mearachd ris nach robh dùil.",
   "alert.unexpected.title": "Oich!",
   "alt_text_badge.title": "Roghainn teacsa",
-<<<<<<< HEAD
-=======
   "alt_text_modal.add_alt_text": "Cuir roghainn teacsa ris",
   "alt_text_modal.add_text_from_image": "Cuir teacsa on dealbh ris",
   "alt_text_modal.cancel": "Sguir dheth",
@@ -109,7 +107,6 @@
   "alt_text_modal.describe_for_people_with_hearing_impairments": "Mìnich seo dhan fheadhainn air a bheil ciorram claisneachd…",
   "alt_text_modal.describe_for_people_with_visual_impairments": "Mìnich seo dhan fheadhainn air a bheil cion-lèirsinne…",
   "alt_text_modal.done": "Deiseil",
->>>>>>> v4.4.0
   "announcement.announcement": "Brath-fios",
   "annual_report.summary.archetype.booster": "Brosnaiche",
   "annual_report.summary.archetype.lurker": "Eala-bhalbh",
@@ -393,10 +390,6 @@
   "footer.about": "Mu dhèidhinn",
   "footer.directory": "Eòlaire nam pròifil",
   "footer.get_app": "Faigh an aplacaid",
-<<<<<<< HEAD
-  "footer.invite": "Thoir cuireadh",
-=======
->>>>>>> v4.4.0
   "footer.keyboard_shortcuts": "Ath-ghoiridean a’ mheur-chlàir",
   "footer.privacy_policy": "Poileasaidh prìobhaideachd",
   "footer.source_code": "Seall am bun-tùs",
@@ -937,11 +930,6 @@
   "upload_button.label": "Cuir ris dealbhan, video no faidhle fuaime",
   "upload_error.limit": "Luchdaich thu suas na tha ceadaichte dhut a dh’fhaidhlichean mu thràth.",
   "upload_error.poll": "Chan fhaod thu faidhle a luchdadh suas an cois cunntais-bheachd.",
-<<<<<<< HEAD
-  "upload_form.audio_description": "Mìnich e dhan fheadhainn le èisteachd bheag",
-  "upload_form.description": "Mìnich e dhan fheadhainn le cion-lèirsinne",
-=======
->>>>>>> v4.4.0
   "upload_form.drag_and_drop.instructions": "Airson ceanglachan meadhain a thogail, brùth air space no enter. Fhad ’ a bhios tu ’ga shlaodadh, cleachd na h-iuchraichean-saighde airson an ceanglachan meadhain a ghluasad gu comhair sam bith. Brùth air space no enter a-rithist airson an ceanglachen meadhain a leigeil às air an ionad ùr aige no brùth air escape airson sgur dheth.",
   "upload_form.drag_and_drop.on_drag_cancel": "Chaidh sgur dhen t-slaodadh. Chaidh an ceanglachan meadhain {item} a leigeil às.",
   "upload_form.drag_and_drop.on_drag_end": "Chaidh an ceanglachan meadhain {item} a leigeil às.",

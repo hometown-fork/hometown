@@ -99,9 +99,6 @@
   "alert.rate_limited.title": "Cyfradd gyfyngedig",
   "alert.unexpected.message": "Digwyddodd gwall annisgwyl.",
   "alert.unexpected.title": "Wps!",
-<<<<<<< HEAD
-  "alt_text_badge.title": "Testun Amgen",
-=======
   "alt_text_badge.title": "Testun amgen",
   "alt_text_modal.add_alt_text": "Ychwanegu testun amgen",
   "alt_text_modal.add_text_from_image": "Ychwanegu testun o'r ddelwedd",
@@ -110,7 +107,6 @@
   "alt_text_modal.describe_for_people_with_hearing_impairments": "Disgrifiwch hyn ar gyfer pobl â nam ar eu clyw…",
   "alt_text_modal.describe_for_people_with_visual_impairments": "Disgrifiwch hyn ar gyfer pobl â nam ar eu golwg…",
   "alt_text_modal.done": "Gorffen",
->>>>>>> v4.4.0
   "announcement.announcement": "Cyhoeddiad",
   "annual_report.summary.archetype.booster": "Y hyrwyddwr",
   "annual_report.summary.archetype.lurker": "Y crwydryn",
@@ -277,10 +273,7 @@
   "domain_block_modal.they_cant_follow": "All neb o'r gweinydd hwn eich dilyn.",
   "domain_block_modal.they_wont_know": "Fyddan nhw ddim yn gwybod eu bod wedi cael eu blocio.",
   "domain_block_modal.title": "Blocio parth?",
-<<<<<<< HEAD
-=======
   "domain_block_modal.you_will_lose_num_followers": "Byddwch yn colli {followersCount, plural, one {{followersCountDisplay} dilynwr} other {{followersCountDisplay} dilynwyr}} a {followingCount, plural, one {{followingCountDisplay} person rydych yn dilyn} other {{followingCountDisplay} o bobl rydych yn eu dilyn}}.",
->>>>>>> v4.4.0
   "domain_block_modal.you_will_lose_relationships": "Byddwch yn colli'r holl ddilynwyr a phobl rydych chi'n eu dilyn o'r gweinydd hwn.",
   "domain_block_modal.you_wont_see_posts": "Fyddwch chi ddim yn gweld postiadau na hysbysiadau gan ddefnyddwyr ar y gweinydd hwn.",
   "domain_pill.activitypub_lets_connect": "Mae'n caniatáu ichi gysylltu a rhyngweithio â phobl nid yn unig ar Mastodon, ond ar draws gwahanol apiau cymdeithasol hefyd.",
@@ -348,21 +341,17 @@
   "explore.trending_links": "Newyddion",
   "explore.trending_statuses": "Postiadau",
   "explore.trending_tags": "Hashnodau",
-<<<<<<< HEAD
   "federation.change": "Adjust status federation",
   "federation.federated.long": "Allow toot to reach other instances",
   "federation.federated.short": "Federated",
   "federation.local_only.long": "Restrict this toot only to my instance",
   "federation.local_only.short": "Local-only",
-  "filter_modal.added.context_mismatch_explanation": "Nid yw'r categori hidlo hwn yn berthnasol i'r cyd-destun yr ydych wedi cyrchu'r postiad hwn ynddo. Os ydych chi am i'r postiad gael ei hidlo yn y cyd-destun hwn hefyd, bydd yn rhaid i chi olygu'r hidlydd.",
-=======
   "featured_carousel.header": "{count, plural, one {Postiad wedi'i binio} other {Postiadau wedi'u pinio}}",
   "featured_carousel.next": "Nesaf",
   "featured_carousel.post": "Postiad",
   "featured_carousel.previous": "Blaenorol",
   "featured_carousel.slide": "{index} o {total}",
   "filter_modal.added.context_mismatch_explanation": "Dyw'r categori hidlo hwn ddim yn berthnasol i'r cyd-destun yr ydych wedi cyrchu'r postiad hwn ynddo. Os ydych chi am i'r postiad gael ei hidlo yn y cyd-destun hwn hefyd, bydd yn rhaid i chi olygu'r hidlydd.",
->>>>>>> v4.4.0
   "filter_modal.added.context_mismatch_title": "Diffyg cyfatebiaeth cyd-destun!",
   "filter_modal.added.expired_explanation": "Mae'r categori hidlydd hwn wedi dod i ben, bydd angen i chi newid y dyddiad dod i ben er mwyn iddo fod yn berthnasol.",
   "filter_modal.added.expired_title": "Hidlydd wedi dod i ben!",
@@ -943,7 +932,6 @@
   "units.short.million": "{count}miliwn",
   "units.short.thousand": "{count}mil",
   "upload_area.title": "Llusgwch a gollwng i lwytho",
-<<<<<<< HEAD
   "upload_button.label": "Ychwanegwch gyfryngau (JPEG, PNG, GIF, WebM, MP4, MOV)",
   "upload_error.limit": "Wedi pasio'r uchafswm llwytho.",
   "upload_error.poll": "Nid oes modd llwytho ffeiliau â phleidleisiau.",
@@ -954,7 +942,6 @@
   "upload_form.drag_and_drop.on_drag_end": "Cafodd atodiad cyfryngau {item} ei ollwng.",
   "upload_form.drag_and_drop.on_drag_over": "Symudwyd atodiad cyfryngau {item}.",
   "upload_form.drag_and_drop.on_drag_start": "Atodiad cyfryngau godwyd {item}.",
-=======
   "upload_button.label": "Ychwanegwch delweddau, fideo neu ffeil sain",
   "upload_error.limit": "Wedi mynd heibio'r uchafswm llwytho.",
   "upload_error.poll": "Does dim modd llwytho ffeiliau â phleidleisiau.",
@@ -963,7 +950,6 @@
   "upload_form.drag_and_drop.on_drag_end": "Cafodd atodiad cyfryngau {item} ei ollwng.",
   "upload_form.drag_and_drop.on_drag_over": "Symudwyd atodiad cyfryngau {item}.",
   "upload_form.drag_and_drop.on_drag_start": "Wedi codi atodiad cyfryngau {item}.",
->>>>>>> v4.4.0
   "upload_form.edit": "Golygu",
   "upload_progress.label": "Yn llwytho...",
   "upload_progress.processing": "Wrthi'n prosesu…",

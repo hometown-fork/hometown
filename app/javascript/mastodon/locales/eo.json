@@ -26,12 +26,6 @@
   "account.copy": "Kopii ligilon al profilo",
   "account.direct": "Private mencii @{name}",
   "account.disable_notifications": "Ĉesu sciigi min kiam @{name} afiŝas",
-<<<<<<< HEAD
-  "account.domain_blocked": "Domajno blokita",
-  "account.edit_profile": "Redakti la profilon",
-  "account.enable_notifications": "Sciigu min kiam @{name} afiŝos",
-  "account.endorse": "Rekomendi ĉe via profilo",
-=======
   "account.domain_blocking": "Blokas domajnon",
   "account.edit_profile": "Redakti la profilon",
   "account.enable_notifications": "Sciigu min kiam @{name} afiŝos",
@@ -39,7 +33,6 @@
   "account.featured": "Montrita",
   "account.featured.accounts": "Profiloj",
   "account.featured.hashtags": "Kradvortoj",
->>>>>>> v4.4.0
   "account.featured_tags.last_status_at": "Lasta afîŝo je {date}",
   "account.featured_tags.last_status_never": "Neniu afiŝo",
   "account.follow": "Sekvi",
@@ -71,10 +64,7 @@
   "account.open_original_page": "Malfermi la originalan paĝon",
   "account.posts": "Afiŝoj",
   "account.posts_with_replies": "Afiŝoj kaj respondoj",
-<<<<<<< HEAD
-=======
   "account.remove_from_followers": "Forigi {name}-n de sekvantoj",
->>>>>>> v4.4.0
   "account.report": "Raporti @{name}",
   "account.requested": "Atendo de aprobo. Klaku por nuligi la peton por sekvado",
   "account.requested_follow": "{name} petis sekvi vin",
@@ -87,13 +77,8 @@
   "account.unblock_domain_short": "Malbloki",
   "account.unblock_short": "Malbloki",
   "account.unendorse": "Ne plu rekomendi ĉe la profilo",
-<<<<<<< HEAD
-  "account.unfollow": "Ĉesi sekvi",
-  "account.unmute": "Ne plu silentigi @{name}",
-=======
   "account.unfollow": "Ne plu sekvi",
   "account.unmute": "Malsilentigi @{name}",
->>>>>>> v4.4.0
   "account.unmute_notifications_short": "Malsilentigu sciigojn",
   "account.unmute_short": "Ne plu silentigi",
   "account_note.placeholder": "Alklaku por aldoni noton",
@@ -216,12 +201,7 @@
   "compose_form.poll.switch_to_multiple": "Ŝanĝi la balotenketon por permesi multajn elektojn",
   "compose_form.poll.switch_to_single": "Ŝanĝi la balotenketon por permesi unu solan elekton",
   "compose_form.poll.type": "Stilo",
-<<<<<<< HEAD
-  "compose_form.publish": "Afiŝo",
-  "compose_form.publish_form": "Nova afiŝo",
-=======
   "compose_form.publish": "Afiŝi",
->>>>>>> v4.4.0
   "compose_form.reply": "Respondi",
   "compose_form.save_changes": "Ĝisdatigi",
   "compose_form.spoiler.marked": "Forigi la averton de enhavo",
@@ -275,14 +255,7 @@
   "disabled_account_banner.text": "Via konto {disabledAccount} estas nune malvalidigita.",
   "dismissable_banner.community_timeline": "Jen la plej novaj publikaj afiŝoj de uzantoj, kies kontojn gastigas {domain}.",
   "dismissable_banner.dismiss": "Eksigi",
-<<<<<<< HEAD
-  "dismissable_banner.explore_links": "Tiuj novaĵoj estas aktuale priparolataj de uzantoj en tiu ĉi kaj aliaj serviloj, sur la malcentrigita reto.",
-  "dismissable_banner.explore_statuses": "Ĉi tiuj estas afiŝoj de la tuta socia reto, kiuj populariĝas hodiaŭ. Pli novaj afiŝoj kun pli da diskonigoj kaj plej ŝatataj estas rangigitaj pli alte.",
-  "dismissable_banner.explore_tags": "Ĉi tiuj kradvostoj populariĝas en ĉi tiu kaj aliaj serviloj en la malcentraliza reto nun.",
-  "dismissable_banner.public_timeline": "Ĉi tiuj estas la plej lastatempaj publikaj afiŝoj de homoj en la socia reto, kiujn homoj sur {domain} sekvas.",
-=======
   "dismissable_banner.public_timeline": "Ĉi tiuj estas la plej ĵusaj publikaj afiŝoj de homoj en la fediverso, kiujn la homoj en {domain} sekvas.",
->>>>>>> v4.4.0
   "domain_block_modal.block": "Bloki servilon",
   "domain_block_modal.block_account_instead": "Bloki @{name} anstataŭe",
   "domain_block_modal.they_can_interact_with_old_posts": "Homoj de ĉi tiu servilo povas interagi kun viaj malnovaj afiŝoj.",
@@ -355,17 +328,14 @@
   "explore.trending_links": "Novaĵoj",
   "explore.trending_statuses": "Afiŝoj",
   "explore.trending_tags": "Kradvortoj",
-<<<<<<< HEAD
   "federation.change": "Adjust status federation",
   "federation.federated.long": "Allow toot to reach other instances",
   "federation.federated.short": "Federated",
   "federation.local_only.long": "Restrict this toot only to my instance",
   "federation.local_only.short": "Local-only",
-=======
   "featured_carousel.next": "Antaŭen",
   "featured_carousel.post": "Afiŝi",
   "featured_carousel.previous": "Malantaŭen",
->>>>>>> v4.4.0
   "filter_modal.added.context_mismatch_explanation": "Ĉi tiu filtrilkategorio ne kongruas kun la kunteksto en kiu vi akcesis ĉi tiun afiŝon. Se vi volas ke la afiŝo estas ankaŭ filtrita en ĉi tiu kunteksto, vi devus redakti la filtrilon.",
   "filter_modal.added.context_mismatch_title": "Ne kongruas la kunteksto!",
   "filter_modal.added.expired_explanation": "Ĉi tiu filtrilkategorio eksvalidiĝis, vu bezonos ŝanĝi la eksvaliddaton por ĝi.",
@@ -382,11 +352,7 @@
   "filter_modal.select_filter.subtitle": "Uzu ekzistantan kategorion aŭ kreu novan",
   "filter_modal.select_filter.title": "Filtri ĉi tiun afiŝon",
   "filter_modal.title.status": "Filtri afiŝon",
-<<<<<<< HEAD
-  "filter_warning.matches_filter": "Filtrilo de kongruoj “{title}”",
-=======
   "filter_warning.matches_filter": "Filtrilo de kongruoj “<span>{title}</span>”",
->>>>>>> v4.4.0
   "filtered_notifications_banner.pending_requests": "El {count, plural, =0 {neniu} one {unu persono} other {# homoj}} vi eble konas",
   "filtered_notifications_banner.title": "Filtritaj sciigoj",
   "firehose.all": "Ĉiuj",
@@ -436,10 +402,7 @@
   "hashtag.counter_by_accounts": "{count, plural,one {{counter} partoprenanto} other {{counter} partoprenantoj}}",
   "hashtag.counter_by_uses": "{count, plural,one {{counter} afiŝo} other {{counter} afiŝoj}}",
   "hashtag.counter_by_uses_today": "{count, plural,one {{counter} afiŝo} other {{counter} afiŝoj}} hodiaŭ",
-<<<<<<< HEAD
-=======
   "hashtag.feature": "Prezenti en profilo",
->>>>>>> v4.4.0
   "hashtag.follow": "Sekvi la kradvorton",
   "hashtag.mute": "Silentigi #{hashtag}",
   "hashtag.unfeature": "Ne prezenti en profilo",
@@ -471,15 +434,6 @@
   "ignore_notifications_modal.not_followers_title": "Ĉu ignori sciigojn de homoj, kiuj ne sekvas vin?",
   "ignore_notifications_modal.not_following_title": "Ĉu ignori sciigojn de homoj, kiujn vi ne sekvas?",
   "ignore_notifications_modal.private_mentions_title": "Ĉu ignori sciigojn de nepetitaj privataj mencioj?",
-<<<<<<< HEAD
-  "interaction_modal.description.favourite": "Per konto ĉe Mastodon, vi povas stelumiti ĉi tiun afiŝon por sciigi la afiŝanton ke vi aprezigas ŝin kaj konservas por la estonteco.",
-  "interaction_modal.description.follow": "Kun konto ĉe Mastodon, vi povas sekvi {name} por ricevi iliajn afiŝojn en via hejma fluo.",
-  "interaction_modal.description.reblog": "Kun konto ĉe Mastodon, vi povas diskonigi ĉi tiun afiŝon, por ke viaj propraj sekvantoj vidu ĝin.",
-  "interaction_modal.description.reply": "Kun konto ĉe Mastodon, vi povos respondi al ĉi tiu afiŝo.",
-  "interaction_modal.login.action": "Prenu min hejmen",
-  "interaction_modal.login.prompt": "Domajno de via hejma servilo, ekz. mastodon.social",
-  "interaction_modal.no_account_yet": "Ĉu ne estas ĉe Mastodon?",
-=======
   "info_button.label": "Helpo",
   "info_button.what_is_alt_text": "<h1>Kio estas la alternativa teksto?</h1> <p>La alternativa teksto ofertas priskribojn de la bildoj por individuoj kun vidaj malfacilaĵoj, konektoj kun malalta larĝa bando aŭ kiuj serĉas plian kuntekston.</p> <p>Vi povas plibonigi alireblecon kaj komprenon por ĉiuj per skribado de klaraj, koncizaj, kaj objektivaj alternativaj tekstoj.</p><ul><li>Kaptu gravajn elementojn.</li><li> Resumu tekston en bildoj.</li> <li>Uzu regulan frazstrukturon.</li> <li>Evitu redundan informon.</li><li>Fokusu sur tendencoj kaj ĉefaj trovoj en kompleksaj visualoj (kiel diagramoj aŭ mapoj).</li></ul>",
   "interaction_modal.action.favourite": "Por daŭrigi, vi devas stelumi el via konto.",
@@ -489,7 +443,6 @@
   "interaction_modal.action.vote": "Por daŭrigi, vi devas voĉdoni el via konto.",
   "interaction_modal.go": "Iru",
   "interaction_modal.no_account_yet": "Ĉu vi ankoraŭ ne havas konton?",
->>>>>>> v4.4.0
   "interaction_modal.on_another_server": "En alia servilo",
   "interaction_modal.on_this_server": "En ĉi tiu servilo",
   "interaction_modal.title.favourite": "Stelumi la afiŝon de {name}",
@@ -505,17 +458,10 @@
   "keyboard_shortcuts.blocked": "Malfermi la liston de blokitaj uzantoj",
   "keyboard_shortcuts.boost": "Diskonigi la mesaĝon",
   "keyboard_shortcuts.column": "Fokusi kolumnon",
-<<<<<<< HEAD
-  "keyboard_shortcuts.compose": "enfokusigi la tekstujon",
-  "keyboard_shortcuts.description": "Priskribo",
-  "keyboard_shortcuts.direct": "por malfermi la kolumnon pri privataj mencioj",
-  "keyboard_shortcuts.down": "iri suben en la listo",
-=======
   "keyboard_shortcuts.compose": "Enfokusigi la tekstaron",
   "keyboard_shortcuts.description": "Priskribo",
   "keyboard_shortcuts.direct": "por malfermi la kolumnon pri privataj mencioj",
   "keyboard_shortcuts.down": "Movu malsupren en la listo",
->>>>>>> v4.4.0
   "keyboard_shortcuts.enter": "Malfermi afiŝon",
   "keyboard_shortcuts.favourite": "Stelumi afiŝon",
   "keyboard_shortcuts.favourites": "Malfermi la liston de la stelumoj",
@@ -523,27 +469,6 @@
   "keyboard_shortcuts.heading": "Fulmoklavoj",
   "keyboard_shortcuts.home": "Malfermi la hejman templinion",
   "keyboard_shortcuts.hotkey": "Rapidklavo",
-<<<<<<< HEAD
-  "keyboard_shortcuts.legend": "montri ĉi tiun noton",
-  "keyboard_shortcuts.local": "Malfermi la lokan templinion",
-  "keyboard_shortcuts.mention": "mencii la aŭtoron",
-  "keyboard_shortcuts.muted": "malfermi la liston de silentigitaj uzantoj",
-  "keyboard_shortcuts.my_profile": "malfermi vian profilon",
-  "keyboard_shortcuts.notifications": "malfermi la kolumnon de sciigoj",
-  "keyboard_shortcuts.open_media": "Malfermi plurmedion",
-  "keyboard_shortcuts.pinned": "Malfermu alpinglitajn afiŝojn-liston",
-  "keyboard_shortcuts.profile": "malfermi la profilon de la aŭtoro",
-  "keyboard_shortcuts.reply": "Respondu al afiŝo",
-  "keyboard_shortcuts.requests": "Malfermi la liston de petoj por sekvado",
-  "keyboard_shortcuts.search": "enfokusigi la serĉilon",
-  "keyboard_shortcuts.spoilers": "Montri/kaŝi la kampon de averto de enhavo (\"CW\")",
-  "keyboard_shortcuts.start": "malfermi la kolumnon «por komenci»",
-  "keyboard_shortcuts.toggle_hidden": "Montri/kaŝi tekston malantaŭ la averto de enhavo (\"CW\")",
-  "keyboard_shortcuts.toggle_sensitivity": "Montri/kaŝi plurmedion",
-  "keyboard_shortcuts.toot": "Komencu novan afiŝon",
-  "keyboard_shortcuts.unfocus": "malenfokusigi la tekstujon aŭ la serĉilon",
-  "keyboard_shortcuts.up": "iri supren en la listo",
-=======
   "keyboard_shortcuts.legend": "Montru ĉi tiun legendon",
   "keyboard_shortcuts.local": "Malfermu la lokan templinion",
   "keyboard_shortcuts.mention": "Menciu aŭtoron",
@@ -564,7 +489,6 @@
   "keyboard_shortcuts.translate": "Traduki afiŝon",
   "keyboard_shortcuts.unfocus": "Senfokusigi verki tekstareon/serĉon",
   "keyboard_shortcuts.up": "Movu supren en la listo",
->>>>>>> v4.4.0
   "lightbox.close": "Fermi",
   "lightbox.next": "Antaŭen",
   "lightbox.previous": "Malantaŭen",
@@ -618,14 +542,7 @@
   "navigation_bar.advanced_interface": "Malfermi altnivelan retpaĝan interfacon",
   "navigation_bar.blocks": "Blokitaj uzantoj",
   "navigation_bar.bookmarks": "Legosignoj",
-<<<<<<< HEAD
-  "navigation_bar.community_timeline": "Loka templinio",
-  "navigation_bar.compose": "Redakti novan afiŝon",
   "navigation_bar.direct": "Privataj mencioj",
-  "navigation_bar.discover": "Malkovri",
-=======
-  "navigation_bar.direct": "Privataj mencioj",
->>>>>>> v4.4.0
   "navigation_bar.domain_blocks": "Blokitaj domajnoj",
   "navigation_bar.favourites": "Stelumoj",
   "navigation_bar.filters": "Silentigitaj vortoj",
@@ -638,11 +555,6 @@
   "navigation_bar.more": "Pli",
   "navigation_bar.mutes": "Silentigitaj uzantoj",
   "navigation_bar.opened_in_classic_interface": "Afiŝoj, kontoj, kaj aliaj specifaj paĝoj kiuj estas malfermititaj defaulta en la klasika reta interfaco.",
-<<<<<<< HEAD
-  "navigation_bar.personal": "Persone",
-  "navigation_bar.pins": "Alpinglitaj afiŝoj",
-=======
->>>>>>> v4.4.0
   "navigation_bar.preferences": "Preferoj",
   "navigation_bar.search": "Serĉi",
   "not_signed_in_indicator.not_signed_in": "Necesas saluti por aliri tiun rimedon.",
@@ -906,15 +818,9 @@
   "sign_in_banner.mastodon_is": "Mastodon estas la plej bona maniero resti ĝisdata pri aktualaĵoj.",
   "sign_in_banner.sign_in": "Ensaluti",
   "sign_in_banner.sso_redirect": "Ensalutu aŭ Registriĝi",
-<<<<<<< HEAD
-  "status.admin_account": "Malfermi fasadon de moderigado por @{name}",
-  "status.admin_domain": "Malfermu moderigan interfacon por {domain}",
-  "status.admin_status": "Malfermi ĉi tiun afiŝon en la kontrola interfaco",
-=======
   "status.admin_account": "Malfermi fasadon de la reguligado por @{name}",
   "status.admin_domain": "Malfermi fasadon de la reguligado por {domain}",
   "status.admin_status": "Malfermi ĉi tiun afiŝon en la fasado de la reguligado",
->>>>>>> v4.4.0
   "status.block": "Bloki @{name}",
   "status.bookmark": "Aldoni al la legosignoj",
   "status.cancel_reblog_private": "Ne plu diskonigi",
@@ -945,10 +851,6 @@
   "status.mute_conversation": "Silentigi konversacion",
   "status.open": "Pligrandigu ĉi tiun afiŝon",
   "status.pin": "Alpingli al la profilo",
-<<<<<<< HEAD
-  "status.pinned": "Alpinglita afiŝo",
-=======
->>>>>>> v4.4.0
   "status.read_more": "Legi pli",
   "status.reblog": "Diskonigi",
   "status.reblog_private": "Diskonigi kun la sama videbleco",

@@ -100,8 +100,6 @@
   "alert.unexpected.message": "不明なエラーが発生しました。",
   "alert.unexpected.title": "エラー！",
   "alt_text_badge.title": "代替テキスト",
-<<<<<<< HEAD
-=======
   "alt_text_modal.add_alt_text": "代替テキストを追加",
   "alt_text_modal.add_text_from_image": "画像からテキストを追加",
   "alt_text_modal.cancel": "キャンセル",
@@ -109,7 +107,6 @@
   "alt_text_modal.describe_for_people_with_hearing_impairments": "耳の不自由な方のために説明してください…",
   "alt_text_modal.describe_for_people_with_visual_impairments": "目が不自由な方のために説明してください…",
   "alt_text_modal.done": "完了",
->>>>>>> v4.4.0
   "announcement.announcement": "お知らせ",
   "annual_report.summary.archetype.booster": "トレンドハンター",
   "annual_report.summary.archetype.lurker": "ROM専",
@@ -336,18 +333,15 @@
   "explore.trending_links": "ニュース",
   "explore.trending_statuses": "投稿",
   "explore.trending_tags": "ハッシュタグ",
-<<<<<<< HEAD
   "federation.change": "Adjust status federation",
   "federation.federated.long": "Allow toot to reach other instances",
   "federation.federated.short": "Federated",
   "federation.local_only.long": "Restrict this toot only to my instance",
   "federation.local_only.short": "Local-only",
-=======
   "featured_carousel.next": "次へ",
   "featured_carousel.post": "投稿",
   "featured_carousel.previous": "前へ",
   "featured_carousel.slide": "{index} / {total}",
->>>>>>> v4.4.0
   "filter_modal.added.context_mismatch_explanation": "このフィルターカテゴリーはあなたがアクセスした投稿のコンテキストには適用されません。この投稿のコンテキストでもフィルターを適用するにはフィルターを編集する必要があります。",
   "filter_modal.added.context_mismatch_title": "コンテキストが一致しません！",
   "filter_modal.added.expired_explanation": "このフィルターカテゴリーは有効期限が切れています。適用するには有効期限を更新してください。",

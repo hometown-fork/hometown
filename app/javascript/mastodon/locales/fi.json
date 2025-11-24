@@ -342,19 +342,16 @@
   "explore.trending_links": "Uutiset",
   "explore.trending_statuses": "Julkaisut",
   "explore.trending_tags": "Aihetunnisteet",
-<<<<<<< HEAD
   "federation.change": "Adjust status federation",
   "federation.federated.long": "Allow toot to reach other instances",
   "federation.federated.short": "Federated",
   "federation.local_only.long": "Restrict this toot only to my instance",
   "federation.local_only.short": "Local-only",
-=======
   "featured_carousel.header": "{count, plural, one {Kiinnitetty julkaisu} other {Kiinnitetyt julkaisut}}",
   "featured_carousel.next": "Seuraava",
   "featured_carousel.post": "Julkaisu",
   "featured_carousel.previous": "Edellinen",
   "featured_carousel.slide": "{index} / {total}",
->>>>>>> v4.4.0
   "filter_modal.added.context_mismatch_explanation": "Tämä suodatinluokka ei koske asiayhteyttä, jossa olet tarkastellut tätä julkaisua. Jos haluat julkaisun suodatettavan myös tässä asiayhteydessä, muokkaa suodatinta.",
   "filter_modal.added.context_mismatch_title": "Asiayhteys ei täsmää!",
   "filter_modal.added.expired_explanation": "Tämä suodatinluokka on vanhentunut, joten sinun on muutettava viimeistä voimassaolopäivää, jotta suodatusta käytettäisiin.",

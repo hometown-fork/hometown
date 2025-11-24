@@ -310,26 +310,17 @@
   "explore.trending_links": "Aktualności",
   "explore.trending_statuses": "Wpisy",
   "explore.trending_tags": "Hasztagi",
-<<<<<<< HEAD
   "federation.change": "Dostosuj federację wpisu",
   "federation.federated.long": "Pozwól, aby wpis trafiał na inne instancje",
   "federation.federated.short": "Sfederowany",
   "federation.local_only.long": "Ogranicz ten wpis tylko do tej instancji",
   "federation.local_only.short": "Tylko lokalny",
-  "filter_modal.added.context_mismatch_explanation": "Ta kategoria filtrów nie ma zastosowania do kontekstu, w którym uzyskałeś dostęp do tego wpisu. Jeśli chcesz, aby wpis został przefiltrowany również w tym kontekście, będziesz musiał edytować filtr.",
-  "filter_modal.added.context_mismatch_title": "Niezgodność kontekstów!",
-  "filter_modal.added.expired_explanation": "Ta kategoria filtra wygasła, będziesz musiał zmienić datę wygaśnięcia, aby ją zastosować.",
-  "filter_modal.added.expired_title": "Wygasły filtr!",
-  "filter_modal.added.review_and_configure": "Aby przejrzeć i skonfigurować tę kategorię filtrów, przejdź do {settings_link}.",
-  "filter_modal.added.review_and_configure_title": "Ustawienia filtra",
-=======
   "filter_modal.added.context_mismatch_explanation": "To filtrowanie nie dotyczy kategorii, w której pojawił się ten wpis. Jeśli chcesz, aby wpis był filtrowany również w tym kontekście, musisz edytować ustawienia filtrowania.",
   "filter_modal.added.context_mismatch_title": "Niewłaściwy kontekst!",
   "filter_modal.added.expired_explanation": "Ta kategoria filtrowania wygasła, aby ją zastosować, należy zmienić datę wygaśnięcia.",
   "filter_modal.added.expired_title": "Filtr wygasł!",
   "filter_modal.added.review_and_configure": "Aby przejrzeć i skonfigurować tę kategorię filtrowania, przejdź do {settings_link}.",
   "filter_modal.added.review_and_configure_title": "Ustawienia filtrowania",
->>>>>>> v4.4.0
   "filter_modal.added.settings_link": "strona ustawień",
   "filter_modal.added.short_explanation": "Ten wpis został dodany do następującej kategorii filtrowania: {title}.",
   "filter_modal.added.title": "Filtrowanie zostało dodane!",
@@ -562,11 +553,7 @@
   "notification.label.private_reply": "Komentarz bezpośredni",
   "notification.label.reply": "Komentarz",
   "notification.mention": "Wzmianka",
-<<<<<<< HEAD
-  "notification.mentioned_you": "{name} wspomniał(a) o Tobie",
-=======
   "notification.mentioned_you": "{name} wzmiankuje cię",
->>>>>>> v4.4.0
   "notification.moderation-warning.learn_more": "Dowiedz się więcej",
   "notification.moderation_warning": "Otrzymano ostrzeżenie",
   "notification.moderation_warning.action_delete_statuses": "Usunięto niektóre z twoich wpisów.",

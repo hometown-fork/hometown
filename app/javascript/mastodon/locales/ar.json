@@ -100,8 +100,6 @@
   "alert.unexpected.message": "لقد طرأ خطأ غير متوقّع.",
   "alert.unexpected.title": "المعذرة!",
   "alt_text_badge.title": "نص بديل",
-<<<<<<< HEAD
-=======
   "alt_text_modal.add_alt_text": "أضف نصًا بديلًا",
   "alt_text_modal.add_text_from_image": "أضف النص من الصورة",
   "alt_text_modal.cancel": "إلغاء",
@@ -109,7 +107,6 @@
   "alt_text_modal.describe_for_people_with_hearing_impairments": "قم بوصفها للأشخاص ذوي الإعاقة السمعية…",
   "alt_text_modal.describe_for_people_with_visual_impairments": "قم بوصفها للأشخاص ذوي الإعاقة البصرية…",
   "alt_text_modal.done": "تمّ",
->>>>>>> v4.4.0
   "announcement.announcement": "إعلان",
   "annual_report.summary.archetype.booster": "The cool-hunter",
   "annual_report.summary.archetype.lurker": "المتصفح الصامت",
@@ -344,19 +341,16 @@
   "explore.trending_links": "المُستجدّات",
   "explore.trending_statuses": "المنشورات",
   "explore.trending_tags": "وُسُوم",
-<<<<<<< HEAD
   "federation.change": "Adjust status federation",
   "federation.federated.long": "Allow post to reach other instances",
   "federation.federated.short": "Federated",
   "federation.local_only.long": "Restrict this post only to my instance",
   "federation.local_only.short": "Local-only",
-=======
   "featured_carousel.header": "{count, plural, zero {}one {منشور معروض} two {منشور معروضَين} few {منشورات معروضة} many {منشورات معروضة} other {منشورات معروضة}}",
   "featured_carousel.next": "التالي",
   "featured_carousel.post": "منشور",
   "featured_carousel.previous": "السابق",
   "featured_carousel.slide": "{index} من {total}",
->>>>>>> v4.4.0
   "filter_modal.added.context_mismatch_explanation": "فئة عامل التصفية هذه لا تنطبق على السياق الذي وصلت فيه إلى هذه المشاركة. إذا كنت ترغب في تصفية المنشور في هذا السياق أيضا، فسيتعين عليك تعديل عامل التصفية.",
   "filter_modal.added.context_mismatch_title": "عدم تطابق السياق!",
   "filter_modal.added.expired_explanation": "انتهت صلاحية فئة عامل التصفية هذه، سوف تحتاج إلى تغيير تاريخ انتهاء الصلاحية لتطبيقها.",

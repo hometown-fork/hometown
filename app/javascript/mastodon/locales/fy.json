@@ -100,8 +100,6 @@
   "alert.unexpected.message": "Der is in ûnferwachte flater bard.",
   "alert.unexpected.title": "Oepsy!",
   "alt_text_badge.title": "Alternative tekst",
-<<<<<<< HEAD
-=======
   "alt_text_modal.add_alt_text": "Alt-tekst tafoegje",
   "alt_text_modal.add_text_from_image": "Tekst fan ôfbylding tafoegje",
   "alt_text_modal.cancel": "Annulearje",
@@ -109,7 +107,6 @@
   "alt_text_modal.describe_for_people_with_hearing_impairments": "Beskriuw dit foar dôven en hurdhearrige…",
   "alt_text_modal.describe_for_people_with_visual_impairments": "Beskriuw dit foar blinen en fisueel beheinde…",
   "alt_text_modal.done": "Klear",
->>>>>>> v4.4.0
   "announcement.announcement": "Oankundiging",
   "annual_report.summary.archetype.booster": "De cool-hunter",
   "annual_report.summary.archetype.lurker": "De lurker",
@@ -887,10 +884,7 @@
   "status.reblogs.empty": "Net ien hat dit berjocht noch boost. Wannear’t ien dit docht, falt dat hjir te sjen.",
   "status.redraft": "Fuortsmite en opnij opstelle",
   "status.remove_bookmark": "Blêdwizer fuortsmite",
-<<<<<<< HEAD
-=======
   "status.remove_favourite": "Ut favoriten fuortsmite",
->>>>>>> v4.4.0
   "status.replied_in_thread": "Antwurde yn petear",
   "status.replied_to": "Antwurde op {name}",
   "status.reply": "Beäntwurdzje",
@@ -933,11 +927,6 @@
   "upload_button.label": "Ofbyldingen, in fideo- of in lûdsbestân tafoegje",
   "upload_error.limit": "Oer de oplaadlimyt fan bestân.",
   "upload_error.poll": "It opladen fan bestannen is yn enkêten net tastien.",
-<<<<<<< HEAD
-  "upload_form.audio_description": "Describe for people with hearing loss",
-  "upload_form.description": "Describe for the visually impaired",
-=======
->>>>>>> v4.4.0
   "upload_form.drag_and_drop.instructions": "Druk op spaasje of Enter om in mediabylage op te pakken. Bruk de pylktoetsen om de bylage yn in bepaalde rjochting te ferpleatsen. Druk opnij op de spaasjebalke of Enter om de mediabylage op de nije posysje te pleatsen, of druk op Esc om te annulearjen.",
   "upload_form.drag_and_drop.on_drag_cancel": "Slepen is annulearre. Mediabylage {item} is net ferpleatst.",
   "upload_form.drag_and_drop.on_drag_end": "Mediabylage {item} is net ferpleatst.",

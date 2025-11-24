@@ -341,19 +341,16 @@
   "explore.trending_links": "Nyheder",
   "explore.trending_statuses": "Indlæg",
   "explore.trending_tags": "Hashtags",
-<<<<<<< HEAD
   "federation.change": "Adjust status federation",
   "federation.federated.long": "Allow toot to reach other instances",
   "federation.federated.short": "Federated",
   "federation.local_only.long": "Restrict this toot only to my instance",
   "federation.local_only.short": "Local-only",
-=======
   "featured_carousel.header": "{count, plural, one {Fastgjort indlæg} other {Fastgjorte indlæg}}",
   "featured_carousel.next": "Næste",
   "featured_carousel.post": "Indlæg",
   "featured_carousel.previous": "Foregående",
   "featured_carousel.slide": "{index} af {total}",
->>>>>>> v4.4.0
   "filter_modal.added.context_mismatch_explanation": "Denne filterkategori omfatter ikke konteksten, hvorunder dette indlæg er tilgået. Redigér filteret, hvis indlægget også ønskes filtreret i denne kontekst.",
   "filter_modal.added.context_mismatch_title": "Kontekstmisforhold!",
   "filter_modal.added.expired_explanation": "Denne filterkategori er udløbet. Ændr dens udløbsdato, for at anvende den.",
@@ -610,11 +607,7 @@
   "notification.label.private_reply": "Privat svar",
   "notification.label.reply": "Svar",
   "notification.mention": "Omtale",
-<<<<<<< HEAD
-  "notification.mentioned_you": "{name} nævnte dig",
-=======
   "notification.mentioned_you": "{name} omtalte dig",
->>>>>>> v4.4.0
   "notification.moderation-warning.learn_more": "Læs mere",
   "notification.moderation_warning": "Du har fået en moderationsadvarsel",
   "notification.moderation_warning.action_delete_statuses": "Nogle af dine indlæg er blevet fjernet.",

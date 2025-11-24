@@ -100,8 +100,6 @@
   "alert.unexpected.message": "Upp kom óvænt villa.",
   "alert.unexpected.title": "Úbbs!",
   "alt_text_badge.title": "Hjálpartexti mynda",
-<<<<<<< HEAD
-=======
   "alt_text_modal.add_alt_text": "Bæta við hjálpartexta",
   "alt_text_modal.add_text_from_image": "Bæta við texta úr mynd",
   "alt_text_modal.cancel": "Hætta við",
@@ -109,7 +107,6 @@
   "alt_text_modal.describe_for_people_with_hearing_impairments": "Lýstu þessu fyrir fólk með skerta heyrn…",
   "alt_text_modal.describe_for_people_with_visual_impairments": "Lýstu þessu fyrir fólk með skerta sjón…",
   "alt_text_modal.done": "Lokið",
->>>>>>> v4.4.0
   "announcement.announcement": "Auglýsing",
   "annual_report.summary.archetype.booster": "Svali gaurinn",
   "annual_report.summary.archetype.lurker": "Lurkurinn",

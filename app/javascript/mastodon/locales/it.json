@@ -341,19 +341,16 @@
   "explore.trending_links": "Notizie",
   "explore.trending_statuses": "Post",
   "explore.trending_tags": "Hashtag",
-<<<<<<< HEAD
   "federation.change": "Modifica federazione del post",
   "federation.federated.long": "Consentirà ad altri server di pubblicare questo post",
   "federation.federated.short": "Federazione",
   "federation.local_only.long": "Questo post pubblicherà solo sul tuo server",
   "federation.local_only.short": "Solo Locale",
-=======
   "featured_carousel.header": "{count, plural, one {Post appuntato} other {Post appuntati}}",
   "featured_carousel.next": "Successivo",
   "featured_carousel.post": "Post",
   "featured_carousel.previous": "Precedente",
   "featured_carousel.slide": "{index} di {total}",
->>>>>>> v4.4.0
   "filter_modal.added.context_mismatch_explanation": "La categoria di questo filtro non si applica al contesto in cui hai acceduto a questo post. Se desideri che il post sia filtrato anche in questo contesto, dovrai modificare il filtro.",
   "filter_modal.added.context_mismatch_title": "Contesto non corrispondente!",
   "filter_modal.added.expired_explanation": "La categoria di questo filtro è scaduta, dovrvai modificarne la data di scadenza per applicarlo.",
@@ -939,11 +936,6 @@
   "upload_button.label": "Aggiungi un file immagine, video o audio",
   "upload_error.limit": "Limite di caricamento dei file superato.",
   "upload_error.poll": "Caricamento del file non consentito con i sondaggi.",
-<<<<<<< HEAD
-  "upload_form.audio_description": "Descrizione per persone con deficit uditivi",
-  "upload_form.description": "Descrizione per ipovedenti",
-=======
->>>>>>> v4.4.0
   "upload_form.drag_and_drop.instructions": "Per selezionare un allegato multimediale, premi Spazio o Invio. Mentre trascini, usa i tasti con le frecce per spostare l'allegato multimediale in una qualsiasi direzione. Premi di nuovo Spazio o Invio per rilasciare l'allegato multimediale nella sua nuova posizione, oppure premi Esc per annullare.",
   "upload_form.drag_and_drop.on_drag_cancel": "Il trascinamento è stato annullato. L'allegato multimediale {item} è stato eliminato.",
   "upload_form.drag_and_drop.on_drag_end": "L'allegato multimediale {item} è stato eliminato.",

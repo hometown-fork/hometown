@@ -341,19 +341,16 @@
   "explore.trending_links": "Novas",
   "explore.trending_statuses": "Publicacións",
   "explore.trending_tags": "Cancelos",
-<<<<<<< HEAD
   "federation.change": "Adjust status federation",
   "federation.federated.long": "Allow toot to reach other instances",
   "federation.federated.short": "Federated",
   "federation.local_only.long": "Restrict this toot only to my instance",
   "federation.local_only.short": "Local-only",
-=======
   "featured_carousel.header": "{count, plural, one {Publicación fixada} other {Publicacións fixadas}}",
   "featured_carousel.next": "Seguinte",
   "featured_carousel.post": "Publicación",
   "featured_carousel.previous": "Anterior",
   "featured_carousel.slide": "{index} de {total}",
->>>>>>> v4.4.0
   "filter_modal.added.context_mismatch_explanation": "Esta categoría de filtro non se aplica ao contexto no que accedeches a esta publicación. Se queres que a publicación se filtre nese contexto tamén, terás que editar o filtro.",
   "filter_modal.added.context_mismatch_title": "Non concorda o contexto!",
   "filter_modal.added.expired_explanation": "Esta categoría de filtro caducou, terás que cambiar a data de caducidade para que se aplique.",

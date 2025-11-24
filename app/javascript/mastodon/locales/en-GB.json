@@ -906,11 +906,6 @@
   "upload_button.label": "Add images, a video or an audio file",
   "upload_error.limit": "File upload limit exceeded.",
   "upload_error.poll": "File upload not allowed with polls.",
-<<<<<<< HEAD
-  "upload_form.audio_description": "Describe for people who are deaf or hard of hearing",
-  "upload_form.description": "Describe for people who are blind or have low vision",
-=======
->>>>>>> v4.4.0
   "upload_form.drag_and_drop.instructions": "To pick up a media attachment, press space or enter. While dragging, use the arrow keys to move the media attachment in any given direction. Press space or enter again to drop the media attachment in its new position, or press escape to cancel.",
   "upload_form.drag_and_drop.on_drag_cancel": "Dragging was cancelled. Media attachment {item} was dropped.",
   "upload_form.drag_and_drop.on_drag_end": "Media attachment {item} was dropped.",

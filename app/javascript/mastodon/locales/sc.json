@@ -171,12 +171,6 @@
   "confirmations.delete_list.title": "Cantzellare sa lista?",
   "confirmations.discard_edit_media.confirm": "Iscarta",
   "confirmations.discard_edit_media.message": "Tenes modìficas non sarvadas a is descritziones o a is anteprimas de is cuntenutos, ddas boles iscartare su matessi?",
-<<<<<<< HEAD
-  "confirmations.edit.confirm": "Modìfica",
-  "confirmations.edit.message": "Modifichende immoe as a subrascrìere su messàgiu chi ses iscriende. Seguru chi boles sighire?",
-  "confirmations.edit.title": "Boles subraiscrìere sa publicatzione?",
-=======
->>>>>>> v4.4.0
   "confirmations.logout.confirm": "Essi·nche",
   "confirmations.logout.message": "Seguru chi boles essire?",
   "confirmations.logout.title": "Boles serrare sa sessione?",
@@ -184,12 +178,6 @@
   "confirmations.redraft.confirm": "Cantzella e torra a fàghere",
   "confirmations.redraft.message": "Seguru chi boles cantzellare e torrare a fàghere custa publicatzione? As a pèrdere is preferidos e is cumpartziduras, e is rispostas a su messàgiu originale ant a abarrare òrfanas.",
   "confirmations.redraft.title": "Boles cantzellare e torrare a iscrìere sa publicatzione?",
-<<<<<<< HEAD
-  "confirmations.reply.confirm": "Risponde",
-  "confirmations.reply.message": "Rispondende immoe as a subrascrìere su messàgiu chi ses iscriende. Seguru chi boles sighire?",
-  "confirmations.reply.title": "Boles subraiscrìere sa publicatzione?",
-=======
->>>>>>> v4.4.0
   "confirmations.unfollow.confirm": "Non sigas prus",
   "confirmations.unfollow.message": "Seguru chi non boles sighire prus a {name}?",
   "confirmations.unfollow.title": "Boles tzessare de sighire s'utente?",
@@ -340,13 +328,6 @@
   "ignore_notifications_modal.filter_instead": "Opuru filtra",
   "ignore_notifications_modal.filter_to_act_users": "As a pòdere ancora atzetare, refudare o sinnalare a utentes",
   "ignore_notifications_modal.filter_to_avoid_confusion": "Filtrare agiudat a evitare possìbiles confusiones",
-<<<<<<< HEAD
-  "interaction_modal.description.reply": "Podes rispòndere a custa publicatzione cun unu contu de Mastodon.",
-  "interaction_modal.login.action": "Torra a sa pàgina printzipale",
-  "interaction_modal.login.prompt": "Su domìniu de su serbidore domèsticu tuo, pro esempru mastodon.social",
-  "interaction_modal.no_account_yet": "Non ses in Mastodon?",
-=======
->>>>>>> v4.4.0
   "interaction_modal.on_this_server": "In custu serbidore",
   "interaction_modal.title.follow": "Sighi a {name}",
   "interaction_modal.title.reply": "Risponde a sa publicatzione de {name}",
@@ -391,7 +372,6 @@
   "lightbox.previous": "Pretzedente",
   "limited_account_hint.title": "Custu profilu est istadu cuadu dae sa moderatzione de {domain}.",
   "link_preview.shares": "{count, plural, one {{counter} publicatzione} other {{counter} publicatziones}}",
-<<<<<<< HEAD
   "lists.account.add": "Agiunghe a sa lista",
   "lists.account.remove": "Boga dae sa lista",
   "lists.delete": "Cantzella sa lista",
@@ -400,10 +380,6 @@
   "lists.exclusive": "Cua custas publicatziones dae sa pàgina printzipale",
   "lists.new.create": "Agiunghe lista",
   "lists.new.title_placeholder": "Tìtulu de sa lista noa",
-=======
-  "lists.delete": "Cantzella sa lista",
-  "lists.edit": "Modìfica sa lista",
->>>>>>> v4.4.0
   "lists.replies_policy.followed": "Cale si siat persone chi sighis",
   "lists.replies_policy.list": "Persones de sa lista",
   "lists.replies_policy.none": "Nemos",
@@ -437,11 +413,6 @@
   "navigation_bar.moderation": "Moderatzione",
   "navigation_bar.mutes": "Persones a sa muda",
   "navigation_bar.opened_in_classic_interface": "Publicatziones, contos e àteras pàginas ispetzìficas sunt abertas in manera predefinida in s'interfache web clàssica.",
-<<<<<<< HEAD
-  "navigation_bar.personal": "Informatziones personales",
-  "navigation_bar.pins": "Publicatziones apicadas",
-=======
->>>>>>> v4.4.0
   "navigation_bar.preferences": "Preferèntzias",
   "navigation_bar.search": "Chirca",
   "not_signed_in_indicator.not_signed_in": "Ti depes identificare pro atzèdere a custa resursa.",
@@ -556,10 +527,6 @@
   "poll_button.remove_poll": "Cantzella su sondàgiu",
   "privacy.change": "Modìfica s'istadu de riservadesa",
   "privacy.direct.long": "Totu is utentes mentovados in sa publicatzione",
-<<<<<<< HEAD
-  "privacy.direct.short": "Persones ispetzìficas",
-=======
->>>>>>> v4.4.0
   "privacy.private.long": "Isceti chie ti sighit",
   "privacy.private.short": "Sighiduras",
   "privacy.public.long": "Cale si siat persone a intro o a foras de Mastodon",
@@ -639,15 +606,8 @@
   "search_results.accounts": "Profilos",
   "search_results.all": "Totus",
   "search_results.hashtags": "Etichetas",
-<<<<<<< HEAD
-  "search_results.nothing_found": "Impossìbile agatare currispondèntzias pro custos tèrmines de chirca",
   "search_results.see_all": "Bide totu",
   "search_results.statuses": "Publicatziones",
-  "search_results.title": "Chirca {q}",
-=======
-  "search_results.see_all": "Bide totu",
-  "search_results.statuses": "Publicatziones",
->>>>>>> v4.4.0
   "server_banner.about_active_users": "Gente chi at impreadu custu serbidore is ùrtimas 30 dies (Utentes cun Atividade a su Mese)",
   "server_banner.active_users": "utentes ativos",
   "server_banner.administered_by": "Amministradu dae:",

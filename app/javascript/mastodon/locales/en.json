@@ -341,19 +341,16 @@
   "explore.trending_links": "News",
   "explore.trending_statuses": "Posts",
   "explore.trending_tags": "Hashtags",
-<<<<<<< HEAD
   "federation.change": "Adjust status federation",
   "federation.federated.long": "Allow post to reach other instances",
   "federation.federated.short": "Federated",
   "federation.local_only.long": "Restrict this post only to my instance",
   "federation.local_only.short": "Local-only",
-=======
   "featured_carousel.header": "{count, plural, one {Pinned Post} other {Pinned Posts}}",
   "featured_carousel.next": "Next",
   "featured_carousel.post": "Post",
   "featured_carousel.previous": "Previous",
   "featured_carousel.slide": "{index} of {total}",
->>>>>>> v4.4.0
   "filter_modal.added.context_mismatch_explanation": "This filter category does not apply to the context in which you have accessed this post. If you want the post to be filtered in this context too, you will have to edit the filter.",
   "filter_modal.added.context_mismatch_title": "Context mismatch!",
   "filter_modal.added.expired_explanation": "This filter category has expired, you will need to change the expiration date for it to apply.",
