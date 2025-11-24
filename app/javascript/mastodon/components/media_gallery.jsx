@@ -105,8 +105,9 @@ class Item extends PureComponent {
     }
 
     const description = attachment.getIn(['translation', 'description']) || attachment.get('description');
+    const hasMediaDescription = description?.length > 0;
 
-    if (description?.length > 0) {
+    if (hasMediaDescription) {
       badges.push(<AltTextBadge key='alt' description={description} />);
     } else {
       badges.push(<NoAltTextBadge key='no-alt' />);
