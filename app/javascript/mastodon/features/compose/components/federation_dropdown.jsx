@@ -106,7 +106,9 @@ class FederationDropdown extends PureComponent {
     const { value, container, disabled } = this.props;
     const { open, placement } = this.state;
 
-    const valueOption = this.options.find(item => item.value === value);
+    // terrible hack to convert string 'false' to boolean false; due to
+    // the implemenation of federation value being stored as string in some places
+    const valueOption = this.options.find(item => item.value === (value !== 'false'));
 
     return (
       <div ref={this.setTargetRef} onKeyDown={this.handleKeyDown}>
