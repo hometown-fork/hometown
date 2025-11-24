@@ -1236,11 +1236,6 @@ ja:
       view_strikes: 過去のストライクを表示
     too_fast: フォームの送信が速すぎます。もう一度やり直してください。
     use_security_key: セキュリティキーを使用
-<<<<<<< HEAD
-  author_attribution:
-    example_title: サンプルテキスト
-    s_blog: "%{name} のブログ"
-=======
     user_agreement_html: <a href="%{terms_of_service_path}" target="_blank">利用規約</a> および <a href="%{privacy_policy_path}" target="_blank">プライバシーポリシー</a>を読み、同意します。
     user_privacy_agreement_html: <a href="%{privacy_policy_path}" target="_blank">プライバシーポリシー</a>を読み、同意します
   author_attribution:
@@ -1251,7 +1246,6 @@ ja:
     s_blog: "%{name} のブログ"
     then_instructions: その後、記事の公開に使用しているドメイン名を以下の入力欄に追加してください。
     title: 著者の帰属
->>>>>>> v4.4.0
   challenge:
     confirm: 続ける
     hint_html: 以後1時間はパスワードの再入力を求めません

@@ -1977,11 +1977,7 @@ cy:
     back: Nôl i Mastodon
     delete: Dileu cyfrif
     development: Datblygu
-<<<<<<< HEAD
-    edit_profile: Golygu proffil
-=======
     edit_profile: Golygu'r proffil
->>>>>>> v4.4.0
     export: Allforio
     featured_tags: Prif hashnodau
     import: Mewnforio

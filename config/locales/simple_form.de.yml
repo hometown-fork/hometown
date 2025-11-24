@@ -56,12 +56,9 @@ de:
         scopes: Welche Schnittstellen der Applikation erlaubt sind. Wenn du einen Top-Level-Scope auswählst, dann musst du nicht jeden einzelnen darunter auswählen.
         setting_aggregate_reblogs: Beiträge, die erst kürzlich geteilt wurden, werden nicht noch einmal angezeigt (betrifft nur zukünftig geteilte Beiträge)
         setting_always_send_emails: Normalerweise werden Benachrichtigungen nicht per E-Mail versendet, wenn du gerade auf Mastodon aktiv bist
-<<<<<<< HEAD
         setting_noindex_html: Affects your public profile and post pages. Public replies you make to other people may still be indexed on their pages. <a href="https://github.com/hometown-fork/hometown/issues/1234">See here for more information.</a>
         setting_default_federation_html: <ul><li>Wenn ausgewählt, werden neue Beiträge mit anderen Instanzen geteilt, es sei denn, es wird beim Verfassen in der Weboberfläche manuell überschrieben.</li><li>Wenn diese Option nicht aktiviert ist, bleiben Ihre neuen Beiträge lokal, es sei denn, sie werden beim Verfassen in der Weboberfläche manuell geändert.</li><li>Anwendungen von Drittanbietern werden neue Beiträge erstellen, die diese Einstellung berücksichtigen. <a href="https://github.com/hometown-fork/hometown/wiki/Local-only-posting#note-on-3rd-party-apps">Weitere for more info on third-party apps</a></li></ul>
-=======
         setting_default_quote_policy: Erwähnte Profile dürfen immer zitieren. Diese Einstellung gilt nur für Beiträge, die mit der zukünftigen Mastodon-Version erstellt wurden. Als Vorbereitung darauf kannst du bereits jetzt die Einstellung vornehmen
->>>>>>> v4.4.0
         setting_default_sensitive: Medien, die mit einer Inhaltswarnung versehen worden sind, werden – je nach Einstellung – erst nach einem zusätzlichen Klick angezeigt
         setting_display_media_default: Medien mit Inhaltswarnung ausblenden
         setting_display_media_hide_all: Medien immer ausblenden
@@ -249,11 +246,8 @@ de:
         setting_display_media_show_all: Alle Medien anzeigen
         setting_expand_spoilers: Beiträge mit Inhaltswarnung immer ausklappen
         setting_hide_network: Follower und „Folge ich“ nicht anzeigen
-<<<<<<< HEAD
         setting_noindex: Opt-out of search engine indexing
-=======
         setting_missing_alt_text_modal: Bestätigungsdialog anzeigen, bevor Medien ohne Bildbeschreibung veröffentlicht werden
->>>>>>> v4.4.0
         setting_reduce_motion: Bewegung in Animationen verringern
         setting_system_font_ui: Standardschriftart des Browsers verwenden
         setting_system_scrollbars_ui: Bildlaufleiste des Systems verwenden

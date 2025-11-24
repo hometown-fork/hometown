@@ -20,10 +20,6 @@ fy:
           invalid: is in ûnjildige domeinnamme
       messages:
         invalid_domain_on_line: "%{value} is in ûnjildige domeinnamme"
-<<<<<<< HEAD
-        too_many_lines: giet oer de limyt fan %{limit} rigels
-=======
->>>>>>> v4.4.0
       models:
         account:
           attributes:

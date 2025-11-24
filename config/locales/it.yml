@@ -1,11 +1,7 @@
 ---
 it:
   about:
-<<<<<<< HEAD
-    about_mastodon_html: 'Hometown è adattato da Mastodon, un social network decentralizzato senza pubblicità, senza controllo da parte di qualche azienda privata e design etico.'
-=======
     about_mastodon_html: 'Il social network del futuro: Nessuna pubblicità, zero sorveglianza aziendale, design etico e decentralizzazione! Sii il proprietario dei tuoi dati, con Mastodonte!'
->>>>>>> v4.4.0
     contact_missing: Non impostato
     contact_unavailable: N/D
     hosted_on: Mastodon ospitato su %{domain}

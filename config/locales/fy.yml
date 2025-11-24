@@ -1255,13 +1255,6 @@ fy:
       view_strikes: Besjoch de earder troch moderatoaren fêststelde skeiningen dy’t jo makke hawwe
     too_fast: Formulier is te fluch yntsjinne. Probearje it nochris.
     use_security_key: Befeiligingskaai brûke
-<<<<<<< HEAD
-  author_attribution:
-    example_title: Faorbyldtekst
-    hint_html: Bepaal hoe’t wy jo fermelde, wannear’t jo keppelingen op Mastodon dield wurde.
-    more_from_html: Mear fan %{name}
-    s_blog: Weblog fan %{name}
-=======
     user_agreement_html: Ik haw de <a href="%{terms_of_service_path}" target="_blank">gebrûksbetingsten</a> en it <a href="%{privacy_policy_path}" target="_blank">privacybelied</a> lêzen en gean der mei akkoard
     user_privacy_agreement_html: Ik haw it <a href="%{privacy_policy_path}" target="_blank">privacybelied</a> lêzen en gean dêrmei akkoard
   author_attribution:
@@ -1271,7 +1264,6 @@ fy:
     more_from_html: Mear fan %{name}
     s_blog: Weblog fan %{name}
     then_instructions: Foegje dernei de domeinnamme fan de publikaasje yn it ûndersteande fjild ta.
->>>>>>> v4.4.0
     title: Auteur-attribúsje
   challenge:
     confirm: Trochgean

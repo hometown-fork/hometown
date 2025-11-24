@@ -1576,11 +1576,6 @@ fa:
     unsubscribe:
       action: بله. لغو اشتراک
       complete: لغو اشتراک شد
-<<<<<<< HEAD
-      emails:
-        notification_emails:
-          mention: رایانامه‌های آگاهی اشاره
-=======
       confirmation_html: مطمئنید که می‌خواهید اشتراک %{type} را از ماستودون روی %{domain} برای رایانامهٔ %{email} لغو کنید؟ همواره می‌توانید از <a href="%{settings_path}">تنظیمات آگاهی رایانامه‌ای</a> دوباره مشترک شوید.
       emails:
         notification_emails:
@@ -1591,7 +1586,6 @@ fa:
           reblog: رایانامه‌های آگاهی تقویت
       resubscribe_html: اگر اشتراک را اشتباهی لغو کردید می‌توانید از <a href="%{settings_path}">تنظیمات آگاهی رایانامه‌ای</a> دوباره مشترک شوید.
       success_html: دیگر %{type} را از ماستودون روی %{domain} برای رایانامهٔ %{email} نخواهید گرفت.
->>>>>>> v4.4.0
       title: لغو اشتراک
   media_attachments:
     validations:

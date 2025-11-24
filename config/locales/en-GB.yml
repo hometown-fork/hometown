@@ -893,11 +893,7 @@ en-GB:
         message_html: No Sidekiq process running for the %{value} queue(s). Please review your Sidekiq configuration
       software_version_check:
         action: See available updates
-<<<<<<< HEAD
         message_html: A %{title} update is available.
-=======
-        message_html: A Mastodon update is available.
->>>>>>> v4.4.0
       software_version_critical_check:
         action: See available updates
         message_html: A critical %{title} update is available, please update as quickly as possible.
@@ -1190,7 +1186,7 @@ en-GB:
     set_new_password: Set new password
     setup:
       email_below_hint_html: Check your spam folder, or request another one. You can correct your email address if it's wrong.
-      email_settings_hint_html: Click the link we sent to %{email} to begin using Mastodon. We'll wait right here.
+      email_settings_hint_html: Click the link we sent to %{email} to begin using %{title}. We'll wait right here.
       link_not_received: Didn't get a link?
       new_confirmation_instructions_sent: You will receive a new email with the confirmation link in a few minutes!
       title: Check your inbox
@@ -1199,11 +1195,7 @@ en-GB:
       title: Log in to %{domain}
     sign_up:
       manual_review: Sign-ups on %{domain} go through manual review by our moderators. To help us process your registration, write a bit about yourself and why you want an account on %{domain}.
-<<<<<<< HEAD
-      preamble: With an account on this %{title} server, you'll be able to follow any other person on the network, regardless of where their account is hosted.
-=======
-      preamble: With an account on this Mastodon server, you'll be able to follow any other person on the Fediverse, regardless of where their account is hosted.
->>>>>>> v4.4.0
+      preamble: With an account on this %{title} server, you'll be able to follow any other person on the Fediverse, regardless of where their account is hosted.
       title: Let's get you set up on %{domain}.
     status:
       account_status: Account status
@@ -1219,12 +1211,8 @@ en-GB:
     user_privacy_agreement_html: I have read and agree to the <a href="%{privacy_policy_path}" target="_blank">privacy policy</a>
   author_attribution:
     example_title: Sample text
-<<<<<<< HEAD
-    hint_html: Control how you're credited when links are shared on %{title}.
-=======
-    hint_html: Are you writing news or blog articles outside of Mastodon? Control how you get credited when they are shared on Mastodon.
+    hint_html: Are you writing news or blog articles outside of %{title}? Control how you get credited when they are shared on %{title}.
     instructions: 'Make sure this code is in your article''s HTML:'
->>>>>>> v4.4.0
     more_from_html: More from %{name}
     s_blog: "%{name}'s Blog"
     then_instructions: Then, add the domain name of the publication in the field below.
@@ -2017,14 +2005,8 @@ en-GB:
       post_action: Compose
       post_step: Say hello to the world with text, photos, videos, or polls.
       post_title: Make your first post
-<<<<<<< HEAD
-      share_action: Share
       share_step: Let your friends know how to find you on %{title}.
       share_title: Share your %{title} profile
-=======
-      share_step: Let your friends know how to find you on Mastodon.
-      share_title: Share your Mastodon profile
->>>>>>> v4.4.0
       sign_in_action: Sign in
       subject: Welcome to %{title}
       title: Welcome aboard, %{name}!

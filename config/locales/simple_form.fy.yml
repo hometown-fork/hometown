@@ -3,11 +3,7 @@ fy:
   simple_form:
     hints:
       account:
-<<<<<<< HEAD
-        attribution_domains_as_text: Beskermet tsjin net korrekte attribúsjes.
-=======
         attribution_domains: Ien per rigel. Beskermet tsjin falske attribúsjes.
->>>>>>> v4.4.0
         discoverable: Jo iepenbiere berjochten kinne útljochte wurde op ferskate plakken binnen Mastodon en jo account kin oanrekommandearre wurde oan oare brûkers.
         display_name: Jo folsleine namme of in aardige bynamme.
         fields: Jo website, persoanlike foarnammewurden, leeftiid, alles wat jo mar kwyt wolle.
@@ -153,12 +149,9 @@ fy:
         min_age: Mei net leger wêze as de minimale fereaske leeftiid neffens de wetten fan jo jurisdiksje.
       user:
         chosen_languages: Allinnich berjochten yn de selektearre talen wurde op de iepenbiere tiidline toand
-<<<<<<< HEAD
-=======
         date_of_birth:
           one: Wy moatte derfoar soargje dat jo op syn minst %{count} binne om Mastodon te brûken. Dit wurdt net bewarre.
           other: Wy moatte derfoar soargje dat jo op syn minst %{count} binne om Mastodon te brûken. Dit wurdt net bewarre.
->>>>>>> v4.4.0
         role: De rol bepaalt hokker rjochten in brûker hat.
       user_role:
         color: Kleur dy’t brûkt wurdt foar de rol yn de UI, as RGB yn heksadesimaal formaat
@@ -172,11 +165,7 @@ fy:
         url: Wêr’t eveneminten nei ta stjoerd wurde
     labels:
       account:
-<<<<<<< HEAD
-        attribution_domains_as_text: Allinnich bepaalde websites tastean
-=======
         attribution_domains: Websites dy’t jo wurdearring jaan meie
->>>>>>> v4.4.0
         discoverable: Profyl en bydragen yn sykalgoritmen opnimme litte
         fields:
           name: Label

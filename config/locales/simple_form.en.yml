@@ -56,22 +56,14 @@ en:
         scopes: Which APIs the application will be allowed to access. If you select a top-level scope, you don't need to select individual ones.
         setting_aggregate_reblogs: Do not show new boosts for posts that have been recently boosted (only affects newly-received boosts)
         setting_always_send_emails: Normally e-mail notifications won't be sent when you are actively using Mastodon
-<<<<<<< HEAD
         setting_default_federation_html: <ul><li>If checked, your new posts federate to other instances unless manually changed while composing in the web interface.</li><li>If unchecked, your new posts stay local unless manually changed while composing in the web interface.</li><li>Third party apps will make new posts that respect this setting. <a href="https://github.com/hometown-fork/hometown/wiki/Local-only-posting#note-on-3rd-party-apps">See here for more info on third-party apps</a></li></ul>
-=======
         setting_default_quote_policy: Mentioned users are always allowed to quote. This setting will only take effect for posts created with the next Mastodon version, but you can select your preference in preparation
->>>>>>> v4.4.0
         setting_default_sensitive: Sensitive media is hidden by default and can be revealed with a click
         setting_display_media_default: Hide media marked as sensitive
         setting_display_media_hide_all: Always hide media
         setting_display_media_show_all: Always show media
-<<<<<<< HEAD
-        setting_hide_network: Who you follow and who follows you will be hidden on your profile
         setting_noindex_html: Affects your public profile and post pages. Public replies you make to other people may still be indexed on their pages. <a href="https://github.com/hometown-fork/hometown/issues/1234">See here for more information.</a>
-        setting_show_application: The application you use to post will be displayed in the detailed view of your posts
-=======
         setting_system_scrollbars_ui: Applies only to desktop browsers based on Safari and Chrome
->>>>>>> v4.4.0
         setting_use_blurhash: Gradients are based on the colors of the hidden visuals but obfuscate any details
         setting_use_pending_items: Hide timeline updates behind a click instead of automatically scrolling the feed
         username: You can use letters, numbers, and underscores
@@ -257,12 +249,9 @@ en:
         setting_expand_spoilers: Always expand posts marked with content warnings
         setting_expand_usernames: Show full username (including domain) for remote users
         setting_hide_network: Hide your social graph
-<<<<<<< HEAD
         setting_noindex: Opt-out of search engine indexing
         setting_norss: Opt-out of an RSS feed for your public posts
-=======
         setting_missing_alt_text_modal: Show confirmation dialog before posting media without alt text
->>>>>>> v4.4.0
         setting_reduce_motion: Reduce motion in animations
         setting_system_font_ui: Use system's default font
         setting_system_scrollbars_ui: Use system's default scrollbar
@@ -299,12 +288,9 @@ en:
         favicon: Favicon
         mascot: Custom mascot (legacy)
         media_cache_retention_period: Media cache retention period
-<<<<<<< HEAD
-        norss: Opt users out of having an RSS feed of their public posts by default
-=======
         min_age: Minimum age requirement
+        norss: Opt users out of having an RSS feed of their public posts by default
         peers_api_enabled: Publish list of discovered servers in the API
->>>>>>> v4.4.0
         profile_directory: Enable profile directory
         peers_api_enabled: Publish list of discovered servers in the API
         registrations_mode: Who can sign-up
