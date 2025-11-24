@@ -84,15 +84,11 @@ class Item extends PureComponent {
     this.setState({ loaded: true });
   };
 
-<<<<<<< HEAD
-  render() {
-=======
   handleImageError = () => {
     this.setState({ error: true });
   };
 
   render () {
->>>>>>> v4.4.0
     const { attachment, lang, index, size, standalone, displayWidth, visible } = this.props;
 
     let badges = [], thumbnail;
@@ -108,31 +104,18 @@ class Item extends PureComponent {
       height = 50;
     }
 
-<<<<<<< HEAD
-    const hasMediaDescription = attachment.get('description')?.length > 0;
-    if (hasMediaDescription) {
-      badges.push(<AltTextBadge key='alt' description={attachment.get('description')} />);
-    } else {
-      badges.push(<NoAltTextBadge key='no-alt' />);
-    }
-
-=======
->>>>>>> v4.4.0
     const description = attachment.getIn(['translation', 'description']) || attachment.get('description');
 
     if (description?.length > 0) {
       badges.push(<AltTextBadge key='alt' description={description} />);
+    } else {
+      badges.push(<NoAltTextBadge key='no-alt' />);
     }
 
     if (attachment.get('type') === 'unknown') {
       return (
-<<<<<<< HEAD
         <div className={classNames('media-gallery__item', { standalone, 'media-gallery__item--tall': height === 100, 'media-gallery__item--wide': width === 100, 'media-missing-description': !hasMediaDescription })} key={attachment.get('id')}>
-          <a className='media-gallery__item-thumbnail' href={attachment.get('remote_url') || attachment.get('url')} style={{ cursor: 'pointer' }} title={description} lang={lang} target='_blank' rel='noopener noreferrer'>
-=======
-        <div className={classNames('media-gallery__item', { standalone, 'media-gallery__item--tall': height === 100, 'media-gallery__item--wide': width === 100 })} key={attachment.get('id')}>
           <a className='media-gallery__item-thumbnail' href={attachment.get('remote_url') || attachment.get('url')} style={{ cursor: 'pointer' }} title={description} lang={lang} target='_blank' rel='noopener'>
->>>>>>> v4.4.0
             <Blurhash
               hash={attachment.get('blurhash')}
               className='media-gallery__preview'
@@ -344,15 +327,7 @@ class MediaGallery extends PureComponent {
       <div className={`media-gallery media-gallery--layout-${size}`} style={style} ref={this.handleRef}>
         {children}
 
-<<<<<<< HEAD
-        {(!visible || uncached) && (
-          <div className={classNames('spoiler-button', { 'spoiler-button--click-thru': uncached })}>
-            {spoilerButton}
-          </div>
-        )}
-=======
         {(!visible || uncached) && <SpoilerButton uncached={uncached} sensitive={sensitive} onClick={this.handleOpen} matchedFilters={matchedFilters} />}
->>>>>>> v4.4.0
 
         {(visible && !uncached) && (
           <div className='media-gallery__actions'>

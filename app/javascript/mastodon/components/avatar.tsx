@@ -1,16 +1,9 @@
 import { useState, useCallback } from 'react';
-<<<<<<< HEAD
-
-import classNames from 'classnames';
-
-import { useHovering } from 'mastodon/../hooks/useHovering';
-=======
 
 import classNames from 'classnames';
 import { Link } from 'react-router-dom';
 
 import { useHovering } from 'mastodon/hooks/useHovering';
->>>>>>> v4.4.0
 import { autoPlayGif } from 'mastodon/initial_state';
 import type { Account } from 'mastodon/models/account';
 
@@ -59,15 +52,9 @@ export const Avatar: React.FC<Props> = ({
     setError(true);
   }, [setError]);
 
-<<<<<<< HEAD
-  return (
-    <div
-      className={classNames('account__avatar', {
-=======
   const avatar = (
     <div
       className={classNames(className, 'account__avatar', {
->>>>>>> v4.4.0
         'account__avatar--inline': inline,
         'account__avatar--loading': loading,
       })}

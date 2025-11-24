@@ -4,7 +4,6 @@ export const LIST_FETCH_REQUEST = 'LIST_FETCH_REQUEST';
 export const LIST_FETCH_SUCCESS = 'LIST_FETCH_SUCCESS';
 export const LIST_FETCH_FAIL    = 'LIST_FETCH_FAIL';
 
-<<<<<<< HEAD
 export const LISTS_FETCH_REQUEST = 'LISTS_FETCH_REQUEST';
 export const LISTS_FETCH_SUCCESS = 'LISTS_FETCH_SUCCESS';
 export const LISTS_FETCH_FAIL    = 'LISTS_FETCH_FAIL';
@@ -22,8 +21,6 @@ export const LIST_UPDATE_REQUEST = 'LIST_UPDATE_REQUEST';
 export const LIST_UPDATE_SUCCESS = 'LIST_UPDATE_SUCCESS';
 export const LIST_UPDATE_FAIL    = 'LIST_UPDATE_FAIL';
 
-=======
->>>>>>> v4.4.0
 export const LIST_DELETE_REQUEST = 'LIST_DELETE_REQUEST';
 export const LIST_DELETE_SUCCESS = 'LIST_DELETE_SUCCESS';
 export const LIST_DELETE_FAIL    = 'LIST_DELETE_FAIL';
@@ -58,7 +55,6 @@ export const fetchListFail = (id, error) => ({
   error,
 });
 
-<<<<<<< HEAD
 export const fetchLists = () => (dispatch) => {
   dispatch(fetchListsRequest());
 
@@ -170,8 +166,6 @@ export const resetListEditor = () => ({
   type: LIST_EDITOR_RESET,
 });
 
-=======
->>>>>>> v4.4.0
 export const deleteList = id => (dispatch) => {
   dispatch(deleteListRequest(id));
 
