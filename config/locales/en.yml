@@ -1417,7 +1417,7 @@ en:
     '500':
       content: We're sorry, but something went wrong on our end.
       title: This page is not correct
-    noscript_html: To use the %{title} web application, please enable JavaScript. Alternatively, try one of the <a href="%{apps_path}">native apps</a> for Hometown/Mastodon for your platform.
+    noscript_html: To use the web application, please enable JavaScript. Alternatively, try one of the <a href="%{apps_path}">native apps</a> for Hometown/Mastodon for your platform.
     '503': The page could not be served due to a temporary server failure.
   existing_username_validator:
     not_found: could not find a local user with that username
