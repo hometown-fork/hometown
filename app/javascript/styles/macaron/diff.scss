@@ -1,5 +1,8 @@
 // Notes!
 // Sass color functions, "darken" and "lighten" are automatically replaced.
+@use 'sass:color';
+@use '../mastodon/variables' as mastodon;
+@use './variables' as *;
 
 html {
   scrollbar-color: $pink rgba($pink, 0.25);
@@ -69,7 +72,7 @@ html {
   background: #c8c4dd;
   border: 1px solid lighten($purple, 8%);
 
-  @media screen and (max-width: $no-gap-breakpoint) {
+  @media screen and (max-width: mastodon.$no-gap-breakpoint) {
     border-top: 0;
   }
 
@@ -127,7 +130,7 @@ html {
   border-top: 1px solid lighten($ui-base-color, 8%);
   border-bottom: 1px solid lighten($ui-base-color, 8%);
 
-  @media screen and (max-width: $no-gap-breakpoint) {
+  @media screen and (max-width: mastodon.$no-gap-breakpoint) {
     border-top: 0;
   }
 }
@@ -172,7 +175,7 @@ html {
 }
 
 .search__input {
-  @media screen and (max-width: $no-gap-breakpoint) {
+  @media screen and (max-width: mastodon.$no-gap-breakpoint) {
     border-top: 0;
     border-bottom: 0;
   }
@@ -194,7 +197,7 @@ html {
 }
 
 .compose-form__poll-wrapper select {
-  background: $simple-background-color
+  background: mastodon.$simple-background-color
     url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14.933 18.467' height='19.698' width='15.929'><path d='M3.467 14.967l-3.393-3.5H14.86l-3.392 3.5c-1.866 1.925-3.666 3.5-4 3.5-.335 0-2.135-1.575-4-3.5zm.266-11.234L7.467 0 11.2 3.733l3.733 3.734H0l3.733-3.734z' fill='#{hex-color(lighten($ui-base-color, 8%))}'/></svg>")
     no-repeat right 8px center / auto 16px;
 }
@@ -607,7 +610,7 @@ body.admin {
   border: 1px solid lighten($blue, 8%);
   border-bottom: 0;
 
-  @media screen and (max-width: $no-gap-breakpoint) {
+  @media screen and (max-width: mastodon.$no-gap-breakpoint) {
     border-top: 0;
   }
 
@@ -657,7 +660,7 @@ body.admin {
   background: $white;
   border: 1px solid lighten(#eeeeee, 4%);
 
-  @media screen and (max-width: $no-gap-breakpoint) {
+  @media screen and (max-width: mastodon.$no-gap-breakpoint) {
     border-left: 0;
     border-right: 0;
     border-top: 0;
@@ -717,7 +720,7 @@ body.admin {
   border: 1px solid lighten($purple, 8%);
   border-top: 0;
 
-  @media screen and (max-width: $no-gap-breakpoint) {
+  @media screen and (max-width: mastodon.$no-gap-breakpoint) {
     border: 0;
   }
 }
@@ -741,7 +744,7 @@ body.admin {
     background: $ui-base-color;
   }
 
-  @media screen and (max-width: $no-gap-breakpoint) {
+  @media screen and (max-width: mastodon.$no-gap-breakpoint) {
     border: 0;
   }
 }
@@ -831,7 +834,7 @@ body.admin {
 .table-form {
   .warning {
     box-shadow: none;
-    background: rgba($error-red, 0.5);
+    background: rgba(mastodon.$error-red, 0.5);
     text-shadow: none;
   }
 
@@ -880,7 +883,7 @@ body.admin {
     background: $green;
     border: 1px solid lighten($green, 8%);
 
-    @media screen and (max-width: $no-gap-breakpoint) {
+    @media screen and (max-width: mastodon.$no-gap-breakpoint) {
       border-top: 0;
     }
   }
@@ -905,7 +908,7 @@ body.admin {
     background: $ui-base-color;
     border: 1px solid lighten($ui-base-color, 8%);
 
-    @media screen and (max-width: $no-gap-breakpoint) {
+    @media screen and (max-width: mastodon.$no-gap-breakpoint) {
       border: 0;
     }
 
@@ -938,7 +941,7 @@ body.admin {
         border-color: $account-background-color;
       }
 
-      @media screen and (max-width: $no-columns-breakpoint) {
+      @media screen and (max-width: mastodon.$no-columns-breakpoint) {
         background: $account-background-color;
         border: 1px solid lighten($ui-base-color, 8%);
         border-top: 0;
@@ -951,7 +954,7 @@ body.admin {
         h1 small {
           color: $white;
 
-          @media screen and (max-width: $no-columns-breakpoint) {
+          @media screen and (max-width: mastodon.$no-columns-breakpoint) {
             color: $primary-text-color;
           }
         }
@@ -1167,7 +1170,7 @@ a.status-card.compact:hover {
 }
 
 // Tablet layout
-@media screen and (max-width: $no-gap-breakpoint - 1px) {
+@media screen and (max-width: mastodon.$no-gap-breakpoint - 1px) {
   .tabs-bar__wrapper {
     z-index: 2;
   }
@@ -1183,7 +1186,7 @@ a.status-card.compact:hover {
 }
 
 // Mobile layout
-@media screen and (max-width: $no-gap-breakpoint - 285px - 1px) {
+@media screen and (max-width: mastodon.$no-gap-breakpoint - 285px - 1px) {
   .tabs-bar__wrapper {
     z-index: 2;
   }

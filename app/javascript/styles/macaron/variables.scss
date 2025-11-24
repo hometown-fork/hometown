@@ -25,6 +25,7 @@ $ui-base-lighter-color: $cream;
 $ui-primary-color: #9bcbed;
 $ui-secondary-color: $classic-base-color !default;
 $ui-highlight-color: $blueberry;
+$highlight-text-color: lighten($ui-highlight-color, 8%) !default;
 $ui-button-secondary-color: $bilberry;
 $ui-button-secondary-border-color: $bilberry;
 $ui-button-secondary-focus-background-color: $pink;
