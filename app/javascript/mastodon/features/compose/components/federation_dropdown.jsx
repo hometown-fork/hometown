@@ -78,7 +78,11 @@ class FederationDropdown extends PureComponent {
   };
 
   handleChange = value => {
-    this.props.onChange(value);
+    // because handleChange always receives string values from DropdownSelector we need to convert them back to boolean
+    // since the strings "true" and "false" get stored on the "data-index" attribute in the dropdown, we need to
+    // check for the string 'true' and convert that to boolean true, everything else is false
+    // (this way a failure to pass a value will result in false, or local-only, which is a safer default)
+    this.props.onChange(value === 'true');
   };
 
   UNSAFE_componentWillMount() {
@@ -106,9 +110,7 @@ class FederationDropdown extends PureComponent {
     const { value, container, disabled } = this.props;
     const { open, placement } = this.state;
 
-    // terrible hack to convert string 'false' to boolean false; due to
-    // the implemenation of federation value being stored as string in some places
-    const valueOption = this.options.find(item => item.value === (value !== 'false'));
+    const valueOption = this.options.find(item => item.value === value);
 
     return (
       <div ref={this.setTargetRef} onKeyDown={this.handleKeyDown}>
