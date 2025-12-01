@@ -2,6 +2,8 @@ import PropTypes from 'prop-types';
 
 import { defineMessages, injectIntl } from 'react-intl';
 
+import { Link } from 'react-router-dom';
+
 import ImmutablePropTypes from 'react-immutable-proptypes';
 import ImmutablePureComponent from 'react-immutable-pure-component';
 
@@ -10,7 +12,6 @@ import CloseIcon from '@/material-icons/400-24px/close.svg?react';
 import { Avatar } from 'mastodon/components/avatar';
 import { DisplayName } from 'mastodon/components/display_name';
 import { IconButton } from 'mastodon/components/icon_button';
-import { Permalink } from 'mastodon/components/permalink';
 
 const messages = defineMessages({
   authorize: { id: 'follow_request.authorize', defaultMessage: 'Authorize' },
@@ -45,10 +46,10 @@ class FollowRequest extends ImmutablePureComponent {
     return (
       <div className='account'>
         <div className='account__wrapper'>
-          <Permalink key={account.get('id')} className='account__display-name' title={account.get('acct')} href={account.get('url')} to={`/@${account.get('acct')}`}>
+          <Link key={account.get('id')} className='account__display-name' title={account.get('acct')} to={`/@${account.get('acct')}`}>
             <div className='account__avatar-wrapper'><Avatar account={account} size={36} /></div>
             <DisplayName account={account} />
-          </Permalink>
+          </Link>
 
           <div className='account__relationship'>
             <IconButton title={intl.formatMessage(messages.authorize)} icon='check' iconComponent={CheckIcon} onClick={onAuthorize} />

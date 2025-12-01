@@ -4,7 +4,7 @@ import { useCallback } from 'react';
 import { defineMessages, useIntl, FormattedMessage } from 'react-intl';
 
 import classNames from 'classnames';
-import { useHistory } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 
 import { createSelector } from '@reduxjs/toolkit';
 import ImmutablePropTypes from 'react-immutable-proptypes';
@@ -22,7 +22,6 @@ import { muteStatus, unmuteStatus, toggleStatusSpoilers } from 'mastodon/actions
 import AttachmentList from 'mastodon/components/attachment_list';
 import AvatarComposite from 'mastodon/components/avatar_composite';
 import { IconButton } from 'mastodon/components/icon_button';
-import { Permalink } from 'mastodon/components/permalink';
 import { RelativeTimestamp } from 'mastodon/components/relative_timestamp';
 import StatusContent from 'mastodon/components/status_content';
 import { Dropdown } from 'mastodon/components/dropdown_menu';
@@ -151,14 +150,14 @@ export const Conversation = ({ conversation, scrollKey, onMoveUp, onMoveDown }) 
   menu.push({ text: intl.formatMessage(messages.delete), action: handleDelete });
 
   const names = accounts.map(a => (
-    <Permalink to={`/@${a.get('acct')}`} href={a.get('url')} key={a.get('id')} data-hover-card-account={a.get('id')}>
+    <Link to={`/@${a.get('acct')}`} key={a.get('id')} data-hover-card-account={a.get('id')}>
       <bdi>
         <strong
           className='display-name__html'
           dangerouslySetInnerHTML={{ __html: a.get('display_name_html') }}
         />
       </bdi>
-    </Permalink>
+    </Link>
   )).reduce((prev, cur) => [prev, ', ', cur]);
 
   const handlers = {
