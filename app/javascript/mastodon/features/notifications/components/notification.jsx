@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { injectIntl, FormattedMessage, defineMessages } from 'react-intl';
 
 import classNames from 'classnames';
-import { withRouter } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 
 import ImmutablePropTypes from 'react-immutable-proptypes';
 import ImmutablePureComponent from 'react-immutable-pure-component';
@@ -20,7 +20,6 @@ import RepeatIcon from '@/material-icons/400-24px/repeat.svg?react';
 import StarIcon from '@/material-icons/400-24px/star-fill.svg?react';
 import { Account } from 'mastodon/components/account';
 import { Icon }  from 'mastodon/components/icon';
-import { Permalink } from 'mastodon/components/permalink';
 import { StatusQuoteManager } from 'mastodon/components/status_quoted';
 import { me } from 'mastodon/initial_state';
 import { WithRouterPropTypes } from 'mastodon/utils/react_router';
@@ -436,7 +435,7 @@ class Notification extends ImmutablePureComponent {
 
     const targetAccount = report.get('target_account');
     const targetDisplayNameHtml = { __html: targetAccount.get('display_name_html') };
-    const targetLink = <bdi><Permalink className='notification__display-name' title={targetAccount.get('acct')} data-hover-card-account={targetAccount.get('id')} href={targetAccount.get('url')} to={`/@${targetAccount.get('acct')}`} dangerouslySetInnerHTML={targetDisplayNameHtml} /></bdi>;
+    const targetLink = <bdi><Link className='notification__display-name' title={targetAccount.get('acct')} data-hover-card-account={targetAccount.get('id')} to={`/@${targetAccount.get('acct')}`} dangerouslySetInnerHTML={targetDisplayNameHtml} /></bdi>;
 
     return (
       <HotKeys handlers={this.getHandlers()}>
@@ -459,7 +458,7 @@ class Notification extends ImmutablePureComponent {
     const { notification } = this.props;
     const account          = notification.get('account');
     const displayNameHtml  = { __html: account.get('display_name_html') };
-    const link             = <bdi><Permalink className='notification__display-name' to={`/@${account.get('acct')}`} title={account.get('acct')} data-hover-card-account={account.get('id')} href={account.get('url')} dangerouslySetInnerHTML={displayNameHtml} /></bdi>;
+    const link             = <bdi><Link className='notification__display-name' to={`/@${account.get('acct')}`} title={account.get('acct')} data-hover-card-account={account.get('id')} dangerouslySetInnerHTML={displayNameHtml} /></bdi>;
 
     switch(notification.get('type')) {
     case 'follow':

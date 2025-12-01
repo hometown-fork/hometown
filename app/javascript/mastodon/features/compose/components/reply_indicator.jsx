@@ -2,12 +2,13 @@ import { FormattedMessage } from 'react-intl';
 
 import { useSelector } from 'react-redux';
 
+import { Link } from 'react-router-dom';
+
 import BarChart4BarsIcon from '@/material-icons/400-24px/bar_chart_4_bars.svg?react';
 import PhotoLibraryIcon from '@/material-icons/400-24px/photo_library.svg?react';
 import { Avatar } from 'mastodon/components/avatar';
 import { DisplayName } from 'mastodon/components/display_name';
 import { Icon } from 'mastodon/components/icon';
-import { Permalink } from 'mastodon/components/permalink';
 import { EmbeddedStatusContent } from 'mastodon/features/notifications_v2/components/embedded_status_content';
 
 export const ReplyIndicator = () => {
@@ -23,14 +24,14 @@ export const ReplyIndicator = () => {
     <div className='reply-indicator'>
       <div className='reply-indicator__line' />
 
-      <Permalink href={account.get('url')} to={`/@${account.get('acct')}`} className='detailed-status__display-avatar'>
+      <Link to={`/@${account.get('acct')}`} className='detailed-status__display-avatar'>
         <Avatar account={account} size={46} />
-      </Permalink>
+      </Link>
 
       <div className='reply-indicator__main'>
-        <Permalink href={account.get('url')} to={`/@${account.get('acct')}`} className='detailed-status__display-name'>
+        <Link to={`/@${account.get('acct')}`} className='detailed-status__display-name'>
           <DisplayName account={account} />
-        </Permalink>
+        </Link>
 
         <EmbeddedStatusContent
           className='reply-indicator__content translate'

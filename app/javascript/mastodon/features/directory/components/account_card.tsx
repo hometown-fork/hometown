@@ -4,6 +4,7 @@ import { useCallback } from 'react';
 import { FormattedMessage, defineMessages, useIntl } from 'react-intl';
 
 import classNames from 'classnames';
+import { Link } from 'react-router-dom';
 
 import {
   followAccount,
@@ -14,7 +15,6 @@ import { openModal } from 'mastodon/actions/modal';
 import { Avatar } from 'mastodon/components/avatar';
 import { Button } from 'mastodon/components/button';
 import { DisplayName } from 'mastodon/components/display_name';
-import { Permalink } from 'mastodon/components/permalink';
 import { ShortNumber } from 'mastodon/components/short_number';
 import { autoPlayGif, me } from 'mastodon/initial_state';
 import type { Account } from 'mastodon/models/account';
@@ -165,11 +165,7 @@ export const AccountCard: React.FC<{ accountId: string }> = ({ accountId }) => {
 
   return (
     <div className='account-card'>
-      <Permalink
-        href={account.get('url')}
-        to={`/@${account.get('acct')}`}
-        className='account-card__permalink'
-      >
+      <Link to={`/@${account.get('acct')}`} className='account-card__permalink'>
         <div className='account-card__header'>
           <img
             src={
@@ -185,7 +181,7 @@ export const AccountCard: React.FC<{ accountId: string }> = ({ accountId }) => {
           </div>
           <DisplayName account={account as Account} />
         </div>
-      </Permalink>
+      </Link>
 
       {account.get('note').length > 0 && (
         <div
