@@ -228,7 +228,7 @@ export function submitCompose() {
         spoiler_text: getState().getIn(['compose', 'spoiler']) ? getState().getIn(['compose', 'spoiler_text'], '') : '',
         visibility: getState().getIn(['compose', 'privacy']),
         poll: getState().getIn(['compose', 'poll'], null),
-        local_only: !getState().getIn(['compose', 'federation']),
+        local_only: getState().getIn(['compose', 'federation']) === 'false',
         language: getState().getIn(['compose', 'language']),
       },
       headers: {
