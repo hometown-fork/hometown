@@ -4,9 +4,17 @@ import PickerRaw from 'emoji-mart/dist-es/components/picker/nimble-picker';
 
 import { assetHost } from 'mastodon/utils/config';
 
+<<<<<<< HEAD
 import EmojiData from './emoji_data.json';
 
 const backgroundImageFnDefault = () => `${assetHost}/emoji/sheet_15_1.png`;
+=======
+import { EMOJI_MODE_NATIVE } from './constants';
+import EmojiData from './emoji_data.json';
+import { useEmojiAppState } from './mode';
+
+const backgroundImageFnDefault = () => `${assetHost}/emoji/sheet_16_0.png`;
+>>>>>>> v4.5.0
 
 const Emoji = ({
   set = 'twitter',
@@ -16,6 +24,10 @@ const Emoji = ({
   backgroundImageFn = backgroundImageFnDefault,
   ...props
 }: EmojiProps) => {
+<<<<<<< HEAD
+=======
+  const { mode } = useEmojiAppState();
+>>>>>>> v4.5.0
   return (
     <EmojiRaw
       data={EmojiData}
@@ -23,6 +35,10 @@ const Emoji = ({
       sheetSize={sheetSize}
       sheetColumns={sheetColumns}
       sheetRows={sheetRows}
+<<<<<<< HEAD
+=======
+      native={mode === EMOJI_MODE_NATIVE}
+>>>>>>> v4.5.0
       backgroundImageFn={backgroundImageFn}
       {...props}
     />
@@ -37,6 +53,10 @@ const Picker = ({
   backgroundImageFn = backgroundImageFnDefault,
   ...props
 }: PickerProps) => {
+<<<<<<< HEAD
+=======
+  const { mode } = useEmojiAppState();
+>>>>>>> v4.5.0
   return (
     <PickerRaw
       data={EmojiData}
@@ -45,6 +65,10 @@ const Picker = ({
       sheetColumns={sheetColumns}
       sheetRows={sheetRows}
       backgroundImageFn={backgroundImageFn}
+<<<<<<< HEAD
+=======
+      native={mode === EMOJI_MODE_NATIVE}
+>>>>>>> v4.5.0
       {...props}
     />
   );

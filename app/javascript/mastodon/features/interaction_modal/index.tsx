@@ -7,6 +7,7 @@ import classNames from 'classnames';
 import { escapeRegExp } from 'lodash';
 import { useDebouncedCallback } from 'use-debounce';
 
+<<<<<<< HEAD
 import InsertChartIcon from '@/material-icons/400-24px/insert_chart.svg?react';
 import PersonAddIcon from '@/material-icons/400-24px/person_add.svg?react';
 import RepeatIcon from '@/material-icons/400-24px/repeat.svg?react';
@@ -16,6 +17,12 @@ import { openModal, closeModal } from 'mastodon/actions/modal';
 import { apiRequest } from 'mastodon/api';
 import { Button } from 'mastodon/components/button';
 import { Icon } from 'mastodon/components/icon';
+=======
+import { DisplayName } from '@/mastodon/components/display_name';
+import { openModal, closeModal } from 'mastodon/actions/modal';
+import { apiRequest } from 'mastodon/api';
+import { Button } from 'mastodon/components/button';
+>>>>>>> v4.5.0
 import {
   domain as localDomain,
   registrationsOpen,
@@ -408,18 +415,28 @@ const LoginForm: React.FC<{
 const InteractionModal: React.FC<{
   accountId: string;
   url: string;
+<<<<<<< HEAD
   type: 'reply' | 'reblog' | 'favourite' | 'follow' | 'vote';
 }> = ({ accountId, url, type }) => {
   const dispatch = useAppDispatch();
   const displayNameHtml = useAppSelector(
     (state) => state.accounts.get(accountId)?.display_name_html ?? '',
   );
+=======
+}> = ({ accountId, url }) => {
+  const dispatch = useAppDispatch();
+>>>>>>> v4.5.0
   const signupUrl = useAppSelector(
     (state) =>
       (state.server.getIn(['server', 'registrations', 'url'], null) ||
         '/auth/sign_up') as string,
   );
+<<<<<<< HEAD
   const name = <bdi dangerouslySetInnerHTML={{ __html: displayNameHtml }} />;
+=======
+  const account = useAppSelector((state) => state.accounts.get(accountId));
+  const name = <DisplayName account={account} variant='simple' />;
+>>>>>>> v4.5.0
 
   const handleSignupClick = useCallback(() => {
     dispatch(
@@ -437,6 +454,7 @@ const InteractionModal: React.FC<{
     );
   }, [dispatch]);
 
+<<<<<<< HEAD
   let title: React.ReactNode,
     icon: React.ReactNode,
     actionPrompt: React.ReactNode;
@@ -524,6 +542,8 @@ const InteractionModal: React.FC<{
       break;
   }
 
+=======
+>>>>>>> v4.5.0
   let signupButton;
 
   if (sso_redirect) {
@@ -559,9 +579,24 @@ const InteractionModal: React.FC<{
     <div className='modal-root__modal interaction-modal'>
       <div className='interaction-modal__lead'>
         <h3>
+<<<<<<< HEAD
           <span className='interaction-modal__icon'>{icon}</span> {title}
         </h3>
         <p>{actionPrompt}</p>
+=======
+          <FormattedMessage
+            id='interaction_modal.title'
+            defaultMessage='Sign in to continue'
+          />
+        </h3>
+        <p>
+          <FormattedMessage
+            id='interaction_modal.action'
+            defaultMessage="To interact with {name}'s post, you need to sign into your account on whatever Mastodon server you use."
+            values={{ name }}
+          />
+        </p>
+>>>>>>> v4.5.0
       </div>
 
       <LoginForm resourceUrl={url} />

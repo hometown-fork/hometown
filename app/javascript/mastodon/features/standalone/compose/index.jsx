@@ -5,7 +5,11 @@ import ModalContainer from 'mastodon/features/ui/containers/modal_container';
 
 const Compose = () => (
   <>
+<<<<<<< HEAD
     <ComposeFormContainer autoFocus withoutNavigation />
+=======
+    <ComposeFormContainer autoFocus withoutNavigation redirectOnSuccess />
+>>>>>>> v4.5.0
     <AlertsController />
     <ModalContainer />
     <LoadingBarContainer className='loading-bar' />

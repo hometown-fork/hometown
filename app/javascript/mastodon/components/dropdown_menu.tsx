@@ -5,6 +5,10 @@ import {
   useCallback,
   cloneElement,
   Children,
+<<<<<<< HEAD
+=======
+  useId,
+>>>>>>> v4.5.0
 } from 'react';
 
 import classNames from 'classnames';
@@ -16,6 +20,10 @@ import Overlay from 'react-overlays/Overlay';
 import type {
   OffsetValue,
   UsePopperOptions,
+<<<<<<< HEAD
+=======
+  Placement,
+>>>>>>> v4.5.0
 } from 'react-overlays/esm/usePopper';
 
 import { fetchRelationships } from 'mastodon/actions/accounts';
@@ -34,11 +42,16 @@ import {
 import type { MenuItem } from 'mastodon/models/dropdown_menu';
 import { useAppDispatch, useAppSelector } from 'mastodon/store';
 
+<<<<<<< HEAD
+=======
+import { Icon } from './icon';
+>>>>>>> v4.5.0
 import type { IconProp } from './icon';
 import { IconButton } from './icon_button';
 
 let id = 0;
 
+<<<<<<< HEAD
 type RenderItemFn<Item = MenuItem> = (
   item: Item,
   index: number,
@@ -46,6 +59,18 @@ type RenderItemFn<Item = MenuItem> = (
     onClick: (e: React.MouseEvent) => void;
     onKeyUp: (e: React.KeyboardEvent) => void;
   },
+=======
+export interface RenderItemFnHandlers {
+  onClick: React.MouseEventHandler;
+  onKeyUp: React.KeyboardEventHandler;
+}
+
+export type RenderItemFn<Item = MenuItem> = (
+  item: Item,
+  index: number,
+  handlers: RenderItemFnHandlers,
+  focusRefCallback?: (c: HTMLAnchorElement | HTMLButtonElement | null) => void,
+>>>>>>> v4.5.0
 ) => React.ReactNode;
 
 type ItemClickFn<Item = MenuItem> = (item: Item, index: number) => void;
@@ -63,6 +88,30 @@ interface DropdownMenuProps<Item = MenuItem> {
   onItemClick?: ItemClickFn<Item>;
 }
 
+<<<<<<< HEAD
+=======
+export const DropdownMenuItemContent: React.FC<{ item: MenuItem }> = ({
+  item,
+}) => {
+  if (item === null) {
+    return null;
+  }
+
+  const { text, description, icon } = item;
+  return (
+    <>
+      {icon && <Icon icon={icon} id={`${text}-icon`} />}
+      <span className='dropdown-menu__item-content'>
+        {text}
+        {Boolean(description) && (
+          <span className='dropdown-menu__item-subtitle'>{description}</span>
+        )}
+      </span>
+    </>
+  );
+};
+
+>>>>>>> v4.5.0
 export const DropdownMenu = <Item = MenuItem,>({
   items,
   loading,
@@ -159,6 +208,7 @@ export const DropdownMenu = <Item = MenuItem,>({
     (e: React.MouseEvent | React.KeyboardEvent) => {
       const i = Number(e.currentTarget.getAttribute('data-index'));
       const item = items?.[i];
+<<<<<<< HEAD
 
       onClose();
 
@@ -166,12 +216,28 @@ export const DropdownMenu = <Item = MenuItem,>({
         return;
       }
 
+=======
+      const isItemDisabled = Boolean(
+        item && typeof item === 'object' && 'disabled' in item && item.disabled,
+      );
+
+      if (!item || isItemDisabled) {
+        return;
+      }
+
+      onClose();
+
+>>>>>>> v4.5.0
       if (typeof onItemClick === 'function') {
         e.preventDefault();
         onItemClick(item, i);
       } else if (isActionItem(item)) {
         e.preventDefault();
+<<<<<<< HEAD
         item.action();
+=======
+        item.action(e);
+>>>>>>> v4.5.0
       }
     },
     [onClose, onItemClick, items],
@@ -195,7 +261,11 @@ export const DropdownMenu = <Item = MenuItem,>({
       return <li key={`sep-${i}`} className='dropdown-menu__separator' />;
     }
 
+<<<<<<< HEAD
     const { text, dangerous } = option;
+=======
+    const { text, highlighted, disabled, dangerous } = option;
+>>>>>>> v4.5.0
 
     let element: React.ReactElement;
 
@@ -206,8 +276,14 @@ export const DropdownMenu = <Item = MenuItem,>({
           onClick={handleItemClick}
           onKeyUp={handleItemKeyUp}
           data-index={i}
+<<<<<<< HEAD
         >
           {text}
+=======
+          aria-disabled={disabled}
+        >
+          <DropdownMenuItemContent item={option} />
+>>>>>>> v4.5.0
         </button>
       );
     } else if (isExternalLinkItem(option)) {
@@ -222,7 +298,11 @@ export const DropdownMenu = <Item = MenuItem,>({
           onKeyUp={handleItemKeyUp}
           data-index={i}
         >
+<<<<<<< HEAD
           {text}
+=======
+          <DropdownMenuItemContent item={option} />
+>>>>>>> v4.5.0
         </a>
       );
     } else {
@@ -234,7 +314,11 @@ export const DropdownMenu = <Item = MenuItem,>({
           onKeyUp={handleItemKeyUp}
           data-index={i}
         >
+<<<<<<< HEAD
           {text}
+=======
+          <DropdownMenuItemContent item={option} />
+>>>>>>> v4.5.0
         </Link>
       );
     }
@@ -242,6 +326,10 @@ export const DropdownMenu = <Item = MenuItem,>({
     return (
       <li
         className={classNames('dropdown-menu__item', {
+<<<<<<< HEAD
+=======
+          'dropdown-menu__item--highlighted': highlighted,
+>>>>>>> v4.5.0
           'dropdown-menu__item--dangerous': dangerous,
         })}
         key={`${text}-${i}`}
@@ -275,10 +363,22 @@ export const DropdownMenu = <Item = MenuItem,>({
           })}
         >
           {items.map((option, i) =>
+<<<<<<< HEAD
             renderItemMethod(option, i, {
               onClick: handleItemClick,
               onKeyUp: handleItemKeyUp,
             }),
+=======
+            renderItemMethod(
+              option,
+              i,
+              {
+                onClick: handleItemClick,
+                onKeyUp: handleItemKeyUp,
+              },
+              i === 0 ? handleFocusedItemRef : undefined,
+            ),
+>>>>>>> v4.5.0
           )}
         </ul>
       )}
@@ -286,7 +386,11 @@ export const DropdownMenu = <Item = MenuItem,>({
   );
 };
 
+<<<<<<< HEAD
 interface DropdownProps<Item = MenuItem> {
+=======
+interface DropdownProps<Item extends object | null = MenuItem> {
+>>>>>>> v4.5.0
   children?: React.ReactElement;
   icon?: string;
   iconComponent?: IconProp;
@@ -295,11 +399,21 @@ interface DropdownProps<Item = MenuItem> {
   title?: string;
   disabled?: boolean;
   scrollable?: boolean;
+<<<<<<< HEAD
+=======
+  placement?: Placement;
+  offset?: OffsetValue;
+  /**
+   * Prevent the `ScrollableList` with this scrollKey
+   * from being scrolled while the dropdown is open
+   */
+>>>>>>> v4.5.0
   scrollKey?: string;
   status?: ImmutableMap<string, unknown>;
   forceDropdown?: boolean;
   renderItem?: RenderItemFn<Item>;
   renderHeader?: RenderHeaderFn<Item>;
+<<<<<<< HEAD
   onOpen?: () => void;
   onItemClick?: ItemClickFn<Item>;
 }
@@ -308,6 +422,17 @@ const offset = [5, 5] as OffsetValue;
 const popperConfig = { strategy: 'fixed' } as UsePopperOptions;
 
 export const Dropdown = <Item = MenuItem,>({
+=======
+  onOpen?: // Must use a union type for the full function as a union with void is not allowed.
+  | ((event: React.MouseEvent | React.KeyboardEvent) => void)
+    | ((event: React.MouseEvent | React.KeyboardEvent) => boolean);
+  onItemClick?: ItemClickFn<Item>;
+}
+
+const popperConfig = { strategy: 'fixed' } as UsePopperOptions;
+
+export const Dropdown = <Item extends object | null = MenuItem>({
+>>>>>>> v4.5.0
   children,
   icon,
   iconComponent,
@@ -316,6 +441,11 @@ export const Dropdown = <Item = MenuItem,>({
   title = 'Menu',
   disabled,
   scrollable,
+<<<<<<< HEAD
+=======
+  placement = 'bottom',
+  offset = [5, 5],
+>>>>>>> v4.5.0
   status,
   forceDropdown = false,
   renderItem,
@@ -331,16 +461,26 @@ export const Dropdown = <Item = MenuItem,>({
   );
   const [currentId] = useState(id++);
   const open = currentId === openDropdownId;
+<<<<<<< HEAD
   const activeElement = useRef<HTMLElement | null>(null);
   const targetRef = useRef<HTMLButtonElement | null>(null);
+=======
+  const buttonRef = useRef<HTMLButtonElement | null>(null);
+  const menuId = useId();
+>>>>>>> v4.5.0
   const prefetchAccountId = status
     ? status.getIn(['account', 'id'])
     : undefined;
 
   const handleClose = useCallback(() => {
+<<<<<<< HEAD
     if (activeElement.current) {
       activeElement.current.focus({ preventScroll: true });
       activeElement.current = null;
+=======
+    if (buttonRef.current) {
+      buttonRef.current.focus({ preventScroll: true });
+>>>>>>> v4.5.0
     }
 
     dispatch(
@@ -369,20 +509,35 @@ export const Dropdown = <Item = MenuItem,>({
         onItemClick(item, i);
       } else if (isActionItem(item)) {
         e.preventDefault();
+<<<<<<< HEAD
         item.action();
+=======
+        item.action(e);
+>>>>>>> v4.5.0
       }
     },
     [handleClose, onItemClick, items],
   );
 
+<<<<<<< HEAD
   const handleClick = useCallback(
+=======
+  const toggleDropdown = useCallback(
+>>>>>>> v4.5.0
     (e: React.MouseEvent | React.KeyboardEvent) => {
       const { type } = e;
 
       if (open) {
         handleClose();
       } else {
+<<<<<<< HEAD
         onOpen?.();
+=======
+        const allow = onOpen?.(e);
+        if (allow === false) {
+          return;
+        }
+>>>>>>> v4.5.0
 
         if (prefetchAccountId) {
           dispatch(fetchRelationships([prefetchAccountId]));
@@ -423,6 +578,7 @@ export const Dropdown = <Item = MenuItem,>({
     ],
   );
 
+<<<<<<< HEAD
   const handleMouseDown = useCallback(() => {
     if (!open && document.activeElement instanceof HTMLElement) {
       activeElement.current = document.activeElement;
@@ -455,6 +611,8 @@ export const Dropdown = <Item = MenuItem,>({
     [handleClick],
   );
 
+=======
+>>>>>>> v4.5.0
   useEffect(() => {
     return () => {
       if (currentId === openDropdownId) {
@@ -465,6 +623,7 @@ export const Dropdown = <Item = MenuItem,>({
 
   let button: React.ReactElement;
 
+<<<<<<< HEAD
   if (children) {
     button = cloneElement(Children.only(children), {
       onClick: handleClick,
@@ -473,6 +632,18 @@ export const Dropdown = <Item = MenuItem,>({
       onKeyPress: handleKeyPress,
       ref: targetRef,
     });
+=======
+  const buttonProps = {
+    disabled,
+    onClick: toggleDropdown,
+    'aria-expanded': open,
+    'aria-controls': menuId,
+    ref: buttonRef,
+  };
+
+  if (children) {
+    button = cloneElement(Children.only(children), buttonProps);
+>>>>>>> v4.5.0
   } else if (icon && iconComponent) {
     button = (
       <IconButton
@@ -480,12 +651,16 @@ export const Dropdown = <Item = MenuItem,>({
         iconComponent={iconComponent}
         title={title}
         active={open}
+<<<<<<< HEAD
         disabled={disabled}
         onClick={handleClick}
         onMouseDown={handleMouseDown}
         onKeyDown={handleButtonKeyDown}
         onKeyPress={handleKeyPress}
         ref={targetRef}
+=======
+        {...buttonProps}
+>>>>>>> v4.5.0
       />
     );
   } else {
@@ -499,6 +674,7 @@ export const Dropdown = <Item = MenuItem,>({
       <Overlay
         show={open}
         offset={offset}
+<<<<<<< HEAD
         placement='bottom'
         flip
         target={targetRef}
@@ -506,6 +682,15 @@ export const Dropdown = <Item = MenuItem,>({
       >
         {({ props, arrowProps, placement }) => (
           <div {...props}>
+=======
+        placement={placement}
+        flip
+        target={buttonRef}
+        popperConfig={popperConfig}
+      >
+        {({ props, arrowProps, placement }) => (
+          <div {...props} id={menuId}>
+>>>>>>> v4.5.0
             <div className={`dropdown-animation dropdown-menu ${placement}`}>
               <div
                 className={`dropdown-menu__arrow ${placement}`}

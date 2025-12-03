@@ -37,10 +37,6 @@ RSpec.describe 'ActivityPub Outboxes' do
             .to eq 4
         end
 
-        it 'does not have a Vary header' do
-          expect(response.headers['Vary']).to be_nil
-        end
-
         context 'when account is permanently suspended' do
           before do
             account.suspend!
@@ -88,10 +84,6 @@ RSpec.describe 'ActivityPub Outboxes' do
               .and(have_attributes(size: 2))
               .and(all(satisfy { |item| targets_public_collection?(item) }))
             )
-        end
-
-        it 'returns Vary header with Signature' do
-          expect(response.headers['Vary']).to include 'Signature'
         end
 
         context 'when account is permanently suspended' do
@@ -223,7 +215,7 @@ RSpec.describe 'ActivityPub Outboxes' do
 
   def targets_followers_collection?(item, account)
     item[:to].include?(
-      account_followers_url(account, ActionMailer::Base.default_url_options)
+      ActivityPub::TagManager.instance.followers_uri_for(account)
     )
   end
 end

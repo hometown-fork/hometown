@@ -3,6 +3,8 @@ import { useCallback, useRef, useId } from 'react';
 
 import { FormattedMessage } from 'react-intl';
 
+import { AnimateEmojiProvider } from './emoji/context';
+
 export enum BannerVariant {
   Warning = 'warning',
   Filter = 'filter',
@@ -34,8 +36,12 @@ export const StatusBanner: React.FC<{
 
   return (
     // Element clicks are passed on to button
+<<<<<<< HEAD
     // eslint-disable-next-line jsx-a11y/click-events-have-key-events, jsx-a11y/no-static-element-interactions
     <div
+=======
+    <AnimateEmojiProvider
+>>>>>>> v4.5.0
       className={
         variant === BannerVariant.Warning
           ? 'content-warning'
@@ -48,6 +54,10 @@ export const StatusBanner: React.FC<{
 
       <button
         ref={buttonRef}
+<<<<<<< HEAD
+=======
+        type='button'
+>>>>>>> v4.5.0
         className='link-button'
         onClick={onClick}
         aria-describedby={descriptionId}
@@ -69,6 +79,10 @@ export const StatusBanner: React.FC<{
           />
         )}
       </button>
+<<<<<<< HEAD
     </div>
+=======
+    </AnimateEmojiProvider>
+>>>>>>> v4.5.0
   );
 };

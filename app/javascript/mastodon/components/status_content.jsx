@@ -13,7 +13,14 @@ import ChevronRightIcon from '@/material-icons/400-24px/chevron_right.svg?react'
 import { Icon }  from 'mastodon/components/icon';
 import { Poll } from 'mastodon/components/poll';
 import { identityContextPropShape, withIdentity } from 'mastodon/identity_context';
+<<<<<<< HEAD
 import { autoPlayGif, languages as preloadedLanguages, expandUsernames } from 'mastodon/initial_state';
+=======
+import { languages as preloadedLanguages } from 'mastodon/initial_state';
+
+import { EmojiHTML } from './emoji/html';
+import { HandledLink } from './status/handled_link';
+>>>>>>> v4.5.0
 
 const MAX_HEIGHT = 706; // 22px * 32 (+ 2px padding at the top)
 
@@ -43,13 +50,13 @@ class TranslateButton extends PureComponent {
 
       return (
         <div className='translate-button'>
-          <div className='translate-button__meta'>
-            <FormattedMessage id='status.translated_from_with' defaultMessage='Translated from {lang} using {provider}' values={{ lang: languageName, provider }} />
-          </div>
-
           <button className='link-button' onClick={onClick}>
             <FormattedMessage id='status.show_original' defaultMessage='Show original' />
           </button>
+
+          <div className='translate-button__meta'>
+            <FormattedMessage id='status.translated_from_with' defaultMessage='Translated from {lang} using {provider}' values={{ lang: languageName, provider }} />
+          </div>
         </div>
       );
     }
@@ -66,6 +73,17 @@ class TranslateButton extends PureComponent {
 const mapStateToProps = state => ({
   languages: state.getIn(['server', 'translationLanguages', 'items']),
 });
+
+const compareUrls = (href1, href2) => {
+  try {
+    const url1 = new URL(href1);
+    const url2 = new URL(href2);
+
+    return url1.origin === url2.origin && url1.pathname === url2.pathname && url1.search === url2.search;
+  } catch {
+    return false;
+  }
+};
 
 class StatusContent extends PureComponent {
   static propTypes = {
@@ -94,6 +112,7 @@ class StatusContent extends PureComponent {
     }
 
     const { status, onCollapsedToggle } = this.props;
+<<<<<<< HEAD
     const links = node.querySelectorAll('a');
 
     let link, mention;
@@ -132,6 +151,8 @@ class StatusContent extends PureComponent {
       }
     }
 
+=======
+>>>>>>> v4.5.0
     if (status.get('collapsed', null) === null && onCollapsedToggle) {
       const { collapsible, onClick } = this.props;
 
@@ -145,32 +166,6 @@ class StatusContent extends PureComponent {
     }
   }
 
-  handleMouseEnter = ({ currentTarget }) => {
-    if (autoPlayGif) {
-      return;
-    }
-
-    const emojis = currentTarget.querySelectorAll('.custom-emoji');
-
-    for (var i = 0; i < emojis.length; i++) {
-      let emoji = emojis[i];
-      emoji.src = emoji.getAttribute('data-original');
-    }
-  };
-
-  handleMouseLeave = ({ currentTarget }) => {
-    if (autoPlayGif) {
-      return;
-    }
-
-    const emojis = currentTarget.querySelectorAll('.custom-emoji');
-
-    for (var i = 0; i < emojis.length; i++) {
-      let emoji = emojis[i];
-      emoji.src = emoji.getAttribute('data-static');
-    }
-  };
-
   componentDidMount () {
     this._updateStatusLinks();
   }
@@ -178,22 +173,6 @@ class StatusContent extends PureComponent {
   componentDidUpdate () {
     this._updateStatusLinks();
   }
-
-  onMentionClick = (mention, e) => {
-    if (this.props.history && e.button === 0 && !(e.ctrlKey || e.metaKey)) {
-      e.preventDefault();
-      this.props.history.push(`/@${mention.get('acct')}`);
-    }
-  };
-
-  onHashtagClick = (hashtag, e) => {
-    hashtag = hashtag.replace(/^#/, '');
-
-    if (this.props.history && e.button === 0 && !(e.ctrlKey || e.metaKey)) {
-      e.preventDefault();
-      this.props.history.push(`/tags/${hashtag}`);
-    }
-  };
 
   handleMouseDown = (e) => {
     this.startXY = [e.clientX, e.clientY];
@@ -230,6 +209,27 @@ class StatusContent extends PureComponent {
     this.node = c;
   };
 
+  handleElement = (element, { key, ...props }, children) => {
+    if (element instanceof HTMLAnchorElement) {
+      const mention = this.props.status.get('mentions').find(item => compareUrls(element.href, item.get('url')));
+      return (
+        <HandledLink
+          {...props}
+          href={element.href}
+          text={element.innerText}
+          hashtagAccountId={this.props.status.getIn(['account', 'id'])}
+          mention={mention?.toJSON()}
+          key={key}
+        >
+          {children}
+        </HandledLink>
+      );
+    } else if (element.classList.contains('quote-inline') && this.props.status.get('quote')) {
+      return null;
+    }
+    return undefined;
+  }
+
   render () {
     const { status, intl, statusContent } = this.props;
 
@@ -239,7 +239,7 @@ class StatusContent extends PureComponent {
     const targetLanguages = this.props.languages?.get(status.get('language') || 'und');
     const renderTranslate = this.props.onTranslate && this.props.identity.signedIn && ['public', 'unlisted'].includes(status.get('visibility')) && status.get('search_index').trim().length > 0 && targetLanguages?.includes(contentLocale);
 
-    const content = { __html: statusContent ?? getStatusContent(status) };
+    const content = statusContent ?? getStatusContent(status);
     const language = status.getIn(['translation', 'language']) || status.get('language');
     const classNames = classnames('status__content', {
       'status__content--with-action': this.props.onClick && this.props.history,
@@ -271,6 +271,7 @@ class StatusContent extends PureComponent {
       const summary = status.get('spoilerHtml');
       return (
         <>
+<<<<<<< HEAD
           {title && <div className='status__content article'><h2>Title: {status.get('title')}</h2></div>}
           {summary && <div className='status__content article'><em>Summary: {status.get('spoiler_text')}</em></div>}
           {readArticleButton}
@@ -281,6 +282,22 @@ class StatusContent extends PureComponent {
         <>
           <div className={classNames} ref={this.setRef} onMouseDown={this.handleMouseDown} onMouseUp={this.handleMouseUp} key='status-content' onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeave}>
             <div className='status__content__text status__content__text--visible translate' lang={language} dangerouslySetInnerHTML={content} />
+=======
+          <div
+            className={classNames}
+            ref={this.setRef}
+            onMouseDown={this.handleMouseDown}
+            onMouseUp={this.handleMouseUp}
+            key='status-content'
+          >
+            <EmojiHTML
+              className='status__content__text status__content__text--visible translate'
+              lang={language}
+              htmlString={content}
+              extraEmojis={status.get('emojis')}
+              onElement={this.handleElement}
+            />
+>>>>>>> v4.5.0
 
             {poll}
             {translateButton}
@@ -293,8 +310,19 @@ class StatusContent extends PureComponent {
       );
     } else {
       return (
+<<<<<<< HEAD
         <div className={classNames} ref={this.setRef} onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeave}>
           <div className='status__content__text status__content__text--visible translate' lang={language} dangerouslySetInnerHTML={content} />
+=======
+        <div className={classNames} ref={this.setRef}>
+          <EmojiHTML
+            className='status__content__text status__content__text--visible translate'
+            lang={language}
+            htmlString={content}
+            extraEmojis={status.get('emojis')}
+            onElement={this.handleElement}
+          />
+>>>>>>> v4.5.0
 
           {poll}
           {translateButton}

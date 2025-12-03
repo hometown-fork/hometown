@@ -32,16 +32,25 @@ import {
   ConfirmDeleteListModal,
   ConfirmReplyModal,
   ConfirmEditStatusModal,
+  ConfirmUnblockModal,
   ConfirmUnfollowModal,
+  ConfirmWithdrawRequestModal,
   ConfirmClearNotificationsModal,
   ConfirmLogOutModal,
   ConfirmFollowToListModal,
   ConfirmMissingAltTextModal,
+<<<<<<< HEAD
+=======
+  ConfirmRevokeQuoteModal,
+  QuietPostQuoteInfoModal,
+>>>>>>> v4.5.0
 } from './confirmation_modals';
 import { ImageModal } from './image_modal';
 import MediaModal from './media_modal';
 import { ModalPlaceholder } from './modal_placeholder';
 import VideoModal from './video_modal';
+import { VisibilityModal } from './visibility_modal';
+import { PrivateQuoteNotify } from './confirmation_modals/private_quote_notify';
 
 export const MODAL_COMPONENTS = {
   'MEDIA': () => Promise.resolve({ default: MediaModal }),
@@ -54,11 +63,19 @@ export const MODAL_COMPONENTS = {
   'CONFIRM_DELETE_LIST': () => Promise.resolve({ default: ConfirmDeleteListModal }),
   'CONFIRM_REPLY': () => Promise.resolve({ default: ConfirmReplyModal }),
   'CONFIRM_EDIT_STATUS': () => Promise.resolve({ default: ConfirmEditStatusModal }),
+  'CONFIRM_UNBLOCK': () => Promise.resolve({ default: ConfirmUnblockModal }),
   'CONFIRM_UNFOLLOW': () => Promise.resolve({ default: ConfirmUnfollowModal }),
+  'CONFIRM_WITHDRAW_REQUEST': () => Promise.resolve({ default: ConfirmWithdrawRequestModal }),
   'CONFIRM_CLEAR_NOTIFICATIONS': () => Promise.resolve({ default: ConfirmClearNotificationsModal }),
   'CONFIRM_LOG_OUT': () => Promise.resolve({ default: ConfirmLogOutModal }),
   'CONFIRM_FOLLOW_TO_LIST': () => Promise.resolve({ default: ConfirmFollowToListModal }),
   'CONFIRM_MISSING_ALT_TEXT': () => Promise.resolve({ default: ConfirmMissingAltTextModal }),
+<<<<<<< HEAD
+=======
+  'CONFIRM_PRIVATE_QUOTE_NOTIFY': () => Promise.resolve({ default: PrivateQuoteNotify }),
+  'CONFIRM_REVOKE_QUOTE': () => Promise.resolve({ default: ConfirmRevokeQuoteModal }),
+  'CONFIRM_QUIET_QUOTE': () => Promise.resolve({ default: QuietPostQuoteInfoModal }),
+>>>>>>> v4.5.0
   'MUTE': MuteModal,
   'BLOCK': BlockModal,
   'DOMAIN_BLOCK': DomainBlockModal,
@@ -74,6 +91,10 @@ export const MODAL_COMPONENTS = {
   'CLOSED_REGISTRATIONS': ClosedRegistrationsModal,
   'IGNORE_NOTIFICATIONS': IgnoreNotificationsModal,
   'ANNUAL_REPORT': AnnualReportModal,
+<<<<<<< HEAD
+=======
+  'COMPOSE_PRIVACY': () => Promise.resolve({ default: VisibilityModal }),
+>>>>>>> v4.5.0
 };
 
 export default class ModalRoot extends PureComponent {

@@ -2,8 +2,13 @@ import { FormattedMessage } from 'react-intl';
 
 import { Link } from 'react-router-dom';
 
+<<<<<<< HEAD
 import { AvatarOverlay } from 'mastodon/components/avatar_overlay';
 import { DisplayName } from 'mastodon/components/display_name';
+=======
+import { DisplayName } from '@/mastodon/components/display_name';
+import { AvatarOverlay } from 'mastodon/components/avatar_overlay';
+>>>>>>> v4.5.0
 import { useAppSelector } from 'mastodon/store';
 
 export const MovedNote: React.FC<{
@@ -20,6 +25,7 @@ export const MovedNote: React.FC<{
           id='account.moved_to'
           defaultMessage='{name} has indicated that their new account is now:'
           values={{
+<<<<<<< HEAD
             name: (
               <bdi>
                 <strong
@@ -29,6 +35,9 @@ export const MovedNote: React.FC<{
                 />
               </bdi>
             ),
+=======
+            name: <DisplayName account={from} variant='simple' />,
+>>>>>>> v4.5.0
           }}
         />
       </div>

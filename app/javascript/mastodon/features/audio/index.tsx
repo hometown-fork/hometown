@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import { useEffect, useRef, useCallback, useState, useId } from 'react';
+=======
+import { useEffect, useRef, useCallback, useState } from 'react';
+>>>>>>> v4.5.0
 
 import { defineMessages, useIntl, FormattedMessage } from 'react-intl';
 
@@ -13,10 +17,15 @@ import PlayArrowIcon from '@/material-icons/400-24px/play_arrow-fill.svg?react';
 import Replay5Icon from '@/material-icons/400-24px/replay_5-fill.svg?react';
 import VolumeOffIcon from '@/material-icons/400-24px/volume_off-fill.svg?react';
 import VolumeUpIcon from '@/material-icons/400-24px/volume_up-fill.svg?react';
+<<<<<<< HEAD
 import { AltTextBadge } from 'mastodon/components/alt_text_badge';
 import { Blurhash } from 'mastodon/components/blurhash';
 import { Icon } from 'mastodon/components/icon';
 import { NoAltTextBadge } from 'mastodon/components/no_alt_text_badge';
+=======
+import { Blurhash } from 'mastodon/components/blurhash';
+import { Icon } from 'mastodon/components/icon';
+>>>>>>> v4.5.0
 import { SpoilerButton } from 'mastodon/components/spoiler_button';
 import { formatTime, getPointerPosition } from 'mastodon/features/video';
 import { useAudioContext } from 'mastodon/hooks/useAudioContext';
@@ -24,6 +33,11 @@ import { useAudioVisualizer } from 'mastodon/hooks/useAudioVisualizer';
 import { displayMedia, useBlurhash } from 'mastodon/initial_state';
 import { playerSettings } from 'mastodon/settings';
 
+<<<<<<< HEAD
+=======
+import { AudioVisualizer } from './visualizer';
+
+>>>>>>> v4.5.0
 const messages = defineMessages({
   play: { id: 'video.play', defaultMessage: 'Play' },
   pause: { id: 'video.pause', defaultMessage: 'Pause' },
@@ -33,10 +47,13 @@ const messages = defineMessages({
   hide: { id: 'audio.hide', defaultMessage: 'Hide audio' },
   skipForward: { id: 'video.skip_forward', defaultMessage: 'Skip forward' },
   skipBackward: { id: 'video.skip_backward', defaultMessage: 'Skip backward' },
+<<<<<<< HEAD
   no_descriptive_text: {
     id: 'media.no_descriptive_text',
     defaultMessage: 'No descriptive text was provided for this media.',
   },
+=======
+>>>>>>> v4.5.0
 });
 
 const persistVolume = (volume: number, muted: boolean) => {
@@ -122,7 +139,10 @@ export const Audio: React.FC<{
   const seekRef = useRef<HTMLDivElement>(null);
   const volumeRef = useRef<HTMLDivElement>(null);
   const hoverTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>();
+<<<<<<< HEAD
   const accessibilityId = useId();
+=======
+>>>>>>> v4.5.0
 
   const { audioContextRef, sourceRef, gainNodeRef, playAudio, pauseAudio } =
     useAudioContext({ audioElementRef: audioRef });
@@ -544,6 +564,7 @@ export const Audio: React.FC<{
     [togglePlay, toggleMute],
   );
 
+<<<<<<< HEAD
   const springForBand0 = useSpring({
     to: { r: 50 + (frequencyBands[0] ?? 0) * 10 },
     config: config.wobbly,
@@ -557,6 +578,8 @@ export const Audio: React.FC<{
     config: config.wobbly,
   });
 
+=======
+>>>>>>> v4.5.0
   const progress = Math.min((currentTime / loadedDuration) * 100, 100);
   const effectivelyMuted = muted || volume === 0;
 
@@ -647,6 +670,7 @@ export const Audio: React.FC<{
         </div>
 
         <div className='audio-player__controls__play'>
+<<<<<<< HEAD
           <svg
             className='audio-player__visualizer'
             viewBox='0 0 124 124'
@@ -722,6 +746,9 @@ export const Audio: React.FC<{
               />
             </defs>
           </svg>
+=======
+          <AudioVisualizer frequencyBands={frequencyBands} poster={poster} />
+>>>>>>> v4.5.0
 
           <button
             type='button'
@@ -814,6 +841,7 @@ export const Audio: React.FC<{
           </div>
 
           <div className='video-player__buttons right'>
+<<<<<<< HEAD
             {alt && (
               <button
                 type='button'
@@ -834,6 +862,8 @@ export const Audio: React.FC<{
                 <NoAltTextBadge key='no-alt' />
               </button>
             )}
+=======
+>>>>>>> v4.5.0
             {!editable && (
               <>
                 <button

@@ -27,6 +27,7 @@ RSpec.describe UserMailer do
           address: 'localhost',
           port: 25,
           authentication: 'none',
+          enable_starttls_auto: true,
         }
       end
 
@@ -44,8 +45,7 @@ RSpec.describe UserMailer do
           address: 'localhost',
           port: 25,
           authentication: nil,
-          enable_starttls: nil,
-          enable_starttls_auto: true,
+          enable_starttls: :auto,
         })
       end
     end
@@ -65,7 +65,6 @@ RSpec.describe UserMailer do
         .and(have_body_text('spec'))
         .and(have_body_text(Rails.configuration.x.local_domain))
     end
-
 
     it_behaves_like 'localized subject',
                     'devise.mailer.confirmation_instructions.subject',
@@ -146,7 +145,9 @@ RSpec.describe UserMailer do
   end
 
   describe '#warning' do
-    let(:strike) { Fabricate(:account_warning, target_account: receiver.account, text: 'dont worry its just the testsuite', action: 'suspend') }
+    let(:status) { Fabricate(:status, account: receiver.account) }
+    let(:quote) { Fabricate(:quote, state: :accepted, status: status) }
+    let(:strike) { Fabricate(:account_warning, target_account: receiver.account, text: 'dont worry its just the testsuite', action: 'suspend', status_ids: [quote.status_id]) }
     let(:mail)   { described_class.warning(receiver, strike) }
 
     it 'renders warning notification' do

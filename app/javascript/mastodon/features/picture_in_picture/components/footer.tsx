@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { useCallback } from 'react';
 
 import { defineMessages, useIntl } from 'react-intl';
@@ -7,10 +8,20 @@ import { useHistory } from 'react-router-dom';
 
 import OpenInNewIcon from '@/material-icons/400-24px/open_in_new.svg?react';
 import RepeatIcon from '@/material-icons/400-24px/repeat.svg?react';
+=======
+import { useCallback, useMemo } from 'react';
+
+import { defineMessages, useIntl } from 'react-intl';
+
+import { useHistory } from 'react-router-dom';
+
+import OpenInNewIcon from '@/material-icons/400-24px/open_in_new.svg?react';
+>>>>>>> v4.5.0
 import ReplyIcon from '@/material-icons/400-24px/reply.svg?react';
 import ReplyAllIcon from '@/material-icons/400-24px/reply_all.svg?react';
 import StarIcon from '@/material-icons/400-24px/star-fill.svg?react';
 import StarBorderIcon from '@/material-icons/400-24px/star.svg?react';
+<<<<<<< HEAD
 import RepeatActiveIcon from '@/svg-icons/repeat_active.svg?react';
 import RepeatDisabledIcon from '@/svg-icons/repeat_disabled.svg?react';
 import RepeatPrivateIcon from '@/svg-icons/repeat_private.svg?react';
@@ -21,6 +32,18 @@ import { openModal } from 'mastodon/actions/modal';
 import { IconButton } from 'mastodon/components/icon_button';
 import { useIdentity } from 'mastodon/identity_context';
 import { me } from 'mastodon/initial_state';
+=======
+import { replyCompose } from 'mastodon/actions/compose';
+import { toggleFavourite } from 'mastodon/actions/interactions';
+import { openModal } from 'mastodon/actions/modal';
+import { IconButton } from 'mastodon/components/icon_button';
+import { BoostButton } from 'mastodon/components/status/boost_button';
+import { useIdentity } from 'mastodon/identity_context';
+import type { Account } from 'mastodon/models/account';
+import type { Status } from 'mastodon/models/status';
+import { makeGetStatus } from 'mastodon/selectors';
+import type { RootState } from 'mastodon/store';
+>>>>>>> v4.5.0
 import { useAppSelector, useAppDispatch } from 'mastodon/store';
 
 const messages = defineMessages({
@@ -29,7 +52,11 @@ const messages = defineMessages({
   reblog: { id: 'status.reblog', defaultMessage: 'Boost' },
   reblog_private: {
     id: 'status.reblog_private',
+<<<<<<< HEAD
     defaultMessage: 'Boost with original visibility',
+=======
+    defaultMessage: 'Share again with your followers',
+>>>>>>> v4.5.0
   },
   cancel_reblog_private: {
     id: 'status.cancel_reblog_private',
@@ -47,6 +74,14 @@ const messages = defineMessages({
   open: { id: 'status.open', defaultMessage: 'Expand this status' },
 });
 
+<<<<<<< HEAD
+=======
+type GetStatusSelector = (
+  state: RootState,
+  props: { id?: string | null; contextType?: string },
+) => Status | null;
+
+>>>>>>> v4.5.0
 export const Footer: React.FC<{
   statusId: string;
   withOpenButton?: boolean;
@@ -56,11 +91,17 @@ export const Footer: React.FC<{
   const intl = useIntl();
   const history = useHistory();
   const dispatch = useAppDispatch();
+<<<<<<< HEAD
   const status = useAppSelector((state) => state.statuses.get(statusId));
   const accountId = status?.get('account') as string | undefined;
   const account = useAppSelector((state) =>
     accountId ? state.accounts.get(accountId) : undefined,
   );
+=======
+  const getStatus = useMemo(() => makeGetStatus(), []) as GetStatusSelector;
+  const status = useAppSelector((state) => getStatus(state, { id: statusId }));
+  const account = status?.get('account') as Account | undefined;
+>>>>>>> v4.5.0
   const askReplyConfirmation = useAppSelector(
     (state) => (state.compose.get('text') as string).trim().length !== 0,
   );
@@ -85,7 +126,10 @@ export const Footer: React.FC<{
         openModal({
           modalType: 'INTERACTION',
           modalProps: {
+<<<<<<< HEAD
             type: 'reply',
+=======
+>>>>>>> v4.5.0
             accountId: status.getIn(['account', 'id']),
             url: status.get('uri'),
           },
@@ -106,7 +150,10 @@ export const Footer: React.FC<{
         openModal({
           modalType: 'INTERACTION',
           modalProps: {
+<<<<<<< HEAD
             type: 'favourite',
+=======
+>>>>>>> v4.5.0
             accountId: status.getIn(['account', 'id']),
             url: status.get('uri'),
           },
@@ -115,6 +162,7 @@ export const Footer: React.FC<{
     }
   }, [dispatch, status, signedIn]);
 
+<<<<<<< HEAD
   const handleReblogClick = useCallback(
     (e: React.MouseEvent) => {
       if (!status) {
@@ -139,6 +187,8 @@ export const Footer: React.FC<{
     [dispatch, status, signedIn],
   );
 
+=======
+>>>>>>> v4.5.0
   const handleOpenClick = useCallback(
     (e: React.MouseEvent) => {
       if (e.button !== 0 || !status) {
@@ -156,6 +206,7 @@ export const Footer: React.FC<{
     return null;
   }
 
+<<<<<<< HEAD
   const publicStatus = ['public', 'unlisted'].includes(
     status.get('visibility') as string,
   );
@@ -163,6 +214,8 @@ export const Footer: React.FC<{
     status.getIn(['account', 'id']) === me &&
     status.get('visibility') === 'private';
 
+=======
+>>>>>>> v4.5.0
   let replyIcon, replyIconComponent, replyTitle;
 
   if (status.get('in_reply_to_id', null) === null) {
@@ -175,6 +228,7 @@ export const Footer: React.FC<{
     replyTitle = intl.formatMessage(messages.replyAll);
   }
 
+<<<<<<< HEAD
   let reblogTitle, reblogIconComponent;
 
   if (status.get('reblogged')) {
@@ -193,6 +247,8 @@ export const Footer: React.FC<{
     reblogIconComponent = RepeatDisabledIcon;
   }
 
+=======
+>>>>>>> v4.5.0
   const favouriteTitle = intl.formatMessage(
     status.get('favourited') ? messages.removeFavourite : messages.favourite,
   );
@@ -218,6 +274,7 @@ export const Footer: React.FC<{
         counter={status.get('replies_count') as number}
       />
 
+<<<<<<< HEAD
       <IconButton
         className={classNames('status__action-bar-button', { reblogPrivate })}
         disabled={!publicStatus && !reblogPrivate}
@@ -228,6 +285,9 @@ export const Footer: React.FC<{
         onClick={handleReblogClick}
         counter={status.get('reblogs_count') as number}
       />
+=======
+      <BoostButton counters status={status} />
+>>>>>>> v4.5.0
 
       <IconButton
         className='status__action-bar-button star-icon'
