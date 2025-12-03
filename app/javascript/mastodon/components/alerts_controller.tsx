@@ -3,16 +3,27 @@ import { useState, useEffect } from 'react';
 import { useIntl } from 'react-intl';
 import type { IntlShape } from 'react-intl';
 
+<<<<<<< HEAD
 import classNames from 'classnames';
 
 import { dismissAlert } from 'mastodon/actions/alerts';
 import type {
   Alert,
+=======
+import { dismissAlert } from 'mastodon/actions/alerts';
+import type {
+  Alert as AlertType,
+>>>>>>> v4.5.0
   TranslatableString,
   TranslatableValues,
 } from 'mastodon/models/alert';
 import { useAppSelector, useAppDispatch } from 'mastodon/store';
 
+<<<<<<< HEAD
+=======
+import { Alert } from './alert';
+
+>>>>>>> v4.5.0
 const formatIfNeeded = (
   intl: IntlShape,
   message: TranslatableString,
@@ -25,8 +36,13 @@ const formatIfNeeded = (
   return message;
 };
 
+<<<<<<< HEAD
 const Alert: React.FC<{
   alert: Alert;
+=======
+const TimedAlert: React.FC<{
+  alert: AlertType;
+>>>>>>> v4.5.0
   dismissAfter: number;
 }> = ({
   alert: { key, title, message, values, action, onClick },
@@ -62,6 +78,7 @@ const Alert: React.FC<{
   }, [dispatch, setActive, key, dismissAfter]);
 
   return (
+<<<<<<< HEAD
     <div
       className={classNames('notification-bar', {
         'notification-bar-active': active,
@@ -85,6 +102,15 @@ const Alert: React.FC<{
         )}
       </div>
     </div>
+=======
+    <Alert
+      isActive={active}
+      title={title ? formatIfNeeded(intl, title, values) : undefined}
+      message={formatIfNeeded(intl, message, values)}
+      action={action ? formatIfNeeded(intl, action, values) : undefined}
+      onActionClick={onClick}
+    />
+>>>>>>> v4.5.0
   );
 };
 
@@ -98,7 +124,15 @@ export const AlertsController: React.FC = () => {
   return (
     <div className='notification-list'>
       {alerts.map((alert, idx) => (
+<<<<<<< HEAD
         <Alert key={alert.key} alert={alert} dismissAfter={5000 + idx * 1000} />
+=======
+        <TimedAlert
+          key={alert.key}
+          alert={alert}
+          dismissAfter={5000 + idx * 1000}
+        />
+>>>>>>> v4.5.0
       ))}
     </div>
   );

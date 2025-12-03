@@ -1,6 +1,7 @@
 {
   "about.blocks": "Moderētie serveri",
   "about.contact": "Kontakts:",
+  "about.default_locale": "Noklusējums",
   "about.disclaimer": "Mastodon ir bezmaksas atklātā pirmkoda programmatūra un Mastodon gGmbH preču zīme.",
   "about.domain_blocks.no_reason_available": "Iemesls nav norādīts",
   "about.domain_blocks.preamble": "Mastodon parasti ļauj apskatīt saturu un mijiedarboties ar lietotājiem no jebkura cita fediversa servera. Šie ir izņēmumi, kas veikti tieši šajā serverī.",
@@ -8,6 +9,7 @@
   "about.domain_blocks.silenced.title": "Ierobežotie",
   "about.domain_blocks.suspended.explanation": "Nekādi dati no šī servera netiks apstrādāti, uzglabāti vai apmainīti, padarot neiespējamu jebkādu mijiedarbību vai saziņu ar šī servera lietotājiem.",
   "about.domain_blocks.suspended.title": "Apturētie",
+  "about.language_label": "Valoda",
   "about.not_available": "Šī informācija nav padarīta pieejama šajā serverī.",
   "about.powered_by": "Decentralizētu sabiedrisko tīklu darbina {mastodon}",
   "about.rules": "Servera noteikumi",
@@ -15,17 +17,29 @@
   "account.add_or_remove_from_list": "Pievienot vai Noņemt no sarakstiem",
   "account.badges.bot": "Automatizēts",
   "account.badges.group": "Grupa",
-  "account.block": "Bloķēt @{name}",
+  "account.block": "Liegt @{name}",
   "account.block_domain": "Bloķēt domēnu {domain}",
+<<<<<<< HEAD
   "account.block_short": "Bloķēt",
   "account.blocked": "Bloķēts",
   "account.blocking": "Bloķēts",
+=======
+  "account.block_short": "Liegt",
+  "account.blocked": "Liegts",
+  "account.blocking": "Liegts",
+>>>>>>> v4.5.0
   "account.cancel_follow_request": "Atsaukt sekošanas pieprasījumu",
   "account.copy": "Ievietot saiti uz profilu starpliktuvē",
   "account.direct": "Pieminēt @{name} privāti",
   "account.disable_notifications": "Pārtraukt man paziņot, kad @{name} izveido ierakstu",
+<<<<<<< HEAD
   "account.domain_blocking": "Bloķēts domēns",
   "account.edit_profile": "Labot profilu",
+=======
+  "account.domain_blocking": "Liegts domēns",
+  "account.edit_profile": "Labot profilu",
+  "account.edit_profile_short": "Labot",
+>>>>>>> v4.5.0
   "account.enable_notifications": "Paziņot man, kad @{name} izveido ierakstu",
   "account.endorse": "Izcelts profilā",
   "account.familiar_followers_many": "Kam seko {name1}, {name2}, un {othersCount, plural, zero {pārējie # jums pazīstami} one {vēl viens jums pazīstams} other {pārējie # jums pazīstami}}",
@@ -38,6 +52,10 @@
   "account.featured_tags.last_status_never": "Nav ierakstu",
   "account.follow": "Sekot",
   "account.follow_back": "Sekot atpakaļ",
+  "account.follow_request": "Pieprasīt sekot",
+  "account.follow_request_cancel": "Atcelt pieprasījumu",
+  "account.follow_request_cancel_short": "Atcelt",
+  "account.follow_request_short": "Pieprasīt",
   "account.followers": "Sekotāji",
   "account.followers.empty": "Šim lietotājam vēl nav sekotāju.",
   "account.followers_counter": "{count, plural, zero {{count} sekotāju} one {{count} sekotājs} other {{count} sekotāji}}",
@@ -68,15 +86,24 @@
   "account.posts_with_replies": "Ieraksti un atbildes",
   "account.remove_from_followers": "Dzēst sekotāju {name}",
   "account.report": "Ziņot par @{name}",
+<<<<<<< HEAD
   "account.requested": "Gaida apstiprinājumu. Nospied, lai atceltu sekošanas pieparasījumu",
+=======
+>>>>>>> v4.5.0
   "account.requested_follow": "{name} nosūtīja Tev sekošanas pieprasījumu",
   "account.requests_to_follow_you": "Sekošanas pieprasījumi",
   "account.share": "Dalīties ar @{name} profilu",
   "account.show_reblogs": "Parādīt @{name} pastiprinātos ierakstus",
   "account.statuses_counter": "{count, plural, zero {{counter} ierakstu} one {{counter} ieraksts} other {{counter} ieraksti}}",
+<<<<<<< HEAD
   "account.unblock": "Atbloķēt @{name}",
   "account.unblock_domain": "Atbloķēt domēnu {domain}",
   "account.unblock_domain_short": "Atbloķēt",
+=======
+  "account.unblock": "Atcelt liegšanu @{name}",
+  "account.unblock_domain": "Atcelt domēna {domain} liegšanu",
+  "account.unblock_domain_short": "Atcelt liegšanu",
+>>>>>>> v4.5.0
   "account.unblock_short": "Atbloķēt",
   "account.unendorse": "Neizcelt profilā",
   "account.unfollow": "Pārstāt sekot",
@@ -95,8 +122,13 @@
   "admin.impact_report.title": "Ietekmes kopsavilkums",
   "alert.rate_limited.message": "Lūdzu, mēģini vēlreiz pēc {retry_time, time, medium}.",
   "alert.rate_limited.title": "Biežums ierobežots",
+<<<<<<< HEAD
   "alert.unexpected.message": "Radās negaidīta kļūda.",
   "alert.unexpected.title": "Ups!",
+=======
+  "alert.unexpected.message": "Atgadījās neparedzēta kļūda.",
+  "alert.unexpected.title": "Ak vai!",
+>>>>>>> v4.5.0
   "alt_text_badge.title": "Alt teksts",
   "alt_text_modal.add_alt_text": "Pievienot aprakstošo tekstu",
   "alt_text_modal.add_text_from_image": "Pievienot tekstu no attēla",
@@ -130,7 +162,11 @@
   "block_modal.show_more": "Parādīt mazāk",
   "block_modal.they_cant_mention": "Nevar Tevi pieminēt vai sekot Tev.",
   "block_modal.they_cant_see_posts": "Lietotajs nevarēs redzēt Tavus ierakstus, un Tu neredzēsi lietotāja.",
+<<<<<<< HEAD
   "block_modal.title": "Bloķēt lietotāju?",
+=======
+  "block_modal.title": "Liegt lietotāju?",
+>>>>>>> v4.5.0
   "block_modal.you_wont_see_mentions": "Tu neredzēsi ierakstus, kuros ir minēts šis lietotājs.",
   "boost_modal.combo": "Nospied {combo}, lai nākamreiz šo izlaistu",
   "boost_modal.reblog": "Pastiprināt ierakstu?",
@@ -138,13 +174,17 @@
   "bundle_column_error.copy_stacktrace": "Ievietot kļūdu ziņojumu starpliktuvē",
   "bundle_column_error.error.body": "Pieprasīto lapu nevarēja atveidot. Tas varētu būt saistīts ar kļūdu mūsu kodā, vai tā ir pārlūkprogrammas saderības problēma.",
   "bundle_column_error.error.title": "Ak vai!",
-  "bundle_column_error.network.body": "Mēģinot ielādēt šo lapu, radās kļūda. Tas varētu būt saistīts ar īslaicīgu interneta savienojuma vai šī servera problēmu.",
+  "bundle_column_error.network.body": "Kļūda lapas ielādēšanas laikā. Tas varētu būt īzlaicīgs sarežģījums ar interneta savienojumu vai šo serveri.",
   "bundle_column_error.network.title": "Tīkla kļūda",
   "bundle_column_error.retry": "Mēģināt vēlreiz",
   "bundle_column_error.return": "Atgriezties",
   "bundle_column_error.routing.body": "Pieprasīto lapu nevarēja atrast. Vai esi pārliecināts, ka URL adreses joslā ir pareizs?",
   "bundle_column_error.routing.title": "404",
   "bundle_modal_error.close": "Aizvērt",
+<<<<<<< HEAD
+=======
+  "bundle_modal_error.message": "Kaut kas nogāja greizi šī ekrāna ielādēšanas laikā.",
+>>>>>>> v4.5.0
   "bundle_modal_error.retry": "Mēģināt vēlreiz",
   "closed_registrations.other_server_instructions": "Tā kā Mastodon ir decentralizēts, tu vari izveidot kontu citā serverī un joprojām mijiedarboties ar šo.",
   "closed_registrations_modal.description": "Pašlaik nav iespējams izveidot kontu {domain}, bet, lūdzu, ņem vērā, ka Tev nav nepieciešams tieši {domain} konts, lai lietotu Mastodon!",
@@ -152,13 +192,17 @@
   "closed_registrations_modal.preamble": "Mastodon ir decentralizēts, tāpēc neatkarīgi no tā, kur Tu izveido savu kontu, varēsi sekot un mijiedarboties ar ikvienu šajā serverī. Tu pat vari to pašizvietot!",
   "closed_registrations_modal.title": "Reģistrēšanās Mastodon",
   "column.about": "Par",
-  "column.blocks": "Bloķētie lietotāji",
+  "column.blocks": "Liegtie lietotāji",
   "column.bookmarks": "Grāmatzīmes",
   "column.community": "Vietējā laika līnija",
   "column.create_list": "Izveidot sarakstu",
   "column.direct": "Privātas pieminēšanas",
   "column.directory": "Pārlūkot profilus",
+<<<<<<< HEAD
   "column.domain_blocks": "Bloķētie domēni",
+=======
+  "column.domain_blocks": "Liegtie domēni",
+>>>>>>> v4.5.0
   "column.edit_list": "Labot sarakstu",
   "column.favourites": "Izlase",
   "column.firehose": "Tiešraides plūsmas",
@@ -199,20 +243,29 @@
   "compose_form.poll.switch_to_multiple": "Mainīt aptaujas veidu, lai atļautu vairākas izvēles",
   "compose_form.poll.switch_to_single": "Mainīt aptaujas veidu, lai atļautu vienu izvēli",
   "compose_form.poll.type": "Stils",
+<<<<<<< HEAD
   "compose_form.publish": "Nosūtīt",
+=======
+  "compose_form.publish": "Iesūtīt",
+>>>>>>> v4.5.0
   "compose_form.reply": "Atbildēt",
   "compose_form.save_changes": "Atjaunināt",
   "compose_form.spoiler.marked": "Noņemt satura brīdinājumu",
   "compose_form.spoiler.unmarked": "Pievienot satura brīdinājumu",
   "compose_form.spoiler_placeholder": "Satura brīdinājums (pēc izvēles)",
   "confirmation_modal.cancel": "Atcelt",
-  "confirmations.block.confirm": "Bloķēt",
+  "confirmations.block.confirm": "Liegt",
   "confirmations.delete.confirm": "Dzēst",
   "confirmations.delete.message": "Vai tiešām izdzēst šo ierakstu?",
   "confirmations.delete.title": "Izdzēst ierakstu?",
   "confirmations.delete_list.confirm": "Dzēst",
   "confirmations.delete_list.message": "Vai tiešām neatgriezeniski izdzēst šo sarakstu?",
   "confirmations.delete_list.title": "Izdzēst sarakstu?",
+  "confirmations.discard_draft.confirm": "Atmest un turpināt",
+  "confirmations.discard_draft.edit.cancel": "Atsākt labošanu",
+  "confirmations.discard_draft.post.cancel": "Atsākt melnrakstu",
+  "confirmations.discard_draft.post.message": "Turpinot tiks atmests pašreiz sastādītais ieraksts.",
+  "confirmations.discard_draft.post.title": "Atmest melnraksta ierakstu?",
   "confirmations.discard_edit_media.confirm": "Atmest",
   "confirmations.discard_edit_media.message": "Ir nesaglabātas izmaiņas informācijas nesēja aprakstā vai priekšskatījumā. Vēlies tās atmest tik un tā?",
   "confirmations.follow_to_list.confirm": "Sekot un pievienot sarakstam",
@@ -232,9 +285,15 @@
   "confirmations.remove_from_followers.confirm": "Dzēst sekotāju",
   "confirmations.remove_from_followers.message": "{name} pārstās sekot jums. Vai tiešām vēlaties turpināt?",
   "confirmations.remove_from_followers.title": "Vai dzēst sekotāju?",
+<<<<<<< HEAD
+=======
+  "confirmations.revoke_quote.confirm": "Noņemt ierakstu",
+  "confirmations.revoke_quote.message": "Šo darbību nevar atsaukt.",
+  "confirmations.revoke_quote.title": "Noņemt ierakstu?",
+>>>>>>> v4.5.0
   "confirmations.unfollow.confirm": "Pārstāt sekot",
-  "confirmations.unfollow.message": "Vai tiešam vairs nevēlies sekot lietotājam {name}?",
-  "confirmations.unfollow.title": "Pārtraukt sekošanu lietotājam?",
+  "confirmations.unfollow.title": "Pārtraukt sekot {name}?",
+  "confirmations.withdraw_request.confirm": "Atsaukt pieprasījumu",
   "content_warning.hide": "Paslēpt ierakstu",
   "content_warning.show": "Tomēr rādīt",
   "content_warning.show_more": "Rādīt vairāk",
@@ -254,11 +313,19 @@
   "dismissable_banner.community_timeline": "Šie ir jaunākie publiskie ieraksti no cilvēkiem, kuru konti ir mitināti {domain}.",
   "dismissable_banner.dismiss": "Atcelt",
   "dismissable_banner.public_timeline": "Šie ir jaunākie Fediverse lietotāju publiskie ieraksti, kuriem {domain} seko cilvēki.",
+<<<<<<< HEAD
   "domain_block_modal.block": "Bloķēt serveri",
   "domain_block_modal.block_account_instead": "Tā vietā liegt @{name}",
   "domain_block_modal.they_cant_follow": "Neviens šajā serverī nevar Tev sekot.",
   "domain_block_modal.they_wont_know": "Viņi nezinās, ka tikuši bloķēti.",
   "domain_block_modal.title": "Bloķēt domēnu?",
+=======
+  "domain_block_modal.block": "Liegt serveri",
+  "domain_block_modal.block_account_instead": "Tā vietā liegt @{name}",
+  "domain_block_modal.they_cant_follow": "Neviens šajā serverī nevar Tev sekot.",
+  "domain_block_modal.they_wont_know": "Viņi nezinās, ka tikuši liegti.",
+  "domain_block_modal.title": "Liegt domēnu?",
+>>>>>>> v4.5.0
   "domain_pill.activitypub_lets_connect": "Tas ļauj savienoties un mijiedarboties ar cilvēkiem ne tikai no Mastodon, bet arī starp dažādām sabiedriskajām lietotnēm.",
   "domain_pill.activitypub_like_language": "ActivityPub ir kā valoda, kurā Mastodon sazināš ar citiem sabiedriskajiem tīkliem.",
   "domain_pill.server": "Serveris",
@@ -268,6 +335,10 @@
   "domain_pill.who_they_are": "Tā kā turi norāda, kas kāds ir un kur viņi ir atrodami, Tu vari mijiedarboties ar cilvēkiem viscaur sabiedriskajā tīklā no <button>ar ActivityPub darbinātām platformām</button>.",
   "domain_pill.who_you_are": "Tā kā Tavs turis norāda, kas Tu esi un kur atrodies, cilvēki var mijiedarboties ar Tevi viscaur sabiedriskajā tīklā no <button>ar ActivityPub darbinātām platformām</button>.",
   "domain_pill.your_handle": "Tavs turis:",
+<<<<<<< HEAD
+=======
+  "dropdown.empty": "Atlasīt iespēju",
+>>>>>>> v4.5.0
   "embed.instructions": "Iekļauj šo ierakstu savā tīmekļvietnē, ievietojot zemāk redzamo kodu starpliktuvē!",
   "embed.preview": "Tas izskatīsies šādi:",
   "emoji_button.activity": "Aktivitāte",
@@ -290,11 +361,11 @@
   "empty_column.account_suspended": "Konta darbība ir apturēta",
   "empty_column.account_timeline": "Šeit nav ierakstu.",
   "empty_column.account_unavailable": "Profils nav pieejams",
-  "empty_column.blocks": "Pašreiz tu neesi nevienu bloķējis.",
+  "empty_column.blocks": "Pagaidām Tu neesi liedzis nevienu lietotāju.",
   "empty_column.bookmarked_statuses": "Pašlaik Tev nav neviena grāmatzīmēs pievienota ieraksta. Kad tādu pievienosi, tas parādīsies šeit.",
   "empty_column.community": "Vietējā laika līnija ir tukša. Uzraksti kaut ko publiski, lai iekustinātu visu!",
   "empty_column.direct": "Tev vēl nav privātu pieminēšanu. Kad Tu nosūtīsi vai saņemsi kādu, tā pārādīsies šeit.",
-  "empty_column.domain_blocks": "Vēl nav neviena bloķēta domēna.",
+  "empty_column.domain_blocks": "Vēl nav neviena liegta domēna.",
   "empty_column.explore_statuses": "Pašlaik nav nekā aktuāla. Ieskaties šeit vēlāk!",
   "empty_column.favourited_statuses": "Tev vēl nav izlasei pievienotu ierakstu. Kad pievienosi kādu, tas tiks parādīts šeit.",
   "empty_column.favourites": "Šo ierakstu vēl neviens nav pievienojis izlasei. Kad kāds to izdarīs, tas parādīsies šeit.",
@@ -313,6 +384,7 @@
   "errors.unexpected_crash.copy_stacktrace": "Kopēt stacktrace uz starpliktuvi",
   "errors.unexpected_crash.report_issue": "Ziņot par problēmu",
   "explore.suggested_follows": "Cilvēki",
+<<<<<<< HEAD
   "explore.trending_links": "Jaunumi",
   "explore.trending_statuses": "Ieraksti",
   "explore.trending_tags": "Tēmturi",
@@ -322,6 +394,14 @@
   "federation.local_only.long": "Restrict this toot only to my instance",
   "federation.local_only.short": "Local-only",
   "featured_carousel.next": "Tālāk",
+=======
+  "explore.title": "Populārākie",
+  "explore.trending_links": "Jaunumi",
+  "explore.trending_statuses": "Ieraksti",
+  "explore.trending_tags": "Tēmturi",
+  "featured_carousel.next": "Tālāk",
+  "featured_carousel.post": "Ieraksts",
+>>>>>>> v4.5.0
   "featured_carousel.previous": "Atpakaļ",
   "featured_carousel.slide": "{index} / {total}",
   "filter_modal.added.context_mismatch_explanation": "Šī atlases kategorija neattiecas uz kontekstu, kurā esi piekļuvis šim ierakstam. Ja vēlies, lai ieraksts tiktu atlasīts arī šajā kontekstā, Tev būs jālabo atlase.",
@@ -340,6 +420,10 @@
   "filter_modal.select_filter.subtitle": "Izmanto esošu kategoriju vai izveido jaunu",
   "filter_modal.select_filter.title": "Atlasīt šo ierakstu",
   "filter_modal.title.status": "Atlasīt ziņu",
+<<<<<<< HEAD
+=======
+  "filter_warning.matches_filter": "Atbilst atlasītājam “<span>{title}</span>”",
+>>>>>>> v4.5.0
   "filtered_notifications_banner.title": "Filtrētie paziņojumi",
   "firehose.all": "Visi",
   "firehose.local": "Šis serveris",
@@ -391,8 +475,11 @@
   "hints.profiles.see_more_followers": "Skatīt vairāk sekotāju {domain}",
   "hints.profiles.see_more_follows": "Skatīt vairāk sekojumu {domain}",
   "hints.profiles.see_more_posts": "Skatīt vairāk ierakstu {domain}",
+<<<<<<< HEAD
   "hints.threads.replies_may_be_missing": "Var trūkt atbilžu no citiem serveriem.",
   "hints.threads.see_more": "Skatīt vairāk atbilžu {domain}",
+=======
+>>>>>>> v4.5.0
   "home.column_settings.show_quotes": "Rādīt citātus",
   "home.column_settings.show_reblogs": "Rādīt pastiprinātos ierakstus",
   "home.column_settings.show_replies": "Rādīt atbildes",
@@ -404,25 +491,31 @@
   "ignore_notifications_modal.ignore": "Neņemt vērā paziņojumus",
   "ignore_notifications_modal.not_following_title": "Neņemt vērā paziņojumus no cilvēkiem, kuriem neseko?",
   "info_button.label": "Palīdzība",
+<<<<<<< HEAD
   "interaction_modal.action.favourite": "Lai turpinātu, nepieciešams pievienot sava konta izlasei.",
   "interaction_modal.action.follow": "Lai turpinātu, nepieciešams sekot no sava konta.",
   "interaction_modal.action.reblog": "Lai turpinātu, nepieciešams pastiprināt no sava konta.",
   "interaction_modal.action.reply": "Lai turpinātu, nepieciešams atbildēt no sava konta.",
   "interaction_modal.action.vote": "Lai turpinātu, nepieciešams balsot no sava konta.",
+=======
+>>>>>>> v4.5.0
   "interaction_modal.go": "Aiziet",
   "interaction_modal.no_account_yet": "Vēl nav konta?",
   "interaction_modal.on_another_server": "Citā serverī",
   "interaction_modal.on_this_server": "Šajā serverī",
+<<<<<<< HEAD
   "interaction_modal.title.favourite": "Pievienot {name} ierakstu izlasei",
   "interaction_modal.title.follow": "Sekot {name}",
   "interaction_modal.title.reblog": "Pastiprināt {name} ierakstu",
   "interaction_modal.title.reply": "Atbildēt uz {name} ierakstu",
+=======
+>>>>>>> v4.5.0
   "interaction_modal.username_prompt": "Piem., {example}",
   "intervals.full.days": "{number, plural, one {# diena} other {# dienas}}",
   "intervals.full.hours": "{number, plural, one {# stunda} other {# stundas}}",
   "intervals.full.minutes": "{number, plural, one {# minūte} other {# minūtes}}",
   "keyboard_shortcuts.back": "Pāriet atpakaļ",
-  "keyboard_shortcuts.blocked": "Atvērt bloķēto lietotāju sarakstu",
+  "keyboard_shortcuts.blocked": "Atvērt liegto lietotāju sarakstu",
   "keyboard_shortcuts.boost": "Pastiprināt ierakstu",
   "keyboard_shortcuts.column": "Fokusēt kolonnu",
   "keyboard_shortcuts.compose": "Fokusēt veidojamā teksta lauku",
@@ -456,6 +549,8 @@
   "keyboard_shortcuts.translate": "tulkot ierakstu",
   "keyboard_shortcuts.unfocus": "Atfokusēt veidojamā teksta/meklēšanas lauku",
   "keyboard_shortcuts.up": "Pārvietoties augšup sarakstā",
+  "learn_more_link.got_it": "Sapratu",
+  "learn_more_link.learn_more": "Uzzināt vairāk",
   "lightbox.close": "Aizvērt",
   "lightbox.next": "Tālāk",
   "lightbox.previous": "Iepriekšējais",
@@ -473,6 +568,10 @@
   "lists.delete": "Izdzēst sarakstu",
   "lists.done": "Gatavs",
   "lists.edit": "Labot sarakstu",
+<<<<<<< HEAD
+=======
+  "lists.find_users_to_add": "Atrast lietotājus, kurus pievienot",
+>>>>>>> v4.5.0
   "lists.list_name": "Saraksta nosaukums",
   "lists.remove_member": "Noņemt",
   "lists.replies_policy.followed": "Jebkuram sekotajam lietotājam",
@@ -489,23 +588,41 @@
   "mute_modal.show_options": "Parādīt iespējas",
   "mute_modal.title": "Apklusināt lietotāju?",
   "navigation_bar.about": "Par",
+<<<<<<< HEAD
+=======
+  "navigation_bar.account_settings": "Parole un drošība",
+>>>>>>> v4.5.0
   "navigation_bar.administration": "Pārvaldība",
   "navigation_bar.advanced_interface": "Atvērt paplašinātā tīmekļa saskarnē",
-  "navigation_bar.blocks": "Bloķētie lietotāji",
+  "navigation_bar.automated_deletion": "Automātiska ziņu dzēšana",
+  "navigation_bar.blocks": "Liegtie lietotāji",
   "navigation_bar.bookmarks": "Grāmatzīmes",
   "navigation_bar.direct": "Privātas pieminēšanas",
+<<<<<<< HEAD
   "navigation_bar.domain_blocks": "Bloķētie domēni",
+=======
+  "navigation_bar.domain_blocks": "Liegtie domēni",
+>>>>>>> v4.5.0
   "navigation_bar.favourites": "Izlase",
   "navigation_bar.filters": "Apklusinātie vārdi",
   "navigation_bar.follow_requests": "Sekošanas pieprasījumi",
   "navigation_bar.followed_tags": "Sekojamie tēmturi",
-  "navigation_bar.follows_and_followers": "Sekojamie un sekotāji",
+  "navigation_bar.follows_and_followers": "Seko un sekotāji",
+  "navigation_bar.import_export": "Imports un eksports",
   "navigation_bar.lists": "Saraksti",
   "navigation_bar.logout": "Iziet",
   "navigation_bar.moderation": "Satura pārraudzība",
+<<<<<<< HEAD
   "navigation_bar.mutes": "Apklusinātie lietotāji",
   "navigation_bar.opened_in_classic_interface": "Ieraksti, konti un citas noteiktas lapas pēc noklusējuma tiek atvērtas klasiskajā tīmekļa saskarnē.",
   "navigation_bar.preferences": "Iestatījumi",
+=======
+  "navigation_bar.more": "Vairāk",
+  "navigation_bar.mutes": "Apklusinātie lietotāji",
+  "navigation_bar.opened_in_classic_interface": "Ieraksti, konti un citas noteiktas lapas pēc noklusējuma tiek atvērtas klasiskajā tīmekļa saskarnē.",
+  "navigation_bar.preferences": "Iestatījumi",
+  "navigation_bar.privacy_and_reach": "Privātums un sasniedzamība",
+>>>>>>> v4.5.0
   "navigation_bar.search": "Meklēt",
   "not_signed_in_indicator.not_signed_in": "Ir jāpiesakās, lai piekļūtu šim resursam.",
   "notification.admin.report": "{name} ziņoja par {target}",
@@ -538,6 +655,11 @@
   "notification_requests.dismiss": "Noraidīt",
   "notification_requests.edit_selection": "Labot",
   "notification_requests.exit_selection": "Gatavs",
+<<<<<<< HEAD
+=======
+  "notification_requests.explainer_for_limited_account": "Paziņojumi no šī konta tika atsijāti, jo pārvaldītājs ierobežoja kontu.",
+  "notification_requests.explainer_for_limited_remote_account": "Paziņojumi no šī konta tika atsijāti, jo pārvaldītājs ierobežoja kontu vai tā serveri.",
+>>>>>>> v4.5.0
   "notification_requests.notifications_from": "Paziņojumi no {name}",
   "notification_requests.title": "Atlasītie paziņojumi",
   "notification_requests.view": "Skatīt paziņojumus",
@@ -577,6 +699,10 @@
   "notifications.permission_required": "Darbvirsmas paziņojumi nav pieejami, jo nav piešķirta nepieciešamā atļauja.",
   "notifications.policy.accept": "Pieņemt",
   "notifications.policy.drop": "Ignorēt",
+<<<<<<< HEAD
+=======
+  "notifications.policy.filter_limited_accounts_hint": "Servera satura pārraudzītāju ierobežots",
+>>>>>>> v4.5.0
   "notifications.policy.filter_new_accounts_title": "Jauni konti",
   "notifications.policy.filter_not_followers_title": "Cilvēki, kuri Tev neseko",
   "notifications.policy.filter_not_following_hint": "Līdz tos pašrocīgi apstiprināsi",
@@ -616,7 +742,10 @@
   "privacy.public.long": "Jebkurš Mastodon un ārpus tā",
   "privacy.public.short": "Redzams visiem",
   "privacy.unlisted.additional": "Šis uzvedas tieši kā publisks, izņemot to, ka ieraksts neparādīsies tiešraides barotnēs vai tēmturos, izpētē vai Mastodon meklēšanā, pat ja esi to norādījis visa konta ietvaros.",
+<<<<<<< HEAD
   "privacy.unlisted.long": "Mazāk algoritmisku fanfaru",
+=======
+>>>>>>> v4.5.0
   "privacy_policy.last_updated": "Pēdējo reizi atjaunināta {date}",
   "privacy_policy.title": "Privātuma politika",
   "recommended": "Ieteicams",
@@ -635,8 +764,13 @@
   "reply_indicator.attachments": "{count, plural, zero{# pielikumu} one {# pielikums} other {# pielikumi}}",
   "reply_indicator.cancel": "Atcelt",
   "reply_indicator.poll": "Aptauja",
+<<<<<<< HEAD
   "report.block": "Bloķēt",
   "report.block_explanation": "Tu neredzēsi viņu ierakstus. Viņi nevarēs redzēt Tavus ierakstus vai sekot tev. Viņi varēs saprast, ka ir liegti.",
+=======
+  "report.block": "Liegt",
+  "report.block_explanation": "Tu neredzēsi viņu ierakstus. Viņi nevarēs redzēt Tavus ierakstus vai sekot Tev. Viņi varēs saprast, ka ir liegti.",
+>>>>>>> v4.5.0
   "report.categories.legal": "Tiesisks",
   "report.categories.other": "Citi",
   "report.categories.spam": "Mēstule",
@@ -717,7 +851,11 @@
   "status.admin_account": "Atvērt @{name} satura pārraudzības saskarni",
   "status.admin_domain": "Atvērt {domain} satura pārraudzības saskarni",
   "status.admin_status": "Atvērt šo ziņu satura pārraudzības saskarnē",
+<<<<<<< HEAD
   "status.block": "Bloķēt @{name}",
+=======
+  "status.block": "Liegt @{name}",
+>>>>>>> v4.5.0
   "status.bookmark": "Grāmatzīme",
   "status.cancel_reblog_private": "Nepastiprināt",
   "status.cannot_reblog": "Šo ierakstu nevar pastiprināt",
@@ -745,6 +883,7 @@
   "status.mute_conversation": "Apklusināt sarunu",
   "status.open": "Izvērst šo ierakstu",
   "status.pin": "Piespraust profilam",
+<<<<<<< HEAD
   "status.quote_error.not_found": "Šo ierakstu nevar parādīt.",
   "status.quote_error.pending_approval": "Šis ieraksts gaida apstiprinājumu no tā autora.",
   "status.quote_error.rejected": "Šo ierakstu nevar parādīt, jo tā autors neļauj to citēt.",
@@ -754,6 +893,10 @@
   "status.read_more": "Lasīt vairāk",
   "status.reblog": "Pastiprināt",
   "status.reblog_private": "Pastiprināt ar sākotnējo redzamību",
+=======
+  "status.read_more": "Lasīt vairāk",
+  "status.reblog": "Pastiprināt",
+>>>>>>> v4.5.0
   "status.reblogged_by": "{name} pastiprināja",
   "status.reblogs": "{count, plural, zero {pastiprinājumu} one {pastiprinājums} other {pastiprinājumi}}",
   "status.reblogs.empty": "Neviens vēl nav pastiprinājis šo ierakstu. Kad kāds to izdarīs, šeit tiks parādīti lietotāji.",
@@ -780,6 +923,10 @@
   "subscribed_languages.target": "Mainīt abonētās valodas priekš {target}",
   "tabs_bar.home": "Sākums",
   "tabs_bar.notifications": "Paziņojumi",
+<<<<<<< HEAD
+=======
+  "terms_of_service.effective_as_of": "Spēkā no {date}",
+>>>>>>> v4.5.0
   "terms_of_service.title": "Pakalpojuma izmantošanas noteikumi",
   "time_remaining.days": "{number, plural, one {Atlikusi # diena} other {Atlikušas # dienas}}",
   "time_remaining.hours": "{number, plural, one {Atlikusi # stunda} other {Atlikušas # stundas}}",
@@ -813,5 +960,15 @@
   "video.skip_forward": "Tīt uz priekšu",
   "video.unmute": "Ieslēgt skaņu",
   "video.volume_down": "Pagriezt klusāk",
+<<<<<<< HEAD
   "video.volume_up": "Pagriezt skaļāk"
+=======
+  "video.volume_up": "Pagriezt skaļāk",
+  "visibility_modal.button_title": "Iestatīt redzamību",
+  "visibility_modal.header": "Redzamība un mijjiedarbība",
+  "visibility_modal.quote_followers": "Tikai sekotāji",
+  "visibility_modal.quote_nobody": "Tikai es",
+  "visibility_modal.quote_public": "Ikviens",
+  "visibility_modal.save": "Saglabāt"
+>>>>>>> v4.5.0
 }

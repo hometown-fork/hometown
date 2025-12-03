@@ -98,6 +98,7 @@ export const Notifications: React.FC<{
   );
 
   const columnRef = useRef<ColumnRef>(null);
+<<<<<<< HEAD
 
   const selectChild = useCallback((index: number, alignTop: boolean) => {
     const container = columnRef.current?.node as HTMLElement | undefined;
@@ -121,6 +122,8 @@ export const Notifications: React.FC<{
       element.focus();
     }
   }, []);
+=======
+>>>>>>> v4.5.0
 
   // Keep track of mounted components for unread notification handling
   useEffect(() => {
@@ -187,28 +190,6 @@ export const Notifications: React.FC<{
     columnRef.current?.scrollTop();
   }, []);
 
-  const handleMoveUp = useCallback(
-    (id: string) => {
-      const elementIndex =
-        notifications.findIndex(
-          (item) => item.type !== 'gap' && item.group_key === id,
-        ) - 1;
-      selectChild(elementIndex, true);
-    },
-    [notifications, selectChild],
-  );
-
-  const handleMoveDown = useCallback(
-    (id: string) => {
-      const elementIndex =
-        notifications.findIndex(
-          (item) => item.type !== 'gap' && item.group_key === id,
-        ) + 1;
-      selectChild(elementIndex, false);
-    },
-    [notifications, selectChild],
-  );
-
   const handleMarkAsRead = useCallback(() => {
     dispatch(markNotificationsAsRead());
     void dispatch(submitMarkers({ immediate: true }));
@@ -241,8 +222,6 @@ export const Notifications: React.FC<{
         <NotificationGroup
           key={item.group_key}
           notificationGroupId={item.group_key}
-          onMoveUp={handleMoveUp}
-          onMoveDown={handleMoveDown}
           unread={
             lastReadId !== '0' &&
             !!item.page_max_id &&
@@ -251,15 +230,7 @@ export const Notifications: React.FC<{
         />
       ),
     );
-  }, [
-    notifications,
-    isLoading,
-    hasMore,
-    lastReadId,
-    handleLoadGap,
-    handleMoveUp,
-    handleMoveDown,
-  ]);
+  }, [notifications, isLoading, hasMore, lastReadId, handleLoadGap]);
 
   const prepend = (
     <>

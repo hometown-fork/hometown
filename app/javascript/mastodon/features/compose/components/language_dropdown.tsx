@@ -396,7 +396,11 @@ export const LanguageDropdown: React.FC = () => {
           warning: guess !== '' && guess !== value,
         })}
       >
+<<<<<<< HEAD
         <Icon id='' icon={TranslateIcon} />
+=======
+        <Icon id='translate' icon={TranslateIcon} />
+>>>>>>> v4.5.0
         <span className='dropdown-button__label'>{current[2] ?? value}</span>
       </button>
 

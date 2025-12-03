@@ -23,9 +23,15 @@ export const ReplyIndicator = () => {
     <div className='reply-indicator'>
       <div className='reply-indicator__line' />
 
+<<<<<<< HEAD
       <Permalink href={account.get('url')} to={`/@${account.get('acct')}`} className='detailed-status__display-avatar'>
         <Avatar account={account} size={46} />
       </Permalink>
+=======
+      <Link to={`/@${account.get('acct')}`} className='detailed-status__display-avatar'>
+        <Avatar key={`avatar-${account.get('id')}`} account={account} size={46} />
+      </Link>
+>>>>>>> v4.5.0
 
       <div className='reply-indicator__main'>
         <Permalink href={account.get('url')} to={`/@${account.get('acct')}`} className='detailed-status__display-name'>
@@ -34,9 +40,7 @@ export const ReplyIndicator = () => {
 
         <EmbeddedStatusContent
           className='reply-indicator__content translate'
-          content={status.get('contentHtml')}
-          language={status.get('language')}
-          mentions={status.get('mentions')}
+          status={status}
         />
 
         {(status.get('poll') || status.get('media_attachments').size > 0) && (

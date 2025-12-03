@@ -190,6 +190,7 @@ bg:
         create_relay: Създаване на пренасочване
         create_unavailable_domain: Създаване на недостъпен домейн
         create_user_role: Създаване на роля
+        create_username_block: Създаване на правило за потебителско име
         demote_user: Понижаване на потребител
         destroy_announcement: Изтриване на оповестяване
         destroy_canonical_email_block: Изтриване на блокиране за е-поща
@@ -202,6 +203,7 @@ bg:
         destroy_status: Изтриване на публикация
         destroy_unavailable_domain: Изтриване на недостъпен домейн
         destroy_user_role: Унищожаване на роля
+        destroy_username_block: Изтриване на правило за потебителско име
         disable_2fa_user: Изкл. на 2факт.удостов.
         disable_custom_emoji: Деактивиране на персонализирано емоджи
         disable_sign_in_token_auth_user: Изключване на удостоверяването с код по имейл за потребител
@@ -234,6 +236,7 @@ bg:
         update_report: Обновяване на доклада
         update_status: Обновяване на публикация
         update_user_role: Обновяване на ролята
+        update_username_block: Обновяване на правило за потеб. име
       actions:
         approve_appeal_html: "%{name} одобри обжалването на решение за модериране от %{target}"
         approve_user_html: "%{name} одобри регистрирането от %{target}"
@@ -251,6 +254,7 @@ bg:
         create_ip_block_html: "%{name} създаде правило за IP %{target}"
         create_unavailable_domain_html: "%{name} спря доставянето до домейн %{target}"
         create_user_role_html: "%{name} създаде роля %{target}"
+        create_username_block_html: "%{name} добави правило за потребителско име, съдържащо %{target}"
         demote_user_html: "%{name} понижи потребителя %{target}"
         destroy_announcement_html: "%{name} изтри оповестяване %{target}"
         destroy_canonical_email_block_html: "%{name} отблокира имейла с хеш %{target}"
@@ -263,6 +267,7 @@ bg:
         destroy_status_html: "%{name} премахна публикация от %{target}"
         destroy_unavailable_domain_html: "%{name} възобнови доставката до домейн %{target}"
         destroy_user_role_html: "%{name} изтри роля %{target}"
+        destroy_username_block_html: "%{name} премахна правило за потребителско име, съдържащо %{target}"
         disable_2fa_user_html: "%{name} изключи двуфакторното изискване за потребител %{target}"
         disable_custom_emoji_html: "%{name} изключи емоджито %{target}"
         disable_sign_in_token_auth_user_html: "%{name} изключва удостоверението с код по е-поща за %{target}"
@@ -295,6 +300,7 @@ bg:
         update_report_html: "%{name} осъвремени доклад %{target}"
         update_status_html: "%{name} обнови публикация от %{target}"
         update_user_role_html: "%{name} промени ролята %{target}"
+        update_username_block_html: "%{name} обнови правило за потребителско име, съдържащо %{target}"
       deleted_account: изтрит акаунт
       empty: Няма намерени дневници.
       filter_by_action: Филтриране по действие
@@ -791,12 +797,19 @@ bg:
       title: Сървърни правила
       translation: Превод
       translations: Преводи
+<<<<<<< HEAD
+=======
+      translations_explanation: Може по избор да добавите преводи за правилата. Стандартната стойност ще се показва, ако няма налична преведена версия. Винаги се уверявайте, че всеки предоставен превод е синхронизиран със стандартната стойност.
+>>>>>>> v4.5.0
     settings:
       about:
         manage_rules: Управление на правилата на сървъра
         preamble: Предложете задълбочена информация за това как вашият сървър се управлява, модерира и финансира.
         rules_hint: Съществува специална част за правилата, които се очаква вашите потребители да спазват.
         title: Относно
+      allow_referrer_origin:
+        desc: Когато потребителите ви щракнат върху връзки към външни сайтове, то браузърите им може да изпращат адреса на сървъра ви в Mastodon както референтът. Изключете това, ако то неповторимо би установило самоличността на потребителя ви, например ако това е личен сървър в Mastodon.
+        title: Позволяване на външни сайтове да виждат сървъра ви в Mastodon като източник на трафик
       appearance:
         preamble: Настройване на мрежовия интерфейс на Mastodon.
         title: Външен вид
@@ -815,7 +828,10 @@ bg:
         title: По подразбиране изключете индексирането от търсачки за вашите потребители
       discovery:
         follow_recommendations: Препоръки за следване
+<<<<<<< HEAD
         preamble: За потребители, които са нови и не познават никого в Mastodon, показването на интересно съдържание е ключово. Настройте начина, по който различни функции по откриване на съдържание работят на вашия сървър.
+=======
+>>>>>>> v4.5.0
         privacy: Поверителност
         profile_directory: Указател на профила
         public_timelines: Публични хронологии
@@ -826,6 +842,14 @@ bg:
         all: До всеки
         disabled: До никого
         users: До влезнали локални потребители
+      feed_access:
+        modes:
+          authenticated: Само удостоверени потребители
+          disabled: Изисква особена потребителска роля
+          public: Всеки
+      landing_page:
+        values:
+          trends: Пламенности
       registrations:
         moderation_recommandation: Уверете се, че имате адекватен и реактивен модераторски екип преди да отворите регистриранията за всеки!
         preamble: Управлява кой може да създава акаунт на сървъра ви.
@@ -879,6 +903,7 @@ bg:
       no_status_selected: Няма промяна, тъй като няма избрани публикации
       open: Отваряне на публикация
       original_status: Първообразна публикация
+      quotes: Цитати
       reblogs: Блогване пак
       replied_to_html: Отговорено до %{acct_link}
       status_changed: Публикацията променена
@@ -886,6 +911,10 @@ bg:
       title: Публикации на акаунт - @%{name}
       trending: Изгряващи
       view_publicly: Преглед като публично
+<<<<<<< HEAD
+=======
+      view_quoted_post: Преглед на цитираната публикация
+>>>>>>> v4.5.0
       visibility: Видимост
       with_media: С мултимедия
     strikes:
@@ -1067,6 +1096,23 @@ bg:
           other: Използвано от %{count} души през последната седмица
       title: Препоръки и насоки на развитие
       trending: Изгряващи
+    username_blocks:
+      add_new: Добавяне на ново
+      block_registrations: Блокиране на регистрациите
+      comparison:
+        contains: Съдържа
+      contains_html: Съдържа %{string}
+      created_msg: Успешно създадено правило за потребителско име
+      delete: Изтриване
+      edit:
+        title: Промяна на правило за потреб. име
+      new:
+        create: Създаване на правило
+        title: Създаване на ново правило за потреб. име
+      no_username_block_selected: Няма променени правила за потребителско име, тъй като нищо не бе избрано
+      not_permitted: Няма позволение
+      title: Правила за потребителско име
+      updated_msg: Успешно обновено правило за потребителско име
     warning_presets:
       add_new: Добавяне на ново
       delete: Изтриване
@@ -1139,10 +1185,10 @@ bg:
     hint_html: Ако желаете да се преместите от друг акаунт към този, тук можете да създадете псевдоним, което се изисква преди да можете да пристъпите към преместване на последователите си от стария акаунт към този. Това действие е <strong>безопасно и възстановимо</strong>. <strong>Миграцията към новия акаунт се инициира от стария акаунт</strong>.
     remove: Разкачвне на псевдонима
   appearance:
-    advanced_web_interface: Разширен уеб интерфейс
-    advanced_web_interface_hint: 'Ако искате да употребявате цялата ширина на екрана си, разширеният уеб интерфейс ви позволява да настроите най-различни колони, за да виждате едновременно множество сведения, колкото искате: Начало, известия, федеративен инфоканал, произволен брой списъци и хаштагове.'
+    advanced_settings: Разширени настройки
     animations_and_accessibility: Анимация и достъпност
-    confirmation_dialogs: Диалогов прозорец за потвърждение
+    boosting_preferences: Настройки за подсилване
+    boosting_preferences_info_html: "<strong>Съвет:</strong> Без значение от настройките, <kbd>Shift</kbd> + <kbd>Щрак</kbd> върху иконата %{icon} Подсилване веднага ще подсили."
     discovery: Откриване
     localization:
       body: Mastodon е преведено от доброволци.
@@ -1331,6 +1377,10 @@ bg:
     basic_information: Основна информация
     hint_html: "<strong>Персонализирайте какво хората виждат в обществения ви профил и до публикациите ви.</strong> Другите хора са по-склонни да ви последват и да взаимодействат с вас, когато имате попълнен профил и снимка на профила."
     other: Друго
+  emoji_styles:
+    auto: Автоматично
+    native: Естествено системно
+    twemoji: Twemoji
   errors:
     '400': Подадохте невалидна или деформирана заявка.
     '403': Нямате позволение да разгледате тази страница.
@@ -1540,6 +1590,13 @@ bg:
       expires_at: Изтича на
       uses: Използвания
     title: Поканете хора
+  link_preview:
+    author_html: От %{name}
+    potentially_sensitive_content:
+      action: Щракване за показване
+      confirm_visit: Наистина ли искате да отворите тази връзка?
+      hide_button: Скриване
+      label: Възможно деликатно съдържание
   lists:
     errors:
       limit: Достигнахте максималния брой списъци
@@ -1640,6 +1697,10 @@ bg:
       title: Ново споменаване
     poll:
       subject: Анкетата от %{name} приключи
+    quote:
+      body: 'Ваша публикация беше цитирана от %{name}:'
+      subject: "%{name} цитира ваша публикация"
+      title: Нов цитат
     reblog:
       body: 'Ваша публикация беше раздута от %{name}:'
       subject: "%{name} разду ваша публикация"
@@ -1688,6 +1749,9 @@ bg:
       self_vote: Не може да гласувате в свои анкети
       too_few_options: трябва да има повече от един елемент
       too_many_options: не може да съдържа повече от %{max} елемента
+    vote: Гласувам
+  posting_defaults:
+    explanation: Тези настройки ще се употребяват като стандартни, когато създавате нови публикации, но може да ги редактирате за всяка публикация в редактора.
   preferences:
     other: Друго
     posting_defaults: По подразбиране за публикации
@@ -1843,6 +1907,9 @@ bg:
         other: "%{count} видеозаписа"
     boosted_from_html: Раздуто от %{acct_link}
     content_warning: 'Предупреждение за съдържание: %{warning}'
+    content_warnings:
+      hide: Скриване на публ.
+      show: Показване на още
     default_language: Същият като езика на интерфейса
     disallowed_hashtags:
       one: 'съдържа непозволен хаштаг: %{tags}'
@@ -1850,25 +1917,36 @@ bg:
     edited_at_html: Редактирано на %{date}
     errors:
       in_reply_not_found: Изглежда, че публикацията, на която се опитвате да отговорите, не съществува.
+      quoted_status_not_found: Публикацията, която се опитвате да цитирате, не съществува.
     over_character_limit: прехвърлен лимит от %{max} символа
     pin_errors:
       direct: Публикациите, които са видими само за потребители споменати в тях, не могат да бъдат закачани
       limit: Вече сте закачили максималния брой публикации
       ownership: Публикация на някого другиго не може да бъде закачена
       reblog: Раздуване не може да бъде закачано
+<<<<<<< HEAD
     quote_policies:
       followers: Последователи и споменати потребители
       nobody: Само споменатите потребители
       public: Всеки
+=======
+    quote_error:
+      not_available: Неналична публикация
+      pending_approval: Публикацията чака одобрение
+      revoked: Премахната публикация от автора
+    quote_policies:
+      followers: Само последователи
+      nobody: Само аз
+      public: Някой
+    quote_post_author: Цитирах публикация от %{acct}
+>>>>>>> v4.5.0
     title: "%{name}: „%{quote}“"
     visibilities:
-      direct: Директно
-      private: Покажи само на последователите си
-      private_long: Видими само за последователи
+      direct: Частно споменаване
+      private: Само последователи
       public: Публично
-      public_long: Всеки ги вижда
-      unlisted: Публично, но не показвай в публичния канал
-      unlisted_long: Всеки ги вижда, но са скрити от публичните хронологии
+      public_long: Всеки във и извън Mastodon
+      unlisted: Тиха публика
   statuses_cleanup:
     enabled: Автоматично изтриване на стари публикации
     enabled_hint: От само себе си трие публикациите ви, щом достигнат указания възрастов праг, освен ако не съвпаднат с някое от изключенията долу

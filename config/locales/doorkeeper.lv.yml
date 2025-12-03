@@ -124,13 +124,21 @@ lv:
         admin/all: Visas administrēšanas funkcijas
         admin/reports: Ziņojumu pārvaldīšana
         all: Pilna piekļuve Tavam Mastodon kontam
+<<<<<<< HEAD
         blocks: Bloķētie
+=======
+        blocks: Liegtie
+>>>>>>> v4.5.0
         bookmarks: Grāmatzīmes
         conversations: Sarunas
         crypto: Pilnīga šifrēšana
         favourites: Izlase
         filters: Filtri
+<<<<<<< HEAD
         follow: Seko, apklusina un liedz
+=======
+        follow: Sekojumi, apklusināšanas un liegumi
+>>>>>>> v4.5.0
         follows: Seko
         lists: Saraksti
         media: Multividesu pielikumi
@@ -184,7 +192,7 @@ lv:
       read:statuses: skatīt visus ierakstus
       write: labot visus sava konta datus
       write:accounts: labot manu profilu
-      write:blocks: bloķēt kontus un domēnus
+      write:blocks: liegt kontus un domēnus
       write:bookmarks: pievienotās grāmatzīmes
       write:conversations: apklusināt un dzēst sarunas
       write:favourites: iecienītākās ziņas

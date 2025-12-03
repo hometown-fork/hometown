@@ -241,6 +241,7 @@ en:
         create_relay: Create Relay
         create_unavailable_domain: Create Unavailable Domain
         create_user_role: Create Role
+        create_username_block: Create Username Rule
         demote_user: Demote User
         destroy_announcement: Delete Announcement
         destroy_canonical_email_block: Delete Email Block
@@ -254,6 +255,7 @@ en:
         destroy_status: Delete Post
         destroy_unavailable_domain: Delete Unavailable Domain
         destroy_user_role: Destroy Role
+        destroy_username_block: Delete Username Rule
         disable_2fa_user: Disable 2FA
         disable_custom_emoji: Disable Custom Emoji
         disable_relay: Disable Relay
@@ -288,6 +290,7 @@ en:
         update_report: Update Report
         update_status: Update Post
         update_user_role: Update Role
+        update_username_block: Update Username Rule
       actions:
         approve_appeal_html: "%{name} approved moderation decision appeal from %{target}"
         approve_user_html: "%{name} approved sign-up from %{target}"
@@ -306,6 +309,7 @@ en:
         create_relay_html: "%{name} created a relay %{target}"
         create_unavailable_domain_html: "%{name} stopped delivery to domain %{target}"
         create_user_role_html: "%{name} created %{target} role"
+        create_username_block_html: "%{name} added rule for usernames containing %{target}"
         demote_user_html: "%{name} demoted user %{target}"
         destroy_announcement_html: "%{name} deleted announcement %{target}"
         destroy_canonical_email_block_html: "%{name} unblocked email with the hash %{target}"
@@ -319,6 +323,7 @@ en:
         destroy_status_html: "%{name} removed post by %{target}"
         destroy_unavailable_domain_html: "%{name} resumed delivery to domain %{target}"
         destroy_user_role_html: "%{name} deleted %{target} role"
+        destroy_username_block_html: "%{name} removed rule for usernames containing %{target}"
         disable_2fa_user_html: "%{name} disabled two factor requirement for user %{target}"
         disable_custom_emoji_html: "%{name} disabled emoji %{target}"
         disable_relay_html: "%{name} disabled the relay %{target}"
@@ -353,6 +358,7 @@ en:
         update_report_html: "%{name} updated report %{target}"
         update_status_html: "%{name} updated post by %{target}"
         update_user_role_html: "%{name} changed %{target} role"
+        update_username_block_html: "%{name} updated rule for usernames containing %{target}"
       deleted_account: deleted account
       empty: No logs found.
       filter_by_action: Filter by action
@@ -841,6 +847,8 @@ en:
         view_dashboard_description: Allows users to access the dashboard and various metrics
         view_devops: DevOps
         view_devops_description: Allows users to access Sidekiq and pgHero dashboards
+        view_feeds: View live and topic feeds
+        view_feeds_description: Allows users to access the live and topic feeds regardless of server settings
       title: Roles
     rules:
       add_new: Add rule
@@ -882,7 +890,11 @@ en:
         title: Opt users out of search engine indexing by default
       discovery:
         follow_recommendations: Follow recommendations
+<<<<<<< HEAD
         preamble: Surfacing interesting content is instrumental in onboarding new users who may not know anyone on %{title}. Control how various discovery features work on your server.
+=======
+        preamble: Surfacing interesting content is instrumental in onboarding new users who may not know anyone on Mastodon. Control how various discovery features work on your server.
+>>>>>>> v4.5.0
         privacy: Privacy
         profile_directory: Profile directory
         public_timelines: Public timelines
@@ -893,10 +905,23 @@ en:
         all: To everyone
         disabled: To no one
         users: To logged-in local users
+<<<<<<< HEAD
       hometown:
         title: Hometown
         preamble: These site-wide settings are provided to you by Hometown. As the server admin, you should think carefully about what you want each setting to be, since this will have an impact in shaping your community.
         privacy: Privacy
+=======
+      feed_access:
+        modes:
+          authenticated: Authenticated users only
+          disabled: Require specific user role
+          public: Everyone
+      landing_page:
+        values:
+          about: About
+          local_feed: Local feed
+          trends: Trends
+>>>>>>> v4.5.0
       registrations:
         moderation_recommandation: Please make sure you have an adequate and reactive moderation team before you open registrations to everyone!
         preamble: Control who can create an account on your server.
@@ -950,6 +975,7 @@ en:
       no_status_selected: No posts were changed as none were selected
       open: Open post
       original_status: Original post
+      quotes: Quotes
       reblogs: Reblogs
       replied_to_html: Replied to %{acct_link}
       status_changed: Post changed
@@ -957,6 +983,10 @@ en:
       title: Account posts - @%{name}
       trending: Trending
       view_publicly: View publicly
+<<<<<<< HEAD
+=======
+      view_quoted_post: View quoted post
+>>>>>>> v4.5.0
       visibility: Visibility
       with_media: With media
     strikes:
@@ -1140,6 +1170,25 @@ en:
           other: Used by %{count} people over the last week
       title: Recommendations & Trends
       trending: Trending
+    username_blocks:
+      add_new: Add new
+      block_registrations: Block registrations
+      comparison:
+        contains: Contains
+        equals: Equals
+      contains_html: Contains %{string}
+      created_msg: Successfully created username rule
+      delete: Delete
+      edit:
+        title: Edit username rule
+      matches_exactly_html: Equals %{string}
+      new:
+        create: Create rule
+        title: Create new username rule
+      no_username_block_selected: No username rules were changed as none were selected
+      not_permitted: Not permitted
+      title: Username rules
+      updated_msg: Successfully updated username rule
     warning_presets:
       add_new: Add new
       delete: Delete
@@ -1212,10 +1261,10 @@ en:
     hint_html: If you want to move from another account to this one, here you can create an alias, which is required before you can proceed with moving followers from the old account to this one. This action by itself is <strong>harmless and reversible</strong>. <strong>The account migration is initiated from the old account</strong>.
     remove: Unlink alias
   appearance:
-    advanced_web_interface: Advanced web interface
-    advanced_web_interface_hint: 'If you want to make use of your entire screen width, the advanced web interface allows you to configure many different columns to see as much information at the same time as you want: Home, notifications, federated timeline, any number of lists and hashtags.'
+    advanced_settings: Advanced settings
     animations_and_accessibility: Animations and accessibility
-    confirmation_dialogs: Confirmation dialogs
+    boosting_preferences: Boosting preferences
+    boosting_preferences_info_html: "<strong>Tip:</strong> Regardless of settings, <kbd>Shift</kbd> + <kbd>Click</kbd> on the %{icon} Boost icon will immediately boost."
     discovery: Discovery
     localization:
       body: "%{title} is translated by volunteers."
@@ -1296,7 +1345,11 @@ en:
     set_new_password: Set new password
     setup:
       email_below_hint_html: Check your spam folder, or request another one. You can correct your email address if it's wrong.
+<<<<<<< HEAD
       email_settings_hint_html: Click the link we sent to %{email} to begin using %{title}. We'll wait right here.
+=======
+      email_settings_hint_html: Click the link we sent to %{email} to begin using Mastodon. We'll wait right here.
+>>>>>>> v4.5.0
       link_not_received: Didn't get a link?
       new_confirmation_instructions_sent: You will receive a new email with the confirmation link in a few minutes!
       title: Check your inbox
@@ -1305,7 +1358,11 @@ en:
       title: Login to %{domain}
     sign_up:
       manual_review: Sign-ups on %{domain} go through manual review by our moderators. To help us process your registration, write a bit about yourself and why you want an account on %{domain}.
+<<<<<<< HEAD
       preamble: With an account on this %{title} server, you'll be able to follow any other person on the Fediverse, regardless of where their account is hosted.
+=======
+      preamble: With an account on this Mastodon server, you'll be able to follow any other person on the fediverse, regardless of where their account is hosted.
+>>>>>>> v4.5.0
       title: Let's get you set up on %{domain}.
     status:
       account_status: Account status
@@ -1321,7 +1378,11 @@ en:
     user_privacy_agreement_html: I have read and agree to the <a href="%{privacy_policy_path}" target="_blank">privacy policy</a>
   author_attribution:
     example_title: Sample text
+<<<<<<< HEAD
     hint_html: Are you writing news or blog articles outside of %{title}? Control how you get credited when they are shared on %{title}.
+=======
+    hint_html: Are you writing news or blog articles outside of Mastodon? Control how you get credited when they are shared on Mastodon.
+>>>>>>> v4.5.0
     instructions: 'Make sure this code is in your article''s HTML:'
     more_from_html: More from %{name}
     s_blog: "%{name}'s Blog"
@@ -1404,6 +1465,10 @@ en:
     basic_information: Basic information
     hint_html: "<strong>Customize what people see on your public profile and next to your posts.</strong> Other people are more likely to follow you back and interact with you when you have a filled out profile and a profile picture."
     other: Other
+  emoji_styles:
+    auto: Auto
+    native: Native
+    twemoji: Twemoji
   errors:
     '400': The request you submitted was invalid or malformed.
     '403': You don't have permission to view this page.
@@ -1613,6 +1678,13 @@ en:
       expires_at: Expires
       uses: Uses
     title: Invite people
+  link_preview:
+    author_html: By %{name}
+    potentially_sensitive_content:
+      action: Click to show
+      confirm_visit: Are you sure you wish to open this link?
+      hide_button: Hide
+      label: Potentially sensitive content
   lists:
     errors:
       limit: You have reached the maximum number of lists
@@ -1713,6 +1785,10 @@ en:
       title: New mention
     poll:
       subject: A poll by %{name} has ended
+    quote:
+      body: 'Your post was quoted by %{name}:'
+      subject: "%{name} quoted your post"
+      title: New quote
     reblog:
       body: 'Your post was boosted by %{name}:'
       subject: "%{name} boosted your post"
@@ -1762,6 +1838,9 @@ en:
       self_vote: You cannot vote in your own polls
       too_few_options: must have more than one item
       too_many_options: can't contain more than %{max} items
+    vote: Vote
+  posting_defaults:
+    explanation: These settings will be used as defaults when you create new posts, but you can edit them per post within the composer.
   preferences:
     other: Other
     posting_defaults: Posting defaults
@@ -1917,6 +1996,9 @@ en:
         other: "%{count} videos"
     boosted_from_html: Boosted from %{acct_link}
     content_warning: 'Content warning: %{warning}'
+    content_warnings:
+      hide: Hide post
+      show: Show more
     default_language: Same as interface language
     disallowed_hashtags:
       one: 'contained a disallowed hashtag: %{tags}'
@@ -1924,27 +2006,43 @@ en:
     edited_at_html: Edited %{date}
     errors:
       in_reply_not_found: The post you are trying to reply to does not appear to exist.
+<<<<<<< HEAD
     local_only: Local-only
     open_in_web: Open in web
+=======
+      quoted_status_not_found: The post you are trying to quote does not appear to exist.
+      quoted_user_not_mentioned: Cannot quote a non-mentioned user in a Private Mention post.
+>>>>>>> v4.5.0
     over_character_limit: character limit of %{max} exceeded
     pin_errors:
       direct: Posts that are only visible to mentioned users cannot be pinned
       limit: You have already pinned the maximum number of posts
       ownership: Someone else's post cannot be pinned
       reblog: A boost cannot be pinned
+<<<<<<< HEAD
     quote_policies:
       followers: Followers and mentioned users
       nobody: Only mentioned users
       public: Everyone
+=======
+    quote_error:
+      not_available: Post unavailable
+      pending_approval: Post pending
+      revoked: Post removed by author
+    quote_policies:
+      followers: Followers only
+      nobody: Just me
+      public: Anyone
+    quote_post_author: Quoted a post by %{acct}
+>>>>>>> v4.5.0
     title: '%{name}: "%{quote}"'
     visibilities:
-      direct: Direct
-      private: Followers-only
-      private_long: Only show to followers
+      direct: Private mention
+      private: Followers only
       public: Public
-      public_long: Everyone can see
-      unlisted: Unlisted
-      unlisted_long: Everyone can see, but not listed on public timelines
+      public_long: Anyone on and off Mastodon
+      unlisted: Quiet public
+      unlisted_long: Hidden from Mastodon search results, trending, and public timelines
   statuses_cleanup:
     enabled: Automatically delete old posts
     enabled_hint: Automatically deletes your posts once they reach a specified age threshold, unless they match one of the exceptions below
@@ -2136,8 +2234,13 @@ en:
       post_action: Compose
       post_step: Say hello to the world with text, photos, videos, or polls.
       post_title: Make your first post
+<<<<<<< HEAD
       share_step: Let your friends know how to find you on %{title}.
       share_title: Share your %{title} profile
+=======
+      share_step: Let your friends know how to find you on Mastodon.
+      share_title: Share your Mastodon profile
+>>>>>>> v4.5.0
       sign_in_action: Sign in
       subject: Welcome to %{title}
       title: Welcome aboard, %{name}!

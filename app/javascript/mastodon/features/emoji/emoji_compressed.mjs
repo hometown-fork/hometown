@@ -14,8 +14,12 @@ import { uncompress as emojiMartUncompress } from 'emoji-mart/dist/utils/data';
 
 import data from './emoji_data.json';
 import emojiMap from './emoji_map.json';
+<<<<<<< HEAD
 import { unicodeToFilename } from './unicode_to_filename';
 import { unicodeToUnifiedName } from './unicode_to_unified_name';
+=======
+import { unicodeToFilename, unicodeToUnifiedName } from './unicode_utils';
+>>>>>>> v4.5.0
 
 emojiMartUncompress(data);
 

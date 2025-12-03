@@ -84,6 +84,13 @@ export function Reblogs () {
 
 export function Favourites () {
   return import('../../favourites');
+<<<<<<< HEAD
+=======
+}
+
+export function Quotes () {
+  return import('../../quotes');
+>>>>>>> v4.5.0
 }
 
 export function FollowRequests () {

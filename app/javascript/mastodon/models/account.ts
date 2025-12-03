@@ -8,7 +8,10 @@ import type {
   ApiAccountRoleJSON,
   ApiAccountJSON,
 } from 'mastodon/api_types/accounts';
+<<<<<<< HEAD
 import emojify from 'mastodon/features/emoji/emoji';
+=======
+>>>>>>> v4.5.0
 import { unescapeHTML } from 'mastodon/utils/html';
 
 import { CustomEmojiFactory, makeEmojiMap } from './custom_emoji';
@@ -45,7 +48,7 @@ const AccountRoleFactory = ImmutableRecord<AccountRoleShape>({
 // Account
 export interface AccountShape
   extends Required<
-    Omit<ApiAccountJSON, 'emojis' | 'fields' | 'roles' | 'moved'>
+    Omit<ApiAccountJSON, 'emojis' | 'fields' | 'roles' | 'moved' | 'url'>
   > {
   emojis: ImmutableList<CustomEmoji>;
   fields: ImmutableList<AccountField>;
@@ -55,6 +58,7 @@ export interface AccountShape
   note_plain: string | null;
   hidden: boolean;
   moved: string | null;
+  url: string;
 }
 
 export type Account = RecordOf<AccountShape>;
@@ -101,17 +105,18 @@ export const accountDefaultValues: AccountShape = {
 
 const AccountFactory = ImmutableRecord<AccountShape>(accountDefaultValues);
 
+<<<<<<< HEAD
 function createAccountField(
   jsonField: ApiAccountFieldJSON,
   emojiMap: EmojiMap,
 ) {
+=======
+function createAccountField(jsonField: ApiAccountFieldJSON) {
+>>>>>>> v4.5.0
   return AccountFieldFactory({
     ...jsonField,
-    name_emojified: emojify(
-      escapeTextContentForBrowser(jsonField.name),
-      emojiMap,
-    ),
-    value_emojified: emojify(jsonField.value, emojiMap),
+    name_emojified: escapeTextContentForBrowser(jsonField.name),
+    value_emojified: jsonField.value,
     value_plain: unescapeHTML(jsonField.value),
   });
 }
@@ -119,17 +124,19 @@ function createAccountField(
 export function createAccountFromServerJSON(serverJSON: ApiAccountJSON) {
   const { moved, ...accountJSON } = serverJSON;
 
-  const emojiMap = makeEmojiMap(accountJSON.emojis);
-
   const displayName =
     accountJSON.display_name.trim().length === 0
       ? accountJSON.username
       : accountJSON.display_name;
 
+  const accountNote =
+    accountJSON.note && accountJSON.note !== '<p></p>' ? accountJSON.note : '';
+
   return AccountFactory({
     ...accountJSON,
     moved: moved?.id,
     fields: ImmutableList(
+<<<<<<< HEAD
       serverJSON.fields.map((field) => createAccountField(field, emojiMap)),
     ),
     emojis: ImmutableList(
@@ -147,6 +154,22 @@ export function createAccountFromServerJSON(serverJSON: ApiAccountJSON) {
     url:
       accountJSON.url.startsWith('http://') ||
       accountJSON.url.startsWith('https://')
+=======
+      serverJSON.fields.map((field) => createAccountField(field)),
+    ),
+    emojis: ImmutableList(
+      serverJSON.emojis.map((emoji) => CustomEmojiFactory(emoji)),
+    ),
+    roles: ImmutableList(
+      serverJSON.roles?.map((role) => AccountRoleFactory(role)),
+    ),
+    display_name_html: escapeTextContentForBrowser(displayName),
+    note_emojified: accountNote,
+    note_plain: unescapeHTML(accountNote),
+    url:
+      accountJSON.url?.startsWith('http://') ||
+      accountJSON.url?.startsWith('https://')
+>>>>>>> v4.5.0
         ? accountJSON.url
         : accountJSON.uri,
   });

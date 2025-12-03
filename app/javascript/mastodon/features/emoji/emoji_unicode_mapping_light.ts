@@ -7,9 +7,15 @@ import type {
   FilenameData,
   ShortCodesToEmojiDataKey,
 } from 'virtual:mastodon-emoji-compressed';
+<<<<<<< HEAD
 
 import { unicodeToFilename } from './unicode_to_filename';
 
+=======
+
+import { unicodeToFilename } from './unicode_utils';
+
+>>>>>>> v4.5.0
 type UnicodeMapping = Record<
   FilenameData[number][0],
   {

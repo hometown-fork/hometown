@@ -61,6 +61,10 @@ eu:
         setting_display_media_default: Ezkutatu hunkigarri gisa markatutako multimedia
         setting_display_media_hide_all: Ezkutatu multimedia guztia beti
         setting_display_media_show_all: Erakutsi beti hunkigarri gisa markatutako multimedia
+<<<<<<< HEAD
+=======
+        setting_emoji_style: Nola bistaratu emojiak. "Automatikoki" aukeran emoji natiboak erabiltzen saiatuko dira, baina Twemojira itzuliko dira arakatzaile zaharretarako.
+>>>>>>> v4.5.0
         setting_system_scrollbars_ui: Safari eta Chrome-n oinarritutako mahaigaineko nabigatzaileei bakarrik aplikatzen zaie
         setting_use_blurhash: Gradienteak ezkutatutakoaren koloreetan oinarritzen dira, baina xehetasunak ezkutatzen dituzte
         setting_use_pending_items: Ezkutatu denbora-lerroko eguneraketak klik baten atzean jarioa automatikoki korritu ordez
@@ -103,10 +107,8 @@ eu:
         status_page_url: Kanporatua dagoen jendeak zerbitzari honen egoera ikus dezaten gune baten URL
         theme: Saioa hasi gabeko erabiltzaileek eta berriek ikusiko duten gaia.
         thumbnail: Zerbitzariaren informazioaren ondoan erakusten den 2:1 inguruko irudia.
-        timeline_preview: Saioa hasi gabeko erabiltzaileek ezingo dituzte arakatu zerbitzariko bidalketa publiko berrienak.
         trendable_by_default: Saltatu joeretako edukiaren eskuzko berrikuspena. Ondoren elementuak banan-bana kendu daitezke joeretatik.
         trends: Joeretan zure zerbitzarian bogan dauden bidalketa, traola eta albisteak erakusten dira.
-        trends_as_landing_page: Erakutsi pil-pilean dagoen edukia saioa hasita ez duten erabiltzaileei eta bisitariei, zerbitzari honen deskribapena erakutsi ordez. Joerak aktibatuak edukitzea beharrezkoa da.
       form_challenge:
         current_password: Zonalde seguruan sartzen ari zara
       imports:
@@ -219,17 +221,14 @@ eu:
         setting_aggregate_reblogs: Taldekatu bultzadak denbora-lerroetan
         setting_always_send_emails: Bidali beti eposta jakinarazpenak
         setting_auto_play_gif: Erreproduzitu GIF animatuak automatikoki
-        setting_boost_modal: Erakutsi baieztapen elkarrizketa-koadroa bultzada eman aurretik
         setting_default_language: Argitalpenen hizkuntza
-        setting_default_privacy: Mezuen pribatutasuna
         setting_default_sensitive: Beti markatu edukiak hunkigarri gisa
-        setting_delete_modal: Erakutsi baieztapen elkarrizketa-koadroa toot bat ezabatu aurretik
         setting_disable_swiping: Desgaitu hatza pasatzeko mugimenduak
         setting_display_media: Multimedia bistaratzea
         setting_display_media_default: Lehenetsia
         setting_display_media_hide_all: Ezkutatu guztia
         setting_display_media_show_all: Erakutsi guztia
-        setting_expand_spoilers: Hedatu beti edukia abisua (CW) duten  tootak
+        setting_expand_spoilers: Zabaldu beti edukiaren abisuak dituzten argitalpenak
         setting_hide_network: Ezkutatu zure sarea
         setting_reduce_motion: Murriztu animazioen mugimenduak
         setting_system_font_ui: Erabili sistemako tipografia lehenetsia
@@ -264,6 +263,7 @@ eu:
         favicon: Gune-ikurra
         mascot: Maskota pertsonalizatua (zaharkitua)
         media_cache_retention_period: Multimediaren cachea atxikitzeko epea
+        min_age: Gutxieneko adin-eskakizuna
         peers_api_enabled: Argitaratu aurkitutako zerbitzarien zerrenda APIan
         profile_directory: Gaitu profil-direktorioa
         registrations_mode: Nork eman dezake izena
@@ -279,10 +279,8 @@ eu:
         status_page_url: Egoera-orriaren URLa
         theme: Lehenetsitako gaia
         thumbnail: Zerbitzariaren koadro txikia
-        timeline_preview: Onartu autentifikatu gabeko sarbidea denbora lerro publikoetara
         trendable_by_default: Onartu joerak aurrez berrikusi gabe
         trends: Gaitu joerak
-        trends_as_landing_page: Erabili joerak hasierako orri gisa
       interactions:
         must_be_follower: Blokeatu jarraitzaile ez direnen jakinarazpenak
         must_be_following: Blokeatu zuk jarraitzen ez dituzu horien jakinarazpenak

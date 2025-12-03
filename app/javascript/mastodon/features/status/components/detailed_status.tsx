@@ -24,7 +24,10 @@ import { getHashtagBarForStatus } from 'mastodon/components/hashtag_bar';
 import { Icon } from 'mastodon/components/icon';
 import { IconLogo } from 'mastodon/components/logo';
 import MediaGallery from 'mastodon/components/media_gallery';
+<<<<<<< HEAD
 import { Permalink } from 'mastodon/components/permalink';
+=======
+>>>>>>> v4.5.0
 import { PictureInPicturePlaceholder } from 'mastodon/components/picture_in_picture_placeholder';
 import StatusContent from 'mastodon/components/status_content';
 import { QuotedStatus } from 'mastodon/components/status_quoted';
@@ -32,6 +35,10 @@ import { VisibilityIcon } from 'mastodon/components/visibility_icon';
 import { Audio } from 'mastodon/features/audio';
 import scheduleIdleTask from 'mastodon/features/ui/util/schedule_idle_task';
 import { Video } from 'mastodon/features/video';
+<<<<<<< HEAD
+=======
+import { useIdentity } from 'mastodon/identity_context';
+>>>>>>> v4.5.0
 
 import Card from './card';
 
@@ -76,6 +83,8 @@ export const DetailedStatus: React.FC<{
   const [height, setHeight] = useState(0);
   const [showDespiteFilter, setShowDespiteFilter] = useState(false);
   const nodeRef = useRef<HTMLDivElement>();
+
+  const { signedIn } = useIdentity();
 
   const handleOpenVideo = useCallback(
     (options: VideoModalOptions) => {
@@ -130,6 +139,7 @@ export const DetailedStatus: React.FC<{
   let media;
   let applicationLink;
   let reblogLink;
+  let quotesLink;
   let attachmentAspectRatio;
 
   if (properStatus.get('media_attachments').getIn([0, 'type']) === 'video') {
@@ -282,6 +292,39 @@ export const DetailedStatus: React.FC<{
     );
   }
 
+  if (['private', 'direct'].includes(status.get('visibility') as string)) {
+    quotesLink = '';
+  } else if (signedIn) {
+    quotesLink = (
+      <Link
+        to={`/@${status.getIn(['account', 'acct'])}/${status.get('id')}/quotes`}
+        className='detailed-status__link'
+      >
+        <span className='detailed-status__quotes'>
+          <AnimatedNumber value={status.get('quotes_count')} />
+        </span>
+        <FormattedMessage
+          id='status.quotes'
+          defaultMessage='{count, plural, one {quote} other {quotes}}'
+          values={{ count: status.get('quotes_count') }}
+        />
+      </Link>
+    );
+  } else {
+    quotesLink = (
+      <span className='detailed-status__link'>
+        <span className='detailed-status__quotes'>
+          <AnimatedNumber value={status.get('quotes_count')} />
+        </span>
+        <FormattedMessage
+          id='status.quotes'
+          defaultMessage='{count, plural, one {quote} other {quotes}}'
+          values={{ count: status.get('quotes_count') }}
+        />
+      </span>
+    );
+  }
+
   const favouriteLink = (
     <Link
       to={`/@${status.getIn(['account', 'acct'])}/${status.get('id')}/favourites`}
@@ -305,9 +348,14 @@ export const DetailedStatus: React.FC<{
   const matchedFilters = status.get('matched_filters');
 
   const expanded =
+<<<<<<< HEAD
     ((!matchedFilters || showDespiteFilter) &&
       (!status.get('hidden') || status.get('spoiler_text').length === 0)) ||
     statusActivityObjectType === 'Article';
+=======
+    (!matchedFilters || showDespiteFilter) &&
+    (!status.get('hidden') || status.get('spoiler_text').length === 0);
+>>>>>>> v4.5.0
 
   return (
     <div style={outerStyle}>
@@ -359,6 +407,17 @@ export const DetailedStatus: React.FC<{
             title={matchedFilters.join(', ')}
             expanded={showDespiteFilter}
             onClick={handleFilterToggle}
+<<<<<<< HEAD
+=======
+          />
+        )}
+
+        {(!matchedFilters || showDespiteFilter) && (
+          <ContentWarning
+            status={status}
+            expanded={expanded}
+            onClick={handleExpandedToggle}
+>>>>>>> v4.5.0
           />
         )}
 
@@ -387,7 +446,14 @@ export const DetailedStatus: React.FC<{
             {hashtagBar}
 
             {status.get('quote') && (
+<<<<<<< HEAD
               <QuotedStatus quote={status.get('quote')} />
+=======
+              <QuotedStatus
+                quote={status.get('quote')}
+                parentQuotePostId={status.get('id')}
+              />
+>>>>>>> v4.5.0
             )}
           </>
         )}
@@ -436,6 +502,8 @@ export const DetailedStatus: React.FC<{
           <div className='detailed-status__meta__line'>
             {reblogLink}
             {reblogLink && <>·</>}
+            {quotesLink}
+            {quotesLink && <>·</>}
             {favouriteLink}
           </div>
         </div>

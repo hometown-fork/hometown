@@ -1,7 +1,17 @@
+<<<<<<< HEAD
 import { http, HttpResponse } from 'msw';
 import { action } from 'storybook/actions';
 
 import { relationshipsFactory } from './factories';
+=======
+import type { CompactEmoji } from 'emojibase';
+import { http, HttpResponse } from 'msw';
+import { action } from 'storybook/actions';
+
+import { toSupportedLocale } from '@/mastodon/features/emoji/locale';
+
+import { customEmojiFactory, relationshipsFactory } from './factories';
+>>>>>>> v4.5.0
 
 export const mockHandlers = {
   mute: http.post<{ id: string }>('/api/v1/accounts/:id/mute', ({ params }) => {
@@ -40,6 +50,27 @@ export const mockHandlers = {
       );
     },
   ),
+<<<<<<< HEAD
+=======
+  emojiCustomData: http.get('/api/v1/custom_emojis', () => {
+    action('fetching custom emoji data')();
+    return HttpResponse.json([customEmojiFactory()]);
+  }),
+  emojiData: http.get<{ locale: string }>(
+    '/packs-dev/emoji/:locale.json',
+    async ({ params }) => {
+      const locale = toSupportedLocale(params.locale);
+      action('fetching emoji data')(locale);
+      const { default: data } = (await import(
+        `emojibase-data/${locale}/compact.json`
+      )) as {
+        default: CompactEmoji[];
+      };
+
+      return HttpResponse.json([data]);
+    },
+  ),
+>>>>>>> v4.5.0
 };
 
 export const unhandledRequestHandler = ({ url }: Request) => {

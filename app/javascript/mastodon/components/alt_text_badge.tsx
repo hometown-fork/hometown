@@ -13,9 +13,15 @@ import { useSelectableClick } from 'mastodon/hooks/useSelectableClick';
 const offset = [0, 4] as OffsetValue;
 const popperConfig = { strategy: 'fixed' } as UsePopperOptions;
 
+<<<<<<< HEAD
 export const AltTextBadge: React.FC<{
   description: string;
 }> = ({ description }) => {
+=======
+export const AltTextBadge: React.FC<{ description: string }> = ({
+  description,
+}) => {
+>>>>>>> v4.5.0
   const accessibilityId = useId();
   const anchorRef = useRef<HTMLButtonElement>(null);
   const [open, setOpen] = useState(false);
@@ -56,7 +62,11 @@ export const AltTextBadge: React.FC<{
         {({ props }) => (
           <div {...props} className='hover-card-controller'>
             <div // eslint-disable-line jsx-a11y/no-noninteractive-element-interactions
+<<<<<<< HEAD
               className='media-gallery__alt__popover dropdown-animation'
+=======
+              className='info-tooltip dropdown-animation'
+>>>>>>> v4.5.0
               role='region'
               id={accessibilityId}
               onMouseDown={handleMouseDown}

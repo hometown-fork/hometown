@@ -9,7 +9,11 @@ import type {
   ShortCodesToEmojiData,
 } from 'virtual:mastodon-emoji-compressed';
 
+<<<<<<< HEAD
 import { unicodeToUnifiedName } from './unicode_to_unified_name';
+=======
+import { unicodeToUnifiedName } from './unicode_utils';
+>>>>>>> v4.5.0
 
 type Emojis = Record<
   NonNullable<keyof ShortCodesToEmojiData>,
@@ -23,7 +27,7 @@ type Emojis = Record<
 
 const [
   shortCodesToEmojiData,
-  skins,
+  _skins,
   categories,
   short_names,
   _emojisWithoutShortCodes,
@@ -47,4 +51,4 @@ Object.keys(shortCodesToEmojiData).forEach((shortCode) => {
   };
 });
 
-export { emojis, skins, categories, short_names };
+export { emojis, categories, short_names };

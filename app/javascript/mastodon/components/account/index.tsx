@@ -3,7 +3,13 @@ import { useCallback, useMemo } from 'react';
 import { defineMessages, useIntl, FormattedMessage } from 'react-intl';
 
 import classNames from 'classnames';
+<<<<<<< HEAD
 
+=======
+import { Link } from 'react-router-dom';
+
+import { EmojiHTML } from '@/mastodon/components/emoji/html';
+>>>>>>> v4.5.0
 import MoreHorizIcon from '@/material-icons/400-24px/more_horiz.svg?react';
 import {
   blockAccount,
@@ -24,7 +30,10 @@ import { FollowersCounter } from 'mastodon/components/counters';
 import { DisplayName } from 'mastodon/components/display_name';
 import { Dropdown } from 'mastodon/components/dropdown_menu';
 import { FollowButton } from 'mastodon/components/follow_button';
+<<<<<<< HEAD
 import { Permalink } from 'mastodon/components/permalink';
+=======
+>>>>>>> v4.5.0
 import { RelativeTimestamp } from 'mastodon/components/relative_timestamp';
 import { ShortNumber } from 'mastodon/components/short_number';
 import { Skeleton } from 'mastodon/components/skeleton';
@@ -293,10 +302,16 @@ export const Account: React.FC<AccountProps> = ({
         })}
       >
         <div className='account__info-wrapper'>
+<<<<<<< HEAD
           <Permalink
             className='account__display-name'
             title={account?.acct}
             href={account?.get('url')}
+=======
+          <Link
+            className='account__display-name'
+            title={account?.acct}
+>>>>>>> v4.5.0
             to={`/@${account?.acct}`}
             data-hover-card-account={id}
           >
@@ -327,14 +342,25 @@ export const Account: React.FC<AccountProps> = ({
                 </div>
               )}
             </div>
+<<<<<<< HEAD
           </Permalink>
+=======
+          </Link>
+>>>>>>> v4.5.0
 
           {account &&
             withBio &&
             (account.note.length > 0 ? (
+<<<<<<< HEAD
               <div
                 className='account__note translate'
                 dangerouslySetInnerHTML={{ __html: account.note_emojified }}
+=======
+              <EmojiHTML
+                className='account__note translate'
+                htmlString={account.note_emojified}
+                extraEmojis={account.emojis}
+>>>>>>> v4.5.0
               />
             ) : (
               <div className='account__note account__note--missing'>

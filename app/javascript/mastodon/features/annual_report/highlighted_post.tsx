@@ -6,6 +6,10 @@ import { useCallback } from 'react';
 
 import { FormattedMessage } from 'react-intl';
 
+<<<<<<< HEAD
+=======
+import { DisplayName } from '@/mastodon/components/display_name';
+>>>>>>> v4.5.0
 import { toggleStatusSpoilers } from 'mastodon/actions/statuses';
 import { DetailedStatus } from 'mastodon/features/status/components/detailed_status';
 import { me } from 'mastodon/initial_state';
@@ -79,11 +83,15 @@ export const HighlightedPost: React.FC<{
           id='annual_report.summary.highlighted_post.possessive'
           defaultMessage="{name}'s"
           values={{
+<<<<<<< HEAD
             name: account && (
               <bdi
                 dangerouslySetInnerHTML={{ __html: account.display_name_html }}
               />
             ),
+=======
+            name: <DisplayName account={account} variant='simple' />,
+>>>>>>> v4.5.0
           }}
         />
       </strong>

@@ -28,6 +28,7 @@
   "account.disable_notifications": "หยุดแจ้งเตือนฉันเมื่อ @{name} โพสต์",
   "account.domain_blocking": "กำลังปิดกั้นโดเมน",
   "account.edit_profile": "แก้ไขโปรไฟล์",
+  "account.edit_profile_short": "แก้ไข",
   "account.enable_notifications": "แจ้งเตือนฉันเมื่อ @{name} โพสต์",
   "account.endorse": "แสดงในโปรไฟล์",
   "account.featured": "น่าสนใจ",
@@ -37,6 +38,11 @@
   "account.featured_tags.last_status_never": "ไม่มีโพสต์",
   "account.follow": "ติดตาม",
   "account.follow_back": "ติดตามกลับ",
+  "account.follow_back_short": "ติดตามกลับ",
+  "account.follow_request": "ขอติดตาม",
+  "account.follow_request_cancel": "ยกเลิกคำขอ",
+  "account.follow_request_cancel_short": "ยกเลิก",
+  "account.follow_request_short": "ขอ",
   "account.followers": "ผู้ติดตาม",
   "account.followers.empty": "ยังไม่มีใครติดตามผู้ใช้นี้",
   "account.followers_counter": "{count, plural, other {{counter} ผู้ติดตาม}}",
@@ -63,8 +69,8 @@
   "account.open_original_page": "เปิดหน้าดั้งเดิม",
   "account.posts": "โพสต์",
   "account.posts_with_replies": "โพสต์และการตอบกลับ",
+  "account.remove_from_followers": "เอา {name} ออกจากผู้ติดตาม",
   "account.report": "รายงาน @{name}",
-  "account.requested": "กำลังรอการอนุมัติ คลิกเพื่อยกเลิกคำขอติดตาม",
   "account.requested_follow": "{name} ได้ขอติดตามคุณ",
   "account.share": "แชร์โปรไฟล์ของ @{name}",
   "account.show_reblogs": "แสดงการดันจาก @{name}",
@@ -159,6 +165,8 @@
   "column.edit_list": "แก้ไขรายการ",
   "column.favourites": "รายการโปรด",
   "column.firehose": "ฟีดสด",
+  "column.firehose_local": "ฟีดสดสำหรับเซิร์ฟเวอร์นี้",
+  "column.firehose_singular": "ฟีดสด",
   "column.follow_requests": "คำขอติดตาม",
   "column.home": "หน้าแรก",
   "column.list_members": "จัดการสมาชิกของรายการ",
@@ -210,6 +218,8 @@
   "confirmations.delete_list.confirm": "ลบ",
   "confirmations.delete_list.message": "คุณแน่ใจหรือไม่ว่าต้องการลบรายการนี้อย่างถาวร?",
   "confirmations.delete_list.title": "ลบรายการ?",
+  "confirmations.discard_draft.confirm": "ละทิ้งและดำเนินการต่อ",
+  "confirmations.discard_draft.post.title": "ละทิ้งโพสต์แบบร่างของคุณ?",
   "confirmations.discard_edit_media.confirm": "ละทิ้ง",
   "confirmations.discard_edit_media.message": "คุณมีการเปลี่ยนแปลงคำอธิบายหรือตัวอย่างสื่อที่ยังไม่ได้บันทึก ละทิ้งการเปลี่ยนแปลงเหล่านั้นต่อไป?",
   "confirmations.follow_to_list.confirm": "ติดตามและเพิ่มไปยังรายการ",
@@ -222,12 +232,23 @@
   "confirmations.missing_alt_text.secondary": "โพสต์ต่อไป",
   "confirmations.missing_alt_text.title": "เพิ่มข้อความแสดงแทน?",
   "confirmations.mute.confirm": "ซ่อน",
+  "confirmations.quiet_post_quote_info.dismiss": "ไม่ต้องเตือนฉันอีก",
+  "confirmations.quiet_post_quote_info.got_it": "เข้าใจแล้ว",
   "confirmations.redraft.confirm": "ลบแล้วร่างใหม่",
   "confirmations.redraft.message": "คุณแน่ใจหรือไม่ว่าต้องการลบโพสต์นี้แล้วร่างโพสต์ใหม่? รายการโปรดและการดันจะสูญหาย และการตอบกลับโพสต์ดั้งเดิมจะไม่มีความเกี่ยวพัน",
   "confirmations.redraft.title": "ลบแล้วร่างโพสต์ใหม่?",
+<<<<<<< HEAD
+=======
+  "confirmations.remove_from_followers.confirm": "เอาผู้ติดตามออก",
+  "confirmations.remove_from_followers.title": "เอาผู้ติดตามออก?",
+  "confirmations.revoke_quote.confirm": "เอาโพสต์ออก",
+  "confirmations.revoke_quote.title": "เอาโพสต์ออก?",
+  "confirmations.unblock.confirm": "เลิกปิดกั้น",
+  "confirmations.unblock.title": "เลิกปิดกั้น {name}?",
+>>>>>>> v4.5.0
   "confirmations.unfollow.confirm": "เลิกติดตาม",
-  "confirmations.unfollow.message": "คุณแน่ใจหรือไม่ว่าต้องการเลิกติดตาม {name}?",
-  "confirmations.unfollow.title": "เลิกติดตามผู้ใช้?",
+  "confirmations.unfollow.title": "เลิกติดตาม {name}?",
+  "confirmations.withdraw_request.confirm": "ถอนคำขอ",
   "content_warning.hide": "ซ่อนโพสต์",
   "content_warning.show": "แสดงต่อไป",
   "content_warning.show_more": "แสดงเพิ่มเติม",
@@ -268,6 +289,7 @@
   "domain_pill.your_handle": "นามของคุณ:",
   "domain_pill.your_server": "บ้านดิจิทัลของคุณ ที่ซึ่งโพสต์ทั้งหมดของคุณอาศัยอยู่ ไม่ชอบเซิร์ฟเวอร์นี้? ถ่ายโอนเซิร์ฟเวอร์เมื่อใดก็ได้และนำผู้ติดตามของคุณไปด้วยเช่นกัน",
   "domain_pill.your_username": "ตัวระบุที่ไม่ซ้ำกันของคุณในเซิร์ฟเวอร์นี้ เป็นไปได้ที่จะค้นหาผู้ใช้ที่มีชื่อผู้ใช้เดียวกันในเซิร์ฟเวอร์ที่แตกต่างกัน",
+  "dropdown.empty": "เลือกตัวเลือก",
   "embed.instructions": "ฝังโพสต์นี้ในเว็บไซต์ของคุณโดยคัดลอกโค้ดด้านล่าง",
   "embed.preview": "นี่คือลักษณะของการฝังที่จะปรากฏ:",
   "emoji_button.activity": "กิจกรรม",
@@ -317,11 +339,15 @@
   "explore.trending_links": "ข่าว",
   "explore.trending_statuses": "โพสต์",
   "explore.trending_tags": "แฮชแท็ก",
+<<<<<<< HEAD
   "federation.change": "Adjust status federation",
   "federation.federated.long": "Allow toot to reach other instances",
   "federation.federated.short": "Federated",
   "federation.local_only.long": "Restrict this toot only to my instance",
   "federation.local_only.short": "Local-only",
+=======
+  "featured_carousel.header": "{count, plural, other {โพสต์ที่ปักหมุด}}",
+>>>>>>> v4.5.0
   "featured_carousel.next": "ถัดไป",
   "featured_carousel.post": "โพสต์",
   "featured_carousel.previous": "ก่อนหน้า",
@@ -378,6 +404,11 @@
   "generic.saved": "บันทึกแล้ว",
   "getting_started.heading": "เริ่มต้นใช้งาน",
   "hashtag.admin_moderation": "เปิดส่วนติดต่อการกลั่นกรองสำหรับ #{name}",
+<<<<<<< HEAD
+=======
+  "hashtag.browse": "เรียกดูโพสต์ใน #{hashtag}",
+  "hashtag.browse_from_account": "เรียกดูโพสต์จาก @{name} ใน #{hashtag}",
+>>>>>>> v4.5.0
   "hashtag.column_header.tag_mode.all": "และ {additional}",
   "hashtag.column_header.tag_mode.any": "หรือ {additional}",
   "hashtag.column_header.tag_mode.none": "โดยไม่มี {additional}",
@@ -402,8 +433,6 @@
   "hints.profiles.see_more_followers": "ดูผู้ติดตามเพิ่มเติมใน {domain}",
   "hints.profiles.see_more_follows": "ดูการติดตามเพิ่มเติมใน {domain}",
   "hints.profiles.see_more_posts": "ดูโพสต์เพิ่มเติมใน {domain}",
-  "hints.threads.replies_may_be_missing": "การตอบกลับจากเซิร์ฟเวอร์อื่น ๆ อาจขาดหายไป",
-  "hints.threads.see_more": "ดูการตอบกลับเพิ่มเติมใน {domain}",
   "home.column_settings.show_reblogs": "แสดงการดัน",
   "home.column_settings.show_replies": "แสดงการตอบกลับ",
   "home.hide_announcements": "ซ่อนประกาศ",
@@ -423,20 +452,27 @@
   "ignore_notifications_modal.not_following_title": "เพิกเฉยการแจ้งเตือนจากผู้คนที่คุณไม่ได้ติดตาม?",
   "ignore_notifications_modal.private_mentions_title": "เพิกเฉยการแจ้งเตือนจากการกล่าวถึงแบบส่วนตัวที่ไม่พึงประสงค์?",
   "info_button.label": "ช่วยเหลือ",
+<<<<<<< HEAD
   "interaction_modal.action.favourite": "เพื่อดำเนินการต่อ คุณจำเป็นต้องชื่นชอบจากบัญชีของคุณ",
   "interaction_modal.action.follow": "เพื่อดำเนินการต่อ คุณจำเป็นต้องติดตามจากบัญชีของคุณ",
   "interaction_modal.action.reblog": "เพื่อดำเนินการต่อ คุณจำเป็นต้องดันจากบัญชีของคุณ",
   "interaction_modal.action.reply": "เพื่อดำเนินการต่อ คุณจำเป็นต้องตอบกลับจากบัญชีของคุณ",
   "interaction_modal.action.vote": "เพื่อดำเนินการต่อ คุณจำเป็นต้องลงคะแนนจากบัญชีของคุณ",
+=======
+>>>>>>> v4.5.0
   "interaction_modal.go": "ไป",
   "interaction_modal.no_account_yet": "ยังไม่มีบัญชี?",
   "interaction_modal.on_another_server": "ในเซิร์ฟเวอร์อื่น",
   "interaction_modal.on_this_server": "ในเซิร์ฟเวอร์นี้",
+<<<<<<< HEAD
   "interaction_modal.title.favourite": "ชื่นชอบโพสต์ของ {name}",
   "interaction_modal.title.follow": "ติดตาม {name}",
   "interaction_modal.title.reblog": "ดันโพสต์ของ {name}",
   "interaction_modal.title.reply": "ตอบกลับโพสต์ของ {name}",
   "interaction_modal.title.vote": "ลงคะแนนในการสำรวจความคิดเห็นของ {name}",
+=======
+  "interaction_modal.title": "ลงชื่อเข้าเพื่อดำเนินการต่อ",
+>>>>>>> v4.5.0
   "interaction_modal.username_prompt": "เช่น {example}",
   "intervals.full.days": "{number, plural, other {# วัน}}",
   "intervals.full.hours": "{number, plural, other {# ชั่วโมง}}",
@@ -476,6 +512,8 @@
   "keyboard_shortcuts.translate": "เพื่อแปลโพสต์",
   "keyboard_shortcuts.unfocus": "เลิกโฟกัสพื้นที่เขียนข้อความ/การค้นหา",
   "keyboard_shortcuts.up": "ย้ายขึ้นในรายการ",
+  "learn_more_link.got_it": "เข้าใจแล้ว",
+  "learn_more_link.learn_more": "เรียนรู้เพิ่มเติม",
   "lightbox.close": "ปิด",
   "lightbox.next": "ถัดไป",
   "lightbox.previous": "ก่อนหน้า",
@@ -548,6 +586,11 @@
   "navigation_bar.preferences": "การกำหนดลักษณะ",
   "navigation_bar.privacy_and_reach": "ความเป็นส่วนตัวและการเข้าถึง",
   "navigation_bar.search": "ค้นหา",
+<<<<<<< HEAD
+=======
+  "navigation_panel.collapse_lists": "ยุบเมนูรายการ",
+  "navigation_panel.expand_lists": "ขยายเมนูรายการ",
+>>>>>>> v4.5.0
   "not_signed_in_indicator.not_signed_in": "คุณจำเป็นต้องเข้าสู่ระบบเพื่อเข้าถึงทรัพยากรนี้",
   "notification.admin.report": "{name} ได้รายงาน {target}",
   "notification.admin.report_account": "{name} ได้รายงาน {count, plural, other {# โพสต์}}จาก {target} สำหรับ {category}",
@@ -701,7 +744,6 @@
   "privacy.public.long": "ใครก็ตามที่อยู่ในและนอก Mastodon",
   "privacy.public.short": "สาธารณะ",
   "privacy.unlisted.additional": "สิ่งนี้ทำงานเหมือนกับสาธารณะทุกประการ ยกเว้นโพสต์จะไม่ปรากฏในฟีดสดหรือแฮชแท็ก, การสำรวจ หรือการค้นหา Mastodon แม้ว่าคุณได้เลือกรับทั่วทั้งบัญชีก็ตาม",
-  "privacy.unlisted.long": "การประโคมอัลกอริทึมที่น้อยลง",
   "privacy.unlisted.short": "สาธารณะแบบเงียบ",
   "privacy_policy.last_updated": "อัปเดตล่าสุดเมื่อ {date}",
   "privacy_policy.title": "นโยบายความเป็นส่วนตัว",
@@ -720,6 +762,7 @@
   "relative_time.minutes": "{number} นาที",
   "relative_time.seconds": "{number} วินาที",
   "relative_time.today": "วันนี้",
+  "remove_quote_hint.button_label": "เข้าใจแล้ว",
   "reply_indicator.attachments": "{count, plural, other {# ไฟล์แนบ}}",
   "reply_indicator.cancel": "ยกเลิก",
   "reply_indicator.poll": "การสำรวจความคิดเห็น",
@@ -814,9 +857,12 @@
   "status.bookmark": "เพิ่มที่คั่นหน้า",
   "status.cancel_reblog_private": "เลิกดัน",
   "status.cannot_reblog": "ไม่สามารถดันโพสต์นี้",
+  "status.context.retry": "ลองใหม่",
+  "status.context.show": "แสดง",
   "status.continued_thread": "กระทู้ต่อเนื่อง",
   "status.copy": "คัดลอกลิงก์ไปยังโพสต์",
   "status.delete": "ลบ",
+  "status.delete.success": "ลบโพสต์แล้ว",
   "status.detailed_status": "มุมมองการสนทนาโดยละเอียด",
   "status.direct": "กล่าวถึง @{name} แบบส่วนตัว",
   "status.direct_indicator": "การกล่าวถึงแบบส่วนตัว",
@@ -840,16 +886,22 @@
   "status.mute_conversation": "ซ่อนการสนทนา",
   "status.open": "ขยายโพสต์นี้",
   "status.pin": "ปักหมุดในโปรไฟล์",
+<<<<<<< HEAD
   "status.quote_post_author": "โพสต์โดย {name}",
+=======
+>>>>>>> v4.5.0
   "status.read_more": "อ่านเพิ่มเติม",
   "status.reblog": "ดัน",
-  "status.reblog_private": "ดันด้วยการมองเห็นดั้งเดิม",
   "status.reblogged_by": "{name} ได้ดัน",
   "status.reblogs": "{count, plural, other {การดัน}}",
   "status.reblogs.empty": "ยังไม่มีใครดันโพสต์นี้ เมื่อใครสักคนดัน เขาจะปรากฏที่นี่",
   "status.redraft": "ลบแล้วร่างใหม่",
   "status.remove_bookmark": "เอาที่คั่นหน้าออก",
   "status.remove_favourite": "เอาออกจากรายการโปรด",
+<<<<<<< HEAD
+=======
+  "status.remove_quote": "เอาออก",
+>>>>>>> v4.5.0
   "status.replied_in_thread": "ตอบกลับในกระทู้",
   "status.replied_to": "ตอบกลับ {name}",
   "status.reply": "ตอบกลับ",
@@ -908,5 +960,6 @@
   "video.mute": "ปิดเสียง",
   "video.pause": "หยุดชั่วคราว",
   "video.play": "เล่น",
-  "video.unmute": "เลิกปิดเสียง"
+  "video.unmute": "เลิกปิดเสียง",
+  "visibility_modal.save": "บันทึก"
 }
