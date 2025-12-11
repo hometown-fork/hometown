@@ -24,11 +24,7 @@
   "account.blocking": "Engelleme",
   "account.cancel_follow_request": "Takip isteğini geri çek",
   "account.copy": "Gönderi bağlantısını kopyala",
-<<<<<<< HEAD
-  "account.direct": "@{name} kullanıcısına özel olarak değin",
-=======
   "account.direct": "@{name} kullanıcısından özel olarak bahset",
->>>>>>> v4.5.0
   "account.disable_notifications": "@{name} kişisinin gönderi bildirimlerini kapat",
   "account.domain_blocking": "Alan adını engelleme",
   "account.edit_profile": "Profili düzenle",
@@ -266,14 +262,11 @@
   "confirmations.remove_from_followers.confirm": "Takipçi kaldır",
   "confirmations.remove_from_followers.message": "{name} sizi takip etmeyi bırakacaktır. Devam etmek istediğinize emin misiniz?",
   "confirmations.remove_from_followers.title": "Takipçiyi kaldır?",
-<<<<<<< HEAD
-=======
   "confirmations.revoke_quote.confirm": "Gönderiyi kaldır",
   "confirmations.revoke_quote.message": "Bu işlem geri alınamaz.",
   "confirmations.revoke_quote.title": "Gönderiyi silmek ister misiniz?",
   "confirmations.unblock.confirm": "Engeli kaldır",
   "confirmations.unblock.title": "{name} için engel kaldırılsın mı?",
->>>>>>> v4.5.0
   "confirmations.unfollow.confirm": "Takibi bırak",
   "confirmations.unfollow.title": "{name} takipten çıkılsın mı?",
   "confirmations.withdraw_request.confirm": "İsteği geri çek",
@@ -456,11 +449,6 @@
   "hints.profiles.see_more_followers": "{domain} adresinde daha fazla takipçi gör",
   "hints.profiles.see_more_follows": "{domain} adresinde daha fazla takip edilen gör",
   "hints.profiles.see_more_posts": "{domain} adresinde daha fazla gönderi gör",
-<<<<<<< HEAD
-  "hints.threads.replies_may_be_missing": "Diğer sunuculardan yanıtlar eksik olabilir.",
-  "hints.threads.see_more": "{domain} adresinde daha fazla yanıt gör",
-=======
->>>>>>> v4.5.0
   "home.column_settings.show_quotes": "Alıntıları göster",
   "home.column_settings.show_reblogs": "Yeniden paylaşımları göster",
   "home.column_settings.show_replies": "Yanıtları göster",
@@ -482,28 +470,12 @@
   "ignore_notifications_modal.private_mentions_title": "İstenmeyen özel bahsetmelerden gelen bildirimleri yoksay?",
   "info_button.label": "Yardım",
   "info_button.what_is_alt_text": "<h1>Alternatif metin nedir?</h1><p>Alternatif metin, görme bozukluğu olan, düşük bant genişliğine sahip bağlantıları olan veya ekstra bağlam arayan kişiler için görsel açıklamaları sağlar.</p><p>Net, sade ve nesnel alternatif metin yazarak herkes için erişilebilirliği ve anlaşılabilirliği iyileştirebilirsiniz.</p><ul><li>Önemlileri yakalayın</li><li>Resimlerdeki metni özetleyin</li><li>Düzenli cümle yapısı kullanın</li><li>Gereksiz bilgilerden kaçının</li><li>Karmaşık görsellerde (şemalar veya haritalar gibi) trendlere ve temel bulgulara odaklanın</li></ul>",
-<<<<<<< HEAD
-  "interaction_modal.action.favourite": "Devam etmek için, hesabınızı kullanarak beğenmelisiniz.",
-  "interaction_modal.action.follow": "Devam etmek için, hesabınızı kullanarak takip etmelisiniz.",
-  "interaction_modal.action.reblog": "Devam etmek için, hesabınızı kullanarak tekrar göndermelisiniz.",
-  "interaction_modal.action.reply": "Devam etmek için, hesabınızı kullanarak yanıt vermelisiniz.",
-  "interaction_modal.action.vote": "Devam etmek için, hesabınızı kullanarak oylamalısınız.",
-=======
   "interaction_modal.action": "{name}'nin gönderisiyle etkileşim kurmak için, kullandığınız Mastodon sunucusunda hesabınıza giriş yapmanız gerekir.",
->>>>>>> v4.5.0
   "interaction_modal.go": "Git",
   "interaction_modal.no_account_yet": "Henüz bir hesabınız yok mu?",
   "interaction_modal.on_another_server": "Farklı bir sunucuda",
   "interaction_modal.on_this_server": "Bu sunucuda",
-<<<<<<< HEAD
-  "interaction_modal.title.favourite": "{name} kişisinin gönderisini favorilerine ekle",
-  "interaction_modal.title.follow": "{name} kişisini takip et",
-  "interaction_modal.title.reblog": "{name} kişisinin gönderisini yeniden paylaş",
-  "interaction_modal.title.reply": "{name} kişisinin gönderisine yanıt ver",
-  "interaction_modal.title.vote": "{name} kullanıcısının anketinde oy kullan",
-=======
   "interaction_modal.title": "Devam etmek için oturum açın",
->>>>>>> v4.5.0
   "interaction_modal.username_prompt": "Örnek: {example}",
   "intervals.full.days": "{number, plural, one {# gün} other {# gün}}",
   "intervals.full.hours": "{number, plural, one {# saat} other {# saat}}",
@@ -944,15 +916,6 @@
   "status.mute_conversation": "Sohbeti sessize al",
   "status.open": "Bu gönderiyi genişlet",
   "status.pin": "Profile sabitle",
-<<<<<<< HEAD
-  "status.quote_error.filtered": "Bazı filtrelerinizden dolayı gizlenmiştir",
-  "status.quote_error.not_found": "Bu gönderi görüntülenemez.",
-  "status.quote_error.pending_approval": "Bu gönderi özgün yazarın onayını bekliyor.",
-  "status.quote_error.rejected": "Bu gönderi, özgün yazar alıntılanmasına izin vermediği için görüntülenemez.",
-  "status.quote_error.removed": "Bu gönderi yazarı tarafından kaldırıldı.",
-  "status.quote_error.unauthorized": "Bu gönderiyi, yetkiniz olmadığı için görüntüleyemiyorsunuz.",
-  "status.quote_post_author": "{name} gönderisi",
-=======
   "status.quote": "Teklif",
   "status.quote.cancel": "Teklifi iptal et",
   "status.quote_error.blocked_account_hint.title": "Bu gönderi @{name} kişisini engellediğiniz için gizlenmiştir.",
@@ -975,7 +938,6 @@
   "status.quotes.empty": "Henüz hiç kimse bu gönderiyi alıntılamadı. Herhangi bir kullanıcı alıntıladığında burada görüntülenecek.",
   "status.quotes.local_other_disclaimer": "Yazar tarafından reddedilen alıntılar gösterilmez.",
   "status.quotes.remote_other_disclaimer": "Yalnızca {domain} adresinden gelen alıntılar burada gösterilir. Yazar tarafından reddedilen alıntılar gösterilmez.",
->>>>>>> v4.5.0
   "status.read_more": "Devamını okuyun",
   "status.reblog": "Yeniden paylaş",
   "status.reblog_or_quote": "Yükselt veya alıntıla",
@@ -986,10 +948,7 @@
   "status.redraft": "Sil,Düzenle ve yeniden-paylaş",
   "status.remove_bookmark": "Yer işaretini kaldır",
   "status.remove_favourite": "Favorilerden kaldır",
-<<<<<<< HEAD
-=======
   "status.remove_quote": "Kaldır",
->>>>>>> v4.5.0
   "status.replied_in_thread": "Akışta yanıtlandı",
   "status.replied_to": "{name} kullanıcısına yanıt verdi",
   "status.reply": "Yanıtla",
@@ -1034,10 +993,7 @@
   "upload_button.label": "Resim, video veya ses dosyası ekleyin",
   "upload_error.limit": "Dosya yükleme sınırı aşıldı.",
   "upload_error.poll": "Anketlerde dosya yüklemesine izin verilmez.",
-<<<<<<< HEAD
-=======
   "upload_error.quote": "Anketlerde dosya yüklemesine izin verilmez.",
->>>>>>> v4.5.0
   "upload_form.drag_and_drop.instructions": "Bir medya eklentisini taşımak için, boşluk veya enter tuşuna basın. Sürükleme sırasında medya eklentisini herhangi bir yöne hareket ettirmek için ok tuşlarını kullanın. Medya eklentisini yeni konumuna bırakmak için tekrar boşluk veya enter tuşuna basın veya işlemi iptal etmek için escape tuşuna basın.",
   "upload_form.drag_and_drop.on_drag_cancel": "Sürükleme iptal edildi. Medya eklentisi {item} bırakıldı.",
   "upload_form.drag_and_drop.on_drag_end": "Medya eklentisi {item} bırakıldı.",
@@ -1060,9 +1016,6 @@
   "video.skip_forward": "İleriye atla",
   "video.unmute": "Sesi aç",
   "video.volume_down": "Sesi kıs",
-<<<<<<< HEAD
-  "video.volume_up": "Sesi yükselt"
-=======
   "video.volume_up": "Sesi yükselt",
   "visibility_modal.button_title": "Görünürlüğü ayarla",
   "visibility_modal.direct_quote_warning.text": "Mevcut ayarları kaydederseniz, gömülü alıntı bir bağlantıya dönüştürülür.",
@@ -1080,5 +1033,4 @@
   "visibility_modal.quote_nobody": "Sadece ben",
   "visibility_modal.quote_public": "Herkesten",
   "visibility_modal.save": "Kaydet"
->>>>>>> v4.5.0
 }

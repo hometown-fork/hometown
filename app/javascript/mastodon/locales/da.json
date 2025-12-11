@@ -28,10 +28,7 @@
   "account.disable_notifications": "Giv mig ikke længere en notifikation, når @{name} laver indlæg",
   "account.domain_blocking": "Blokerer domæne",
   "account.edit_profile": "Redigér profil",
-<<<<<<< HEAD
-=======
   "account.edit_profile_short": "Redigér",
->>>>>>> v4.5.0
   "account.enable_notifications": "Giv mig besked, når @{name} laver indlæg",
   "account.endorse": "Fremhæv på profil",
   "account.familiar_followers_many": "Følges af {name1}, {name2} og {othersCount, plural, one {# mere, man kender} other {# mere, du kender}}",
@@ -71,11 +68,7 @@
   "account.mute_notifications_short": "Sluk for notifikationer",
   "account.mute_short": "Skjul",
   "account.muted": "Skjult",
-<<<<<<< HEAD
-  "account.muting": "Tavsgørelse",
-=======
   "account.muting": "Skjuler",
->>>>>>> v4.5.0
   "account.mutual": "I følger hinanden",
   "account.no_bio": "Ingen beskrivelse til rådighed.",
   "account.open_original_page": "Åbn oprindelig side",
@@ -254,8 +247,6 @@
   "confirmations.missing_alt_text.secondary": "Læg op alligevel",
   "confirmations.missing_alt_text.title": "Tilføj alt-tekst?",
   "confirmations.mute.confirm": "Skjul",
-<<<<<<< HEAD
-=======
   "confirmations.private_quote_notify.cancel": "Tilbage til redigering",
   "confirmations.private_quote_notify.confirm": "Offentliggør indlæg",
   "confirmations.private_quote_notify.do_not_show_again": "Vis ikke denne besked igen",
@@ -265,21 +256,17 @@
   "confirmations.quiet_post_quote_info.got_it": "Forstået",
   "confirmations.quiet_post_quote_info.message": "Når du citerer et stille offentligt indlæg, vil dit indlæg blive skjult fra trendtidslinjer.",
   "confirmations.quiet_post_quote_info.title": "Citering af stille offentlige indlæg",
->>>>>>> v4.5.0
   "confirmations.redraft.confirm": "Slet og omskriv",
   "confirmations.redraft.message": "Sikker på, at dette indlæg skal slettes og omskrives? Favoritter og fremhævelser går tabt, og svar til det oprindelige indlæg mister tilknytningen.",
   "confirmations.redraft.title": "Slet og omskriv indlæg?",
   "confirmations.remove_from_followers.confirm": "Fjern følger",
   "confirmations.remove_from_followers.message": "{name} vil ikke længere følge dig. Er du sikker på, at du vil fortsætte?",
   "confirmations.remove_from_followers.title": "Fjern følger?",
-<<<<<<< HEAD
-=======
   "confirmations.revoke_quote.confirm": "Fjern indlæg",
   "confirmations.revoke_quote.message": "Denne handling kan ikke fortrydes.",
   "confirmations.revoke_quote.title": "Fjern indlæg?",
   "confirmations.unblock.confirm": "Fjern blokering",
   "confirmations.unblock.title": "Fjern blokering af {name}?",
->>>>>>> v4.5.0
   "confirmations.unfollow.confirm": "Følg ikke længere",
   "confirmations.unfollow.title": "Følg ikke længere {name}?",
   "confirmations.withdraw_request.confirm": "Annullér anmodning",
@@ -325,10 +312,7 @@
   "domain_pill.your_handle": "Dit handle:",
   "domain_pill.your_server": "Dit digitale hjem, hvor alle dine indlæg lever. Synes ikke om den her server? Du kan til enhver tid rykke over på en anden server og beholde dine følgere.",
   "domain_pill.your_username": "Din entydige identifikator på denne server. Det er muligt at finde brugere med samme brugernavn på forskellige servere.",
-<<<<<<< HEAD
-=======
   "dropdown.empty": "Vælg en indstilling",
->>>>>>> v4.5.0
   "embed.instructions": "Indlejr dette indlæg på din hjemmeside ved at kopiere nedenstående kode.",
   "embed.preview": "Sådan kommer det til at se ud:",
   "emoji_button.activity": "Aktivitet",
@@ -357,10 +341,7 @@
   "empty_column.bookmarked_statuses": "Du har ingen bogmærkede indlæg endnu. Når du bogmærker ét, vil det dukke op hér.",
   "empty_column.community": "Den lokale tidslinje er tom. Skriv noget offentligt for at sætte tingene i gang!",
   "empty_column.direct": "Du har ikke nogen private omtaler endnu. Når du sender eller modtager en, vil den blive vist her.",
-<<<<<<< HEAD
-=======
   "empty_column.disabled_feed": "Dette feed er blevet deaktiveret af dine serveradministratorer.",
->>>>>>> v4.5.0
   "empty_column.domain_blocks": "Ingen blokerede domæner endnu.",
   "empty_column.explore_statuses": "Ingen nye trends lige nu. Tjek igen senere!",
   "empty_column.favourited_statuses": "Du har endnu ingen favoritindlæg. Når du føjer et opslag til favoritter, vil det dukke op her.",
@@ -368,11 +349,7 @@
   "empty_column.follow_requests": "Du har endnu ingen følgeanmodninger. Når du modtager én, vil den dukke op her.",
   "empty_column.followed_tags": "Ingen hashtags følges endnu. Når det sker, vil de fremgå her.",
   "empty_column.hashtag": "Der er intet med dette hashtag endnu.",
-<<<<<<< HEAD
-  "empty_column.home": "Din hjemmetidslinje er tom! Følg nogle personer, for at fylde den op.",
-=======
   "empty_column.home": "Din hjem-tidslinje er tom! Følg nogle personer, for at fylde den op.",
->>>>>>> v4.5.0
   "empty_column.list": "Der er ikke noget på denne liste endnu. Når medlemmer af denne liste udgiver nye indlæg, vil de blive vist her.",
   "empty_column.mutes": "Du har endnu ikke skjult nogle brugere.",
   "empty_column.notification_requests": "Alt er klar! Der er intet her. Når der modtages nye notifikationer, fremgår de her jævnfør dine indstillinger.",
@@ -389,19 +366,16 @@
   "explore.trending_links": "Nyheder",
   "explore.trending_statuses": "Indlæg",
   "explore.trending_tags": "Hashtags",
-<<<<<<< HEAD
-  "federation.change": "Adjust status federation",
-  "federation.federated.long": "Allow toot to reach other instances",
-  "federation.federated.short": "Federated",
-  "federation.local_only.long": "Restrict this toot only to my instance",
-  "federation.local_only.short": "Local-only",
-=======
->>>>>>> v4.5.0
   "featured_carousel.header": "{count, plural, one {Fastgjort indlæg} other {Fastgjorte indlæg}}",
   "featured_carousel.next": "Næste",
   "featured_carousel.post": "Indlæg",
   "featured_carousel.previous": "Foregående",
   "featured_carousel.slide": "{index} af {total}",
+  "federation.change": "Adjust status federation",
+  "federation.federated.long": "Allow toot to reach other instances",
+  "federation.federated.short": "Federated",
+  "federation.local_only.long": "Restrict this toot only to my instance",
+  "federation.local_only.short": "Local-only",
   "filter_modal.added.context_mismatch_explanation": "Denne filterkategori omfatter ikke konteksten, hvorunder dette indlæg er tilgået. Redigér filteret, hvis indlægget også ønskes filtreret i denne kontekst.",
   "filter_modal.added.context_mismatch_title": "Kontekstmisforhold!",
   "filter_modal.added.expired_explanation": "Denne filterkategori er udløbet. Ændr dens udløbsdato, for at anvende den.",
@@ -480,11 +454,6 @@
   "hints.profiles.see_more_followers": "Se flere følgere på {domain}",
   "hints.profiles.see_more_follows": "Se flere fulgte på {domain}",
   "hints.profiles.see_more_posts": "Se flere indlæg på {domain}",
-<<<<<<< HEAD
-  "hints.threads.replies_may_be_missing": "Der kan mangle svar fra andre servere.",
-  "hints.threads.see_more": "Se flere svar på {domain}",
-=======
->>>>>>> v4.5.0
   "home.column_settings.show_quotes": "Vis citater",
   "home.column_settings.show_reblogs": "Vis fremhævelser",
   "home.column_settings.show_replies": "Vis svar",
@@ -506,28 +475,12 @@
   "ignore_notifications_modal.private_mentions_title": "Ignorér notifikationer fra uopfordrede private omtaler?",
   "info_button.label": "Hjælp",
   "info_button.what_is_alt_text": "<h1>Hvad er alt-tekst?</h1> <p>Alt-tekst leverer billedbeskrivelser til folk med synsnedsættelser, lav båndbredde-forbindelser eller med ønske om ekstra kontekst.</p> <p>Tilgængelighed og forståelse kan forbedres for alle ved at skrive klar, kortfattet og objektiv alt-tekst.</p> <ul> <li>Fang vigtige elementer</li> <li>Opsummér tekst i billeder</li> <li>Brug almindelig sætningsstruktur</li> <li>Undgå overflødig information</li> <li>Fokusér på tendenser og centrale resultater i kompleks grafik (såsom diagrammer eller kort)</li> </ul>",
-<<<<<<< HEAD
-  "interaction_modal.action.favourite": "For at fortsætte, skal du føje til favoritter fra din konto.",
-  "interaction_modal.action.follow": "For at fortsætte skal du følge fra din konto.",
-  "interaction_modal.action.reblog": "For at fortsætte, skal du vælge fremhæv fra din konto.",
-  "interaction_modal.action.reply": "For at fortsætte, skal du besvare fra din konto.",
-  "interaction_modal.action.vote": "For at fortsætte, skal du stemme fra din konto.",
-=======
   "interaction_modal.action": "For at interagere med {name}'s indlæg skal du logge ind på din konto på den Mastodon-server, du bruger.",
->>>>>>> v4.5.0
   "interaction_modal.go": "Gå",
   "interaction_modal.no_account_yet": "Har endnu ingen konto?",
   "interaction_modal.on_another_server": "På en anden server",
   "interaction_modal.on_this_server": "På denne server",
-<<<<<<< HEAD
-  "interaction_modal.title.favourite": "Føj {name}s indlæg til favoritter",
-  "interaction_modal.title.follow": "Følg {name}",
-  "interaction_modal.title.reblog": "Fremhæv {name}s indlæg",
-  "interaction_modal.title.reply": "Besvar {name}s indlæg",
-  "interaction_modal.title.vote": "Stem i {name}s afstemning",
-=======
   "interaction_modal.title": "Log ind for at fortsætte",
->>>>>>> v4.5.0
   "interaction_modal.username_prompt": "F.eks. {example}",
   "intervals.full.days": "{number, plural, one {# dag} other {# dage}}",
   "intervals.full.hours": "{number, plural, one {# time} other {# timer}}",
@@ -591,11 +544,7 @@
   "lists.done": "Færdig",
   "lists.edit": "Redigér liste",
   "lists.exclusive": "Skjul medlemmer i Hjem",
-<<<<<<< HEAD
-  "lists.exclusive_hint": "Er nogen er på denne liste, skjul personen i hjemme-feeds for at undgå at se vedkommendes indlæg to gange.",
-=======
   "lists.exclusive_hint": "Hvis nogen er på denne liste, så skjul dem i hjem-feed for at undgå at se deres indlæg to gange.",
->>>>>>> v4.5.0
   "lists.find_users_to_add": "Find brugere at tilføje",
   "lists.list_members_count": "{count, plural, one {# medlem} other {# medlemmer}}",
   "lists.list_name": "Listetitel",
@@ -647,11 +596,7 @@
   "navigation_bar.mutes": "Skjulte brugere",
   "navigation_bar.opened_in_classic_interface": "Indlæg, konti og visse andre sider åbnes som standard i den klassiske webgrænseflade.",
   "navigation_bar.preferences": "Præferencer",
-<<<<<<< HEAD
-  "navigation_bar.privacy_and_reach": "Fortrolighed og udbredelse",
-=======
   "navigation_bar.privacy_and_reach": "Fortrolighed og rækkevidde",
->>>>>>> v4.5.0
   "navigation_bar.search": "Søg",
   "navigation_bar.search_trends": "Søg/Trender",
   "navigation_panel.collapse_followed_tags": "Sammenfold menuen Fulgte hashtags",
@@ -679,10 +624,7 @@
   "notification.label.mention": "Omtale",
   "notification.label.private_mention": "Privat omtale",
   "notification.label.private_reply": "Privat svar",
-<<<<<<< HEAD
-=======
   "notification.label.quote": "{name} citerede dit indlæg",
->>>>>>> v4.5.0
   "notification.label.reply": "Svar",
   "notification.mention": "Omtale",
   "notification.mentioned_you": "{name} omtalte dig",
@@ -697,10 +639,7 @@
   "notification.moderation_warning.action_suspend": "Din konto er suspenderet.",
   "notification.own_poll": "Din afstemning er afsluttet",
   "notification.poll": "En afstemning, hvori du har stemt, er slut",
-<<<<<<< HEAD
-=======
   "notification.quoted_update": "{name} redigerede et indlæg, du har citeret",
->>>>>>> v4.5.0
   "notification.reblog": "{name} fremhævede dit indlæg",
   "notification.reblog.name_and_others_with_link": "{name} og <a>{count, plural, one {# anden} other {# andre}}</a> fremhævede dit indlæg",
   "notification.relationships_severance_event": "Mistede forbindelser med {name}",
@@ -744,10 +683,7 @@
   "notifications.column_settings.mention": "Omtaler:",
   "notifications.column_settings.poll": "Afstemningsresultater:",
   "notifications.column_settings.push": "Push-notifikationer",
-<<<<<<< HEAD
-=======
   "notifications.column_settings.quote": "Citater:",
->>>>>>> v4.5.0
   "notifications.column_settings.reblog": "Fremhævelser:",
   "notifications.column_settings.show": "Vis i kolonne",
   "notifications.column_settings.sound": "Afspil lyd",
@@ -823,16 +759,11 @@
   "privacy.private.short": "Følgere",
   "privacy.public.long": "Alle på og udenfor Mastodon",
   "privacy.public.short": "Offentlig",
-<<<<<<< HEAD
-  "privacy.unlisted.additional": "Dette svarer til offentlig, bortset fra at indlægget ikke vises i live-feeds eller hashtags, udforsk eller Mastodon-søgning, selvom du har tilvalgt dette for kontoen.",
-  "privacy.unlisted.long": "Færre algoritmiske fanfarer",
-=======
   "privacy.quote.anyone": "{visibility}, alle kan citere",
   "privacy.quote.disabled": "{visibility}, citering deaktiveret",
   "privacy.quote.limited": "{visibility}, citering begrænset",
   "privacy.unlisted.additional": "Dette svarer til offentlig, bortset fra at indlægget ikke vises i live-feeds eller hashtags, udforsk eller Mastodon-søgning, selvom du har tilvalgt dette for kontoen.",
   "privacy.unlisted.long": "Skjult fra Mastodons søgeresultater, trender og offentlige tidslinjer",
->>>>>>> v4.5.0
   "privacy.unlisted.short": "Offentlig (stille)",
   "privacy_policy.last_updated": "Senest opdateret {date}",
   "privacy_policy.title": "Privatlivspolitik",
@@ -902,11 +833,7 @@
   "report.thanks.title": "Ønsker ikke at se dette?",
   "report.thanks.title_actionable": "Tak for anmeldelsen, der vil blive set nærmere på dette.",
   "report.unfollow": "Følg ikke længere @{name}",
-<<<<<<< HEAD
-  "report.unfollow_explanation": "Du følger denne konto. For ikke længere at se vedkommendes indlæg i din hjemmestrøm, kan du stoppe med at følge dem.",
-=======
   "report.unfollow_explanation": "Du følger denne konto. Hvis du ikke længere vil se vedkommendes indlæg i dit hjem-feed, så stop med at følge dem.",
->>>>>>> v4.5.0
   "report_notification.attached_statuses": "{count, plural, one {{count} indlæg} other {{count} indlæg}} vedhæftet",
   "report_notification.categories.legal": "Juridisk",
   "report_notification.categories.legal_sentence": "ikke-tilladt indhold",
@@ -959,10 +886,7 @@
   "status.block": "Blokér @{name}",
   "status.bookmark": "Bogmærk",
   "status.cancel_reblog_private": "Fjern fremhævelse",
-<<<<<<< HEAD
-=======
   "status.cannot_quote": "Du har ikke tilladelse til at citere dette indlæg",
->>>>>>> v4.5.0
   "status.cannot_reblog": "Dette indlæg kan ikke fremhæves",
   "status.contains_quote": "Indeholder citat",
   "status.context.loading": "Indlæser flere svar",
@@ -998,18 +922,6 @@
   "status.mute_conversation": "Skjul samtale",
   "status.open": "Udvid dette indlæg",
   "status.pin": "Fastgør til profil",
-<<<<<<< HEAD
-  "status.quote_error.filtered": "Skjult grundet et af filterne",
-  "status.quote_error.not_found": "Dette indlæg kan ikke vises.",
-  "status.quote_error.pending_approval": "Dette indlæg afventer godkendelse fra den oprindelige forfatter.",
-  "status.quote_error.rejected": "Dette indlæg kan ikke vises, da den oprindelige forfatter ikke tillader citering heraf.",
-  "status.quote_error.removed": "Dette indlæg er fjernet af forfatteren.",
-  "status.quote_error.unauthorized": "Dette indlæg kan ikke vises, da man ikke har tilladelse til at se det.",
-  "status.quote_post_author": "Indlæg fra {name}",
-  "status.read_more": "Læs mere",
-  "status.reblog": "Fremhæv",
-  "status.reblog_private": "Fremhæv med oprindelig synlighed",
-=======
   "status.quote": "Citér",
   "status.quote.cancel": "Annullér citat",
   "status.quote_error.blocked_account_hint.title": "Dette indlæg er skjult, fordi du har blokeret @{name}.",
@@ -1036,17 +948,13 @@
   "status.reblog": "Fremhæv",
   "status.reblog_or_quote": "Fremhæv eller citér",
   "status.reblog_private": "Del igen med dine følgere",
->>>>>>> v4.5.0
   "status.reblogged_by": "{name} fremhævede",
   "status.reblogs": "{count, plural, one {# fremhævelse} other {# fremhævelser}}",
   "status.reblogs.empty": "Ingen har endnu fremhævet dette indlæg. Når nogen gør, vil det fremgå hér.",
   "status.redraft": "Slet og omskriv",
   "status.remove_bookmark": "Fjern bogmærke",
   "status.remove_favourite": "Fjern fra favoritter",
-<<<<<<< HEAD
-=======
   "status.remove_quote": "Fjern",
->>>>>>> v4.5.0
   "status.replied_in_thread": "Svarede i tråd",
   "status.replied_to": "Svarede {name}",
   "status.reply": "Besvar",
@@ -1091,10 +999,7 @@
   "upload_button.label": "Tilføj billed-, video- eller lydfil(er)",
   "upload_error.limit": "Grænse for filupload nået.",
   "upload_error.poll": "Filupload ikke tilladt for afstemninger.",
-<<<<<<< HEAD
-=======
   "upload_error.quote": "Fil-upload ikke tilladt i citater.",
->>>>>>> v4.5.0
   "upload_form.drag_and_drop.instructions": "For at opsamle en medievedhæftning, tryk på Mellemrum eller Retur. Mens der trækkes, benyt piletasterne til at flytte medievedhæftningen i en given retning. Tryk på Mellemrum eller Retur igen for at slippe medievedhæftningen på den nye position, eller tryk på Escape for at afbryde.",
   "upload_form.drag_and_drop.on_drag_cancel": "Træk blev afbrudt. Medievedhæftningen {item} blev sluppet.",
   "upload_form.drag_and_drop.on_drag_end": "Medievedhæftningen {item} er sluppet.",
@@ -1117,9 +1022,6 @@
   "video.skip_forward": "Overspring fremad",
   "video.unmute": "Slå lyd tl",
   "video.volume_down": "Lydstyrke ned",
-<<<<<<< HEAD
-  "video.volume_up": "Lydstyrke op"
-=======
   "video.volume_up": "Lydstyrke op",
   "visibility_modal.button_title": "Indstil synlighed",
   "visibility_modal.direct_quote_warning.text": "Hvis du gemmer de aktuelle indstillinger, vil det indlejrede citat blive konverteret til et link.",
@@ -1137,5 +1039,4 @@
   "visibility_modal.quote_nobody": "Kun mig",
   "visibility_modal.quote_public": "Alle",
   "visibility_modal.save": "Gem"
->>>>>>> v4.5.0
 }

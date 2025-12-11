@@ -206,19 +206,11 @@ is:
         destroy_user_role: Eyða hlutverki
         destroy_username_block: Eyða notandanafnsreglu
         disable_2fa_user: Gera tveggja-þátta auðkenningu óvirka
-<<<<<<< HEAD
-        disable_custom_emoji: Gera sérsniðið tjáningartákn óvirkt
-        disable_relay: Gera endurvarpa óvirkan
-        disable_sign_in_token_auth_user: Gera óvirka auðkenningu með teikni í tölvupósti fyrir notandann
-        disable_user: Gera notanda óvirkan
-        enable_custom_emoji: Virkja sérsniðið tjáningartákn
-=======
         disable_custom_emoji: Gera sérsniðið lyndistákn óvirkt
         disable_relay: Gera endurvarpa óvirkan
         disable_sign_in_token_auth_user: Gera óvirka auðkenningu með teikni í tölvupósti fyrir notandann
         disable_user: Gera notanda óvirkan
         enable_custom_emoji: Virkja sérsniðið lyndistákn
->>>>>>> v4.5.0
         enable_relay: Virkja endurvarpa
         enable_sign_in_token_auth_user: Gera virka auðkenningu með teikni í tölvupósti fyrir notandann
         enable_user: Virkja notanda
@@ -282,19 +274,11 @@ is:
         destroy_user_role_html: "%{name} eyddi hlutverki %{target}"
         destroy_username_block_html: "%{name} fjarlægði reglu varðandi notendanöfn sem innihalda %{target}"
         disable_2fa_user_html: "%{name} gerði kröfu um tveggja-þátta innskráningu óvirka fyrir notandann %{target}"
-<<<<<<< HEAD
-        disable_custom_emoji_html: "%{name} gerði tjáningartáknið %{target} óvirkt"
-        disable_relay_html: "%{name} gerði endurvarpann %{target} óvirkan"
-        disable_sign_in_token_auth_user_html: "%{name} gerði óvirka auðkenningu með teikni í tölvupósti fyrir %{target}"
-        disable_user_html: "%{name} gerði innskráningu óvirka fyrir notandann %{target}"
-        enable_custom_emoji_html: "%{name} gerði tjáningartáknið %{target} virkt"
-=======
         disable_custom_emoji_html: "%{name} gerði lyndistáknið %{target} óvirkt"
         disable_relay_html: "%{name} gerði endurvarpann %{target} óvirkan"
         disable_sign_in_token_auth_user_html: "%{name} gerði óvirka auðkenningu með teikni í tölvupósti fyrir %{target}"
         disable_user_html: "%{name} gerði innskráningu óvirka fyrir notandann %{target}"
         enable_custom_emoji_html: "%{name} gerði lyndistáknið %{target} virkt"
->>>>>>> v4.5.0
         enable_relay_html: "%{name} virkjaði endurvarpann %{target}"
         enable_sign_in_token_auth_user_html: "%{name} gerði virka auðkenningu með teikni í tölvupósti fyrir %{target}"
         enable_user_html: "%{name} gerði innskráningu virka fyrir notandann %{target}"
@@ -939,10 +923,7 @@ is:
       title: Færslur notanda - @%{name}
       trending: Vinsælt
       view_publicly: Skoða opinberlega
-<<<<<<< HEAD
-=======
       view_quoted_post: Skoða færslu sem vitnað er í
->>>>>>> v4.5.0
       visibility: Sýnileiki
       with_media: Með myndefni
     strikes:
@@ -1959,12 +1940,6 @@ is:
       limit: Þú hefur þegar fest leyfilegan hámarksfjölda færslna
       ownership: Færslur frá einhverjum öðrum er ekki hægt að festa
       reblog: Ekki er hægt að festa endurbirtingu
-<<<<<<< HEAD
-    quote_policies:
-      followers: Fylgjendur og notendur sem minnst er á
-      nobody: Einungis notendur sem minnst er á
-      public: Allir
-=======
     quote_error:
       not_available: Færsla ekki tiltæk
       pending_approval: Færsla í bið
@@ -1974,7 +1949,6 @@ is:
       nobody: Bara ég
       public: Hver sem er
     quote_post_author: Vitnaði í færslu frá %{acct}
->>>>>>> v4.5.0
     title: "%{name}: „%{quote}‟"
     visibilities:
       direct: Einkaspjall

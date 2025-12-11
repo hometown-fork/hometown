@@ -316,23 +316,14 @@ nn:
       unavailable_instance: "(domenenamn er utilgjengeleg)"
     announcements:
       back: Tilbake til kunngjeringane
-<<<<<<< HEAD
-      destroyed_msg: Kunngjøringen er slettet!
-=======
       destroyed_msg: Kunngjeringa er sletta
->>>>>>> v4.5.0
       edit:
         title: Rediger kunngjeringa
       empty: Fann ingen kunngjeringar.
       live: Direkte
       new:
-<<<<<<< HEAD
-        create: Lag kunngjøring
-        title: Ny kunngjøring
-=======
         create: Skriv ei kunngjering
         title: Ny kunngjering
->>>>>>> v4.5.0
       preview:
         disclaimer: Av di folk ikkje kan velja bort epostvarsel, bør du avgrensa dei til viktige kunngjeringar som datainnbrot eller varsel om at tenaren skal stengja.
         explanation_html: 'Denne eposten blir send til <strong>%{display_count} folk</strong>. Denne teksten vil stå i eposten:'
@@ -805,11 +796,8 @@ nn:
         view_dashboard_description: Gir brukere tilgang til dashbordet og ulike metrikker
         view_devops: DevOps
         view_devops_description: Gir brukere tilgang til Sidekiq og pgHero-dashbord
-<<<<<<< HEAD
-=======
         view_feeds: Sjå direktestraumar og emnestraumar
         view_feeds_description: La brukarar sjå direkte- og emnestraumane uansett innstillingar på tenaren
->>>>>>> v4.5.0
       title: Roller
     rules:
       add_new: Legg til regel
@@ -820,11 +808,7 @@ nn:
       empty: Ingen serverregler har blitt definert ennå.
       move_down: Flytt ned
       move_up: Flytt opp
-<<<<<<< HEAD
-      title: Server regler
-=======
       title: Tenarreglar
->>>>>>> v4.5.0
       translation: Omsetjing
       translations: Omsetjingar
       translations_explanation: Du kan leggja til omsetjingar av retningslinene for denne tenaren. Standardverdien vil syna dersom det ikkje finst noka omsetjing. Ver god å passa på at alle omsetjingar er i samsvar med standardverdien.
@@ -855,11 +839,7 @@ nn:
         title: Ikkje la brukarar indekserast av søkjemotorar som standard
       discovery:
         follow_recommendations: Fylgjeforslag
-<<<<<<< HEAD
-        preamble: Å framheva interessant innhald er vitalt i mottakinga av nye brukarar som ikkje nødvendigvis kjenner nokon på Mastodon. Kontroller korleis oppdagingsfunksjonane på tenaren din fungerar.
-=======
         preamble: Å framheva interessant innhald er viktig for å ta imot nye brukarar som ikkje nødvendigvis kjenner nokon på Mastodon. Kontroller korleis oppdagingsfunksjonane på tenaren din fungerer.
->>>>>>> v4.5.0
         privacy: Personvern
         profile_directory: Profilkatalog
         public_timelines: Offentlege tidsliner
@@ -941,10 +921,7 @@ nn:
       title: Kontoinnlegg - @%{name}
       trending: Populært
       view_publicly: Vis offentleg
-<<<<<<< HEAD
-=======
       view_quoted_post: Vis det siterte innlegget
->>>>>>> v4.5.0
       visibility: Synlighet
       with_media: Med media
     strikes:
@@ -1959,12 +1936,6 @@ nn:
       limit: Du har allereie festa så mange tut som det går an å festa
       ownership: Du kan ikkje festa andre sine tut
       reblog: Ei framheving kan ikkje festast
-<<<<<<< HEAD
-    quote_policies:
-      followers: Tilhengjarar og nemnde folk
-      nobody: Berre nemnde folk
-      public: Alle
-=======
     quote_error:
       not_available: Innlegget er ikkje tilgjengeleg
       pending_approval: Innlegget ventar
@@ -1974,7 +1945,6 @@ nn:
       nobody: Berre eg
       public: Allle
     quote_post_author: Siterte eit innlegg av %{acct}
->>>>>>> v4.5.0
     title: "%{name}: «%{quote}»"
     visibilities:
       direct: Privat omtale

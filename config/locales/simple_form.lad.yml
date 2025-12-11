@@ -311,13 +311,9 @@ lad:
         changelog: Ke troko?
         text: Terminos de servisyo
       terms_of_service_generator:
-<<<<<<< HEAD
-        domain: Domeno
-=======
         choice_of_law: Legislasyon aplikavle
         domain: Domeno
         min_age: Edad minima
->>>>>>> v4.5.0
       user:
         date_of_birth_1i: Diya
         date_of_birth_2i: Mez

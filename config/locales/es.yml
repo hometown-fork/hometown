@@ -839,11 +839,7 @@ es:
         title: Excluir por defecto a los usuarios de la indexación del motor de búsqueda
       discovery:
         follow_recommendations: Recomendaciones de cuentas
-<<<<<<< HEAD
-        preamble: Exponer contenido interesante a la superficie es fundamental para incorporar nuevos usuarios que pueden no conocer a nadie Mastodon. Controla cómo funcionan varias opciones de descubrimiento en tu servidor.
-=======
         preamble: Exponer contenido interesante es fundamental para incorporar nuevos usuarios que pueden no conocer a nadie en Mastodon. Controla cómo funcionan en tu servidor las diferentes opciones de descubrimiento.
->>>>>>> v4.5.0
         privacy: Privacidad
         profile_directory: Directorio de perfiles
         public_timelines: Lineas de tiempo públicas
@@ -925,10 +921,7 @@ es:
       title: Publicaciones de la cuenta - @%{name}
       trending: En tendencia
       view_publicly: Ver públicamente
-<<<<<<< HEAD
-=======
       view_quoted_post: Ver publicación citada
->>>>>>> v4.5.0
       visibility: Visibilidad
       with_media: Con multimedia
     strikes:
@@ -1203,12 +1196,7 @@ es:
     hint_html: Si quieres migrar de otra cuenta a esta, aquí puedes crear un alias, es necesario proceder antes de empezar a mover seguidores de la cuenta anterior a esta. Esta acción por sí misma es <strong>inofensiva y reversible</strong>. <strong>La migración de la cuenta se inicia desde la cuenta antigua</strong>.
     remove: Desvincular alias
   appearance:
-<<<<<<< HEAD
-    advanced_web_interface: Interfaz web avanzada
-    advanced_web_interface_hint: 'Si quieres aprovechar todo el ancho de tu pantalla, la interfaz web avanzada te permite configurar muchas columnas diferentes para ver toda la información que quieras al mismo tiempo: Inicio, notificaciones, cronología federada, cualquier número de listas y etiquetas.'
-=======
     advanced_settings: Ajustes avanzados
->>>>>>> v4.5.0
     animations_and_accessibility: Animaciones y accesibilidad
     boosting_preferences: Preferencias de impulso
     boosting_preferences_info_html: "<strong>Consejo:</strong> Sin importar los ajustes, pulsar <kbd>Mayus</kbd> al hacer <kbd>clic</kbd> en el icono de %{icon} Impulsar, dará impulso inmediatamente."
@@ -1948,17 +1936,6 @@ es:
       limit: Ya has fijado el número máximo de publicaciones
       ownership: La publicación de otra persona no puede fijarse
       reblog: Una publicación impulsada no puede fijarse
-<<<<<<< HEAD
-    quote_policies:
-      followers: Seguidores y usuarios mencionados
-      nobody: Solo usuarios mencionados
-      public: Cualquiera
-    title: "%{name}: «%{quote}»"
-    visibilities:
-      direct: Directa
-      private: Solo seguidores
-      private_long: Solo mostrar a tus seguidores
-=======
     quote_error:
       not_available: Publicación no disponible
       pending_approval: Publicación pendiente
@@ -1972,7 +1949,6 @@ es:
     visibilities:
       direct: Mención privada
       private: Solo seguidores
->>>>>>> v4.5.0
       public: Pública
       public_long: Cualquiera dentro y fuera de Mastodon
       unlisted: Pública silenciosa

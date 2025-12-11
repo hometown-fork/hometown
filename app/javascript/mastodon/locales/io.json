@@ -307,14 +307,11 @@
   "explore.trending_links": "Novaji",
   "explore.trending_statuses": "Posti",
   "explore.trending_tags": "Hashtagi",
-<<<<<<< HEAD
   "federation.change": "Adjust status federation",
   "federation.federated.long": "Allow toot to reach other instances",
   "federation.federated.short": "Federated",
   "federation.local_only.long": "Restrict this toot only to my instance",
   "federation.local_only.short": "Local-only",
-=======
->>>>>>> v4.5.0
   "filter_modal.added.context_mismatch_explanation": "Ca filtrilgrupo ne uzesis ad informo di ca adirita afisho.",
   "filter_modal.added.context_mismatch_title": "Kontenajneparigeso!",
   "filter_modal.added.expired_explanation": "Ca filtrilgrupo expiris, vu bezonas chanjar expirtempo por apliko.",
@@ -408,26 +405,10 @@
   "ignore_notifications_modal.private_mentions_title": "Ka ignorar savigi de nekonocita privata mencionii?",
   "info_button.label": "Helpo",
   "info_button.what_is_alt_text": "<h1>Quo alternativa texto es?</h1> <p>On povas bonigar adireblo e kompreno por omno per skribar klara, deslonga e fakta alternative texto.</p>",
-<<<<<<< HEAD
-  "interaction_modal.action.favourite": "Por durar, vu bezonas prizar de vua konto.",
-  "interaction_modal.action.follow": "Por durar, vu bezonas sequar de vua konto.",
-  "interaction_modal.action.reblog": "Por durar, vu bezonas riblogar de vua konto.",
-  "interaction_modal.action.reply": "Por durar, vu bezonas respondar de vua konto.",
-  "interaction_modal.action.vote": "Por durar, vu bezonas vocdonar de vua konto.",
-=======
->>>>>>> v4.5.0
   "interaction_modal.go": "Irar",
   "interaction_modal.no_account_yet": "Ka vu ne havas konto ankore?",
   "interaction_modal.on_another_server": "Che diferanta servilo",
   "interaction_modal.on_this_server": "Che ca servilo",
-<<<<<<< HEAD
-  "interaction_modal.title.favourite": "Favorizez ca posto da {name}",
-  "interaction_modal.title.follow": "Sequez {name}",
-  "interaction_modal.title.reblog": "Repetez posto di {name}",
-  "interaction_modal.title.reply": "Respondez posto di {name}",
-  "interaction_modal.title.vote": "Votar sur votinquesto di {name}",
-=======
->>>>>>> v4.5.0
   "interaction_modal.username_prompt": "Exemple {example}",
   "intervals.full.days": "{number, plural, one {# dio} other {# dii}}",
   "intervals.full.hours": "{number, plural, one {# horo} other {# hori}}",
@@ -688,10 +669,6 @@
   "privacy.public.long": "Ulu de e ne de Mastodon",
   "privacy.public.short": "Publike",
   "privacy.unlisted.additional": "Co kondutas exakte kam publika, ecepte la posto ne aparos en nuna flui o gretvorti, exploro, o sercho di Mastodon, mem se vu esas volunta totkonte.",
-<<<<<<< HEAD
-  "privacy.unlisted.long": "Min multa algoritmoridikuli",
-=======
->>>>>>> v4.5.0
   "privacy.unlisted.short": "Deslauta publiko",
   "privacy_policy.last_updated": "Antea novajo ye {date}",
   "privacy_policy.title": "Privatesguidilo",
@@ -820,10 +797,7 @@
   "status.history.created": "{name} kreis ye {date}",
   "status.history.edited": "{name} redaktis ye {date}",
   "status.load_more": "Kargar plu",
-<<<<<<< HEAD
   "status.local_only": "This post is only visible by other users of your instance",
-=======
->>>>>>> v4.5.0
   "status.media.open": "Klikez por apertar",
   "status.media.show": "Klikez por montrar",
   "status.media_hidden": "Audvidaji es celita",

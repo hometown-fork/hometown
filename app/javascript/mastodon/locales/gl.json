@@ -262,11 +262,6 @@
   "confirmations.remove_from_followers.confirm": "Quitar seguidora",
   "confirmations.remove_from_followers.message": "{name} vai deixar de seguirte. É isto o que queres?",
   "confirmations.remove_from_followers.title": "Quitar seguidora?",
-<<<<<<< HEAD
-  "confirmations.unfollow.confirm": "Deixar de seguir",
-  "confirmations.unfollow.message": "Tes certeza de querer deixar de seguir a {name}?",
-  "confirmations.unfollow.title": "Deixar de seguir á usuaria?",
-=======
   "confirmations.revoke_quote.confirm": "Eliminar publicación",
   "confirmations.revoke_quote.message": "Esta acción non se pode desfacer.",
   "confirmations.revoke_quote.title": "Eliminar publicación?",
@@ -276,7 +271,6 @@
   "confirmations.unfollow.title": "Deixa de seguir a {name}?",
   "confirmations.withdraw_request.confirm": "Retirar solicitude",
   "confirmations.withdraw_request.title": "Retirar a petición de seguimento para {name}?",
->>>>>>> v4.5.0
   "content_warning.hide": "Agochar publicación",
   "content_warning.show": "Mostrar igualmente",
   "content_warning.show_more": "Mostrar máis",
@@ -372,19 +366,16 @@
   "explore.trending_links": "Novas",
   "explore.trending_statuses": "Publicacións",
   "explore.trending_tags": "Cancelos",
-<<<<<<< HEAD
-  "federation.change": "Adjust status federation",
-  "federation.federated.long": "Allow toot to reach other instances",
-  "federation.federated.short": "Federated",
-  "federation.local_only.long": "Restrict this toot only to my instance",
-  "federation.local_only.short": "Local-only",
-=======
->>>>>>> v4.5.0
   "featured_carousel.header": "{count, plural, one {Publicación fixada} other {Publicacións fixadas}}",
   "featured_carousel.next": "Seguinte",
   "featured_carousel.post": "Publicación",
   "featured_carousel.previous": "Anterior",
   "featured_carousel.slide": "{index} de {total}",
+  "federation.change": "Adjust status federation",
+  "federation.federated.long": "Allow toot to reach other instances",
+  "federation.federated.short": "Federated",
+  "federation.local_only.long": "Restrict this toot only to my instance",
+  "federation.local_only.short": "Local-only",
   "filter_modal.added.context_mismatch_explanation": "Esta categoría de filtro non se aplica ao contexto no que accedeches a esta publicación. Se queres que a publicación se filtre nese contexto tamén, terás que editar o filtro.",
   "filter_modal.added.context_mismatch_title": "Non concorda o contexto!",
   "filter_modal.added.expired_explanation": "Esta categoría de filtro caducou, terás que cambiar a data de caducidade para que se aplique.",
@@ -463,11 +454,6 @@
   "hints.profiles.see_more_followers": "Mira máis seguidoras en {domain}",
   "hints.profiles.see_more_follows": "Mira máis seguimentos en {domain}",
   "hints.profiles.see_more_posts": "Mira máis publicacións en {domain}",
-<<<<<<< HEAD
-  "hints.threads.replies_may_be_missing": "Poderían faltar respostas desde outros servidores.",
-  "hints.threads.see_more": "Mira máis respostas en {domain}",
-=======
->>>>>>> v4.5.0
   "home.column_settings.show_quotes": "Mostrar citas",
   "home.column_settings.show_reblogs": "Amosar compartidos",
   "home.column_settings.show_replies": "Amosar respostas",
@@ -489,28 +475,12 @@
   "ignore_notifications_modal.private_mentions_title": "Ignorar notificacións de Mencións Privadas non solicitadas?",
   "info_button.label": "Axuda",
   "info_button.what_is_alt_text": "<h1>Que é o Texto Alternativo?</h1> <p>O Text Alt proporciona a descrición das imaxes para as persoas con deficiencias visuais, conexións a internet de baixa calidade ou para engadir contexto ás mesmas.</p> <p>Podes mellorar a accesibilidade e a comprensión da publicación ao escribir un texto alternativo claro, conciso e obxectivo.</p> <ul> <li>Identifica os elementos importantes</li> <li>Inclúe o texto que apareza nas imaxes</li> <li>Utiliza sintaxe estándar nas frases</li> <li>Evita información redundante</li> <li>Céntrate nos elementos principais cando sexan imaxes complexas (como diagramas ou mapas)</li> </ul>",
-<<<<<<< HEAD
-  "interaction_modal.action.favourite": "Para continuar, debes favorecer desde a túa conta.",
-  "interaction_modal.action.follow": "Para continuar, debes facer seguimento desde a túa conta.",
-  "interaction_modal.action.reblog": "Para continuar, debes promover desde a túa conta.",
-  "interaction_modal.action.reply": "Para continuar, debes responder desde a túa conta.",
-  "interaction_modal.action.vote": "Para continuar, debes votar desde a túa conta.",
-=======
   "interaction_modal.action": "Para interactuar coa publicación de {name} debes iniciar sesión no servidor Mastodon que utilices.",
->>>>>>> v4.5.0
   "interaction_modal.go": "Ir",
   "interaction_modal.no_account_yet": "Aínda non tes unha conta?",
   "interaction_modal.on_another_server": "Nun servidor diferente",
   "interaction_modal.on_this_server": "Neste servidor",
-<<<<<<< HEAD
-  "interaction_modal.title.favourite": "Marcar coma favorita a publicación de {name}",
-  "interaction_modal.title.follow": "Seguir a {name}",
-  "interaction_modal.title.reblog": "Promover a publicación de {name}",
-  "interaction_modal.title.reply": "Responder á publicación de {name}",
-  "interaction_modal.title.vote": "Vota na enquisa de {name}",
-=======
   "interaction_modal.title": "Inicia sesión para continuar",
->>>>>>> v4.5.0
   "interaction_modal.username_prompt": "Ex. {example}",
   "intervals.full.days": "{number, plural,one {# día} other {# días}}",
   "intervals.full.hours": "{number, plural, one {# hora} other {# horas}}",
@@ -951,15 +921,6 @@
   "status.mute_conversation": "Silenciar conversa",
   "status.open": "Estender esta publicación",
   "status.pin": "Fixar no perfil",
-<<<<<<< HEAD
-  "status.quote_error.filtered": "Oculto debido a un dos teus filtros",
-  "status.quote_error.not_found": "Non se pode mostrar a publicación.",
-  "status.quote_error.pending_approval": "A publicación está pendente da aprobación pola autora orixinal.",
-  "status.quote_error.rejected": "Non se pode mostrar esta publicación xa que a autora orixinal non permite que se cite.",
-  "status.quote_error.removed": "Publicación eliminada pola autora.",
-  "status.quote_error.unauthorized": "Non se pode mostrar esta publicación porque non tes permiso para vela.",
-  "status.quote_post_author": "Publicación de {name}",
-=======
   "status.quote": "Citar",
   "status.quote.cancel": "Cancelar a cita",
   "status.quote_error.blocked_account_hint.title": "A publicación está oculta porque bloqueaches a @{name}.",
@@ -982,7 +943,6 @@
   "status.quotes.empty": "Aínda ninguén citou esta publicación. Cando alguén o faga aparecerá aquí.",
   "status.quotes.local_other_disclaimer": "Non se mostrarán as citas rexeitadas pola autora.",
   "status.quotes.remote_other_disclaimer": "Só se garante que se mostren as citas do dominio {domain}. Non se mostrarán as citas rexeitadas pola persoa autora.",
->>>>>>> v4.5.0
   "status.read_more": "Ler máis",
   "status.reblog": "Promover",
   "status.reblog_or_quote": "Promover ou citar",
@@ -993,10 +953,7 @@
   "status.redraft": "Eliminar e reescribir",
   "status.remove_bookmark": "Eliminar marcador",
   "status.remove_favourite": "Retirar das favoritas",
-<<<<<<< HEAD
-=======
   "status.remove_quote": "Retirar",
->>>>>>> v4.5.0
   "status.replied_in_thread": "Respondeu nun fío",
   "status.replied_to": "Respondeu a {name}",
   "status.reply": "Responder",
@@ -1041,10 +998,7 @@
   "upload_button.label": "Engadir imaxes, un vídeo ou ficheiro de audio",
   "upload_error.limit": "Límite máximo do ficheiro a subir excedido.",
   "upload_error.poll": "Non se poden subir ficheiros nas enquisas.",
-<<<<<<< HEAD
-=======
   "upload_error.quote": "Non se permite subir ficheiros ao citar.",
->>>>>>> v4.5.0
   "upload_form.drag_and_drop.instructions": "Preme en Espazo ou Enter para escoller un anexo multimedia. Ao arrastrar usa as teclas de frecha para mover o anexo en todas direccións.Preme Espazo ou Enter outra vez para soltalo na súa nova posición, ou preme Escape para desbotar.",
   "upload_form.drag_and_drop.on_drag_cancel": "Cancelouse o movemento. O anexo {item} soltouse.",
   "upload_form.drag_and_drop.on_drag_end": "Soltouse o anexo multimedia {item}.",
@@ -1067,9 +1021,6 @@
   "video.skip_forward": "Avanzar",
   "video.unmute": "Non silenciar",
   "video.volume_down": "Baixar volume",
-<<<<<<< HEAD
-  "video.volume_up": "Subir volume"
-=======
   "video.volume_up": "Subir volume",
   "visibility_modal.button_title": "Establece a visibilidade",
   "visibility_modal.direct_quote_warning.text": "Se gardas os axustes actuais a cita incluída vaise converter nunha ligazón.",
@@ -1087,5 +1038,4 @@
   "visibility_modal.quote_nobody": "Só para min",
   "visibility_modal.quote_public": "Calquera",
   "visibility_modal.save": "Gardar"
->>>>>>> v4.5.0
 }

@@ -219,15 +219,12 @@
   "confirmations.delete_list.message": "Är du säker på att du vill radera denna lista permanent?",
   "confirmations.delete_list.title": "Ta bort listan?",
   "confirmations.discard_draft.confirm": "Släng bort och fortsätt",
-<<<<<<< HEAD
-=======
   "confirmations.discard_draft.edit.cancel": "Fortsätt redigera",
   "confirmations.discard_draft.edit.message": "Fortsätter du, kommer ändringarna till inlägget att förkastas.",
   "confirmations.discard_draft.edit.title": "Vill du förkasta ändringarna i inlägget?",
   "confirmations.discard_draft.post.cancel": "Återuppta utkast",
   "confirmations.discard_draft.post.message": "Fortsätter du, kommer inlägget du skriver att förkastas.",
   "confirmations.discard_draft.post.title": "Vill du förkasta utkastet?",
->>>>>>> v4.5.0
   "confirmations.discard_edit_media.confirm": "Kasta",
   "confirmations.discard_edit_media.message": "Du har osparade ändringar till mediabeskrivningen eller förhandsgranskningen, kasta bort dem ändå?",
   "confirmations.follow_to_list.confirm": "Följ och lägg till i listan",
@@ -248,16 +245,10 @@
   "confirmations.remove_from_followers.confirm": "Ta bort följare",
   "confirmations.remove_from_followers.message": "{name} kommer att sluta följa dig. Är du säker på att du vill fortsätta?",
   "confirmations.remove_from_followers.title": "Ta bort följare?",
-<<<<<<< HEAD
-  "confirmations.unfollow.confirm": "Avfölj",
-  "confirmations.unfollow.message": "Är du säker på att du vill avfölja {name}?",
-  "confirmations.unfollow.title": "Avfölj användare?",
-=======
   "confirmations.revoke_quote.confirm": "Ta bort inlägg",
   "confirmations.revoke_quote.message": "Denna åtgärd kan inte ångras.",
   "confirmations.revoke_quote.title": "Ta bort inlägg?",
   "confirmations.unfollow.confirm": "Avfölj",
->>>>>>> v4.5.0
   "content_warning.hide": "Dölj inlägg",
   "content_warning.show": "Visa ändå",
   "content_warning.show_more": "Visa mer",
@@ -352,19 +343,16 @@
   "explore.trending_links": "Nyheter",
   "explore.trending_statuses": "Inlägg",
   "explore.trending_tags": "Hashtaggar",
-<<<<<<< HEAD
-  "federation.change": "Adjust status federation",
-  "federation.federated.long": "Allow toot to reach other instances",
-  "federation.federated.short": "Federated",
-  "federation.local_only.long": "Restrict this toot only to my instance",
-  "federation.local_only.short": "Local-only",
-=======
->>>>>>> v4.5.0
   "featured_carousel.header": "{count, plural,one {Fäst inlägg} other {Fästa inlägg}}",
   "featured_carousel.next": "Nästa",
   "featured_carousel.post": "Inlägg",
   "featured_carousel.previous": "Föregående",
   "featured_carousel.slide": "{index} av {total}",
+  "federation.change": "Adjust status federation",
+  "federation.federated.long": "Allow toot to reach other instances",
+  "federation.federated.short": "Federated",
+  "federation.local_only.long": "Restrict this toot only to my instance",
+  "federation.local_only.short": "Local-only",
   "filter_modal.added.context_mismatch_explanation": "Denna filterkategori gäller inte för det sammanhang där du har tillgång till det här inlägget. Om du vill att inlägget ska filtreras även i detta sammanhang måste du redigera filtret.",
   "filter_modal.added.context_mismatch_title": "Misspassning av sammanhang!",
   "filter_modal.added.expired_explanation": "Denna filterkategori har utgått, du måste ändra utgångsdatum för att den ska kunna tillämpas.",
@@ -443,11 +431,6 @@
   "hints.profiles.see_more_followers": "Se fler följare på {domain}",
   "hints.profiles.see_more_follows": "Se fler följare på {domain}",
   "hints.profiles.see_more_posts": "Se fler inlägg på {domain}",
-<<<<<<< HEAD
-  "hints.threads.replies_may_be_missing": "Det kan saknas svar från andra servrar.",
-  "hints.threads.see_more": "Se fler svar på {domain}",
-=======
->>>>>>> v4.5.0
   "home.column_settings.show_quotes": "Visa citat",
   "home.column_settings.show_reblogs": "Visa boostar",
   "home.column_settings.show_replies": "Visa svar",
@@ -469,26 +452,10 @@
   "ignore_notifications_modal.private_mentions_title": "Vill du ignorera aviseringar från oombedda privata omnämnanden?",
   "info_button.label": "Hjälp",
   "info_button.what_is_alt_text": "<h1>Vad är alt-text?</h1> <p>alt-text ger bildbeskrivningar för personer med synnedsättning, anslutningar med låg bandbredd eller de som söker extra sammanhang.</p> <p>Du kan förbättra tillgängligheten och förståelsen för alla genom att skriva en tydlig, koncis och objektiv alt-text.</p> <ul> <li>Fånga viktiga element</li> <li>Sammanfatta text i bilder</li> <li>Använd vanlig meningsstruktur</li> <li>Undvik överflödig information</li> <li>Fokus på trender och viktiga resultat i komplexa bilder (som diagram eller kartor)</li> </ul>",
-<<<<<<< HEAD
-  "interaction_modal.action.favourite": "För att fortsätta, måste du favoritmarkera från ditt konto.",
-  "interaction_modal.action.follow": "För att fortsätta, måste du följa från ditt konto.",
-  "interaction_modal.action.reblog": "För att fortsätta, måste du boosta från ditt konto.",
-  "interaction_modal.action.reply": "För att fortsätta, måste du svara från ditt konto.",
-  "interaction_modal.action.vote": "För att fortsätta, måste du rösta från ditt konto.",
-=======
->>>>>>> v4.5.0
   "interaction_modal.go": "Vidare",
   "interaction_modal.no_account_yet": "Har du inget konto än?",
   "interaction_modal.on_another_server": "På en annan server",
   "interaction_modal.on_this_server": "På denna server",
-<<<<<<< HEAD
-  "interaction_modal.title.favourite": "Favoritmarkera {name}s inlägg",
-  "interaction_modal.title.follow": "Följ {name}",
-  "interaction_modal.title.reblog": "Boosta {name}s inlägg",
-  "interaction_modal.title.reply": "Svara på {name}s inlägg",
-  "interaction_modal.title.vote": "Rösta i {name}s enkät",
-=======
->>>>>>> v4.5.0
   "interaction_modal.username_prompt": "T.ex. {example}",
   "intervals.full.days": "{number, plural, one {# dag} other {# dagar}}",
   "intervals.full.hours": "{number, plural, one {# timme} other {# timmar}}",
@@ -528,11 +495,8 @@
   "keyboard_shortcuts.translate": "för att översätta ett inlägg",
   "keyboard_shortcuts.unfocus": "Avfokusera skrivfält/sökfält",
   "keyboard_shortcuts.up": "Flytta uppåt i listan",
-<<<<<<< HEAD
-=======
   "learn_more_link.got_it": "Jag förstår",
   "learn_more_link.learn_more": "Läs mer",
->>>>>>> v4.5.0
   "lightbox.close": "Stäng",
   "lightbox.next": "Nästa",
   "lightbox.previous": "Tidigare",
@@ -908,22 +872,12 @@
   "status.mute_conversation": "Tysta konversation",
   "status.open": "Utvidga detta inlägg",
   "status.pin": "Fäst i profil",
-<<<<<<< HEAD
-  "status.quote_error.filtered": "Dolt på grund av ett av dina filter",
-  "status.quote_error.not_found": "Detta inlägg kan inte boostas.",
-  "status.quote_error.pending_approval": "Det här inlägget väntar på godkännande från originalförfattaren.",
-  "status.quote_error.rejected": "Det här inlägget kan inte visas eftersom originalförfattaren inte tillåter att det citeras.",
-  "status.quote_error.removed": "Detta inlägg har tagits bort av författaren.",
-  "status.quote_error.unauthorized": "Det här inlägget kan inte visas eftersom du inte har behörighet att se det.",
-  "status.quote_post_author": "Inlägg av @{name}",
-=======
   "status.quote.cancel": "Återkalla citering",
   "status.quote_error.filtered": "Dolt på grund av ett av dina filter",
   "status.quote_error.not_available": "Inlägg ej tillgängligt",
   "status.quote_error.pending_approval": "Väntande inlägg",
   "status.quote_policy_change": "Ändra vem som kan citera",
   "status.quote_post_author": "Citerade ett inlägg av @{name}",
->>>>>>> v4.5.0
   "status.read_more": "Läs mer",
   "status.reblog": "Boosta",
   "status.reblogged_by": "{name} boostade",
@@ -997,9 +951,6 @@
   "video.skip_forward": "Hoppa framåt",
   "video.unmute": "Avtysta",
   "video.volume_down": "Volym ned",
-<<<<<<< HEAD
-  "video.volume_up": "Volym upp"
-=======
   "video.volume_up": "Volym upp",
   "visibility_modal.button_title": "Ange synlighet",
   "visibility_modal.header": "Synlighet och interaktion",
@@ -1007,5 +958,4 @@
   "visibility_modal.quote_followers": "Endast följare",
   "visibility_modal.quote_public": "Alla",
   "visibility_modal.save": "Spara"
->>>>>>> v4.5.0
 }

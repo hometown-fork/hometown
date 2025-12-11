@@ -60,10 +60,7 @@ lt:
         setting_display_media_default: Slėpti mediją, pažymėtą kaip jautrią
         setting_display_media_hide_all: Visada slėpti mediją
         setting_display_media_show_all: Visada rodyti mediją
-<<<<<<< HEAD
-=======
         setting_emoji_style: Kaip rodyti emodžius. „Auto“ bandys naudoti vietinius jaustukus, bet senesnėse naršyklėse grįš prie Tvejaustukų.
->>>>>>> v4.5.0
         setting_system_scrollbars_ui: Taikoma tik darbalaukio naršyklėms, karkasiniais „Safari“ ir „Chrome“.
         setting_use_blurhash: Gradientai pagrįsti paslėptų vizualizacijų spalvomis, bet užgožia bet kokias detales.
         setting_use_pending_items: Slėpti laiko skalės naujienas po paspaudimo, vietoj automatinio srauto slinkimo.

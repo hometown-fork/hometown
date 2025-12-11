@@ -4,22 +4,13 @@
   "about.default_locale": "по умолчанию",
   "about.disclaimer": "Mastodon — свободное программное обеспечение с открытым исходным кодом и торговая марка Mastodon gGmbH.",
   "about.domain_blocks.no_reason_available": "Причина не указана",
-<<<<<<< HEAD
-  "about.domain_blocks.preamble": "Mastodon обычно позволяет просматривать содержимое и взаимодействовать с пользователями любых других серверов в федивёрсе. Вот исключения, сделанные конкретно для этого сервера.",
-  "about.domain_blocks.silenced.explanation": "Как правило, вы не увидите профили и контент с этого сервера, если специально не будете их искать или не подпишетесь на них.",
-=======
   "about.domain_blocks.preamble": "Обычно Mastodon даёт вам возможность просматривать содержимое с любых других серверов в федивёрсе и взаимодействовать с их пользователями. Вот исключения, сделанные конкретно для этого сервера:",
   "about.domain_blocks.silenced.explanation": "Как правило, вы не увидите профили и содержимое с этого сервера, если только вы не запросите их с помощью поиска или не подпишетесь на пользователя с этого сервера.",
->>>>>>> v4.5.0
   "about.domain_blocks.silenced.title": "Ограничивается",
   "about.domain_blocks.suspended.explanation": "Никакие данные с этого сервера не будут обрабатываться, храниться и обмениваться, что делает невозможным любое взаимодействие и связь с пользователями на этом сервере.",
   "about.domain_blocks.suspended.title": "Заблокирован",
   "about.language_label": "Язык",
-<<<<<<< HEAD
-  "about.not_available": "Эта информация не указана на данном сервере.",
-=======
   "about.not_available": "Администраторы сервера предпочли не раскрывать эту информацию.",
->>>>>>> v4.5.0
   "about.powered_by": "Децентрализованная социальная сеть на базе {mastodon}",
   "about.rules": "Правила сервера",
   "account.account_note_header": "Личная заметка",
@@ -34,17 +25,10 @@
   "account.cancel_follow_request": "Отозвать запрос на подписку",
   "account.copy": "Копировать ссылку на профиль",
   "account.direct": "Упомянуть @{name} лично",
-<<<<<<< HEAD
-  "account.disable_notifications": "Не уведомлять о постах от @{name}",
-  "account.domain_blocking": "Домен заблокирован",
-  "account.edit_profile": "Редактировать",
-  "account.enable_notifications": "Уведомлять о постах от @{name}",
-=======
   "account.disable_notifications": "Не уведомлять о постах пользователя @{name}",
   "account.domain_blocking": "Домен заблокирован",
   "account.edit_profile": "Редактировать",
   "account.enable_notifications": "Уведомлять о постах пользователя @{name}",
->>>>>>> v4.5.0
   "account.endorse": "Рекомендовать в профиле",
   "account.familiar_followers_many": "В подписках у {name1}, {name2}, и ещё {othersCount, plural, one {# человека, которого вы знаете} other {# человек, которых вы знаете}}",
   "account.familiar_followers_one": "В подписках у {name1}",
@@ -52,11 +36,7 @@
   "account.featured": "Рекомендации",
   "account.featured.accounts": "Профили",
   "account.featured.hashtags": "Хештеги",
-<<<<<<< HEAD
-  "account.featured_tags.last_status_at": "Последний пост {date}",
-=======
   "account.featured_tags.last_status_at": "Последний пост опубликован {date}",
->>>>>>> v4.5.0
   "account.featured_tags.last_status_never": "Нет постов",
   "account.follow": "Подписаться",
   "account.follow_back": "Подписаться в ответ",
@@ -65,11 +45,7 @@
   "account.followers_counter": "{count, plural, one {{counter} подписчик} few {{counter} подписчика} other {{counter} подписчиков}}",
   "account.followers_you_know_counter": "{count, plural, one {{counter} ваш знакомый} other {{counter} ваших знакомых}}",
   "account.following": "Подписки",
-<<<<<<< HEAD
-  "account.following_counter": "{count, plural, one {# подписка} many {# подписок} other {# подписки}}",
-=======
   "account.following_counter": "{count, plural, one {{counter} подписка} few {{counter} подписки} many {{counter} подписок} other {{counter} подписок}}",
->>>>>>> v4.5.0
   "account.follows.empty": "Этот пользователь пока ни на кого не подписался.",
   "account.follows_you": "Подписан(а) на вас",
   "account.go_to_profile": "Перейти к профилю",
@@ -83,11 +59,7 @@
   "account.mention": "Упомянуть @{name}",
   "account.moved_to": "У {name} теперь новая учётная запись:",
   "account.mute": "Игнорировать @{name}",
-<<<<<<< HEAD
-  "account.mute_notifications_short": "Отключить уведомления",
-=======
   "account.mute_notifications_short": "Скрыть уведомления",
->>>>>>> v4.5.0
   "account.mute_short": "Игнорировать",
   "account.muted": "Игнорируется",
   "account.muting": "Игнорируется",
@@ -110,11 +82,7 @@
   "account.unendorse": "Не рекомендовать в профиле",
   "account.unfollow": "Отписаться",
   "account.unmute": "Не игнорировать @{name}",
-<<<<<<< HEAD
-  "account.unmute_notifications_short": "Включить уведомления",
-=======
   "account.unmute_notifications_short": "Показать уведомления",
->>>>>>> v4.5.0
   "account.unmute_short": "Не игнорировать",
   "account_note.placeholder": "Текст заметки",
   "admin.dashboard.daily_retention": "Уровень удержания пользователей после регистрации, в днях",
@@ -160,17 +128,10 @@
   "annual_report.summary.thanks": "Спасибо за то, что были вместе с Mastodon!",
   "attachments_list.unprocessed": "(не обработан)",
   "audio.hide": "Скрыть аудио",
-<<<<<<< HEAD
-  "block_modal.remote_users_caveat": "Мы попросим сервер {domain} уважать ваше решение, однако соблюдение им блокировки не гарантировано, поскольку некоторые серверы могут по-разному обрабатывать запросы. Публичные посты по-прежнему могут быть видны неавторизованным пользователям.",
-  "block_modal.show_less": "Показать меньше",
-  "block_modal.show_more": "Показать больше",
-  "block_modal.they_cant_mention": "Он не сможет упоминать вас или подписаться на вас.",
-=======
   "block_modal.remote_users_caveat": "Мы попросим сервер {domain} уважать ваше решение, однако нельзя гарантировать, что он будет соблюдать блокировку, поскольку некоторые серверы могут по-разному обрабатывать запросы. Публичные посты по-прежнему могут быть видны неавторизованным пользователям.",
   "block_modal.show_less": "Показать меньше",
   "block_modal.show_more": "Показать больше",
   "block_modal.they_cant_mention": "Он не сможет ни упоминать вас, ни подписаться на вас.",
->>>>>>> v4.5.0
   "block_modal.they_cant_see_posts": "Он не сможет видеть ваши посты, а вы не будете видеть его посты.",
   "block_modal.they_will_know": "Он будет знать, что вы его блокируете.",
   "block_modal.title": "Заблокировать пользователя?",
@@ -179,36 +140,21 @@
   "boost_modal.reblog": "Продвинуть пост?",
   "boost_modal.undo_reblog": "Отменить продвижение?",
   "bundle_column_error.copy_stacktrace": "Копировать отчёт об ошибке",
-<<<<<<< HEAD
-  "bundle_column_error.error.body": "Запрошенная страница не может быть отображена. Это может быть вызвано ошибкой в нашем коде или проблемой совместимости браузера.",
-  "bundle_column_error.error.title": "О нет!",
-  "bundle_column_error.network.body": "При загрузке этой страницы произошла ошибка. Это может быть вызвано временными проблемами с вашим подключением к интернету или ошибкой на сервере.",
-=======
   "bundle_column_error.error.body": "Запрошенная страница не может быть отображена. Это могло произойти из-за ошибки в нашем коде или из-за проблемы совместимости браузера.",
   "bundle_column_error.error.title": "О нет!",
   "bundle_column_error.network.body": "При загрузке этой страницы произошла ошибка. Она могла быть вызвана временными проблемами либо с вашим подключением к интернету, либо с этим сервером.",
->>>>>>> v4.5.0
   "bundle_column_error.network.title": "Ошибка сети",
   "bundle_column_error.retry": "Попробовать снова",
   "bundle_column_error.return": "Вернуться на главную",
   "bundle_column_error.routing.body": "Запрошенная страница не найдена. Вы уверены, что в адресной строке указан правильный URL?",
   "bundle_column_error.routing.title": "404",
   "bundle_modal_error.close": "Закрыть",
-<<<<<<< HEAD
-  "bundle_modal_error.message": "Что-то пошло не так при загрузке этой страницы.",
-  "bundle_modal_error.retry": "Попробовать снова",
-  "closed_registrations.other_server_instructions": "Поскольку Mastodon децентрализован, вы можете зарегистрироваться на другом сервере и всё равно взаимодействовать с этим сервером.",
-  "closed_registrations_modal.description": "Зарегистрироваться на {domain} сейчас не выйдет, но имейте в виду, что вам не нужна учётная запись именно на {domain}, чтобы использовать Mastodon.",
-  "closed_registrations_modal.find_another_server": "Найти другой сервер",
-  "closed_registrations_modal.preamble": "Mastodon децентрализован, поэтому независимо от того, где именно вы зарегистрируетесь, вы сможете подписываться и взаимодействовать с кем угодно на этом сервере. Вы даже можете создать свой собственный сервер!",
-=======
   "bundle_modal_error.message": "Кое-что пошло не так при загрузке этой страницы.",
   "bundle_modal_error.retry": "Попробовать снова",
   "closed_registrations.other_server_instructions": "Благодаря тому что Mastodon децентрализован, вы можете взаимодействовать с этим сервером, даже если зарегистрируетесь на другом сервере.",
   "closed_registrations_modal.description": "Зарегистрироваться на {domain} сейчас не выйдет, но имейте в виду, что вам не нужна учётная запись именно на {domain}, чтобы использовать Mastodon.",
   "closed_registrations_modal.find_another_server": "Найти другой сервер",
   "closed_registrations_modal.preamble": "Mastodon децентрализован, поэтому независимо от того, где именно вы зарегистрируетесь, вы сможете подписываться на кого угодно и взаимодействовать с кем угодно на этом сервере. Вы даже можете создать свой собственный сервер!",
->>>>>>> v4.5.0
   "closed_registrations_modal.title": "Регистрация в Mastodon",
   "column.about": "О проекте",
   "column.blocks": "Заблокированные пользователи",
@@ -223,11 +169,7 @@
   "column.firehose": "Живая лента",
   "column.follow_requests": "Запросы на подписку",
   "column.home": "Главная",
-<<<<<<< HEAD
-  "column.list_members": "Добавить или удалить из списка",
-=======
   "column.list_members": "Пользователи в списке",
->>>>>>> v4.5.0
   "column.lists": "Списки",
   "column.mutes": "Игнорируемые пользователи",
   "column.notifications": "Уведомления",
@@ -301,21 +243,14 @@
   "confirmations.quiet_post_quote_info.message": "Если вы цитируете публикацию, опубликованную в открытом доступе, ваша публикация будет скрыта от новостных лент.",
   "confirmations.quiet_post_quote_info.title": "Цитирование тихих публичных постов",
   "confirmations.redraft.confirm": "Удалить и исправить",
-<<<<<<< HEAD
-  "confirmations.redraft.message": "Вы уверены, что хотите удалить этот пост и создать его заново? Взаимодействия, такие как добавление в избранное или продвижение, будут потеряны, а ответы к оригинальному посту перестанут на него ссылаться.",
-=======
   "confirmations.redraft.message": "Вы уверены, что хотите удалить этот пост и создать его заново? Взаимодействия, такие как добавление в избранное и продвижение, будут потеряны, а ответы к оригинальному посту перестанут на него ссылаться.",
->>>>>>> v4.5.0
   "confirmations.redraft.title": "Удалить и создать пост заново?",
   "confirmations.remove_from_followers.confirm": "Убрать подписчика",
   "confirmations.remove_from_followers.message": "Пользователь {name} перестанет быть подписан на вас. Продолжить?",
   "confirmations.remove_from_followers.title": "Убрать подписчика?",
-<<<<<<< HEAD
-=======
   "confirmations.revoke_quote.confirm": "Удалить публикацию",
   "confirmations.revoke_quote.message": "Это действие нельзя будет отменить.",
   "confirmations.revoke_quote.title": "Удалить публикацию?",
->>>>>>> v4.5.0
   "confirmations.unfollow.confirm": "Отписаться",
   "content_warning.hide": "Скрыть пост",
   "content_warning.show": "Всё равно показать",
@@ -342,19 +277,11 @@
   "domain_block_modal.they_cant_follow": "Пользователи с этого сервера не смогут подписаться на вас.",
   "domain_block_modal.they_wont_know": "Пользователи с этого сервера не будут знать, что вы их блокируете.",
   "domain_block_modal.title": "Заблокировать домен?",
-<<<<<<< HEAD
-  "domain_block_modal.you_will_lose_num_followers": "Вы потеряете {followersCount, plural, one {{followersCountDisplay} подписчика} few {{followersCountDisplay} подписчика} other {{followersCountDisplay} подписчиков}} и {followingCount, plural, one {{followingCountDisplay} подписку} few {{followingCountDisplay} подписки} other {{followingCountDisplay} подписок}}.",
-  "domain_block_modal.you_will_lose_relationships": "Вы потеряете все подписки и всех подписчиков с этого сервера.",
-  "domain_block_modal.you_wont_see_posts": "Вы не будете видеть посты или уведомления от пользователей с этого сервера.",
-  "domain_pill.activitypub_lets_connect": "Благодаря ему вы можете связываться и взаимодействовать не только с пользователями Mastodon, но и с пользователями других платформ.",
-  "domain_pill.activitypub_like_language": "ActivityPub это язык, на котором Mastodon говорит с другими социальными сетями.",
-=======
   "domain_block_modal.you_will_lose_num_followers": "Вы потеряете {followersCount, plural, one {{followersCountDisplay} подписчика} few {{followersCountDisplay} подписчиков} other {{followersCountDisplay} подписчиков}} и {followingCount, plural, one {{followingCountDisplay} подписку} few {{followingCountDisplay} подписки} other {{followingCountDisplay} подписок}}.",
   "domain_block_modal.you_will_lose_relationships": "Вы потеряете все подписки и всех подписчиков с этого сервера.",
   "domain_block_modal.you_wont_see_posts": "Вы не будете видеть посты и уведомления от пользователей с этого сервера.",
   "domain_pill.activitypub_lets_connect": "Благодаря ему вы можете связываться и взаимодействовать не только с пользователями Mastodon, но и с пользователями других платформ.",
   "domain_pill.activitypub_like_language": "ActivityPub — это язык, на котором Mastodon говорит с другими социальными сетями.",
->>>>>>> v4.5.0
   "domain_pill.server": "Сервер",
   "domain_pill.their_handle": "Адрес пользователя:",
   "domain_pill.their_server": "Цифровой дом пользователя, где находятся все его посты.",
@@ -366,10 +293,7 @@
   "domain_pill.your_handle": "Ваш адрес:",
   "domain_pill.your_server": "Ваш цифровой дом, где находятся все ваши посты. Если вам не нравится этот сервер, вы можете в любое время перенести свою учётную запись на другой сервер, не теряя подписчиков.",
   "domain_pill.your_username": "Ваш уникальный идентификатор на этом сервере. На разных серверах могут встречаться люди с тем же именем пользователя.",
-<<<<<<< HEAD
-=======
   "dropdown.empty": "Выберите опцию",
->>>>>>> v4.5.0
   "embed.instructions": "Встройте этот пост на свой сайт, скопировав следующий код:",
   "embed.preview": "Так это будет выглядеть:",
   "emoji_button.activity": "Занятия",
@@ -400,13 +324,8 @@
   "empty_column.direct": "Вы ещё не упоминали кого-либо и сами не были ни разу упомянуты лично. Все личные упоминания будут показаны здесь.",
   "empty_column.domain_blocks": "Заблокированных доменов пока нет.",
   "empty_column.explore_statuses": "Сейчас нет популярных постов. Проверьте позже!",
-<<<<<<< HEAD
-  "empty_column.favourited_statuses": "Вы ещё не добавили ни один пост в избранное. Все добавленные вами в избранное посты будут показаны здесь.",
-  "empty_column.favourites": "Никто ещё не добавил этот пост в избранное. Все пользователи, добавившие этот пост в избранное, будут показаны здесь.",
-=======
   "empty_column.favourited_statuses": "Вы ещё не добавили ни одного поста в избранное. Все добавленные вами в избранное посты будут показаны здесь.",
   "empty_column.favourites": "Никто ещё не добавил этот пост в избранное. Все пользователи, которые добавят этот пост в избранное, будут показаны здесь.",
->>>>>>> v4.5.0
   "empty_column.follow_requests": "Вам ещё не приходили запросы на подписку. Все новые запросы будут показаны здесь.",
   "empty_column.followed_tags": "Вы ещё не подписались ни на один хештег. Все хештеги, на которые вы подписаны, будут показаны здесь.",
   "empty_column.hashtag": "С этим хештегом пока ещё никто ничего не опубликовал.",
@@ -427,44 +346,29 @@
   "explore.trending_links": "Новости",
   "explore.trending_statuses": "Посты",
   "explore.trending_tags": "Хештеги",
-<<<<<<< HEAD
-  "federation.change": "Adjust status federation",
-  "federation.federated.long": "Allow toot to reach other instances",
-  "federation.federated.short": "Federated",
-  "federation.local_only.long": "Restrict this post only to my instance",
-  "federation.local_only.short": "Local-only",
-  "filter_modal.added.context_mismatch_explanation": "Этот фильтр не применяется в том контексте, в котором вы видели этот пост. Если вы хотите, чтобы пост был отфильтрован в этом контексте, необходимо редактировать фильтр.",
-  "filter_modal.added.context_mismatch_title": "Несоответствие контекста!",
-  "filter_modal.added.expired_explanation": "Этот фильтр истёк. Чтобы он был применён, вам нужно изменить срок действия фильтра.",
-  "filter_modal.added.expired_title": "Истёкший фильтр!",
-=======
   "featured_carousel.header": "{count, plural, other {Закреплённые посты}}",
   "featured_carousel.next": "Следующий",
   "featured_carousel.post": "Пост",
   "featured_carousel.previous": "Предыдущий",
   "featured_carousel.slide": "{index} из {total}",
+  "federation.change": "Adjust status federation",
+  "federation.federated.long": "Allow toot to reach other instances",
+  "federation.federated.short": "Federated",
+  "federation.local_only.long": "Restrict this post only to my instance",
+  "federation.local_only.short": "Local-only",
   "filter_modal.added.context_mismatch_explanation": "Этот фильтр не применяется в том контексте, в котором вы видели этот пост. Если вы хотите, чтобы пост был отфильтрован в текущем контексте, необходимо редактировать фильтр.",
   "filter_modal.added.context_mismatch_title": "Несоответствие контекста",
   "filter_modal.added.expired_explanation": "Этот фильтр истёк. Чтобы он был применён, вам нужно изменить срок действия фильтра.",
   "filter_modal.added.expired_title": "Истёкший фильтр",
->>>>>>> v4.5.0
   "filter_modal.added.review_and_configure": "Для просмотра или редактирования этого фильтра перейдите в {settings_link}.",
   "filter_modal.added.review_and_configure_title": "Настройки фильтра",
   "filter_modal.added.settings_link": "настройки",
   "filter_modal.added.short_explanation": "Этот пост был добавлен к фильтру «{title}».",
-<<<<<<< HEAD
-  "filter_modal.added.title": "Фильтр добавлен!",
-  "filter_modal.select_filter.context_mismatch": "не применяется в этом контексте",
-  "filter_modal.select_filter.expired": "истёкший",
-  "filter_modal.select_filter.prompt_new": "Новый фильтр: {name}",
-  "filter_modal.select_filter.search": "Поиск или название нового фильтра",
-=======
   "filter_modal.added.title": "Фильтр добавлен",
   "filter_modal.select_filter.context_mismatch": "не применяется в этом контексте",
   "filter_modal.select_filter.expired": "истёкший",
   "filter_modal.select_filter.prompt_new": "Новый фильтр: {name}",
   "filter_modal.select_filter.search": "Поиск (или введите название нового фильтра)",
->>>>>>> v4.5.0
   "filter_modal.select_filter.subtitle": "Используйте существующий фильтр или создайте новый",
   "filter_modal.select_filter.title": "Фильтровать этот пост",
   "filter_modal.title.status": "Фильтровать пост",
@@ -519,21 +423,6 @@
   "hashtag.counter_by_uses": "{count, plural, one {{counter} пост} few {{counter} поста} other {{counter} постов}}",
   "hashtag.counter_by_uses_today": "{count, plural, one {{counter} пост} few {{counter} поста} other {{counter} постов}} сегодня",
   "hashtag.feature": "Рекомендовать в профиле",
-<<<<<<< HEAD
-  "hashtag.follow": "Подписаться на новые посты",
-  "hashtag.mute": "Игнорировать #{hashtag}",
-  "hashtag.unfeature": "Не рекомендовать в профиле",
-  "hashtag.unfollow": "Отписаться от новых постов",
-  "hashtags.and_other": "…и {count, plural, other {ещё #}}",
-  "hints.profiles.followers_may_be_missing": "Некоторые подписчики этого профиля могут отсутствовать.",
-  "hints.profiles.follows_may_be_missing": "Некоторые подписки этого профиля могут отсутствовать.",
-  "hints.profiles.posts_may_be_missing": "Некоторые посты в этом профиле могут отсутствовать.",
-  "hints.profiles.see_more_followers": "Перейдите на {domain}, чтобы увидеть всех подписчиков",
-  "hints.profiles.see_more_follows": "Перейдите на {domain}, чтобы увидеть все подписки",
-  "hints.profiles.see_more_posts": "Перейдите на {domain}, чтобы увидеть все посты",
-  "hints.threads.replies_may_be_missing": "Некоторые ответы с других серверов могут отсутствовать.",
-  "hints.threads.see_more": "Перейдите на {domain}, чтобы увидеть все ответы",
-=======
   "hashtag.follow": "Подписаться на хештег",
   "hashtag.mute": "Игнорировать #{hashtag}",
   "hashtag.unfeature": "Не рекомендовать в профиле",
@@ -545,7 +434,6 @@
   "hints.profiles.see_more_followers": "Перейдите на {domain}, чтобы увидеть всех подписчиков",
   "hints.profiles.see_more_follows": "Перейдите на {domain}, чтобы увидеть все подписки",
   "hints.profiles.see_more_posts": "Перейдите на {domain}, чтобы увидеть все посты",
->>>>>>> v4.5.0
   "home.column_settings.show_quotes": "Показывать цитирования",
   "home.column_settings.show_reblogs": "Показывать продвижения",
   "home.column_settings.show_replies": "Показывать ответы",
@@ -567,38 +455,18 @@
   "ignore_notifications_modal.private_mentions_title": "Игнорировать уведомления о нежелательных личных упоминаниях?",
   "info_button.label": "Помощь",
   "info_button.what_is_alt_text": "<h1>Что это такое?</h1> <p>Альтернативный текст содержит описание изображения для людей с ограничениями зрения, медленным интернетом и для тех, кому нужен дополнительный контекст.</p> <p>Вы можете улучшить доступность и понимание для всех, написав чёткий, краткий и объективный альтернативный текст.</p> <ul> <li>Уловите важные элементы</li> <li>Перескажите текстовую информацию на изображении</li> <li>Используйте правильную структуру предложений</li> <li>Избегайте избыточной информации</li> <li>Сосредоточьтесь на тенденциях и ключевых выводах при описании сложных визуализаций, таких как диаграммы или карты</li> </ul>",
-<<<<<<< HEAD
-  "interaction_modal.action.favourite": "Вы можете добавить этот пост в избранное со своей учётной записью.",
-  "interaction_modal.action.follow": "Вы можете подписаться со своей учётной записью.",
-  "interaction_modal.action.reblog": "Вы можете продвинуть этот пост со своей учётной записью.",
-  "interaction_modal.action.reply": "Вы можете ответить на этот пост со своей учётной записью.",
-  "interaction_modal.action.vote": "Вы можете проголосовать в этом опросе со своей учётной записью.",
-=======
   "interaction_modal.action": "Для взаимодействия с сообщением {name} необходимо войти в свою учетную запись на любом сервере Mastodon.",
->>>>>>> v4.5.0
   "interaction_modal.go": "Вперёд!",
   "interaction_modal.no_account_yet": "У вас нет никакой учётной записи?",
   "interaction_modal.on_another_server": "На другом сервере",
   "interaction_modal.on_this_server": "На этом сервере",
-<<<<<<< HEAD
-  "interaction_modal.title.favourite": "Добавить пост {name} в избранное",
-  "interaction_modal.title.follow": "Подписаться на {name}",
-  "interaction_modal.title.reblog": "Продвинуть пост {name}",
-  "interaction_modal.title.reply": "Ответить на пост {name}",
-  "interaction_modal.title.vote": "Голосовать в опросе {name}",
-=======
   "interaction_modal.title": "Войдите, чтобы продолжить",
->>>>>>> v4.5.0
   "interaction_modal.username_prompt": "Например, {example}",
   "intervals.full.days": "{number, plural, one {# день} few {# дня} other {# дней}}",
   "intervals.full.hours": "{number, plural, one {# час} few {# часа} other {# часов}}",
   "intervals.full.minutes": "{number, plural, one {# минута} few {# минуты} other {# минут}}",
   "keyboard_shortcuts.back": "перейти назад",
-<<<<<<< HEAD
-  "keyboard_shortcuts.blocked": "открыть список заблокированных",
-=======
   "keyboard_shortcuts.blocked": "открыть список заблокированных пользователей",
->>>>>>> v4.5.0
   "keyboard_shortcuts.boost": "продвинуть пост",
   "keyboard_shortcuts.column": "фокус на одном из столбцов",
   "keyboard_shortcuts.compose": "фокус на поле ввода",
@@ -613,16 +481,10 @@
   "keyboard_shortcuts.home": "перейти к домашней ленте",
   "keyboard_shortcuts.hotkey": "Горячая клавиша",
   "keyboard_shortcuts.legend": "показать эту справку",
-<<<<<<< HEAD
-  "keyboard_shortcuts.local": "перейти к локальной ленте",
-  "keyboard_shortcuts.mention": "упомянуть автора поста",
-  "keyboard_shortcuts.muted": "открыть список игнорируемых",
-=======
   "keyboard_shortcuts.load_more": "Акцент на кнопке «Загрузить ещё»",
   "keyboard_shortcuts.local": "перейти к локальной ленте",
   "keyboard_shortcuts.mention": "упомянуть автора поста",
   "keyboard_shortcuts.muted": "открыть список игнорируемых пользователей",
->>>>>>> v4.5.0
   "keyboard_shortcuts.my_profile": "перейти к своему профилю",
   "keyboard_shortcuts.notifications": "перейти к уведомлениям",
   "keyboard_shortcuts.open_media": "открыть медиа",
@@ -688,11 +550,7 @@
   "mute_modal.they_can_mention_and_follow": "Он сможет упоминать вас и подписаться на вас, но вы этого не увидите.",
   "mute_modal.they_wont_know": "Он не будет знать, что вы его игнорируете.",
   "mute_modal.title": "Игнорировать пользователя?",
-<<<<<<< HEAD
-  "mute_modal.you_wont_see_mentions": "Вы не увидите посты, которые его упоминают.",
-=======
   "mute_modal.you_wont_see_mentions": "Вы не будете видеть посты, упоминающие его.",
->>>>>>> v4.5.0
   "mute_modal.you_wont_see_posts": "Он по-прежнему сможет видеть ваши посты, но вы не будете видеть его посты.",
   "navigation_bar.about": "О проекте",
   "navigation_bar.account_settings": "Пароль и безопасность",
@@ -733,11 +591,7 @@
   "notification.admin.report_statuses_other": "{name} пожаловался (-лась) на {target}",
   "notification.admin.sign_up": "{name} зарегистрировался (-лась) на сервере",
   "notification.admin.sign_up.name_and_others": "{name} и ещё {count, plural, one {# пользователь} few {# пользователя} other {# пользователей}} зарегистрировались на сервере",
-<<<<<<< HEAD
-  "notification.annual_report.message": "#Wrapstodon за {year} год ждёт вас! Откройте для себя итоги и памятные моменты этого года в Mastodon!",
-=======
   "notification.annual_report.message": "#Wrapstodon за {year} год ждёт вас! Откройте для себя итоги и памятные моменты этого года в Mastodon.",
->>>>>>> v4.5.0
   "notification.annual_report.view": "Перейти к #Wrapstodon",
   "notification.favourite": "{name} добавил(а) ваш пост в избранное",
   "notification.favourite.name_and_others_with_link": "{name} и ещё <a>{count, plural, one {# пользователь} few {# пользователя} other {# пользователей}}</a> добавили ваш пост в избранное",
@@ -750,10 +604,7 @@
   "notification.label.mention": "Упоминание",
   "notification.label.private_mention": "Личное упоминание",
   "notification.label.private_reply": "Приватный ответ",
-<<<<<<< HEAD
-=======
   "notification.label.quote": "{name} процитировал(а) ваш пост",
->>>>>>> v4.5.0
   "notification.label.reply": "Ответ",
   "notification.mention": "Упоминание",
   "notification.mentioned_you": "{name} упомянул(а) вас",
@@ -761,28 +612,13 @@
   "notification.moderation_warning": "Модераторы вынесли вам предупреждение",
   "notification.moderation_warning.action_delete_statuses": "Некоторые ваши посты были удалены.",
   "notification.moderation_warning.action_disable": "Ваша учётная запись была отключена.",
-<<<<<<< HEAD
-  "notification.moderation_warning.action_mark_statuses_as_sensitive": "Некоторые ваши посты были отмечены как контент деликатного характера.",
-  "notification.moderation_warning.action_none": "Модераторы вынесли вам предупреждение.",
-  "notification.moderation_warning.action_sensitive": "С этого момента все ваши новые посты будут отмечены как контент деликатного характера.",
-=======
   "notification.moderation_warning.action_mark_statuses_as_sensitive": "Некоторые ваши посты были отмечены как содержимое деликатного характера.",
   "notification.moderation_warning.action_none": "Модераторы вынесли вам предупреждение.",
   "notification.moderation_warning.action_sensitive": "С этого момента все ваши новые посты будут отмечены как содержимое деликатного характера.",
->>>>>>> v4.5.0
   "notification.moderation_warning.action_silence": "Ваша учётная запись была ограничена.",
   "notification.moderation_warning.action_suspend": "Ваша учётная запись была заблокирована.",
   "notification.own_poll": "Ваш опрос завершился",
   "notification.poll": "Опрос, в котором вы приняли участие, завершился",
-<<<<<<< HEAD
-  "notification.reblog": "{name} продвинул(а) ваш пост",
-  "notification.reblog.name_and_others_with_link": "{name} и ещё <a>{count, plural, one {# пользователь} few {# пользователя} other {# пользователей}}</a> продвинули ваш пост",
-  "notification.relationships_severance_event": "Разорвана связь с {name}",
-  "notification.relationships_severance_event.account_suspension": "Администратор сервера {from} заблокировал сервер {target}, поэтому вы больше не сможете получать обновления от людей с этого сервера или взаимодействовать с ними.",
-  "notification.relationships_severance_event.domain_block": "Администратор сервера {from} заблокировал сервер {target}, где размещены учётные записи у {followersCount} ваших подписчиков и {followingCount, plural, one {# пользователя, на которого вы подписаны} other {# пользователей, на которых вы подписаны}}.",
-  "notification.relationships_severance_event.learn_more": "Узнать больше",
-  "notification.relationships_severance_event.user_domain_block": "Вы заблокировали сервер {target}, где размещены учётные записи у {followersCount} ваших подписчиков и {followingCount, plural, one {# пользователя, на которого вы подписаны} other {# пользователей, на которых вы подписаны}}.",
-=======
   "notification.quoted_update": "{name} отредактировал процитированное вами сообщение",
   "notification.reblog": "{name} продвинул(а) ваш пост",
   "notification.reblog.name_and_others_with_link": "{name} и ещё <a>{count, plural, one {# пользователь} few {# пользователя} other {# пользователей}}</a> продвинули ваш пост",
@@ -791,7 +627,6 @@
   "notification.relationships_severance_event.domain_block": "Администратор сервера {from} заблокировал сервер {target}, где размещены учётные записи {followersCount} ваших подписчиков и {followingCount, plural, one {# пользователя, на которого вы подписаны} other {# пользователей, на которых вы подписаны}}.",
   "notification.relationships_severance_event.learn_more": "Узнать больше",
   "notification.relationships_severance_event.user_domain_block": "Вы заблокировали сервер {target}, где размещены учётные записи {followersCount} ваших подписчиков и {followingCount, plural, one {# пользователя, на которого вы подписаны} other {# пользователей, на которых вы подписаны}}.",
->>>>>>> v4.5.0
   "notification.status": "{name} опубликовал(а) новый пост",
   "notification.update": "{name} отредактировал(а) пост",
   "notification_requests.accept": "Принять",
@@ -828,10 +663,7 @@
   "notifications.column_settings.mention": "Вас упомянули в посте:",
   "notifications.column_settings.poll": "Опрос, в котором вы приняли участие, завершился:",
   "notifications.column_settings.push": "Push-уведомления",
-<<<<<<< HEAD
-=======
   "notifications.column_settings.quote": "Ваш пост процитировали:",
->>>>>>> v4.5.0
   "notifications.column_settings.reblog": "Ваш пост продвинули:",
   "notifications.column_settings.show": "Отображать в списке",
   "notifications.column_settings.sound": "Проигрывать звук",
@@ -866,19 +698,11 @@
   "notifications.policy.filter_not_followers_title": "Люди, не подписанные на вас",
   "notifications.policy.filter_not_following_hint": "Пока вы не одобрите их вручную",
   "notifications.policy.filter_not_following_title": "Люди, на которых вы не подписаны",
-<<<<<<< HEAD
-  "notifications.policy.filter_private_mentions_hint": "Фильтруются, если только это не ответ на ваше собственное упоминание или если вы подписаны на отправителя",
-  "notifications.policy.filter_private_mentions_title": "Нежелательные личные упоминания",
-  "notifications.policy.title": "Управление уведомлениями",
-  "notifications_permission_banner.enable": "Включить уведомления",
-  "notifications_permission_banner.how_to_control": "Чтобы получать уведомления, даже когда Mastodon закрыт, включите уведомления на рабочем столе. После того как вы их включите, вы сможете тонко настроить, о каких видах взаимодействий вы будете оповещены через уведомления на рабочем столе, нажав на кнопку {icon} выше.",
-=======
   "notifications.policy.filter_private_mentions_hint": "Не фильтруются ответы на ваши собственные упоминания, а также личные упоминания от пользователей, на которых вы подписаны",
   "notifications.policy.filter_private_mentions_title": "Нежелательные личные упоминания",
   "notifications.policy.title": "Управление уведомлениями",
   "notifications_permission_banner.enable": "Включить уведомления",
   "notifications_permission_banner.how_to_control": "Чтобы получать уведомления, даже когда Mastodon закрыт, включите уведомления на рабочем столе. После того как вы их включите, вы сможете тонко настроить виды взаимодействий, о которых вы будете оповещены через уведомления на рабочем столе, нажав на кнопку {icon} выше.",
->>>>>>> v4.5.0
   "notifications_permission_banner.title": "Будьте в курсе происходящего",
   "onboarding.follows.back": "Назад",
   "onboarding.follows.done": "Готово",
@@ -890,11 +714,7 @@
   "onboarding.profile.display_name": "Отображаемое имя",
   "onboarding.profile.display_name_hint": "Ваше полное имя или псевдоним…",
   "onboarding.profile.note": "О себе",
-<<<<<<< HEAD
-  "onboarding.profile.note_hint": "Вы можете @упоминать других людей или использовать #хештеги…",
-=======
   "onboarding.profile.note_hint": "Вы можете @упоминать других людей, а также использовать #хештеги…",
->>>>>>> v4.5.0
   "onboarding.profile.save_and_continue": "Сохранить и продолжить",
   "onboarding.profile.title": "Создайте свой профиль",
   "onboarding.profile.upload_avatar": "Загрузить фото профиля",
@@ -919,16 +739,11 @@
   "privacy.private.short": "Для подписчиков",
   "privacy.public.long": "Для кого угодно в интернете",
   "privacy.public.short": "Публичный",
-<<<<<<< HEAD
-  "privacy.unlisted.additional": "Похоже на «Публичный» за исключением того, что пост не появится ни в живых лентах, ни в лентах хештегов, ни в разделе «Актуальное», ни в поиске Mastodon, даже если вы разрешили поиск по своим постам в настройках профиля.",
-  "privacy.unlisted.long": "Меньше алгоритмических фанфар",
-=======
   "privacy.quote.anyone": "{visibility}, каждый может процитировать",
   "privacy.quote.disabled": "{visibility}, цитаты отключены",
   "privacy.quote.limited": "{visibility}, цитаты ограничены",
   "privacy.unlisted.additional": "Похоже на «Публичный» за исключением того, что пост не появится ни в живых лентах, ни в лентах хештегов, ни в разделе «Актуальное», ни в поиске Mastodon, даже если вы разрешили поиск по своим постам в настройках профиля.",
   "privacy.unlisted.long": "Скрыто от результатов поиска Mastodon, трендов и публичных графиков",
->>>>>>> v4.5.0
   "privacy.unlisted.short": "Тихий публичный",
   "privacy_policy.last_updated": "Последнее обновление: {date}",
   "privacy_policy.title": "Политика конфиденциальности",
@@ -940,11 +755,7 @@
   "refresh": "Обновить",
   "regeneration_indicator.please_stand_by": "Пожалуйста, подождите.",
   "regeneration_indicator.preparing_your_home_feed": "Готовим вашу ленту…",
-<<<<<<< HEAD
-  "relative_time.days": "{number} д",
-=======
   "relative_time.days": "{number} д.",
->>>>>>> v4.5.0
   "relative_time.full.days": "{number, plural, one {# день} many {# дней} other {# дня}} назад",
   "relative_time.full.hours": "{number, plural, one {# час} many {# часов} other {# часа}} назад",
   "relative_time.full.just_now": "только что",
@@ -955,21 +766,14 @@
   "relative_time.minutes": "{number} мин.",
   "relative_time.seconds": "{number} с.",
   "relative_time.today": "сегодня",
-<<<<<<< HEAD
-=======
   "remove_quote_hint.button_label": "Понятно",
   "remove_quote_hint.message": "Вы можете сделать это из меню настроек {icon}.",
   "remove_quote_hint.title": "Хотите удалить цитируемый вами пост?",
->>>>>>> v4.5.0
   "reply_indicator.attachments": "{count, plural, one {# вложение} few {# вложения} other {# вложений}}",
   "reply_indicator.cancel": "Отмена",
   "reply_indicator.poll": "Опрос",
   "report.block": "Заблокировать",
-<<<<<<< HEAD
-  "report.block_explanation": "Вы не будете видеть посты этого пользователя. Этот пользователь не сможет видеть ваши посты и не сможет подписаться на вас. Пользователь будет знать, что вы его блокируете.",
-=======
   "report.block_explanation": "Вы не будете видеть посты этого пользователя. Этот пользователь не сможет ни видеть ваши посты, ни подписаться на вас. Пользователь будет знать, что вы его блокируете.",
->>>>>>> v4.5.0
   "report.categories.legal": "Нарушение закона",
   "report.categories.other": "Другое",
   "report.categories.spam": "Спам",
@@ -993,11 +797,7 @@
   "report.reasons.other": "Другое",
   "report.reasons.other_description": "Проблема не соответствует ни одной категории",
   "report.reasons.spam": "Это спам",
-<<<<<<< HEAD
-  "report.reasons.spam_description": "Вредоносные ссылки, фальшивая активность (накрутка) или повторяющиеся однообразные ответы",
-=======
   "report.reasons.spam_description": "Вредоносные ссылки, фальшивая активность или повторяющиеся однообразные ответы",
->>>>>>> v4.5.0
   "report.reasons.violation": "Нарушаются правила сервера",
   "report.reasons.violation_description": "Выберите, если знаете, что подобное нарушает определённые правила",
   "report.rules.subtitle": "Выберите все подходящие варианты",
@@ -1043,11 +843,7 @@
   "search_results.all": "Все",
   "search_results.hashtags": "Хештеги",
   "search_results.no_results": "Ничего не найдено.",
-<<<<<<< HEAD
-  "search_results.no_search_yet": "Попробуйте поискать посты, профили или хэштеги.",
-=======
   "search_results.no_search_yet": "Попробуйте поискать посты, профили или хештеги.",
->>>>>>> v4.5.0
   "search_results.see_all": "Показать все",
   "search_results.statuses": "Посты",
   "search_results.title": "Поиск \"{q}\"",
@@ -1057,11 +853,7 @@
   "server_banner.is_one_of_many": "{domain} — это один из многих независимых серверов Mastodon, которые вы можете использовать, чтобы присоединиться к сети Fediverse.",
   "server_banner.server_stats": "Статистика сервера:",
   "sign_in_banner.create_account": "Зарегистрироваться",
-<<<<<<< HEAD
-  "sign_in_banner.follow_anyone": "Подписывайтесь на кого угодно в федивёрсе и читайте ленту в хронологическом порядке. Никаких алгоритмов, рекламы или кликбейта.",
-=======
   "sign_in_banner.follow_anyone": "Подписывайтесь на кого угодно в федивёрсе и читайте ленту в хронологическом порядке. Никаких алгоритмов, рекламы и кликбейта.",
->>>>>>> v4.5.0
   "sign_in_banner.mastodon_is": "Mastodon — лучший способ быть в курсе всего происходящего.",
   "sign_in_banner.sign_in": "Войти",
   "sign_in_banner.sso_redirect": "Вход/Регистрация",
@@ -1073,11 +865,7 @@
   "status.bookmark": "Добавить в закладки",
   "status.cancel_reblog_private": "Отменить продвижение",
   "status.cannot_reblog": "Этот пост не может быть продвинут",
-<<<<<<< HEAD
-  "status.continued_thread": "Продолжение треда",
-=======
   "status.continued_thread": "Продолжение предыдущего поста",
->>>>>>> v4.5.0
   "status.copy": "Скопировать ссылку на пост",
   "status.delete": "Удалить",
   "status.delete.success": "Пост удален",
@@ -1085,23 +873,14 @@
   "status.direct": "Упомянуть @{name} лично",
   "status.direct_indicator": "Личное упоминание",
   "status.edit": "Редактировать",
-<<<<<<< HEAD
-  "status.edited": "Дата последнего изменения: {date}",
-=======
   "status.edited": "Последнее изменение: {date}",
->>>>>>> v4.5.0
   "status.edited_x_times": "{count, plural, one {{count} изменение} many {{count} изменений} other {{count} изменения}}",
   "status.embed": "Встроить на свой сайт",
   "status.favourite": "Добавить в избранное",
   "status.favourites": "{count, plural, one {звёздочка} few {звёздочки} other {звёздочек}}",
   "status.filter": "Фильтровать этот пост",
-<<<<<<< HEAD
-  "status.history.created": "{name} создал(а) {date}",
-  "status.history.edited": "{name} отредактировал(а) {date}",
-=======
   "status.history.created": "{name} создал(а) пост {date}",
   "status.history.edited": "{name} отредактировал(а) пост {date}",
->>>>>>> v4.5.0
   "status.load_more": "Загрузить ещё",
   "status.media.open": "Нажмите, чтобы открыть.",
   "status.media.show": "Нажмите, чтобы показать",
@@ -1112,11 +891,6 @@
   "status.mute_conversation": "Игнорировать обсуждение",
   "status.open": "Открыть пост",
   "status.pin": "Закрепить в профиле",
-<<<<<<< HEAD
-  "status.quote_error.filtered": "Скрыто одним из ваших фильтров",
-  "status.quote_error.not_found": "Пост не может быть показан.",
-  "status.quote_error.removed": "Пост был удалён его автором.",
-=======
   "status.quote": "Цитировать",
   "status.quote.cancel": "Отменить цитирование",
   "status.quote_error.filtered": "Скрыто одним из ваших фильтров",
@@ -1131,35 +905,24 @@
   "status.quote_private": "Приватные записи не могут быть цитированы",
   "status.quotes": "{count, plural, one {# голос} few {# голоса} many {# голосов} other {# голосов}}",
   "status.quotes.empty": "Никто еще не цитировал этот пост. Когда кто-нибудь это сделает, он появится здесь.",
->>>>>>> v4.5.0
   "status.read_more": "Читать далее",
   "status.reblog": "Продвинуть",
   "status.reblog_or_quote": "Буст или цитата",
   "status.reblog_private": "Поделиться снова со своими подписчиками",
   "status.reblogged_by": "{name} продвинул(а)",
   "status.reblogs": "{count, plural, one {продвижение} few {продвижения} other {продвижений}}",
-<<<<<<< HEAD
-  "status.reblogs.empty": "Никто ещё не продвинул этот пост. Все пользователи, продвинувшие этот пост, будут показаны здесь.",
-  "status.redraft": "Удалить и исправить",
-  "status.remove_bookmark": "Убрать из закладок",
-  "status.remove_favourite": "Убрать из избранного",
-=======
   "status.reblogs.empty": "Никто ещё не продвинул этот пост. Все пользователи, которые продвинут этот пост, будут показаны здесь.",
   "status.redraft": "Удалить и исправить",
   "status.remove_bookmark": "Убрать из закладок",
   "status.remove_favourite": "Убрать из избранного",
   "status.remove_quote": "Удалить",
->>>>>>> v4.5.0
   "status.replied_in_thread": "Ответил(а) в обсуждении",
   "status.replied_to": "Ответил(а) {name}",
   "status.reply": "Ответить",
   "status.replyAll": "Ответить в обсуждении",
   "status.report": "Пожаловаться на @{name}",
-<<<<<<< HEAD
-=======
   "status.request_quote": "Запрос на цитирование",
   "status.revoke_quote": "Удалить мой пост из поста @{name}",
->>>>>>> v4.5.0
   "status.sensitive_warning": "Медиа деликатного характера",
   "status.share": "Поделиться",
   "status.show_less_all": "Свернуть все предупреждения о содержании в ветке",
@@ -1171,11 +934,7 @@
   "status.uncached_media_warning": "Предварительный просмотр недоступен",
   "status.unmute_conversation": "Не игнорировать обсуждение",
   "status.unpin": "Открепить от профиля",
-<<<<<<< HEAD
-  "subscribed_languages.lead": "Посты лишь на выбранных языках будут появляться в вашей домашней ленте и в списках после изменения. Снимите выбор, чтобы получать посты на всех языках.",
-=======
   "subscribed_languages.lead": "Посты лишь на выбранных языках будут появляться в вашей домашней ленте и списках после изменения. Снимите выбор, чтобы получать посты на всех языках.",
->>>>>>> v4.5.0
   "subscribed_languages.save": "Сохранить изменения",
   "subscribed_languages.target": "Изменить языки подписки для {target}",
   "tabs_bar.home": "Главная",
@@ -1201,10 +960,7 @@
   "upload_button.label": "Прикрепить фото, видео или аудио",
   "upload_error.limit": "Превышено максимальное количество вложений.",
   "upload_error.poll": "К опросам нельзя прикреплять файлы.",
-<<<<<<< HEAD
-=======
   "upload_error.quote": "К опросам нельзя прикреплять файлы.",
->>>>>>> v4.5.0
   "upload_form.drag_and_drop.instructions": "Чтобы выбрать вложение, нажмите \"Пробел\" (Space) или \"Ввод\" (Enter). Используйте клавиши со стрелками, чтобы передвинуть вложение в любом направлении. Нажмите \"Пробел\" (Space) или \"Ввод\" (Enter) ещё раз, чтобы переместить вложение на новое место, либо нажмите кнопку \"Выйти\" (Escape) для отмены перемещения.",
   "upload_form.drag_and_drop.on_drag_cancel": "Перемещение отменено. Вложение {item} было оставлено на прежнем месте.",
   "upload_form.drag_and_drop.on_drag_end": "Вложение {item} было перемещено.",
@@ -1227,9 +983,6 @@
   "video.skip_forward": "Перемотка вперёд",
   "video.unmute": "Включить звук",
   "video.volume_down": "Громкость уменьшена",
-<<<<<<< HEAD
-  "video.volume_up": "Громкость увеличена"
-=======
   "video.volume_up": "Громкость увеличена",
   "visibility_modal.button_title": "Настроить видимость",
   "visibility_modal.header": "Видимость и взаимодействие",
@@ -1240,5 +993,4 @@
   "visibility_modal.helper.unlisted_quoting": "Когда люди цитируют вас, их посты также скрываются из ленты трендов.",
   "visibility_modal.instructions": "Регулируйте, кто сможет взаимодействовать с этим сообщением. Также можно установить параметры для всех будущих публикаций, перейдя в <link>Настройки > Стандартные параметры публикации</link>.",
   "visibility_modal.privacy_label": "Видимость"
->>>>>>> v4.5.0
 }

@@ -10,13 +10,9 @@ import {
   insertEmojiCompose,
   uploadCompose,
 } from 'mastodon/actions/compose';
-<<<<<<< HEAD
-import { openModal } from 'mastodon/actions/modal';
-=======
 import { pasteLinkCompose } from 'mastodon/actions/compose_typed';
 import { openModal } from 'mastodon/actions/modal';
 import { PRIVATE_QUOTE_MODAL_ID } from 'mastodon/features/ui/components/confirmation_modals/private_quote_notify';
->>>>>>> v4.5.0
 
 import ComposeForm from '../components/compose_form';
 
@@ -38,13 +34,10 @@ const mapStateToProps = state => ({
   isUploading: state.getIn(['compose', 'is_uploading']),
   anyMedia: state.getIn(['compose', 'media_attachments']).size > 0,
   missingAltText: state.getIn(['compose', 'media_attachments']).some(media => ['image', 'gifv'].includes(media.get('type')) && (media.get('description') ?? '').length === 0),
-<<<<<<< HEAD
-=======
   quoteToPrivate:
     !!state.getIn(['compose', 'quoted_status_id'])
     && state.getIn(['compose', 'privacy']) === 'private'
     && !state.getIn(['settings', 'dismissed_banners', PRIVATE_QUOTE_MODAL_ID]),
->>>>>>> v4.5.0
   isInReply: state.getIn(['compose', 'in_reply_to']) !== null,
   lang: state.getIn(['compose', 'language']),
   maxChars: state.getIn(['server', 'server', 'configuration', 'statuses', 'max_characters'], 500),
@@ -56,20 +49,12 @@ const mapDispatchToProps = (dispatch, props) => ({
     dispatch(changeCompose(text));
   },
 
-<<<<<<< HEAD
-  onSubmit (missingAltText) {
-=======
   onSubmit ({ missingAltText, quoteToPrivate }) {
->>>>>>> v4.5.0
     if (missingAltText) {
       dispatch(openModal({
         modalType: 'CONFIRM_MISSING_ALT_TEXT',
         modalProps: {},
       }));
-<<<<<<< HEAD
-    } else {
-      dispatch(submitCompose());
-=======
     } else if (quoteToPrivate) {
       dispatch(openModal({
         modalType: 'CONFIRM_PRIVATE_QUOTE_NOTIFY',
@@ -81,7 +66,6 @@ const mapDispatchToProps = (dispatch, props) => ({
           window.location.assign(status.url);
         }
       }));
->>>>>>> v4.5.0
     }
   },
 

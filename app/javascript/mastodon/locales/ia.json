@@ -254,14 +254,11 @@
   "confirmations.remove_from_followers.confirm": "Remover sequitor",
   "confirmations.remove_from_followers.message": "{name} non plus te sequera. Es tu secur de voler continuar?",
   "confirmations.remove_from_followers.title": "Remover sequitor?",
-<<<<<<< HEAD
-=======
   "confirmations.revoke_quote.confirm": "Remover message",
   "confirmations.revoke_quote.message": "Iste action non pote esser disfacite.",
   "confirmations.revoke_quote.title": "Remover message?",
   "confirmations.unblock.confirm": "Disblocar",
   "confirmations.unblock.title": "Disblocar {name}?",
->>>>>>> v4.5.0
   "confirmations.unfollow.confirm": "Non plus sequer",
   "confirmations.unfollow.title": "Cessar de sequer {name}?",
   "confirmations.withdraw_request.confirm": "Retirar requesta",
@@ -325,11 +322,8 @@
   "emoji_button.search_results": "Resultatos de recerca",
   "emoji_button.symbols": "Symbolos",
   "emoji_button.travel": "Viages e locos",
-<<<<<<< HEAD
-=======
   "empty_column.account_featured.me": "Tu non ha ancora mittite alcun cosa in evidentia. Sapeva tu que tu pote mitter in evidentia sur tu profilo le hashtags que tu usa le plus e mesmo le contos de tu amicos?",
   "empty_column.account_featured.other": "{acct} non ha ancora mittite alcun cosa in evidentia. Sapeva tu que tu pote mitter in evidentia sur tu profilo le hashtags que tu usa le plus e mesmo le contos de tu amicos?",
->>>>>>> v4.5.0
   "empty_column.account_featured_other.unknown": "Iste conto non ha ancora mittite alcun cosa in evidentia.",
   "empty_column.account_hides_collections": "Le usator non ha rendite iste information disponibile",
   "empty_column.account_suspended": "Conto suspendite",
@@ -360,10 +354,7 @@
   "errors.unexpected_crash.copy_stacktrace": "Copiar le traciamento del pila al area de transferentia",
   "errors.unexpected_crash.report_issue": "Reportar problema",
   "explore.suggested_follows": "Personas",
-<<<<<<< HEAD
-=======
   "explore.title": "In tendentia",
->>>>>>> v4.5.0
   "explore.trending_links": "Novas",
   "explore.trending_statuses": "Messages",
   "explore.trending_tags": "Hashtags",
@@ -424,11 +415,8 @@
   "generic.saved": "Salvate",
   "getting_started.heading": "Prime passos",
   "hashtag.admin_moderation": "Aperir le interfacie de moderation pro #{name}",
-<<<<<<< HEAD
-=======
   "hashtag.browse": "Percurrer messages in #{hashtag}",
   "hashtag.browse_from_account": "Percurrer le messages de @{name} in #{hashtag}",
->>>>>>> v4.5.0
   "hashtag.column_header.tag_mode.all": "e {additional}",
   "hashtag.column_header.tag_mode.any": "o {additional}",
   "hashtag.column_header.tag_mode.none": "sin {additional}",
@@ -445,11 +433,7 @@
   "hashtag.follow": "Sequer hashtag",
   "hashtag.mute": "Silentiar #{hashtag}",
   "hashtag.unfeature": "Non evidentiar sur le profilo",
-<<<<<<< HEAD
-  "hashtag.unfollow": "Non sequer plus le hashtag",
-=======
   "hashtag.unfollow": "Non plus sequer le hashtag",
->>>>>>> v4.5.0
   "hashtags.and_other": "…e {count, plural, one {un altere} other {# alteres}}",
   "hints.profiles.followers_may_be_missing": "Le sequitores de iste profilo pote mancar.",
   "hints.profiles.follows_may_be_missing": "Le profilos sequite per iste profilo pote mancar.",
@@ -457,12 +441,7 @@
   "hints.profiles.see_more_followers": "Vider plus de sequitores sur {domain}",
   "hints.profiles.see_more_follows": "Vider plus de sequites sur {domain}",
   "hints.profiles.see_more_posts": "Vider plus de messages sur {domain}",
-<<<<<<< HEAD
-  "hints.threads.replies_may_be_missing": "Responsas de altere servitores pote mancar.",
-  "hints.threads.see_more": "Vider plus de responsas sur {domain}",
-=======
   "home.column_settings.show_quotes": "Monstrar citationes",
->>>>>>> v4.5.0
   "home.column_settings.show_reblogs": "Monstrar impulsos",
   "home.column_settings.show_replies": "Monstrar responsas",
   "home.hide_announcements": "Celar annuncios",
@@ -482,30 +461,13 @@
   "ignore_notifications_modal.not_following_title": "Ignorar notificationes de personas que tu non seque?",
   "ignore_notifications_modal.private_mentions_title": "Ignorar notificationes de mentiones private non requestate?",
   "info_button.label": "Adjuta",
-<<<<<<< HEAD
-  "info_button.what_is_alt_text": "<h1>Que es texto alternative?</h1><p>Le texto alternative forni descriptiones de imagines a personas con impedimentos visual, con connexiones lente, o qui cerca contexto additional.</p><p>Tu pote meliorar le accessibilitate e le comprension pro totes scribente un texto alternative clar, concise e objective.</p><ul><li>Captura le elementos importante</li><li>Summarisa texto in imagines</li><li>Usa le structura de phrase normal</li><li>Evita information redundante</li><li>In figuras complexe (como diagrammas o mappas), concentra te sur le tendentias e punctos clave</li></ul>",
-  "interaction_modal.action.favourite": "Per favor reveni a tu conto pro marcar isto como favorite.",
-  "interaction_modal.action.follow": "Per favor reveni a tu conto pro sequer.",
-  "interaction_modal.action.reblog": "Per favor reveni a tu conto pro impulsar.",
-  "interaction_modal.action.reply": "Per favor reveni a tu conto pro responder.",
-  "interaction_modal.action.vote": "Per favor reveni a tu conto pro votar.",
-=======
   "info_button.what_is_alt_text": "<h1>Que es texto alternative?</h1><p>Le texto alternative forni descriptiones de imagines a personas con impedimentos visual, con connexiones lente a internet, o qui cerca contexto supplementari.</p><p>Tu pote meliorar le accessibilitate e le comprension pro totes si tu scribe un texto alternative clar, concise e objective.</p><ul><li>Captura le elementos importante</li><li>Summarisa texto in imagines</li><li>Usa un structura conventional de phrases</li><li>Evita information redundante</li><li>In figuras complexe (como diagrammas o mappas), concentra te sur le tendentias e punctos clave</li></ul>",
   "interaction_modal.action": "Pro interager con le message de {name}, tu debe acceder a tu conto sur le servitor Mastodon que tu usa.",
->>>>>>> v4.5.0
   "interaction_modal.go": "Revenir",
   "interaction_modal.no_account_yet": "Tu non ha ancora un conto?",
   "interaction_modal.on_another_server": "Sur un altere servitor",
   "interaction_modal.on_this_server": "Sur iste servitor",
-<<<<<<< HEAD
-  "interaction_modal.title.favourite": "Marcar le message de {name} como favorite",
-  "interaction_modal.title.follow": "Sequer {name}",
-  "interaction_modal.title.reblog": "Impulsar le message de {name}",
-  "interaction_modal.title.reply": "Responder al message de {name}",
-  "interaction_modal.title.vote": "Votar in le sondage de {name}",
-=======
   "interaction_modal.title": "Aperi session pro continuar",
->>>>>>> v4.5.0
   "interaction_modal.username_prompt": "P.ex. {example}",
   "intervals.full.days": "{number, plural, one {# die} other {# dies}}",
   "intervals.full.hours": "{number, plural, one {# hora} other {# horas}}",
@@ -621,9 +583,6 @@
   "navigation_bar.mutes": "Usatores silentiate",
   "navigation_bar.opened_in_classic_interface": "Messages, contos e altere paginas specific es aperite per predefinition in le interfacie web classic.",
   "navigation_bar.preferences": "Preferentias",
-<<<<<<< HEAD
-  "navigation_bar.search": "Cercar",
-=======
   "navigation_bar.privacy_and_reach": "Confidentialitate e portata",
   "navigation_bar.search": "Cercar",
   "navigation_bar.search_trends": "Cercar / In tendentia",
@@ -631,7 +590,6 @@
   "navigation_panel.collapse_lists": "Contraher le menu de listas",
   "navigation_panel.expand_followed_tags": "Expander le menu de hashtags sequite",
   "navigation_panel.expand_lists": "Expander le menu de listas",
->>>>>>> v4.5.0
   "not_signed_in_indicator.not_signed_in": "Es necessari aperir session pro acceder a iste ressource.",
   "notification.admin.report": "{name} ha reportate {target}",
   "notification.admin.report_account": "{name} ha reportate {count, plural, one {un message} other {# messages}} de {target} per {category}",
@@ -916,8 +874,6 @@
   "status.cancel_reblog_private": "Disfacer impulso",
   "status.cannot_quote": "Tu non es autorisate a citar iste message",
   "status.cannot_reblog": "Iste message non pote esser impulsate",
-<<<<<<< HEAD
-=======
   "status.contains_quote": "Contine un citation",
   "status.context.loading": "Cargante plus responsas",
   "status.context.loading_error": "Non poteva cargar nove responsas",
@@ -925,7 +881,6 @@
   "status.context.more_replies_found": "Plus responsas trovate",
   "status.context.retry": "Tentar de novo",
   "status.context.show": "Monstrar",
->>>>>>> v4.5.0
   "status.continued_thread": "Continuation del discussion",
   "status.copy": "Copiar ligamine a message",
   "status.delete": "Deler",
@@ -952,8 +907,6 @@
   "status.mute_conversation": "Silentiar conversation",
   "status.open": "Expander iste message",
   "status.pin": "Fixar sur profilo",
-<<<<<<< HEAD
-=======
   "status.quote": "Citar",
   "status.quote.cancel": "Cancellar le citation",
   "status.quote_error.filtered": "Celate a causa de un de tu filtros",
@@ -973,7 +926,6 @@
   "status.quotes.empty": "Necuno ha ancora citate iste message. Quando alcuno lo face, illo apparera hic.",
   "status.quotes.local_other_disclaimer": "Le citationes rejectate per le autor non essera monstrate.",
   "status.quotes.remote_other_disclaimer": "Solmente le citationes de {domain} se garanti de esser monstrate hic. Citationes rejectate per le autor non essera monstrate.",
->>>>>>> v4.5.0
   "status.read_more": "Leger plus",
   "status.reblog": "Impulsar",
   "status.reblog_or_quote": "Impulsar o citar",
@@ -984,14 +936,9 @@
   "status.redraft": "Deler e reconciper",
   "status.remove_bookmark": "Remover marcapagina",
   "status.remove_favourite": "Remover del favoritos",
-<<<<<<< HEAD
-  "status.replied_in_thread": "Respondite in le discussion",
-  "status.replied_to": "Respondite a {name}",
-=======
   "status.remove_quote": "Remover",
   "status.replied_in_thread": "Responsa in discussion",
   "status.replied_to": "Responsa a {name}",
->>>>>>> v4.5.0
   "status.reply": "Responder",
   "status.replyAll": "Responder al discussion",
   "status.report": "Reportar @{name}",
@@ -1014,16 +961,11 @@
   "tabs_bar.home": "Initio",
   "tabs_bar.menu": "Menu",
   "tabs_bar.notifications": "Notificationes",
-<<<<<<< HEAD
-  "terms_of_service.effective_as_of": "In vigor a partir de {date}",
-  "terms_of_service.title": "Conditiones de servicio",
-=======
   "tabs_bar.publish": "Nove message",
   "tabs_bar.search": "Cercar",
   "terms_of_service.effective_as_of": "In vigor a partir de {date}",
   "terms_of_service.title": "Conditiones de servicio",
   "terms_of_service.upcoming_changes_on": "Cambiamentos a venir le {date}",
->>>>>>> v4.5.0
   "time_remaining.days": "{number, plural, one {# die} other {# dies}} restante",
   "time_remaining.hours": "{number, plural, one {# hora} other {# horas}} restante",
   "time_remaining.minutes": "{number, plural, one {# minuta} other {# minutas}} restante",
@@ -1039,10 +981,7 @@
   "upload_button.label": "Adde imagines, un video o un file de audio",
   "upload_error.limit": "Limite de incargamento de files excedite.",
   "upload_error.poll": "Incargamento de files non permittite con sondages.",
-<<<<<<< HEAD
-=======
   "upload_error.quote": "Non es permittite incargar files con citationes.",
->>>>>>> v4.5.0
   "upload_form.drag_and_drop.instructions": "Pro prender un annexo multimedial, preme sur le barra de spatios o Enter. Trahente lo, usa le claves de flecha pro displaciar le annexo multimedial in un certe direction. Preme le barra de spatios o Enter de novo pro deponer le annexo multimedial in su nove position, o preme sur Escape pro cancellar.",
   "upload_form.drag_and_drop.on_drag_cancel": "Le displaciamento ha essite cancellate. Le annexo multimedial {item} ha essite deponite.",
   "upload_form.drag_and_drop.on_drag_end": "Le annexo multimedial {item} ha essite deponite.",
@@ -1062,11 +1001,6 @@
   "video.pause": "Pausa",
   "video.play": "Reproducer",
   "video.skip_backward": "Saltar a retro",
-<<<<<<< HEAD
-  "video.unmute": "Non plus silentiar",
-  "video.volume_down": "Abassar le volumine",
-  "video.volume_up": "Augmentar le volumine"
-=======
   "video.skip_forward": "Avantiar",
   "video.unmute": "Non plus silentiar",
   "video.volume_down": "Abassar le volumine",
@@ -1085,5 +1019,4 @@
   "visibility_modal.quote_nobody": "Solo io",
   "visibility_modal.quote_public": "Omnes",
   "visibility_modal.save": "Salvar"
->>>>>>> v4.5.0
 }

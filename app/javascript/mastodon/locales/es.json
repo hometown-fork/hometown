@@ -76,21 +76,13 @@
   "account.posts_with_replies": "Publicaciones y respuestas",
   "account.remove_from_followers": "Eliminar {name} de tus seguidores",
   "account.report": "Reportar a @{name}",
-<<<<<<< HEAD
-  "account.requested": "Esperando aprobación. Haz clic para cancelar la solicitud de seguimiento",
-=======
->>>>>>> v4.5.0
   "account.requested_follow": "{name} ha solicitado seguirte",
   "account.requests_to_follow_you": "Solicita seguirte",
   "account.share": "Compartir el perfil de @{name}",
   "account.show_reblogs": "Mostrar impulsos de @{name}",
   "account.statuses_counter": "{count, plural, one {{counter} publicación} other {{counter} publicaciones}}",
   "account.unblock": "Desbloquear a @{name}",
-<<<<<<< HEAD
-  "account.unblock_domain": "Desbloquear dominio {domain}",
-=======
   "account.unblock_domain": "Desbloquear el dominio {domain}",
->>>>>>> v4.5.0
   "account.unblock_domain_short": "Desbloquear",
   "account.unblock_short": "Desbloquear",
   "account.unendorse": "No mostrar en el perfil",
@@ -270,14 +262,11 @@
   "confirmations.remove_from_followers.confirm": "Eliminar seguidor",
   "confirmations.remove_from_followers.message": "{name} dejará de seguirte. ¿Estás seguro de que quieres continuar?",
   "confirmations.remove_from_followers.title": "¿Eliminar seguidor?",
-<<<<<<< HEAD
-=======
   "confirmations.revoke_quote.confirm": "Eliminar publicación",
   "confirmations.revoke_quote.message": "Esta acción no tiene vuelta atrás.",
   "confirmations.revoke_quote.title": "¿Eliminar la publicación?",
   "confirmations.unblock.confirm": "Desbloquear",
   "confirmations.unblock.title": "¿Desbloquear a {name}?",
->>>>>>> v4.5.0
   "confirmations.unfollow.confirm": "Dejar de seguir",
   "confirmations.unfollow.title": "¿Dejar de seguir a {name}?",
   "confirmations.withdraw_request.confirm": "Retirar solicitud",
@@ -377,19 +366,16 @@
   "explore.trending_links": "Noticias",
   "explore.trending_statuses": "Publicaciones",
   "explore.trending_tags": "Etiquetas",
-<<<<<<< HEAD
-  "federation.change": "Adjust status federation",
-  "federation.federated.long": "Allow toot to reach other instances",
-  "federation.federated.short": "Federated",
-  "federation.local_only.long": "Restrict this toot only to my instance",
-  "federation.local_only.short": "Local-only",
-=======
->>>>>>> v4.5.0
   "featured_carousel.header": "{count, plural,one {Publicación fijada} other {Publicaciones fijadas}}",
   "featured_carousel.next": "Siguiente",
   "featured_carousel.post": "Publicación",
   "featured_carousel.previous": "Anterior",
   "featured_carousel.slide": "{index} de {total}",
+  "federation.change": "Adjust status federation",
+  "federation.federated.long": "Allow toot to reach other instances",
+  "federation.federated.short": "Federated",
+  "federation.local_only.long": "Restrict this toot only to my instance",
+  "federation.local_only.short": "Local-only",
   "filter_modal.added.context_mismatch_explanation": "Esta categoría de filtro no se aplica al contexto en el que ha accedido a esta publlicación. Si quieres que la publicación sea filtrada también en este contexto, tendrás que editar el filtro.",
   "filter_modal.added.context_mismatch_title": "¡El contexto no coincide!",
   "filter_modal.added.expired_explanation": "Esta categoría de filtro ha caducado, tendrás que cambiar la fecha de caducidad para que se aplique.",
@@ -468,11 +454,6 @@
   "hints.profiles.see_more_followers": "Ver más seguidores en {domain}",
   "hints.profiles.see_more_follows": "Ver más perfiles seguidos en {domain}",
   "hints.profiles.see_more_posts": "Ver más publicaciones en {domain}",
-<<<<<<< HEAD
-  "hints.threads.replies_may_be_missing": "Puede que no se muestren algunas respuestas de otros servidores.",
-  "hints.threads.see_more": "Ver más respuestas en {domain}",
-=======
->>>>>>> v4.5.0
   "home.column_settings.show_quotes": "Mostrar citas",
   "home.column_settings.show_reblogs": "Mostrar impulsos",
   "home.column_settings.show_replies": "Mostrar respuestas",
@@ -494,28 +475,12 @@
   "ignore_notifications_modal.private_mentions_title": "¿Ignorar notificaciones de menciones privadas no solicitadas?",
   "info_button.label": "Ayuda",
   "info_button.what_is_alt_text": "<h1>¿Qué es el texto alternativo?</h1> <p>El texto alternativo proporciona descripciones de las imágenes para personas con problemas de visión, conexiones con poco ancho de banda o que buscan un contexto adicional.</p> <p>Puedes mejorar la accesibilidad y la comprensión para todos escribiendo un texto alternativo claro, conciso y objetivo.</p> <ul><li>Captura los elementos importantes.</li><li>Resume el texto en imágenes.</li><li>Usa una estructura de frases normal.</li><li>Evita la información redundante.</li><li>Céntrate en las tendencias y conclusiones clave de los elementos visuales complejos (como diagramas o mapas).</li></ul>",
-<<<<<<< HEAD
-  "interaction_modal.action.favourite": "Para continuar, tienes que marcar como favorito desde tu cuenta.",
-  "interaction_modal.action.follow": "Para continuar, tienes que seguir desde tu cuenta.",
-  "interaction_modal.action.reblog": "Para continuar, tienes que impulsar desde tu cuenta.",
-  "interaction_modal.action.reply": "Para continuar, tienes que responder desde tu cuenta.",
-  "interaction_modal.action.vote": "Para continuar, tienes que votar desde tu cuenta.",
-=======
   "interaction_modal.action": "Para interactuar con la publicación de {name}, debes iniciar sesión en tu cuenta en cualquier servidor Mastodon que utilices.",
->>>>>>> v4.5.0
   "interaction_modal.go": "Ir",
   "interaction_modal.no_account_yet": "¿Todavía no tienes cuenta?",
   "interaction_modal.on_another_server": "En un servidor diferente",
   "interaction_modal.on_this_server": "En este servidor",
-<<<<<<< HEAD
-  "interaction_modal.title.favourite": "Marcar como favorita la publicación de {name}",
-  "interaction_modal.title.follow": "Seguir a {name}",
-  "interaction_modal.title.reblog": "Impulsar la publicación de {name}",
-  "interaction_modal.title.reply": "Responder a la publicación de {name}",
-  "interaction_modal.title.vote": "Vota en la encuesta de {name}",
-=======
   "interaction_modal.title": "Inicia sesión para continuar",
->>>>>>> v4.5.0
   "interaction_modal.username_prompt": "Por ejemplo: {example}",
   "intervals.full.days": "{number, plural, one {# día} other {# días}}",
   "intervals.full.hours": "{number, plural, one {# hora} other {# horas}}",
@@ -545,10 +510,7 @@
   "keyboard_shortcuts.open_media": "Abrir multimedia",
   "keyboard_shortcuts.pinned": "Abrir la lista de publicaciones destacadas",
   "keyboard_shortcuts.profile": "Abrir perfil del autor",
-<<<<<<< HEAD
-=======
   "keyboard_shortcuts.quote": "Citar publicación",
->>>>>>> v4.5.0
   "keyboard_shortcuts.reply": "Responder a una publicación",
   "keyboard_shortcuts.requests": "Abrir lista de solicitudes de seguimiento",
   "keyboard_shortcuts.search": "Focalizar barra de búsqueda",
@@ -560,11 +522,8 @@
   "keyboard_shortcuts.translate": "para traducir una publicación",
   "keyboard_shortcuts.unfocus": "Quitar el foco de la caja de redacción/búsqueda",
   "keyboard_shortcuts.up": "Moverse hacia arriba en la lista",
-<<<<<<< HEAD
-=======
   "learn_more_link.got_it": "Entendido",
   "learn_more_link.learn_more": "Más información",
->>>>>>> v4.5.0
   "lightbox.close": "Cerrar",
   "lightbox.next": "Siguiente",
   "lightbox.previous": "Anterior",
@@ -875,11 +834,7 @@
   "report.thanks.title_actionable": "Gracias por informar, estudiaremos esto.",
   "report.unfollow": "Dejar de seguir a @{name}",
   "report.unfollow_explanation": "Estás siguiendo esta cuenta. Para dejar de ver sus publicaciones en tu página de inicio, deja de seguirla.",
-<<<<<<< HEAD
-  "report_notification.attached_statuses": "{count, plural, one {{count} publicación} other {{count} publicaciones}} adjunta(s)",
-=======
   "report_notification.attached_statuses": "{count, plural, one {{count} publicación adjunta} other {{count} publicaciones adjuntas}}",
->>>>>>> v4.5.0
   "report_notification.categories.legal": "Legal",
   "report_notification.categories.legal_sentence": "contenido ilegal",
   "report_notification.categories.other": "Otros",
@@ -967,15 +922,6 @@
   "status.mute_conversation": "Silenciar conversación",
   "status.open": "Expandir publicación",
   "status.pin": "Fijar",
-<<<<<<< HEAD
-  "status.quote_error.filtered": "Oculto debido a uno de tus filtros",
-  "status.quote_error.not_found": "No se puede mostrar esta publicación.",
-  "status.quote_error.pending_approval": "Esta publicación está pendiente de aprobación del autor original.",
-  "status.quote_error.rejected": "Esta publicación no puede mostrarse porque el autor original no permite que se cite.",
-  "status.quote_error.removed": "Esta publicación fue eliminada por su autor.",
-  "status.quote_error.unauthorized": "Esta publicación no puede mostrarse, ya que no estás autorizado a verla.",
-  "status.quote_post_author": "Publicación de {name}",
-=======
   "status.quote": "Citar",
   "status.quote.cancel": "Cancelar cita",
   "status.quote_error.blocked_account_hint.title": "Esta publicación está oculta porque has bloqueado a @{name}.",
@@ -998,7 +944,6 @@
   "status.quotes.empty": "Nadie ha citado esta publicación todavía. Cuando alguien lo haga, aparecerá aquí.",
   "status.quotes.local_other_disclaimer": "Las citas rechazadas por el autor no se mostrarán.",
   "status.quotes.remote_other_disclaimer": "Solo se garantiza que se muestren las citas de {domain}. Las citas rechazadas por el autor no se mostrarán.",
->>>>>>> v4.5.0
   "status.read_more": "Leer más",
   "status.reblog": "Impulsar",
   "status.reblog_or_quote": "Impulsar o citar",
@@ -1009,20 +954,14 @@
   "status.redraft": "Borrar y volver a borrador",
   "status.remove_bookmark": "Eliminar marcador",
   "status.remove_favourite": "Eliminar de favoritos",
-<<<<<<< HEAD
-=======
   "status.remove_quote": "Eliminar",
->>>>>>> v4.5.0
   "status.replied_in_thread": "Respondió en el hilo",
   "status.replied_to": "Respondió a {name}",
   "status.reply": "Responder",
   "status.replyAll": "Responder al hilo",
   "status.report": "Reportar a @{name}",
-<<<<<<< HEAD
-=======
   "status.request_quote": "Solicitud de citación",
   "status.revoke_quote": "Eliminar mi publicación de la publicación de @{name}",
->>>>>>> v4.5.0
   "status.sensitive_warning": "Contenido sensible",
   "status.share": "Compartir",
   "status.show_less_all": "Mostrar menos para todo",
@@ -1060,10 +999,7 @@
   "upload_button.label": "Añadir imágenes, un fichero de vídeo o de audio",
   "upload_error.limit": "Límite de subida de archivos excedido.",
   "upload_error.poll": "No se permite la subida de archivos con encuestas.",
-<<<<<<< HEAD
-=======
   "upload_error.quote": "No se permite subir archivos a las citas.",
->>>>>>> v4.5.0
   "upload_form.drag_and_drop.instructions": "Para recoger un archivo multimedia, pulsa la barra espaciadora o la tecla Enter. Mientras arrastras, utiliza las teclas de flecha para mover el archivo multimedia en cualquier dirección. Vuelve a pulsar la barra espaciadora o la tecla Enter para soltar el archivo multimedia en su nueva posición, o pulsa Escape para cancelar.",
   "upload_form.drag_and_drop.on_drag_cancel": "Se canceló el arrastre. Se eliminó el archivo adjunto {item}.",
   "upload_form.drag_and_drop.on_drag_end": "El archivo adjunto {item} ha sido eliminado.",
@@ -1086,9 +1022,6 @@
   "video.skip_forward": "Adelantar",
   "video.unmute": "Dejar de silenciar",
   "video.volume_down": "Bajar volumen",
-<<<<<<< HEAD
-  "video.volume_up": "Subir volumen"
-=======
   "video.volume_up": "Subir volumen",
   "visibility_modal.button_title": "Configura la visibilidad",
   "visibility_modal.direct_quote_warning.text": "Si guardas la configuración actual, la cita incrustada se convertirá en un enlace.",
@@ -1106,5 +1039,4 @@
   "visibility_modal.quote_nobody": "Solo yo",
   "visibility_modal.quote_public": "Cualquiera",
   "visibility_modal.save": "Guardar"
->>>>>>> v4.5.0
 }

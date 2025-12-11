@@ -118,11 +118,7 @@ zh-CN:
       reject: 拒绝
       rejected_msg: 已拒绝 %{username} 的注册申请
       remote_suspension_irreversible: 此账号的数据已被不可逆转地删除。
-<<<<<<< HEAD
-      remote_suspension_reversible_hint_html: 账号已在他们的服务器上封禁，数据将在 %{date} 完全删除。 在此之前，远程服务器仍可恢复此账号，并且没有任何不良影响。 如果你想立即移除该账号的所有数据，可以在下面进行。
-=======
       remote_suspension_reversible_hint_html: 账号已在他们的服务器上封禁，数据将在 %{date} 完全删除。 在此之前，远程服务器仍可恢复此账号，并且没有任何不良影响。 如果你想立即移除该账号的全部数据，可以在下面进行。
->>>>>>> v4.5.0
       remove_avatar: 删除头像
       remove_header: 移除封面图
       removed_avatar_msg: 成功删除 %{username} 的头像
@@ -191,10 +187,7 @@ zh-CN:
         create_relay: 创建中继站
         create_unavailable_domain: 创建不可用域名
         create_user_role: 创建角色
-<<<<<<< HEAD
-=======
         create_username_block: 新建用户名规则
->>>>>>> v4.5.0
         demote_user: 取消管理员
         destroy_announcement: 删除公告
         destroy_canonical_email_block: 解除邮箱封禁
@@ -208,10 +201,7 @@ zh-CN:
         destroy_status: 删除嘟文
         destroy_unavailable_domain: 删除不可用域名
         destroy_user_role: 删除角色
-<<<<<<< HEAD
-=======
         destroy_username_block: 删除用户名规则
->>>>>>> v4.5.0
         disable_2fa_user: 停用双因素认证
         disable_custom_emoji: 禁用自定义表情符号
         disable_relay: 禁用中继站
@@ -265,10 +255,7 @@ zh-CN:
         create_relay_html: "%{name} 添加了中继站 %{target}"
         create_unavailable_domain_html: "%{name} 停止了向域名 %{target} 的投递"
         create_user_role_html: "%{name} 创建了角色 %{target}"
-<<<<<<< HEAD
-=======
         create_username_block_html: "%{name} 新增了有关包含 %{target} 的用户名的规则"
->>>>>>> v4.5.0
         demote_user_html: "%{name} 撤销了用户 %{target} 的管理权限"
         destroy_announcement_html: "%{name} 删除了公告 %{target}"
         destroy_canonical_email_block_html: "%{name} 解封了 hash 为 %{target} 的邮箱地址"
@@ -282,10 +269,7 @@ zh-CN:
         destroy_status_html: "%{name} 删除了 %{target} 的嘟文"
         destroy_unavailable_domain_html: "%{name} 恢复了向域名 %{target} 的投递"
         destroy_user_role_html: "%{name} 删除了角色 %{target}"
-<<<<<<< HEAD
-=======
         destroy_username_block_html: "%{name} 移除了有关包含 %{target} 的用户名的规则"
->>>>>>> v4.5.0
         disable_2fa_user_html: "%{name} 停用了用户 %{target} 的双因素认证"
         disable_custom_emoji_html: "%{name} 停用了自定义表情 %{target}"
         disable_relay_html: "%{name} 停用了中继站 %{target}"
@@ -320,10 +304,7 @@ zh-CN:
         update_report_html: "%{name} 更新了举报 %{target}"
         update_status_html: "%{name} 刷新了 %{target} 的嘟文"
         update_user_role_html: "%{name} 更改了角色 %{target}"
-<<<<<<< HEAD
-=======
         update_username_block_html: "%{name} 更新了有关包含 %{target} 的用户名的规则"
->>>>>>> v4.5.0
       deleted_account: 账号已注销
       empty: 没有找到日志
       filter_by_action: 根据操作筛选
@@ -342,11 +323,7 @@ zh-CN:
         title: 新公告
       preview:
         disclaimer: 由于用户无法选择退出，电子邮件通知应仅限于重要公告，例如个人数据泄露或服务器关闭通知。
-<<<<<<< HEAD
-        explanation_html: 此电子邮件将发送给 <strong>%{display_count} 用户</strong>。电子邮件将包含以下文本：
-=======
         explanation_html: 此电子邮件将发送给 <strong>%{display_count} 名用户</strong>。电子邮件将包含以下文本：
->>>>>>> v4.5.0
         title: 预览公告通知
       publish: 发布
       published_msg: 公告已发布！
@@ -522,20 +499,14 @@ zh-CN:
         registration_requested: 已申请注册
         registrations:
           confirm: 确认
-<<<<<<< HEAD
-=======
           description: 你收到了来自FASP的注册。若你没有发起这个请求，请拒绝。若你发起了这个请求，请仔细比对名称和密钥指纹后再确认注册。
->>>>>>> v4.5.0
           reject: 拒绝
           title: 确认FASP注册
         save: 保存
         select_capabilities: 选择能力
         sign_in: 登录
         status: 状态
-<<<<<<< HEAD
-=======
         title: 联邦宇宙辅助服务提供商（Fediverse Auxiliary Service Providers）
->>>>>>> v4.5.0
       title: FASP
     follow_recommendations:
       description_html: "<strong>“关注推荐”可帮助新用户快速找到有趣的内容</strong>。 当用户与他人的互动不足以形成个性化的建议时，就会推荐关注这些账号。推荐会每日更新，基于选定语言的近期最高互动数和最多本站关注者数综合评估得出。"
@@ -565,11 +536,7 @@ zh-CN:
       confirm_purge: 确定要删除此站点的全部数据吗？
       content_policies:
         comment: 内部备注
-<<<<<<< HEAD
-        description_html: 你可以设置应用于此域名所有账号和其所有子域名的内容策略。
-=======
         description_html: 你可以设置应用于此域名全部账号和其全部子域名的内容策略。
->>>>>>> v4.5.0
         limited_federation_mode_description_html: 你可以选择是否允许与此实例联合。
         policies:
           reject_media: 拒收媒体
@@ -607,24 +574,16 @@ zh-CN:
         limited: 受限的
         title: 审核
       moderation_notes:
-<<<<<<< HEAD
-        description_html: 查看备注或向其他管理员留言
-=======
         create: 新建管理员备注
         created_msg: 实例管理员备注创建成功！
         description_html: 查看备注或向其他管理员留言
         destroyed_msg: 实例管理员备注删除成功！
         placeholder: 有关此实例的信息、已采取的行动，或任何能帮助你将来管理此实例的事项。
->>>>>>> v4.5.0
         title: 审核注意事项
       private_comment: 私密评论
       public_comment: 公开评论
       purge: 清除
-<<<<<<< HEAD
-      purge_description_html: 如果你确认此域名已永久离线，可以从存储中删除此域名的所有账号记录和相关数据。这将会需要一段时间。
-=======
       purge_description_html: 如果你确认此域名已永久离线，可以从存储中删除此域名的全部账号记录和相关数据。这将会需要一段时间。
->>>>>>> v4.5.0
       title: 联合
       total_blocked_by_us: 被本站屏蔽的
       total_followed_by_them: 被对方关注的
@@ -688,13 +647,8 @@ zh-CN:
         mark_as_sensitive_description_html: 被举报的嘟文将被标记为敏感，同时该账号将被标记一次处罚，以供未来同一账号再次违规时参考。
         other_description_html: 查看更多控制该账号行为的选项，并自定义编写与被举报账号的通信。
         resolve_description_html: 不会对被举报账号采取任何动作，举报将被关闭，也不会留下处罚记录。
-<<<<<<< HEAD
-        silence_description_html: 只有关注或手工搜索此账号才能查看其资料，将严重限制其触达范围。可随时撤销。关闭针对此账号的所有举报。
-        suspend_description_html: 该账号及其所有内容将无法访问并最终被删除，且无法与该账号进行互动。 在 30 天内可随时撤销。关闭针对此账号的所有举报。
-=======
         silence_description_html: 只有关注或手工搜索此账号才能查看其资料，将严重限制其触达范围。可随时撤销。关闭针对此账号的全部举报。
         suspend_description_html: 该账号及其全部内容将无法访问并最终被删除，且无法与该账号进行互动。 在 30 天内可随时撤销。关闭针对此账号的全部举报。
->>>>>>> v4.5.0
       actions_description_html: 决定采取何种措施处理此举报。如果对被举报账号采取惩罚性措施，将向其发送一封电子邮件通知。但若选中<strong>垃圾信息</strong>类别则不会发送通知。
       actions_description_remote_html: 决定采取何种行动来解决此举报。 这只会影响<strong>你的</strong>服务器如何与该远程账号的通信并处理其内容。
       actions_no_posts: 该举报没有相关嘟文可供删除
@@ -757,11 +711,7 @@ zh-CN:
           silence_html: 严格限制 <strong>@%{acct}</strong> 的影响力，方法是让他们的个人资料和内容仅对已经关注他们的人可见，或手动查找其个人资料时
           suspend_html: 暂停 <strong>@%{acct}</strong>，使他们的个人资料和内容无法访问，也无法与之互动
         close_report: '将举报 #%{id} 标记为已解决'
-<<<<<<< HEAD
-        close_reports_html: 将针对 <strong>@%{acct}</strong> 的<strong>所有</strong>举报标记为已解决
-=======
         close_reports_html: 将针对 <strong>@%{acct}</strong> 的<strong>全部</strong>举报标记为已解决
->>>>>>> v4.5.0
         delete_data_html: 从现在起 30 天后删除 <strong>@%{acct}</strong> 的个人资料和内容，除非他们同时解除暂停。
         preview_preamble_html: "<strong>@%{acct}</strong> 将收到包含以下内容的警告："
         record_strike_html: 记录一次针对 <strong>@%{acct}</strong> 的警示，以帮助你在这个账号上的未来违规事件中得到重视。
@@ -788,11 +738,7 @@ zh-CN:
       description_html: 使用 <strong>用户角色</strong>，你可以自定义你的用户可以访问的 Mastodon 功能和区域。
       edit: 编辑角色 '%{name}'
       everyone: 默认权限
-<<<<<<< HEAD
-      everyone_full_description_html: 该角色是<strong>基础角色</strong>，会影响<strong>所有用户</strong>，包括未指定角色的用户。 其他所有的角色都继承该角色的权限。
-=======
       everyone_full_description_html: 该角色是<strong>基础角色</strong>，会影响<strong>全部用户</strong>，包括未指定角色的用户。 其他全部的角色都继承该角色的权限。
->>>>>>> v4.5.0
       permissions_count:
         other: "%{count} 个权限"
       privileges:
@@ -836,11 +782,8 @@ zh-CN:
         view_dashboard_description: 允许用户访问信息面板和各种指标
         view_devops: 开发运维
         view_devops_description: 允许用户访问 Sidekiq 和 pgHero 控制面板
-<<<<<<< HEAD
-=======
         view_feeds: 查看实时动态和话题
         view_feeds_description: 允许用户无视服务器设置访问实时动态和话题
->>>>>>> v4.5.0
       title: 角色
     rules:
       add_new: 添加规则
@@ -854,10 +797,7 @@ zh-CN:
       title: 实例规则
       translation: 翻译
       translations: 翻译
-<<<<<<< HEAD
-=======
       translations_explanation: 你可以选择性地为规则添加翻译。没有翻译版本则将显示默认值。 请确保任何提供的翻译都与默认值内容同步。
->>>>>>> v4.5.0
     settings:
       about:
         manage_rules: 管理服务器规则
@@ -865,13 +805,8 @@ zh-CN:
         rules_hint: 有一个专门区域用于显示用户需要遵守的规则。
         title: 关于本站
       allow_referrer_origin:
-<<<<<<< HEAD
-        desc: 当您的用户点击指向外部网站的链接时，他们的浏览器可能会将您的 Mastodon 服务器地址作为referrer发送。如果这会唯一地识别出您的用户（例如，如果这是一个私人 Mastodon 服务器），请禁用此功能。
-        title: 允许外部网站将您的 Mastodon 服务器视为流量来源
-=======
         desc: 当你的用户点击指向外部网站的链接时，他们的浏览器可能会将你的 Mastodon 服务器地址作为 referrer 发送。如果这会唯一地识别出你的用户，例如，如果这是一个私人 Mastodon 服务器，请禁用此功能。
         title: 允许外部网站将你的 Mastodon 服务器视为流量来源
->>>>>>> v4.5.0
       appearance:
         preamble: 自定义 Mastodon 的网页界面。
         title: 外观
@@ -890,11 +825,7 @@ zh-CN:
         title: 默认不让用户被搜索引擎索引
       discovery:
         follow_recommendations: 关注推荐
-<<<<<<< HEAD
-        preamble: 露出有趣的内容有助于新加入 Mastodon 的用户融入。可在这里控制多种发现功能如何在你的服务器上工作。
-=======
         preamble: 展示有趣的内容有助于新加入 Mastodon 的用户融入。可在这里控制多种发现功能如何在你的服务器上工作。
->>>>>>> v4.5.0
         privacy: 隐私
         profile_directory: 个人资料目录
         public_timelines: 公共时间线
@@ -905,8 +836,6 @@ zh-CN:
         all: 对每个人
         disabled: 不对任何人
         users: 对已登录的本站用户
-<<<<<<< HEAD
-=======
       feed_access:
         modes:
           authenticated: 仅已登录用户
@@ -917,7 +846,6 @@ zh-CN:
           about: 关于
           local_feed: 本站动态
           trends: 热门
->>>>>>> v4.5.0
       registrations:
         moderation_recommandation: 在向每个人开放注册之前，请确保你拥有一个人手足够且反应迅速的管理团队！
         preamble: 控制谁可以在你的服务器上创建账号。
@@ -979,10 +907,7 @@ zh-CN:
       title: 该账号的嘟文 - @%{name}
       trending: 当前热门
       view_publicly: 以公开身份查看
-<<<<<<< HEAD
-=======
       view_quoted_post: 查看引用的嘟文
->>>>>>> v4.5.0
       visibility: 可见性
       with_media: 含有媒体文件
     strikes:
@@ -1252,17 +1177,10 @@ zh-CN:
     hint_html: 如果你想从另一个账号迁移到这里，可以先在这里创建一个别名。要把旧账号的关注者迁移过来，这一步是必须的。设置别名的操作是<strong>无害且可撤销的</strong>。<strong>账号迁移的操作会从旧账号发起</strong>。
     remove: 取消关联别名
   appearance:
-<<<<<<< HEAD
-    advanced_web_interface: 高级 Web 界面
-    advanced_web_interface_hint: 在高级网页界面支持自定义多栏显示，你可以利用整个屏幕的宽度，同时查看首页、通知、跨站时间线及任意数量的列表和话题。
-    animations_and_accessibility: 动画与可访问性
-    confirmation_dialogs: 确认对话框
-=======
     advanced_settings: 高级设置
     animations_and_accessibility: 动画与可访问性
     boosting_preferences: 转嘟首选项
     boosting_preferences_info_html: "<strong>提示：</strong>无论当前设置如何，对 %{icon} 转嘟图标按<kbd>Shift</kbd> + <kbd>鼠标单击</kbd>将会立即转嘟。"
->>>>>>> v4.5.0
     discovery: 发现
     localization:
       body: Mastodon 由志愿者翻译。
@@ -1537,11 +1455,7 @@ zh-CN:
     all_items_on_page_selected_html:
       other: 此页面上的所有 <strong>%{count}</strong> 项目已被选中。
     all_matching_items_selected_html:
-<<<<<<< HEAD
-      other: 所有 <strong>%{count}</strong> 匹配你搜索的项目都已被选中。
-=======
       other: 全部 <strong>%{count}</strong> 匹配你搜索的项目都已被选中。
->>>>>>> v4.5.0
     cancel: 取消
     changes_saved_msg: 更改保存成功！
     confirm: 确认
@@ -1552,11 +1466,7 @@ zh-CN:
     order_by: 排序方式
     save_changes: 保存更改
     select_all_matching_items:
-<<<<<<< HEAD
-      other: 选择匹配你搜索的所有 %{count} 个项目。
-=======
       other: 选择匹配你搜索的全部 %{count} 个项目。
->>>>>>> v4.5.0
     today: 今天
     validation_errors:
       other: 出错啦！检查一下下面 %{count} 处出错的地方吧
@@ -1583,11 +1493,7 @@ zh-CN:
       domain_blocking_html:
         other: 你即将使用来自 <strong>%{filename}</strong> 的最多 <strong>%{count} 个</strong>站点域名<strong>替换你的站点屏蔽列表</strong>。
       following_html:
-<<<<<<< HEAD
-        other: 你即将<strong>关注</strong>来自 <strong>%{filename}</strong> 的最多 <strong>%{count} 个账号</strong>，并<strong>停止关注其他所有人</strong>。
-=======
         other: 你即将<strong>关注</strong>来自 <strong>%{filename}</strong> 的最多 <strong>%{count} 个账号</strong>，并<strong>停止关注其他任何人</strong>。
->>>>>>> v4.5.0
       lists_html:
         other: 你即将使用来自 <strong>%{filename}</strong> 的内容<strong>替换你的列表</strong>。最多将会有 <strong>%{count} 个账号</strong> 被添加到新列表。
       muting_html:
@@ -1725,11 +1631,7 @@ zh-CN:
       before: 在继续前，请仔细阅读下列说明：
       cooldown: 移动后会有一个冷却期，在此期间你将无法再次移动
       disabled_account: 此后，你的当前账号将无法使用。但是，你仍然有权导出数据或者重新激活。
-<<<<<<< HEAD
-      followers: 这步操作将把所有关注者从当前账号移动到新账号
-=======
       followers: 这步操作将把全部关注者从当前账号移动到新账号
->>>>>>> v4.5.0
       only_redirect_html: 或者，你可以<a href="%{path}">只在你的账号资料上设置一个跳转</a>。
       other_data: 不会自动移动其它数据
       redirect: 在收到一个跳转通知后，你当前的账号资料将会更新，并被排除在搜索范围外
@@ -1831,11 +1733,7 @@ zh-CN:
     privacy: 隐私
     privacy_hint_html: 控制你愿意向他人透露多少信息。通过浏览他人的关注列表和查看他们发嘟所用的应用，人们可以发现有趣的用户和酷炫的应用，但你可能更喜欢将其隐藏起来。
     reach: 范围
-<<<<<<< HEAD
-    reach_hint_html: 控制你是否希望被新人发现和关注。你是否希望你的嘟文出现在“探索”页面上？你是否希望其他人在关注推荐中看到你？你是想自动接受所有新粉丝，还是对每个粉丝都进行仔细的筛选？
-=======
     reach_hint_html: 控制你是否希望被新人发现和关注。你是否希望你的嘟文出现在“探索”页面上？你是否希望其他人在关注推荐中看到你？你是想自动接受全部新关注者，还是对每个关注者都进行仔细的筛选？
->>>>>>> v4.5.0
     search: 搜索
     search_hint_html: 控制你希望被找到的方式。你想让人们通过你公开发布的内容来找到你吗？当在网络上搜索时，你是否希望Mastodon之外的人能够找到你的个人资料？请注意，我们无法保证完全排除所有搜索引擎对公开信息的索引。
     title: 隐私与可达性
@@ -1852,11 +1750,7 @@ zh-CN:
     activity: 账号活动
     confirm_follow_selected_followers: 你确定想要关注所选的关注者吗？
     confirm_remove_selected_followers: 你确定想要取关所选的关注者吗？
-<<<<<<< HEAD
-    confirm_remove_selected_follows: 您确定要删除选定的关注者吗？
-=======
     confirm_remove_selected_follows: 你确定要删除选定的关注者吗？
->>>>>>> v4.5.0
     dormant: 休眠
     follow_failure: 无法关注选中的部分账号。
     follow_selected_followers: 关注选中的关注者
@@ -1869,11 +1763,7 @@ zh-CN:
     mutual: 互相关注
     primary: 主要
     relationship: 关系
-<<<<<<< HEAD
-    remove_selected_domains: 删除在选定站点中的所有关注者
-=======
     remove_selected_domains: 删除在选定站点中的全部关注者
->>>>>>> v4.5.0
     remove_selected_followers: 移除选中的关注者
     remove_selected_follows: 取消关注所选用户
     status: 账号状态
@@ -2003,12 +1893,6 @@ zh-CN:
       limit: 你置顶的嘟文数量已达上限
       ownership: 不能置顶别人的嘟文
       reblog: 不能置顶转嘟
-<<<<<<< HEAD
-    quote_policies:
-      followers: 关注者和提及的用户
-      nobody: 仅提及的用户
-      public: 所有人
-=======
     quote_error:
       not_available: 嘟文不可用
       pending_approval: 嘟文待发布
@@ -2018,21 +1902,14 @@ zh-CN:
       nobody: 仅限自己
       public: 任何人
     quote_post_author: 引用了 %{acct} 的嘟文
->>>>>>> v4.5.0
     title: "%{name}：“%{quote}”"
     visibilities:
       direct: 私下提及
       private: 仅关注者
       public: 公开
-<<<<<<< HEAD
-      public_long: 主页与列表
-      unlisted: 悄悄公开
-      unlisted_long: 对所有人可见，但不出现在公共时间线上
-=======
       public_long: 任何人（无论是否注册了 Mastodon）
       unlisted: 悄悄公开
       unlisted_long: 不显示在Mastodon的搜索结果、热门趋势、公共时间线上
->>>>>>> v4.5.0
   statuses_cleanup:
     enabled: 自动删除旧嘟文
     enabled_hint: 自动删除你发布的超过指定期限的嘟文，除非满足下列条件之一
@@ -2078,13 +1955,8 @@ zh-CN:
   terms_of_service:
     title: 服务条款
   terms_of_service_interstitial:
-<<<<<<< HEAD
-    future_preamble_html: 我们正修改服务条款，将在<strong>%{date}</strong>生效。我们建议您查看更新后的条款。
-    past_preamble_html: 自你上次访问起，我们改变了我们的服务条款。我们鼓励你查看更新后的条款。
-=======
     future_preamble_html: 我们将更改部分服务条款，这些更改将在<strong>%{date}</strong>生效。我们建议你查看更新后的条款。
     past_preamble_html: 自你上次访问起，我们更改了一些服务条款。我们建议你查看更新后的条款。
->>>>>>> v4.5.0
     review_link: 查看服务条款
     title: "%{domain} 更新了服务条款"
   themes:
@@ -2170,11 +2042,7 @@ zh-CN:
         delete_statuses: 你的一些嘟文被发现违反了一条或多条社区准则，并已被 %{instance} 的管理员删除。
         disable: 你不能再使用你的账号，但你的个人资料和其他数据保持不变。你可以请求数据备份，更改账号设置或删除账号。
         mark_statuses_as_sensitive: 你的一些嘟文已经被 %{instance} 管理员标记为敏感内容。这意味着别人需要在嘟文中点击媒体，才能显示媒体预览。你可以在今后发布嘟文时自行将媒体标记为敏感内容。
-<<<<<<< HEAD
-        sensitive: 即刻起，你上传的所有媒体文件都将被标记为敏感内容并隐藏，在点击警告后才能查看。
-=======
         sensitive: 即刻起，你上传的全部媒体文件都将被标记为敏感内容并隐藏，在点击警告后才能查看。
->>>>>>> v4.5.0
         silence: 你可以继续使用你的账号，但只有已关注你的人才能在看到你在此服务器上的嘟文，并且你会被排除在各类公共列表之外。其他用户仍可以手动关注你。
         suspend: 你不能再使用你的账号，并且你的个人资料和其他数据都将无法访问。在大约30天内，你仍可以登录并请求数据备份，之后相关数据将被完全删除。我们会保留一些基础数据以避免封禁失效。
       reason: 理由：
@@ -2236,11 +2104,7 @@ zh-CN:
       title: "%{name}，欢迎你的加入！"
   users:
     follow_limit_reached: 你不能关注超过 %{limit} 个人
-<<<<<<< HEAD
-    go_to_sso_account_settings: 转到您的身份提供商进行账号设置
-=======
     go_to_sso_account_settings: 转到你的身份提供商进行账号设置
->>>>>>> v4.5.0
     invalid_otp_token: 输入的双因素认证代码无效
     otp_lost_help_html: 如果你不慎丢失了全部的代码，请联系 %{email} 寻求帮助
     rate_limited: 验证尝试次数过多，请稍后再试。

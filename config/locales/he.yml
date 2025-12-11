@@ -949,12 +949,8 @@ he:
       title: פרסומי החשבון - @%{name}
       trending: נושאים חמים
       view_publicly: צפיה בפומבי
-<<<<<<< HEAD
-      visibility: נראות
-=======
       view_quoted_post: צפיה בהודעה המצוטטת
       visibility: חשיפה
->>>>>>> v4.5.0
       with_media: עם מדיה
     strikes:
       actions:
@@ -2026,12 +2022,6 @@ he:
       limit: הגעת למספר המירבי של ההודעות המוצמדות
       ownership: הודעות של אחרים לא יכולות להיות מוצמדות
       reblog: אין אפשרות להצמיד הדהודים
-<<<<<<< HEAD
-    quote_policies:
-      followers: עוקבים ומאוזכרים
-      nobody: רק מאוזכרים ומאוזכרות
-      public: כולם
-=======
     quote_error:
       not_available: ההודעה לא זמינה
       pending_approval: ההודעה בהמתנה לאישור
@@ -2041,7 +2031,6 @@ he:
       nobody: רק אני
       public: כולם
     quote_post_author: ההודעה היא ציטוט של %{acct}
->>>>>>> v4.5.0
     title: '%{name}: "%{quote}"'
     visibilities:
       direct: אזכור פרטי

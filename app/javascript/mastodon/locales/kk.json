@@ -65,10 +65,6 @@
   "account.posts_with_replies": "Постар мен жауаптар",
   "account.remove_from_followers": "{name} жазылушылардан жою",
   "account.report": "Шағымдану @{name}",
-<<<<<<< HEAD
-  "account.requested": "Растауын күтіңіз. Жазылудан бас тарту үшін басыңыз",
-=======
->>>>>>> v4.5.0
   "account.requested_follow": "{name} сізге жазылуға сұраныс жіберді",
   "account.requests_to_follow_you": "Сізге жазылу сұраныстары",
   "account.share": "@{name} профилін бөлісу\"",

@@ -827,10 +827,6 @@ ko:
         title: 사용자들이 기본적으로 검색엔진에 인덱싱되지 않도록 합니다
       discovery:
         follow_recommendations: 팔로우 추천
-<<<<<<< HEAD
-        preamble: 흥미로운 콘텐츠를 노출하는 것은 마스토돈을 알지 못할 수도 있는 신규 사용자를 유입시키는 데 중요합니다. 이 서버에서 작동하는 다양한 발견하기 기능을 제어합니다.
-=======
->>>>>>> v4.5.0
         privacy: 개인정보
         profile_directory: 프로필 책자
         public_timelines: 공개 타임라인
@@ -912,10 +908,7 @@ ko:
       title: 계정 게시물 - @%{name}
       trending: 유행 중
       view_publicly: 공개시점으로 보기
-<<<<<<< HEAD
-=======
       view_quoted_post: 인용된 게시물 보기
->>>>>>> v4.5.0
       visibility: 공개 설정
       with_media: 미디어 있음
     strikes:
@@ -1901,12 +1894,6 @@ ko:
       limit: 이미 너무 많은 게시물을 고정했습니다
       ownership: 다른 사람의 게시물은 고정될 수 없습니다
       reblog: 부스트는 고정될 수 없습니다
-<<<<<<< HEAD
-    quote_policies:
-      followers: 팔로워와 멘션된 사람들만
-      nobody: 멘션된 사람들만
-      public: 모두
-=======
     quote_error:
       not_available: 게시물 사용 불가
       pending_approval: 계류 중인 게시물
@@ -1916,7 +1903,6 @@ ko:
       nobody: 나만
       public: 누구나
     quote_post_author: 인용된 %{acct} 님의 게시물
->>>>>>> v4.5.0
     title: '%{name}: "%{quote}"'
     visibilities:
       direct: 개인 멘션

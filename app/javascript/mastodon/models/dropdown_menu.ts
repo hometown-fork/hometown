@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-interface BaseMenuItem {
-  text: string;
-=======
 import type { KeyboardEvent, MouseEvent, TouchEvent } from 'react';
 
 import type { IconProp } from '../components/icon';
@@ -12,16 +8,11 @@ interface BaseMenuItem {
   icon?: IconProp;
   highlighted?: boolean;
   disabled?: boolean;
->>>>>>> v4.5.0
   dangerous?: boolean;
 }
 
 export interface ActionMenuItem extends BaseMenuItem {
-<<<<<<< HEAD
-  action: () => void;
-=======
   action: (event: MouseEvent | KeyboardEvent | TouchEvent) => void;
->>>>>>> v4.5.0
 }
 
 export interface LinkMenuItem extends BaseMenuItem {

@@ -921,10 +921,7 @@ fo:
       title: Kontupostar - @%{name}
       trending: Vælumtókt
       view_publicly: Vís fyri øllum
-<<<<<<< HEAD
-=======
       view_quoted_post: Vís siteraðan post
->>>>>>> v4.5.0
       visibility: Sýni
       with_media: Við miðli
     strikes:
@@ -1939,12 +1936,6 @@ fo:
       limit: Tú hevur longu fest loyvda talið av postum
       ownership: Postar hjá øðrum kunnu ikki festast
       reblog: Ein stimbran kann ikki festast
-<<<<<<< HEAD
-    quote_policies:
-      followers: Fylgjarar og nevndir brúkarar
-      nobody: Bara nevndir brúkarar
-      public: Øll
-=======
     quote_error:
       not_available: Postur ikki tøkur
       pending_approval: Postur bíðar
@@ -1954,7 +1945,6 @@ fo:
       nobody: Bara eg
       public: Ein og hvør
     quote_post_author: Siteraði ein post hjá %{acct}
->>>>>>> v4.5.0
     title: '%{name}: "%{quote}"'
     visibilities:
       direct: Privat umrøða
@@ -2007,14 +1997,11 @@ fo:
     does_not_match_previous_name: samsvarar ikki við undanfarna navnið
   terms_of_service:
     title: Tænastutreytir
-<<<<<<< HEAD
-=======
   terms_of_service_interstitial:
     future_preamble_html: Vit gera broytingar í tænastutreytunum, sum fáa virknað frá <strong>%{date}</strong>. Vit eggja tær til at eftirkanna dagførdu treytirnar.
     past_preamble_html: Vit hava broytt tænastutreytirnar síðani tú seinast vitjaði. Vit eggja tær til at eftirkanna dagførdu treytirnar.
     review_link: Eftirkanna tænastutreytir
     title: Tænastutreytirnar á %{domain} verða broyttar
->>>>>>> v4.5.0
   themes:
     contrast: Mastodon (høgur kontrastur)
     default: Mastodon (myrkt)

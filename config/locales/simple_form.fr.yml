@@ -105,10 +105,6 @@ fr:
         thumbnail: Une image d'environ 2:1 affichée à côté des informations de votre serveur.
         trendable_by_default: Ignorer l'examen manuel du contenu tendance. Des éléments individuels peuvent toujours être supprimés des tendances après coup.
         trends: Les tendances montrent quels messages, hashtags et actualités gagnent en popularité sur votre serveur.
-<<<<<<< HEAD
-        trends_as_landing_page: Afficher le contenu tendance au lieu d'une description de ce serveur pour les comptes déconnectés et les non-inscrit⋅e⋅s. Nécessite que les tendances soient activées.
-=======
->>>>>>> v4.5.0
       form_challenge:
         current_password: Vous entrez une zone sécurisée
       imports:
@@ -243,12 +239,7 @@ fr:
         setting_emoji_style: Style des émojis
         setting_expand_spoilers: Toujours déplier les messages marqués d’un avertissement de contenu
         setting_hide_network: Cacher votre réseau
-<<<<<<< HEAD
-        setting_missing_alt_text_modal: Afficher une fenêtre de confirmation avant de poster un média sans texte alternatif
-=======
         setting_missing_alt_text_modal: M'avertir avant de publier des médias sans texte alternatif
-        setting_quick_boosting: Activer le partage rapide
->>>>>>> v4.5.0
         setting_reduce_motion: Réduire la vitesse des animations
         setting_system_font_ui: Utiliser la police par défaut du système
         setting_system_scrollbars_ui: Utiliser la barre de défilement par défaut du système

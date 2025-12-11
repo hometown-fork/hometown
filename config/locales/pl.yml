@@ -2033,14 +2033,11 @@ pl:
     does_not_match_previous_name: nie pasuje do poprzedniej nazwy
   terms_of_service:
     title: Regulamin
-<<<<<<< HEAD
-=======
   terms_of_service_interstitial:
     future_preamble_html: Wprowadzamy pewne zmiany w naszych warunkach świadczenia usług, które zaczną obowiązywać od <strong>%{date}</strong>. Zachęcamy do zapoznania się z aktualnymi warunkami.
     past_preamble_html: Od czasu twojej ostatniej wizyty zmieniliśmy warunki korzystania z usługi. Zachęcamy do zapoznania się z aktualnymi warunkami.
     review_link: Przeglądnij Warunki Korzystania
     title: Warunki korzystania z %{domain} zmieniają się
->>>>>>> v4.5.0
   themes:
     contrast: Mastodon (Wysoki kontrast)
     default: Mastodon (Ciemny)
@@ -2108,11 +2105,8 @@ pl:
     terms_of_service_changed:
       agreement: Kontynuując używanie %{domain}, zgadzasz się na te warunki. Jeśli nie zgadzasz się ze zaktualizowanymi warunkami, możesz wypowiedzieć umowę z %{domain} w dowolnym momencie, usuwając swoje konto.
       changelog: 'W skrócie oto co oznacza dla Ciebie ta aktualizacja:'
-<<<<<<< HEAD
-=======
       description: 'Otrzymujesz tę wiadomość email, ponieważ wprowadzamy pewne zmiany w naszych warunkach świadczenia usług w domenie %{domain}. Aktualizacje te zaczną obowiązywać od dnia %{date}. Zachęcamy do zapoznania się z pełną treścią zaktualizowanych warunków tutaj:'
       description_html: Otrzymujesz tę wiadomość email, ponieważ wprowadzamy pewne zmiany w naszych warunkach świadczenia usług w domenie %{domain}. Aktualizacje te zaczną obowiązywać od dnia <strong>%{date}</strong>. Zachęcamy do zapoznania się z <a href="%{path}" target="_blank">pełną treścią zaktualizowanych warunków tutaj</a>.
->>>>>>> v4.5.0
       sign_off: Zespół %{domain}
       subject: Aktualizacja warunków korzystania z usług
       subtitle: Warunki korzystania z %{domain} zmieniają się

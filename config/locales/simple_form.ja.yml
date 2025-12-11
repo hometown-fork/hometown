@@ -147,11 +147,6 @@ ja:
         min_age: お住まいの国や地域の法律によって定められている最低年齢を下回ってはなりません。
       user:
         chosen_languages: 選択すると、選択した言語の投稿のみが公開タイムラインに表示されるようになります
-<<<<<<< HEAD
-        date_of_birth:
-          other: Mastodonを利用するには少なくとも%{count}歳以上であることを確認する必要があります。この情報は保存されません。
-=======
->>>>>>> v4.5.0
         role: そのロールは、ユーザーが持つ権限を制御します。
       user_role:
         color: UI 全体でロールの表示に使用される色（16進数RGB形式）
@@ -242,11 +237,7 @@ ja:
         setting_emoji_style: 絵文字スタイル
         setting_expand_spoilers: 閲覧注意としてマークされた投稿を常に展開する
         setting_hide_network: 繋がりを隠す
-<<<<<<< HEAD
-        setting_missing_alt_text_modal: 代替テキストなしでメディアを投稿する前に確認ダイアログを表示する
-=======
         setting_quick_boosting: クイックブーストの有効化
->>>>>>> v4.5.0
         setting_reduce_motion: アニメーションの動きを減らす
         setting_system_font_ui: システムのデフォルトフォントを使う
         setting_system_scrollbars_ui: システムのデフォルトのスクロールバーを使う

@@ -60,10 +60,7 @@ en-GB:
         setting_display_media_default: Hide media marked as sensitive
         setting_display_media_hide_all: Always hide media
         setting_display_media_show_all: Always show media
-<<<<<<< HEAD
-=======
         setting_emoji_style: How to display emojis. "Auto" will try using native emoji, but falls back to Twemoji for legacy browsers.
->>>>>>> v4.5.0
         setting_system_scrollbars_ui: Applies only to desktop browsers based on Safari and Chrome
         setting_use_blurhash: Gradients are based on the colors of the hidden visuals but obfuscate any details
         setting_use_pending_items: Hide timeline updates behind a click instead of automatically scrolling the feed
@@ -136,14 +133,6 @@ en-GB:
         name: You can only change the casing of the letters, for example, to make it more readable
       terms_of_service:
         changelog: Can be structured with Markdown syntax.
-<<<<<<< HEAD
-        text: Can be structured with Markdown syntax.
-      terms_of_service_generator:
-        admin_email: Legal notices include counternotices, court orders, takedown requests, and law enforcement requests.
-        dmca_address: For US operators, use the address registered in the DMCA Designated Agent Directory. A P.O. Box listing is available upon direct request, use the DMCA Designated Agent Post Office Box Waiver Request to email the Copyright Office and describe that you are a home-based content moderator who fears revenge or retribution for your actions and need to use a P.O. Box to remove your home address from public view.
-        domain: Unique identification of the online service you are providing.
-        jurisdiction: List the country where whoever pays the bills lives. If it’s a company or other entity, list the country where it’s incorporated, and the city, region, territory or state as appropriate.
-=======
         effective_date: A reasonable timeframe can range anywhere from 10 to 30 days from the date you notify your users.
         text: Can be structured with Markdown syntax.
       terms_of_service_generator:
@@ -156,7 +145,6 @@ en-GB:
         domain: Unique identification of the online service you are providing.
         jurisdiction: List the country where whoever pays the bills lives. If it’s a company or other entity, list the country where it’s incorporated, and the city, region, territory or state as appropriate.
         min_age: Should not be below the minimum age required by the laws of your jurisdiction.
->>>>>>> v4.5.0
       user:
         chosen_languages: When checked, only posts in selected languages will be displayed in public timelines
         role: The role controls which permissions the user has.
@@ -348,27 +336,18 @@ en-GB:
         usable: Allow posts to use this hashtag locally
       terms_of_service:
         changelog: What's changed?
-<<<<<<< HEAD
-=======
         effective_date: Effective date
->>>>>>> v4.5.0
         text: Terms of Service
       terms_of_service_generator:
         admin_email: Email address for legal notices
         arbitration_address: Physical address for arbitration notices
         arbitration_website: Website for submitting arbitration notices
-<<<<<<< HEAD
-=======
         choice_of_law: Choice of Law
->>>>>>> v4.5.0
         dmca_address: Physical address for DMCA/copyright notices
         dmca_email: Email address for DMCA/copyright notices
         domain: Domain
         jurisdiction: Legal jurisdiction
-<<<<<<< HEAD
-=======
         min_age: Minimum age
->>>>>>> v4.5.0
       user:
         date_of_birth_1i: Day
         date_of_birth_2i: Month

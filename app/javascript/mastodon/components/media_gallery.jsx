@@ -119,11 +119,7 @@ class Item extends PureComponent {
 
     if (attachment.get('type') === 'unknown') {
       return (
-<<<<<<< HEAD
-        <div className={classNames('media-gallery__item', { standalone, 'media-gallery__item--tall': height === 100, 'media-gallery__item--wide': width === 100, 'media-missing-description': !hasMediaDescription })} key={attachment.get('id')}>
-=======
-        <div className={classNames('media-gallery__item', { standalone, 'media-gallery__item--tall': height === 100, 'media-gallery__item--wide': width === 100 })} key={attachment.get('id')}>
->>>>>>> v4.5.0
+        <div className={classNames('media-gallery__item', { standalone, 'media-gallery__item--tall': height === 100, 'media-gallery__item--wide': width === 100, 'media-missing-description': !hasMediaDescription  })} key={attachment.get('id')}>
           <a className='media-gallery__item-thumbnail' href={attachment.get('remote_url') || attachment.get('url')} style={{ cursor: 'pointer' }} title={description} lang={lang} target='_blank' rel='noopener'>
             <Blurhash
               hash={attachment.get('blurhash')}

@@ -57,22 +57,15 @@ es-AR:
         setting_advanced_layout: Mostrar Mastodon como una disposición de varias columnas, permitiéndote ver la línea temporal, las notificaciones y una tercera columna de tu elección. No recomendado para pantallas pequeñas.
         setting_aggregate_reblogs: No mostrar nuevas adhesiones de los mensajes que fueron recientemente adheridos (sólo afecta a las adhesiones recibidas recientemente)
         setting_always_send_emails: Normalmente las notificaciones por correo electrónico no se enviarán cuando estés usando Mastodon activamente
-<<<<<<< HEAD
-        setting_default_quote_policy: Los usuarios mencionados siempre pueden citar. Este ajuste solo afecta a las publicaciones creadas con la próxima versión de Mastodon, pero podés seleccionar tus preferencias con antelación.
-=======
         setting_boost_modal: Al estar activado, la adhesión abrirá primero un diálogo de confirmación en el que podés cambiar su visibilidad.
         setting_default_quote_policy_private: Los mensajes solo para seguidores redactados en Mastodon no pueden ser citados por otras cuentas.
         setting_default_quote_policy_unlisted: Cuando otras cuentas te citen, sus publicaciones también se ocultarán de las líneas temporales de tendencias.
->>>>>>> v4.5.0
         setting_default_sensitive: El contenido de medios sensibles está oculto predeterminadamente y puede ser mostrado con un clic
         setting_display_media_default: Ocultar medios marcados como sensibles
         setting_display_media_hide_all: Siempre ocultar todos los medios
         setting_display_media_show_all: Siempre mostrar todos los medios
-<<<<<<< HEAD
-=======
         setting_emoji_style: Cómo se mostrarán los emojis. "Automático" intentará usar emojis nativos, cambiando a Twemoji en navegadores antiguos.
         setting_quick_boosting_html: Al estar habilitado, haciendo clic en el ícono de adhesión %{boost_icon} vas a adherir al mensaje inmediatamente, en lugar de abrir el menú desplegable de adhesión/citas. Esto cambia la acción de citas al menú de opciones %{options_icon}.
->>>>>>> v4.5.0
         setting_system_scrollbars_ui: Solo aplica para navegadores web de escritorio basados en Safari y Chrome
         setting_use_blurhash: Los gradientes se basan en los colores de las imágenes ocultas pero haciendo borrosos los detalles
         setting_use_pending_items: Ocultar actualizaciones de la línea temporal detrás de un clic en lugar de desplazar automáticamente el flujo
@@ -161,13 +154,8 @@ es-AR:
       user:
         chosen_languages: Cuando estén marcados, sólo se mostrarán los mensajes en los idiomas seleccionados en las líneas temporales públicas
         date_of_birth:
-<<<<<<< HEAD
-          one: Tenemos que asegurarnos de que al menos tenés %{count} años de edad para usar Mastodon. No almacenaremos esta información.
-          other: Tenemos que asegurarnos de que al menos tenés %{count} años de edad para usar Mastodon. No almacenaremos esta información.
-=======
           one: Tenemos que asegurarnos de que al menos tenés %{count} años de edad para usar %{domain}. No almacenaremos esta información.
           other: Tenemos que asegurarnos de que al menos tenés %{count} años de edad para usar %{domain}. No almacenaremos esta información.
->>>>>>> v4.5.0
         role: El rol controla qué permisos tiene el usuario.
       user_role:
         color: Color que se utilizará para el rol a lo largo de la interface de usuario, como RGB en formato hexadecimal
@@ -251,11 +239,7 @@ es-AR:
         setting_auto_play_gif: Reproducir automáticamente los GIFs animados
         setting_boost_modal: Control de visibilidad de adhesiones
         setting_default_language: Idioma de tus mensajes
-<<<<<<< HEAD
-        setting_default_privacy: Privacidad de mensajes
-=======
         setting_default_privacy: Visibilidad del mensaje
->>>>>>> v4.5.0
         setting_default_quote_policy: Quién puede citar
         setting_default_sensitive: Siempre marcar medios como sensibles
         setting_delete_modal: Advertirme antes de eliminar un mensaje
@@ -268,12 +252,8 @@ es-AR:
         setting_emoji_style: Estilo de emoji
         setting_expand_spoilers: Siempre expandir los mensajes marcados con advertencias de contenido
         setting_hide_network: Ocultá tu gráfica social
-<<<<<<< HEAD
-        setting_missing_alt_text_modal: Mostrar diálogo de confirmación antes de enviar medios sin texto alternativo
-=======
         setting_missing_alt_text_modal: Advertirme antes de enviar medios sin texto alternativo
         setting_quick_boosting: Habilitar adhesión rápida
->>>>>>> v4.5.0
         setting_reduce_motion: Reducir el movimiento de las animaciones
         setting_system_font_ui: Utilizar la tipografía predeterminada del sistema
         setting_system_scrollbars_ui: Usar la barra de desplazamiento predeterminada del sistema operativo

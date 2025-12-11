@@ -507,20 +507,14 @@ fi:
         registration_requested: Rekisteröintiä pyydetty
         registrations:
           confirm: Vahvista
-<<<<<<< HEAD
-=======
           description: Vastaanotit rekisteröintymisen FASP-palvelusta. Hylkää rekisteröintyminen, jos et aloittanut sitä. Jos aloitit sen, vertaile huolellisesti nimeä ja avaimen sormenjälkeä ennen kuin hyväksyt rekisteröintymisen.
->>>>>>> v4.5.0
           reject: Hylkää
           title: Vahvista FASP-rekisteröinti
         save: Tallenna
         select_capabilities: Valitse kyvykkyydet
         sign_in: Kirjaudu sisään
         status: Tila
-<<<<<<< HEAD
-=======
         title: Fediversumin tukitoimintojen tarjoajat
->>>>>>> v4.5.0
       title: FASP
     follow_recommendations:
       description_html: "<strong>Seurantasuositukset auttavat uusia käyttäjiä löytämään nopeasti kiinnostavaa sisältöä</strong>. Kun käyttäjä ei ole ollut tarpeeksi vuorovaikutuksessa muiden kanssa, jotta hänelle olisi muodostunut henkilökohtaisia seuraamissuosituksia, suositellaan niiden sijaan näitä tilejä. Ne lasketaan päivittäin uudelleen yhdistelmästä tilejä, jotka ovat viime aikoina olleet aktiivisimmin sitoutuneita ja joilla on suurimmat paikalliset seuraajamäärät tietyllä kielellä."
@@ -845,11 +839,7 @@ fi:
         title: Jätä käyttäjät oletusarvoisesti hakukoneindeksoinnin ulkopuolelle
       discovery:
         follow_recommendations: Seurantasuositukset
-<<<<<<< HEAD
-        preamble: Mielenkiintoisen sisällön esille tuominen auttaa saamaan uusia käyttäjiä, jotka eivät ehkä tunne ketään Mastodonista. Määrittele, kuinka erilaiset löytämisominaisuudet toimivat palvelimellasi.
-=======
         preamble: Mielenkiintoisen sisällön esille tuominen on keskeistä perehdyttäessä uusia käyttäjiä, jotka eivät ehkä tunne ketään Mastodonissa. Hallitse, miten eri löydettävyysominaisuudet toimivat palvelimellasi.
->>>>>>> v4.5.0
         privacy: Yksityisyys
         profile_directory: Profiilihakemisto
         public_timelines: Julkiset aikajanat
@@ -928,16 +918,10 @@ fi:
       replied_to_html: Vastaus käyttäjälle %{acct_link}
       status_changed: Julkaisua muutettu
       status_title: Julkaisu käyttäjältä @%{name}
-<<<<<<< HEAD
-      title: Tilin julkaisut - @%{name}
-      trending: Suosituttua
-      view_publicly: Näytä julkisesti
-=======
       title: Tilin julkaisut – @%{name}
       trending: Suosituttua
       view_publicly: Näytä julkisesti
       view_quoted_post: Näytä lainattu julkaisu
->>>>>>> v4.5.0
       visibility: Näkyvyys
       with_media: Sisältää mediaa
     strikes:
@@ -1952,12 +1936,6 @@ fi:
       limit: Olet jo kiinnittänyt enimmäismäärän julkaisuja
       ownership: Muiden julkaisuja ei voi kiinnittää
       reblog: Tehostusta ei voi kiinnittää
-<<<<<<< HEAD
-    quote_policies:
-      followers: Seuraajat ja mainitut käyttäjät
-      nobody: Vain mainitut käyttäjät
-      public: Kaikki
-=======
     quote_error:
       not_available: Julkaisu ei saatavilla
       pending_approval: Julkaisu odottaa
@@ -1967,7 +1945,6 @@ fi:
       nobody: Vain minä
       public: Kuka tahansa
     quote_post_author: Lainasi käyttäjän %{acct} julkaisua
->>>>>>> v4.5.0
     title: "%{name}: ”%{quote}”"
     visibilities:
       direct: Yksityismaininta

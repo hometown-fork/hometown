@@ -284,24 +284,17 @@ kab:
           delete: Kkes
           ip: Tansa IP
       providers:
-<<<<<<< HEAD
-        delete: Kkes
-=======
         active: D urmid
         base_url: URL n taffa
         delete: Kkes
         edit: Ẓreg asaǧǧaw
         finish_registration: Fakk ajerred
->>>>>>> v4.5.0
         name: Isem
         providers: Asaǧǧaw
         registrations:
           confirm: Sentem
         save: Sekles
-<<<<<<< HEAD
-=======
         sign_in: Qqen
->>>>>>> v4.5.0
       title: FASP
     follow_recommendations:
       language: I tutlayt
@@ -418,15 +411,11 @@ kab:
       everyone: Tisirag timezwura
       privileges:
         administrator: Anedbal
-<<<<<<< HEAD
-        manage_settings: Asefrek n iɣewwaṛen
-=======
         manage_federation: Sefrek Tafidiralit
         manage_roles: Sefrek ilugan
         manage_rules: Sefrek ilugan
         manage_settings: Asefrek n iɣewwaṛen
         manage_users: Sefrek iqeddacen
->>>>>>> v4.5.0
         view_dashboard: Timẓriwt n tfelwit
     rules:
       add_new: Rnu alugen
@@ -482,13 +471,9 @@ kab:
         title: Amidya
       metadata: Iɣefisefka
       open: Ldi tasuffeɣt
-<<<<<<< HEAD
-      trending: Ayen mucaɛen
-=======
       quotes: Tinebdurin
       status_title: Tasuffeɣt sɣur @%{name}
       trending: Inezzaɣ
->>>>>>> v4.5.0
       visibility: Abani
       with_media: S umidya
     system_checks:
@@ -512,12 +497,6 @@ kab:
       title: Ihacṭagen
     terms_of_service:
       changelog: Amaynut
-<<<<<<< HEAD
-      draft: Arewway
-      history: Amazray
-      live: Srid
-      publish: Asuffeɣ
-=======
       create: Sqedcet ayla-nwen
       current: Amiran
       draft: Arewway
@@ -529,7 +508,6 @@ kab:
       notify_users: Selɣu iseqdacen
       publish: Asuffeɣ
       published_on_html: Teffeɣ-d ass n %{date}
->>>>>>> v4.5.0
       save_draft: Sekles arewway
       title: Tiwtilin n useqdec
     title: Tadbelt
@@ -646,20 +624,14 @@ kab:
       preamble_html: Kcem ar <strong>%{domain}</strong> s inekcam-inek n tuqqna. Ma yella yezga-d umiḍan-ik deg uqeddac-nniḍen, ur tezmireḍ ara ad tkecmeḍ sya.
       title: Akeččum ɣer %{domain}
     sign_up:
-<<<<<<< HEAD
-=======
       preamble: S umiḍan yellan deg uqeddac-a n Mastodon, ad tizimreḍ ad t-ḍefreḍ yal yiwen nniḍen i yellan deg fediverse, akken yebɣu yili wanda i yella umiḍan-nsen.
->>>>>>> v4.5.0
       title: Iyya ad d-nessewjed tiɣawsiwin i %{domain}.
     status:
       account_status: Addad n umiḍan
       functional: Amiḍan-inek·inem yetteddu s lekmal-is.
     use_security_key: Seqdec tasarut n teɣlist
-<<<<<<< HEAD
-=======
     user_agreement_html: Ɣriɣ yerna qebleɣ <a href="<a href="%{terms_of_service_path}" target="_blank">" target="_blank">tiwtilin ne useqdec</a> akked <a href="%{privacy_policy_path}" target="_blank">tsertit n tbaḍnit</a>
     user_privacy_agreement_html: Ɣriɣ yerna qebleɣ <a href="%{privacy_policy_path}" target="_blank">tasertit n tbaḍnit</a>
->>>>>>> v4.5.0
   author_attribution:
     example_title: Amedya n weḍris
     more_from_html: Ugar s ɣur %{name}
@@ -730,10 +702,7 @@ kab:
   filters:
     contexts:
       account: Imeɣna
-<<<<<<< HEAD
-=======
       home: Agejdan akked tebdarin
->>>>>>> v4.5.0
       notifications: Ilɣa
       thread: Idiwenniyen
     edit:
@@ -1019,11 +988,8 @@ kab:
   user_mailer:
     appeal_approved:
       action: Iɣewwaṛen n umiḍan
-<<<<<<< HEAD
-=======
     suspicious_sign_in:
       change_password: snifel awal-ik·im n uɛeddi
->>>>>>> v4.5.0
     terms_of_service_changed:
       sign_off: Agraw n %{domain}
     warning:

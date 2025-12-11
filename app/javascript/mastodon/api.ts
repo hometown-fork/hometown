@@ -127,11 +127,7 @@ export default function api(withAuthorization = true) {
   return instance;
 }
 
-<<<<<<< HEAD
-type ApiUrl = `v${1 | 2}/${string}`;
-=======
 type ApiUrl = `v${1 | '1_alpha' | 2}/${string}`;
->>>>>>> v4.5.0
 type RequestParamsOrData = Record<string, unknown>;
 
 export async function apiRequest<ApiResponse = unknown>(

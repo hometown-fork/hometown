@@ -589,11 +589,7 @@ nl:
         created_msg: Aanmaken van servermoderatie-opmerking geslaagd!
         description_html: Opmerkingen bekijken, en voor jezelf en andere moderatoren achterlaten
         destroyed_msg: Verwijderen van servermoderatie-opmerking geslaagd!
-<<<<<<< HEAD
-        placeholder: Informatie over deze server, genomen acties of iets anders die jou kunnen helpen om deze server in de toekomst te moderen.
-=======
         placeholder: Informatie over deze server, ondernomen acties of iets anders dat jou kan helpen om deze server in de toekomst te modereren.
->>>>>>> v4.5.0
         title: Moderatie-opmerkingen
       private_comment: Privé-opmerking
       public_comment: Openbare opmerking
@@ -843,11 +839,7 @@ nl:
         title: Gebruikers standaard niet door zoekmachines laten indexeren
       discovery:
         follow_recommendations: Aanbevolen accounts
-<<<<<<< HEAD
-        preamble: Het tonen van interessante inhoud is van essentieel belang voor het aan boord halen van nieuwe gebruikers, die mogelijk niemand van Mastodon kennen. Bepaal hoe verschillende functies voor het ontdekken van inhoud en gebruikers op jouw server werken.
-=======
         preamble: Interessante inhoud uitlichten is van essentieel belang voor onboarding van nieuwe gebruikers, die mogelijk niemand op Mastodon kennen. Bepaal hoe verschillende functies voor het ontdekken van inhoud en gebruikers op jouw server werken.
->>>>>>> v4.5.0
         privacy: Privacy
         profile_directory: Gebruikersgids
         public_timelines: Openbare tijdlijnen
@@ -928,12 +920,8 @@ nl:
       status_title: Bericht van @%{name}
       title: Accountberichten - @%{name}
       trending: Trending
-<<<<<<< HEAD
-      view_publicly: In het openbaar bekijken
-=======
       view_publicly: Openbaar bericht bekijken
       view_quoted_post: Geciteerde berichten tonen
->>>>>>> v4.5.0
       visibility: Zichtbaarheid
       with_media: Met media
     strikes:
@@ -1948,12 +1936,6 @@ nl:
       limit: Je hebt het maximaal aantal bericht al vastgemaakt
       ownership: Een bericht van iemand anders kan niet worden vastgemaakt
       reblog: Een boost kan niet worden vastgezet
-<<<<<<< HEAD
-    quote_policies:
-      followers: Volgers en vermelde gebruikers
-      nobody: Alleen vermelde gebruikers
-      public: Iedereen
-=======
     quote_error:
       not_available: Bericht is niet beschikbaar
       pending_approval: Bericht in afwachting van goedkeuring
@@ -1963,7 +1945,6 @@ nl:
       nobody: Alleen ik
       public: Iedereen
     quote_post_author: Citeerde een bericht van %{acct}
->>>>>>> v4.5.0
     title: '%{name}: "%{quote}"'
     visibilities:
       direct: Privébericht

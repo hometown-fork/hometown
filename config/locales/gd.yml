@@ -949,10 +949,7 @@ gd:
       title: Postaichean a’ chunntais – @%{name}
       trending: A’ treandadh
       view_publicly: Seall gu poblach
-<<<<<<< HEAD
-=======
       view_quoted_post: Seall am post ’ga luaidh
->>>>>>> v4.5.0
       visibility: Faicsinneachd
       with_media: Le meadhanan riutha
     strikes:
@@ -1583,17 +1580,10 @@ gd:
         other: Tha thu an impis suas ri <strong>%{count} àrainn</strong> o <strong>%{filename}</strong> a chur <strong>an àite liosta nam bacaidhean àrainne</strong> agad.
         two: Tha thu an impis suas ri <strong>%{count} àrainn</strong> o <strong>%{filename}</strong> a chur <strong>an àite liosta nam bacaidhean àrainne</strong> agad.
       following_html:
-<<<<<<< HEAD
-        few: Tha thu an impis suas ri <strong>%{count} cunntasan</strong> o <strong>%{filename}</strong> <strong>a leantainn</strong> agus <strong>sguiridh tu a leantainn duine sam bith eile</strong>.
-        one: Tha thu an impis suas ri <strong>%{count} chunntas</strong> o <strong>%{filename}</strong> <strong>a leantainn</strong> agus <strong>sguiridh tu a leantainn duine sam bith eile</strong>.
-        other: Tha thu an impis suas ri <strong>%{count} cunntas</strong> o <strong>%{filename}</strong> <strong>a leantainn</strong> agus <strong>sguiridh tu a leantainn duine sam bith eile</strong>.
-        two: Tha thu an impis suas ri <strong>%{count} chunntas</strong> o <strong>%{filename}</strong> <strong>a leantainn</strong> agus <strong>sguiridh tu a leantainn duine sam bith eile</strong>.
-=======
         few: Tha thu an impis suas ri <strong>%{count} cunntasan</strong> o <strong>%{filename}</strong> <strong>a leantainn</strong> agus <strong>sguiridh tu a leantainn neach sam bith eile</strong>.
         one: Tha thu an impis suas ri <strong>%{count} chunntas</strong> o <strong>%{filename}</strong> <strong>a leantainn</strong> agus <strong>sguiridh tu a leantainn neach sam bith eile</strong>.
         other: Tha thu an impis suas ri <strong>%{count} cunntas</strong> o <strong>%{filename}</strong> <strong>a leantainn</strong> agus <strong>sguiridh tu a leantainn neach sam bith eile</strong>.
         two: Tha thu an impis suas ri <strong>%{count} chunntas</strong> o <strong>%{filename}</strong> <strong>a leantainn</strong> agus <strong>sguiridh tu a leantainn neach sam bith eile</strong>.
->>>>>>> v4.5.0
       lists_html:
         few: Tha thu an impis susbaint <strong>%{filename}</strong> a chur <strong>an àite nan liostaichean agad</strong>. Thèid suas ri <strong>%{count} cunntasan</strong> a chur ri liostaichean ùra.
         one: Tha thu an impis susbaint <strong>%{filename}</strong> a chur <strong>an àite nan liostaichean agad</strong>. Thèid suas ri <strong>%{count} chunntas</strong> a chur ri liostaichean ùra.
@@ -2032,12 +2022,6 @@ gd:
       limit: Tha an àireamh as motha de phostaichean prìnichte agad a tha ceadaichte
       ownership: Chan urrainn dhut post càich a phrìneachadh
       reblog: Chan urrainn dhut brosnachadh a phrìneachadh
-<<<<<<< HEAD
-    quote_policies:
-      followers: Luchd-leantainn ’s cleachdaichean le iomradh orra
-      nobody: Cleachdaichean le iomradh orra a-mhàin
-      public: A h-uile duine
-=======
     quote_error:
       not_available: Chan eil am post ri fhaighinn
       pending_approval: Cha deach dèiligeadh ris a’ phost fhathast
@@ -2047,7 +2031,6 @@ gd:
       nobody: Mi fhìn a-mhàin
       public: Neach sam bith
     quote_post_author: Luaidh air post le %{acct}
->>>>>>> v4.5.0
     title: "%{name}: “%{quote}”"
     visibilities:
       direct: Iomradh prìobhaideach

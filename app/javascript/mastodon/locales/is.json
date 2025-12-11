@@ -262,14 +262,11 @@
   "confirmations.remove_from_followers.confirm": "Fjarlægja fylgjanda",
   "confirmations.remove_from_followers.message": "{name} mun hætta að fylgjast með þér. Ertu viss um að þú viljir halda áfram?",
   "confirmations.remove_from_followers.title": "Fjarlægja fylgjanda?",
-<<<<<<< HEAD
-=======
   "confirmations.revoke_quote.confirm": "Fjarlægja færslu",
   "confirmations.revoke_quote.message": "Þessa aðgerð er ekki hægt að afturkalla.",
   "confirmations.revoke_quote.title": "Fjarlægja færslu?",
   "confirmations.unblock.confirm": "Aflétta útilokun",
   "confirmations.unblock.title": "Aflétta útilokun á {name}?",
->>>>>>> v4.5.0
   "confirmations.unfollow.confirm": "Hætta að fylgja",
   "confirmations.unfollow.title": "Hætta að fylgjast með {name}?",
   "confirmations.withdraw_request.confirm": "Taka beiðni til baka",
@@ -452,11 +449,6 @@
   "hints.profiles.see_more_followers": "Sjá fleiri fylgjendur á {domain}",
   "hints.profiles.see_more_follows": "Sjá fleiri sem þú fylgist með á {domain}",
   "hints.profiles.see_more_posts": "Sjá fleiri færslur á {domain}",
-<<<<<<< HEAD
-  "hints.threads.replies_may_be_missing": "Svör af öðrum netþjónum gæti vantað.",
-  "hints.threads.see_more": "Sjá fleiri svör á {domain}",
-=======
->>>>>>> v4.5.0
   "home.column_settings.show_quotes": "Birta tilvitnanir",
   "home.column_settings.show_reblogs": "Sýna endurbirtingar",
   "home.column_settings.show_replies": "Birta svör",
@@ -478,28 +470,12 @@
   "ignore_notifications_modal.private_mentions_title": "Hunsa tilkynningar frá óumbeðnum tilvísunum í einkaspjalli?",
   "info_button.label": "Hjálp",
   "info_button.what_is_alt_text": "<h1>Hvað er alt-texti?</h1> <p>Hjálpartexti eða ALT-myndatexti inniheldur lýsingu á myndefni fyrir fólk með ýmsar gerðir sjónskerðingar, fyrir tengingar með litla bandbreidd, eða til að gefa nánara samhengi fyrir myndefni.</p><p>Þú getur með þessu bætt almennt aðgengi og aukið skilning á efni sem þú birtir með því að skrifa skýran, skorinortan og hlutlægan alt-texta til vara.</p><ul><li>Lýstu mikilvægum atriðum</li>\\n<li>Hafðu yfirlit með þeim texta sem sést í myndum</li><li>Notaðu eðlilega setningaskipan</li><li>Forðastu óþarfar upplýsingar</li><li>Leggðu áherslu á aðalatriði í flóknu myndefni (eins og línuritum eða landakortum)</li></ul>",
-<<<<<<< HEAD
-  "interaction_modal.action.favourite": "Til að halda áfram þarftu að setja eitthvað í eftirlæti, verandi inni á aðgangnum þínum.",
-  "interaction_modal.action.follow": "Til að halda áfram þarftu að fylgjast með einhverjum, verandi inni á aðgangnum þínum.",
-  "interaction_modal.action.reblog": "Til að halda áfram þarftu að endurbirta frá einhverjum, verandi inni á aðgangnum þínum.",
-  "interaction_modal.action.reply": "Til að halda áfram þarftu að svara einhverjum, verandi inni á aðgangnum þínum.",
-  "interaction_modal.action.vote": "Til að halda áfram þarftu að greiða atkvæði, verandi inni á aðgangnum þínum.",
-=======
   "interaction_modal.action": "Til að eiga við færsluna frá {name} þarftu að skrá þig inn á reikning þinn á þeim Mastodon-þjóni sem þú notar.",
->>>>>>> v4.5.0
   "interaction_modal.go": "Áfram",
   "interaction_modal.no_account_yet": "Ertu ekki ennþá með aðgang?",
   "interaction_modal.on_another_server": "Á öðrum netþjóni",
   "interaction_modal.on_this_server": "Á þessum netþjóni",
-<<<<<<< HEAD
-  "interaction_modal.title.favourite": "Setja færsluna frá {name} í eftirlæti",
-  "interaction_modal.title.follow": "Fylgjast með {name}",
-  "interaction_modal.title.reblog": "Endurbirta færsluna frá {name}",
-  "interaction_modal.title.reply": "Svara færslunni frá {name}",
-  "interaction_modal.title.vote": "Greiða atkvæði í könnun á vegum {name}",
-=======
   "interaction_modal.title": "Skráðu inn til að halda áfram",
->>>>>>> v4.5.0
   "interaction_modal.username_prompt": "Til dæmis {example}",
   "intervals.full.days": "{number, plural, one {# dagur} other {# dagar}}",
   "intervals.full.hours": "{number, plural, one {# klukkustund} other {# klukkustundir}}",
@@ -940,15 +916,6 @@
   "status.mute_conversation": "Þagga niður í samtali",
   "status.open": "Opna þessa færslu",
   "status.pin": "Festa á notandasnið",
-<<<<<<< HEAD
-  "status.quote_error.filtered": "Falið vegna einnar síu sem er virk",
-  "status.quote_error.not_found": "Þessa færslu er ekki hægt að birta.",
-  "status.quote_error.pending_approval": "Þessi færsla bíður eftir samþykki frá upprunalegum höfundi hennar.",
-  "status.quote_error.rejected": "Þessa færslu er ekki hægt að birta þar sem upphaflegur höfundur hennar leyfir ekki að vitnað sé til hennar.",
-  "status.quote_error.removed": "Þessi færsla var fjarlægð af höfundi hennar.",
-  "status.quote_error.unauthorized": "Þessa færslu er ekki hægt að birta þar sem þú hefur ekki heimild til að skoða hana.",
-  "status.quote_post_author": "Færsla frá {name}",
-=======
   "status.quote": "Tilvitnun",
   "status.quote.cancel": "Hætta við tilvitnun",
   "status.quote_error.blocked_account_hint.title": "Þessi færsla er falin vegna þess að ú hefur lokað á @{name}.",
@@ -971,7 +938,6 @@
   "status.quotes.empty": "Enginn hefur ennþá vitnað í þessa færslu. Þegar einhver gerir það, mun það birtast hér.",
   "status.quotes.local_other_disclaimer": "Tilvitnanir sem höfundur hafnar verða ekki birtar.",
   "status.quotes.remote_other_disclaimer": "Aðeins tilvitnanir frá {domain} munu birtast hér. Tilvitnanir sem höfundur hafnar verða ekki birtar.",
->>>>>>> v4.5.0
   "status.read_more": "Lesa meira",
   "status.reblog": "Endurbirting",
   "status.reblog_or_quote": "Endurbirta eða vitna í færslu",
@@ -982,10 +948,7 @@
   "status.redraft": "Eyða og endurvinna drög",
   "status.remove_bookmark": "Fjarlægja bókamerki",
   "status.remove_favourite": "Fjarlægja úr eftirlætum",
-<<<<<<< HEAD
-=======
   "status.remove_quote": "Fjarlægja",
->>>>>>> v4.5.0
   "status.replied_in_thread": "Svaraði í samtali",
   "status.replied_to": "Svaraði til {name}",
   "status.reply": "Svara",
@@ -1030,10 +993,7 @@
   "upload_button.label": "Bæta við myndum, myndskeiði eða hljóðskrá",
   "upload_error.limit": "Fór yfir takmörk á innsendingum skráa.",
   "upload_error.poll": "Innsending skráa er ekki leyfð í könnunum.",
-<<<<<<< HEAD
-=======
   "upload_error.quote": "Innsending skráa er ekki leyfð í tilvitnunum.",
->>>>>>> v4.5.0
   "upload_form.drag_and_drop.instructions": "Til að taka í myndefnisviðhengi skaltu ýta á bilslána eða Enter. Til að draga geturðu notað örvalyklana til að færa viðhengið í samsvarandi áttir. Ýttu aftur á bilslána eða Enter til að sleppa viðhenginu á nýja staðinn, eða ýttu á Escape til að hætta við.",
   "upload_form.drag_and_drop.on_drag_cancel": "Hætt var við að draga. Myndefnisviðhenginu {item} var sleppt.",
   "upload_form.drag_and_drop.on_drag_end": "Myndefnisviðhenginu {item} var sleppt.",
@@ -1056,9 +1016,6 @@
   "video.skip_forward": "Stökkva áfram",
   "video.unmute": "Hætta að þagga",
   "video.volume_down": "Lækka hljóðstyrk",
-<<<<<<< HEAD
-  "video.volume_up": "Hækka hljóðstyrk"
-=======
   "video.volume_up": "Hækka hljóðstyrk",
   "visibility_modal.button_title": "Stilla sýnileika",
   "visibility_modal.direct_quote_warning.text": "Ef þú vistar þessa stillingu, þá verður ívöfnu tilvitnuninni breytt í tengil.",
@@ -1076,5 +1033,4 @@
   "visibility_modal.quote_nobody": "Bara ég",
   "visibility_modal.quote_public": "Hver sem er",
   "visibility_modal.save": "Vista"
->>>>>>> v4.5.0
 }

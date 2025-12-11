@@ -26,12 +26,9 @@
   "account.edit_profile": "Baguhin ang profile",
   "account.enable_notifications": "Ipaalam sa akin kapag nag-post si @{name}",
   "account.endorse": "I-tampok sa profile",
-<<<<<<< HEAD
-=======
   "account.familiar_followers_many": "Sinusundan nina {name1}, {name2}, at {othersCount, plural, one {# iba pa na kilala mo} other {# na iba pa na kilala mo}}",
   "account.familiar_followers_one": "Sinusindan ni/ng {name1}",
   "account.familiar_followers_two": "Sinusindan nina {name1} at {name2}",
->>>>>>> v4.5.0
   "account.featured": "Itinatampok",
   "account.featured_tags.last_status_at": "Huling post noong {date}",
   "account.featured_tags.last_status_never": "Walang mga post",
@@ -40,10 +37,7 @@
   "account.followers": "Mga tagasunod",
   "account.followers.empty": "Wala pang sumusunod sa tagagamit na ito.",
   "account.followers_counter": "{count, plural, one {{counter} tagasunod} other {{counter} tagasunod}}",
-<<<<<<< HEAD
-=======
   "account.followers_you_know_counter": "{counter} (na) kilala mo",
->>>>>>> v4.5.0
   "account.following": "Sinusundan",
   "account.following_counter": "{count, plural, one {{counter} sinusundan} other {{counter} sinusundan}}",
   "account.follows.empty": "Wala pang sinusundan ang tagagamit na ito.",
@@ -145,10 +139,7 @@
   "confirmations.delete_list.confirm": "Tanggalin",
   "confirmations.delete_list.message": "Sigurado ka bang gusto mong burahin ang listahang ito?",
   "confirmations.discard_edit_media.confirm": "Ipagpaliban",
-<<<<<<< HEAD
-=======
   "content_warning.hide": "Itago ang post",
->>>>>>> v4.5.0
   "content_warning.show_more": "Magpakita ng higit pa",
   "conversation.mark_as_read": "Markahan bilang nabasa na",
   "conversation.open": "Tingnan ang pag-uusap",
@@ -234,11 +225,6 @@
   "home.pending_critical_update.body": "Mangyaring i-update ang iyong serbiro ng Mastodon sa lalong madaling panahon!",
   "interaction_modal.on_another_server": "Sa ibang serbiro",
   "interaction_modal.on_this_server": "Sa serbirong ito",
-<<<<<<< HEAD
-  "interaction_modal.title.follow": "Sundan si {name}",
-  "interaction_modal.title.vote": "Bumoto sa botohan ni {name}",
-=======
->>>>>>> v4.5.0
   "intervals.full.days": "{number, plural, one {# araw} other {# na araw}}",
   "intervals.full.hours": "{number, plural, one {# oras} other {# na oras}}",
   "intervals.full.minutes": "{number, plural, one {# minuto} other {# na minuto}}",

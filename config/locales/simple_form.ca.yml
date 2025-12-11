@@ -56,20 +56,13 @@ ca:
         scopes: API permeses per a accedir a l'aplicació. Si selecciones un àmbit de nivell superior, no cal que en seleccionis un d'individual.
         setting_aggregate_reblogs: No mostra els nous impulsos dels tuts que ja s'han impulsat recentment (només afecta als impulsos nous rebuts)
         setting_always_send_emails: Normalment, no s'enviarà cap notificació per correu electrònic mentre facis servir Mastodon
-<<<<<<< HEAD
-        setting_default_quote_policy: Els usuaris mencionats sempre poden citar. Aquesta configuració només tindrà efecte en les publicacions creades amb la següent versió de Mastodon, però podeu seleccionar-ho en preparació
-=======
         setting_default_quote_policy_private: Altres no poden citar publicacions fetes a Mastodon només per a seguidors.
         setting_default_quote_policy_unlisted: Quan la gent et citi la seva publicació estarà amagada de les línies de temps de tendències.
->>>>>>> v4.5.0
         setting_default_sensitive: El contingut sensible està ocult per defecte i es pot mostrar fent-hi clic
         setting_display_media_default: Amaga el contingut gràfic marcat com a sensible
         setting_display_media_hide_all: Oculta sempre tot el contingut multimèdia
         setting_display_media_show_all: Mostra sempre el contingut gràfic
-<<<<<<< HEAD
-=======
         setting_emoji_style: Com mostrar els emojis. "Automàtic" provarà de fer servir els emojis nadius, però revertirà a twemojis en els navegadors antics.
->>>>>>> v4.5.0
         setting_system_scrollbars_ui: S'aplica només als navegadors d'escriptori basats en Safari i Chrome
         setting_use_blurhash: Els degradats es basen en els colors de les imatges ocultes, però n'enfosqueixen els detalls
         setting_use_pending_items: Amaga les actualitzacions de la línia de temps després de fer un clic, en lloc de desplaçar-les automàticament
@@ -156,13 +149,8 @@ ca:
       user:
         chosen_languages: Quan estigui marcat, només es mostraran els tuts de les llengües seleccionades en les línies de temps públiques
         date_of_birth:
-<<<<<<< HEAD
-          one: Ens hem d'assegurar que teniu com a mínim %{count} any per a fer servir Mastodon. No ho desarem.
-          other: Ens hem d'assegurar que teniu com a mínim %{count} anys per a fer servir Mastodon. No ho desarem.
-=======
           one: Ens hem d'assegurar que teniu com a mínim %{count} any per a fer servir %{domain}. No ho desarem.
           other: Ens hem d'assegurar que teniu com a mínim %{count} anys per a fer servir %{domain}. No ho desarem.
->>>>>>> v4.5.0
         role: El rol controla quins permisos té l'usuari.
       user_role:
         color: Color que s'usarà per al rol a tota la interfície d'usuari, com a RGB en format hexadecimal
@@ -241,11 +229,7 @@ ca:
         setting_always_send_emails: Envia'm sempre notificacions per correu electrònic
         setting_auto_play_gif: Reprodueix automàticament els GIF animats
         setting_default_language: Llengua dels tuts
-<<<<<<< HEAD
-        setting_default_privacy: Privacitat dels tuts
-=======
         setting_default_privacy: Visibilitat de la publicació
->>>>>>> v4.5.0
         setting_default_quote_policy: Qui pot citar
         setting_default_sensitive: Marcar sempre el contingut gràfic com a sensible
         setting_disable_hover_cards: Deshabilita la vista prèvia del perfil en passar-hi per sobre

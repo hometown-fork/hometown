@@ -1,11 +1,7 @@
 {
   "about.blocks": "خوادم تحت الإشراف",
   "about.contact": "للاتصال:",
-<<<<<<< HEAD
-  "about.default_locale": "افتراضيالافتراضية",
-=======
   "about.default_locale": "افتراضي",
->>>>>>> v4.5.0
   "about.disclaimer": "ماستدون برنامج حر ومفتوح المصدر وعلامة تجارية لـ Mastodon GmbH.",
   "about.domain_blocks.no_reason_available": "السبب غير متوفر",
   "about.domain_blocks.preamble": "يتيح مَستُدون عمومًا لمستخدميه مطالعة المحتوى من المستخدمين من الخواديم الأخرى في الفدرالية والتفاعل معهم. وهذه هي الاستثناءات التي وضعت على هذا الخادوم.",
@@ -113,20 +109,12 @@
   "announcement.announcement": "إعلان",
   "annual_report.summary.archetype.booster": "The cool-hunter",
   "annual_report.summary.archetype.lurker": "المتصفح الصامت",
-<<<<<<< HEAD
-  "annual_report.summary.archetype.oracle": "حكيم",
-=======
   "annual_report.summary.archetype.oracle": "الحكيم",
->>>>>>> v4.5.0
   "annual_report.summary.archetype.pollster": "مستطلع للرأي",
   "annual_report.summary.archetype.replier": "الفراشة الاجتماعية",
   "annual_report.summary.followers.followers": "المُتابِعُون",
   "annual_report.summary.followers.total": "{count} في المجمل",
-<<<<<<< HEAD
-  "annual_report.summary.here_it_is": "هذا ملخص الخص بك لسنة {year}:",
-=======
   "annual_report.summary.here_it_is": "فيما يلي ملخصك لسنة {year}:",
->>>>>>> v4.5.0
   "annual_report.summary.highlighted_post.by_favourites": "المنشور ذو أعلى عدد تفضيلات",
   "annual_report.summary.highlighted_post.by_reblogs": "أكثر منشور مُعاد نشره",
   "annual_report.summary.highlighted_post.by_replies": "المنشور بأعلى عدد تعليقات",
@@ -260,12 +248,9 @@
   "confirmations.remove_from_followers.confirm": "إزالة المتابع",
   "confirmations.remove_from_followers.message": "سيتوقف {name} عن متابعتك. هل بالتأكيد تريد المتابعة؟",
   "confirmations.remove_from_followers.title": "إزالة المتابع؟",
-<<<<<<< HEAD
-=======
   "confirmations.revoke_quote.confirm": "إزالة المنشور",
   "confirmations.revoke_quote.message": "لا يمكن التراجع عن هذا الإجراء.",
   "confirmations.revoke_quote.title": "أتريد إزالة المنشور؟",
->>>>>>> v4.5.0
   "confirmations.unfollow.confirm": "إلغاء المتابعة",
   "content_warning.hide": "إخفاء المنشور",
   "content_warning.show": "إظهار على أي حال",
@@ -361,14 +346,11 @@
   "explore.trending_links": "المُستجدّات",
   "explore.trending_statuses": "المنشورات",
   "explore.trending_tags": "وُسُوم",
-<<<<<<< HEAD
   "federation.change": "Adjust status federation",
   "federation.federated.long": "Allow post to reach other instances",
   "federation.federated.short": "Federated",
   "federation.local_only.long": "Restrict this post only to my instance",
   "federation.local_only.short": "Local-only",
-=======
->>>>>>> v4.5.0
   "featured_carousel.header": "{count, plural, zero {}one {منشور معروض} two {منشور معروضَين} few {منشورات معروضة} many {منشورات معروضة} other {منشورات معروضة}}",
   "featured_carousel.next": "التالي",
   "featured_carousel.post": "منشور",
@@ -452,11 +434,6 @@
   "hints.profiles.see_more_followers": "عرض المزيد من المتابعين على {domain}",
   "hints.profiles.see_more_follows": "اطلع على المزيد من المتابعين على {domain}",
   "hints.profiles.see_more_posts": "عرض المزيد من المنشورات من {domain}",
-<<<<<<< HEAD
-  "hints.threads.replies_may_be_missing": "قد تكون الردود الواردة من الخوادم الأخرى غائبة.",
-  "hints.threads.see_more": "اطلع على المزيد من الردود على {domain}",
-=======
->>>>>>> v4.5.0
   "home.column_settings.show_quotes": "إظهار الاقتباسات",
   "home.column_settings.show_reblogs": "اعرض المعاد نشرها",
   "home.column_settings.show_replies": "اعرض الردود",
@@ -478,28 +455,12 @@
   "ignore_notifications_modal.private_mentions_title": "تجاهل الإشعارات للرسائل التي لم تطلبها؟",
   "info_button.label": "المساعدة",
   "info_button.what_is_alt_text": "<h1> ماهو النص البديل؟</h1><p> يوفر النص البديل أوصافا للصور للأشخاص الذين يعانون من إعاقات بصرية أو اتصالات شبكة ضعيفة أو أولئك الذين يبحثون عن سياق إضافي.</p><p> يمكنك تحسين إمكانية الوصول والفهم للجميع من خلال كتابة نص بديل واضح وموجز وموضوعي. </p><ul><li> حدد العناصر المهمة</li><li>لخص النص في الصور</li><li>استخدام بنية الجمل العادية</li><li>تجنب المعلومات الزائدة</li><li> ركز على الاتجاهات والنتائج الرئيسية في العناصر المرئية المعقدة (مثل الرسوم البيانية أو الخرائط)</li></ul>",
-<<<<<<< HEAD
-  "interaction_modal.action.favourite": "للمتابعة، تحتاج إلى تفضيل المنشور من حسابك.",
-  "interaction_modal.action.follow": "للمتابعة، تحتاج إلى متابعة المنشور من حسابك.",
-  "interaction_modal.action.reblog": "للمتابعة، تحتاج إلى إعادة نشر المنشور من حسابك.",
-  "interaction_modal.action.reply": "للمتابعة، تحتاج إلى الرد من حسابك.",
-  "interaction_modal.action.vote": "للمتابعة، تحتاج إلى التصويت من حسابك.",
-=======
   "interaction_modal.action": "للتفاعل مع منشور {name}، تحتاج إلى تسجيل الدخول إلى حسابك على أي خادم ماستدون تستخدمه.",
->>>>>>> v4.5.0
   "interaction_modal.go": "اذهب",
   "interaction_modal.no_account_yet": "لا تملك حساباً بعد؟",
   "interaction_modal.on_another_server": "على خادم مختلف",
   "interaction_modal.on_this_server": "على هذا الخادم",
-<<<<<<< HEAD
-  "interaction_modal.title.favourite": "إضافة منشور {name} إلى المفضلة",
-  "interaction_modal.title.follow": "اتبع {name}",
-  "interaction_modal.title.reblog": "إعادة نشر منشور {name}",
-  "interaction_modal.title.reply": "الرد على منشور {name}",
-  "interaction_modal.title.vote": "صوّت في استطلاع {name}",
-=======
   "interaction_modal.title": "قم بتسجيل الدخول للمتابعة",
->>>>>>> v4.5.0
   "interaction_modal.username_prompt": "مثلاً {example}",
   "intervals.full.days": "{number, plural, one {# يوم} other {# أيام}}",
   "intervals.full.hours": "{number, plural, one {# ساعة} other {# ساعات}}",
@@ -929,15 +890,6 @@
   "status.mute_conversation": "كتم المحادثة",
   "status.open": "وسّع هذا المنشور",
   "status.pin": "دبّسه على الصفحة التعريفية",
-<<<<<<< HEAD
-  "status.quote_error.filtered": "مُخفي بسبب إحدى إعدادات التصفية خاصتك",
-  "status.quote_error.not_found": "لا يمكن عرض هذا المنشور.",
-  "status.quote_error.pending_approval": "هذا المنشور ينتظر موافقة صاحب المنشور الأصلي.",
-  "status.quote_error.rejected": "لا يمكن عرض هذا المنشور لأن صاحب المنشور الأصلي لا يسمح له بأن يكون مقتبس.",
-  "status.quote_error.removed": "تمت إزالة المنشور من قبل صاحبه.",
-  "status.quote_error.unauthorized": "لا يمكن عرض هذا المنشور لأنك لست مخولاً برؤيته.",
-  "status.quote_post_author": "منشور من {name}",
-=======
   "status.quote": "اقتباس",
   "status.quote.cancel": "إلغاء الاقتباس",
   "status.quote_error.filtered": "مُخفي بسبب إحدى إعدادات التصفية خاصتك",
@@ -952,7 +904,6 @@
   "status.quote_post_author": "اقتبس @{name} منشورا",
   "status.quote_private": "المنشورات الخاصة لا يمكن اقتباسها",
   "status.quotes.empty": "لا أحد اقتبس هذا المنشور بعد. عندما يقوم أحدهم بذلك سوف يظهر هنا.",
->>>>>>> v4.5.0
   "status.read_more": "اقرأ المزيد",
   "status.reblog": "إعادة النشر",
   "status.reblog_or_quote": "إعادة النشر أو اقتباس",
@@ -963,10 +914,7 @@
   "status.redraft": "إزالة وإعادة الصياغة",
   "status.remove_bookmark": "احذفه مِن الفواصل المرجعية",
   "status.remove_favourite": "إزالة من التفضيلات",
-<<<<<<< HEAD
-=======
   "status.remove_quote": "إزالة",
->>>>>>> v4.5.0
   "status.replied_in_thread": "رد في خيط",
   "status.replied_to": "رَدًا على {name}",
   "status.reply": "ردّ",
@@ -1011,10 +959,7 @@
   "upload_button.label": "إضافة وسائط",
   "upload_error.limit": "لقد تم بلوغ الحد الأقصى المسموح به لإرسال الملفات.",
   "upload_error.poll": "لا يمكن إدراج ملفات في استطلاعات الرأي.",
-<<<<<<< HEAD
-=======
   "upload_error.quote": "تحميل الملفات غير مسموح بها مع الاقتباسات.",
->>>>>>> v4.5.0
   "upload_form.drag_and_drop.instructions": "لحمل مرفق، اضغط على space أو Enter. وفي أثناء السحب، استخدم مفاتيح الأسهم لتنقل المرفق في أية اتجاه. اضغط على Space أو Enter مجدداً لتنقل المرفق إلى موضعه الجديد، أو اضغط Escape للإلغاء.",
   "upload_form.drag_and_drop.on_drag_cancel": "تم إلغاء السحب. تم إسقاط مرفقات الوسائط {item}.",
   "upload_form.drag_and_drop.on_drag_end": "تم إضافة المرفق {item}.",
@@ -1037,9 +982,6 @@
   "video.skip_forward": "تخطي للأمام",
   "video.unmute": "إلغاء الكتم",
   "video.volume_down": "خفض الصوت",
-<<<<<<< HEAD
-  "video.volume_up": "رفع الصوت"
-=======
   "video.volume_up": "رفع الصوت",
   "visibility_modal.button_title": "اختر مدى الظهور",
   "visibility_modal.header": "مدى الظهور والتفاعل",
@@ -1050,5 +992,4 @@
   "visibility_modal.quote_nobody": "أنا فقط",
   "visibility_modal.quote_public": "أيا كان",
   "visibility_modal.save": "حفظ"
->>>>>>> v4.5.0
 }

@@ -1,10 +1,6 @@
 {
   "about.blocks": "Siū 管制 ê 服侍器",
-<<<<<<< HEAD
-  "about.contact": "聯絡lâng：",
-=======
   "about.contact": "聯絡方法：",
->>>>>>> v4.5.0
   "about.default_locale": "預設",
   "about.disclaimer": "Mastodon是自由、開放原始碼ê軟體，mā是Mastodon gGmbH ê商標。",
   "about.domain_blocks.no_reason_available": "原因bē-tàng用",
@@ -32,10 +28,7 @@
   "account.disable_notifications": "停止佇 {name} PO文ê時通知我",
   "account.domain_blocking": "Teh封鎖ê網域",
   "account.edit_profile": "編輯個人資料",
-<<<<<<< HEAD
-=======
   "account.edit_profile_short": "編輯",
->>>>>>> v4.5.0
   "account.enable_notifications": "佇 {name} PO文ê時通知我",
   "account.endorse": "用個人資料推薦對方",
   "account.familiar_followers_many": "Hōo {name1}、{name2}，kap {othersCount, plural, other {其他 lí熟似ê # ê lâng}} 跟tuè",
@@ -48,14 +41,11 @@
   "account.featured_tags.last_status_never": "無PO文",
   "account.follow": "跟tuè",
   "account.follow_back": "Tuè tńg去",
-<<<<<<< HEAD
-=======
   "account.follow_back_short": "Tuè tńg去",
   "account.follow_request": "請求跟tuè lí",
   "account.follow_request_cancel": "取消跟tuè",
   "account.follow_request_cancel_short": "取消",
   "account.follow_request_short": "請求",
->>>>>>> v4.5.0
   "account.followers": "跟tuè lí ê",
   "account.followers.empty": "Tsit ê用者iáu bô lâng跟tuè。",
   "account.followers_counter": "Hōo {count, plural, other {{count} ê lâng}}跟tuè",
@@ -86,10 +76,6 @@
   "account.posts_with_replies": "PO文kap回應",
   "account.remove_from_followers": "Kā {name} tuì跟tuè lí ê ê內底suá掉",
   "account.report": "檢舉 @{name}",
-<<<<<<< HEAD
-  "account.requested": "Teh等待審查。Tshi̍h tsi̍t-ē 通取消跟tuè請求",
-=======
->>>>>>> v4.5.0
   "account.requested_follow": "{name} 請求跟tuè lí",
   "account.requests_to_follow_you": "請求跟tuè lí",
   "account.share": "分享 @{name} ê個人資料",
@@ -187,11 +173,8 @@
   "column.edit_list": "編輯列單",
   "column.favourites": "Siōng kah意",
   "column.firehose": "Tsit-má ê動態",
-<<<<<<< HEAD
-=======
   "column.firehose_local": "Tsit ê服侍器tsit-má ê動態",
   "column.firehose_singular": "Tsit-má ê動態",
->>>>>>> v4.5.0
   "column.follow_requests": "跟tuè請求",
   "column.home": "頭頁",
   "column.list_members": "管理列單ê成員",
@@ -211,10 +194,7 @@
   "community.column_settings.local_only": "Kan-ta展示本地ê",
   "community.column_settings.media_only": "Kan-ta展示媒體",
   "community.column_settings.remote_only": "Kan-ta展示遠距離ê",
-<<<<<<< HEAD
-=======
   "compose.error.blank_post": "PO文bē當空白。",
->>>>>>> v4.5.0
   "compose.language.change": "換語言",
   "compose.language.search": "Tshiau-tshuē語言……",
   "compose.published.body": "成功PO文。",
@@ -267,24 +247,16 @@
   "confirmations.missing_alt_text.secondary": "就按呢PO出去",
   "confirmations.missing_alt_text.title": "Kám beh加添說明文字？",
   "confirmations.mute.confirm": "消音",
-<<<<<<< HEAD
-=======
   "confirmations.quiet_post_quote_info.dismiss": "請mài koh提醒我",
   "confirmations.quiet_post_quote_info.got_it": "知ah",
   "confirmations.quiet_post_quote_info.message": "Nā是引用無tī公共時間線內底êPO文，lí êPO文bē當tī趨勢ê時間線顯示。",
   "confirmations.quiet_post_quote_info.title": "引用無tī公開ê時間線內底顯示ê PO文",
->>>>>>> v4.5.0
   "confirmations.redraft.confirm": "Thâi掉了後重寫",
   "confirmations.redraft.message": "Lí kám確定behthâi掉tsit篇PO文了後koh重寫？收藏kap轉PO ē無去，而且原底ê PO文ê回應ē變孤立。",
   "confirmations.redraft.title": "Kám beh thâi掉koh重寫PO文？",
   "confirmations.remove_from_followers.confirm": "Suá掉跟tuè lí ê",
   "confirmations.remove_from_followers.message": "{name} ē停止跟tuè lí。Lí kám確定beh繼續？",
   "confirmations.remove_from_followers.title": "Kám beh suá掉跟tuè lí ê?",
-<<<<<<< HEAD
-  "confirmations.unfollow.confirm": "取消跟tuè",
-  "confirmations.unfollow.message": "Lí kám確定無愛跟tuè {name}？",
-  "confirmations.unfollow.title": "Kám beh取消跟tuè tsit ê用者？",
-=======
   "confirmations.revoke_quote.confirm": "Thâi掉PO文",
   "confirmations.revoke_quote.message": "Tsit ê動作bē當復原。",
   "confirmations.revoke_quote.title": "Kám beh thâi掉PO文？",
@@ -294,7 +266,6 @@
   "confirmations.unfollow.title": "取消跟tuè {name}？",
   "confirmations.withdraw_request.confirm": "Kā跟tuè請求收tńg去",
   "confirmations.withdraw_request.title": "Kám beh收tńg去跟tuè {name} ê請求？",
->>>>>>> v4.5.0
   "content_warning.hide": "Am-khàm PO文",
   "content_warning.show": "Mā tio̍h顯示",
   "content_warning.show_more": "其他內容",
@@ -336,10 +307,7 @@
   "domain_pill.your_handle": "Lí ê口座：",
   "domain_pill.your_server": "Lí數位ê厝，內底有lí所有ê PO文。無kah意？Ē當轉kàu別ê服侍器，koh保有跟tuè lí êl âng。.",
   "domain_pill.your_username": "Lí 佇tsit ê服侍器獨一ê稱呼。佇無kâng ê服侍器有可能tshuē著kāng名ê用者。",
-<<<<<<< HEAD
-=======
   "dropdown.empty": "揀選項",
->>>>>>> v4.5.0
   "embed.instructions": "Khóo-pih 下kha ê程式碼，來kā tsit篇PO文tàu佇lí ê網站。",
   "embed.preview": "伊e án-ne顯示：\n",
   "emoji_button.activity": "活動",
@@ -368,10 +336,7 @@
   "empty_column.bookmarked_statuses": "Lí iáu無加添任何冊籤。Nā是lí加添冊籤，伊ē佇tsia顯示。",
   "empty_column.community": "本站時間線是空ê。緊來公開PO文oh！",
   "empty_column.direct": "Lí iáu無任何ê私人訊息。Nā是lí送á是收著私人訊息，ē佇tsia顯示。.",
-<<<<<<< HEAD
-=======
   "empty_column.disabled_feed": "Tsit ê feed已經hōo lí ê服侍器ê管理員停用。",
->>>>>>> v4.5.0
   "empty_column.domain_blocks": "Iáu無封鎖任何網域。",
   "empty_column.explore_statuses": "目前iáu無有流行ê趨勢，請sió等tsi̍t-ē，koh確認。",
   "empty_column.favourited_statuses": "Lí iáu無加添任何收藏 ê PO文。Nā是lí加收藏，伊ē佇tsia顯示。",
@@ -479,11 +444,6 @@
   "hints.profiles.see_more_followers": "佇 {domain} 看koh khah tsē跟tuè lí ê",
   "hints.profiles.see_more_follows": "佇 {domain} 看koh khah tsē lí跟tuè ê",
   "hints.profiles.see_more_posts": "佇 {domain} 看koh khah tsē ê PO文",
-<<<<<<< HEAD
-  "hints.threads.replies_may_be_missing": "Tuì其他ê服侍器來ê回應可能有phah m̄見。",
-  "hints.threads.see_more": "佇 {domain} 看koh khah tsē ê回應",
-=======
->>>>>>> v4.5.0
   "home.column_settings.show_quotes": "顯示引用",
   "home.column_settings.show_reblogs": "顯示轉PO",
   "home.column_settings.show_replies": "顯示回應",
@@ -505,28 +465,12 @@
   "ignore_notifications_modal.private_mentions_title": "忽略ka-kī主動送ê私人提起ê通知？",
   "info_button.label": "幫tsān",
   "info_button.what_is_alt_text": "<h1>Siánn物是替代文字？</h1> <p>替代文字kā視覺有障礙、網路速度khah慢，á是beh tshuē頂下文ê lâng，提供圖ê敘述。</p> <p>Lí ē當通過寫明白、簡單kap客觀ê替代文字，替逐家改善容易使用性kap幫tsān理解。</p> <ul> <li>掌握重要ê因素</li> <li>替圖寫摘要ê文字</li> <li>用規則ê語句結構</li> <li>避免重複ê資訊</li> <li>專注佇趨勢kap佇複雜視覺（比如圖表á是地圖）內底tshuē關鍵</li> </ul>",
-<<<<<<< HEAD
-  "interaction_modal.action.favourite": "Nā beh繼續，lí tio̍h用你ê口座收藏。",
-  "interaction_modal.action.follow": "Nā beh繼續，lí tio̍h用你ê口座跟tuè。",
-  "interaction_modal.action.reblog": "Nā beh繼續，lí tio̍h用你ê口座轉送。",
-  "interaction_modal.action.reply": "Nā beh繼續，lí tio̍h用你ê口座回應。",
-  "interaction_modal.action.vote": "Nā beh繼續，lí tio̍h用你ê口座投票。",
-=======
   "interaction_modal.action": "Nā beh hām {name} ê PO文互動，lí愛佇lí所用ê Mastodon服侍器登入口座。",
->>>>>>> v4.5.0
   "interaction_modal.go": "行",
   "interaction_modal.no_account_yet": "Tsit-má iáu bô口座？",
   "interaction_modal.on_another_server": "佇無kâng ê服侍器",
   "interaction_modal.on_this_server": "Tī tsit ê服侍器",
-<<<<<<< HEAD
-  "interaction_modal.title.favourite": "收藏 {name} ê PO文",
-  "interaction_modal.title.follow": "跟tuè {name}",
-  "interaction_modal.title.reblog": "轉送 {name} ê PO文",
-  "interaction_modal.title.reply": "回應 {name} ê PO文",
-  "interaction_modal.title.vote": "參加 {name} ê投票",
-=======
   "interaction_modal.title": "登入koh繼續",
->>>>>>> v4.5.0
   "interaction_modal.username_prompt": "比如：{example}",
   "intervals.full.days": "{number, plural, other {# kang}}",
   "intervals.full.hours": "{number, plural, other {# 點鐘}}",
@@ -547,10 +491,7 @@
   "keyboard_shortcuts.home": "Phah開tshù ê時間線",
   "keyboard_shortcuts.hotkey": "快速key",
   "keyboard_shortcuts.legend": "顯示tsit篇說明",
-<<<<<<< HEAD
-=======
   "keyboard_shortcuts.load_more": "Kā焦點suá kàu「載入其他」ê鈕仔",
->>>>>>> v4.5.0
   "keyboard_shortcuts.local": "Phah開本站ê時間線",
   "keyboard_shortcuts.mention": "提起作者",
   "keyboard_shortcuts.muted": "Phah開消音ê用者列單",
@@ -559,10 +500,7 @@
   "keyboard_shortcuts.open_media": "Phah開媒體",
   "keyboard_shortcuts.pinned": "Phah開釘起來ê PO文列單",
   "keyboard_shortcuts.profile": "Phah開作者ê個人資料",
-<<<<<<< HEAD
-=======
   "keyboard_shortcuts.quote": "引用PO文",
->>>>>>> v4.5.0
   "keyboard_shortcuts.reply": "回應PO文",
   "keyboard_shortcuts.requests": "Phah開跟tuè請求ê列單",
   "keyboard_shortcuts.search": "揀tshiau-tshuē條á",
@@ -574,11 +512,8 @@
   "keyboard_shortcuts.translate": "kā PO文翻譯",
   "keyboard_shortcuts.unfocus": "離開輸入框仔／tshiau-tshuē格仔",
   "keyboard_shortcuts.up": "佇列單內kā suá khah面頂",
-<<<<<<< HEAD
-=======
   "learn_more_link.got_it": "知矣",
   "learn_more_link.learn_more": "看詳細",
->>>>>>> v4.5.0
   "lightbox.close": "關",
   "lightbox.next": "下tsi̍t ê",
   "lightbox.previous": "頂tsi̍t ê",
@@ -646,11 +581,7 @@
   "navigation_bar.live_feed_local": "即時ê內容（本地）",
   "navigation_bar.live_feed_public": "即時ê內容（公開）",
   "navigation_bar.logout": "登出",
-<<<<<<< HEAD
-  "navigation_bar.moderation": "審核",
-=======
   "navigation_bar.moderation": "管理",
->>>>>>> v4.5.0
   "navigation_bar.more": "其他",
   "navigation_bar.mutes": "消音ê用者",
   "navigation_bar.opened_in_classic_interface": "PO文、口座kap其他指定ê頁面，預設ē佇經典ê網頁界面內phah開。",
@@ -683,36 +614,22 @@
   "notification.label.mention": "提起",
   "notification.label.private_mention": "私人ê提起",
   "notification.label.private_reply": "私人ê回應",
-<<<<<<< HEAD
-=======
   "notification.label.quote": "{name} 引用lí ê PO文",
->>>>>>> v4.5.0
   "notification.label.reply": "回應",
   "notification.mention": "提起",
   "notification.mentioned_you": "{name}kā lí提起",
   "notification.moderation-warning.learn_more": "看詳細",
-<<<<<<< HEAD
-  "notification.moderation_warning": "Lí有收著審核ê警告",
-  "notification.moderation_warning.action_delete_statuses": "Lí ê一寡PO文hōo lâng thâi掉ah。",
-  "notification.moderation_warning.action_disable": "Lí ê口座hōo lâng停止使用ah。",
-  "notification.moderation_warning.action_mark_statuses_as_sensitive": "Lí ê一寡PO文，hōo lâng標做敏感ê內容。",
-  "notification.moderation_warning.action_none": "Lí ê口座有收著審核ê警告。",
-=======
   "notification.moderation_warning": "Lí有收著管理ê警告",
   "notification.moderation_warning.action_delete_statuses": "Lí ê一寡PO文hōo lâng thâi掉ah。",
   "notification.moderation_warning.action_disable": "Lí ê口座hōo lâng停止使用ah。",
   "notification.moderation_warning.action_mark_statuses_as_sensitive": "Lí ê一寡PO文，hōo lâng標做敏感ê內容。",
   "notification.moderation_warning.action_none": "Lí ê口座有收著管理ê警告。",
->>>>>>> v4.5.0
   "notification.moderation_warning.action_sensitive": "Tuì tsit-má開始，lí êPO文ē標做敏感ê內容。",
   "notification.moderation_warning.action_silence": "Lí ê口座hōo lâng限制ah。",
   "notification.moderation_warning.action_suspend": "Lí ê口座ê權限已經停止ah。",
   "notification.own_poll": "Lí ê投票結束ah",
   "notification.poll": "Lí bat投ê投票結束ah",
-<<<<<<< HEAD
-=======
   "notification.quoted_update": "{name} 編輯lí有引用ê PO文",
->>>>>>> v4.5.0
   "notification.reblog": "{name} 轉送lí ê PO文",
   "notification.reblog.name_and_others_with_link": "{name} kap<a>{count, plural, other {另外 # ê lâng}}</a>轉送lí ê PO文",
   "notification.relationships_severance_event": "Kap {name} ê結連無去",
@@ -756,10 +673,7 @@
   "notifications.column_settings.mention": "提起：",
   "notifications.column_settings.poll": "投票ê結果：",
   "notifications.column_settings.push": "Sak通知",
-<<<<<<< HEAD
-=======
   "notifications.column_settings.quote": "引用：",
->>>>>>> v4.5.0
   "notifications.column_settings.reblog": "轉送：",
   "notifications.column_settings.show": "佇欄內底顯示",
   "notifications.column_settings.sound": "播放聲音",
@@ -835,13 +749,6 @@
   "privacy.private.short": "跟tuè lí ê",
   "privacy.public.long": "逐ê lâng（無論佇Mastodon以內á是以外）",
   "privacy.public.short": "公開ê",
-<<<<<<< HEAD
-  "privacy.unlisted.additional": "Tse ê行為kap公開相siâng，m̄-koh 就算lí佇口座設定phah開有關ê公開功能，PO文mā bē顯示佇即時ê動態、hashtag、探索kap Mastodon ê搜尋結果。",
-  "privacy.unlisted.long": "減少演算法ê宣傳",
-  "privacy.unlisted.short": "恬靜ê公開",
-  "privacy_policy.last_updated": "上尾更新tī：{date}",
-  "privacy_policy.title": "隱私權政策",
-=======
   "privacy.quote.anyone": "{visibility}，ta̍k ê lâng lóng ē當引用",
   "privacy.quote.disabled": "{visibility}，停止引用PO文",
   "privacy.quote.limited": "{visibility}，PO文引用受限",
@@ -855,7 +762,6 @@
   "quote_error.quote": "Tsi̍t改kan-ta ē當引用tsi̍t篇PO文。",
   "quote_error.unauthorized": "Lí bô權利引用tsit篇PO文。",
   "quote_error.upload": "有媒體附件ê PO文無允准引用。",
->>>>>>> v4.5.0
   "recommended": "推薦",
   "refresh": "Koh更新",
   "regeneration_indicator.please_stand_by": "請sió等leh。",
@@ -871,12 +777,9 @@
   "relative_time.minutes": "{number} 分進前",
   "relative_time.seconds": "{number} 秒進前",
   "relative_time.today": "今á日",
-<<<<<<< HEAD
-=======
   "remove_quote_hint.button_label": "知ah",
   "remove_quote_hint.message": "Lí ē當tuì {icon} 選項ê目錄完成tsit ê動作",
   "remove_quote_hint.title": "Kám想beh thâi掉lí受引用ê PO文？",
->>>>>>> v4.5.0
   "reply_indicator.attachments": "{count, plural, other {# ê附件}}",
   "reply_indicator.cancel": "取消",
   "reply_indicator.poll": "投票",
@@ -968,15 +871,6 @@
   "status.admin_account": "Phah開 @{name} ê管理界面",
   "status.admin_domain": "Phah開 {domain} ê管理界面",
   "status.admin_status": "Tī管理界面內底看tsit篇PO文",
-<<<<<<< HEAD
-  "status.block": "封鎖 @{name}",
-  "status.bookmark": "冊籤",
-  "status.cancel_reblog_private": "取消轉送",
-  "status.cannot_reblog": "Tsit篇PO文bē當轉送",
-  "status.continued_thread": "接續ê討論線",
-  "status.copy": "Khóo-pih PO文ê連結",
-  "status.delete": "Thâi掉",
-=======
   "status.all_disabled": "轉送kap引用停止使用",
   "status.block": "封鎖 @{name}",
   "status.bookmark": "冊籤",
@@ -994,7 +888,6 @@
   "status.copy": "Khóo-pih PO文ê連結",
   "status.delete": "Thâi掉",
   "status.delete.success": "PO文thâi掉ah",
->>>>>>> v4.5.0
   "status.detailed_status": "對話ê詳細",
   "status.direct": "私人提起 @{name}",
   "status.direct_indicator": "私人ê提起",
@@ -1016,18 +909,6 @@
   "status.mute": "消音 @{name}",
   "status.mute_conversation": "Kā對話消音",
   "status.open": "Kā PO文展開",
-<<<<<<< HEAD
-  "status.quote_error.filtered": "Lí所設定ê過濾器kā tse khàm起來",
-  "status.quote_error.not_found": "Tsit篇PO文bē當顯示。",
-  "status.quote_error.pending_approval": "Tsit篇PO文teh等原作者審查。",
-  "status.quote_error.rejected": "因為原作者無允准引用，tsit篇PO文bē當顯示。",
-  "status.quote_error.removed": "Tsit篇hōo作者thâi掉ah。",
-  "status.quote_error.unauthorized": "因為lí無得著讀tse ê權限，tsit篇PO文bē當顯示。",
-  "status.quote_post_author": "{name} 所PO ê",
-  "status.read_more": "讀詳細",
-  "status.reblog": "轉送",
-  "status.reblog_private": "照原PO ê通看見ê範圍轉送",
-=======
   "status.quote": "引用",
   "status.quote.cancel": "取消引用",
   "status.quote_error.blocked_account_hint.title": "因為lí有封鎖 @{name}，tsit篇PO文受khàm掉。",
@@ -1054,27 +935,20 @@
   "status.reblog": "轉送",
   "status.reblog_or_quote": "轉送á是引用",
   "status.reblog_private": "Koh再hām跟tuè ê分享",
->>>>>>> v4.5.0
   "status.reblogged_by": "{name} kā轉送ah",
   "status.reblogs": "{count, plural, other {# ê 轉送}}",
   "status.reblogs.empty": "Iáu無lâng轉送tsit篇PO文。Nā是有lâng轉送，ē佇tsia顯示。",
   "status.redraft": "Thâi掉了後重寫",
   "status.remove_bookmark": "Thâi掉冊籤",
   "status.remove_favourite": "Tuì收藏內suá掉",
-<<<<<<< HEAD
-=======
   "status.remove_quote": "Thâi掉",
->>>>>>> v4.5.0
   "status.replied_in_thread": "佇討論線內應",
   "status.replied_to": "回應 {name}",
   "status.reply": "回應",
   "status.replyAll": "應討論線",
   "status.report": "檢舉 @{name}",
-<<<<<<< HEAD
-=======
   "status.request_quote": "要求引用PO文",
   "status.revoke_quote": "Kā 我ê PO文tuì @{name} ê thâi掉",
->>>>>>> v4.5.0
   "status.sensitive_warning": "敏感ê內容",
   "status.share": "分享",
   "status.show_less_all": "Lóng收起來",
@@ -1111,10 +985,7 @@
   "upload_button.label": "加圖片、影片á是聲音檔",
   "upload_error.limit": "超過檔案傳起去ê限制",
   "upload_error.poll": "Bô允準佇投票ê時kā檔案傳起去。",
-<<<<<<< HEAD
-=======
   "upload_error.quote": "引用PO文bē當kā檔案傳起去。",
->>>>>>> v4.5.0
   "upload_form.drag_and_drop.instructions": "Nā beh選媒體附件，請tshi̍h空白key á是Enter key。Giú ê時，請用方向key照指定ê方向suá媒體附件。Beh khǹg媒體附件佇伊ê新位置，請koh tshi̍h空白key á是Enter key，或者tshi̍h Esc key來取消。",
   "upload_form.drag_and_drop.on_drag_cancel": "Suá位取消ah，媒體附件 {item} khǹg落來ah。",
   "upload_form.drag_and_drop.on_drag_end": "媒體附件 {item} khǹg落來ah。",
@@ -1137,9 +1008,6 @@
   "video.skip_forward": "跳kah頭前",
   "video.unmute": "取消消音",
   "video.volume_down": "變khah細聲",
-<<<<<<< HEAD
-  "video.volume_up": "變khah大聲"
-=======
   "video.volume_up": "變khah大聲",
   "visibility_modal.button_title": "設定通看ê程度",
   "visibility_modal.header": "通看ê程度kap互動",
@@ -1155,5 +1023,4 @@
   "visibility_modal.quote_nobody": "Kan-ta我",
   "visibility_modal.quote_public": "Ta̍k ê lâng",
   "visibility_modal.save": "儲存"
->>>>>>> v4.5.0
 }

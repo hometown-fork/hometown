@@ -54,27 +54,18 @@ vi:
         password: Tối thiểu 8 ký tự
         phrase: Sẽ được hiện thị trong văn bản hoặc cảnh báo nội dung của một tút
         scopes: Ứng dụng sẽ được phép truy cập những API nào. Nếu bạn chọn quyền cấp cao nhất, không cần chọn quyền nhỏ.
-<<<<<<< HEAD
-        setting_aggregate_reblogs: Nếu một tút đã được đăng lại thì sẽ không hiện những lượt đăng lại khác trên bảng tin
-        setting_always_send_emails: Bình thường thì sẽ không gửi khi bạn đang dùng Mastodon
-        setting_default_quote_policy: Thiết lập này chỉ hiệu lực đối với các tút được tạo bằng phiên bản Mastodon tiếp theo, nhưng bạn có thể chọn trước sẵn
-=======
         setting_advanced_layout: Hiển thị Mastodon dưới dạng bố cục nhiều cột, cho phép bạn xem dòng thời gian, thông báo và cột thứ ba mà bạn chọn. Không nên dùng cho màn hình nhỏ.
         setting_aggregate_reblogs: Nếu một tút đã được đăng lại thì sẽ không hiện những lượt đăng lại khác trên bảng tin
         setting_always_send_emails: Bình thường thì sẽ không gửi khi bạn đang dùng Mastodon
         setting_boost_modal: Nếu được bật, trước khi đăng lại sẽ mở hộp thoại xác nhận - trong đó bạn có thể thay đổi mức độ hiển thị tút của mình.
         setting_default_quote_policy_private: Tút chỉ dành cho người theo dõi trên Mastodon không thể được người khác trích dẫn.
         setting_default_quote_policy_unlisted: Khi ai đó trích dẫn bạn, tút của họ cũng sẽ bị ẩn khỏi bảng tin công khai.
->>>>>>> v4.5.0
         setting_default_sensitive: Bắt buộc nhấn vào mới có thể xem
         setting_display_media_default: Click để xem
         setting_display_media_hide_all: Luôn ẩn
         setting_display_media_show_all: Luôn hiện
-<<<<<<< HEAD
-=======
         setting_emoji_style: Cách hiển thị Emoji. "Tự động" sẽ dùng biểu tượng cảm xúc nguyên bản, nhưng đối với các trình duyệt cũ sẽ chuyển thành Twemoji.
         setting_quick_boosting_html: Nếu bật, nhấn biểu tượng %{boost_icon} Đăng lại sẽ lập tức đăng lại thay vì mở menu xổ xuống đăng lại/trích dẫn. Chuyển vị trí hành động trích dẫn sang menu %{options_icon} (Tùy chọn).
->>>>>>> v4.5.0
         setting_system_scrollbars_ui: Chỉ áp dụng trình duyệt Chrome và Safari bản desktop
         setting_use_blurhash: Phủ lớp màu làm nhòe đi hình ảnh nhạy cảm
         setting_use_pending_items: Dồn lại toàn bộ tút mới và chỉ hiển thị khi nhấn vào
@@ -163,11 +154,7 @@ vi:
       user:
         chosen_languages: Chỉ hiển thị những ngôn ngữ tút sau
         date_of_birth:
-<<<<<<< HEAD
-          other: Chúng tôi cần đảm bảo rằng bạn lớn hơn %{count} tuổi để sử dụng Mastodon. Chúng tôi không lưu trữ thông tin này.
-=======
           other: Chúng tôi phải đảm bảo rằng bạn ít nhất %{count} tuổi để tham gia %{domain}. Thông tin này không lưu trữ sau khi đăng ký.
->>>>>>> v4.5.0
         role: Vai trò kiểm soát những quyền mà người dùng có.
       user_role:
         color: Màu được sử dụng cho vai trò trong toàn bộ giao diện người dùng, dưới dạng RGB ở định dạng hex
@@ -249,20 +236,12 @@ vi:
         setting_aggregate_reblogs: Không hiện lượt đăng lại trùng lặp
         setting_always_send_emails: Luôn gửi email thông báo
         setting_auto_play_gif: Tự động phát ảnh GIF
-<<<<<<< HEAD
-        setting_boost_modal: Hỏi trước khi đăng lại tút
-=======
         setting_boost_modal: Kiểm soát khả năng đăng lại
->>>>>>> v4.5.0
         setting_default_language: Ngôn ngữ tút
         setting_default_privacy: Kiểu tút
         setting_default_quote_policy: Ai có thể trích dẫn
         setting_default_sensitive: Đánh dấu media nhạy cảm
-<<<<<<< HEAD
-        setting_delete_modal: Hỏi trước khi xóa tút
-=======
         setting_delete_modal: Cảnh báo tôi trước khi xóa một tút
->>>>>>> v4.5.0
         setting_disable_hover_cards: Không popup hồ sơ
         setting_disable_swiping: Không thao tác vuốt
         setting_display_media: Media nhạy cảm
@@ -272,12 +251,8 @@ vi:
         setting_emoji_style: Phong cách Emoji
         setting_expand_spoilers: Luôn mở rộng tút chứa nội dung ẩn
         setting_hide_network: Ẩn quan hệ của bạn
-<<<<<<< HEAD
-        setting_missing_alt_text_modal: Hỏi trước khi đăng media không có văn bản thay thế
-=======
         setting_missing_alt_text_modal: Cảnh báo tôi trước khi đăng media mà không có alt text
         setting_quick_boosting: Bật đăng lại nhanh
->>>>>>> v4.5.0
         setting_reduce_motion: Giảm chuyển động ảnh GIF
         setting_system_font_ui: Phông chữ mặc định hệ thống
         setting_system_scrollbars_ui: Thanh cuộn mặc định hệ thống

@@ -895,11 +895,7 @@ cy:
         title: Eithrio defnyddwyr o fynegai peiriannau chwilio, fel rhagosodiad
       discovery:
         follow_recommendations: Dilyn yr argymhellion
-<<<<<<< HEAD
-        preamble: Mae amlygu cynnwys diddorol yn allweddol ar gyfer derbyn defnyddwyr newydd nad ydynt efallai'n gyfarwydd ag unrhyw un Mastodon. Rheolwch sut mae nodweddion darganfod amrywiol yn gweithio ar eich gweinydd.
-=======
         preamble: Mae amlygu cynnwys diddorol yn allweddol wrth ddenu defnyddwyr newydd sydd ddim o bosib yn adnabod neb ar Mastodon. Rheolwch sut mae gwahanol nodweddion darganfod yn gweithio ar eich gweinydd.
->>>>>>> v4.5.0
         privacy: Preifatrwydd
         profile_directory: Cyfeiriadur proffiliau
         public_timelines: Ffrydiau cyhoeddus
@@ -981,10 +977,7 @@ cy:
       title: Postiadau cyfrif - @%{name}
       trending: Yn trendio
       view_publicly: Gweld yn gyhoeddus
-<<<<<<< HEAD
-=======
       view_quoted_post: Gweld y postiad wedi'i ddyfynnu
->>>>>>> v4.5.0
       visibility: Gwelededd
       with_media: Gyda chyfryngau
     strikes:
@@ -1640,11 +1633,7 @@ cy:
       domain_blocking_html:
         few: Rydych ar fin <strong>amnewid eich rhestr rhwystro parthau </strong> gyda hyd at <strong>%{count} parth</strong> o <strong>%{filename}</strong>.
         many: Rydych ar fin <strong>amnewid eich rhestr rhwystro parthau </strong> gyda hyd at <strong>%{count} parth</strong> o <strong>%{filename}</strong>.
-<<<<<<< HEAD
-        one: Rydych ar fin <strong>disodli eich rhestr blociau parth</strong> gyda hyd at <strong>%{count} parth</strong> o <strong>%{filename}</strong>.
-=======
         one: Rydych ar fin <strong>amnewid eich rhestr blociau parth</strong> gyda hyd at <strong>%{count} parth</strong> o <strong>%{filename}</strong>.
->>>>>>> v4.5.0
         other: Rydych ar fin <strong>amnewid eich rhestr rhwystro parthau </strong> gyda hyd at <strong>%{count} parth</strong> o <strong>%{filename}</strong>.
         two: Rydych ar fin <strong>amnewid eich rhestr rhwystro parthau </strong> gyda hyd at <strong>%{count} parth</strong> o <strong>%{filename}</strong.
         zero: Rydych ar fin <strong>amnewid eich rhestr rhwystro parthau </strong> gyda hyd at <strong>%{count} parth</strong> o <strong>%{filename}</strong>.
@@ -2118,12 +2107,6 @@ cy:
       limit: Rydych chi eisoes wedi pinio uchafswm nifer y postiadau
       ownership: Nid oes modd pinio postiad rhywun arall
       reblog: Nid oes modd pinio hwb
-<<<<<<< HEAD
-    quote_policies:
-      followers: Dilynwyr a defnyddwyr wedi'u crybwyll
-      nobody: Dim ond defnyddwyr wedi'u crybwyll
-      public: Pawb
-=======
     quote_error:
       not_available: Dyw'r postiad ddim ar gael
       pending_approval: Postiad ar ei ffordd
@@ -2133,7 +2116,6 @@ cy:
       nobody: Dim ond fi
       public: Pawb
     quote_post_author: Wedi dyfynnu postiad gan %{acct}
->>>>>>> v4.5.0
     title: '%{name}: "%{quote}"'
     visibilities:
       direct: Crybwylliad preifat

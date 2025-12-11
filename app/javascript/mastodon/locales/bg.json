@@ -251,11 +251,6 @@
   "confirmations.remove_from_followers.confirm": "Премахване на последовател",
   "confirmations.remove_from_followers.message": "{name} ще спре да ви следва. Наистина ли искате да продължите?",
   "confirmations.remove_from_followers.title": "Премахвате ли последовател?",
-<<<<<<< HEAD
-  "confirmations.unfollow.confirm": "Без следване",
-  "confirmations.unfollow.message": "Наистина ли искате вече да не следвате {name}?",
-  "confirmations.unfollow.title": "Спирате ли да следвате потребителя?",
-=======
   "confirmations.revoke_quote.confirm": "Премахване на публикация",
   "confirmations.revoke_quote.message": "Действието е неотменимо.",
   "confirmations.revoke_quote.title": "Премахвате ли публикацията?",
@@ -264,7 +259,6 @@
   "confirmations.unfollow.confirm": "Без следване",
   "confirmations.unfollow.title": "Спирате ли следване на {name}?",
   "confirmations.withdraw_request.confirm": "Оттегляне на заявката",
->>>>>>> v4.5.0
   "content_warning.hide": "Скриване на публ.",
   "content_warning.show": "Нека се покаже",
   "content_warning.show_more": "Показване на още",
@@ -438,11 +432,6 @@
   "hints.profiles.see_more_followers": "Преглед на още последователи на {domain}",
   "hints.profiles.see_more_follows": "Преглед на още последвания на {domain}",
   "hints.profiles.see_more_posts": "Преглед на още публикации на {domain}",
-<<<<<<< HEAD
-  "hints.threads.replies_may_be_missing": "Отговори от други сървъри може да липсват.",
-  "hints.threads.see_more": "Преглед на още отговори на {domain}",
-=======
->>>>>>> v4.5.0
   "home.column_settings.show_quotes": "Показване на цитираното",
   "home.column_settings.show_reblogs": "Показване на подсилванията",
   "home.column_settings.show_replies": "Показване на отговорите",
@@ -464,28 +453,12 @@
   "ignore_notifications_modal.private_mentions_title": "Пренебрегвате ли известия от непоискани лични споменавания?",
   "info_button.label": "Помощ",
   "info_button.what_is_alt_text": "<h1>Какво е алтернативен текст?</h1> <p>Алтернативният текст осигурява описания на изображение за хора със зрителни увреждания, връзки с ниска честотна лента или търсещите допълнителен контекст.</p> <p>Може да подобрите достъпността и разбираемостта за всеки, пишейки ясен, кратък и обективен алтернативен текст.</p> <ul> <li>Уловете важните елементи</li> <li>Обобщете текста в образите</li> <li>Употребявайте правилна структура на изречението</li> <li>Избягвайте излишна информация</li> <li>Съсредоточете се върху тенденциите и ключови констатации в сложни онагледявания (като диаграми и карти)</li> </ul>",
-<<<<<<< HEAD
-  "interaction_modal.action.favourite": "Трябва да направите любимо от акаунта си, за да продължите.",
-  "interaction_modal.action.follow": "Трябва да последвате от акаунта си, за да продължите.",
-  "interaction_modal.action.reblog": "Трябва да разпространите нечий блог от акаунта си, за да продължите.",
-  "interaction_modal.action.reply": "Трябва да отговорите от акаунта си, за да продължите.",
-  "interaction_modal.action.vote": "Трябва да гласувате от акаунта си, за да продължите.",
-=======
   "interaction_modal.action": "Трябва да влезете с акаунта си, в който и да е сървър на Mastodon, когото използвате, за да взаимодействате с публикация на {name}.",
->>>>>>> v4.5.0
   "interaction_modal.go": "Напред",
   "interaction_modal.no_account_yet": "Още ли нямате акаунт?",
   "interaction_modal.on_another_server": "На различен сървър",
   "interaction_modal.on_this_server": "На този сървър",
-<<<<<<< HEAD
-  "interaction_modal.title.favourite": "Означавам публикация на {name} като любима",
-  "interaction_modal.title.follow": "Последване на {name}",
-  "interaction_modal.title.reblog": "Подсилване на публикацията на {name}",
-  "interaction_modal.title.reply": "Отговаряне на публикацията на {name}",
-  "interaction_modal.title.vote": "Гласувайте в анкетата на {name}",
-=======
   "interaction_modal.title": "Влезте, за да продължите",
->>>>>>> v4.5.0
   "interaction_modal.username_prompt": "Напр. {example}",
   "intervals.full.days": "{number, plural, one {# ден} other {# дни}}",
   "intervals.full.hours": "{number, plural, one {# час} other {# часа}}",
@@ -881,15 +854,12 @@
   "status.cancel_reblog_private": "Край на подсилването",
   "status.cannot_quote": "Не е позволено да цитирате тази публикация",
   "status.cannot_reblog": "Публикацията не може да се подсилва",
-<<<<<<< HEAD
-=======
   "status.context.loading": "Зареждане на още отговори",
   "status.context.loading_error": "Не можаха да се заредят нови отговори",
   "status.context.loading_success": "Новите отговори заредени",
   "status.context.more_replies_found": "Още намерени отговори",
   "status.context.retry": "Друг опит",
   "status.context.show": "Показване",
->>>>>>> v4.5.0
   "status.continued_thread": "Продължена нишка",
   "status.copy": "Копиране на връзката към публикация",
   "status.delete": "Изтриване",
@@ -917,14 +887,6 @@
   "status.open": "Разширяване на публикацията",
   "status.pin": "Закачане в профила",
   "status.quote_error.filtered": "Скрито поради един от филтрите ви",
-<<<<<<< HEAD
-  "status.quote_error.not_found": "Публикацията не може да се показва.",
-  "status.quote_error.pending_approval": "Публикацията чака одобрение от първоначалния автор.",
-  "status.quote_error.rejected": "Публикацията не може да се показва като първоначалния автор не позволява цитирането ѝ.",
-  "status.quote_error.removed": "Публикацията е премахната от автора ѝ.",
-  "status.quote_error.unauthorized": "Публикацията не може да се показва, тъй като не сте упълномощени да я гледате.",
-  "status.quote_post_author": "Публикация от {name}",
-=======
   "status.quote_error.limited_account_hint.title": "Този акаунт е бил скрит от модераторите на {domain}.",
   "status.quote_error.not_available": "Неналична публикация",
   "status.quote_error.pending_approval": "Публикацията чака одобрение",
@@ -934,7 +896,6 @@
   "status.quote_policy_change": "Промяна кой може да цитира",
   "status.quote_post_author": "Цитирах публикация от @{name}",
   "status.quote_private": "Частните публикации не може да се цитират",
->>>>>>> v4.5.0
   "status.read_more": "Още за четене",
   "status.reblog": "Подсилване",
   "status.reblog_or_quote": "Подсилване или цитиране",
@@ -945,10 +906,7 @@
   "status.redraft": "Изтриване и преработване",
   "status.remove_bookmark": "Премахване на отметката",
   "status.remove_favourite": "Премахване от любими",
-<<<<<<< HEAD
-=======
   "status.remove_quote": "Премахване",
->>>>>>> v4.5.0
   "status.replied_in_thread": "Отговорено в нишката",
   "status.replied_to": "В отговор до {name}",
   "status.reply": "Отговор",
@@ -993,10 +951,7 @@
   "upload_button.label": "Добавете файл с образ, видео или звук",
   "upload_error.limit": "Превишено ограничението за качване на файлове.",
   "upload_error.poll": "Качването на файлове не е позволено с анкети.",
-<<<<<<< HEAD
-=======
   "upload_error.quote": "Цитирайки, не може да качвате файл.",
->>>>>>> v4.5.0
   "upload_form.drag_and_drop.instructions": "Натиснете интервал или enter, за да подберете мултимедийно прикачване. Провлачвайки, ползвайте клавишите със стрелки, за да премествате мултимедията във всяка дадена посока. Натиснете пак интервал или enter, за да се стовари мултимедийното прикачване в новото си положение или натиснете Esc за отмяна.",
   "upload_form.drag_and_drop.on_drag_cancel": "Провлачването е отменено. Мултимедийното прикачване {item} е спуснато.",
   "upload_form.drag_and_drop.on_drag_end": "Мултимедийното прикачване {item} е спуснато.",
@@ -1019,9 +974,6 @@
   "video.skip_forward": "Прескок напред",
   "video.unmute": "Без заглушаване",
   "video.volume_down": "Намаляване на звука",
-<<<<<<< HEAD
-  "video.volume_up": "Увеличаване на звука"
-=======
   "video.volume_up": "Увеличаване на звука",
   "visibility_modal.button_title": "Задаване на видимост",
   "visibility_modal.header": "Видимост и взаимодействие",
@@ -1034,5 +986,4 @@
   "visibility_modal.quote_nobody": "Само аз",
   "visibility_modal.quote_public": "Някой",
   "visibility_modal.save": "Запазване"
->>>>>>> v4.5.0
 }

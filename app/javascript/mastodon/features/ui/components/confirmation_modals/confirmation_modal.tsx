@@ -58,11 +58,7 @@ export const ConfirmationModal: React.FC<
 
       <div className='safety-action-modal__bottom'>
         <div className='safety-action-modal__actions'>
-<<<<<<< HEAD
-          <button onClick={handleCancel} className='link-button'>
-=======
           <button onClick={onClose} className='link-button'>
->>>>>>> v4.5.0
             {cancel ?? (
               <FormattedMessage
                 id='confirmation_modal.cancel'

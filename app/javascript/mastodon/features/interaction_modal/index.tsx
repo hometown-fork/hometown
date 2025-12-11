@@ -7,22 +7,10 @@ import classNames from 'classnames';
 import { escapeRegExp } from 'lodash';
 import { useDebouncedCallback } from 'use-debounce';
 
-<<<<<<< HEAD
-import InsertChartIcon from '@/material-icons/400-24px/insert_chart.svg?react';
-import PersonAddIcon from '@/material-icons/400-24px/person_add.svg?react';
-import RepeatIcon from '@/material-icons/400-24px/repeat.svg?react';
-import ReplyIcon from '@/material-icons/400-24px/reply.svg?react';
-import StarIcon from '@/material-icons/400-24px/star.svg?react';
-import { openModal, closeModal } from 'mastodon/actions/modal';
-import { apiRequest } from 'mastodon/api';
-import { Button } from 'mastodon/components/button';
-import { Icon } from 'mastodon/components/icon';
-=======
 import { DisplayName } from '@/mastodon/components/display_name';
 import { openModal, closeModal } from 'mastodon/actions/modal';
 import { apiRequest } from 'mastodon/api';
 import { Button } from 'mastodon/components/button';
->>>>>>> v4.5.0
 import {
   domain as localDomain,
   registrationsOpen,
@@ -415,28 +403,15 @@ const LoginForm: React.FC<{
 const InteractionModal: React.FC<{
   accountId: string;
   url: string;
-<<<<<<< HEAD
-  type: 'reply' | 'reblog' | 'favourite' | 'follow' | 'vote';
-}> = ({ accountId, url, type }) => {
-  const dispatch = useAppDispatch();
-  const displayNameHtml = useAppSelector(
-    (state) => state.accounts.get(accountId)?.display_name_html ?? '',
-  );
-=======
 }> = ({ accountId, url }) => {
   const dispatch = useAppDispatch();
->>>>>>> v4.5.0
   const signupUrl = useAppSelector(
     (state) =>
       (state.server.getIn(['server', 'registrations', 'url'], null) ||
         '/auth/sign_up') as string,
   );
-<<<<<<< HEAD
-  const name = <bdi dangerouslySetInnerHTML={{ __html: displayNameHtml }} />;
-=======
   const account = useAppSelector((state) => state.accounts.get(accountId));
   const name = <DisplayName account={account} variant='simple' />;
->>>>>>> v4.5.0
 
   const handleSignupClick = useCallback(() => {
     dispatch(
@@ -454,96 +429,6 @@ const InteractionModal: React.FC<{
     );
   }, [dispatch]);
 
-<<<<<<< HEAD
-  let title: React.ReactNode,
-    icon: React.ReactNode,
-    actionPrompt: React.ReactNode;
-
-  switch (type) {
-    case 'reply':
-      icon = <Icon id='reply' icon={ReplyIcon} />;
-      title = (
-        <FormattedMessage
-          id='interaction_modal.title.reply'
-          defaultMessage="Reply to {name}'s post"
-          values={{ name }}
-        />
-      );
-      actionPrompt = (
-        <FormattedMessage
-          id='interaction_modal.action.reply'
-          defaultMessage='To continue, you need to reply from your account.'
-        />
-      );
-      break;
-    case 'reblog':
-      icon = <Icon id='retweet' icon={RepeatIcon} />;
-      title = (
-        <FormattedMessage
-          id='interaction_modal.title.reblog'
-          defaultMessage="Boost {name}'s post"
-          values={{ name }}
-        />
-      );
-      actionPrompt = (
-        <FormattedMessage
-          id='interaction_modal.action.reblog'
-          defaultMessage='To continue, you need to reblog from your account.'
-        />
-      );
-      break;
-    case 'favourite':
-      icon = <Icon id='star' icon={StarIcon} />;
-      title = (
-        <FormattedMessage
-          id='interaction_modal.title.favourite'
-          defaultMessage="Favorite {name}'s post"
-          values={{ name }}
-        />
-      );
-      actionPrompt = (
-        <FormattedMessage
-          id='interaction_modal.action.favourite'
-          defaultMessage='To continue, you need to favorite from your account.'
-        />
-      );
-      break;
-    case 'follow':
-      icon = <Icon id='user-plus' icon={PersonAddIcon} />;
-      title = (
-        <FormattedMessage
-          id='interaction_modal.title.follow'
-          defaultMessage='Follow {name}'
-          values={{ name }}
-        />
-      );
-      actionPrompt = (
-        <FormattedMessage
-          id='interaction_modal.action.follow'
-          defaultMessage='To continue, you need to follow from your account.'
-        />
-      );
-      break;
-    case 'vote':
-      icon = <Icon id='tasks' icon={InsertChartIcon} />;
-      title = (
-        <FormattedMessage
-          id='interaction_modal.title.vote'
-          defaultMessage="Vote in {name}'s poll"
-          values={{ name }}
-        />
-      );
-      actionPrompt = (
-        <FormattedMessage
-          id='interaction_modal.action.vote'
-          defaultMessage='To continue, you need to vote from your account.'
-        />
-      );
-      break;
-  }
-
-=======
->>>>>>> v4.5.0
   let signupButton;
 
   if (sso_redirect) {
@@ -579,11 +464,6 @@ const InteractionModal: React.FC<{
     <div className='modal-root__modal interaction-modal'>
       <div className='interaction-modal__lead'>
         <h3>
-<<<<<<< HEAD
-          <span className='interaction-modal__icon'>{icon}</span> {title}
-        </h3>
-        <p>{actionPrompt}</p>
-=======
           <FormattedMessage
             id='interaction_modal.title'
             defaultMessage='Sign in to continue'
@@ -596,7 +476,6 @@ const InteractionModal: React.FC<{
             values={{ name }}
           />
         </p>
->>>>>>> v4.5.0
       </div>
 
       <LoginForm resourceUrl={url} />

@@ -214,11 +214,7 @@ ja:
         memorialize_account: 追悼アカウント化
         promote_user: ユーザーを昇格
         publish_terms_of_service: サービス利用規約を公開
-<<<<<<< HEAD
-        reject_appeal: 抗議を却下
-=======
         reject_appeal: 異議申立を却下
->>>>>>> v4.5.0
         reject_user: ユーザーを拒否
         remove_avatar_user: アイコンを削除
         reopen_report: 未解決に戻す
@@ -284,11 +280,7 @@ ja:
         memorialize_account_html: "%{name}さんが%{target}さんを追悼アカウントページに登録しました"
         promote_user_html: "%{name}さんが%{target}さんを昇格しました"
         publish_terms_of_service_html: "%{name} がサービス利用規約の更新を公開しました"
-<<<<<<< HEAD
-        reject_appeal_html: "%{name}さんが%{target}からの抗議を却下しました"
-=======
         reject_appeal_html: "%{name}さんが%{target}からの異議申立を却下しました"
->>>>>>> v4.5.0
         reject_user_html: "%{name}さんが%{target}さんからの登録を拒否しました"
         remove_avatar_user_html: "%{name}さんが%{target}さんのアイコンを削除しました"
         reopen_report_html: "%{name}さんが通報 %{target}を未解決に戻しました"
@@ -826,10 +818,6 @@ ja:
         title: デフォルトで検索エンジンによるインデックスを拒否する
       discovery:
         follow_recommendations: おすすめフォロー
-<<<<<<< HEAD
-        preamble: Mastodon を知らないユーザーを取り込むには、興味深いコンテンツを浮上させることが重要です。サーバー上で様々なディスカバリー機能がどのように機能するかを制御します。
-=======
->>>>>>> v4.5.0
         privacy: プライバシー
         profile_directory: ディレクトリ
         public_timelines: 公開タイムライン
@@ -904,10 +892,7 @@ ja:
       title: 投稿一覧 - @%{name}
       trending: トレンド
       view_publicly: 元の投稿を開く
-<<<<<<< HEAD
-=======
       view_quoted_post: 引用されている投稿を見る
->>>>>>> v4.5.0
       visibility: 公開範囲
       with_media: メディアあり
     strikes:
@@ -1875,15 +1860,9 @@ ja:
       ownership: 他人の投稿を固定することはできません
       reblog: ブーストを固定することはできません
     quote_policies:
-<<<<<<< HEAD
-      followers: フォロワーとメンションされたユーザー
-      nobody: メンションされたユーザーのみ
-      public: 全員
-=======
       followers: フォロワーのみ
       nobody: 自分のみ
       public: 誰でも
->>>>>>> v4.5.0
     title: '%{name}: "%{quote}"'
     visibilities:
       direct: 非公開の返信

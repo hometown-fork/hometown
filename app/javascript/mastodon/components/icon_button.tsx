@@ -14,10 +14,6 @@ interface Props {
   onClick?: React.MouseEventHandler<HTMLButtonElement>;
   onMouseDown?: React.MouseEventHandler<HTMLButtonElement>;
   onKeyDown?: React.KeyboardEventHandler<HTMLButtonElement>;
-<<<<<<< HEAD
-  onKeyPress?: React.KeyboardEventHandler<HTMLButtonElement>;
-=======
->>>>>>> v4.5.0
   active?: boolean;
   expanded?: boolean;
   style?: React.CSSProperties;
@@ -48,10 +44,6 @@ export const IconButton = forwardRef<HTMLButtonElement, Props>(
       activeStyle,
       onClick,
       onKeyDown,
-<<<<<<< HEAD
-      onKeyPress,
-=======
->>>>>>> v4.5.0
       onMouseDown,
       active = false,
       disabled = false,
@@ -91,19 +83,6 @@ export const IconButton = forwardRef<HTMLButtonElement, Props>(
       [disabled, onClick],
     );
 
-<<<<<<< HEAD
-    const handleKeyPress: React.KeyboardEventHandler<HTMLButtonElement> =
-      useCallback(
-        (e) => {
-          if (!disabled) {
-            onKeyPress?.(e);
-          }
-        },
-        [disabled, onKeyPress],
-      );
-
-=======
->>>>>>> v4.5.0
     const handleMouseDown: React.MouseEventHandler<HTMLButtonElement> =
       useCallback(
         (e) => {
@@ -170,10 +149,6 @@ export const IconButton = forwardRef<HTMLButtonElement, Props>(
         onClick={handleClick}
         onMouseDown={handleMouseDown}
         onKeyDown={handleKeyDown}
-<<<<<<< HEAD
-        onKeyPress={handleKeyPress} // eslint-disable-line @typescript-eslint/no-deprecated
-=======
->>>>>>> v4.5.0
         style={buttonStyle}
         tabIndex={tabIndex}
         disabled={disabled}

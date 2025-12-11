@@ -356,11 +356,7 @@ a.table-action-link {
 
   // Reset the status card to not have borders, background or padding when
   // inline in the table of statuses
-<<<<<<< HEAD
-  .status__card {
-=======
   .batch-table__row__content > .status__card {
->>>>>>> v4.5.0
     border: none;
     background: none;
     padding: 0;

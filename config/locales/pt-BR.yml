@@ -585,14 +585,11 @@ pt-BR:
         limited: Limitados
         title: Moderação
       moderation_notes:
-<<<<<<< HEAD
-=======
         create: Adicionar Nota de Moderação
         created_msg: Nota de moderação da instância criada com sucesso!
         description_html: Visualize e deixe anotações para outros moderadores e seu próprio futuro
         destroyed_msg: Nota de moderação da instância excluída com sucesso!
         placeholder: Informações sobre esta instância, ações tomadas, ou qualquer outra coisa que ajudará você a moderar esta instância no futuro.
->>>>>>> v4.5.0
         title: Notas de Moderação
       private_comment: Comentário privado
       public_comment: Comentário público
@@ -842,11 +839,7 @@ pt-BR:
         title: Optar por excluir usuários da indexação de mecanismos de pesquisa por padrão
       discovery:
         follow_recommendations: Seguir recomendações
-<<<<<<< HEAD
-        preamble: Navegar por um conteúdo interessante é fundamental para integrar novos usuários que podem não conhecer ninguém no Mastodon. Controle como várias características de descoberta funcionam no seu servidor.
-=======
         preamble: A exibição de conteúdo interessante é fundamental para a integração de novos usuários que podem não conhecer ninguém no Mastodon. Controle o funcionamento de vários recursos de descoberta no seu servidor.
->>>>>>> v4.5.0
         privacy: Privacidade
         profile_directory: Diretório de perfis
         public_timelines: Timelines públicas
@@ -928,10 +921,7 @@ pt-BR:
       title: Publicações da conta - @%{name}
       trending: Em alta
       view_publicly: Ver publicamente
-<<<<<<< HEAD
-=======
       view_quoted_post: Visualizar citação publicada
->>>>>>> v4.5.0
       visibility: Visibilidade
       with_media: Com mídia
     strikes:
@@ -1945,12 +1935,6 @@ pt-BR:
       limit: Você alcançou o número limite de publicações fixadas
       ownership: As publicações dos outros não podem ser fixadas
       reblog: Um impulso não pode ser fixado
-<<<<<<< HEAD
-    quote_policies:
-      followers: Seguidores e usuários mencionados
-      nobody: Apenas usuários mencionados
-      public: Todos
-=======
     quote_error:
       not_available: Publicação indisponível
       pending_approval: Publicação pendente
@@ -1960,7 +1944,6 @@ pt-BR:
       nobody: Apenas eu
       public: Qualquer um
     quote_post_author: Publicação citada por %{acct}
->>>>>>> v4.5.0
     title: '%{name}: "%{quote}"'
     visibilities:
       direct: Citação privada

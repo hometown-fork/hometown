@@ -461,61 +461,8 @@ class Status extends ImmutablePureComponent {
 
   handleHotkeyTranslate = () => {
     this.handleTranslate(this.props.status);
-<<<<<<< HEAD
   };
 
-  handleMoveUp = id => {
-    const { status, ancestorsIds, descendantsIds } = this.props;
-
-    if (id === status.get('id')) {
-      this._selectChild(ancestorsIds.length - 1, true);
-    } else {
-      let index = ancestorsIds.indexOf(id);
-
-      if (index === -1) {
-        index = descendantsIds.indexOf(id);
-        this._selectChild(ancestorsIds.length + index, true);
-      } else {
-        this._selectChild(index - 1, true);
-      }
-    }
-  };
-
-  handleMoveDown = id => {
-    const { status, ancestorsIds, descendantsIds } = this.props;
-
-    if (id === status.get('id')) {
-      this._selectChild(ancestorsIds.length + 1, false);
-    } else {
-      let index = ancestorsIds.indexOf(id);
-
-      if (index === -1) {
-        index = descendantsIds.indexOf(id);
-        this._selectChild(ancestorsIds.length + index + 2, false);
-      } else {
-        this._selectChild(index + 1, false);
-      }
-    }
-  };
-
-  _selectChild (index, align_top) {
-    const container = this.node;
-    const element = container.querySelectorAll('.focusable')[index];
-
-    if (element) {
-      if (align_top && container.scrollTop > element.offsetTop) {
-        element.scrollIntoView(true);
-      } else if (!align_top && container.scrollTop + container.clientHeight < element.offsetTop + element.offsetHeight) {
-        element.scrollIntoView(false);
-      }
-      element.focus();
-    }
-  }
-
-=======
-  };
-
->>>>>>> v4.5.0
   renderChildren (list, ancestors) {
     const { params: { statusId } } = this.props;
 
@@ -563,13 +510,9 @@ class Status extends ImmutablePureComponent {
   componentDidUpdate (prevProps) {
     const { status, ancestorsIds, descendantsIds } = this.props;
 
-<<<<<<< HEAD
-    if (status && (ancestorsIds.length > prevProps.ancestorsIds.length || prevProps.status?.get('id') !== status.get('id'))) {
-=======
     const isSameStatus = status && (prevProps.status?.get('id') === status.get('id'));
 
     if (status && (ancestorsIds.length > prevProps.ancestorsIds.length || !isSameStatus)) {
->>>>>>> v4.5.0
       this._scrollStatusIntoView();
     }
 

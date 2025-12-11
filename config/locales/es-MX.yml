@@ -839,11 +839,7 @@ es-MX:
         title: Optar por los usuarios fuera de la indexación en los motores de búsqueda por defecto
       discovery:
         follow_recommendations: Recomendaciones de cuentas
-<<<<<<< HEAD
-        preamble: Exponer contenido interesante a la superficie es fundamental para incorporar nuevos usuarios que pueden no conocer a nadie Mastodon. Controla cómo funcionan varias opciones de descubrimiento en tu servidor.
-=======
         preamble: Exponer contenido interesante es fundamental para incorporar nuevos usuarios que pueden no conocer a nadie en Mastodon. Controla cómo funcionan en tu servidor las diferentes opciones de descubrimiento.
->>>>>>> v4.5.0
         privacy: Privacidad
         profile_directory: Directorio de perfiles
         public_timelines: Lineas de tiempo públicas
@@ -925,10 +921,7 @@ es-MX:
       title: Publicaciones de la cuenta - @%{name}
       trending: En tendencia
       view_publicly: Ver públicamente
-<<<<<<< HEAD
-=======
       view_quoted_post: Ver publicación citada
->>>>>>> v4.5.0
       visibility: Visibilidad
       with_media: Con multimedia
     strikes:
@@ -1203,12 +1196,7 @@ es-MX:
     hint_html: Si deseas migrar de otra cuenta a esta, aquí puedes crear un alias, que es necesario para poder mover seguidores de la cuenta anterior a esta. Esta acción por sí misma es <strong>inofensiva y reversible</strong>. <strong>La migración de la cuenta se inicia desde la cuenta anterior</strong>.
     remove: Desvincular alias
   appearance:
-<<<<<<< HEAD
-    advanced_web_interface: Interfaz web avanzada
-    advanced_web_interface_hint: 'Si deseas aprovechar todo el ancho de tu pantalla, la interfaz web avanzada te permite configurar muchas columnas diferentes para ver toda la información que quieras al mismo tiempo: inicio, notificaciones, cronología federada, cualquier número de listas y etiquetas.'
-=======
     advanced_settings: Ajustes avanzados
->>>>>>> v4.5.0
     animations_and_accessibility: Animaciones y accesibilidad
     boosting_preferences: Preferencias de impulso
     boosting_preferences_info_html: "<strong>Consejo:</strong> Sin importar los ajustes, pulsar <kbd>Mayus</kbd> al hacer <kbd>clic</kbd> en el icono de %{icon} Impulsar, dará impulso inmediatamente."
@@ -1940,23 +1928,14 @@ es-MX:
     edited_at_html: Editado %{date}
     errors:
       in_reply_not_found: La publicación a la que estás intentando responder no existe.
-<<<<<<< HEAD
-=======
       quoted_status_not_found: La publicación que intentas citar no parece existir.
       quoted_user_not_mentioned: No se puede citar a un usuario no mencionado en una Mención Privada.
->>>>>>> v4.5.0
     over_character_limit: Límite de caracteres de %{max} superado
     pin_errors:
       direct: Las publicaciones que son visibles solo para los usuarios mencionados no pueden fijarse
       limit: Ya has fijado el número máximo de publicaciones
       ownership: La publicación de alguien más no puede fijarse
       reblog: No se puede fijar una publicación impulsada
-<<<<<<< HEAD
-    quote_policies:
-      followers: Seguidores y usuarios mencionados
-      nobody: Solo usuarios mencionados
-      public: Cualquiera
-=======
     quote_error:
       not_available: Publicación no disponible
       pending_approval: Publicación pendiente
@@ -1966,7 +1945,6 @@ es-MX:
       nobody: Solo yo
       public: Cualquiera
     quote_post_author: Citando una publicación de %{acct}
->>>>>>> v4.5.0
     title: "%{name}: «%{quote}»"
     visibilities:
       direct: Mención privada

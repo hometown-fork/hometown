@@ -76,10 +76,6 @@
   "account.posts_with_replies": "Reacties",
   "account.remove_from_followers": "{name} als volger verwijderen",
   "account.report": "@{name} rapporteren",
-<<<<<<< HEAD
-  "account.requested": "Wachten op goedkeuring. Klik om het volgverzoek te annuleren",
-=======
->>>>>>> v4.5.0
   "account.requested_follow": "{name} wil jou graag volgen",
   "account.requests_to_follow_you": "Wil jou graag volgen",
   "account.share": "Account van @{name} delen",
@@ -266,14 +262,11 @@
   "confirmations.remove_from_followers.confirm": "Volger verwijderen",
   "confirmations.remove_from_followers.message": "{name} zal je niet meer volgen. Weet je zeker dat je wilt doorgaan?",
   "confirmations.remove_from_followers.title": "Volger verwijderen?",
-<<<<<<< HEAD
-=======
   "confirmations.revoke_quote.confirm": "Bericht verwijderen",
   "confirmations.revoke_quote.message": "Deze actie kan niet ongedaan worden gemaakt.",
   "confirmations.revoke_quote.title": "Bericht verwijderen?",
   "confirmations.unblock.confirm": "Deblokkeren",
   "confirmations.unblock.title": "{name} deblokkeren?",
->>>>>>> v4.5.0
   "confirmations.unfollow.confirm": "Ontvolgen",
   "confirmations.unfollow.title": "{name} ontvolgen?",
   "confirmations.withdraw_request.confirm": "Verzoek intrekken",
@@ -373,19 +366,16 @@
   "explore.trending_links": "Nieuws",
   "explore.trending_statuses": "Berichten",
   "explore.trending_tags": "Hashtags",
-<<<<<<< HEAD
-  "federation.change": "Adjust status federation",
-  "federation.federated.long": "Allow toot to reach other instances",
-  "federation.federated.short": "Federated",
-  "federation.local_only.long": "Restrict this toot only to my instance",
-  "federation.local_only.short": "Local-only",
-=======
->>>>>>> v4.5.0
   "featured_carousel.header": "{count, plural, one {Vastgezet bericht} other {Vastgezette berichten}}",
   "featured_carousel.next": "Volgende",
   "featured_carousel.post": "Bericht",
   "featured_carousel.previous": "Vorige",
   "featured_carousel.slide": "{index} van {total}",
+  "federation.change": "Adjust status federation",
+  "federation.federated.long": "Allow toot to reach other instances",
+  "federation.federated.short": "Federated",
+  "federation.local_only.long": "Restrict this toot only to my instance",
+  "federation.local_only.short": "Local-only",
   "filter_modal.added.context_mismatch_explanation": "Deze filtercategorie is niet van toepassing op de context waarin je dit bericht hebt benaderd. Als je wilt dat het bericht ook in deze context wordt gefilterd, moet je het filter bewerken.",
   "filter_modal.added.context_mismatch_title": "Context komt niet overeen!",
   "filter_modal.added.expired_explanation": "Deze filtercategorie is verlopen. Je moet de vervaldatum wijzigen om de categorie toe te kunnen passen.",
@@ -464,11 +454,6 @@
   "hints.profiles.see_more_followers": "Bekijk meer volgers op {domain}",
   "hints.profiles.see_more_follows": "Bekijk meer gevolgde accounts op {domain}",
   "hints.profiles.see_more_posts": "Bekijk meer berichten op {domain}",
-<<<<<<< HEAD
-  "hints.threads.replies_may_be_missing": "Antwoorden van andere servers kunnen ontbreken.",
-  "hints.threads.see_more": "Bekijk meer reacties op {domain}",
-=======
->>>>>>> v4.5.0
   "home.column_settings.show_quotes": "Citaten tonen",
   "home.column_settings.show_reblogs": "Boosts tonen",
   "home.column_settings.show_replies": "Reacties tonen",
@@ -490,28 +475,12 @@
   "ignore_notifications_modal.private_mentions_title": "Meldingen negeren van ongevraagde privéberichten?",
   "info_button.label": "Help",
   "info_button.what_is_alt_text": "<h1>Wat is alt-tekst?</h1> <p>Alt-tekst biedt beschrijvingen van afbeeldingen voor mensen met een visuele beperking, voor verbindingen met lage internetsnelheid of mensen die op zoek zijn naar extra context.</p> <p>Je kunt de toegankelijkheid en de begrijpelijkheid voor iedereen verbeteren door heldere, beknopte en objectieve alt-teksten te schrijven.</p> <ul> <li>Leg belangrijke elementen vast</li> <li>Tekst in afbeeldingen samenvatten</li> <li>Een eenvoudige zinsbouw gebruiken</li> <li>Overbodige informatie vermijden</li> <li>Voor complexe diagrammen of kaarten alleen op trends en belangrijke bevindingen focussen</li> </ul>",
-<<<<<<< HEAD
-  "interaction_modal.action.favourite": "Om verder te gaan, moet je vanaf je eigen account als favoriet markeren.",
-  "interaction_modal.action.follow": "Om verder te gaan, moet je vanaf je eigen account volgen.",
-  "interaction_modal.action.reblog": "Om verder te gaan, moet je vanaf je eigen account boosten.",
-  "interaction_modal.action.reply": "Om verder te gaan, moet je vanaf je eigen account reageren.",
-  "interaction_modal.action.vote": "Om verder te gaan, moet je vanaf je eigen account stemmen.",
-=======
   "interaction_modal.action": "Wanneer je met het bericht van {name} interactie wil hebben, moet je met jouw account op jouw eigen Mastodon-server inloggen.",
->>>>>>> v4.5.0
   "interaction_modal.go": "Ga",
   "interaction_modal.no_account_yet": "Heb je nog geen account?",
   "interaction_modal.on_another_server": "Op een andere server",
   "interaction_modal.on_this_server": "Op deze server",
-<<<<<<< HEAD
-  "interaction_modal.title.favourite": "Bericht van {name} als favoriet markeren",
-  "interaction_modal.title.follow": "{name} volgen",
-  "interaction_modal.title.reblog": "Bericht van {name} boosten",
-  "interaction_modal.title.reply": "Op het bericht van {name} reageren",
-  "interaction_modal.title.vote": "Stemmen in {name}'s peiling",
-=======
   "interaction_modal.title": "Inloggen om door te gaan",
->>>>>>> v4.5.0
   "interaction_modal.username_prompt": "Bijv. {example}",
   "intervals.full.days": "{number, plural, one {# dag} other {# dagen}}",
   "intervals.full.hours": "{number, plural, one {# uur} other {# uur}}",
@@ -918,8 +887,6 @@
   "status.cancel_reblog_private": "Niet langer boosten",
   "status.cannot_quote": "Je bent niet gemachtigd om dit bericht te citeren",
   "status.cannot_reblog": "Dit bericht kan niet geboost worden",
-<<<<<<< HEAD
-=======
   "status.contains_quote": "Bevat citaat",
   "status.context.loading": "Meer reacties laden",
   "status.context.loading_error": "Kon geen nieuwe reacties laden",
@@ -927,7 +894,6 @@
   "status.context.more_replies_found": "Meer reacties gevonden",
   "status.context.retry": "Opnieuw proberen",
   "status.context.show": "Tonen",
->>>>>>> v4.5.0
   "status.continued_thread": "Vervolg van gesprek",
   "status.copy": "Link naar bericht kopiëren",
   "status.delete": "Verwijderen",
@@ -955,15 +921,6 @@
   "status.mute_conversation": "Gesprek negeren",
   "status.open": "Volledig bericht tonen",
   "status.pin": "Aan profielpagina vastmaken",
-<<<<<<< HEAD
-  "status.quote_error.filtered": "Verborgen door een van je filters",
-  "status.quote_error.not_found": "Dit bericht kan niet worden weergegeven.",
-  "status.quote_error.pending_approval": "Dit bericht is in afwachting van goedkeuring door de oorspronkelijke auteur.",
-  "status.quote_error.rejected": "Dit bericht kan niet worden weergegeven omdat de oorspronkelijke auteur niet toestaat dat het wordt geciteerd.",
-  "status.quote_error.removed": "Dit bericht is verwijderd door de auteur.",
-  "status.quote_error.unauthorized": "Dit bericht kan niet worden weergegeven omdat je niet bevoegd bent om het te bekijken.",
-  "status.quote_post_author": "Bericht van {name}",
-=======
   "status.quote": "Citeren",
   "status.quote.cancel": "Citeren annuleren",
   "status.quote_error.blocked_account_hint.title": "Dit bericht is verborgen, omdat jij @{name} hebt geblokkeerd.",
@@ -986,7 +943,6 @@
   "status.quotes.empty": "Niemand heeft dit bericht nog geciteerd. Wanneer iemand dat doet, wordt dat hier getoond.",
   "status.quotes.local_other_disclaimer": "Citaten afgewezen door de auteur worden niet getoond.",
   "status.quotes.remote_other_disclaimer": "Alleen citaten van {domain} worden hier gegarandeerd weergegeven. Citaten afgewezen door de auteur worden niet getoond.",
->>>>>>> v4.5.0
   "status.read_more": "Meer lezen",
   "status.reblog": "Boosten",
   "status.reblog_or_quote": "Boosten of citeren",
@@ -997,10 +953,7 @@
   "status.redraft": "Verwijderen en herschrijven",
   "status.remove_bookmark": "Bladwijzer verwijderen",
   "status.remove_favourite": "Verwijderen uit favorieten",
-<<<<<<< HEAD
-=======
   "status.remove_quote": "Verwijderen",
->>>>>>> v4.5.0
   "status.replied_in_thread": "Reageerde in gesprek",
   "status.replied_to": "Reageerde op {name}",
   "status.reply": "Reageren",
@@ -1045,10 +998,7 @@
   "upload_button.label": "Afbeeldingen, een video- of een geluidsbestand toevoegen",
   "upload_error.limit": "Uploadlimiet van bestand overschreden.",
   "upload_error.poll": "Het uploaden van bestanden is bij peilingen niet toegestaan.",
-<<<<<<< HEAD
-=======
   "upload_error.quote": "Je kunt geen bestand aan een bericht met een citaat toevoegen.",
->>>>>>> v4.5.0
   "upload_form.drag_and_drop.instructions": "Druk op spatie of enter om een mediabijlage op te pakken. Gebruik de pijltjestoetsen om de bijlage in een bepaalde richting te verplaatsen. Druk opnieuw op de spatiebalk of enter om de mediabijlage op de nieuwe positie te plaatsen, of druk op escape om te annuleren.",
   "upload_form.drag_and_drop.on_drag_cancel": "Slepen is geannuleerd. Mediabijlage {item} is niet verplaatst.",
   "upload_form.drag_and_drop.on_drag_end": "Mediabijlage {item} is niet verplaatst.",
@@ -1071,9 +1021,6 @@
   "video.skip_forward": "Vooruitspoelen",
   "video.unmute": "Dempen opheffen",
   "video.volume_down": "Volume omlaag",
-<<<<<<< HEAD
-  "video.volume_up": "Volume omhoog"
-=======
   "video.volume_up": "Volume omhoog",
   "visibility_modal.button_title": "Privacy instellen",
   "visibility_modal.direct_quote_warning.text": "Wanneer je de huidige instellingen opslaat wordt het citaat in een link veranderd.",
@@ -1091,5 +1038,4 @@
   "visibility_modal.quote_nobody": "Alleen ik",
   "visibility_modal.quote_public": "Iedereen",
   "visibility_modal.save": "Opslaan"
->>>>>>> v4.5.0
 }

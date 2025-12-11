@@ -327,11 +327,7 @@ ia:
       preview:
         disclaimer: Proque le usatores non pote optar pro non reciper los, le notificationes per e-mail debe limitar se a annuncios importante tal como le notificationes de violation de datos personal o de clausura de servitores.
         explanation_html: 'Le e-mail essera inviate a <strong>%{display_count} usatores</strong>. Le sequente texto essera includite in le e-mail:'
-<<<<<<< HEAD
-        title: Previder le notification de annuncio
-=======
         title: Previsualisar le notification de annuncio
->>>>>>> v4.5.0
       publish: Publicar
       published_msg: Annuncio publicate con successo!
       scheduled_for: Programmate pro %{time}
@@ -919,20 +915,13 @@ ia:
       original_status: Message original
       quotes: Citationes
       reblogs: Republicationes
-<<<<<<< HEAD
-      replied_to_html: Respondite a %{acct_link}
-=======
       replied_to_html: Responsa a %{acct_link}
->>>>>>> v4.5.0
       status_changed: Message cambiate
       status_title: Message de @%{name}
       title: Messages del conto – @%{name}
       trending: Tendentias
       view_publicly: Vider publicamente
-<<<<<<< HEAD
-=======
       view_quoted_post: Vider message citate
->>>>>>> v4.5.0
       visibility: Visibilitate
       with_media: Con multimedia
     strikes:
@@ -951,11 +940,7 @@ ia:
       database_schema_check:
         message_html: Il ha migrationes de base de datos pendente. Per favor exeque los pro assecurar que le application se comporta como expectate
       elasticsearch_analysis_index_mismatch:
-<<<<<<< HEAD
-        message_html: Le parametros del analisator del indice de Elasticsearch es obsolete. Executa <code>tootctl search deploy --only-mapping --only=%{value}</code>
-=======
         message_html: Le parametros del analysator del indice de Elasticsearch es obsolete. Executa <code>tootctl search deploy --only-mapping --only=%{value}</code>
->>>>>>> v4.5.0
       elasticsearch_health_red:
         message_html: Le aggregation Elasticsearch es malsan (stato rubie), le functiones de recerca es indisponibile
       elasticsearch_health_yellow:
@@ -1020,11 +1005,7 @@ ia:
       changelog: Lo que ha cambiate
       create: Usar tu proprie
       current: Actual
-<<<<<<< HEAD
-      draft: Provisori
-=======
       draft: Esbosso
->>>>>>> v4.5.0
       generate: Usar modello
       generates:
         action: Generar
@@ -1047,11 +1028,7 @@ ia:
         title: Previsualisar le notification sur le conditiones de servicio
       publish: Publicar
       published_on_html: Publicate le %{date}
-<<<<<<< HEAD
-      save_draft: Salvar version provisori
-=======
       save_draft: Salvar esbosso
->>>>>>> v4.5.0
       title: Conditiones de servicio
     title: Administration
     trends:
@@ -1958,12 +1935,6 @@ ia:
       limit: Tu ha jam appunctate le maxime numero de messages
       ownership: Le message de alcuno altere non pote esser appunctate
       reblog: Un impulso non pote esser affixate
-<<<<<<< HEAD
-    quote_policies:
-      followers: Sequitores e usatores mentionate
-      nobody: Solmente usatores mentionate
-      public: Omnes
-=======
     quote_error:
       not_available: Message indisponibile
       pending_approval: Message pendente
@@ -1973,7 +1944,6 @@ ia:
       nobody: Solo io
       public: Omnes
     quote_post_author: Ha citate un message de %{acct}
->>>>>>> v4.5.0
     title: "%{name}: “%{quote}”"
     visibilities:
       direct: Mention private
@@ -2027,11 +1997,7 @@ ia:
   terms_of_service:
     title: Conditiones de servicio
   terms_of_service_interstitial:
-<<<<<<< HEAD
-    future_preamble_html: Nos face alcun cambios a nostre conditiones de servicio, que entrara in vigor in <strong>%{date}</strong>. Nos te invita a revider le conditiones actualisate.
-=======
     future_preamble_html: Nos apporta alcun modificationes a nostre conditiones de servicio, le quales entrara in vigor le <strong>%{date}</strong>. Nos te invita a revider le conditiones actualisate.
->>>>>>> v4.5.0
     past_preamble_html: Nos ha cambiate nostre conditiones de servicio desde tu ultime visita. Nos te invita a revider le conditiones actualisate.
     review_link: Revider le conditiones de servicio
     title: Le conditiones de servicio de %{domain} cambia
@@ -2103,11 +2069,7 @@ ia:
       agreement: Si tu continua a usar %{domain}, tu accepta iste conditiones. Si tu non es de accordo con le conditiones actualisate, tu pote sempre eliminar tu conto pro terminar tu accordo con %{domain}.
       changelog: 'In summario, ecce lo que iste actualisation significa pro te:'
       description: 'Tu recipe iste e-mail proque nos face alcun cambios al nostre conditiones de servicio a %{domain}. Iste actualisationes entrara in vigor in %{date}. Nos te invita a revider integralmente le conditiones actualisate hic:'
-<<<<<<< HEAD
-      description_html: Tu recipe iste e-mail proque nos face alcun cambios al nostre conditiones de servicio a %{domain}. Iste actualisationes entrara in vigor in <strong>%{date}</strong>. Nos te invita a revider <a href="%{path}" target="_blank">integralmente le conditiones actualisate hic</a>.
-=======
       description_html: Tu recipe iste message perque nos apporta alcun modificationes a nostre conditiones de servicio sur %{domain}. Iste actualisationes entrara in vigor le <strong>%{date}</strong>. Nos te invita a <a href="%{path}" target="_blank">leger integralmente le conditiones actualisate</a>.
->>>>>>> v4.5.0
       sign_off: Le equipa de %{domain}
       subject: Actualisationes de nostre conditiones de servicio
       subtitle: Le conditiones de servicio de %{domain} ha cambiate

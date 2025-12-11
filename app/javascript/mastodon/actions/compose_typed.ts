@@ -1,11 +1,3 @@
-<<<<<<< HEAD
-import type { List as ImmutableList, Map as ImmutableMap } from 'immutable';
-
-import { apiUpdateMedia } from 'mastodon/api/compose';
-import type { ApiMediaAttachmentJSON } from 'mastodon/api_types/media_attachments';
-import type { MediaAttachment } from 'mastodon/models/media_attachment';
-import { createDataLoadingThunk } from 'mastodon/store/typed_functions';
-=======
 import { defineMessages } from 'react-intl';
 
 import { createAction } from '@reduxjs/toolkit';
@@ -55,7 +47,6 @@ const messages = defineMessages({
     defaultMessage: 'Quoting is not allowed with direct mentions.',
   },
 });
->>>>>>> v4.5.0
 
 type SimulatedMediaAttachmentJSON = ApiMediaAttachmentJSON & {
   unattached?: boolean;
@@ -81,8 +72,6 @@ const simulateModifiedApiResponse = (
   return data;
 };
 
-<<<<<<< HEAD
-=======
 export const changeComposeVisibility = createAppThunk(
   'compose/visibility_change',
   (visibility: StatusVisibility, { dispatch, getState }) => {
@@ -116,7 +105,6 @@ export const changeComposeVisibility = createAppThunk(
   },
 );
 
->>>>>>> v4.5.0
 export const changeUploadCompose = createDataLoadingThunk(
   'compose/changeUpload',
   async (
@@ -156,8 +144,6 @@ export const changeUploadCompose = createDataLoadingThunk(
     useLoadingBar: false,
   },
 );
-<<<<<<< HEAD
-=======
 
 export const quoteCompose = createAppThunk(
   'compose/quoteComposeStatus',
@@ -287,4 +273,3 @@ export const quoteComposeCancel = createAction('compose/quoteComposeCancel');
 export const setComposeQuotePolicy = createAction<ApiQuotePolicy>(
   'compose/setQuotePolicy',
 );
->>>>>>> v4.5.0

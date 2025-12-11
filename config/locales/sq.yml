@@ -511,10 +511,7 @@ sq:
         select_capabilities: Përzgjidhni Aftësi
         sign_in: Hyni
         status: Gjendje
-<<<<<<< HEAD
-=======
         title: Shërbyes Shërbimesh Ndihmëse Fediversi
->>>>>>> v4.5.0
       title: FASP
     follow_recommendations:
       description_html: "<strong>Rekomandimet për ndjekje ndihmojnë përdoruesit e rinj të gjejnë shpejt lëndë me interes</strong>. Kur një përdorues nuk ka ndërvepruar mjaftueshëm me të tjerët, që të formohen rekomandime të personalizuara ndjekjeje, rekomandohen këto llogari. Ato përzgjidhen çdo ditë, prej një përzierje llogarish me shkallën më të lartë të angazhimit dhe numrin më të lartë të ndjekësve vendorë për një gjuhë të dhënë."
@@ -834,11 +831,7 @@ sq:
         title: Lëri, si parazgjedhje, përdoruesit jashtë indeksimi nga motorë kërkimesh
       discovery:
         follow_recommendations: Rekomandime ndjekjeje
-<<<<<<< HEAD
-        preamble: Shpërfaqja e lëndës interesante është me rëndësi kyçe për mirëseardhjen e përdoruesve të rinj që mund të mos njohin njeri në Mastodon. Kontrolloni se si funksionojnë në shërbyesin tuaj veçori të ndryshme zbulimi.
-=======
         preamble: Shpërfaqja e lëndës interesante është me rëndësi për mirëseardhjen e përdoruesve të rinj, të cilët mund të mos njohin njeri në Mastodon. Kontrolloni se funksionojnë në shërbyesin tuaj veçori të ndryshme zbulimi lënde.
->>>>>>> v4.5.0
         privacy: Privatësi
         profile_directory: Drejtori profilesh
         public_timelines: Rrjedha kohore publike
@@ -920,10 +913,7 @@ sq:
       title: Postime llogarie - @%{name}
       trending: Në modë
       view_publicly: Shiheni publikisht
-<<<<<<< HEAD
-=======
       view_quoted_post: Shihni postimin e cituar
->>>>>>> v4.5.0
       visibility: Dukshmëri
       with_media: Me media
     strikes:
@@ -1931,12 +1921,6 @@ sq:
       limit: Keni fiksuar tashmë numrin maksimum të mesazheve
       ownership: S’mund të fiksohen mesazhet e të tjerëve
       reblog: S’mund të fiksohet një përforcim
-<<<<<<< HEAD
-    quote_policies:
-      followers: Ndjekës dhe përdorues të përmendur
-      nobody: Vetëm përdorues të përmendur
-      public: Këdo
-=======
     quote_error:
       not_available: Postim që s’mund të kihet
       pending_approval: Postim pezull
@@ -1946,7 +1930,6 @@ sq:
       nobody: Thjesht unë
       public: Cilido
     quote_post_author: U citua një postim nga %{acct}
->>>>>>> v4.5.0
     title: '%{name}: "%{quote}"'
     visibilities:
       direct: Përmendje private

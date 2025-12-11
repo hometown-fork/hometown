@@ -117,16 +117,6 @@ br:
       web: Web
     action_logs:
       action_types:
-<<<<<<< HEAD
-        approve_user: Aprouiñ an implijer
-        change_role_user: Kemmañ perzh an implijer
-        confirm_user: Aprouiñ an implijer
-        create_ip_block: Krouiñ ur reolenn IP
-        create_user_role: Krouiñ ur perzh
-        destroy_ip_block: Dilemel ar reolenn IP
-        destroy_status: Dilemel ar c'hannad
-        reset_password_user: Adderaouekaat ar ger-tremen
-=======
         approve_user: Aprouiñ an implijer·ez
         change_email_user: Cheñch postel an implijer·ez
         change_role_user: Kemmañ perzh an implijer·ez
@@ -146,7 +136,6 @@ br:
         unblock_email_account: Distankañ ar chomlec'h postel
         unsuspend_account: Diastaliñ ar gont
         update_custom_emoji: Hizivaat ar fromlun personelaet
->>>>>>> v4.5.0
         update_status: Hizivaat ar c'hannad
       actions:
         change_email_user_html: Cheñchet eo bet chomlec'h postel an implijer·ez %{target} gant %{name}
@@ -215,10 +204,7 @@ br:
     domain_blocks:
       confirm_suspension:
         cancel: Nullañ
-<<<<<<< HEAD
-=======
         confirm: Astaliñ
->>>>>>> v4.5.0
       domain: Domani
       export: Ezporzhiañ
       import: Enporzhiañ
@@ -227,10 +213,7 @@ br:
         severity:
           noop: Hini ebet
           suspend: Astalañ
-<<<<<<< HEAD
-=======
       private_comment: Evezhiadenn brevez
->>>>>>> v4.5.0
       public_comment: Evezhiadenn foran
     email_domain_blocks:
       add_new: Ouzhpennañ unan nevez
@@ -244,11 +227,8 @@ br:
       title: Domanioù postel stanket
     export_domain_allows:
       no_file: Restr ebet diuzet
-<<<<<<< HEAD
-=======
     export_domain_blocks:
       no_file: Restr ebet diuzet
->>>>>>> v4.5.0
     fasp:
       debug:
         callbacks:
@@ -257,17 +237,11 @@ br:
       providers:
         active: Oberiant
         delete: Dilemel
-<<<<<<< HEAD
-        name: Anv
-        registrations:
-          confirm: Kadarnaat
-=======
         edit: Kemmañ ar pourvezer
         name: Anv
         registrations:
           confirm: Kadarnaat
         save: Enrollañ
->>>>>>> v4.5.0
         status: Statud
     follow_recommendations:
       language: Evit ar yezh
@@ -391,10 +365,7 @@ br:
       edit: Kemmañ ar reolenn
       move_down: D'an traoñ
       move_up: D'ar c'hrec'h
-<<<<<<< HEAD
-=======
       title: Reolennoù ar servijer
->>>>>>> v4.5.0
       translation: Troidigezh
       translations: Troidigezhioù
     settings:
@@ -408,11 +379,8 @@ br:
         danger_zone: Takad dañjer
       discovery:
         privacy: Buhez prevez
-<<<<<<< HEAD
-=======
         profile_directory: Kavlec'h ar profiloù
         publish_statistics: Embann ar stadegoù
->>>>>>> v4.5.0
         title: Dizoloadur
         trends: Luskadoù
       domain_blocks:
@@ -444,10 +412,7 @@ br:
       reblogs: Skignadennoù
       status_changed: Toud kemmet
       status_title: Embannadenn gant @%{name}
-<<<<<<< HEAD
-=======
       trending: Diouzh ar c'hiz
->>>>>>> v4.5.0
       visibility: Gwelusted
       with_media: Gant mediaoù
     strikes:
@@ -846,17 +811,12 @@ br:
       quoted_status_not_found: War a seblant, n'eus ket eus an embannadenn emaoc'h o klask menegiñ.
     pin_errors:
       ownership: N'hallit ket spilhennañ embannadurioù ar re all
-<<<<<<< HEAD
-    quote_policies:
-      public: Pep den
-=======
       reblog: N'haller ket spilhennañ ur skignadenn
     quote_policies:
       followers: Heulierien·ezed hepken
       nobody: Me hepken
       public: Pep hini
     title: '%{name}: "%{quote}"'
->>>>>>> v4.5.0
     visibilities:
       direct: Meneg prevez
       public: Publik
@@ -931,8 +891,6 @@ br:
       edit_profile_title: Personelaat ho profil
       feature_action: Gouzout hiroc'h
       follow_action: Heuliañ
-<<<<<<< HEAD
-=======
       follow_title: Personelait ho red degemer
       follows_subtitle: Heuilhit kontoù brudet-mat
       follows_title: Piv heuliañ
@@ -940,7 +898,6 @@ br:
       hashtags_view_more: Gwelet muioc'h a c'herioù-klik diouzh ar c'hiz
       post_title: Grit hoc'h embannadur kentañ
       share_title: Rannit ho kont Mastodon
->>>>>>> v4.5.0
       sign_in_action: Kevreañ
       subject: Donemat e Mastodon
       title: Degemer mat e bourzh, %{name}!

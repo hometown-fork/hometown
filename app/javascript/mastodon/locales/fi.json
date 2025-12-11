@@ -263,14 +263,11 @@
   "confirmations.remove_from_followers.confirm": "Poista seuraaja",
   "confirmations.remove_from_followers.message": "{name} lakkaa seuraamasta sinua. Haluatko varmasti jatkaa?",
   "confirmations.remove_from_followers.title": "Poistetaanko seuraaja?",
-<<<<<<< HEAD
-=======
   "confirmations.revoke_quote.confirm": "Poista julkaisu",
   "confirmations.revoke_quote.message": "Tätä toimea ei voi peruuttaa.",
   "confirmations.revoke_quote.title": "Poistetaanko julkaisu?",
   "confirmations.unblock.confirm": "Kumoa esto",
   "confirmations.unblock.title": "Kumotaanko käyttäjän {name} esto?",
->>>>>>> v4.5.0
   "confirmations.unfollow.confirm": "Lopeta seuraaminen",
   "confirmations.unfollow.title": "Lopetetaanko käyttäjän {name} seuraaminen?",
   "confirmations.withdraw_request.confirm": "Peruuta pyyntö",
@@ -370,19 +367,16 @@
   "explore.trending_links": "Uutiset",
   "explore.trending_statuses": "Julkaisut",
   "explore.trending_tags": "Aihetunnisteet",
-<<<<<<< HEAD
-  "federation.change": "Adjust status federation",
-  "federation.federated.long": "Allow toot to reach other instances",
-  "federation.federated.short": "Federated",
-  "federation.local_only.long": "Restrict this toot only to my instance",
-  "federation.local_only.short": "Local-only",
-=======
->>>>>>> v4.5.0
   "featured_carousel.header": "{count, plural, one {Kiinnitetty julkaisu} other {Kiinnitetyt julkaisut}}",
   "featured_carousel.next": "Seuraava",
   "featured_carousel.post": "Julkaisu",
   "featured_carousel.previous": "Edellinen",
   "featured_carousel.slide": "{index} / {total}",
+  "federation.change": "Adjust status federation",
+  "federation.federated.long": "Allow toot to reach other instances",
+  "federation.federated.short": "Federated",
+  "federation.local_only.long": "Restrict this toot only to my instance",
+  "federation.local_only.short": "Local-only",
   "filter_modal.added.context_mismatch_explanation": "Tämä suodatinluokka ei koske asiayhteyttä, jossa olet tarkastellut tätä julkaisua. Jos haluat julkaisun suodatettavan myös tässä asiayhteydessä, muokkaa suodatinta.",
   "filter_modal.added.context_mismatch_title": "Asiayhteys ei täsmää!",
   "filter_modal.added.expired_explanation": "Tämä suodatinluokka on vanhentunut, joten sinun on muutettava viimeistä voimassaolopäivää, jotta suodatusta käytettäisiin.",
@@ -461,11 +455,6 @@
   "hints.profiles.see_more_followers": "Näytä lisää seuraajia palvelimella {domain}",
   "hints.profiles.see_more_follows": "Näytä lisää seurattavia palvelimella {domain}",
   "hints.profiles.see_more_posts": "Näytä lisää julkaisuja palvelimella {domain}",
-<<<<<<< HEAD
-  "hints.threads.replies_may_be_missing": "Muiden palvelinten vastauksia saattaa puuttua.",
-  "hints.threads.see_more": "Näytä lisää vastauksia palvelimella {domain}",
-=======
->>>>>>> v4.5.0
   "home.column_settings.show_quotes": "Näytä lainaukset",
   "home.column_settings.show_reblogs": "Näytä tehostukset",
   "home.column_settings.show_replies": "Näytä vastaukset",
@@ -487,28 +476,12 @@
   "ignore_notifications_modal.private_mentions_title": "Sivuutetaanko ilmoitukset pyytämättömistä yksityismaininnoista?",
   "info_button.label": "Ohje",
   "info_button.what_is_alt_text": "<h1>Mikä vaihtoehtoinen teksti on?</h1> <p>Vaihtoehtoinen teksti tarjoaa kuvauksen kuvista ihmisille, joilla on näkövamma tai matalan kaistanleveyden yhteys tai jotka kaipaavat lisäkontekstia.</p> <p>Voit parantaa saavutettavuutta ja ymmärrettävyyttä kaikkien näkökulmasta kirjoittamalla selkeän, tiiviin ja objektiivisen vaihtoehtoisen tekstin.</p> <ul> <li>Ota mukaan tärkeät elementit</li> <li>Tiivistä kuvissa oleva teksti</li> <li>Käytä tavallisia lauserakenteita</li> <li>Vältä turhaa tietoa</li> <li>Keskity trendeihin ja keskeisiin tuloksiin monimutkaisissa visuaalisissa esityksissä (kuten kaavioissa tai kartoissa)</li> </ul>",
-<<<<<<< HEAD
-  "interaction_modal.action.favourite": "Jotta voit jatkaa, sinun tulee lisätä julkaisu suosikiksesi omalta tililtäsi.",
-  "interaction_modal.action.follow": "Jotta voit jatkaa, sinun tulee seurata käyttäjää omalta tililtäsi.",
-  "interaction_modal.action.reblog": "Jotta voit jatkaa, sinun tulee uudelleenjulkaista omalta tililtäsi.",
-  "interaction_modal.action.reply": "Jotta voit jatkaa, sinun tulee vastata omalta tililtäsi.",
-  "interaction_modal.action.vote": "Jotta voit jatkaa, sinun tulee äänestää omalta tililtäsi.",
-=======
   "interaction_modal.action": "Jotta voit olla vuorovaikutuksessa käyttäjän {name} julkaisun kanssa, sinun on kirjauduttava sisään tilillesi käyttämälläsi Mastodon-palvelimella.",
->>>>>>> v4.5.0
   "interaction_modal.go": "Siirry",
   "interaction_modal.no_account_yet": "Eikö sinulla ole vielä tiliä?",
   "interaction_modal.on_another_server": "Toisella palvelimella",
   "interaction_modal.on_this_server": "Tällä palvelimella",
-<<<<<<< HEAD
-  "interaction_modal.title.favourite": "Lisää käyttäjän {name} julkaisu suosikkeihin",
-  "interaction_modal.title.follow": "Seuraa käyttäjää {name}",
-  "interaction_modal.title.reblog": "Tehosta käyttäjän {name} julkaisua",
-  "interaction_modal.title.reply": "Vastaa käyttäjän {name} julkaisuun",
-  "interaction_modal.title.vote": "Osallistu käyttäjän {name} äänestykseen",
-=======
   "interaction_modal.title": "Jatka kirjautumalla sisään",
->>>>>>> v4.5.0
   "interaction_modal.username_prompt": "Esim. {example}",
   "intervals.full.days": "{number, plural, one {# päivä} other {# päivää}}",
   "intervals.full.hours": "{number, plural, one {# tunti} other {# tuntia}}",
@@ -557,11 +530,7 @@
   "lightbox.previous": "Edellinen",
   "lightbox.zoom_in": "Näytä todellisen kokoisena",
   "lightbox.zoom_out": "Näytä sovitettuna",
-<<<<<<< HEAD
-  "limited_account_hint.action": "Näytä profiili joka tapauksessa",
-=======
   "limited_account_hint.action": "Näytä profiili kuitenkin",
->>>>>>> v4.5.0
   "limited_account_hint.title": "Palvelimen {domain} moderaattorit ovat piilottaneet tämän profiilin.",
   "link_preview.author": "Tehnyt {name}",
   "link_preview.more_from_author": "Lisää tekijältä {name}",
@@ -954,15 +923,6 @@
   "status.mute_conversation": "Mykistä keskustelu",
   "status.open": "Laajenna julkaisu",
   "status.pin": "Kiinnitä profiiliin",
-<<<<<<< HEAD
-  "status.quote_error.filtered": "Piilotettu jonkin asettamasi suodattimen takia",
-  "status.quote_error.not_found": "Tätä julkaisua ei voi näyttää.",
-  "status.quote_error.pending_approval": "Tämä julkaisu odottaa alkuperäisen tekijänsä hyväksyntää.",
-  "status.quote_error.rejected": "Tätä julkaisua ei voi näyttää, sillä sen alkuperäinen tekijä ei salli lainattavan julkaisua.",
-  "status.quote_error.removed": "Tekijä on poistanut julkaisun.",
-  "status.quote_error.unauthorized": "Tätä julkaisua ei voi näyttää, koska sinulla ei ole oikeutta tarkastella sitä.",
-  "status.quote_post_author": "Julkaisu käyttäjältä {name}",
-=======
   "status.quote": "Lainaa",
   "status.quote.cancel": "Peruuta lainaus",
   "status.quote_error.blocked_account_hint.title": "Tämä julkaisu on piilotettu, koska olet estänyt käyttäjän @{name}.",
@@ -985,7 +945,6 @@
   "status.quotes.empty": "Kukaan ei ole vielä lainannut tätä julkaisua. Kun joku tekee niin, se tulee tähän näkyviin.",
   "status.quotes.local_other_disclaimer": "Tekijän hylkäämiä lainauksia ei näytetä.",
   "status.quotes.remote_other_disclaimer": "Vain palvelimen {domain} lainaukset näkyvät taatusti tässä. Tekijän hylkäämiä lainauksia ei näytetä.",
->>>>>>> v4.5.0
   "status.read_more": "Näytä enemmän",
   "status.reblog": "Tehosta",
   "status.reblog_or_quote": "Tehosta tai lainaa",
@@ -996,10 +955,7 @@
   "status.redraft": "Poista ja palauta muokattavaksi",
   "status.remove_bookmark": "Poista kirjanmerkki",
   "status.remove_favourite": "Poista suosikeista",
-<<<<<<< HEAD
-=======
   "status.remove_quote": "Poista",
->>>>>>> v4.5.0
   "status.replied_in_thread": "Vastasi ketjuun",
   "status.replied_to": "Vastaus käyttäjälle {name}",
   "status.reply": "Vastaa",
@@ -1044,10 +1000,7 @@
   "upload_button.label": "Lisää kuvia, video tai äänitiedosto",
   "upload_error.limit": "Tiedostolähetysten rajoitus ylitetty.",
   "upload_error.poll": "Tiedostojen lisääminen äänestysten oheen ei ole sallittua.",
-<<<<<<< HEAD
-=======
   "upload_error.quote": "Tiedostojen lähettäminen ei ole sallittua lainauksissa.",
->>>>>>> v4.5.0
   "upload_form.drag_and_drop.instructions": "Valitse medialiite painamalla välilyöntiä tai enteriä. Vetäessäsi käytä nuolinäppäimiä siirtääksesi medialiitettä vastaavaan suuntaan. Paina välilyöntiä tai enteriä uudelleen pudottaaksesi medialiitteen uuteen kohtaansa, tai peru siirto painamalla escape-näppäintä.",
   "upload_form.drag_and_drop.on_drag_cancel": "Veto peruttiin. Medialiitettä {item} ei siirretty.",
   "upload_form.drag_and_drop.on_drag_end": "Medialiite {item} pudotettiin.",
@@ -1070,9 +1023,6 @@
   "video.skip_forward": "Siirry eteenpäin",
   "video.unmute": "Poista mykistys",
   "video.volume_down": "Vähennä äänenvoimakkuutta",
-<<<<<<< HEAD
-  "video.volume_up": "Lisää äänenvoimakkuutta"
-=======
   "video.volume_up": "Lisää äänenvoimakkuutta",
   "visibility_modal.button_title": "Aseta näkyvyys",
   "visibility_modal.direct_quote_warning.text": "Jos tallennat nykyiset asetukset, upotettu lainaus muunnetaan linkiksi.",
@@ -1090,5 +1040,4 @@
   "visibility_modal.quote_nobody": "Vain minä",
   "visibility_modal.quote_public": "Kuka tahansa",
   "visibility_modal.save": "Tallenna"
->>>>>>> v4.5.0
 }

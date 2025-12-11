@@ -21,11 +21,7 @@ import { PERMISSION_MANAGE_USERS, PERMISSION_MANAGE_FEDERATION } from 'mastodon/
 import { WithRouterPropTypes } from 'mastodon/utils/react_router';
 
 import { Dropdown } from 'mastodon/components/dropdown_menu';
-<<<<<<< HEAD:app/javascript/mastodon/components/status_action_bar.jsx
-import { me } from '../initial_state';
-=======
 import { me, quickBoosting } from '../../initial_state';
->>>>>>> v4.5.0:app/javascript/mastodon/components/status_action_bar/index.jsx
 
 import { IconButton } from '../icon_button';
 import { BoostButton } from '../status/boost_button';
@@ -44,14 +40,7 @@ const messages = defineMessages({
   share: { id: 'status.share', defaultMessage: 'Share' },
   more: { id: 'status.more', defaultMessage: 'More' },
   replyAll: { id: 'status.replyAll', defaultMessage: 'Reply to thread' },
-<<<<<<< HEAD:app/javascript/mastodon/components/status_action_bar.jsx
-  reblog: { id: 'status.reblog', defaultMessage: 'Boost' },
-  reblog_private: { id: 'status.reblog_private', defaultMessage: 'Boost with original visibility' },
-  cancel_reblog_private: { id: 'status.cancel_reblog_private', defaultMessage: 'Unboost' },
-  cannot_reblog: { id: 'status.cannot_reblog', defaultMessage: 'This post cannot be boosted' },
   local_only: { id: 'status.local_only', defaultMessage: 'This post is only visible by other users of your instance' },
-=======
->>>>>>> v4.5.0:app/javascript/mastodon/components/status_action_bar/index.jsx
   favourite: { id: 'status.favourite', defaultMessage: 'Favorite' },
   removeFavourite: { id: 'status.remove_favourite', defaultMessage: 'Remove from favorites' },
   bookmark: { id: 'status.bookmark', defaultMessage: 'Bookmark' },
@@ -393,28 +382,6 @@ class StatusActionBar extends ImmutablePureComponent {
       replyTitle = intl.formatMessage(messages.replyAll);
     }
 
-<<<<<<< HEAD:app/javascript/mastodon/components/status_action_bar.jsx
-    const reblogPrivate = status.getIn(['account', 'id']) === me && status.get('visibility') === 'private';
-
-    let reblogTitle, reblogIconComponent;
-
-    if (status.get('reblogged')) {
-      reblogTitle = intl.formatMessage(messages.cancel_reblog_private);
-      reblogIconComponent = publicStatus ? RepeatActiveIcon : RepeatPrivateActiveIcon;
-    } else if (publicStatus) {
-      reblogTitle = intl.formatMessage(messages.reblog);
-      reblogIconComponent = RepeatIcon;
-    } else if (reblogPrivate) {
-      reblogTitle = intl.formatMessage(messages.reblog_private);
-      reblogIconComponent = RepeatPrivateIcon;
-    } else {
-      reblogTitle = intl.formatMessage(messages.cannot_reblog);
-      reblogIconComponent = RepeatDisabledIcon;
-    }
-
-
-=======
->>>>>>> v4.5.0:app/javascript/mastodon/components/status_action_bar/index.jsx
     const bookmarkTitle = intl.formatMessage(status.get('bookmarked') ? messages.removeBookmark : messages.bookmark);
     const favouriteTitle = intl.formatMessage(status.get('favourited') ? messages.removeFavourite : messages.favourite);
     const isReply = status.get('in_reply_to_account_id') === status.getIn(['account', 'id']);
@@ -434,23 +401,9 @@ class StatusActionBar extends ImmutablePureComponent {
         </div>
         <div className='status__action-bar__button-wrapper'>
           <IconButton className='status__action-bar__button bookmark-icon' disabled={!signedIn} active={status.get('bookmarked')} title={bookmarkTitle} icon='bookmark' iconComponent={status.get('bookmarked') ? BookmarkIcon : BookmarkBorderIcon} onClick={this.handleBookmarkClick} />
-<<<<<<< HEAD:app/javascript/mastodon/components/status_action_bar.jsx
         </div>
         <div className='status__action-bar__button-wrapper'>
           { !federated && <IconButton className='status__action-bar-button' disabled title={intl.formatMessage(messages.local_only)} icon='linkoff' iconComponent={LinkOff} />}
-        </div>
-        <div className='status__action-bar__button-wrapper'>
-          <Dropdown
-            scrollKey={scrollKey}
-            status={status}
-            items={menu}
-            icon='ellipsis-h'
-            iconComponent={MoreHorizIcon}
-            direction='right'
-            title={intl.formatMessage(messages.more)}
-          />
-=======
->>>>>>> v4.5.0:app/javascript/mastodon/components/status_action_bar/index.jsx
         </div>
         <RemoveQuoteHint className='status__action-bar__button-wrapper' canShowHint={shouldShowQuoteRemovalHint}>
           {(dismissQuoteHint) => (

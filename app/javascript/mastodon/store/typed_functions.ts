@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-import type { GetThunkAPI } from '@reduxjs/toolkit';
-import { createAsyncThunk, createSelector } from '@reduxjs/toolkit';
-=======
 import type {
   ActionCreatorWithPreparedPayload,
   GetThunkAPI,
@@ -11,7 +7,6 @@ import {
   createSelector,
   createAction,
 } from '@reduxjs/toolkit';
->>>>>>> v4.5.0
 // eslint-disable-next-line @typescript-eslint/no-restricted-imports
 import { useDispatch, useSelector } from 'react-redux';
 

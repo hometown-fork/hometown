@@ -54,27 +54,18 @@ ia:
         password: Usa al minus 8 characteres
         phrase: Se applicara independentemente de majusculas/minusculas in le texto o del aviso de contento de un message
         scopes: Le APIs al quales le application habera accesso. Si tu selige un ambito de nivello superior, non es necessari seliger ambitos individual.
-<<<<<<< HEAD
-        setting_aggregate_reblogs: Non monstrar nove impulsos pro messages que ha essite recentemente impulsate (affecta solmente le impulsos novemente recipite)
-        setting_always_send_emails: Normalmente, le notificationes de e-mail non es inviate quando tu activemente usa Mastodon
-        setting_default_quote_policy: Le usatores mentionate sempre ha permission pro citar. Iste parametro solo habera effecto pro messages create con le proxime version de Mastodon, ma tu pote seliger tu preferentia anticipatemente
-=======
         setting_advanced_layout: Presenta Mastodon in un disposition multicolumnar con le chronologia, le notificationes e un tertie columna de tu preferentia. Non recommendate pro schermos minor.
         setting_aggregate_reblogs: Non monstrar nove impulsos pro messages que ha essite recentemente impulsate (affecta solmente le impulsos novemente recipite)
         setting_always_send_emails: Normalmente, le notificationes de e-mail non es inviate quando tu activemente usa Mastodon
         setting_boost_modal: Si isto es activate, impulsar un message aperira primo un dialogo de confirmation in le qual tu pote cambiar le visibilitate de tu impulso.
         setting_default_quote_policy_private: Le messages limitate al sequitores scribite sur Mastodon non pote esser citate per alteres.
         setting_default_quote_policy_unlisted: Quando le gente te cita, lor message equalmente non apparera in le chronologias de tendentias.
->>>>>>> v4.5.0
         setting_default_sensitive: Le medios sensibile es celate de ordinario e pote esser revelate con un clic
         setting_display_media_default: Celar le medios marcate como sensibile
         setting_display_media_hide_all: Sempre celar contento multimedial
         setting_display_media_show_all: Sempre monstrar contento multimedial
-<<<<<<< HEAD
-=======
         setting_emoji_style: Como monstrar emojis. “Automatic” tentara usar emojis native, ma recurre al Twemojis pro navigatores ancian.
         setting_quick_boosting_html: Si isto es activate, un clic sur le icone %{boost_icon} Impulsar impulsara immediatemente le message in loco de aperir le menu disrolante de impulsar/citar. Isto tamben colloca le action de citar in le menu %{options_icon} (Optiones).
->>>>>>> v4.5.0
         setting_system_scrollbars_ui: Se applica solmente al navigatores de scriptorio basate sur Safari e Chrome
         setting_use_blurhash: Le imagines degradate se basa sur le colores del visuales celate, ma illos offusca tote le detalios
         setting_use_pending_items: Requirer un clic pro monstrar nove messages in vice de rolar automaticamente le fluxo
@@ -118,10 +109,6 @@ ia:
         status_page_url: URL de un pagina ubi le personas pote vider le stato de iste servitor durante un interruption
         theme: Thema que le visitatores disconnexe e le nove usatores vide.
         thumbnail: Un imagine de circa 2:1 monstrate al latere del informationes de tu servitor.
-<<<<<<< HEAD
-        timeline_preview: Le visitatores foras de session potera percurrer le messages public le plus recente disponibile sur le servitor.
-=======
->>>>>>> v4.5.0
         trendable_by_default: Saltar le revision manual del contento de tendentia. Elementos singule pote ancora esser removite de tendentias post le facto.
         trends: Tendentias monstra que messages, hashtags e novas gania traction sur tu servitor.
       form_challenge:
@@ -152,13 +139,6 @@ ia:
         name: Tu pote solmente cambiar le litteras inter majusculas e minusculas, per exemplo, pro render lo plus legibile
       terms_of_service:
         changelog: Pote esser structurate con le syntaxe Markdown.
-<<<<<<< HEAD
-        text: Pote esser structurate con le syntaxe Markdown.
-      terms_of_service_generator:
-        admin_email: Le avisos juridic include le contra-avisos, ordinantias judiciari, demandas de retiro e demandas de application del lege.
-        choice_of_law: Citate, region, territorio o stato cuje leges substantive interne governa omne disputa juridic.
-        dmca_address: Pro operatores in le SUA, usa le adresse registrate in le Directorio de Agentes Designate pro le DMCA (DMCA Designated Agent Directory). Un adresse de cassa postal es disponibile per requesta directe; usa le Requesta de Exemption de Cassa Postal pro Agentes Designate del DMCA (DMCA Designated Agent Post Office Box Waiver Request) pro inviar un message electronic al Officio del Derecto de Autor (Copyright Office) e describer que tu es un moderator de contento que travalia de casa e qui time vengiantias o represalias pro tu actiones, necessitante le uso un cassa postal pro remover tu adresse personal del vista public.
-=======
         effective_date: Un periodo rationabile pote variar inter 10 e 30 dies post le data al qual tu notifica tu usatores.
         text: Pote esser structurate con le syntaxe Markdown.
       terms_of_service_generator:
@@ -168,20 +148,14 @@ ia:
         choice_of_law: Citate, region, territorio o stato cuje leges substantive interne governa omne disputa juridic.
         dmca_address: Pro operatores in le SUA, usa le adresse registrate in le Directorio de Agentes Designate pro le DMCA (DMCA Designated Agent Directory). Un adresse de cassa postal es disponibile per requesta directe; usa le Requesta de Exemption de Cassa Postal pro Agentes Designate del DMCA (DMCA Designated Agent Post Office Box Waiver Request) pro inviar un message electronic al Officio del Derecto de Autor (Copyright Office) e describer que tu es un moderator de contento que travalia de casa e qui time vengiantias o represalias pro tu actiones, necessitante le uso un cassa postal pro remover tu adresse personal del vista public.
         dmca_email: Pote esser le mesme adresse de e-mail usate pro “Adresse de e-mail pro avisos juridic” supra.
->>>>>>> v4.5.0
         domain: Identification unic del servicio in linea que tu forni.
         jurisdiction: Indica le pais ubi vive le persona qui paga le facturas. Si se tracta de un interprisa o altere organisation, indica le pais ubi illo es incorporate, e le citate, region, territorio o stato del maniera appropriate pro le pais.
         min_age: Non deberea esser infra le etate minime requirite per le leges de tu jurisdiction.
       user:
         chosen_languages: Si marcate, solmente le messages in le linguas seligite apparera in chronologias public
         date_of_birth:
-<<<<<<< HEAD
-          one: Nos debe assecurar que tu ha al minus %{count} anno pro usar Mastodon. Nos non va immagazinar isto.
-          other: Nos debe assecurar que tu ha al minus %{count} annos pro usar Mastodon. Nos non va immagazinar isto.
-=======
           one: Nos debe assecurar que tu ha al minus %{count} anno pro usar %{domain}. Nos non va immagazinar isto.
           other: Nos debe assecurar que tu ha al minus %{count} annos pro usar %{domain}. Nos non va immagazinar isto.
->>>>>>> v4.5.0
         role: Le rolo controla qual permissos le usator ha.
       user_role:
         color: Color a esser usate pro le rolo in omne parte del UI, como RGB in formato hexadecimal
@@ -265,17 +239,10 @@ ia:
         setting_auto_play_gif: Auto-reproduce GIFs animate
         setting_boost_modal: Controlar le visibilitate de impulsos
         setting_default_language: Lingua de publication
-<<<<<<< HEAD
-        setting_default_privacy: Confidentialitate del messages
-        setting_default_quote_policy: Qui pote citar
-        setting_default_sensitive: Sempre marcar le medios cmo sensbile
-        setting_delete_modal: Monstrar le dialogo de confirmation ante deler un message
-=======
         setting_default_privacy: Visibilitate de publication
         setting_default_quote_policy: Qui pote citar
         setting_default_sensitive: Sempre marcar le medios cmo sensbile
         setting_delete_modal: Advertir me ante de deler un message
->>>>>>> v4.5.0
         setting_disable_hover_cards: Disactivar le previsualisation de profilos al passar del mus
         setting_disable_swiping: Disactivar le movimentos per glissamento
         setting_display_media: Visualisation de medios
@@ -285,12 +252,8 @@ ia:
         setting_emoji_style: Stilo de emojis
         setting_expand_spoilers: Sempre expander messages marcate con avisos de contento
         setting_hide_network: Cela tu rete social
-<<<<<<< HEAD
-        setting_missing_alt_text_modal: Monstrar un dialogo de confirmation ante de publicar multimedia sin texto alternative
-=======
         setting_missing_alt_text_modal: Advertir me ante de publicar multimedia sin texto alternative
         setting_quick_boosting: Activar impulso rapide
->>>>>>> v4.5.0
         setting_reduce_motion: Reducer movimento in animationes
         setting_system_font_ui: Usar typo de litteras predefinite del systema
         setting_system_scrollbars_ui: Usar le barra de rolamento predefinite del systema

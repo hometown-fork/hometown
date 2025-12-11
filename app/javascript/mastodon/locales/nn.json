@@ -262,14 +262,11 @@
   "confirmations.remove_from_followers.confirm": "Fjern fylgjar",
   "confirmations.remove_from_followers.message": "{name} vil ikkje fylgja deg meir. Vil du halda fram?",
   "confirmations.remove_from_followers.title": "Fjern fylgjar?",
-<<<<<<< HEAD
-=======
   "confirmations.revoke_quote.confirm": "Fjern innlegget",
   "confirmations.revoke_quote.message": "Du kan ikkje angra denne handlinga.",
   "confirmations.revoke_quote.title": "Fjern innlegget?",
   "confirmations.unblock.confirm": "Opphev blokkeringa",
   "confirmations.unblock.title": "Opphev blokkeringa av {name}?",
->>>>>>> v4.5.0
   "confirmations.unfollow.confirm": "Slutt å fylgja",
   "confirmations.unfollow.title": "Slutt å fylgja {name}?",
   "confirmations.withdraw_request.confirm": "Trekk attende førespurnad",
@@ -452,11 +449,6 @@
   "hints.profiles.see_more_followers": "Sjå fleire fylgjarar på {domain}",
   "hints.profiles.see_more_follows": "Sjå fleire fylgje på {domain}",
   "hints.profiles.see_more_posts": "Sjå fleire innlegg på {domain}",
-<<<<<<< HEAD
-  "hints.threads.replies_may_be_missing": "Svar frå andre tenarar manglar kanskje.",
-  "hints.threads.see_more": "Sjå fleire svar på {domain}",
-=======
->>>>>>> v4.5.0
   "home.column_settings.show_quotes": "Vis sitat",
   "home.column_settings.show_reblogs": "Vis framhevingar",
   "home.column_settings.show_replies": "Vis svar",
@@ -478,28 +470,12 @@
   "ignore_notifications_modal.private_mentions_title": "Oversjå varsel frå masseutsende private omtaler?",
   "info_button.label": "Hjelp",
   "info_button.what_is_alt_text": "<h1>Kva er alternativ tekst?</h1> <p>Alternativ eller skildrande tekst gjev ei skildring av biletet for menneske som har synsvanskar, sein nettilkopling eller dei som ser etter ekstra innhald.</p> <p>Du gjer innhaldet ditt meir tilgjengeleg og forståeleg for alle ved å skriva klåre, presise og nøytrale alt-tekstar.</p> <ul> <li>Skriv om viktige element</li> <li>Oppsummer tekst i bilete</li> <li>Skriv vanlege setningar</li> <li>Unngå unyttige opplysingar</li> <li>Legg vekt på hovudpunkta i innhaldsrike visuelle element, som grafar eller kart</li> </ul>",
-<<<<<<< HEAD
-  "interaction_modal.action.favourite": "Du må favorittmerka frå kontoen din for å halda fram.",
-  "interaction_modal.action.follow": "Du må fylgja frå kontoen din for å halda fram.",
-  "interaction_modal.action.reblog": "Du må framheva frå kontoen din for å halda fram.",
-  "interaction_modal.action.reply": "Du må svara frå kontoen din for å halda fram.",
-  "interaction_modal.action.vote": "Du må røysta frå kontoen din for å halda fram.",
-=======
   "interaction_modal.action": "For å handla med innlegget til {name}, må du logga inn på den Mastodon-tenaren du bruker.",
->>>>>>> v4.5.0
   "interaction_modal.go": "Gå",
   "interaction_modal.no_account_yet": "Har du ikkje ein konto enno?",
   "interaction_modal.on_another_server": "På ein annan tenar",
   "interaction_modal.on_this_server": "På denne tenaren",
-<<<<<<< HEAD
-  "interaction_modal.title.favourite": "Marker innlegget til {name} som favoritt",
-  "interaction_modal.title.follow": "Fylg {name}",
-  "interaction_modal.title.reblog": "Framhev {name} sitt innlegg",
-  "interaction_modal.title.reply": "Svar på innlegge til {name}",
-  "interaction_modal.title.vote": "Røyst i {name} si avrøysting",
-=======
   "interaction_modal.title": "Logg inn for å halda fram",
->>>>>>> v4.5.0
   "interaction_modal.username_prompt": "T.d. {example}",
   "intervals.full.days": "{number, plural, one {# dag} other {# dagar}}",
   "intervals.full.hours": "{number, plural, one {# time} other {# timar}}",
@@ -634,13 +610,8 @@
   "notification.annual_report.view": "Sjå #Året ditt",
   "notification.favourite": "{name} markerte innlegget ditt som favoritt",
   "notification.favourite.name_and_others_with_link": "{name} og <a>{count, plural, one {# annan} other {# andre}}</a> favorittmerka innlegget ditt",
-<<<<<<< HEAD
-  "notification.favourite_pm": "{name} favorittmerka den private nemninga di",
-  "notification.favourite_pm.name_and_others_with_link": "{name} og <a>{count, plural, one {# annan} other {# andre}}</a> favorittmerka den private nemninga di",
-=======
   "notification.favourite_pm": "{name} favorittmerka den private omtalen din",
   "notification.favourite_pm.name_and_others_with_link": "{name} og <a>{count, plural, one {# annan} other {# andre}}</a> favorittmerka den private omtalen din",
->>>>>>> v4.5.0
   "notification.follow": "{name} fylgde deg",
   "notification.follow.name_and_others": "{name} og <a>{count, plural, one {# annan} other {# andre}}</a> fylgde deg",
   "notification.follow_request": "{name} har bedt om å fylgja deg",
@@ -704,11 +675,7 @@
   "notifications.column_settings.follow": "Nye fylgjarar:",
   "notifications.column_settings.follow_request": "Ny fylgjarførespurnader:",
   "notifications.column_settings.group": "Gruppe",
-<<<<<<< HEAD
-  "notifications.column_settings.mention": "Omtaler:",
-=======
   "notifications.column_settings.mention": "Omtalar:",
->>>>>>> v4.5.0
   "notifications.column_settings.poll": "Røysteresultat:",
   "notifications.column_settings.push": "Pushvarsel",
   "notifications.column_settings.quote": "Sitat:",
@@ -949,15 +916,6 @@
   "status.mute_conversation": "Demp samtale",
   "status.open": "Utvid denne statusen",
   "status.pin": "Fest på profil",
-<<<<<<< HEAD
-  "status.quote_error.filtered": "Gøymt på grunn av eitt av filtra dine",
-  "status.quote_error.not_found": "Du kan ikkje visa dette innlegget.",
-  "status.quote_error.pending_approval": "Dette innlegget ventar på at skribenten skal godkjenna det.",
-  "status.quote_error.rejected": "Du kan ikkje visa dette innlegget fordi skribenten ikkje vil at det skal siterast.",
-  "status.quote_error.removed": "Skribenten sletta dette innlegget.",
-  "status.quote_error.unauthorized": "Du kan ikkje visa dette innlegget fordi du ikkje har løyve til det.",
-  "status.quote_post_author": "Innlegg av {name}",
-=======
   "status.quote": "Siter",
   "status.quote.cancel": "Avbryt siteringa",
   "status.quote_error.blocked_account_hint.title": "Dette innlegget er gøymt fordi du har blokkert @{name}.",
@@ -980,7 +938,6 @@
   "status.quotes.empty": "Ingen har sitert dette innlegget enno. Når nokon gje det, vil det dukka opp her.",
   "status.quotes.local_other_disclaimer": "Sitat som skribenten avviser, vil ikkje syna.",
   "status.quotes.remote_other_disclaimer": "Berre sitat frå {domain} er garanterte å syna her. Sitat som skribenten har avvist, vil ikkje syna.",
->>>>>>> v4.5.0
   "status.read_more": "Les meir",
   "status.reblog": "Framhev",
   "status.reblog_or_quote": "Framhev eller siter",
@@ -991,10 +948,7 @@
   "status.redraft": "Slett & skriv på nytt",
   "status.remove_bookmark": "Fjern bokmerke",
   "status.remove_favourite": "Fjern frå favorittar",
-<<<<<<< HEAD
-=======
   "status.remove_quote": "Fjern",
->>>>>>> v4.5.0
   "status.replied_in_thread": "Svara i tråden",
   "status.replied_to": "Svarte {name}",
   "status.reply": "Svar",
@@ -1039,10 +993,7 @@
   "upload_button.label": "Legg til medium",
   "upload_error.limit": "Du har gått over opplastingsgrensa.",
   "upload_error.poll": "Filopplasting er ikkje lov for rundspørjingar.",
-<<<<<<< HEAD
-=======
   "upload_error.quote": "Filopplasting er ikkje lov med sitat.",
->>>>>>> v4.5.0
   "upload_form.drag_and_drop.instructions": "For å plukka opp eit medievedlegg, trykkjer du på mellomrom eller enter. Når du dreg, brukar du piltastane for å flytta vedlegget i den retninga du vil. Deretter trykkjer du mellomrom eller enter att for å sleppa vedlegget på den nye plassen, eller trykk escape for å avbryta.",
   "upload_form.drag_and_drop.on_drag_cancel": "Du avbraut draginga. Medievedlegget {item} vart sleppt.",
   "upload_form.drag_and_drop.on_drag_end": "Medeivedlegget {item} vart sleppt.",
@@ -1065,9 +1016,6 @@
   "video.skip_forward": "Hopp framover",
   "video.unmute": "Opphev demping",
   "video.volume_down": "Volum ned",
-<<<<<<< HEAD
-  "video.volume_up": "Volum opp"
-=======
   "video.volume_up": "Volum opp",
   "visibility_modal.button_title": "Vel vising",
   "visibility_modal.direct_quote_warning.text": "Viss du lagrar innstillingane, vil det innebygde sitatet bli omgjort til lenke.",
@@ -1085,5 +1033,4 @@
   "visibility_modal.quote_nobody": "Berre eg",
   "visibility_modal.quote_public": "Allle",
   "visibility_modal.save": "Lagre"
->>>>>>> v4.5.0
 }

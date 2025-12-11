@@ -10,17 +10,6 @@ export const ContentWarning: React.FC<{
   status: Status;
   expanded?: boolean;
   onClick?: () => void;
-<<<<<<< HEAD
-}> = ({ text, expanded, onClick }) => (
-  <StatusBanner
-    expanded={expanded}
-    onClick={onClick}
-    variant={BannerVariant.Warning}
-  >
-    <span dangerouslySetInnerHTML={{ __html: text }} />
-  </StatusBanner>
-);
-=======
 }> = ({ status, expanded, onClick }) => {
   const hasSpoiler = !!status.get('spoiler_text');
   if (!hasSpoiler) {
@@ -47,4 +36,3 @@ export const ContentWarning: React.FC<{
     </StatusBanner>
   );
 };
->>>>>>> v4.5.0

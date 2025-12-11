@@ -13,14 +13,10 @@ import ChevronRightIcon from '@/material-icons/400-24px/chevron_right.svg?react'
 import { Icon }  from 'mastodon/components/icon';
 import { Poll } from 'mastodon/components/poll';
 import { identityContextPropShape, withIdentity } from 'mastodon/identity_context';
-<<<<<<< HEAD
-import { autoPlayGif, languages as preloadedLanguages, expandUsernames } from 'mastodon/initial_state';
-=======
 import { languages as preloadedLanguages } from 'mastodon/initial_state';
 
 import { EmojiHTML } from './emoji/html';
 import { HandledLink } from './status/handled_link';
->>>>>>> v4.5.0
 
 const MAX_HEIGHT = 706; // 22px * 32 (+ 2px padding at the top)
 
@@ -112,47 +108,6 @@ class StatusContent extends PureComponent {
     }
 
     const { status, onCollapsedToggle } = this.props;
-<<<<<<< HEAD
-    const links = node.querySelectorAll('a');
-
-    let link, mention;
-
-    for (var i = 0; i < links.length; ++i) {
-      link = links[i];
-
-      if (link.classList.contains('status-link')) {
-        continue;
-      }
-
-      link.classList.add('status-link');
-
-      mention = this.props.status.get('mentions').find(item => link.href === item.get('url'));
-
-      if (mention) {
-        link.addEventListener('click', this.onMentionClick.bind(this, mention), false);
-        link.setAttribute('title', `@${mention.get('acct')}`);
-        link.setAttribute('href', mention.get('url'));
-        // Hometown: make remote usernames
-        if (expandUsernames) {
-          if (mention.get('acct') === mention.get('username')) {
-            link.innerHTML = `@<span class="hometown-mention-local">${mention.get('username')}</span>`;
-          } else {
-            link.innerHTML = `@<span class="hometown-mention-remote">${mention.get('acct')}</span>`;
-          }
-        }
-        link.setAttribute('data-hover-card-account', mention.get('id'));
-      } else if (link.textContent[0] === '#' || (link.previousSibling && link.previousSibling.textContent && link.previousSibling.textContent[link.previousSibling.textContent.length - 1] === '#')) {
-        link.addEventListener('click', this.onHashtagClick.bind(this, link.text), false);
-        link.setAttribute('href', `/tags/${link.text.replace(/^#/, '')}`);
-        link.setAttribute('data-menu-hashtag', this.props.status.getIn(['account', 'id']));
-      } else {
-        link.setAttribute('title', link.href);
-        link.classList.add('unhandled-link');
-      }
-    }
-
-=======
->>>>>>> v4.5.0
     if (status.get('collapsed', null) === null && onCollapsedToggle) {
       const { collapsible, onClick } = this.props;
 
@@ -271,7 +226,6 @@ class StatusContent extends PureComponent {
       const summary = status.get('spoilerHtml');
       return (
         <>
-<<<<<<< HEAD
           {title && <div className='status__content article'><h2>Title: {status.get('title')}</h2></div>}
           {summary && <div className='status__content article'><em>Summary: {status.get('spoiler_text')}</em></div>}
           {readArticleButton}
@@ -280,9 +234,6 @@ class StatusContent extends PureComponent {
     } else if (this.props.onClick) {
       return (
         <>
-          <div className={classNames} ref={this.setRef} onMouseDown={this.handleMouseDown} onMouseUp={this.handleMouseUp} key='status-content' onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeave}>
-            <div className='status__content__text status__content__text--visible translate' lang={language} dangerouslySetInnerHTML={content} />
-=======
           <div
             className={classNames}
             ref={this.setRef}
@@ -297,7 +248,6 @@ class StatusContent extends PureComponent {
               extraEmojis={status.get('emojis')}
               onElement={this.handleElement}
             />
->>>>>>> v4.5.0
 
             {poll}
             {translateButton}
@@ -310,10 +260,6 @@ class StatusContent extends PureComponent {
       );
     } else {
       return (
-<<<<<<< HEAD
-        <div className={classNames} ref={this.setRef} onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeave}>
-          <div className='status__content__text status__content__text--visible translate' lang={language} dangerouslySetInnerHTML={content} />
-=======
         <div className={classNames} ref={this.setRef}>
           <EmojiHTML
             className='status__content__text status__content__text--visible translate'
@@ -322,7 +268,6 @@ class StatusContent extends PureComponent {
             extraEmojis={status.get('emojis')}
             onElement={this.handleElement}
           />
->>>>>>> v4.5.0
 
           {poll}
           {translateButton}

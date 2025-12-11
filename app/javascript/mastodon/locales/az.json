@@ -1,15 +1,4 @@
 {
-<<<<<<< HEAD
-  "about.blocks": "Moderasiya olunan serverlər",
-  "about.contact": "Əlaqə:",
-  "about.disclaimer": "Mastodon pulsuz, açıq-mənbəli proqram təminatıdır və Mastodon gGmbH-nin əmtəə nişanıdır.",
-  "about.domain_blocks.no_reason_available": "Səbəb naməlumdur",
-  "about.domain_blocks.preamble": "Mastodon adətən fediversedəki hər hansısa bir serverdən olan məzmuna baxmaq və istifadəçilərlə qarşılıqlı əlaqədə olmaq imkanı verir. Bunlar bu serverdə edilmiş istisnalardır.",
-  "about.domain_blocks.silenced.explanation": "Siz bu serverdəki profilləri və məzmunu xüsusi olaraq axtarmasanız və ya izləməsəniz ümumiyyətlə görməyəcəksiniz.",
-  "about.domain_blocks.silenced.title": "Məhdudlaşdırılmış",
-  "about.domain_blocks.suspended.explanation": "Bu serverdən heç bir data emal edilməyəcək, saxlanılmayacaq və ya mübadilə edilməyəcək və bu serverdən olan istifadəçilərlə hər hansı qarşılıqlı əlaqə qeyri-mümkün olacaq.",
-  "about.domain_blocks.suspended.title": "Qadağa qoyulub",
-=======
   "about.blocks": "Moderasiya edilmiş serverlər",
   "about.contact": "Əlaqə:",
   "about.default_locale": "İlkin",
@@ -21,7 +10,6 @@
   "about.domain_blocks.suspended.explanation": "Bu serverdəki heç bir veri emal edilməyəcək, saxlanılmayacaq və ya mübadilə edilməyəcək, bu serverdəki istifadəçilərlə hər hansısa bir qarşılıqlı əlaqə və ya ünsiyyət mümkünsüz olacaq.",
   "about.domain_blocks.suspended.title": "Qadağa qoyulub",
   "about.language_label": "Dil",
->>>>>>> v4.5.0
   "about.not_available": "Bu məlumat bu serverdə əlçatan edilməyib.",
   "about.powered_by": "{mastodon} tərəfindən təchiz edilən desentralizasiya edilmiş sosial media",
   "about.rules": "Server qaydaları",
@@ -33,10 +21,7 @@
   "account.block_domain": "{domain} domenini blokla",
   "account.block_short": "Blok",
   "account.blocked": "Bloklanıb",
-<<<<<<< HEAD
-=======
   "account.blocking": "Əngəlləmə",
->>>>>>> v4.5.0
   "account.cancel_follow_request": "İzləməni ləğv et",
   "account.copy": "Profil linkini kopyala",
   "account.direct": "@{name} istifadəçisini fərdi olaraq etiketlə",
@@ -45,14 +30,11 @@
   "account.edit_profile": "Profili redaktə et",
   "account.enable_notifications": "@{name} paylaşım edəndə mənə bildiriş göndər",
   "account.endorse": "Profildə seçilmişlərə əlavə et",
-<<<<<<< HEAD
-=======
   "account.familiar_followers_many": "{name1}, {name2} və tanıdığınız digər {othersCount, plural, one {digər bir nəfər} other {# nəfər}} izləyir",
   "account.familiar_followers_one": "{name1} izləyir",
   "account.familiar_followers_two": "{name1} və {name2} izləyir",
   "account.featured": "Seçilmiş",
   "account.featured.accounts": "Profillər",
->>>>>>> v4.5.0
   "account.featured.hashtags": "Etiketler",
   "account.featured_tags.last_status_at": "Son paylaşım {date} tarixində olub",
   "account.featured_tags.last_status_never": "Paylaşım yoxdur",
@@ -61,13 +43,6 @@
   "account.followers": "İzləyicilər",
   "account.followers.empty": "Bu istifadəçini hələ ki, heç kim izləmir.",
   "account.followers_counter": "{count, plural, one {{counter} izləyici} other {{counter} izləyici}}",
-<<<<<<< HEAD
-  "account.following": "İzləyir",
-  "account.following_counter": "{count, plural, one {{counter} izləyir} other {{counter} izləyir}}",
-  "account.follows.empty": "Bu istifadəçi hələ ki, heç kimi izləmir.",
-  "account.go_to_profile": "Profilə get",
-  "account.hide_reblogs": "@{name} istifadəçisindən olan gücləndirmələri gizlət",
-=======
   "account.followers_you_know_counter": "bildiyiniz {counter}",
   "account.following": "İzləyir",
   "account.following_counter": "{count, plural, one {{counter} izləyir} other {{counter} izləyir}}",
@@ -75,16 +50,11 @@
   "account.follows_you": "Sizi izləyir",
   "account.go_to_profile": "Profilə get",
   "account.hide_reblogs": "@{name} - təkrar paylaşımlarını gizlət",
->>>>>>> v4.5.0
   "account.in_memoriam": "Xatirə.",
   "account.joined_short": "Qoşulub",
   "account.languages": "Abunə olunmuş dilləri dəyiş",
   "account.link_verified_on": "Bu linkin dəqiqliyi {date} tarixində yoxlanılıb",
-<<<<<<< HEAD
-  "account.locked_info": "Bu hesabın məxfilik statusu kilidlənib. Hesabın sahibi onu kimin izləyə biləcəyini manual olaraq təyin edir.",
-=======
   "account.locked_info": "Bu hesabın məxfilik statusu kilidlənib. Sahibi, onu kimin izləyə biləcəyini manual olaraq incələyir.",
->>>>>>> v4.5.0
   "account.media": "Media",
   "account.mention": "@{name} istifadəçisini teq et",
   "account.moved_to": "{name} onun yeni hesabının artıq bu olduğunu bildirdi:",
@@ -92,25 +62,12 @@
   "account.mute_notifications_short": "Bildirişləri səssizləşdir",
   "account.mute_short": "Səssizləşdir",
   "account.muted": "Səssizləşdirilib",
-<<<<<<< HEAD
-=======
   "account.muting": "Səssizə alınır",
   "account.mutual": "Bir-birinizi izləyirsiniz",
->>>>>>> v4.5.0
   "account.no_bio": "Təsvir göstərilməyib.",
   "account.open_original_page": "Orijinal səhifəni aç",
   "account.posts": "Paylaşım",
   "account.posts_with_replies": "Paylaşım və cavablar",
-<<<<<<< HEAD
-  "account.report": "@{name} istifadəçisini şikayət et",
-  "account.requested": "Təsdiq edilməsi gözlənilir. İzləmə sorğusunu ləğv etmək üçün kliklə",
-  "account.requested_follow": "{name} sizi izləmək sorğusu göndərib",
-  "account.share": "@{name} profilini paylaş",
-  "account.show_reblogs": "@{name} istifadəçisindən olan gücləndirmələri göstər",
-  "account.statuses_counter": "{count, plural, one {{counter} paylaşım} other {{counter} paylaşım}}",
-  "account.unblock": "@{name} blokunu aç",
-  "account.unblock_domain": "{domain} domeninin blokunu aç",
-=======
   "account.remove_from_followers": "{name} - izləyicilərdən çıxart",
   "account.report": "@{name} istifadəçisini şikayət et",
   "account.requested_follow": "{name} sizi izləmək sorğusu göndərib",
@@ -121,7 +78,6 @@
   "account.unblock": "@{name} blokunu aç",
   "account.unblock_domain": "{domain} domeninin blokunu aç",
   "account.unblock_domain_short": "Əngəldən çıxart",
->>>>>>> v4.5.0
   "account.unblock_short": "Bloku aç",
   "account.unendorse": "Profildə seçilmişlərə əlavə etmə",
   "account.unfollow": "İzləmədən çıxar",
@@ -160,11 +116,7 @@
   "annual_report.summary.followers.total": "Cəmi {count}",
   "annual_report.summary.here_it_is": "{year} icmalınız:",
   "annual_report.summary.highlighted_post.by_favourites": "ən çox sevilən postu",
-<<<<<<< HEAD
-  "annual_report.summary.highlighted_post.by_reblogs": "ən çox gücləndirilən paylaşımı",
-=======
   "annual_report.summary.highlighted_post.by_reblogs": "ən çox təkrar paylaşılan göndəriş",
->>>>>>> v4.5.0
   "annual_report.summary.highlighted_post.by_replies": "ən çox cavabı olan paylaşımı",
   "annual_report.summary.highlighted_post.possessive": "{name} istifadəçisinin",
   "annual_report.summary.most_used_app.most_used_app": "ən çox istifadə etdiyi tətbiq",
@@ -176,11 +128,7 @@
   "annual_report.summary.thanks": "Mastodonun bir parçası olduğunuz üçün təşəkkür edirik!",
   "attachments_list.unprocessed": "(emal edilməyib)",
   "audio.hide": "Audionu gizlət",
-<<<<<<< HEAD
-  "block_modal.remote_users_caveat": "Biz {domain} serverindən qərarınıza hörmət etməsini xahiş edəcəyik. Bununla belə, bəzi serverlər blokları fərqli şəkildə idarə edə bildiyi üçün uyğunluğa zəmanət verilmir. İctimai paylaşımlar hələ də daxil olmayan istifadəçilərə görünə bilər.",
-=======
   "block_modal.remote_users_caveat": "{domain} serverindən qərarınıza hörmət etməsini xahiş edəcəyik. Ancaq, bəzi serverlər əngəlləmələri fərqli şəkildə idarə edə bilər deyə, qərarınıza uymağına zəmanət verilmir. Hər kəsə açıq göndərişlər, hələ də sistemə giriş etməmiş istifadəçilərə görünə bilər.",
->>>>>>> v4.5.0
   "block_modal.show_less": "Daha az göstər",
   "block_modal.show_more": "Daha çox göstər",
   "block_modal.they_cant_mention": "O səni teq edə bilməz və ya izləyə bilməz.",
@@ -189,13 +137,8 @@
   "block_modal.title": "İstifadəçi bloklansın?",
   "block_modal.you_wont_see_mentions": "Onu teq edən postları görməyəcəksən.",
   "boost_modal.combo": "Növbəti dəfə bunu atlamaq üçün {combo} klikləyə bilərsən",
-<<<<<<< HEAD
-  "boost_modal.reblog": "Paylaşım gücləndirilsin?",
-  "boost_modal.undo_reblog": "Paylaşımın gücləndirilməsi ləğv edilsin?",
-=======
   "boost_modal.reblog": "Paylaşım təkrar paylaşılsın?",
   "boost_modal.undo_reblog": "Təkrar paylaşım ləğv edilsin?",
->>>>>>> v4.5.0
   "bundle_column_error.copy_stacktrace": "Xəta hesabatını kopyala",
   "bundle_column_error.error.body": "Tələb olunan səhifəni göstərmək mümkün olmadı. Bu, kodumuzdakı səhv və ya brauzer uyğunluğu problemi ilə bağlı ola bilər.",
   "bundle_column_error.error.title": "Ah, yox!",
@@ -230,16 +173,6 @@
   "column.lists": "Siyahılar",
   "column.mutes": "Səssizləşdirilmiş istifadəçilər",
   "column.notifications": "Bildirişlər",
-<<<<<<< HEAD
-  "column.pins": "Bərkidilmiş paylaşımlar",
-  "column.public": "Federasiya zaman qrafiki",
-  "column_back_button.label": "Geriyə",
-  "column_header.hide_settings": "Parametrləri gizlət",
-  "column_header.moveLeft_settings": "Sütunu sola köçür",
-  "column_header.moveRight_settings": "Sütunu sağa köçür",
-  "column_header.pin": "Bərkit",
-  "column_header.show_settings": "Parametrləri göstər",
-=======
   "column.pins": "Sancılmış göndərişlər",
   "column.public": "Federasiya zaman qrafiki",
   "column_back_button.label": "Geriyə",
@@ -248,7 +181,6 @@
   "column_header.moveRight_settings": "Sütunu sağa köçür",
   "column_header.pin": "Bərkit",
   "column_header.show_settings": "Ayarları göstər",
->>>>>>> v4.5.0
   "column_header.unpin": "Bərkitmə",
   "column_search.cancel": "İmtina",
   "community.column_settings.local_only": "Sadəcə lokalda",
@@ -274,11 +206,7 @@
   "compose_form.poll.type": "Stil",
   "compose_form.publish": "Paylaş",
   "compose_form.reply": "Cavabla",
-<<<<<<< HEAD
-  "compose_form.save_changes": "Yenilə",
-=======
   "compose_form.save_changes": "Güncəllə",
->>>>>>> v4.5.0
   "compose_form.spoiler.marked": "Məzmun xəbərdarlığını sil",
   "compose_form.spoiler.unmarked": "Məzmun xəbərdarlığı əlavə et",
   "compose_form.spoiler_placeholder": "Məzmun xəbərdarlığı (məcburi deyil)",
@@ -290,8 +218,6 @@
   "confirmations.delete_list.confirm": "Sil",
   "confirmations.delete_list.message": "Bu siyahını həmişəlik silmək istədiyinizə əminsiniz?",
   "confirmations.delete_list.title": "Siyahı silinsin?",
-<<<<<<< HEAD
-=======
   "confirmations.discard_draft.confirm": "Silib davam et",
   "confirmations.discard_draft.edit.cancel": "Düzəliş etməyə davam",
   "confirmations.discard_draft.edit.message": "Davam etsəniz, hazırda düzəliş etdiyiniz göndərişdəki bütün dəyişikliklər silinəcək.",
@@ -299,7 +225,6 @@
   "confirmations.discard_draft.post.cancel": "Qaralama kimi davam etdir",
   "confirmations.discard_draft.post.message": "Davam etsəniz, hazırda tərtib etdiyiniz göndəriş silinəcək.",
   "confirmations.discard_draft.post.title": "Qaralama göndərişiniz silinsin?",
->>>>>>> v4.5.0
   "confirmations.discard_edit_media.confirm": "Ləğv et",
   "confirmations.discard_edit_media.message": "Media təsvirində və ya önizləmədə yadda saxlanmamış dəyişiklikləriniz var, ləğv edilsin?",
   "confirmations.follow_to_list.confirm": "İzlə və siyahıya əlavə et",
@@ -309,22 +234,11 @@
   "confirmations.logout.message": "Çıxmaq istədiyinizə əminsiniz?",
   "confirmations.logout.title": "Çıxış edilsin?",
   "confirmations.missing_alt_text.confirm": "Alternativ mətn əlavə et",
-<<<<<<< HEAD
-  "confirmations.missing_alt_text.message": "Paylaşımınız alternativ mətn ehtiva etmir. Təsvir əlavə etmək onun daha çox insan üçün əlçatan olmasına kömək edir.",
-=======
   "confirmations.missing_alt_text.message": "Göndərişinizdə alternativ mətn yoxdur. Daha çox insanın məzmununuza erişməsinə kömək etmək üçün açıqlama əlavə edin.",
->>>>>>> v4.5.0
   "confirmations.missing_alt_text.secondary": "Yenə də paylaş",
   "confirmations.missing_alt_text.title": "Alternativ mətn əlavə edilsin?",
   "confirmations.mute.confirm": "Səssizləşdir",
   "confirmations.redraft.confirm": "Sil və qaralamaya köçür",
-<<<<<<< HEAD
-  "confirmations.redraft.message": "Bu paylaşımı silmək və qaralamaya köçürmək istədiyinizə əminsiniz? Bəyənmələr və gücləndirmələr itəcək və orijinal paylaşıma olan cavablar tənha qalacaq.",
-  "confirmations.redraft.title": "Paylaşım silinsin & qaralamaya köçürülsün?",
-  "confirmations.unfollow.confirm": "İzləmədən çıxar",
-  "confirmations.unfollow.message": "{name} izləmədən çıxmaq istədiyinizə əminsiniz?",
-  "confirmations.unfollow.title": "İstifadəçi izləmədən çıxarılsın?",
-=======
   "confirmations.redraft.message": "Bu göndərişi silib yenidən qaralama kimi saxlamaq istədiyinizə əminsiniz? Sevimlilər və təkrar paylaşımlar silinəcək, orijinal göndərişə verilən cavablar isə əlaqəsiz qalacaq.",
   "confirmations.redraft.title": "Paylaşım silinsin & qaralamaya köçürülsün?",
   "confirmations.remove_from_followers.confirm": "İzləyicini çıxart",
@@ -334,7 +248,6 @@
   "confirmations.revoke_quote.message": "Bu əməliyyatın geri dönüşü yoxdur.",
   "confirmations.revoke_quote.title": "Göndəriş silinsin?",
   "confirmations.unfollow.confirm": "İzləmədən çıxar",
->>>>>>> v4.5.0
   "content_warning.hide": "Paylaşımı gizlət",
   "content_warning.show": "Yenə də göstər",
   "content_warning.show_more": "Daha çox göstər",
@@ -344,20 +257,12 @@
   "conversation.with": "{names} ilə",
   "copy_icon_button.copied": "Mübadilə buferinə köçürüldü",
   "copypaste.copied": "Kopyalandı",
-<<<<<<< HEAD
-  "copypaste.copy_to_clipboard": "Kopyala",
-=======
   "copypaste.copy_to_clipboard": "Lövhəyə kopyala",
->>>>>>> v4.5.0
   "directory.federated": "Bilinən fediversedən",
   "directory.local": "Sadəcə {domain}",
   "directory.new_arrivals": "Yeni gələnlər",
   "directory.recently_active": "Bayaq aktiv olanlar",
-<<<<<<< HEAD
-  "disabled_account_banner.account_settings": "Hesab parametrləri",
-=======
   "disabled_account_banner.account_settings": "Hesab ayarları",
->>>>>>> v4.5.0
   "disabled_account_banner.text": "Sizin hesabınız {disabledAccount} hal-hazırda deaktiv edilib.",
   "dismissable_banner.community_timeline": "Bunlar, hesabları {domain} serverində yerləşən insanların ən son ictimai paylaşımlarıdır.",
   "dismissable_banner.dismiss": "Bağla",
@@ -384,10 +289,7 @@
   "domain_pill.your_handle": "Tanıdıcınız:",
   "domain_pill.your_server": "Bütün paylaşımlarınızın yaşadığı rəqəmsal ev. Buranı bəyənmirsiniz? İstədiyiniz vaxt serverdən köçün və izləyicilərinizi də aparın.",
   "domain_pill.your_username": "Serverdəki unikal identifikatoruz. Fərqli serverlərdə eyni istifadəçi adı ilə istifadəçilər tapmaq mümkündür.",
-<<<<<<< HEAD
-=======
   "dropdown.empty": "Bir seçim et",
->>>>>>> v4.5.0
   "embed.instructions": "Aşağıdakı kodu kopyalayaraq bu postu veb-saytınıza yerləşdirin.",
   "embed.preview": "Belə görünəcək:",
   "emoji_button.activity": "Aktivlik",
@@ -397,11 +299,7 @@
   "emoji_button.food": "Yemək və içki",
   "emoji_button.label": "Emoji daxil et",
   "emoji_button.nature": "Təbiət",
-<<<<<<< HEAD
-  "emoji_button.not_found": "Uyğun emoji tapılmadı",
-=======
   "emoji_button.not_found": "Uyuşan emoji tapılmadı",
->>>>>>> v4.5.0
   "emoji_button.objects": "Obyektlər",
   "emoji_button.people": "İnsanlar",
   "emoji_button.recent": "Tez-tez istifadə edilən",
@@ -424,10 +322,6 @@
   "empty_column.follow_requests": "İzləmə sorğularınız yoxdur. Qəbul etdikdə burada görəcəksiniz.",
   "empty_column.followed_tags": "Heç bir heşteq izləmirsiniz. İzlədikdə burada görünəcək.",
   "empty_column.hashtag": "Bu heşteqdə hələ ki, heç nə yoxdur.",
-<<<<<<< HEAD
-  "follow_suggestions.hints.friends_of_friends": "Bu profil izlədiyiniz insanlar arasında populyardır.",
-  "follow_suggestions.hints.most_followed": "Bu profil {domain} serverində ən çox izlənilənlərdən biridir."
-=======
   "empty_column.home": "Əsas zaman xəttiniz boşdur! Doldurmaq üçün bir neçə istifadəçini izləyin.",
   "empty_column.list": "Hələ bu siyahıda heç nə yoxdur. Bu siyahıdakı üzvlər yeni göndəriş paylaşdığı zaman burada görünəcək.",
   "empty_column.mutes": "Hələ heç bir istifadəçini səssizə almamısınız.",
@@ -1038,5 +932,4 @@
   "visibility_modal.helper.unlisted_quoting": "İnsanlar sizdən sitat gətirdiyi zaman, onların göndərişləri də trend zaman xəttindən gizlədiləcək.",
   "visibility_modal.quote_followers": "Yalnız izləyicilər",
   "visibility_modal.quote_public": "Hər kəs"
->>>>>>> v4.5.0
 }

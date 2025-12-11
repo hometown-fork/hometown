@@ -1,16 +1,6 @@
 {
   "about.blocks": "باشقۇرۇلىدىغان مۇلازىمېتىر",
   "about.contact": "ئالاقە:",
-<<<<<<< HEAD
-  "about.disclaimer": "Mastodon ھەقسىز، ئوچۇق كودلۇق يۇمشاق دېتال تاۋار ماركىسى Mastodon gGmbH غا تەۋە.",
-  "about.domain_blocks.no_reason_available": "سەۋەبىنى ئىشلەتكىلى بولمايدۇ",
-  "account.badges.bot": "ماشىنا ئادەم",
-  "account.cancel_follow_request": "ئەگىشىش ئىلتىماسىدىن ۋاز كەچ",
-  "account.posts": "يازما",
-  "account.posts_with_replies": "يازما ۋە ئىنكاس",
-  "account.report": "@{name} نى پاش قىل",
-  "account.requested": "Awaiting approval",
-=======
   "about.default_locale": "كۆڭۈلدىكى",
   "about.disclaimer": "Mastodon ھەقسىز، ئوچۇق كودلۇق يۇمشاق دېتال تاۋار ماركىسى Mastodon gGmbH غا تەۋە.",
   "about.domain_blocks.no_reason_available": "سەۋەبىنى ئىشلەتكىلى بولمايدۇ",
@@ -28,7 +18,6 @@
   "account.posts": "يازما",
   "account.posts_with_replies": "يازما ۋە ئىنكاس",
   "account.report": "@{name} نى پاش قىل",
->>>>>>> v4.5.0
   "account_note.placeholder": "چېكىلسە ئىزاھات قوشىدۇ",
   "column.pins": "چوققىلانغان يازما",
   "community.column_settings.media_only": "ۋاسىتەلا",

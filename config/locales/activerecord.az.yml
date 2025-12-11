@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-az:
-=======
 ---
 az:
   activerecord:
@@ -78,4 +75,3 @@ az:
           attributes:
             events:
               invalid_permissions: hüquqlarınız olmayan tədbirləri ehtiva edə bilməz
->>>>>>> v4.5.0

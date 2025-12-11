@@ -262,14 +262,11 @@
   "confirmations.remove_from_followers.confirm": "Quitar seguidor",
   "confirmations.remove_from_followers.message": "{name} dejará de seguirte. ¿Estás seguro de que querés continuar?",
   "confirmations.remove_from_followers.title": "¿Quitar seguidor?",
-<<<<<<< HEAD
-=======
   "confirmations.revoke_quote.confirm": "Eliminar mensaje",
   "confirmations.revoke_quote.message": "Esta acción no se puede deshacer.",
   "confirmations.revoke_quote.title": "¿Eliminar mensaje?",
   "confirmations.unblock.confirm": "Desbloquear",
   "confirmations.unblock.title": "¿Desbloquear a {name}?",
->>>>>>> v4.5.0
   "confirmations.unfollow.confirm": "Dejar de seguir",
   "confirmations.unfollow.title": "¿Dejar de seguir a {name}?",
   "confirmations.withdraw_request.confirm": "Retirar solicitud",
@@ -452,11 +449,6 @@
   "hints.profiles.see_more_followers": "Ver más seguidores en {domain}",
   "hints.profiles.see_more_follows": "Ver más seguimientos en {domain}",
   "hints.profiles.see_more_posts": "Ver más mensajes en {domain}",
-<<<<<<< HEAD
-  "hints.threads.replies_may_be_missing": "Es posible que falten respuestas de otros servidores.",
-  "hints.threads.see_more": "Ver más respuestas en {domain}",
-=======
->>>>>>> v4.5.0
   "home.column_settings.show_quotes": "Mostrar citas",
   "home.column_settings.show_reblogs": "Mostrar adhesiones",
   "home.column_settings.show_replies": "Mostrar respuestas",
@@ -478,28 +470,12 @@
   "ignore_notifications_modal.private_mentions_title": "¿Ignorar notificaciones de menciones privadas no solicitadas?",
   "info_button.label": "Ayuda",
   "info_button.what_is_alt_text": "<h1>¿Qué es el texto alternativo?</h1> <p>El texto alternativo proporciona descripciones de las imágenes para personas con dificultades visuales, conexiones con escaso ancho de banda o que buscan un contexto adicional.</p> <p>Podés mejorar la accesibilidad y la comprensión para todos escribiendo un texto alternativo claro, conciso y objetivo.</p> <ul><li>Captura los elementos importantes.</li><li>Resumí el texto en imágenes.</li><li>Usá una estructura de frases normal.</li><li>Evitá la información redundante.</li><li>Focalizate en las tendencias y conclusiones clave de los elementos visuales complejos (como diagramas o mapas).</li></ul>",
-<<<<<<< HEAD
-  "interaction_modal.action.favourite": "Para continuar, tenés que marcar como favorito desde tu cuenta.",
-  "interaction_modal.action.follow": "Para continuar, tenés que seguir desde tu cuenta.",
-  "interaction_modal.action.reblog": "Para continuar, tenés que adherir desde tu cuenta.",
-  "interaction_modal.action.reply": "Para continuar, tenés que responder desde tu cuenta.",
-  "interaction_modal.action.vote": "Para continuar, tenés que votar desde tu cuenta.",
-=======
   "interaction_modal.action": "Para interactuar con el mensaje de {name}, tenés que iniciar sesión en la cuenta del servidor de Mastodon que usés.",
->>>>>>> v4.5.0
   "interaction_modal.go": "Ir",
   "interaction_modal.no_account_yet": "¿Todavía no tenés cuenta?",
   "interaction_modal.on_another_server": "En un servidor diferente",
   "interaction_modal.on_this_server": "En este servidor",
-<<<<<<< HEAD
-  "interaction_modal.title.favourite": "Marcar como favorito el mensaje de {name}",
-  "interaction_modal.title.follow": "Seguir a {name}",
-  "interaction_modal.title.reblog": "Adherir al mensaje de {name}",
-  "interaction_modal.title.reply": "Responder al mensaje de {name}",
-  "interaction_modal.title.vote": "Votá en la encuesta de {name}",
-=======
   "interaction_modal.title": "Iniciá sesión para continuar",
->>>>>>> v4.5.0
   "interaction_modal.username_prompt": "Por ejemplo: {example}",
   "intervals.full.days": "{number, plural, one {# día} other {# días}}",
   "intervals.full.hours": "{number, plural, one {# hora} other {# horas}}",
@@ -607,13 +583,8 @@
   "navigation_bar.follows_and_followers": "Cuentas seguidas y seguidores",
   "navigation_bar.import_export": "Importación y exportación",
   "navigation_bar.lists": "Listas",
-<<<<<<< HEAD
-  "navigation_bar.live_feed_local": "Cronología local",
-  "navigation_bar.live_feed_public": "Cronología pública",
-=======
   "navigation_bar.live_feed_local": "Línea temporal (local)",
   "navigation_bar.live_feed_public": "Línea temporal (federada)",
->>>>>>> v4.5.0
   "navigation_bar.logout": "Cerrar sesión",
   "navigation_bar.moderation": "Moderación",
   "navigation_bar.more": "Más",
@@ -931,11 +902,7 @@
   "status.edited_x_times": "Editado {count, plural, one {{count} vez} other {{count} veces}}",
   "status.embed": "Obtener código para insertar",
   "status.favourite": "Marcar como favorito",
-<<<<<<< HEAD
-  "status.favourites": "{count, plural, one {# vez marcado como favorito} other {# veces marcado como favorito}}",
-=======
   "status.favourites": "{count, plural, one {vez marcado como favorito} other {veces marcado como favorito}}",
->>>>>>> v4.5.0
   "status.filter": "Filtrar este mensaje",
   "status.history.created": "Creado por {name}, {date}",
   "status.history.edited": "Editado por {name}, {date}",
@@ -949,15 +916,6 @@
   "status.mute_conversation": "Silenciar conversación",
   "status.open": "Expandir este mensaje",
   "status.pin": "Fijar en el perfil",
-<<<<<<< HEAD
-  "status.quote_error.filtered": "Oculto debido a uno de tus filtros",
-  "status.quote_error.not_found": "No se puede mostrar este mensaje.",
-  "status.quote_error.pending_approval": "Este mensaje está pendiente de aprobación del autor original.",
-  "status.quote_error.rejected": "No se puede mostrar este mensaje, ya que el autor original no permite que se cite.",
-  "status.quote_error.removed": "Este mensaje fue eliminado por su autor.",
-  "status.quote_error.unauthorized": "No se puede mostrar este mensaje, ya que no tenés autorización para verlo.",
-  "status.quote_post_author": "Mensaje de @{name}",
-=======
   "status.quote": "Citar",
   "status.quote.cancel": "Cancelar cita",
   "status.quote_error.blocked_account_hint.title": "Este mensaje está oculto porque bloqueaste a @{name}.",
@@ -980,7 +938,6 @@
   "status.quotes.empty": "Todavía nadie citó este mensaje. Cuando alguien lo haga, se mostrará acá.",
   "status.quotes.local_other_disclaimer": "Las citas rechazadas por el autor no serán mostradas.",
   "status.quotes.remote_other_disclaimer": "Solo las citas de {domain} están garantizadas de ser mostradas acá. Las citas rechazadas por el autor no serán mostradas.",
->>>>>>> v4.5.0
   "status.read_more": "Leé más",
   "status.reblog": "Adherir",
   "status.reblog_or_quote": "Adherir o citar",
@@ -991,10 +948,7 @@
   "status.redraft": "Eliminar mensaje original y editarlo",
   "status.remove_bookmark": "Quitar marcador",
   "status.remove_favourite": "Quitar de favoritos",
-<<<<<<< HEAD
-=======
   "status.remove_quote": "Quitar",
->>>>>>> v4.5.0
   "status.replied_in_thread": "Respuesta en hilo",
   "status.replied_to": "Respondió a {name}",
   "status.reply": "Responder",
@@ -1039,10 +993,7 @@
   "upload_button.label": "Agregá imágenes, o un archivo de audio o video",
   "upload_error.limit": "Se excedió el límite de subida de archivos.",
   "upload_error.poll": "No se permite la subida de archivos en encuestas.",
-<<<<<<< HEAD
-=======
   "upload_error.quote": "No se permite subir archivos con citas.",
->>>>>>> v4.5.0
   "upload_form.drag_and_drop.instructions": "Para recoger un archivo multimedia, pulsá la barra espaciadora o la tecla Enter. Mientras arrastrás, usá las teclas de flecha para mover el archivo multimedia en cualquier dirección. Volvé a pulsar la barra espaciadora o la tecla Enter para soltar el archivo multimedia en su nueva posición, o pulsá la tecla Escape para cancelar.",
   "upload_form.drag_and_drop.on_drag_cancel": "Se canceló el arrastre. Se eliminó el archivo adjunto {item}.",
   "upload_form.drag_and_drop.on_drag_end": "El archivo adjunto {item} fue soltado.",
@@ -1065,9 +1016,6 @@
   "video.skip_forward": "Adelantar",
   "video.unmute": "Quitar silenciado",
   "video.volume_down": "Bajar volumen",
-<<<<<<< HEAD
-  "video.volume_up": "Subir volumen"
-=======
   "video.volume_up": "Subir volumen",
   "visibility_modal.button_title": "Establecer visibilidad",
   "visibility_modal.direct_quote_warning.text": "Si guardás la configuración actual, la cita insertada se convertirá en un enlace.",
@@ -1085,5 +1033,4 @@
   "visibility_modal.quote_nobody": "Solo yo",
   "visibility_modal.quote_public": "Cualquier cuenta",
   "visibility_modal.save": "Guardar"
->>>>>>> v4.5.0
 }

@@ -23,11 +23,6 @@ import StatusListContainer from '../ui/containers/status_list_container';
 import { HashtagHeader } from './components/hashtag_header';
 import ColumnSettingsContainer from './containers/column_settings_container';
 
-<<<<<<< HEAD
-const mapStateToProps = (state, props) => ({
-  hasUnread: state.getIn(['timelines', `hashtag:${props.params.id}${props.params.local ? ':local' : ''}`, 'unread']) > 0,
-});
-=======
 const mapStateToProps = (state, props) => {
   const local = props.params.local || (!me && remoteTopicFeedAccess !== 'public');
 
@@ -36,7 +31,6 @@ const mapStateToProps = (state, props) => {
     hasUnread: state.getIn(['timelines', `hashtag:${props.params.id}${local ? ':local' : ''}`, 'unread']) > 0,
   });
 };
->>>>>>> v4.5.0
 
 class HashtagTimeline extends PureComponent {
   disconnects = [];
@@ -170,13 +164,8 @@ class HashtagTimeline extends PureComponent {
   };
 
   render () {
-<<<<<<< HEAD
-    const { hasUnread, columnId, multiColumn } = this.props;
-    const { id, local } = this.props.params;
-=======
     const { hasUnread, columnId, multiColumn, local } = this.props;
     const { id } = this.props.params;
->>>>>>> v4.5.0
     const pinned = !!columnId;
 
     return (

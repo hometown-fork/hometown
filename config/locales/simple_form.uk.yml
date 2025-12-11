@@ -223,10 +223,6 @@ uk:
         setting_auto_play_gif: Автоматично відтворювати анімовані GIF
         setting_default_language: Мова дописів
         setting_default_sensitive: Позначати медіа делікатними
-<<<<<<< HEAD
-        setting_delete_modal: Показувати діалог підтвердження під час видалення допису
-=======
->>>>>>> v4.5.0
         setting_disable_hover_cards: Вимкнути попередній перегляд профілю під час наведення мишки
         setting_disable_swiping: Вимкнути рух посування
         setting_display_media: Показ медіа

@@ -18,11 +18,8 @@ import { IntlProvider } from 'mastodon/locales';
 import { store } from 'mastodon/store';
 import { isProduction } from 'mastodon/utils/environment';
 import { BodyScrollLock } from 'mastodon/features/ui/components/body_scroll_lock';
-<<<<<<< HEAD
-=======
 
 import { ScrollContext } from './scroll_container/scroll_context';
->>>>>>> v4.5.0
 
 const title = isProduction() ? siteTitle : `${siteTitle} (Dev)`;
 

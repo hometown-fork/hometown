@@ -57,22 +57,15 @@ fo:
         setting_advanced_layout: Vís Mastodon í fleiri teigum, soleiðis at tú sær tíðarlinju, fráboðanir og ein triðja teig, sum tú velur. Ikki viðmælt fyri smærri skermar.
         setting_aggregate_reblogs: Vís ikki nýggjar stimbranir fyri postar, sum nýliga eru stimbraðir (ávirkar einans stimbranir, ið eru móttiknar fyri kortum)
         setting_always_send_emails: Vanliga vera teldupostfráboðanir ikki sendar, tá tú virkin brúkar Mastodon
-<<<<<<< HEAD
-        setting_default_quote_policy: Nevndir brúkarar hava altíð loyvi at sitera. Hendan stillingin verður bara virkin fyri postar, sum verða stovnaðir í næstu Mastodon útgávuni, men sum fyrireiking til tað, kanst tú velja tína stilling longu nú
-=======
         setting_boost_modal: Tá hetta er virkið opna stimbranir fyrst eitt váttanarvindeyga, har tú kanst broyta hvussu tín stimbran sæst.
         setting_default_quote_policy_private: Postar, sum einans eru fyri fylgjarar á Mastodon, kunnu ikki siterast av øðrum.
         setting_default_quote_policy_unlisted: Tá fólk sitera teg, so vera teirra postar eisini fjaldir frá tíðarlinjum við ráki.
->>>>>>> v4.5.0
         setting_default_sensitive: Viðkvæmar miðlafílur eru fjaldar og kunnu avdúkast við einum klikki
         setting_display_media_default: Fjal miðlafílur, sum eru merktar sum viðkvæmar
         setting_display_media_hide_all: Fjal altíð miðlafílur
         setting_display_media_show_all: Vís altíð miðlafílur
-<<<<<<< HEAD
-=======
         setting_emoji_style: Hvussu kenslutekn vera víst. "Sjálvvirkandi" roynir at brúka upprunalig kenslutekn, men fellir aftur á Twitter kenslutekn í eldri kagum.
         setting_quick_boosting_html: Tá hetta er virkið, hendir stimbranin beinanvegin tá trýst verður á %{boost_icon} Stimbranar-ímyndin, í staðin fyri at stimbranar/siterings-valmyndin verður latin um. Flytir siteringsmøguleikan til %{options_icon} (Valmøguleikar) valmyndina.
->>>>>>> v4.5.0
         setting_system_scrollbars_ui: Er einans viðkomandi fyri skriviborðskagar grundaðir á Safari og Chrome
         setting_use_blurhash: Gradientar eru grundaðir á litirnar av fjaldu myndunum, men grugga allar smálutir
         setting_use_pending_items: Fjal tíðarlinjudagføringar aftan fyri eitt klikk heldur enn at skrulla tilføringina sjálvvirkandi
@@ -161,13 +154,8 @@ fo:
       user:
         chosen_languages: Tá hetta er valt, verða einans postar í valdum málum vístir á almennum tíðarlinjum
         date_of_birth:
-<<<<<<< HEAD
-          one: Vit mugu tryggja okkum, at tú er í minsta lagi %{count} fyri at brúka Mastodon. Vit goyma ikki hesar upplýsingar.
-          other: Vit mugu tryggja okkum, at tú er í minsta lagi %{count} fyri at brúka Mastodon. Vit goyma ikki hesar upplýsingar.
-=======
           one: Vit mugu tryggja okkum, at tú er í minsta lagi %{count} fyri at brúka %{domain}. Vit goyma ikki hesar upplýsingar.
           other: Vit mugu tryggja okkum, at tú er í minsta lagi %{count} ár fyri at brúka %{domain}. Vit goyma ikki hesar upplýsingar.
->>>>>>> v4.5.0
         role: Leikluturin stýrir hvørji rættindi, brúkarin hevur.
       user_role:
         color: Litur, sum leikluturin hevur í øllum brúkaramarkamótinum, sum RGB og upplýst sum sekstandatal
@@ -251,11 +239,7 @@ fo:
         setting_auto_play_gif: Spæl teknimyndagjørdar GIFar sjálvvirkandi
         setting_boost_modal: Stýr hvussu stimbranir síggjast
         setting_default_language: Mál, sum verður brúkt til postar
-<<<<<<< HEAD
-        setting_default_privacy: Hvussu privatir eru postar?
-=======
         setting_default_privacy: Postar sýni
->>>>>>> v4.5.0
         setting_default_quote_policy: Hvør kann sitera
         setting_default_sensitive: Merk altíð miðlafílur sum viðkvæmar
         setting_delete_modal: Ávara meg áðrenn ein postur er strikaður
@@ -268,12 +252,8 @@ fo:
         setting_emoji_style: Kensluteknsstílur
         setting_expand_spoilers: Víðka altíð postar, sum eru merktir við innihaldsávaringum
         setting_hide_network: Fjal sosiala grafin hjá tær
-<<<<<<< HEAD
-        setting_missing_alt_text_modal: Spyr um góðkenning áðrenn miðlar uttan alternativan tekst verða postaðir
-=======
         setting_missing_alt_text_modal: Ávara meg áðrenn miðlar uttan alt tekst verða postaðir
         setting_quick_boosting: Ger skjóta stimbran virkna
->>>>>>> v4.5.0
         setting_reduce_motion: Minka um rørslu í teknimyndum
         setting_system_font_ui: Brúka vanliga skriftaslagið hjá skipanini
         setting_system_scrollbars_ui: Brúka vanliga skrullibjálkan hjá skipanini

@@ -26,20 +26,14 @@
   "account.copy": "Skopírovať odkaz na profil",
   "account.direct": "Súkromne označiť @{name}",
   "account.disable_notifications": "Zrušiť upozornenia na príspevky od @{name}",
-<<<<<<< HEAD
-=======
   "account.domain_blocking": "Blokované domény",
->>>>>>> v4.5.0
   "account.edit_profile": "Upraviť profil",
   "account.edit_profile_short": "Upraviť",
   "account.enable_notifications": "Zapnúť upozornenia na príspevky od @{name}",
   "account.endorse": "Zobraziť na vlastnom profile",
-<<<<<<< HEAD
-=======
   "account.familiar_followers_many": "Sleduje {name1}, {name2} a {othersCount, plural, one {ďalší účet, ktorý poznáte} few {# ďalšie účty, ktoré poznáte} many {#} other {# ďalších účtov, ktoré poznáte}}",
   "account.familiar_followers_one": "Nasledovanie od {name1}",
   "account.familiar_followers_two": "Nasledovanie od {name1} a {name2}",
->>>>>>> v4.5.0
   "account.featured": "Zviditeľnené",
   "account.featured.accounts": "Profily",
   "account.featured.hashtags": "Hashtagy",
@@ -47,15 +41,6 @@
   "account.featured_tags.last_status_never": "Žiadne príspevky",
   "account.follow": "Sledovať",
   "account.follow_back": "Sledovať späť",
-<<<<<<< HEAD
-  "account.followers": "Sledovatelia",
-  "account.followers.empty": "Ešte nikto nesleduje tohto užívateľa.",
-  "account.followers_counter": "{count, plural, one {{counter} sledujúci} other {{counter} sledujúci}}",
-  "account.following": "Sledovaný účet",
-  "account.following_counter": "{count, plural, one {{counter} sledovaných} other {{counter} sledovaných}}",
-  "account.follows.empty": "Tento účet ešte nikoho nesleduje.",
-  "account.follows_you": "Nasleduje ťa",
-=======
   "account.follow_back_short": "Sledovať späť",
   "account.follow_request": "Požiadať o sledovanie",
   "account.follow_request_cancel": "Zrušiť žiadosť",
@@ -69,7 +54,6 @@
   "account.following_counter": "{count, plural, one {{counter} sledovaných} other {{counter} sledovaných}}",
   "account.follows.empty": "Tento účet ešte nikoho nesleduje.",
   "account.follows_you": "Sleduje vás",
->>>>>>> v4.5.0
   "account.go_to_profile": "Prejsť na profil",
   "account.hide_reblogs": "Skryť zdieľania od @{name}",
   "account.in_memoriam": "In memoriam.",
@@ -85,11 +69,7 @@
   "account.mute_short": "Stíšiť",
   "account.muted": "Účet stíšený",
   "account.muting": "Stíšenie",
-<<<<<<< HEAD
-  "account.mutual": "Nasledujete sa navzájom",
-=======
   "account.mutual": "Sledujete sa navzájom",
->>>>>>> v4.5.0
   "account.no_bio": "Nie je uvedený žiadny popis.",
   "account.open_original_page": "Otvoriť pôvodnú stránku",
   "account.posts": "Príspevky",
@@ -124,14 +104,6 @@
   "alert.rate_limited.title": "Priveľa žiadostí",
   "alert.unexpected.message": "Vyskytla sa nečakaná chyba.",
   "alert.unexpected.title": "Ups!",
-<<<<<<< HEAD
-  "alt_text_badge.title": "Alternatívny popis",
-  "alt_text_modal.add_text_from_image": "Pridaj text z obrázka",
-  "alt_text_modal.cancel": "Zrušiť",
-  "alt_text_modal.done": "Hotovo",
-  "announcement.announcement": "Oznámenie",
-  "annual_report.summary.archetype.oracle": "Veštec",
-=======
   "alt_text_badge.title": "Opis",
   "alt_text_modal.add_alt_text": "Pridať opis",
   "alt_text_modal.add_text_from_image": "Pridať text z obrázka",
@@ -146,27 +118,18 @@
   "annual_report.summary.archetype.oracle": "Divoká karta",
   "annual_report.summary.archetype.pollster": "Anketár*ka",
   "annual_report.summary.archetype.replier": "Hlasná trúba",
->>>>>>> v4.5.0
   "annual_report.summary.followers.followers": "sledovatelia",
   "annual_report.summary.followers.total": "{count} celkovo",
   "annual_report.summary.here_it_is": "Tu je tvoja {year} v zhrnutí:",
   "annual_report.summary.highlighted_post.by_favourites": "najviac obľúbený príspevok",
-<<<<<<< HEAD
-  "annual_report.summary.highlighted_post.by_reblogs": "najviac vyzdvihovaný príspevok",
-  "annual_report.summary.highlighted_post.by_replies": "príspevok s najviac odpoveďami",
-=======
   "annual_report.summary.highlighted_post.by_reblogs": "najviac zdieľaný príspevok",
   "annual_report.summary.highlighted_post.by_replies": "príspevok s najviac odpoveďami",
   "annual_report.summary.highlighted_post.possessive": "{name}",
->>>>>>> v4.5.0
   "annual_report.summary.most_used_app.most_used_app": "najviac používaná aplikácia",
   "annual_report.summary.most_used_hashtag.most_used_hashtag": "najviac užívaný hashtag",
   "annual_report.summary.most_used_hashtag.none": "Žiaden",
   "annual_report.summary.new_posts.new_posts": "nové príspevky",
-<<<<<<< HEAD
-=======
   "annual_report.summary.percentile.text": "<topLabel>Takže patríte do top</topLabel><percentage></percentage><bottomLabel>účtov na {domain}</bottomLabel>",
->>>>>>> v4.5.0
   "annual_report.summary.percentile.we_wont_tell_bernie": "Nepovieme Berniemu.",
   "annual_report.summary.thanks": "Vďaka, že si súčasťou Mastodonu!",
   "attachments_list.unprocessed": "(nespracované)",
@@ -192,10 +155,7 @@
   "bundle_column_error.routing.body": "Žiadaná stránka nebola nájdená. Ste si istí, že zadaná adresa URL je správna?",
   "bundle_column_error.routing.title": "404",
   "bundle_modal_error.close": "Zatvoriť",
-<<<<<<< HEAD
-=======
   "bundle_modal_error.message": "Pri načítavaní tejto obrazovky nastala chyba.",
->>>>>>> v4.5.0
   "bundle_modal_error.retry": "Skúsiť znova",
   "closed_registrations.other_server_instructions": "Keďže Mastodon je decentralizovaný, môžete si vytvoriť účet na inom serveri a stále komunikovať s týmto serverom.",
   "closed_registrations_modal.description": "Vytvorenie účtu na {domain} nie je v súčasnosti možné, ale myslite na to, že na používanie Mastodonu nepotrebujete účet práve na {domain}.",
@@ -211,11 +171,7 @@
   "column.directory": "Prehľadávať profily",
   "column.domain_blocks": "Blokované domény",
   "column.edit_list": "Uprav zoznam",
-<<<<<<< HEAD
-  "column.favourites": "Obľúbené",
-=======
   "column.favourites": "Ohviezdičkované",
->>>>>>> v4.5.0
   "column.firehose": "Živé kanály",
   "column.follow_requests": "Žiadosti o sledovanie",
   "column.home": "Domov",
@@ -278,29 +234,19 @@
   "confirmations.logout.confirm": "Odhlásiť sa",
   "confirmations.logout.message": "Určite sa chcete odhlásiť?",
   "confirmations.logout.title": "Odhlásiť sa?",
-<<<<<<< HEAD
-  "confirmations.missing_alt_text.secondary": "Odošli aj tak",
-=======
   "confirmations.missing_alt_text.confirm": "Pridať opis",
   "confirmations.missing_alt_text.message": "Váš príspevok obsahuje médiá bez opisu. Pridanie opisu sprístupňuje váš obsah viac ľuďom.",
   "confirmations.missing_alt_text.secondary": "Aj tak uverejniť",
   "confirmations.missing_alt_text.title": "Pridať opis?",
->>>>>>> v4.5.0
   "confirmations.mute.confirm": "Stíšiť",
   "confirmations.redraft.confirm": "Vymazať a prepísať",
   "confirmations.redraft.message": "Určite chcete tento príspevok vymazať a prepísať? Prídete o jeho zdieľania a ohviezdičkovania a odpovede na pôvodný príspevok budú odlúčené.",
   "confirmations.redraft.title": "Vymazať a prepísať príspevok?",
   "confirmations.remove_from_followers.confirm": "Odstrániť nasledovateľa",
-<<<<<<< HEAD
-  "confirmations.unfollow.confirm": "Prestať sledovať",
-  "confirmations.unfollow.message": "Určite chcete prestať sledovať {name}?",
-  "confirmations.unfollow.title": "Prestať sledovať užívateľa?",
-=======
   "confirmations.revoke_quote.title": "Vymazať príspevok?",
   "confirmations.unblock.confirm": "Odblokovať",
   "confirmations.unblock.title": "Odblokovať {name}?",
   "confirmations.unfollow.confirm": "Zrušiť sledovanie",
->>>>>>> v4.5.0
   "content_warning.hide": "Skryť príspevok",
   "content_warning.show": "Aj tak zobraziť",
   "content_warning.show_more": "Ukázať viac",
@@ -379,15 +325,12 @@
   "explore.trending_links": "Správy",
   "explore.trending_statuses": "Príspevky",
   "explore.trending_tags": "Hashtagy",
-<<<<<<< HEAD
+  "featured_carousel.header": "{count, plural, one {Pripnutý príspevok} few {Pripnuté príspevky} many {} other {Pripnutých príspevkov}}",
   "federation.change": "Adjust status federation",
   "federation.federated.long": "Allow toot to reach other instances",
   "federation.federated.short": "Federated",
   "federation.local_only.long": "Restrict this toot only to my instance",
   "federation.local_only.short": "Local-only",
-=======
-  "featured_carousel.header": "{count, plural, one {Pripnutý príspevok} few {Pripnuté príspevky} many {} other {Pripnutých príspevkov}}",
->>>>>>> v4.5.0
   "filter_modal.added.context_mismatch_explanation": "Táto kategória filtrov sa nevzťahuje na kontext, v ktorom ste získali prístup k tomuto príspevku. Ak chcete, aby sa príspevok filtroval aj v tomto kontexte, budete musieť filter upraviť.",
   "filter_modal.added.context_mismatch_title": "Nesúlad kontextu!",
   "filter_modal.added.expired_explanation": "Platnosť tejto kategórie filtra vypršala, aby sa použila, je potrebné zmeniť dátum vypršania platnosti.",
@@ -453,11 +396,7 @@
   "hashtag.counter_by_uses_today": "{count, plural, one {{counter} príspevok} few {{counter} príspevky} many {{counter} príspevkov} other {{counter} príspevkov}} dnes",
   "hashtag.follow": "Sledovať hashtag",
   "hashtag.mute": "Utlmiť #{hashtag}",
-<<<<<<< HEAD
-  "hashtag.unfollow": "Prestať sledovať hashtag",
-=======
   "hashtag.unfollow": "Zrušiť sledovanie hashtagu",
->>>>>>> v4.5.0
   "hashtags.and_other": "…a {count, plural, other {# ďalších}}",
   "hints.profiles.followers_may_be_missing": "Nasledovatelia tohto profilu môžu chýbať.",
   "hints.profiles.follows_may_be_missing": "Nasledovatelia tohto profilu môžu chýbať.",
@@ -465,11 +404,6 @@
   "hints.profiles.see_more_followers": "Pozri viac nasledovateľov na {domain}",
   "hints.profiles.see_more_follows": "Pozri viac nasledovateľov na {domain}",
   "hints.profiles.see_more_posts": "Pozri viac príspevkov na {domain}",
-<<<<<<< HEAD
-  "hints.threads.replies_may_be_missing": "Odpovede z ostatných serverov môžu chýbať.",
-  "hints.threads.see_more": "Pozri viac odpovedí na {domain}",
-=======
->>>>>>> v4.5.0
   "home.column_settings.show_reblogs": "Zobraziť zdieľania",
   "home.column_settings.show_replies": "Zobraziť odpovede",
   "home.hide_announcements": "Skryť oznámenia",
@@ -479,11 +413,7 @@
   "home.show_announcements": "Zobraziť oznámenia",
   "ignore_notifications_modal.filter_instead": "Radšej triediť",
   "ignore_notifications_modal.filter_to_act_users": "Stále budeš môcť akceptovať, odmietnuť, alebo nahlásiť užívateľov",
-<<<<<<< HEAD
-  "ignore_notifications_modal.filter_to_avoid_confusion": "Triedenie pomáha vyvarovať sa možnému zmäteniu",
-=======
   "ignore_notifications_modal.filter_to_avoid_confusion": "Filtrovanie pomáha vyvarovať sa možnému zmäteniu",
->>>>>>> v4.5.0
   "ignore_notifications_modal.ignore": "Ignoruj upozornenia",
   "ignore_notifications_modal.limited_accounts_title": "Ignorovať oboznámenia z obmedzených účtov?",
   "ignore_notifications_modal.new_accounts_title": "Nevšímať si oznámenia z nových účtov?",
@@ -491,26 +421,11 @@
   "ignore_notifications_modal.not_following_title": "Nevšímať si oznámenia od ľudí, ktorých nenasleduješ?",
   "ignore_notifications_modal.private_mentions_title": "Nevšímať si oznámenia o nevyžiadaných súkromných spomínaniach?",
   "info_button.label": "Pomoc",
-<<<<<<< HEAD
-  "interaction_modal.action.favourite": "Pre pokračovanie si musíš obľúbiť zo svojho účtu.",
-  "interaction_modal.action.follow": "Pre pokračovanie musíš nasledovať zo svojho účtu.",
-  "interaction_modal.action.reply": "Pre pokračovanie musíš odpovedať s tvojho účtu.",
-  "interaction_modal.action.vote": "Pre pokračovanie musíš hlasovať s tvojho účtu.",
-=======
   "info_button.what_is_alt_text": "<h1>Čo je to opis?</h1> <p>Opis médií umožňuje ľuďom so zdravotným postihnutím alebo slabým pripojením porozumieť obsahu príspevku.</p> <p>Zrozumiteľné, stručné a objektívne opisy sprístupňujú a vysvetľujú váš obsah väčšiemu počtu ľudí.</p> <ul> <li>Spomeňte dôležité prvky</li> <li>Zhrňte text na obrázkoch a fotkách</li> <li>Píšte bežné vety</li> <li>Vynechajte zbytočné informácie</li> <li>Pri zložitých vizuáloch (napr. nákresoch či mapách) sa sústreďte na kľúčové vzorce a závery</li> </ul>",
->>>>>>> v4.5.0
   "interaction_modal.go": "Prejdi",
   "interaction_modal.no_account_yet": "Ešte nemáš účet?",
   "interaction_modal.on_another_server": "Na inom serveri",
   "interaction_modal.on_this_server": "Na tomto serveri",
-<<<<<<< HEAD
-  "interaction_modal.title.favourite": "Ohviezdičkovať príspevok od {name}",
-  "interaction_modal.title.follow": "Sledovať {name}",
-  "interaction_modal.title.reblog": "Zdieľať príspevok od {name}",
-  "interaction_modal.title.reply": "Odpovedať na príspevok od {name}",
-  "interaction_modal.title.vote": "Hlasuj v ankete od {name}",
-=======
->>>>>>> v4.5.0
   "interaction_modal.username_prompt": "Napr. {example}",
   "intervals.full.days": "{number, plural, one {# deň} few {# dni} many {# dní} other {# dní}}",
   "intervals.full.hours": "{number, plural, one {# hodina} few {# hodiny} many {# hodín} other {# hodín}}",
@@ -547,11 +462,7 @@
   "keyboard_shortcuts.toggle_hidden": "Zobraziť/skryť text za varovaním o obsahu",
   "keyboard_shortcuts.toggle_sensitivity": "Zobraziť/skryť médiá",
   "keyboard_shortcuts.toot": "Vytvoriť nový príspevok",
-<<<<<<< HEAD
-  "keyboard_shortcuts.translate": "preložiť príspevok",
-=======
   "keyboard_shortcuts.translate": "Preložiť príspevok",
->>>>>>> v4.5.0
   "keyboard_shortcuts.unfocus": "Odísť z textového poľa",
   "keyboard_shortcuts.up": "Posunúť sa vyššie v zozname",
   "lightbox.close": "Zatvoriť",
@@ -567,11 +478,7 @@
   "lists.add_to_list": "Pridaj do zoznamu",
   "lists.add_to_lists": "Pridaj {name} do zoznamov",
   "lists.create": "Vytvor",
-<<<<<<< HEAD
-  "lists.create_a_list_to_organize": "Vytvor nový zoznam pre spravovanie tvojej domovskej osi",
-=======
   "lists.create_a_list_to_organize": "Vytvorte si nový zoznam na organizáciu svojho domovského kanála",
->>>>>>> v4.5.0
   "lists.create_list": "Vytvor zoznam",
   "lists.delete": "Vymazať zoznam",
   "lists.done": "Hotovo",
@@ -581,11 +488,7 @@
   "lists.find_users_to_add": "Nájdi užívateľov na pridanie",
   "lists.list_name": "Názov zoznamu",
   "lists.new_list_name": "Názov nového zoznamu",
-<<<<<<< HEAD
-  "lists.no_lists_yet": "Ešte žiadne zoznamy.",
-=======
   "lists.no_lists_yet": "Zatiaľ nemáte žiadne zoznamy.",
->>>>>>> v4.5.0
   "lists.no_members_yet": "Zatiaľ bez členov.",
   "lists.no_results_found": "Žiadne výsledky nenájdené.",
   "lists.remove_member": "Odstráň",
@@ -630,10 +533,7 @@
   "navigation_bar.mutes": "Stíšené účty",
   "navigation_bar.opened_in_classic_interface": "Príspevky, účty a iné špeciálne stránky sú predvolene otvárané v klasickom webovom rozhraní.",
   "navigation_bar.preferences": "Nastavenia",
-<<<<<<< HEAD
-=======
   "navigation_bar.privacy_and_reach": "Súkromie a dosah",
->>>>>>> v4.5.0
   "navigation_bar.search": "Hľadať",
   "not_signed_in_indicator.not_signed_in": "Ak chcete získať prístup k tomuto zdroju, prihláste sa.",
   "notification.admin.report": "Účet {name} nahlásil {target}",
@@ -648,25 +548,15 @@
   "notification.label.private_mention": "Súkromné označenie",
   "notification.label.private_reply": "Súkromná odpoveď",
   "notification.label.reply": "Odpoveď",
-<<<<<<< HEAD
-  "notification.mention": "Zmienka",
-=======
   "notification.mention": "Označenie",
->>>>>>> v4.5.0
   "notification.mentioned_you": "{name} ťa spomenul/a",
   "notification.moderation-warning.learn_more": "Zisti viac",
   "notification.moderation_warning": "Dostal/a si varovanie od moderátora",
   "notification.moderation_warning.action_delete_statuses": "Niektoré z tvojich príspevkov boli odstránené.",
   "notification.moderation_warning.action_disable": "Tvoj účet bol vypnutý.",
-<<<<<<< HEAD
-  "notification.moderation_warning.action_mark_statuses_as_sensitive": "Niektoré tvoje príspevky boli označené za chúlostivé.",
-  "notification.moderation_warning.action_none": "Tvoj účet dostal upozornenie od moderátora.",
-  "notification.moderation_warning.action_sensitive": "Tvoje príspevky budú odteraz označované ako chúlostivé.",
-=======
   "notification.moderation_warning.action_mark_statuses_as_sensitive": "Niektoré vaše príspevky boli označené ako citlivé.",
   "notification.moderation_warning.action_none": "Tvoj účet dostal upozornenie od moderátora.",
   "notification.moderation_warning.action_sensitive": "Vaše príspevky budú odteraz označované ako citlivé.",
->>>>>>> v4.5.0
   "notification.moderation_warning.action_silence": "Tvoj účet bol obmedzený.",
   "notification.moderation_warning.action_suspend": "Tvoj účet bol pozastavený.",
   "notification.own_poll": "Vaša anketa sa skončila",
@@ -749,11 +639,7 @@
   "onboarding.profile.save_and_continue": "Uložiť a pokračovať",
   "onboarding.profile.title": "Nastavenie profilu",
   "onboarding.profile.upload_avatar": "Nahrať profilový obrázok",
-<<<<<<< HEAD
-  "onboarding.profile.upload_header": "Nahrať obrázok záhlavia profilu",
-=======
   "onboarding.profile.upload_header": "Nahrať obrázok v záhlaví profilu",
->>>>>>> v4.5.0
   "password_confirmation.exceeds_maxlength": "Potvrdené heslo presahuje maximálnu dĺžku hesla",
   "password_confirmation.mismatching": "Zadané heslá sa nezhodujú",
   "picture_in_picture.restore": "Vrátiť späť",
@@ -910,10 +796,7 @@
   "status.mute_conversation": "Stíšiť konverzáciu",
   "status.open": "Rozbaliť príspevok",
   "status.pin": "Pripnúť na profil",
-<<<<<<< HEAD
-=======
   "status.quote_policy_change": "Zmeňte, kto vás môže citovať",
->>>>>>> v4.5.0
   "status.read_more": "Čítaj ďalej",
   "status.reblog": "Zdieľať",
   "status.reblog_or_quote": "Zdieľať alebo citovať",
@@ -922,11 +805,7 @@
   "status.reblogs.empty": "Nikto ešte tento príspevok nezdieľal. Keď tak niekto urobí, zobrazí sa to tu.",
   "status.redraft": "Vymazať a prepísať",
   "status.remove_bookmark": "Odstrániť záložku",
-<<<<<<< HEAD
-  "status.remove_favourite": "Odstráň z obľúbených",
-=======
   "status.remove_favourite": "Zrušiť ohviezdičkovanie",
->>>>>>> v4.5.0
   "status.replied_in_thread": "Odpovedal/a vo vlákne",
   "status.replied_to": "Odpoveď na {name}",
   "status.reply": "Odpovedať",
@@ -978,14 +857,10 @@
   "video.pause": "Pozastaviť",
   "video.play": "Prehrať",
   "video.volume_down": "Hlasitosť nadol",
-<<<<<<< HEAD
-  "video.volume_up": "Hlasitosť nahor"
-=======
   "video.volume_up": "Hlasitosť nahor",
   "visibility_modal.header": "Viditeľnosť a interakcia",
   "visibility_modal.quote_followers": "Iba sledujúce účty",
   "visibility_modal.quote_label": "Kto vás môže citovať",
   "visibility_modal.quote_nobody": "Iba ja",
   "visibility_modal.quote_public": "Ktokoľvek"
->>>>>>> v4.5.0
 }

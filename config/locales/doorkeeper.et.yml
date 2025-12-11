@@ -177,11 +177,7 @@ et:
       read:filters: näha su filtreid
       read:follows: näha su jälgimisi
       read:lists: näha su loetelusid
-<<<<<<< HEAD
-      read:mutes: näha su vaigistusi
-=======
       read:mutes: näha su summutamisi
->>>>>>> v4.5.0
       read:notifications: näha teateid
       read:reports: näha teavitusi
       read:search: otsida sinu nimel

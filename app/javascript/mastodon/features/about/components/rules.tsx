@@ -32,18 +32,6 @@ interface Rule extends BaseRule {
   translations?: Record<string, BaseRule>;
 }
 
-<<<<<<< HEAD
-export const RulesSection: FC<RulesSectionProps> = ({ isLoading = false }) => {
-  const intl = useIntl();
-  const [locale, setLocale] = useState(intl.locale);
-  const rules = useAppSelector((state) => rulesSelector(state, locale));
-  const localeOptions = useAppSelector((state) =>
-    localeOptionsSelector(state, intl),
-  );
-  const handleLocaleChange: ChangeEventHandler<HTMLSelectElement> = useCallback(
-    (e) => {
-      setLocale(e.currentTarget.value);
-=======
 function getDefaultSelectedLocale(
   currentUiLocale: string,
   localeOptions: SelectItem[],
@@ -76,7 +64,6 @@ export const RulesSection: FC<RulesSectionProps> = ({ isLoading = false }) => {
   const handleLocaleChange: ChangeEventHandler<HTMLSelectElement> = useCallback(
     (e) => {
       setSelectedLocale(e.currentTarget.value);
->>>>>>> v4.5.0
     },
     [],
   );
@@ -109,27 +96,6 @@ export const RulesSection: FC<RulesSectionProps> = ({ isLoading = false }) => {
         ))}
       </ol>
 
-<<<<<<< HEAD
-      <div className='rules-languages'>
-        <label htmlFor='language-select'>
-          <FormattedMessage
-            id='about.language_label'
-            defaultMessage='Language'
-          />
-        </label>
-        <select onChange={handleLocaleChange} id='language-select'>
-          {localeOptions.map((option) => (
-            <option
-              key={option.value}
-              value={option.value}
-              selected={option.value === locale}
-            >
-              {option.text}
-            </option>
-          ))}
-        </select>
-      </div>
-=======
       {localeOptions.length > 1 && (
         <div className='rules-languages'>
           <label htmlFor='language-select'>
@@ -151,7 +117,6 @@ export const RulesSection: FC<RulesSectionProps> = ({ isLoading = false }) => {
           </select>
         </div>
       )}
->>>>>>> v4.5.0
     </Section>
   );
 };

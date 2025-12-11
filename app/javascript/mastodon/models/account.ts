@@ -8,10 +8,6 @@ import type {
   ApiAccountRoleJSON,
   ApiAccountJSON,
 } from 'mastodon/api_types/accounts';
-<<<<<<< HEAD
-import emojify from 'mastodon/features/emoji/emoji';
-=======
->>>>>>> v4.5.0
 import { unescapeHTML } from 'mastodon/utils/html';
 
 import { CustomEmojiFactory, makeEmojiMap } from './custom_emoji';
@@ -105,14 +101,7 @@ export const accountDefaultValues: AccountShape = {
 
 const AccountFactory = ImmutableRecord<AccountShape>(accountDefaultValues);
 
-<<<<<<< HEAD
-function createAccountField(
-  jsonField: ApiAccountFieldJSON,
-  emojiMap: EmojiMap,
-) {
-=======
 function createAccountField(jsonField: ApiAccountFieldJSON) {
->>>>>>> v4.5.0
   return AccountFieldFactory({
     ...jsonField,
     name_emojified: escapeTextContentForBrowser(jsonField.name),
@@ -136,25 +125,6 @@ export function createAccountFromServerJSON(serverJSON: ApiAccountJSON) {
     ...accountJSON,
     moved: moved?.id,
     fields: ImmutableList(
-<<<<<<< HEAD
-      serverJSON.fields.map((field) => createAccountField(field, emojiMap)),
-    ),
-    emojis: ImmutableList(
-      serverJSON.emojis.map((emoji) => CustomEmojiFactory(emoji)),
-    ),
-    roles: ImmutableList(
-      serverJSON.roles?.map((role) => AccountRoleFactory(role)),
-    ),
-    display_name_html: emojify(
-      escapeTextContentForBrowser(displayName),
-      emojiMap,
-    ),
-    note_emojified: emojify(accountJSON.note, emojiMap),
-    note_plain: unescapeHTML(accountJSON.note),
-    url:
-      accountJSON.url.startsWith('http://') ||
-      accountJSON.url.startsWith('https://')
-=======
       serverJSON.fields.map((field) => createAccountField(field)),
     ),
     emojis: ImmutableList(
@@ -169,7 +139,6 @@ export function createAccountFromServerJSON(serverJSON: ApiAccountJSON) {
     url:
       accountJSON.url?.startsWith('http://') ||
       accountJSON.url?.startsWith('https://')
->>>>>>> v4.5.0
         ? accountJSON.url
         : accountJSON.uri,
   });

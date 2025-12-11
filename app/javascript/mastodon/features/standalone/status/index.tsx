@@ -11,11 +11,7 @@ import { hydrateStore } from 'mastodon/actions/store';
 import { Router } from 'mastodon/components/router';
 import { DetailedStatus } from 'mastodon/features/status/components/detailed_status';
 import { useRenderSignal } from 'mastodon/hooks/useRenderSignal';
-<<<<<<< HEAD
-import initialState from 'mastodon/initial_state';
-=======
 import { initialState } from 'mastodon/initial_state';
->>>>>>> v4.5.0
 import { IntlProvider } from 'mastodon/locales';
 import { makeGetStatus, makeGetPictureInPicture } from 'mastodon/selectors';
 import { store, useAppSelector, useAppDispatch } from 'mastodon/store';

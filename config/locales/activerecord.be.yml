@@ -15,14 +15,11 @@ be:
       user/invite_request:
         text: Прычына
     errors:
-<<<<<<< HEAD
-=======
       attributes:
         domain:
           invalid: не з’яўляецца сапраўдным даменным імем
       messages:
         invalid_domain_on_line: "%{value} не пасуе для карэктнай назвы дамена"
->>>>>>> v4.5.0
       models:
         account:
           attributes:
@@ -47,11 +44,7 @@ be:
           attributes:
             account_id:
               taken: ужо ў спісе
-<<<<<<< HEAD
-          must_be_following: мусіць быць падпісаным уліковым запісам
-=======
           must_be_following: мусіць быць карыстальнікам у Вашых падпісках
->>>>>>> v4.5.0
         status:
           attributes:
             reblog:

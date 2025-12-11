@@ -193,11 +193,7 @@ be:
         create_domain_block: Стварыць даменны блок
         create_email_domain_block: Стварыць даменны блок электроннай пошты
         create_ip_block: Стварыць IP правіла
-<<<<<<< HEAD
-        create_relay: Стварыць паўтор
-=======
         create_relay: Стварыць рэтранслятар
->>>>>>> v4.5.0
         create_unavailable_domain: Стварыць недаступны Дамен
         create_user_role: Стварыць ролю
         create_username_block: Стварыць правіла імя карыстальніка
@@ -210,39 +206,23 @@ be:
         destroy_email_domain_block: Выдаліць даменны блок электроннай пошты
         destroy_instance: Вычысціць дамен
         destroy_ip_block: Выдаліць IP правіла
-<<<<<<< HEAD
-        destroy_relay: Выдаліць паўтор
-=======
         destroy_relay: Выдаліць рэтранслятар
->>>>>>> v4.5.0
         destroy_status: Выдаліць допіс
         destroy_unavailable_domain: Выдаліць недаступны дамен
         destroy_user_role: Выдаліць ролю
         destroy_username_block: Выдаліць правіла імя карыстальніка
         disable_2fa_user: Адключыць двухэтапнае спраўджанне
         disable_custom_emoji: Адключыць адвольныя эмодзі
-<<<<<<< HEAD
-        disable_relay: Выключыць паўтор
-        disable_sign_in_token_auth_user: Адключыць аўтарызацыю праз электронную пошту для карыстальніка
-        disable_user: Адключыць карыстальніка
-        enable_custom_emoji: Уключыць адвольныя эмодзі
-        enable_relay: Уключыць паўтор
-=======
         disable_relay: Выключыць рэтранслятар
         disable_sign_in_token_auth_user: Адключыць аўтарызацыю праз электронную пошту для карыстальніка
         disable_user: Адключыць карыстальніка
         enable_custom_emoji: Уключыць адвольныя эмодзі
         enable_relay: Уключыць рэтранслятар
->>>>>>> v4.5.0
         enable_sign_in_token_auth_user: Уключыць аўтарызацыю праз электронную пошту для карыстальніка
         enable_user: Уключыць карыстальніка
         memorialize_account: Запомніць уліковы запіс
         promote_user: Павысіць правы Карыстальніка
-<<<<<<< HEAD
-        publish_terms_of_service: Апублікаваць Умовы выкарыстаньня
-=======
         publish_terms_of_service: Апублікаваць умовы выкарыстання
->>>>>>> v4.5.0
         reject_appeal: Адхіліць абскарджанне
         reject_user: Адмовіць карыстальніку
         remove_avatar_user: Выдаліць аватар
@@ -281,11 +261,7 @@ be:
         create_domain_block_html: "%{name} заблакіраваў дамен %{target}"
         create_email_domain_block_html: "%{name} заблакіраваў дамен эл. пошты %{target}"
         create_ip_block_html: "%{name} стварыў правіла для IP %{target}"
-<<<<<<< HEAD
-        create_relay_html: "%{name} стварыў(-а) паўтор %{target}"
-=======
         create_relay_html: "%{name} стварыў(-ла) рэтранслятар %{target}"
->>>>>>> v4.5.0
         create_unavailable_domain_html: "%{name} прыпыніў дастаўку да дамена %{target}"
         create_user_role_html: "%{name} зрабіў ролю %{target}"
         create_username_block_html: Адміністратар %{name} дадаў правіла для імён карыстальнікаў, у якіх %{target}
@@ -298,39 +274,23 @@ be:
         destroy_email_domain_block_html: "%{name} разблакіраваў дамен эл. пошты %{target}"
         destroy_instance_html: "%{name} цалкам прыбраў дамен %{target}"
         destroy_ip_block_html: "%{name} выдаліў правіла для IP %{target}"
-<<<<<<< HEAD
-        destroy_relay_html: "%{name} выдаліў(-ла) паўтор %{target}"
-=======
         destroy_relay_html: "%{name} выдаліў(-ла) рэтранслятар %{target}"
->>>>>>> v4.5.0
         destroy_status_html: "%{name} выдаліў допіс %{target}"
         destroy_unavailable_domain_html: "%{name} дазволіў працягнуць адпраўку на дамен %{target}"
         destroy_user_role_html: "%{name} выдаліў ролю %{target}"
         destroy_username_block_html: Адміністратар %{name} прыбраў правіла для імён карыстальнікаў, у якіх %{target}
         disable_2fa_user_html: "%{name} амяніў абавязковую двухфактарную верыфікацыю для карыстальніка %{target}"
         disable_custom_emoji_html: "%{name} заблакіраваў эмодзі %{target}"
-<<<<<<< HEAD
-        disable_relay_html: "%{name} выключыў(-ла) паўтор %{target}"
-        disable_sign_in_token_auth_user_html: "%{name} адключыў уваход праз эл. пошту для %{target}"
-        disable_user_html: "%{name} адключыў уваход для карыстальніка %{target}"
-        enable_custom_emoji_html: "%{name} уключыў эмодзі %{target}"
-        enable_relay_html: "%{name} уключыў(-ла) паўтор %{target}"
-=======
         disable_relay_html: "%{name} выключыў(-ла) рэтранслятар %{target}"
         disable_sign_in_token_auth_user_html: "%{name} адключыў уваход праз эл. пошту для %{target}"
         disable_user_html: "%{name} адключыў уваход для карыстальніка %{target}"
         enable_custom_emoji_html: "%{name} уключыў эмодзі %{target}"
         enable_relay_html: "%{name} уключыў(-ла) рэтранслятар %{target}"
->>>>>>> v4.5.0
         enable_sign_in_token_auth_user_html: "%{name} уключыў уваход праз эл. пошту для %{target}"
         enable_user_html: "%{name} уключыў уваход для карыстальніка %{target}"
         memorialize_account_html: Карыстальнік %{name} пераключыў уліковы запіс %{target} у старонку памяці
         promote_user_html: "%{name} павысіў карыстальніка %{target}"
-<<<<<<< HEAD
-        publish_terms_of_service_html: "%{name} апублікаваў абнаўленьне ўмоваў абслугоўваньня"
-=======
         publish_terms_of_service_html: "%{name} апублікаваў(-ла) абнаўленні ва ўмовах выкарыстання"
->>>>>>> v4.5.0
         reject_appeal_html: "%{name} адхіліў запыт на абскарджанне %{target}"
         reject_user_html: "%{name} адхіліў рэгістрацыю з %{target}"
         remove_avatar_user_html: "%{name} выдаліў аватар %{target}"
@@ -727,11 +687,7 @@ be:
         suspend_description_html: Уліковы запіс і ўсё яго змесціва будзе недаступна і ў далейшым выдалены, узаемадзеянне з ім будзе немагчыма. Магчыма адмяніць на працягу 30 дзён. Закрывае ўсе скаргі на гэты ўліковы запіс.
       actions_description_html: Вырашыце, якія дзеянні распачаць, каб вырашыць гэтую скаргу. Калі вы прымеце меры пакарання ў дачыненні да ўліковага запісу, пра які паведамляецца, ім будзе адпраўлена апавяшчэнне па электроннай пошце, за выключэннем выпадкаў, калі выбрана катэгорыя <strong>Спам</strong>.
       actions_description_remote_html: Вырашыце як паступіць з гэтай скаргай. Гэта паўплывае толькі на тое як <strong>ваш</strong> сервер звязваецца з аддалёным уліковым запісам і апрацоўвае яго кантэнт.
-<<<<<<< HEAD
-      actions_no_posts: У гэтай скаргі няма зьвязаных паведамленьняў для выдаленьня
-=======
       actions_no_posts: Да гэтай скаргі не прывязаны допісы да выдалення
->>>>>>> v4.5.0
       add_to_report: Дадаць яшчэ дэталяў да скаргі
       already_suspended_badges:
         local: Ужо прыпынена на гэтым серверы
@@ -972,11 +928,7 @@ be:
         add_to_report: 'Дадаць да скаргі #%{id}'
         remove_from_report: Выдаліць са справаздачы
         report: Справаздача
-<<<<<<< HEAD
-      contents: Зьмест
-=======
       contents: Змест
->>>>>>> v4.5.0
       deleted: Выдалены
       favourites: Упадабаныя
       history: Гісторыя версій
@@ -985,11 +937,7 @@ be:
       media:
         title: Медыя
       metadata: Метаданыя
-<<<<<<< HEAD
-      no_history: Гэты пост не рэдагаваўся
-=======
       no_history: Гэты допіс не рэдагаваўся
->>>>>>> v4.5.0
       no_status_selected: Ніводная публікацыя не была зменена, бо ніводная не была выбрана
       open: Адкрыць допіс
       original_status: Зыходны допіс
@@ -999,14 +947,9 @@ be:
       status_changed: Допіс зменены
       status_title: Допіс карыстальніка @%{name}
       title: Допісы карыстальніка - @%{name}
-<<<<<<< HEAD
-      trending: Папулярныя
-      view_publicly: Глядзець публічна
-=======
       trending: Трэндавае
       view_publicly: Глядзець публічна
       view_quoted_post: Паглядзець цытаваны допіс
->>>>>>> v4.5.0
       visibility: Бачнасць
       with_media: З медыя
     strikes:
@@ -1051,13 +994,8 @@ be:
       sidekiq_process_check:
         message_html: Не працуе працэс Sidekiq для %{value} чаргі. Калі ласка праверце вашу канфігурацыю Sidekiq
       software_version_check:
-<<<<<<< HEAD
-        action: Праверыць наяўнасьць абнаўленьняў
-        message_html: Даступна абнаўленьне Mastodon.
-=======
         action: Праверыць наяўнасць абнаўленняў
         message_html: Даступна абнаўленне Mastodon.
->>>>>>> v4.5.0
       software_version_critical_check:
         action: Прагледзець даступныя абнаўленні
         message_html: Даступна крытычнае абнаўленне Mastodon, абнавіцеся як мага хутчэй.
@@ -1091,16 +1029,6 @@ be:
       title: Хэштэгі
       updated_msg: Налады хэштэгаў паспяхова змененыя
     terms_of_service:
-<<<<<<< HEAD
-      back: Вернуцца да ўмоваў абслугоўваньня
-      changelog: Што зьмянілася
-      create: Выкарыстоўвайце свой уласны
-      current: Цякучы
-      draft: Чарнавік
-      generate: Выкарыстаць шаблон
-      generates:
-        action: Зґенераваць
-=======
       back: Вернуцца да ўмоў выкарыстання
       changelog: Што змянілася
       create: Выкарыстоўвайце свой тэкст
@@ -1132,7 +1060,6 @@ be:
       published_on_html: Апублікавана %{date}
       save_draft: Захаваць чарнавік
       title: Умовы выкарыстання
->>>>>>> v4.5.0
     title: Адміністрацыя
     trends:
       allow: Дазволіць
@@ -1391,10 +1318,7 @@ be:
     set_new_password: Прызначыць новы пароль
     setup:
       email_below_hint_html: Праверце папку са спамам або зрабіце новы запыт. Вы можаце выправіць свой email, калі ён няправільны.
-<<<<<<< HEAD
-=======
       email_settings_hint_html: Націсніце на спасылку, якую мы адправілі на %{email}, каб пачаць карыстацца Mastodon. Мы пакуль пачакаем тут.
->>>>>>> v4.5.0
       link_not_received: Не атрымалі спасылку?
       new_confirmation_instructions_sent: Праз некалькі хвілін вы атрымаеце новы ліст на email са спасылкай для пацверджання!
       title: Праверце вашу пошту
@@ -1403,10 +1327,7 @@ be:
       title: Уваход у %{domain}
     sign_up:
       manual_review: Рэгістрацыі на %{domain} праходзяць ручную праверку нашымі мадэратарамі. Каб дапамагчы нам апрацаваць вашу рэгістрацыю, напішыце крыху пра сябе і чаму вы хочаце мець уліковы запіс на %{domain}.
-<<<<<<< HEAD
-=======
       preamble: З уліковым запісам на гэтым серверы Mastodon Вы зможаце падпісацца на любога чалавека ў федэральным сусвеце, незалежна ад таго, на якім серверы знаходзіцца яго ўліковы запіс.
->>>>>>> v4.5.0
       title: Наладзьма вас на %{domain}.
     status:
       account_status: Стан уліковага запісу
@@ -1642,8 +1563,6 @@ be:
       merge_long: Захаваць існуючыя запісы і дадаць новыя
       overwrite: Перазапісаць
       overwrite_long: Замяніць бягучыя запісы на новыя
-<<<<<<< HEAD
-=======
     overwrite_preambles:
       blocking_html:
         few: Вы збіраецеся <strong>замяніць свой спіс заблакіраваных карыстальнікаў</strong> <strong>%{count} карыстальнікамі</strong> з <strong>%{filename}</strong>.
@@ -1706,7 +1625,6 @@ be:
         many: Вы збіраецеся пачаць <strong>ігнараваць</strong> <strong>%{count} уліковых запісаў</strong> з <strong>%{filename}</strong>.
         one: Вы збіраецеся пачаць <strong>ігнараваць</strong> <strong>%{count} уліковы запіс</strong> з <strong>%{filename}</strong>.
         other: Вы збіраецеся пачаць <strong>ігнараваць</strong> <strong>%{count} уліковыя запісы</strong> з <strong>%{filename}</strong>.
->>>>>>> v4.5.0
     preface: Вы можаце імпартаваць даныя, экспартаваныя вамі з іншага сервера, напрыклад, спіс людзей, на якіх вы падпісаны або якіх блакуеце.
     recent_imports: Нядаўнія імпарты
     states:
@@ -1979,10 +1897,7 @@ be:
   scheduled_statuses:
     over_daily_limit: Вы перавысілі ліміт ў %{limit} запланаваных на сёння допісаў
     over_total_limit: Вы перавысілі ліміт ў %{limit} запланаваных допісаў
-<<<<<<< HEAD
-=======
     too_soon: дата публікацыі мусіць быць у будучыні
->>>>>>> v4.5.0
   self_destruct:
     lead_html: На жаль, дамен <strong>%{domain}</strong> зачыняецца назаўсёды. Калі ў вас быў уліковы запіс, вы не зможаце працягваць выкарыстоўваць яго, але вы ўсё яшчэ можаце запытаць рэзервовае капіраванне вашых даных.
     title: Гэты сервер зачыняецца
@@ -2167,16 +2082,12 @@ be:
   tags:
     does_not_match_previous_name: не супадае з папярэднім імям
   terms_of_service:
-<<<<<<< HEAD
-    title: Умовы абслугоўваньня
-=======
     title: Умовы выкарыстання
   terms_of_service_interstitial:
     future_preamble_html: Мы ўносім праўкі ў нашыя ўмовы карыстання, якія пачнуць дзейнічаць <strong>%{date}</strong>. Мы раім Вам азнаёміцца з абноўленымі ўмовамі.
     past_preamble_html: Пасля Вашага апошняга наведвання мы ўнеслі праўкі ў нашыя ўмовы карыстання. Мы раім Вам азнаёміцца з абноўленымі ўмовамі.
     review_link: Прачытаць умовы карыстання
     title: На %{domain} змяняюцца ўмовы карыстання
->>>>>>> v4.5.0
   themes:
     contrast: Mastodon (высокі кантраст)
     default: Mastodon (цёмная)

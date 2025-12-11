@@ -262,14 +262,11 @@
   "confirmations.remove_from_followers.confirm": "Követő eltávolítása",
   "confirmations.remove_from_followers.message": "{name} követ téged. Biztos, hogy folytatod?",
   "confirmations.remove_from_followers.title": "Követő eltávolítása?",
-<<<<<<< HEAD
-=======
   "confirmations.revoke_quote.confirm": "Bejegyzés eltávolítása",
   "confirmations.revoke_quote.message": "Ez a művelet nem vonható vissza.",
   "confirmations.revoke_quote.title": "Bejegyzés eltávolítása?",
   "confirmations.unblock.confirm": "Tiltás feloldása",
   "confirmations.unblock.title": "{name} tiltásának feloldása?",
->>>>>>> v4.5.0
   "confirmations.unfollow.confirm": "Követés visszavonása",
   "confirmations.unfollow.title": "{name} követésének megszüntetése?",
   "confirmations.withdraw_request.confirm": "Kérés visszavonása",
@@ -369,19 +366,16 @@
   "explore.trending_links": "Hírek",
   "explore.trending_statuses": "Bejegyzések",
   "explore.trending_tags": "Hashtagek",
-<<<<<<< HEAD
-  "federation.change": "Adjust status federation",
-  "federation.federated.long": "Allow toot to reach other instances",
-  "federation.federated.short": "Federated",
-  "federation.local_only.long": "Restrict this toot only to my instance",
-  "federation.local_only.short": "Local-only",
-=======
->>>>>>> v4.5.0
   "featured_carousel.header": "{count, plural, one {Kiemelt bejegyzés} other {Kiemelt bejegyzések}}",
   "featured_carousel.next": "Következő",
   "featured_carousel.post": "Bejegyzés",
   "featured_carousel.previous": "Előző",
   "featured_carousel.slide": "{index} / {total}",
+  "federation.change": "Adjust status federation",
+  "federation.federated.long": "Allow toot to reach other instances",
+  "federation.federated.short": "Federated",
+  "federation.local_only.long": "Restrict this toot only to my instance",
+  "federation.local_only.short": "Local-only",
   "filter_modal.added.context_mismatch_explanation": "Ez a szűrőkategória nem érvényes abban a környezetben, amelyből elérted ezt a bejegyzést. Ha ebben a környezetben is szűrni szeretnéd a bejegyzést, akkor szerkesztened kell a szűrőt.",
   "filter_modal.added.context_mismatch_title": "Környezeti eltérés.",
   "filter_modal.added.expired_explanation": "Ez a szűrőkategória elévült, a használatához módosítanod kell az elévülési dátumot.",
@@ -460,11 +454,6 @@
   "hints.profiles.see_more_followers": "További követők megtekintése itt: {domain}",
   "hints.profiles.see_more_follows": "További követések megtekintése itt: {domain}",
   "hints.profiles.see_more_posts": "További bejegyzések megtekintése itt: {domain}",
-<<<<<<< HEAD
-  "hints.threads.replies_may_be_missing": "A más kiszolgálókról érkező válaszok lehet, hogy hiányoznak.",
-  "hints.threads.see_more": "További válaszok megtekintése itt: {domain}",
-=======
->>>>>>> v4.5.0
   "home.column_settings.show_quotes": "Idézetek megjelenítése",
   "home.column_settings.show_reblogs": "Megtolások megjelenítése",
   "home.column_settings.show_replies": "Válaszok megjelenítése",
@@ -486,28 +475,12 @@
   "ignore_notifications_modal.private_mentions_title": "Figyelmen kívül hagyod a kéretlen privát említéseket?",
   "info_button.label": "Súgó",
   "info_button.what_is_alt_text": "<h1>Mi az alternatív szöveg?</h1> <p>Az alternatív szöveg képleírást biztosít a látássérültek, az alacsony sávszélességű kapcsolatokkal rendelkezők, illetve a bővebb kontextust keresők számára.</p> <p>Az egyértelmű, tömör és objektív alternatív szöveg megírásával mindenki számára akadálymentesebb és könnyebben érthető lesz.</p> <ul> <li>Rögzítsd a fontos elemeket.</li> <li>Foglald össze szövegesen a képeket.</li> <li>Használj szabályos mondatszerkezetet.</li> <li>Kerüld a felesleges információkat.</li> <li>Összetett vizuális ábrákon (például diagramokon vagy térképeken) összpontosíts a trendekre és a legfontosabb megállapításokra.</li> </ul>",
-<<<<<<< HEAD
-  "interaction_modal.action.favourite": "A folytatáshoz a fiókodból kell kedvencnek jelölnöd.",
-  "interaction_modal.action.follow": "A folytatáshoz a fiókodból kell követned.",
-  "interaction_modal.action.reblog": "A folytatáshoz a fiókodból kell megosztanod.",
-  "interaction_modal.action.reply": "A folytatáshoz a fiókodból kell válaszolnod rá.",
-  "interaction_modal.action.vote": "A folytatáshoz a fiókodból kell szavaznod.",
-=======
   "interaction_modal.action": "Hogy interakcióba lépj {name} bejegyzésével, be kell jelentkezned a fiókodba az általad használt Mastodon kiszolgálón.",
->>>>>>> v4.5.0
   "interaction_modal.go": "Ugrás",
   "interaction_modal.no_account_yet": "Még nincs fiókod?",
   "interaction_modal.on_another_server": "Másik kiszolgálón",
   "interaction_modal.on_this_server": "Ezen a kiszolgálón",
-<<<<<<< HEAD
-  "interaction_modal.title.favourite": "{name} bejegyzésének megjelölése kedvencként",
-  "interaction_modal.title.follow": "{name} követése",
-  "interaction_modal.title.reblog": "{name} bejegyzésének megtolása",
-  "interaction_modal.title.reply": "Válasz {name} bejegyzésére",
-  "interaction_modal.title.vote": "Szavazz {name} szavazásában",
-=======
   "interaction_modal.title": "Jelentkezz be a folytatáshoz",
->>>>>>> v4.5.0
   "interaction_modal.username_prompt": "Például {example}",
   "intervals.full.days": "{number, plural, one {# nap} other {# nap}}",
   "intervals.full.hours": "{number, plural, one {# óra} other {# óra}}",
@@ -528,10 +501,7 @@
   "keyboard_shortcuts.home": "Saját idővonal megnyitása",
   "keyboard_shortcuts.hotkey": "Gyorsbillentyű",
   "keyboard_shortcuts.legend": "Jelmagyarázat megjelenítése",
-<<<<<<< HEAD
-=======
   "keyboard_shortcuts.load_more": "Fókuszálás a „Több betöltése” gombra",
->>>>>>> v4.5.0
   "keyboard_shortcuts.local": "Helyi idővonal megnyitása",
   "keyboard_shortcuts.mention": "Szerző megemlítése",
   "keyboard_shortcuts.muted": "Némított felhasználók listájának megnyitása",
@@ -951,15 +921,6 @@
   "status.mute_conversation": "Beszélgetés némítása",
   "status.open": "Bejegyzés kibontása",
   "status.pin": "Kitűzés a profilodra",
-<<<<<<< HEAD
-  "status.quote_error.filtered": "A szűrőid miatt rejtett",
-  "status.quote_error.not_found": "Ez a bejegyzés nem jeleníthető meg.",
-  "status.quote_error.pending_approval": "Ez a bejegyzés az eredeti szerző jóváhagyására vár.",
-  "status.quote_error.rejected": "Ez a bejegyzés nem jeleníthető meg, mert az eredeti szerzője nem engedélyezi az idézését.",
-  "status.quote_error.removed": "Ezt a bejegyzés eltávolította a szerzője.",
-  "status.quote_error.unauthorized": "Ez a bejegyzés nem jeleníthető meg, mert nem jogosult a megtekintésére.",
-  "status.quote_post_author": "Szerző: {name}",
-=======
   "status.quote": "Idézés",
   "status.quote.cancel": "Idézés elvetése",
   "status.quote_error.blocked_account_hint.title": "Ez a bejegyzés rejtett, mert blokkoltad @{name} felhasználót.",
@@ -982,7 +943,6 @@
   "status.quotes.empty": "Senki sem idézte még ezt a bejegyzést. Ha valaki megteszi, itt fog megjelenni.",
   "status.quotes.local_other_disclaimer": "A szerző által elutasított idézések nem fognak megjelenni.",
   "status.quotes.remote_other_disclaimer": "Csak a(z) {domain} idézései jelennek meg itt garantáltan. A szerző által elutasított idézések nem fognak megjelenni.",
->>>>>>> v4.5.0
   "status.read_more": "Bővebben",
   "status.reblog": "Megtolás",
   "status.reblog_or_quote": "Megtolás vagy idézés",
@@ -993,10 +953,7 @@
   "status.redraft": "Törlés és újraírás",
   "status.remove_bookmark": "Könyvjelző eltávolítása",
   "status.remove_favourite": "Eltávolítás a kedvencek közül",
-<<<<<<< HEAD
-=======
   "status.remove_quote": "Eltávolítás",
->>>>>>> v4.5.0
   "status.replied_in_thread": "Válaszolva a szálban",
   "status.replied_to": "Megválaszolva {name} számára",
   "status.reply": "Válasz",
@@ -1041,10 +998,7 @@
   "upload_button.label": "Képek, videó vagy audiófájl hozzáadása",
   "upload_error.limit": "A fájlfeltöltési korlát elérésre került.",
   "upload_error.poll": "Szavazásnál nem lehet fájlt feltölteni.",
-<<<<<<< HEAD
-=======
   "upload_error.quote": "Idézésnél nem lehet fájlt feltölteni.",
->>>>>>> v4.5.0
   "upload_form.drag_and_drop.instructions": "Egy médiamelléklet kiválasztásához nyomj Szóközt vagy Entert. Húzás közben használd a nyílgombokat a médiamelléklet adott irányba történő mozgatásához. A médiamelléklet új pozícióba helyezéséhez nyomd meg a Szóközt vagy az Entert, vagy a megszakításhoz nyomd meg az Esc gombot.",
   "upload_form.drag_and_drop.on_drag_cancel": "Az áthúzás megszakítva. A(z) {item} médiamelléklet el lett dobva.",
   "upload_form.drag_and_drop.on_drag_end": "A(z) {item} médiamelléklet el lett dobva.",
@@ -1067,9 +1021,6 @@
   "video.skip_forward": "Előreugrás",
   "video.unmute": "Némítás feloldása",
   "video.volume_down": "Hangerő le",
-<<<<<<< HEAD
-  "video.volume_up": "Hangerő fel"
-=======
   "video.volume_up": "Hangerő fel",
   "visibility_modal.button_title": "Láthatóság beállítása",
   "visibility_modal.direct_quote_warning.text": "Ha mented a jelenlegi beállításokat, akkor a beágyazott idézet hivatkozássá lesz alakítva.",
@@ -1087,5 +1038,4 @@
   "visibility_modal.quote_nobody": "Csak én",
   "visibility_modal.quote_public": "Bárki",
   "visibility_modal.save": "Mentés"
->>>>>>> v4.5.0
 }

@@ -270,16 +270,12 @@
   "explore.trending_links": "Berita",
   "explore.trending_statuses": "Kiriman",
   "explore.trending_tags": "Tagar",
-<<<<<<< HEAD
   "federation.change": "Adjust status federation",
   "federation.federated.long": "Allow toot to reach other instances",
   "federation.federated.short": "Federated",
   "federation.local_only.long": "Restrict this toot only to my instance",
   "federation.local_only.short": "Local-only",
-  "filter_modal.added.context_mismatch_explanation": "Indonesia Translate",
-=======
   "filter_modal.added.context_mismatch_explanation": "Kategori filter ini tidak berlaku untuk konteks di mana Anda mengakses postingan ini. Jika Anda ingin postingan tersebut difilter juga dalam konteks ini, Anda perlu mengedit filter.",
->>>>>>> v4.5.0
   "filter_modal.added.context_mismatch_title": "Konteks tidak cocok!",
   "filter_modal.added.expired_explanation": "Kategori saringan ini telah kedaluwarsa, Anda harus mengubah tanggal kedaluwarsa untuk diterapkan.",
   "filter_modal.added.expired_title": "Saringan kedaluwarsa!",

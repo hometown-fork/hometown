@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-import type { ApiRelationshipJSON } from '@/mastodon/api_types/relationships';
-import { createAccountFromServerJSON } from '@/mastodon/models/account';
-=======
 import { Map as ImmutableMap } from 'immutable';
 
 import type { ApiRelationshipJSON } from '@/mastodon/api_types/relationships';
@@ -12,7 +8,6 @@ import type {
 } from '@/mastodon/features/emoji/types';
 import { createAccountFromServerJSON } from '@/mastodon/models/account';
 import type { Status } from '@/mastodon/models/status';
->>>>>>> v4.5.0
 import type { ApiAccountJSON } from 'mastodon/api_types/accounts';
 
 type FactoryOptions<T> = {
@@ -60,8 +55,6 @@ export const accountFactoryState = (
   options: FactoryOptions<ApiAccountJSON> = {},
 ) => createAccountFromServerJSON(accountFactory(options));
 
-<<<<<<< HEAD
-=======
 export const statusFactory: FactoryFunction<ApiStatusJSON> = ({
   id,
   ...data
@@ -93,7 +86,6 @@ export const statusFactoryState = (
     statusFactory(options) as unknown as Record<string, unknown>,
   ) as unknown as Status;
 
->>>>>>> v4.5.0
 export const relationshipsFactory: FactoryFunction<ApiRelationshipJSON> = ({
   id,
   ...data
@@ -115,8 +107,6 @@ export const relationshipsFactory: FactoryFunction<ApiRelationshipJSON> = ({
   showing_reblogs: true,
   ...data,
 });
-<<<<<<< HEAD
-=======
 
 export function unicodeEmojiFactory(
   data: Partial<UnicodeEmojiData> = {},
@@ -140,4 +130,3 @@ export function customEmojiFactory(
     ...data,
   };
 }
->>>>>>> v4.5.0

@@ -98,32 +98,6 @@ export const Notifications: React.FC<{
   );
 
   const columnRef = useRef<ColumnRef>(null);
-<<<<<<< HEAD
-
-  const selectChild = useCallback((index: number, alignTop: boolean) => {
-    const container = columnRef.current?.node as HTMLElement | undefined;
-
-    if (!container) return;
-
-    const element = container.querySelector<HTMLElement>(
-      `article:nth-of-type(${index + 1}) .focusable`,
-    );
-
-    if (element) {
-      if (alignTop && container.scrollTop > element.offsetTop) {
-        element.scrollIntoView(true);
-      } else if (
-        !alignTop &&
-        container.scrollTop + container.clientHeight <
-          element.offsetTop + element.offsetHeight
-      ) {
-        element.scrollIntoView(false);
-      }
-      element.focus();
-    }
-  }, []);
-=======
->>>>>>> v4.5.0
 
   // Keep track of mounted components for unread notification handling
   useEffect(() => {

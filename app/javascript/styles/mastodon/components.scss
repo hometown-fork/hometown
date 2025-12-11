@@ -197,8 +197,6 @@
       &:hover {
         border-color: $ui-button-disabled-color;
         color: $ui-button-disabled-color;
-<<<<<<< HEAD
-=======
       }
     }
   }
@@ -234,7 +232,6 @@
       &:hover {
         border-color: transparent;
         color: $ui-button-disabled-color;
->>>>>>> v4.5.0
       }
     }
   }
@@ -399,15 +396,9 @@
 
   &.overlayed {
     box-sizing: content-box;
-<<<<<<< HEAD
-    background: rgba($black, 0.65);
-    backdrop-filter: $backdrop-blur-filter;
-    color: rgba($white, 0.7);
-=======
     background: color.change($black, $alpha: 0.65);
     backdrop-filter: $backdrop-blur-filter;
     color: color.change($white, $alpha: 0.7);
->>>>>>> v4.5.0
     border-radius: 4px;
     padding: 2px;
 
@@ -652,10 +643,6 @@
     transition: border-color 300ms linear;
     position: relative;
     background: var(--input-background-color);
-<<<<<<< HEAD
-    overflow-y: auto;
-=======
->>>>>>> v4.5.0
 
     &.active {
       transition: none;
@@ -1521,15 +1508,9 @@
 
 .focusable {
   &:focus-visible {
-<<<<<<< HEAD
-    outline: 0;
-    background: rgba($ui-highlight-color, 0.05);
-    box-shadow: inset 0 0 0 2px $ui-button-focus-outline-color;
-=======
     outline: 2px solid $ui-button-focus-outline-color;
     outline-offset: -2px;
     background: color.change($ui-highlight-color, $alpha: 0.05);
->>>>>>> v4.5.0
   }
 }
 
@@ -1570,32 +1551,11 @@
     margin-top: 16px;
   }
 
-<<<<<<< HEAD
-  &--is-quote {
-    border: none;
-  }
-
-=======
->>>>>>> v4.5.0
   &--in-thread {
     --thread-margin: calc(46px + 8px);
 
     border-bottom: 0;
 
-<<<<<<< HEAD
-    .status__content,
-    .status__action-bar,
-    .media-gallery,
-    .video-player,
-    .audio-player,
-    .attachment-list,
-    .picture-in-picture-placeholder,
-    .more-from-author,
-    .status-card,
-    .hashtag-bar,
-    .content-warning,
-    .filter-warning {
-=======
     & > .status__content,
     & > .status__action-bar,
     & > .media-gallery,
@@ -1609,7 +1569,6 @@
     & > .content-warning,
     & > .filter-warning,
     & > .status__quote {
->>>>>>> v4.5.0
       margin-inline-start: var(--thread-margin);
       width: calc(100% - var(--thread-margin));
     }
@@ -1826,11 +1785,7 @@
 .notification-ungrouped--direct,
 .notification-group--direct,
 .notification-group--annual-report {
-<<<<<<< HEAD
-  background: rgba($ui-highlight-color, 0.05);
-=======
   background: color.change($ui-highlight-color, $alpha: 0.05);
->>>>>>> v4.5.0
 
   &:focus {
     background: color.change($ui-highlight-color, $alpha: 0.1);
@@ -1996,36 +1951,14 @@
 }
 
 .status__quote {
-<<<<<<< HEAD
-  --quote-margin: 36px;
-=======
   // --status-gutter-width is currently only set inside of
   // .notification-ungrouped, so everywhere else this will fall back
   // to the pixel values
   --quote-margin: var(--status-gutter-width);
->>>>>>> v4.5.0
 
   position: relative;
   margin-block-start: 16px;
   margin-inline-start: calc(var(--quote-margin) + var(--thread-margin, 0px));
-<<<<<<< HEAD
-  border-radius: 8px;
-  color: var(--nested-card-text);
-  background: var(--nested-card-background);
-  border: var(--nested-card-border);
-
-  @container (width > 460px) {
-    --quote-margin: 56px;
-  }
-}
-
-.status__quote--error {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding: 12px;
-  font-size: 15px;
-=======
   border-radius: 12px;
   color: var(--nested-card-text);
   border: 1px solid var(--surface-border-color);
@@ -2048,61 +1981,11 @@
     line-height: inherit;
     letter-spacing: inherit;
   }
->>>>>>> v4.5.0
 }
 
 .status__quote-author-button {
   position: relative;
   overflow: hidden;
-<<<<<<< HEAD
-  display: inline-flex;
-  width: auto;
-  margin-block-start: 10px;
-  padding: 5px 12px;
-  align-items: center;
-  gap: 6px;
-  font-family: inherit;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 0;
-  text-decoration: none;
-  color: $highlight-text-color;
-  background: var(--nested-card-background);
-  border: var(--nested-card-border);
-  border-radius: 4px;
-
-  &:active,
-  &:focus,
-  &:hover {
-    border-color: lighten($highlight-text-color, 4%);
-    color: lighten($highlight-text-color, 4%);
-  }
-
-  &:focus-visible {
-    outline: $ui-button-icon-focus-outline;
-  }
-}
-
-.status__quote-icon {
-  position: absolute;
-  inset-block-start: 18px;
-  inset-inline-start: -40px;
-  display: block;
-  width: 26px;
-  height: 26px;
-  padding: 5px;
-  color: #6a49ba;
-  z-index: 10;
-
-  .status__quote--error & {
-    inset-block-start: 50%;
-    transform: translateY(-50%);
-  }
-
-  @container (width > 460px) {
-    inset-inline-start: -50px;
-=======
   display: flex;
   margin-top: 8px;
   padding: 8px 12px;
@@ -2164,7 +2047,6 @@
   .attachment-list,
   .poll {
     margin-top: 8px;
->>>>>>> v4.5.0
   }
 }
 
@@ -2426,10 +2308,7 @@
   position: relative;
   border-radius: var(--avatar-border-radius);
   background: var(--surface-background-color);
-<<<<<<< HEAD
-=======
   flex-shrink: 0;
->>>>>>> v4.5.0
 
   img {
     width: 100%;
@@ -3141,10 +3020,7 @@ a.account__display-name {
     width: 100%;
     height: 100%;
     min-height: 100vh;
-<<<<<<< HEAD
-=======
     min-height: 100dvh;
->>>>>>> v4.5.0
     padding-bottom: env(safe-area-inset-bottom);
 
     &__pane {
@@ -3482,10 +3358,7 @@ a.account__display-name {
 
   .columns-area__panels {
     min-height: 100vh;
-<<<<<<< HEAD
-=======
     min-height: 100dvh;
->>>>>>> v4.5.0
     gap: 0;
   }
 
@@ -3579,11 +3452,7 @@ a.account__display-name {
 
 .columns-area__panels__pane--overlay {
   pointer-events: auto;
-<<<<<<< HEAD
-  background: rgba($base-overlay-background, 0.5);
-=======
   background: color.change($base-overlay-background, $alpha: 0.5);
->>>>>>> v4.5.0
   z-index: 3;
 
   .columns-area__panels__pane__inner {
@@ -4214,16 +4083,10 @@ a.account__display-name {
   display: flex;
   align-items: center;
   gap: 8px;
-<<<<<<< HEAD
-  font-size: 16px;
-  font-weight: 400;
-  padding: 12px;
-=======
   width: 100%;
   padding: 12px;
   font-size: 16px;
   font-weight: 400;
->>>>>>> v4.5.0
   text-decoration: none;
   overflow: hidden;
   white-space: nowrap;
@@ -4626,14 +4489,11 @@ a.status-card {
     background: var(--on-surface-color);
   }
 
-<<<<<<< HEAD
-=======
   &:focus-visible {
     outline: 2px solid $ui-button-focus-outline-color;
     outline-offset: -2px;
   }
 
->>>>>>> v4.5.0
   .icon {
     width: 22px;
     height: 22px;
@@ -5173,11 +5033,7 @@ a.status-card {
     font-size: 14px;
 
     &__label {
-<<<<<<< HEAD
-      background-color: rgba($black, 0.45);
-=======
       background-color: color.change($black, $alpha: 0.45);
->>>>>>> v4.5.0
       backdrop-filter: $backdrop-blur-filter;
       border-radius: 8px;
       padding: 12px 16px;
@@ -6839,8 +6695,6 @@ a.status-card {
         max-height: 45vh;
       }
     }
-<<<<<<< HEAD
-=======
 
     &__actions {
       display: flex;
@@ -6849,7 +6703,6 @@ a.status-card {
       justify-content: flex-end;
       padding: 0 24px 24px;
     }
->>>>>>> v4.5.0
   }
 
   &__popout {
@@ -7339,11 +7192,7 @@ a.status-card {
     display: block;
     color: $white;
     border: 0;
-<<<<<<< HEAD
-    background: rgba($black, 0.65);
-=======
     background: color.change($black, $alpha: 0.65);
->>>>>>> v4.5.0
     backdrop-filter: $backdrop-blur-filter;
     padding: 3px 12px;
     border-radius: 99px;
@@ -7368,11 +7217,7 @@ a.status-card {
   text-align: center;
   color: $white;
   border: 0;
-<<<<<<< HEAD
-  background: rgba($black, 0.65);
-=======
   background: color.change($black, $alpha: 0.65);
->>>>>>> v4.5.0
   backdrop-filter: $backdrop-blur-filter;
   padding: 3px 8px;
   border-radius: 4px;
@@ -7388,43 +7233,14 @@ a.status-card {
   }
 }
 
-<<<<<<< HEAD
-.media-gallery__no-alt__label {
-  display: block;
-  text-align: center;
-  color: $white;
-  border: 0;
-  background: rgba($black, 0.65);
-  backdrop-filter: blur(10px) saturate(180%) contrast(75%) brightness(70%);
-  padding: 2px 4px 0;
-  border-radius: 4px;
-  font-size: 12px;
-  font-weight: 700;
-  z-index: 1;
-  line-height: 20px;
-  cursor: pointer;
-  pointer-events: auto;
-
-  &--non-interactive {
-    pointer-events: none;
-  }
-}
-
-=======
->>>>>>> v4.5.0
 .relationship-tag {
   text-transform: uppercase;
   cursor: default;
 }
 
-<<<<<<< HEAD
-.media-gallery__alt__popover {
-  background: rgba($black, 0.65);
-=======
 .info-tooltip {
   color: $white;
   background: color.change($black, $alpha: 0.65);
->>>>>>> v4.5.0
   backdrop-filter: $backdrop-blur-filter;
   border-radius: 4px;
   box-shadow: var(--dropdown-shadow);
@@ -8003,11 +7819,7 @@ a.status-card {
       flex: 0 0 auto;
       background: transparent;
       border: 0;
-<<<<<<< HEAD
-      color: rgba($white, 0.75);
-=======
       color: color.change($white, $alpha: 0.75);
->>>>>>> v4.5.0
       font-weight: 500;
 
       &:active,
@@ -8103,11 +7915,7 @@ a.status-card {
       margin-inline-start: -6px;
       transform: translate(0, -50%);
       background: $white;
-<<<<<<< HEAD
-      box-shadow: 1px 2px 6px rgba($base-shadow-color, 0.2);
-=======
       box-shadow: 1px 2px 6px color.change($base-shadow-color, $alpha: 0.2);
->>>>>>> v4.5.0
       opacity: 0;
 
       .no-reduce-motion & {
@@ -8177,11 +7985,7 @@ a.status-card {
       top: 10px;
       margin-inline-start: -6px;
       background: $white;
-<<<<<<< HEAD
-      box-shadow: 1px 2px 6px rgba($base-shadow-color, 0.2);
-=======
       box-shadow: 1px 2px 6px color.change($base-shadow-color, $alpha: 0.2);
->>>>>>> v4.5.0
 
       .no-reduce-motion & {
         transition: opacity 0.1s ease;
@@ -8205,11 +8009,7 @@ a.status-card {
     top: 50%;
     inset-inline-start: 50%;
     transform: translate(-50%, -50%);
-<<<<<<< HEAD
-    background: rgba($base-shadow-color, 0.45);
-=======
     background: color.change($base-shadow-color, $alpha: 0.45);
->>>>>>> v4.5.0
     backdrop-filter: $backdrop-blur-filter;
     color: $white;
     border-radius: 8px;
@@ -8544,11 +8344,7 @@ noscript {
   inset-inline-start: 0;
   width: 100%;
   height: 100%;
-<<<<<<< HEAD
-  background: rgba($base-overlay-background, 0.5);
-=======
   background: color.change($base-overlay-background, $alpha: 0.5);
->>>>>>> v4.5.0
 }
 
 .focal-point {
@@ -8570,11 +8366,7 @@ noscript {
     transform: translate(-50%, -50%);
     border: 2px solid #fff;
     border-radius: 50%;
-<<<<<<< HEAD
-    box-shadow: 0 0 0 9999em rgba($base-shadow-color, 0.35);
-=======
     box-shadow: 0 0 0 9999em color.change($base-shadow-color, $alpha: 0.35);
->>>>>>> v4.5.0
     pointer-events: none;
   }
 }
@@ -8681,50 +8473,6 @@ noscript {
     overflow: hidden;
     margin-inline-start: -2px; // aligns the pfp with content below
 
-<<<<<<< HEAD
-    &__buttons {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      padding-top: 55px;
-      overflow: hidden;
-
-      .button {
-        flex-shrink: 1;
-        white-space: nowrap;
-        min-width: 80px;
-      }
-
-      .icon-button {
-        border: 1px solid var(--background-border-color);
-        border-radius: 4px;
-        box-sizing: content-box;
-        padding: 5px;
-
-        .icon {
-          width: 24px;
-          height: 24px;
-        }
-
-        &.copied {
-          border-color: $valid-value-color;
-        }
-      }
-
-      .optional {
-        @container account-header (max-width: 372px) {
-          display: none;
-        }
-
-        // Fallback for older browsers with no container queries support
-        @media screen and (max-width: (372px + 55px)) {
-          display: none;
-        }
-      }
-    }
-
-=======
->>>>>>> v4.5.0
     &__name {
       margin-top: 16px;
       margin-bottom: 16px;
@@ -10672,11 +10420,7 @@ noscript {
 .notification-list {
   position: fixed;
   bottom: 2rem;
-<<<<<<< HEAD
-  inset-inline-start: 0;
-=======
   inset-inline-start: 1rem;
->>>>>>> v4.5.0
   z-index: 9999;
   display: flex;
   flex-direction: column;
@@ -10733,11 +10477,7 @@ noscript {
   font-weight: 700;
 }
 
-<<<<<<< HEAD
-.notification-bar-action {
-=======
 .notification-bar__action {
->>>>>>> v4.5.0
   display: inline-block;
   border: 0;
   background: transparent;

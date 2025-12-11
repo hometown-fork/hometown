@@ -26,10 +26,7 @@
   "account.copy": "Скапіраваць спасылку на профіль",
   "account.direct": "Згадаць асабіста @{name}",
   "account.disable_notifications": "Не паведамляць мне пра публікацыі @{name}",
-<<<<<<< HEAD
-=======
   "account.domain_blocking": "Блакіраванне дамена",
->>>>>>> v4.5.0
   "account.edit_profile": "Рэдагаваць профіль",
   "account.edit_profile_short": "Рэдагаваць",
   "account.enable_notifications": "Апавяшчаць мяне пра допісы @{name}",
@@ -71,11 +68,8 @@
   "account.mute_notifications_short": "Не апавяшчаць",
   "account.mute_short": "Ігнараваць",
   "account.muted": "Ігнаруецца",
-<<<<<<< HEAD
-=======
   "account.muting": "Ігнараванне",
   "account.mutual": "Вы падпісаны адно на аднаго",
->>>>>>> v4.5.0
   "account.no_bio": "Апісанне адсутнічае.",
   "account.open_original_page": "Адкрыць арыгінальную старонку",
   "account.posts": "Допісы",
@@ -111,18 +105,6 @@
   "alert.unexpected.message": "Узнікла нечаканая памылка.",
   "alert.unexpected.title": "Вой!",
   "alt_text_badge.title": "Альтэрнатыўны тэкст",
-<<<<<<< HEAD
-  "alt_text_modal.done": "Гатова",
-  "announcement.announcement": "Аб'ява",
-  "annual_report.summary.archetype.booster": "Трэнда-сьледнік",
-  "annual_report.summary.archetype.lurker": "Назіральнік",
-  "annual_report.summary.archetype.oracle": "Аракул",
-  "annual_report.summary.archetype.pollster": "Апытвальнік",
-  "annual_report.summary.archetype.replier": "Душа кампанійі",
-  "annual_report.summary.followers.followers": "падпісанты",
-  "annual_report.summary.followers.total": "Усяго {count}",
-  "annual_report.summary.here_it_is": "Вось вашыя вынікі {year} году:",
-=======
   "alt_text_modal.add_alt_text": "Дадаць альтэрнатыўны тэкст",
   "alt_text_modal.add_text_from_image": "Дадаць тэкст з відарыса",
   "alt_text_modal.cancel": "Скасаваць",
@@ -139,26 +121,16 @@
   "annual_report.summary.followers.followers": "падпісчыкі",
   "annual_report.summary.followers.total": "Агулам {count}",
   "annual_report.summary.here_it_is": "Вось Вашы вынікі {year} за год:",
->>>>>>> v4.5.0
   "annual_report.summary.highlighted_post.by_favourites": "самы ўпадабаны допіс",
   "annual_report.summary.highlighted_post.by_reblogs": "самы пашыраны допіс",
   "annual_report.summary.highlighted_post.by_replies": "самы каментаваны допіс",
   "annual_report.summary.highlighted_post.possessive": "{name}",
-<<<<<<< HEAD
-  "annual_report.summary.most_used_app.most_used_app": "самая выкарыстоўваная аплікацыя",
-  "annual_report.summary.most_used_hashtag.most_used_hashtag": "самы выкарыстоўваны гэштаґ",
-  "annual_report.summary.most_used_hashtag.none": "Няма",
-  "annual_report.summary.new_posts.new_posts": "новыя допісы",
-  "annual_report.summary.percentile.text": "<topLabel>Мэта месьціць вас у топ</topLabel><percentage></percentage><bottomLabel> карыстальнікаў {domain}.</bottomLabel>",
-  "annual_report.summary.percentile.we_wont_tell_bernie": "Мы ня скажам аб гэтым Сіняпальцаму.",
-=======
   "annual_report.summary.most_used_app.most_used_app": "праграма, якой карысталіся найчасцей",
   "annual_report.summary.most_used_hashtag.most_used_hashtag": "хэштэг, якім карысталіся найчасцей",
   "annual_report.summary.most_used_hashtag.none": "Няма",
   "annual_report.summary.new_posts.new_posts": "новыя допісы",
   "annual_report.summary.percentile.text": "<topLabel>Гэта падымае Вас у топ</topLabel><percentage></percentage><bottomLabel> карыстальнікаў {domain}.</bottomLabel>",
   "annual_report.summary.percentile.we_wont_tell_bernie": "КДБ пра гэта не даведаецца.",
->>>>>>> v4.5.0
   "annual_report.summary.thanks": "Дзякуй за ўдзел у Mastodon!",
   "attachments_list.unprocessed": "(неапрацаваны)",
   "audio.hide": "Схаваць аўдыя",
@@ -183,11 +155,7 @@
   "bundle_column_error.routing.body": "Запытаная старонка не знойдзена. Вы ўпэўнены, што URL у адрасным радку правільны?",
   "bundle_column_error.routing.title": "404",
   "bundle_modal_error.close": "Закрыць",
-<<<<<<< HEAD
-  "bundle_modal_error.message": "Падчас загрузкі гэтага экрана штосьці пайшло ня так.",
-=======
   "bundle_modal_error.message": "Падчас загрузкі гэтага экрана штосьці пайшло не так.",
->>>>>>> v4.5.0
   "bundle_modal_error.retry": "Паспрабуйце зноў",
   "closed_registrations.other_server_instructions": "Паколькі Mastodon дэцэнтралізаваны, вы можаце стварыць уліковы запіс на іншым серверы і працягваць узаемадзейнічаць з ім.",
   "closed_registrations_modal.description": "Стварэнне ўліковага запісу на {domain} цяпер немагчыма. Заўважце, што няма неабходнасці мець уліковы запіс менавіта на {domain}, каб выкарыстоўваць Mastodon.",
@@ -199,11 +167,7 @@
   "column.bookmarks": "Закладкі",
   "column.community": "Лакальная стужка",
   "column.create_list": "Стварыць спіс",
-<<<<<<< HEAD
-  "column.direct": "Асабістыя згадванні",
-=======
   "column.direct": "Прыватныя згадванні",
->>>>>>> v4.5.0
   "column.directory": "Праглядзець профілі",
   "column.domain_blocks": "Заблакіраваныя дамены",
   "column.edit_list": "Рэдагаваць спіс",
@@ -213,11 +177,7 @@
   "column.firehose_singular": "Жывая стужка",
   "column.follow_requests": "Запыты на падпіску",
   "column.home": "Галоўная",
-<<<<<<< HEAD
-  "column.list_members": "Кіраванне ўдзельнікамі спісу",
-=======
   "column.list_members": "Кіраванне ўдзельнікамі спіса",
->>>>>>> v4.5.0
   "column.lists": "Спісы",
   "column.mutes": "Ігнараваныя карыстальнікі",
   "column.notifications": "Апавяшчэнні",
@@ -276,25 +236,16 @@
   "confirmations.discard_draft.post.title": "Скасаваць чарнавік?",
   "confirmations.discard_edit_media.confirm": "Адмяніць",
   "confirmations.discard_edit_media.message": "У вас ёсць незахаваныя змены ў апісанні або прэв'ю, усе роўна скасаваць іх?",
-<<<<<<< HEAD
-  "confirmations.follow_to_list.confirm": "Падпісацца й дадаць у сьпіс",
-  "confirmations.follow_to_list.message": "Вы мусіце быць падпісаныя на {name} каб дадаць яго ў сьпіс.",
-=======
   "confirmations.follow_to_list.confirm": "Падпісацца і дадаць у спіс",
   "confirmations.follow_to_list.message": "Вам трэба падпісацца на {name}, каб дадаць яго/яе ў спіс.",
->>>>>>> v4.5.0
   "confirmations.follow_to_list.title": "Падпісацца на карыстальніка?",
   "confirmations.logout.confirm": "Выйсці",
   "confirmations.logout.message": "Вы ўпэўненыя, што хочаце выйсці?",
   "confirmations.logout.title": "Выйсці?",
-<<<<<<< HEAD
-  "confirmations.missing_alt_text.title": "Дадаць апісаньне?",
-=======
   "confirmations.missing_alt_text.confirm": "Дадаць альтэрнатыўны тэкст",
   "confirmations.missing_alt_text.message": "У Вашым допісе ёсць медыя без альтэрнатыўнага тэксту. Дадаванне апісання дапамагае зрабіць Ваш допіс даступным для большай колькасці людзей.",
   "confirmations.missing_alt_text.secondary": "Усё адно апублікаваць",
   "confirmations.missing_alt_text.title": "Дадаць альтэрнатыўны тэкст?",
->>>>>>> v4.5.0
   "confirmations.mute.confirm": "Ігнараваць",
   "confirmations.private_quote_notify.cancel": "Звяртацца да рэдагавання",
   "confirmations.quiet_post_quote_info.dismiss": "Не нагадваць зноў",
@@ -304,8 +255,6 @@
   "confirmations.redraft.confirm": "Выдаліць і перапісаць",
   "confirmations.redraft.message": "Вы ўпэўненыя, што хочаце выдаліць допіс і перапісаць яго? Упадабанні і пашырэнні згубяцца, а адказы да арыгінальнага допісу асірацеюць.",
   "confirmations.redraft.title": "Выдаліць і перапісаць допіс?",
-<<<<<<< HEAD
-=======
   "confirmations.remove_from_followers.confirm": "Выдаліць падпісчыка",
   "confirmations.remove_from_followers.message": "{name} больш не будзе падпісаны(-ая) на Вас. Упэўненыя, што хочаце працягнуць?",
   "confirmations.remove_from_followers.title": "Выдаліць падпісчыка?",
@@ -314,7 +263,6 @@
   "confirmations.revoke_quote.title": "Выдаліць допіс?",
   "confirmations.unblock.confirm": "Разблакіраваць",
   "confirmations.unblock.title": "Разблакіраваць {name}?",
->>>>>>> v4.5.0
   "confirmations.unfollow.confirm": "Адпісацца",
   "confirmations.unfollow.title": "Адпісацца ад {name}?",
   "confirmations.withdraw_request.confirm": "Адклікаць запыт",
@@ -337,11 +285,7 @@
   "disabled_account_banner.text": "Ваш уліковы запіс {disabledAccount} часова адключаны.",
   "dismissable_banner.community_timeline": "Гэта самыя апошнія допісы ад людзей, уліковыя запісы якіх размяшчаюцца на {domain}.",
   "dismissable_banner.dismiss": "Адхіліць",
-<<<<<<< HEAD
-  "dismissable_banner.public_timeline": "Гэта самыя новыя публічныя допісы ад карыстальнікаў фэдывёрсу на якіх падпісаныя карыстальнікі {domain}.",
-=======
   "dismissable_banner.public_timeline": "Вось апошнія публічныя допісы ад карыстальнікаў федэральнага сусвету, на якіх падпісаныя карыстальнікі {domain}.",
->>>>>>> v4.5.0
   "domain_block_modal.block": "Заблакіраваць сервер",
   "domain_block_modal.block_account_instead": "Заблакіраваць @{name} замест гэтага",
   "domain_block_modal.they_can_interact_with_old_posts": "Людзі з гэтага сервера змогуць узаемадзейнічаць з вашымі старымі допісамі.",
@@ -402,11 +346,7 @@
   "empty_column.followed_tags": "Вы пакуль не падпісаны ні на адзін хэштэг. Калі падпішацеся, яны з’явяцца тут.",
   "empty_column.hashtag": "Па гэтаму хэштэгу пакуль што нічога няма.",
   "empty_column.home": "Галоўная стужка пустая! Падпішыцеся на іншых людзей, каб запоўніць яе. {suggestions}",
-<<<<<<< HEAD
-  "empty_column.list": "У гэтым спісе пакуль што нічога няма. Калі члены лісту апублікуюць новыя запісы, яны з'явяцца тут.",
-=======
   "empty_column.list": "У гэтым спісе пакуль што нічога няма. Калі члены спіса апублікуюць новыя запісы, яны з'явяцца тут.",
->>>>>>> v4.5.0
   "empty_column.mutes": "Вы яшчэ нікога не ігнаруеце.",
   "empty_column.notification_requests": "Чысціня! Тут нічога няма. Калі Вы будзеце атрымліваць новыя апавяшчэнні, яны будуць з'яўляцца тут у адпаведнасці з Вашымі наладамі.",
   "empty_column.notifications": "У Вас няма ніякіх апавяшчэнняў. Калі іншыя людзі захочуць узаемадзейнічаць з Вамі, Вы ўбачыце гэта тут.",
@@ -418,10 +358,7 @@
   "errors.unexpected_crash.copy_stacktrace": "Дадаць дыягнастычны стэк у буфер абмену",
   "errors.unexpected_crash.report_issue": "Паведаміць аб праблеме",
   "explore.suggested_follows": "Людзі",
-<<<<<<< HEAD
-=======
   "explore.title": "Трэндавае",
->>>>>>> v4.5.0
   "explore.trending_links": "Навіны",
   "explore.trending_statuses": "Допісы",
   "explore.trending_tags": "Хэштэгі",
@@ -447,11 +384,7 @@
   "filter_modal.select_filter.title": "Фільтраваць гэты допіс",
   "filter_modal.title.status": "Фільтраваць допіс",
   "filter_warning.matches_filter": "Адпавядае фільтру \"<span>{title}</span>\"",
-<<<<<<< HEAD
-  "filtered_notifications_banner.pending_requests": "Ад {count, plural, =0 {# людзей якіх} one {# чалавека якіх} few {# чалавек якіх} many {# людзей якіх} other {# чалавека якіх}} вы магчыма ведаеце",
-=======
   "filtered_notifications_banner.pending_requests": "Ад {count, plural, =0 {# людзей якіх} one {# чалавека якіх} few {# чалавек якіх} many {# людзей якіх} other {# чалавека якіх}} Вы магчыма ведаеце",
->>>>>>> v4.5.0
   "filtered_notifications_banner.title": "Адфільтраваныя апавяшчэнні",
   "firehose.all": "Усе",
   "firehose.local": "Гэты сервер",
@@ -482,19 +415,12 @@
   "footer.privacy_policy": "Палітыка прыватнасці",
   "footer.source_code": "Прагледзець зыходны код",
   "footer.status": "Статус",
-<<<<<<< HEAD
-  "footer.terms_of_service": "Умовы абслугоўваньня",
-  "generic.saved": "Захавана",
-  "getting_started.heading": "Пачатак працы",
-  "hashtag.admin_moderation": "Адкрыць інтэрфэйс мадаратара для #{name}",
-=======
   "footer.terms_of_service": "Умовы выкарыстання",
   "generic.saved": "Захавана",
   "getting_started.heading": "Пачатак працы",
   "hashtag.admin_moderation": "Адкрыць інтэрфейс мадэратара для #{name}",
   "hashtag.browse": "Праглядзець допісы ў #{hashtag}",
   "hashtag.browse_from_account": "Праглядзець допісы ад @{name} у #{hashtag}",
->>>>>>> v4.5.0
   "hashtag.column_header.tag_mode.all": "і {additional}",
   "hashtag.column_header.tag_mode.any": "або {additional}",
   "hashtag.column_header.tag_mode.none": "без {additional}",
@@ -519,12 +445,7 @@
   "hints.profiles.see_more_followers": "Глядзець больш падпісаных на {domain}",
   "hints.profiles.see_more_follows": "Глядзець больш падпісак на {domain}",
   "hints.profiles.see_more_posts": "Глядзець больш допісаў на {domain}",
-<<<<<<< HEAD
-  "hints.threads.replies_may_be_missing": "Адказы зь іншых сэрвэраў могуць адсутнічаць.",
-  "hints.threads.see_more": "Глядзіце больш адказаў на {domain}",
-=======
   "home.column_settings.show_quotes": "Паказаць цытаты",
->>>>>>> v4.5.0
   "home.column_settings.show_reblogs": "Паказваць пашырэнні",
   "home.column_settings.show_replies": "Паказваць адказы",
   "home.hide_announcements": "Схаваць аб'явы",
@@ -532,28 +453,6 @@
   "home.pending_critical_update.link": "Прагледзець абнаўленні",
   "home.pending_critical_update.title": "Даступна крытычнае абнаўленне бяспекі!",
   "home.show_announcements": "Паказаць аб'явы",
-<<<<<<< HEAD
-  "ignore_notifications_modal.disclaimer": "Mastodon ня можа йнфармаваць карыстальнікаў аб тым, што вы прайігнаравалі йх паведамленьні. Ігнараваньне паведамленьняў не спыніць іх адпраўку.",
-  "ignore_notifications_modal.filter_instead": "Замест гэтага адфільтраваць",
-  "ignore_notifications_modal.filter_to_act_users": "Вы па-ранейшаму зможаце прымаць, адхіляць ці скардзіцца на карыстальнікаў",
-  "ignore_notifications_modal.filter_to_avoid_confusion": "Фільтраваньне дапамагае пазьбегнуць патэнцыйнай блытаніны",
-  "ignore_notifications_modal.filter_to_review_separately": "Вы можаце прагледзець адфільтраваныя паведамленьні асобна",
-  "ignore_notifications_modal.ignore": "Ігнараваць паведамленьні",
-  "ignore_notifications_modal.limited_accounts_title": "Ігнараваць паведамленьні ад абмежаваных уліковых запісаў?",
-  "ignore_notifications_modal.new_accounts_title": "Ігнараваць паведамленьні ад новых уліковых запісаў?",
-  "ignore_notifications_modal.not_followers_title": "Ігнараваць паведамленьні ад людзей, якія ня падпісаныя на вас?",
-  "ignore_notifications_modal.not_following_title": "Ігнараваць апавяшчэнні ад людзей на якіх вы не падпісаны?",
-  "ignore_notifications_modal.private_mentions_title": "Ігнараваць паведамленьні аб непажаданых прыватных згадках?",
-  "info_button.label": "Даведка",
-  "interaction_modal.action.favourite": "Каб працягнуць, вы мусіце ўпадабаць з вашага ўліковага запісу.",
-  "interaction_modal.action.follow": "Каб працягнуць, вы мусіце падпісацца з вашага ўліковага запісу.",
-  "interaction_modal.on_another_server": "На іншым серверы",
-  "interaction_modal.on_this_server": "На гэтым серверы",
-  "interaction_modal.title.favourite": "Упадабаць допіс {name}",
-  "interaction_modal.title.follow": "Падпісацца на {name}",
-  "interaction_modal.title.reblog": "Пашырыць допіс ад {name}",
-  "interaction_modal.title.reply": "Адказаць на допіс {name}",
-=======
   "ignore_notifications_modal.disclaimer": "Mastodon не можа паведамляць карыстальнікам, што Вы праігнаравалі апавяшчэнні ад іх. Ігнараванне апавяшчэнняў не спыніць адпраўку саміх паведамленняў.",
   "ignore_notifications_modal.filter_instead": "Замест гэтага адфільтраваць",
   "ignore_notifications_modal.filter_to_act_users": "Вы па-ранейшаму зможаце прымаць, адхіляць ці скардзіцца на карыстальнікаў",
@@ -574,7 +473,6 @@
   "interaction_modal.on_this_server": "На гэтым серверы",
   "interaction_modal.title": "Увайдзіце, каб працягнуць",
   "interaction_modal.username_prompt": "Напр., {example}",
->>>>>>> v4.5.0
   "intervals.full.days": "{number, plural, one {# дзень} few {# дні} many {# дзён} other {# дня}}",
   "intervals.full.hours": "{number, plural, one {# гадзіна} few {# гадзіны} many {# гадзін} other {# гадзіны}}",
   "intervals.full.minutes": "{number, plural, one {# хвіліна} few {# хвіліны} many {# хвілін} other {# хвіліны}}",
@@ -628,22 +526,14 @@
   "link_preview.more_from_author": "Больш ад {name}",
   "link_preview.shares": "{count, plural, one {{counter} допіс} few {{counter} допісы} many {{counter} допісаў} other {{counter} допісу}}",
   "lists.add_member": "Дадаць",
-<<<<<<< HEAD
-  "lists.create": "Стварыць",
-=======
   "lists.add_to_list": "Дадаць у спіс",
   "lists.add_to_lists": "Дадаць {name} у спісы",
   "lists.create": "Стварыць",
   "lists.create_a_list_to_organize": "Стварыце новы спіс, каб арганізаваць сваю Галоўную старонку",
->>>>>>> v4.5.0
   "lists.create_list": "Стварыць спіс",
   "lists.delete": "Выдаліць спіс",
   "lists.done": "Гатова",
   "lists.edit": "Рэдагаваць спіс",
-<<<<<<< HEAD
-  "lists.remove_member": "Выдаліць",
-  "lists.replies_policy.followed": "Любы карыстальнік, на якога вы падпісаліся",
-=======
   "lists.exclusive": "Схаваць карыстальнікаў на Галоўнай старонцы",
   "lists.exclusive_hint": "Калі ў гэтым спісе нехта ёсць, схавайце яго на сваёй Галоўнай старонцы, каб не бачыць яго допісы двойчы.",
   "lists.find_users_to_add": "Знайсці карыстальнікаў, каб дадаць",
@@ -655,23 +545,15 @@
   "lists.no_results_found": "Нічога не знойдзена.",
   "lists.remove_member": "Выдаліць",
   "lists.replies_policy.followed": "Любы карыстальнік, на якога Вы падпісаліся",
->>>>>>> v4.5.0
   "lists.replies_policy.list": "Удзельнікі гэтага спісу",
   "lists.replies_policy.none": "Нікога",
   "lists.save": "Захаваць",
   "lists.search": "Пошук",
-<<<<<<< HEAD
-  "load_pending": "{count, plural, one {# новы элемент} few {# новыя элементы} many {# новых элементаў} other {# новых элементаў}}",
-  "loading_indicator.label": "Загрузка…",
-  "media_gallery.hide": "Схаваць",
-  "moved_to_account_banner.text": "Ваш уліковы запіс {disabledAccount} зараз адключаны таму што вы перанесены на {movedToAccount}.",
-=======
   "lists.show_replies_to": "Уключыць адказы ад карыстальнікаў са спіса",
   "load_pending": "{count, plural, one {# новы элемент} few {# новыя элементы} many {# новых элементаў} other {# новых элементаў}}",
   "loading_indicator.label": "Ідзе загрузка…",
   "media_gallery.hide": "Схаваць",
   "moved_to_account_banner.text": "Ваш уліковы запіс {disabledAccount} зараз адключаны, таму што Вы перайшлі на {movedToAccount}.",
->>>>>>> v4.5.0
   "mute_modal.hide_from_notifications": "Схаваць з апавяшчэнняў",
   "mute_modal.hide_options": "Схаваць опцыі",
   "mute_modal.indefinite": "Пакуль я не прыбяру ігнараванне",
@@ -688,11 +570,7 @@
   "navigation_bar.automated_deletion": "Аўтаматычнае выдаленне допісаў",
   "navigation_bar.blocks": "Заблакіраваныя карыстальнікі",
   "navigation_bar.bookmarks": "Закладкі",
-<<<<<<< HEAD
-  "navigation_bar.direct": "Асабістыя згадванні",
-=======
   "navigation_bar.direct": "Прыватныя згадванні",
->>>>>>> v4.5.0
   "navigation_bar.domain_blocks": "Заблакіраваныя дамены",
   "navigation_bar.favourites": "Упадабанае",
   "navigation_bar.filters": "Ігнараваныя словы",
@@ -705,22 +583,6 @@
   "navigation_bar.live_feed_public": "Жывая стужка (публічная)",
   "navigation_bar.logout": "Выйсці",
   "navigation_bar.moderation": "Мадэрацыя",
-<<<<<<< HEAD
-  "navigation_bar.mutes": "Ігнараваныя карыстальнікі",
-  "navigation_bar.opened_in_classic_interface": "Допісы, уліковыя запісы і іншыя спецыфічныя старонкі па змоўчанні адчыняюцца ў класічным вэб-інтэрфейсе.",
-  "navigation_bar.preferences": "Налады",
-  "navigation_bar.search": "Пошук",
-  "not_signed_in_indicator.not_signed_in": "Вам трэба ўвайсці каб атрымаць доступ да гэтага рэсурсу.",
-  "notification.admin.report": "{name} паскардзіўся на {target}",
-  "notification.admin.report_account": "{name} паскардзіўся на {count, plural, one {# допіс} many {# допісаў} other {# допіса}} ад {target} з прычыны {category}",
-  "notification.admin.report_account_other": "{name} паскардзіўся на {count, plural, one {# допіс} many {# допісаў} other {# допіса}} ад {target}",
-  "notification.admin.report_statuses": "{name} паскардзіўся на {target} з прычыны {category}",
-  "notification.admin.report_statuses_other": "{name} паскардзіўся на {target}",
-  "notification.admin.sign_up": "{name} зарэгістраваўся",
-  "notification.favourite": "Ваш допіс упадабаны {name}",
-  "notification.follow": "{name} падпісаўся на вас",
-  "notification.follow_request": "{name} адправіў запыт на падпіску",
-=======
   "navigation_bar.more": "Больш",
   "navigation_bar.mutes": "Ігнараваныя карыстальнікі",
   "navigation_bar.opened_in_classic_interface": "Допісы, уліковыя запісы і іншыя спецыфічныя старонкі па змоўчанні адчыняюцца ў класічным вэб-інтэрфейсе.",
@@ -749,7 +611,6 @@
   "notification.follow": "{name} падпісаўся(-лась) на Вас",
   "notification.follow.name_and_others": "{name} і <a>{count, plural, one {# іншы(-ая)} other {# іншыя}}</a> падпісаліся на Вас",
   "notification.follow_request": "{name} адправіў(-ла) запыт на падпіску",
->>>>>>> v4.5.0
   "notification.follow_request.name_and_others": "{name} і {count, plural, one {# іншы} many {# іншых} other {# іншых}} запыталіся падпісацца на вас",
   "notification.label.mention": "Згадванне",
   "notification.label.private_mention": "Асабістае згадванне",
@@ -757,11 +618,7 @@
   "notification.label.quote": "{name} цытаваў(-ла) Ваш допіс",
   "notification.label.reply": "Адказ",
   "notification.mention": "Згадванне",
-<<<<<<< HEAD
-  "notification.mentioned_you": "{name} згадаў вас",
-=======
   "notification.mentioned_you": "{name} згадаў(-ла) Вас",
->>>>>>> v4.5.0
   "notification.moderation-warning.learn_more": "Даведацца больш",
   "notification.moderation_warning": "Вы атрымалі папярэджанне ад мадэратараў",
   "notification.moderation_warning.action_delete_statuses": "Некаторыя Вашыя допісы былі выдаленыя.",
@@ -772,16 +629,10 @@
   "notification.moderation_warning.action_silence": "Ваш уліковы запіс быў абмежаваны.",
   "notification.moderation_warning.action_suspend": "Ваш уліковы запіс быў заблакіраваны.",
   "notification.own_poll": "Ваша апытанне скончылася",
-<<<<<<< HEAD
-  "notification.poll": "Апытанне, дзе вы прынялі ўдзел, скончылася",
-  "notification.reblog": "{name} пашырыў ваш допіс",
-  "notification.reblog.name_and_others_with_link": "{name} і <a>{count, plural, one {# іншы} many {# іншых} other {# іншых}}</a> абагулілі ваш допіс",
-=======
   "notification.poll": "Апытанне, дзе Вы прынялі ўдзел, скончылася",
   "notification.quoted_update": "{name} адрэдагаваў(-ла) допіс, які Вы цытавалі",
   "notification.reblog": "{name} пашырыў(-ла) Ваш допіс",
   "notification.reblog.name_and_others_with_link": "{name} і <a>{count, plural, one {# іншы(-ая)} many {# іншых} other {# іншых}}</a> пашырылі Ваш допіс",
->>>>>>> v4.5.0
   "notification.relationships_severance_event": "Страціў сувязь з {name}",
   "notification.relationships_severance_event.account_suspension": "Адміністратар з {from} прыпыніў працу ўліковага запісу {target}, што азначае, што Вы больш не можаце атрымліваць ад іх абнаўленні ці ўзаемадзейнічаць з імі.",
   "notification.relationships_severance_event.domain_block": "Адміністратар з {from} заблакіраваў {target}, у тым ліку {followersCount} вашых падпісчыка(-аў) і {followingCount, plural, one {# уліковы запіс} few {# уліковыя запісы} many {# уліковых запісаў} other {# уліковых запісаў}}.",
@@ -819,11 +670,7 @@
   "notifications.column_settings.filter_bar.category": "Панэль хуткай фільтрацыі",
   "notifications.column_settings.follow": "Новыя падпісчыкі:",
   "notifications.column_settings.follow_request": "Новыя запыты на падпіску:",
-<<<<<<< HEAD
-  "notifications.column_settings.group": "Аб'яднаць апавяшчэнні ад падпісчыкаў",
-=======
   "notifications.column_settings.group": "Аб’яднаць апавяшчэнні ад падпісчыкаў",
->>>>>>> v4.5.0
   "notifications.column_settings.mention": "Згадванні:",
   "notifications.column_settings.poll": "Вынікі апытання:",
   "notifications.column_settings.push": "Push-апавяшчэнні",
@@ -853,13 +700,9 @@
   "notifications.policy.drop": "Iгнараваць",
   "notifications.policy.drop_hint": "Адправіць у бездань, адкуль больш ніколі не ўбачыце",
   "notifications.policy.filter": "Фільтраваць",
-<<<<<<< HEAD
-  "notifications.policy.filter_limited_accounts_title": "Абмежаваныя ўліковыя запісы",
-=======
   "notifications.policy.filter_hint": "Адправіць у скрыню адфільтраваных апавяшчэнняў",
   "notifications.policy.filter_limited_accounts_hint": "Абмежавана мадэратарамі сервера",
   "notifications.policy.filter_limited_accounts_title": "Уліковыя запісы пад мадэрацыяй",
->>>>>>> v4.5.0
   "notifications.policy.filter_new_accounts.hint": "Створаныя на працягу {days, plural, one {апошняга # дня} few {апошніх # дзён} many {апошніх # дзён} other {апошняй # дня}}",
   "notifications.policy.filter_new_accounts_title": "Новыя ўліковыя запісы",
   "notifications.policy.filter_not_followers_hint": "Уключаючы людзей, якія падпісаны на вас менш, чым {days, plural, one {# дзень} few {# дні} many {# дзён} other {# дня}}",
@@ -874,15 +717,9 @@
   "notifications_permission_banner.title": "Не прапусціце нічога",
   "onboarding.follows.back": "Назад",
   "onboarding.follows.done": "Гатова",
-<<<<<<< HEAD
-  "onboarding.follows.empty": "На жаль, зараз немагчыма паказаць вынікі. Вы можаце паспрабаваць выкарыстоўваць пошук і праглядзець старонку агляду, каб знайсці людзей, на якіх можна падпісацца, або паўтарыце спробу пазней.",
-  "onboarding.follows.search": "Пошук",
-  "onboarding.follows.title": "Падпішыцеся каб пачаць",
-=======
   "onboarding.follows.empty": "На жаль, зараз немагчыма паказаць вынікі. Вы можаце паспрабаваць выкарыстоўваць пошук і праглядзець старонку агляду, каб знайсці людзей, на якіх можна падпісацца, або паўтарыць спробу пазней.",
   "onboarding.follows.search": "Пошук",
   "onboarding.follows.title": "Падпішыцеся на некага, каб пачаць",
->>>>>>> v4.5.0
   "onboarding.profile.discoverable": "Зрабіць мой профіль бачным",
   "onboarding.profile.discoverable_hint": "Калі Вы звяртаецеся да адкрытасці на Mastodon, Вашы допісы могуць з'яўляцца ў выніках пошуку і трэндах, а Ваш профіль можа быць прапанаваны людзям з такімі ж інтарэсамі.",
   "onboarding.profile.display_name": "Бачнае імя",
@@ -893,11 +730,7 @@
   "onboarding.profile.title": "Налады профілю",
   "onboarding.profile.upload_avatar": "Загрузіць фота профілю",
   "onboarding.profile.upload_header": "Загрузіць шапку профілю",
-<<<<<<< HEAD
-  "password_confirmation.exceeds_maxlength": "Пароль пацьверджання перавышае максімальна дапушчальную даўжыню",
-=======
   "password_confirmation.exceeds_maxlength": "Пароль пацвярджэння перавышае максімальна дапушчальную даўжыню",
->>>>>>> v4.5.0
   "password_confirmation.mismatching": "Пароль пацьверджання не супадае",
   "picture_in_picture.restore": "Вярніце назад",
   "poll.closed": "Закрыта",
@@ -912,10 +745,7 @@
   "poll_button.remove_poll": "Выдаліць апытанне",
   "privacy.change": "Змяніць прыватнасць допісу",
   "privacy.direct.long": "Усе згаданыя ў допісе",
-<<<<<<< HEAD
-=======
   "privacy.direct.short": "Асабістае згадванне",
->>>>>>> v4.5.0
   "privacy.private.long": "Толькі вашыя падпісчыкі",
   "privacy.private.short": "Падпісчыкі",
   "privacy.public.long": "Усе, хто ёсць і каго няма ў Mastodon",
@@ -935,13 +765,8 @@
   "quote_error.upload": "Нельга цытаваць з медыя далучэннямі.",
   "recommended": "Рэкамендаванае",
   "refresh": "Абнавiць",
-<<<<<<< HEAD
-  "regeneration_indicator.please_stand_by": "Калі ласка, пачакайце.",
-  "regeneration_indicator.preparing_your_home_feed": "Рыхтуем вашую стужку…",
-=======
   "regeneration_indicator.please_stand_by": "Пачакайце.",
   "regeneration_indicator.preparing_your_home_feed": "Рыхтуем вашу галоўную стужку…",
->>>>>>> v4.5.0
   "relative_time.days": "{number} д",
   "relative_time.full.days": "{number, plural, one {# дзень} few {# дні} many {# дзён} other {# дня}} таму",
   "relative_time.full.hours": "{number, plural, one {# гадзіна} few {# гадзіны} many {# гадзін} other {# гадзіны}} таму",
@@ -1029,21 +854,12 @@
   "search_results.accounts": "Профілі",
   "search_results.all": "Усё",
   "search_results.hashtags": "Хэштэгі",
-<<<<<<< HEAD
-  "search_results.no_results": "Анічога ня знойдзена.",
-  "search_results.no_search_yet": "Паспрабуйце пашукаць допісы, профілі або гэштаґі.",
-  "search_results.see_all": "Праглядзець усе",
-  "search_results.statuses": "Допісы",
-  "search_results.title": "Шукаць \"{q}\"",
-  "server_banner.about_active_users": "Людзі, якія карыстаюцца гэтым сервера на працягу апошніх 30 дзён (Штомесячна Актыўныя Карыстальнікі)",
-=======
   "search_results.no_results": "Няма вынікаў.",
   "search_results.no_search_yet": "Паспрабуйце пашукаць допісы, профілі або хэштэгі.",
   "search_results.see_all": "Праглядзець усе",
   "search_results.statuses": "Допісы",
   "search_results.title": "Шукаць \"{q}\"",
   "server_banner.about_active_users": "Людзі, якія карысталіся гэтым серверам на працягу апошніх 30 дзён (штомесячна актыўныя карыстальнікі)",
->>>>>>> v4.5.0
   "server_banner.active_users": "актыўныя карыстальнікі",
   "server_banner.administered_by": "Адміністратар:",
   "server_banner.is_one_of_many": "{domain} - гэта адзін з многіх незалежных сервераў Mastodon, які Вы можаце выкарыстоўваць для ўдзелу ў федэральным сусвеце.",
@@ -1060,10 +876,6 @@
   "status.block": "Заблакіраваць @{name}",
   "status.bookmark": "Дадаць закладку",
   "status.cancel_reblog_private": "Прыбраць",
-<<<<<<< HEAD
-  "status.cannot_reblog": "Гэты пост нельга пашырыць",
-  "status.continued_thread": "Працяг тэмы",
-=======
   "status.cannot_quote": "Вы не маеце дазвол цытаваць гэты допіс",
   "status.cannot_reblog": "Гэты допіс нельга пашырыць",
   "status.contains_quote": "Утрымлівае цытату",
@@ -1074,7 +886,6 @@
   "status.context.retry": "Паспрабаваць зноў",
   "status.context.show": "Паказаць",
   "status.continued_thread": "Працяг ланцужка",
->>>>>>> v4.5.0
   "status.copy": "Скапіраваць спасылку на допіс",
   "status.delete": "Выдаліць",
   "status.delete.success": "Допіс быў выдалены",
@@ -1100,8 +911,6 @@
   "status.mute_conversation": "Ігнараваць размову",
   "status.open": "Разгарнуць гэты допіс",
   "status.pin": "Замацаваць у профілі",
-<<<<<<< HEAD
-=======
   "status.quote": "Цытаваць",
   "status.quote.cancel": "Адмяніць цытаванне",
   "status.quote_error.blocked_account_hint.title": "Гэты допіс схаваны, бо Вы заблакіравалі @{name}.",
@@ -1124,7 +933,6 @@
   "status.quotes.empty": "Яшчэ ніхто не цытаваў гэты допіс. Калі гэта адбудзецца, то Вы пабачыце гэта тут.",
   "status.quotes.local_other_disclaimer": "Цытаты, у якіх адмовіў аўтар, паказаныя не будуць.",
   "status.quotes.remote_other_disclaimer": "Толькі цытаты з {domain} тут будуць гарантавана паказаныя. Цытаты, у якіх адмовіў аўтар, паказаныя не будуць.",
->>>>>>> v4.5.0
   "status.read_more": "Чытаць болей",
   "status.reblog": "Пашырыць",
   "status.reblog_or_quote": "Пашырыць ці цытаваць",
@@ -1134,15 +942,10 @@
   "status.reblogs.empty": "Гэты допіс яшчэ ніхто не пашырыў. Калі гэта адбудзецца, гэтых людзей будзе бачна тут.",
   "status.redraft": "Выдаліць і перапісаць",
   "status.remove_bookmark": "Выдаліць закладку",
-<<<<<<< HEAD
-  "status.replied_in_thread": "Адказаў у тэме",
-  "status.replied_to": "Адказаў {name}",
-=======
   "status.remove_favourite": "Выдаліць з упадабаных",
   "status.remove_quote": "Выдаліць",
   "status.replied_in_thread": "Адказаў(-ла) у ланцужку",
   "status.replied_to": "Адказаў(-ла) {name}",
->>>>>>> v4.5.0
   "status.reply": "Адказаць",
   "status.replyAll": "Адказаць у ланцугу",
   "status.report": "Паскардзіцца на @{name}",
@@ -1165,15 +968,11 @@
   "tabs_bar.home": "Галоўная",
   "tabs_bar.menu": "Меню",
   "tabs_bar.notifications": "Апавяшчэнні",
-<<<<<<< HEAD
-  "terms_of_service.title": "Умовы абслугоўваньня",
-=======
   "tabs_bar.publish": "Новы допіс",
   "tabs_bar.search": "Пошук",
   "terms_of_service.effective_as_of": "Дзейнічае да {date}",
   "terms_of_service.title": "Умовы выкарыстання",
   "terms_of_service.upcoming_changes_on": "Змены, якія адбудуцца {date}",
->>>>>>> v4.5.0
   "time_remaining.days": "{number, plural, one {застаўся # дзень} few {засталося # дні} many {засталося # дзён} other {засталося # дня}}",
   "time_remaining.hours": "{number, plural, one {засталася # гадзіна} few {засталося # гадзіны} many {засталося # гадзін} other {засталося # гадзіны}}",
   "time_remaining.minutes": "{number, plural, one {засталася # хвіліна} few {засталося # хвіліны} many {засталося # хвілін} other {засталося # хвіліны}}",
@@ -1189,15 +988,12 @@
   "upload_button.label": "Дадаць выяву, відэа- ці аўдыяфайл",
   "upload_error.limit": "Перавышана колькасць файлаў.",
   "upload_error.poll": "Немагчыма прымацаваць файл да апытання.",
-<<<<<<< HEAD
-=======
   "upload_error.quote": "Нельга запампоўваць файл пры цытаванні.",
   "upload_form.drag_and_drop.instructions": "Каб абраць медыя ўлажэнне, націсніце прабел ці Enter. Падчас перасоўвання выкарыстоўвайце кнопкі са стрэлкамі, каб пасунуць медыя далучэнне ў любым напрамку. Націсніце прабел ці Enter зноў, каб перасунуць медыя далучэнне ў новае месца, або Escape для адмены.",
   "upload_form.drag_and_drop.on_drag_cancel": "Перасоўванне адмененае. Медыя ўлажэнне {item} на месцы.",
   "upload_form.drag_and_drop.on_drag_end": "Медыя ўлажэнне {item} на месцы.",
   "upload_form.drag_and_drop.on_drag_over": "Медыя ўлажэнне {item} перасунутае.",
   "upload_form.drag_and_drop.on_drag_start": "Абранае медыя ўлажэнне {item}.",
->>>>>>> v4.5.0
   "upload_form.edit": "Рэдагаваць",
   "upload_progress.label": "Запампоўванне...",
   "upload_progress.processing": "Апрацоўка…",
@@ -1208,10 +1004,6 @@
   "video.expand": "Разгарнуць відэа",
   "video.fullscreen": "Увесь экран",
   "video.hide": "Схаваць відэа",
-<<<<<<< HEAD
-  "video.pause": "Паўза",
-  "video.play": "Прайграць"
-=======
   "video.mute": "Выключыць гук",
   "video.pause": "Паўза",
   "video.play": "Прайграць",
@@ -1234,5 +1026,4 @@
   "visibility_modal.quote_nobody": "Толькі я",
   "visibility_modal.quote_public": "Усе",
   "visibility_modal.save": "Захаваць"
->>>>>>> v4.5.0
 }

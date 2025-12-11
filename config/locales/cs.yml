@@ -867,11 +867,7 @@ cs:
         title: Odhlásit uživatele ze standardního indexování vyhledávačů
       discovery:
         follow_recommendations: Doporučená sledování
-<<<<<<< HEAD
-        preamble: Povrchový zajímavý obsah je užitečný pro zapojení nových uživatelů, kteří možná neznají žádného Mastodona. Mějte pod kontrolou, jak různé objevovací funkce fungují na vašem serveru.
-=======
         preamble: Zobrazování zajímavého obsahu je užitečné pro zapojovní nových uživatelů, kteří nemusí na Mastodonu nikoho znát. Kontrolujte, jak fungují různé funkce objevování obsahu na vašem serveru.
->>>>>>> v4.5.0
         privacy: Soukromí
         profile_directory: Adresář profilů
         public_timelines: Veřejné časové osy
@@ -953,10 +949,7 @@ cs:
       title: Příspěvky na účtu - @%{name}
       trending: Populární
       view_publicly: Zobrazit veřejně
-<<<<<<< HEAD
-=======
       view_quoted_post: Zobrazit citovaný příspěvek
->>>>>>> v4.5.0
       visibility: Viditelnost
       with_media: S médii
     strikes:
@@ -2029,12 +2022,6 @@ cs:
       limit: Už jste si připnuli maximální počet příspěvků
       ownership: Nelze připnout příspěvek někoho jiného
       reblog: Boosty nelze připnout
-<<<<<<< HEAD
-    quote_policies:
-      followers: Sledující a zmínění uživatelé
-      nobody: Pouze zmínění uživatelé
-      public: Všichni
-=======
     quote_error:
       not_available: Příspěvek není dostupný
       pending_approval: Příspěvek čeká na schválení
@@ -2044,7 +2031,6 @@ cs:
       nobody: Jen já
       public: Kdokoliv
     quote_post_author: Citovali příspěvek od %{acct}
->>>>>>> v4.5.0
     title: "%{name}: „%{quote}“"
     visibilities:
       direct: Soukromá zmínka

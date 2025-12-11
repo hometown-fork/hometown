@@ -17,15 +17,8 @@ import Replay5Icon from '@/material-icons/400-24px/replay_5-fill.svg?react';
 import VolumeDownIcon from '@/material-icons/400-24px/volume_down-fill.svg?react';
 import VolumeOffIcon from '@/material-icons/400-24px/volume_off-fill.svg?react';
 import VolumeUpIcon from '@/material-icons/400-24px/volume_up-fill.svg?react';
-<<<<<<< HEAD
-import { AltTextBadge } from 'mastodon/components/alt_text_badge';
 import { Blurhash } from 'mastodon/components/blurhash';
 import { Icon } from 'mastodon/components/icon';
-import { NoAltTextBadge } from 'mastodon/components/no_alt_text_badge';
-=======
-import { Blurhash } from 'mastodon/components/blurhash';
-import { Icon } from 'mastodon/components/icon';
->>>>>>> v4.5.0
 import { SpoilerButton } from 'mastodon/components/spoiler_button';
 import {
   isFullscreen,
@@ -57,13 +50,6 @@ const messages = defineMessages({
   volumeDown: { id: 'video.volume_down', defaultMessage: 'Volume down' },
   skipForward: { id: 'video.skip_forward', defaultMessage: 'Skip forward' },
   skipBackward: { id: 'video.skip_backward', defaultMessage: 'Skip backward' },
-<<<<<<< HEAD
-  no_descriptive_text: {
-    id: 'media.no_descriptive_text',
-    defaultMessage: 'No descriptive text was provided for this media.',
-  },
-=======
->>>>>>> v4.5.0
 });
 
 const DOUBLE_CLICK_THRESHOLD = 250;
@@ -1003,29 +989,6 @@ export const Video: React.FC<{
             </div>
 
             <div className='video-player__buttons right'>
-<<<<<<< HEAD
-              {alt && (
-                <button
-                  type='button'
-                  title={intl.formatMessage(messages.no_descriptive_text)}
-                  aria-label={intl.formatMessage(messages.no_descriptive_text)}
-                  className='player-button no-action media__no-description-icon'
-                >
-                  <AltTextBadge key='alt' description={alt} />
-                </button>
-              )}
-              {!alt && (
-                <button
-                  type='button'
-                  title={intl.formatMessage(messages.no_descriptive_text)}
-                  aria-label={intl.formatMessage(messages.no_descriptive_text)}
-                  className='player-button no-action media__no-description-icon'
-                >
-                  <NoAltTextBadge key='no-alt' />
-                </button>
-              )}
-=======
->>>>>>> v4.5.0
               {!fullscreen && onOpenVideo && (
                 <button
                   type='button'

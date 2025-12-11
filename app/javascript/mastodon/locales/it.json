@@ -262,14 +262,11 @@
   "confirmations.remove_from_followers.confirm": "Rimuovi il seguace",
   "confirmations.remove_from_followers.message": "{name} smetterà di seguirti. Si è sicuri di voler procedere?",
   "confirmations.remove_from_followers.title": "Rimuovi il seguace?",
-<<<<<<< HEAD
-=======
   "confirmations.revoke_quote.confirm": "Elimina il post",
   "confirmations.revoke_quote.message": "Questa azione non può essere annullata.",
   "confirmations.revoke_quote.title": "Rimuovere il post?",
   "confirmations.unblock.confirm": "Sblocca",
   "confirmations.unblock.title": "Sbloccare {name}?",
->>>>>>> v4.5.0
   "confirmations.unfollow.confirm": "Smetti di seguire",
   "confirmations.unfollow.title": "Smettere di seguire {name}?",
   "confirmations.withdraw_request.confirm": "Annulla la richiesta",
@@ -369,19 +366,16 @@
   "explore.trending_links": "Notizie",
   "explore.trending_statuses": "Post",
   "explore.trending_tags": "Hashtag",
-<<<<<<< HEAD
-  "federation.change": "Modifica federazione del post",
-  "federation.federated.long": "Consentirà ad altri server di pubblicare questo post",
-  "federation.federated.short": "Federazione",
-  "federation.local_only.long": "Questo post pubblicherà solo sul tuo server",
-  "federation.local_only.short": "Solo Locale",
-=======
->>>>>>> v4.5.0
   "featured_carousel.header": "{count, plural, one {Post appuntato} other {Post appuntati}}",
   "featured_carousel.next": "Successivo",
   "featured_carousel.post": "Post",
   "featured_carousel.previous": "Precedente",
   "featured_carousel.slide": "{index} di {total}",
+  "federation.change": "Modifica federazione del post",
+  "federation.federated.long": "Consentirà ad altri server di pubblicare questo post",
+  "federation.federated.short": "Federazione",
+  "federation.local_only.long": "Questo post pubblicherà solo sul tuo server",
+  "federation.local_only.short": "Solo Locale",
   "filter_modal.added.context_mismatch_explanation": "La categoria di questo filtro non si applica al contesto in cui hai acceduto a questo post. Se desideri che il post sia filtrato anche in questo contesto, dovrai modificare il filtro.",
   "filter_modal.added.context_mismatch_title": "Contesto non corrispondente!",
   "filter_modal.added.expired_explanation": "La categoria di questo filtro è scaduta, dovrvai modificarne la data di scadenza per applicarlo.",
@@ -460,11 +454,6 @@
   "hints.profiles.see_more_followers": "Vedi altri seguaci su {domain}",
   "hints.profiles.see_more_follows": "Vedi altri profili seguiti su {domain}",
   "hints.profiles.see_more_posts": "Vedi altri post su {domain}",
-<<<<<<< HEAD
-  "hints.threads.replies_may_be_missing": "Le risposte da altri server potrebbero essere mancanti.",
-  "hints.threads.see_more": "Vedi altre risposte su {domain}",
-=======
->>>>>>> v4.5.0
   "home.column_settings.show_quotes": "Mostra le citazioni",
   "home.column_settings.show_reblogs": "Mostra reblog",
   "home.column_settings.show_replies": "Mostra risposte",
@@ -486,28 +475,12 @@
   "ignore_notifications_modal.private_mentions_title": "Ignorare le notifiche provenienti da menzioni private indesiderate?",
   "info_button.label": "Aiuto",
   "info_button.what_is_alt_text": "<h1>Cos'è il testo alternativo?</h1> <p>Il testo alternativo fornisce descrizioni delle immagini per le persone con disturbi della vista, connessioni a bassa larghezza di banda o per coloro che cercano un contesto aggiuntivo.</p> <p>È possibile migliorare l'accessibilità e la comprensione per tutti scrivendo un testo alt chiaro, conciso e obiettivo.</p> <ul> <li>Cattura elementi importanti</li> <li>Riassume il testo nelle immagini</li> <li>Usa la struttura delle frasi regolari</li> <li>Evita le informazioni ridondanti</li> <li>Concentrati sulle tendenze e i risultati chiave in immagini complesse (come diagrammi o mappe)</li> </ul>",
-<<<<<<< HEAD
-  "interaction_modal.action.favourite": "Per continuare, devi aggiungere ai preferiti il ​​tuo account.",
-  "interaction_modal.action.follow": "Per continuare, devi seguire dal tuo account.",
-  "interaction_modal.action.reblog": "Per continuare, devi condividere dal tuo account.",
-  "interaction_modal.action.reply": "Per continuare, devi rispondere dal tuo account.",
-  "interaction_modal.action.vote": "Per continuare, devi votare dal tuo account.",
-=======
   "interaction_modal.action": "Per interagire con il post di {name}, devi accedere al tuo account su qualsiasi server Mastodon tu utilizzi.",
->>>>>>> v4.5.0
   "interaction_modal.go": "Vai",
   "interaction_modal.no_account_yet": "Non hai ancora un account?",
   "interaction_modal.on_another_server": "Su un altro server",
   "interaction_modal.on_this_server": "Su questo server",
-<<<<<<< HEAD
-  "interaction_modal.title.favourite": "Contrassegna il post di {name} come preferito",
-  "interaction_modal.title.follow": "Segui {name}",
-  "interaction_modal.title.reblog": "Reblogga il post di {name}",
-  "interaction_modal.title.reply": "Rispondi al post di {name}",
-  "interaction_modal.title.vote": "Vota nel sondaggio di {name}",
-=======
   "interaction_modal.title": "Accedi per continuare",
->>>>>>> v4.5.0
   "interaction_modal.username_prompt": "Es. {example}",
   "intervals.full.days": "{number, plural, one {# giorno} other {# giorni}}",
   "intervals.full.hours": "{number, plural, one {# ora} other {# ore}}",
@@ -615,13 +588,8 @@
   "navigation_bar.follows_and_followers": "Seguiti e seguaci",
   "navigation_bar.import_export": "Importa ed esporta",
   "navigation_bar.lists": "Liste",
-<<<<<<< HEAD
-  "navigation_bar.live_feed_local": "Feed live (locale)",
-  "navigation_bar.live_feed_public": "Feed live (pubblico)",
-=======
   "navigation_bar.live_feed_local": "Feed in diretta (locale)",
   "navigation_bar.live_feed_public": "Feed in diretta (pubblico)",
->>>>>>> v4.5.0
   "navigation_bar.logout": "Disconnettiti",
   "navigation_bar.moderation": "Moderazione",
   "navigation_bar.more": "Altro",
@@ -954,15 +922,6 @@
   "status.mute_conversation": "Silenzia conversazione",
   "status.open": "Espandi questo post",
   "status.pin": "Fissa in cima sul profilo",
-<<<<<<< HEAD
-  "status.quote_error.filtered": "Nascosto a causa di uno dei tuoi filtri",
-  "status.quote_error.not_found": "Questo post non può essere visualizzato.",
-  "status.quote_error.pending_approval": "Questo post è in attesa di approvazione dell'autore originale.",
-  "status.quote_error.rejected": "Questo post non può essere visualizzato perché l'autore originale non consente che venga citato.",
-  "status.quote_error.removed": "Questo post è stato rimosso dal suo autore.",
-  "status.quote_error.unauthorized": "Questo post non può essere visualizzato in quanto non sei autorizzato a visualizzarlo.",
-  "status.quote_post_author": "Post di @{name}",
-=======
   "status.quote": "Cita",
   "status.quote.cancel": "Annulla la citazione",
   "status.quote_error.blocked_account_hint.title": "Questo post è nascosto perché hai bloccato @{name}.",
@@ -985,7 +944,6 @@
   "status.quotes.empty": "Nessuno ha ancora citato questo post. Quando qualcuno lo farà, verrà visualizzato qui.",
   "status.quotes.local_other_disclaimer": "Le citazioni rifiutate dall'autore non verranno mostrate.",
   "status.quotes.remote_other_disclaimer": "Solo le citazioni provenienti da {domain} saranno mostrate qui. Le citazioni rifiutate dall'autore non saranno mostrate.",
->>>>>>> v4.5.0
   "status.read_more": "Leggi di più",
   "status.reblog": "Reblog",
   "status.reblog_or_quote": "Condividi o cita",
@@ -996,10 +954,7 @@
   "status.redraft": "Elimina e riscrivi",
   "status.remove_bookmark": "Rimuovi segnalibro",
   "status.remove_favourite": "Rimuovi dai preferiti",
-<<<<<<< HEAD
-=======
   "status.remove_quote": "Rimuovi",
->>>>>>> v4.5.0
   "status.replied_in_thread": "Ha risposto nella discussione",
   "status.replied_to": "Risposta a {name}",
   "status.reply": "Rispondi",
@@ -1044,10 +999,7 @@
   "upload_button.label": "Aggiungi un file immagine, video o audio",
   "upload_error.limit": "Limite di caricamento dei file superato.",
   "upload_error.poll": "Caricamento del file non consentito con i sondaggi.",
-<<<<<<< HEAD
-=======
   "upload_error.quote": "Caricamento file non consentito con le citazioni.",
->>>>>>> v4.5.0
   "upload_form.drag_and_drop.instructions": "Per selezionare un allegato multimediale, premi Spazio o Invio. Mentre trascini, usa i tasti con le frecce per spostare l'allegato multimediale in una qualsiasi direzione. Premi di nuovo Spazio o Invio per rilasciare l'allegato multimediale nella sua nuova posizione, oppure premi Esc per annullare.",
   "upload_form.drag_and_drop.on_drag_cancel": "Il trascinamento è stato annullato. L'allegato multimediale {item} è stato eliminato.",
   "upload_form.drag_and_drop.on_drag_end": "L'allegato multimediale {item} è stato eliminato.",
@@ -1070,9 +1022,6 @@
   "video.skip_forward": "Vai avanti",
   "video.unmute": "Muta",
   "video.volume_down": "Abbassa volume",
-<<<<<<< HEAD
-  "video.volume_up": "Alza volume"
-=======
   "video.volume_up": "Alza volume",
   "visibility_modal.button_title": "Imposta la visibilità",
   "visibility_modal.direct_quote_warning.text": "Se si salvano le impostazioni correnti, la citazione incorporata verrà convertita in un collegamento.",
@@ -1090,5 +1039,4 @@
   "visibility_modal.quote_nobody": "Solo io",
   "visibility_modal.quote_public": "Chiunque",
   "visibility_modal.save": "Salva"
->>>>>>> v4.5.0
 }

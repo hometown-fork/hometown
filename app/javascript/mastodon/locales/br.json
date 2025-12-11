@@ -26,20 +26,10 @@
   "account.copy": "Eilañ al liamm war-zu ho profil",
   "account.direct": "Menegiñ @{name} ent-prevez",
   "account.disable_notifications": "Paouez d'am c'hemenn pa vez embannet traoù gant @{name}",
-<<<<<<< HEAD
-=======
   "account.domain_blocking": "Domani stanket",
->>>>>>> v4.5.0
   "account.edit_profile": "Kemmañ ar profil",
   "account.edit_profile_short": "Kemmañ",
   "account.enable_notifications": "Ma c'hemenn pa vez embannet traoù gant @{name}",
-<<<<<<< HEAD
-  "account.endorse": "Lakaat war-wel war ar profil",
-  "account.familiar_followers_one": "Heuilhet gant {name1}",
-  "account.familiar_followers_two": "Heuilhet gant {name1} ha {name2}",
-  "account.featured_tags.last_status_at": "Toud diwezhañ : {date}",
-  "account.featured_tags.last_status_never": "Embannadur ebet",
-=======
   "account.endorse": "Lakaat en a-raok war ar profil",
   "account.familiar_followers_one": "Heuliet gant {name1}",
   "account.familiar_followers_two": "Heuliet gant {name1} ha {name2}",
@@ -48,7 +38,6 @@
   "account.featured.hashtags": "Gerioù-klik",
   "account.featured_tags.last_status_at": "Embann diwezhañ: {date}",
   "account.featured_tags.last_status_never": "Embann ebet",
->>>>>>> v4.5.0
   "account.follow": "Heuliañ",
   "account.follow_back": "Heuliañ d'ho tro",
   "account.follow_back_short": "Heuliañ d'ho tro",
@@ -111,21 +100,13 @@
   "alert.rate_limited.title": "Feur bevennet",
   "alert.unexpected.message": "Ur fazi dic'hortozet zo degouezhet.",
   "alert.unexpected.title": "Hopala !",
-<<<<<<< HEAD
-=======
   "alt_text_badge.title": "Eiltestenn",
   "alt_text_modal.add_alt_text": "Ouzhpennañ un eiltestenn",
->>>>>>> v4.5.0
   "alt_text_modal.cancel": "Nullañ",
   "alt_text_modal.change_thumbnail": "Kemmañ ar velvenn",
   "alt_text_modal.done": "Graet",
   "announcement.announcement": "Kemennad",
   "annual_report.summary.followers.followers": "heulier",
-<<<<<<< HEAD
-  "annual_report.summary.highlighted_post.possessive": "{name}",
-  "annual_report.summary.most_used_hashtag.none": "Hini ebet",
-  "annual_report.summary.new_posts.new_posts": "toudoù nevez",
-=======
   "annual_report.summary.followers.total": "{count} en holl",
   "annual_report.summary.highlighted_post.by_favourites": "embannadur karet ar muiañ",
   "annual_report.summary.highlighted_post.by_reblogs": "embannadur skignet ar muiañ",
@@ -135,7 +116,6 @@
   "annual_report.summary.most_used_hashtag.most_used_hashtag": "ar gerioù-klik implijet ar muiañ",
   "annual_report.summary.most_used_hashtag.none": "Hini ebet",
   "annual_report.summary.new_posts.new_posts": "embannadurioù nevez",
->>>>>>> v4.5.0
   "attachments_list.unprocessed": "(ket meret)",
   "audio.hide": "Kuzhat ar c'hleved",
   "block_modal.show_less": "Diskouez nebeutoc'h",
@@ -168,11 +148,7 @@
   "column.create_list": "Krouiñ ul listenn",
   "column.direct": "Menegoù prevez",
   "column.directory": "Mont a-dreuz ar profiloù",
-<<<<<<< HEAD
-  "column.domain_blocks": "Domani berzet",
-=======
   "column.domain_blocks": "Domani stanket",
->>>>>>> v4.5.0
   "column.edit_list": "Kemmañ al listenn",
   "column.favourites": "Muiañ-karet",
   "column.firehose": "Redoù war-eeun",
@@ -224,10 +200,6 @@
   "confirmations.delete_list.confirm": "Dilemel",
   "confirmations.delete_list.message": "Ha sur eo hoc'h eus c'hoant da zilemel ar roll-mañ da vat ?",
   "confirmations.delete_list.title": "Dilemel al listenn?",
-<<<<<<< HEAD
-  "confirmations.discard_edit_media.confirm": "Nac'hañ",
-  "confirmations.discard_edit_media.message": "Bez ez eus kemmoù n'int ket enrollet e deskrivadur ar media pe ar rakwel, nullañ anezho evelato?",
-=======
   "confirmations.discard_draft.confirm": "Diverkañ ha kenderc'hel",
   "confirmations.discard_draft.edit.cancel": "Distreiñ d'an embann",
   "confirmations.discard_draft.post.cancel": "Distreiñ d'ar brouilhed",
@@ -235,7 +207,6 @@
   "confirmations.discard_edit_media.confirm": "Nac'hañ",
   "confirmations.discard_edit_media.message": "Bez ez eus kemmoù n'int ket enrollet e deskrivadur ar media pe ar rakwel, nullañ anezho evelato?",
   "confirmations.follow_to_list.confirm": "Heuliañ hag ouzhpennañ d'al listenn",
->>>>>>> v4.5.0
   "confirmations.follow_to_list.title": "Heuliañ an implijer·ez?",
   "confirmations.logout.confirm": "Digevreañ",
   "confirmations.logout.message": "Ha sur oc'h e fell deoc'h digevreañ ?",
@@ -246,10 +217,6 @@
   "confirmations.mute.confirm": "Kuzhat",
   "confirmations.quiet_post_quote_info.got_it": "Mat eo",
   "confirmations.redraft.confirm": "Diverkañ ha skrivañ en-dro",
-<<<<<<< HEAD
-  "confirmations.unfollow.confirm": "Diheuliañ",
-  "confirmations.unfollow.message": "Ha sur oc'h e fell deoc'h paouez da heuliañ {name} ?",
-=======
   "confirmations.redraft.title": "Diverkañ ha skrivañ an embann en-dro?",
   "confirmations.remove_from_followers.confirm": "Dilemel an heulier·ez",
   "confirmations.remove_from_followers.title": "Dilemel an heulier·ez?",
@@ -263,7 +230,6 @@
   "confirmations.withdraw_request.title": "Nullañ ho reked da heuliañ {name}?",
   "content_warning.hide": "Kuzhat an embannadur",
   "content_warning.show": "Diskwel memes tra",
->>>>>>> v4.5.0
   "content_warning.show_more": "Diskouez muioc'h",
   "conversation.delete": "Dilemel ar gaozeadenn",
   "conversation.mark_as_read": "Merkañ evel lennet",
@@ -280,12 +246,9 @@
   "disabled_account_banner.text": "Ho kont {disabledAccount} zo divev evit bremañ.",
   "dismissable_banner.community_timeline": "Setu embannadurioù foran nevesañ an dud a zo herberc’hiet o c’hontoù gant {domain}.",
   "dismissable_banner.dismiss": "Diverkañ",
-<<<<<<< HEAD
-=======
   "domain_block_modal.block": "Stankañ ar servijer",
   "domain_block_modal.block_account_instead": "Stankañ @{name} kentoc'h",
   "domain_block_modal.title": "Stankañ an domani?",
->>>>>>> v4.5.0
   "domain_pill.server": "Dafariad",
   "domain_pill.their_handle": "H·ec'h anaouder:",
   "domain_pill.username": "Anv-implijer",
@@ -322,13 +285,8 @@
   "empty_column.followed_tags": "N'emaoc'h oc'h heuliañ ger-klik ebet evit poent. Pa vioc'h e vo d'o gwelet amañ.",
   "empty_column.hashtag": "N'eus netra er ger-klik-mañ c'hoazh.",
   "empty_column.home": "Goullo eo ho red-amzer degemer! Kit da weladenniñ {public} pe implijit ar c'hlask evit kregiñ ganti ha kejañ gant implijer·ien·ezed all.",
-<<<<<<< HEAD
-  "empty_column.list": "Goullo eo al listenn-mañ evit c'hoazh. Pa vo embannet toudoù nevez gant e izili e teuint war wel amañ.",
-  "empty_column.mutes": "N'ho peus kuzhet implijer ebet c'hoazh.",
-=======
   "empty_column.list": "Goullo eo al listenn-mañ evit c'hoazh. Pa vo embannet un dra nevez gant e izili e teuio war wel amañ.",
   "empty_column.mutes": "N'ho peus kuzhet implijer·ez ebet c'hoazh.",
->>>>>>> v4.5.0
   "empty_column.notifications": "N'ho peus kemenn ebet c'hoazh. Grit gant implijer·ezed·ien all evit loc'hañ ar gomz.",
   "empty_column.public": "N'eus netra amañ! Skrivit un dra bennak foran pe heuilhit implijerien·ezed eus servijerioù all evit leuniañ",
   "error.unexpected_crash.explanation": "Abalamour d'ur beug en hor c'hod pe d'ur gudenn geverlec'hded n'hallomp ket skrammañ ar bajenn-mañ en un doare dereat.",
@@ -341,15 +299,9 @@
   "explore.title": "Diouzh ar c'hiz",
   "explore.trending_links": "Keleier",
   "explore.trending_statuses": "Embannadurioù",
-<<<<<<< HEAD
-  "explore.trending_tags": "Hashtagoù",
-  "featured_carousel.next": "War-raok",
-  "featured_carousel.post": "Embannadenn",
-=======
   "explore.trending_tags": "Gerioù-klik",
   "featured_carousel.next": "War-raok",
   "featured_carousel.post": "Embannadur",
->>>>>>> v4.5.0
   "featured_carousel.previous": "War-gil",
   "featured_carousel.slide": "{index} diwar {total}",
   "filter_modal.added.context_mismatch_title": "Kenarroud digenglotus !",
@@ -363,13 +315,8 @@
   "filter_modal.select_filter.prompt_new": "Rummad nevez : {name}",
   "filter_modal.select_filter.search": "Klask pe krouiñ",
   "filter_modal.select_filter.subtitle": "Implijout ur rummad a zo anezhañ pe krouiñ unan nevez",
-<<<<<<< HEAD
-  "filter_modal.select_filter.title": "Silañ an toud-mañ",
-  "filter_modal.title.status": "Silañ un toud",
-=======
   "filter_modal.select_filter.title": "Silañ an embannadur-mañ",
   "filter_modal.title.status": "Silañ un embannadur",
->>>>>>> v4.5.0
   "filter_warning.matches_filter": "A glot gant ar sil “<span>{title}</span>”",
   "firehose.all": "Pep tra",
   "firehose.local": "Ar servijer-mañ",
@@ -394,11 +341,8 @@
   "generic.saved": "Enrollet",
   "getting_started.heading": "Loc'hañ",
   "hashtag.admin_moderation": "Digeriñ an etrefas evezhiañ evit #{name}",
-<<<<<<< HEAD
-=======
   "hashtag.browse": "Furchal dre an embannadurioù gant #{hashtag}",
   "hashtag.browse_from_account": "Furchal dre an embannadurioù gant @{name} gant #{hashtag}",
->>>>>>> v4.5.0
   "hashtag.column_header.tag_mode.all": "ha(g) {additional}",
   "hashtag.column_header.tag_mode.any": "pe {additional}",
   "hashtag.column_header.tag_mode.none": "hep {additional}",
@@ -416,10 +360,7 @@
   "hashtag.unfeature": "Na lakaat ket en a-raok war ar profil",
   "hashtag.unfollow": "Diheuliañ ar ger-klik",
   "hashtags.and_other": "…{count, plural, one {hag # all} other {ha # all}}",
-<<<<<<< HEAD
-=======
   "hints.profiles.see_more_posts": "Gwelet embannadurioù ouzhpenn eus {domain}",
->>>>>>> v4.5.0
   "home.column_settings.show_quotes": "Diskouez an arroudennoù",
   "home.column_settings.show_reblogs": "Diskouez ar skignadennoù",
   "home.column_settings.show_replies": "Diskouez ar respontoù",
@@ -427,11 +368,8 @@
   "home.pending_critical_update.body": "Hizivait ho servijer Mastodon kerkent ha ma c'hallit mar plij!",
   "home.pending_critical_update.link": "Gwelet an hizivadennoù",
   "home.show_announcements": "Diskouez ar c'hemennoù",
-<<<<<<< HEAD
-=======
   "interaction_modal.go": "Mont di",
   "interaction_modal.no_account_yet": "N'ho peus ket ur gont c'hoazh?",
->>>>>>> v4.5.0
   "interaction_modal.on_another_server": "War ur servijer all",
   "interaction_modal.on_this_server": "War ar servijer-mañ",
   "interaction_modal.username_prompt": "D.s. {example}",
@@ -481,28 +419,20 @@
   "limited_account_hint.action": "Diskouez ar profil memes tra",
   "limited_account_hint.title": "Kuzhet eo bet ar profil-mañ gant an evezhierien eus {domain}.",
   "link_preview.author": "Gant {name}",
-<<<<<<< HEAD
   "lists.add_member": "Ouzhpennañ",
   "lists.add_to_list": "Ouzhpennañ d'al listenn",
   "lists.create": "Krouiñ",
-=======
   "link_preview.more_from_author": "Muioc'h gant {name}",
   "link_preview.shares": "{count, plural, one {{counter} embannadur} two {{counter} embannadur} few {{counter} embannadur} many {{counter} embannadur} other {{counter} embannadur}}",
   "lists.add_member": "Ouzhpennañ",
   "lists.add_to_list": "Ouzhpennañ d'al listenn",
   "lists.create": "Krouiñ",
   "lists.create_a_list_to_organize": "Krouit ul listenn evit renkañ ho red degemer",
->>>>>>> v4.5.0
   "lists.create_list": "Krouiñ ul listenn",
   "lists.delete": "Dilemel al listenn",
   "lists.done": "Graet",
   "lists.edit": "Kemmañ al listenn",
   "lists.list_name": "Anv al listenn",
-<<<<<<< HEAD
-  "lists.replies_policy.followed": "Pep implijer.ez heuliet",
-  "lists.replies_policy.list": "Izili ar roll",
-  "lists.replies_policy.none": "Den ebet",
-=======
   "lists.new_list_name": "Anv nevez al listenn",
   "lists.no_lists_yet": "Listenn ebet c'hoazh.",
   "lists.remove_member": "Dilemel",
@@ -511,7 +441,6 @@
   "lists.replies_policy.none": "Den ebet",
   "lists.save": "Enrollañ",
   "lists.search": "Klask",
->>>>>>> v4.5.0
   "load_pending": "{count, plural, one {# dra nevez} other {# dra nevez}}",
   "loading_indicator.label": "O kargañ…",
   "media_gallery.hide": "Kuzhat",
@@ -521,20 +450,12 @@
   "mute_modal.title": "Kuzhat an implijer·ez?",
   "navigation_bar.about": "Diwar-benn",
   "navigation_bar.account_settings": "Ger-tremen ha surentez",
-<<<<<<< HEAD
-  "navigation_bar.automated_deletion": "Dilemel an embannadenn ent-emgefreek",
-  "navigation_bar.blocks": "Implijer·ezed·ien berzet",
-  "navigation_bar.bookmarks": "Sinedoù",
-  "navigation_bar.direct": "Menegoù prevez",
-  "navigation_bar.domain_blocks": "Domanioù kuzhet",
-=======
   "navigation_bar.administration": "Merañ",
   "navigation_bar.automated_deletion": "Dilemel an embannadenn ent-emgefreek",
   "navigation_bar.blocks": "Implijerien·ezed stanket",
   "navigation_bar.bookmarks": "Sinedoù",
   "navigation_bar.direct": "Menegoù prevez",
   "navigation_bar.domain_blocks": "Domanioù stanket",
->>>>>>> v4.5.0
   "navigation_bar.favourites": "Muiañ-karet",
   "navigation_bar.filters": "Gerioù kuzhet",
   "navigation_bar.follow_requests": "Rekedoù heuliañ",
@@ -542,18 +463,12 @@
   "navigation_bar.follows_and_followers": "Heuliadennoù ha heulier·ezed·ien",
   "navigation_bar.import_export": "Enporzhiañ hag ezporzhiañ",
   "navigation_bar.lists": "Listennoù",
-<<<<<<< HEAD
-  "navigation_bar.logout": "Digennaskañ",
-  "navigation_bar.more": "Muioc'h",
-  "navigation_bar.mutes": "Implijer·ion·ezed kuzhet",
-=======
   "navigation_bar.live_feed_local": "Red war-eeun (lec'hel)",
   "navigation_bar.live_feed_public": "Red war-eeun (foran)",
   "navigation_bar.logout": "Digevreañ",
   "navigation_bar.moderation": "Habaskadur",
   "navigation_bar.more": "Muioc'h",
   "navigation_bar.mutes": "Implijerien·ezed kuzhet",
->>>>>>> v4.5.0
   "navigation_bar.preferences": "Gwellvezioù",
   "navigation_bar.search": "Klask",
   "navigation_bar.search_trends": "Klask / Diouzh ar c'hiz",
@@ -564,30 +479,19 @@
   "notification.follow": "heuliañ a ra {name} ac'hanoc'h",
   "notification.follow.name_and_others": "{name} <a>{count, plural, one {hag # den all} two {ha # zen all} few {ha # den all} many {ha # den all} other {ha # den all}}</a> zo o heuliañ ac'hanoc'h",
   "notification.follow_request": "Gant {name} eo bet goulennet ho heuliañ",
-<<<<<<< HEAD
-  "notification.label.reply": "Respont",
-=======
   "notification.label.quote": "Gant {name} eo bet meneget hoc'h embannadur",
   "notification.label.reply": "Respont",
   "notification.mention": "Meneg",
   "notification.mentioned_you": "Gant {name} oc'h bet meneget",
->>>>>>> v4.5.0
   "notification.moderation-warning.learn_more": "Gouzout hiroc'h",
   "notification.moderation_warning.action_disable": "Diweredekaet eo bet ho kont.",
   "notification.moderation_warning.action_suspend": "Astalet eo bet ho kont.",
   "notification.own_poll": "Echu eo ho sontadeg",
-<<<<<<< HEAD
-  "notification.reblog": "Gant {name} eo bet skignet ho toud",
-  "notification.relationships_severance_event.learn_more": "Gouzout hiroc'h",
-  "notification.status": "Emañ {name} o paouez toudañ",
-  "notification.update": "Gant {name} ez eus bet kemmet un toud",
-=======
   "notification.quoted_update": "Gant {name} eo bet kemmet un embannadur meneget ganeoc'h",
   "notification.reblog": "Gant {name} eo bet skignet hoc'h embannadur",
   "notification.relationships_severance_event.learn_more": "Gouzout hiroc'h",
   "notification.status": "Emañ {name} o paouez embann",
   "notification.update": "Gant {name} ez eus bet kemmet un embannadur",
->>>>>>> v4.5.0
   "notification_requests.accept": "Asantiñ",
   "notification_requests.dismiss": "Diverkañ",
   "notification_requests.edit_selection": "Kemmañ",
@@ -600,11 +504,7 @@
   "notifications.column_settings.favourite": "Muiañ-karet:",
   "notifications.column_settings.filter_bar.advanced": "Diskouez an holl rummadoù",
   "notifications.column_settings.follow": "Heulierien nevez:",
-<<<<<<< HEAD
-  "notifications.column_settings.follow_request": "Pedadoù heuliañ nevez :",
-=======
   "notifications.column_settings.follow_request": "Rekedoù heuliañ nevez:",
->>>>>>> v4.5.0
   "notifications.column_settings.group": "Strollañ",
   "notifications.column_settings.mention": "Menegoù:",
   "notifications.column_settings.poll": "Disoc'hoù ar sontadeg:",
@@ -663,11 +563,8 @@
   "poll_button.add_poll": "Ouzhpennañ ur sontadeg",
   "poll_button.remove_poll": "Dilemel ar sontadeg",
   "privacy.change": "Cheñch prevezded an embannadur",
-<<<<<<< HEAD
-=======
   "privacy.direct.long": "Pep hini meneget en embannadur",
   "privacy.private.long": "Hoc'h heulierien·ezed hepken",
->>>>>>> v4.5.0
   "privacy.private.short": "Heulierien",
   "privacy.public.short": "Publik",
   "privacy.quote.anyone": "{visibility}, n'eus forzh piv a c'hall menegiñ",
@@ -677,10 +574,7 @@
   "quote_error.poll": "N'haller ket menegiñ sontadegoù.",
   "recommended": "Erbedet",
   "refresh": "Freskaat",
-<<<<<<< HEAD
-=======
   "regeneration_indicator.preparing_your_home_feed": "O prientiñ ho red degemer…",
->>>>>>> v4.5.0
   "relative_time.days": "{number}d",
   "relative_time.full.days": "{number, plural, one {# devezh} two {# zevezh} few {# devezh} many {# a devezh} other {# devezh}} zo",
   "relative_time.full.hours": "{number, plural, one {# eurvezh} two {# eurvezh} few {# eurvezh} many {# eur} other {# eurvezh}} zo",
@@ -755,11 +649,7 @@
   "search_popout.user": "implijer·ez",
   "search_results.accounts": "Profiloù",
   "search_results.all": "Pep tra",
-<<<<<<< HEAD
-  "search_results.hashtags": "Hashtagoù",
-=======
   "search_results.hashtags": "Gerioù-klik",
->>>>>>> v4.5.0
   "search_results.no_results": "Disoc'h ebet.",
   "search_results.see_all": "Gwelet pep tra",
   "search_results.statuses": "Toudoù",
@@ -800,14 +690,10 @@
   "status.mute_conversation": "Kuzhat ar gaozeadenn",
   "status.open": "Digeriñ ar c'hannad-mañ",
   "status.pin": "Spilhennañ d'ar profil",
-<<<<<<< HEAD
-  "status.quote_post_author": "Embannadenn gant {name}",
-=======
   "status.quote": "Menegiñ",
   "status.quote.cancel": "Nullañ ar menegiñ",
   "status.quote_error.not_available": "Embannadur dihegerz",
   "status.quote_policy_change": "Cheñch piv a c'hall menegiñ",
->>>>>>> v4.5.0
   "status.read_more": "Lenn muioc'h",
   "status.reblog": "Skignañ",
   "status.reblog_or_quote": "Skignañ pe menegiñ",
@@ -866,9 +752,6 @@
   "video.fullscreen": "Skramm a-bezh",
   "video.hide": "Kuzhat ar video",
   "video.pause": "Paouez",
-<<<<<<< HEAD
-  "video.play": "Lenn"
-=======
   "video.play": "Lenn",
   "visibility_modal.privacy_label": "Gwelusted",
   "visibility_modal.quote_followers": "Tud koumanantet hepken",
@@ -876,5 +759,4 @@
   "visibility_modal.quote_nobody": "Me hepken",
   "visibility_modal.quote_public": "Pep den",
   "visibility_modal.save": "Enrollañ"
->>>>>>> v4.5.0
 }

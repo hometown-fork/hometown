@@ -61,10 +61,7 @@ fy:
         setting_display_media_default: As gefoelich markearre media ferstopje
         setting_display_media_hide_all: Media altyd ferstopje
         setting_display_media_show_all: Media altyd toane
-<<<<<<< HEAD
-=======
         setting_emoji_style: Wêrmei moatte emojis werjûn wurde. ‘Automatysk’ probearret de systeemeigen emojis te brûken, mar falt werom op Twemoji foar âldere browsers.
->>>>>>> v4.5.0
         setting_system_scrollbars_ui: Allinnich fan tapassing op desktopbrowsers basearre op Safari en Chromium
         setting_use_blurhash: Dizige kleuroergongen binne basearre op de kleuren fan de ferstoppe media, wêrmei elk detail ferdwynt
         setting_use_pending_items: De tiidline wurdt bywurke troch op it oantal nije items te klikken, yn stee fan dat dizze automatysk bywurke wurdt
@@ -152,13 +149,8 @@ fy:
       user:
         chosen_languages: Allinnich berjochten yn de selektearre talen wurde op de iepenbiere tiidline toand
         date_of_birth:
-<<<<<<< HEAD
-          one: Wy moatte derfoar soargje dat jo op syn minst %{count} binne om Mastodon te brûken. Dit wurdt net bewarre.
-          other: Wy moatte derfoar soargje dat jo op syn minst %{count} binne om Mastodon te brûken. Dit wurdt net bewarre.
-=======
           one: Wy moatte derfoar soargje dat jo op syn minst %{count} binne om %{domain} brûke te meien. Dit wurdt net bewarre.
           other: Wy moatte derfoar soargje dat jo op syn minst %{count} binne om %{domain} brûke te meien. Dit wurdt net bewarre.
->>>>>>> v4.5.0
         role: De rol bepaalt hokker rjochten in brûker hat.
       user_role:
         color: Kleur dy’t brûkt wurdt foar de rol yn de UI, as RGB yn heksadesimaal formaat
@@ -237,10 +229,7 @@ fy:
         setting_always_send_emails: Altyd e-mailmeldingen ferstjoere
         setting_auto_play_gif: Spylje animearre GIF’s automatysk ôf
         setting_default_language: Taal fan jo berjochten
-<<<<<<< HEAD
         setting_default_privacy: Sichtberheid fan nije berjochten
-=======
->>>>>>> v4.5.0
         setting_default_quote_policy: Wa kin sitearje
         setting_default_sensitive: Media altyd as gefoelich markearje
         setting_disable_hover_cards: Profylfoarbylden troch der oerhinne te sweven útskeakelje

@@ -28,10 +28,7 @@
   "account.disable_notifications": "Stopiwch fy hysbysu pan fydd @{name} yn postio",
   "account.domain_blocking": "Parthau'n cael eu rhwystro",
   "account.edit_profile": "Golygu'r proffil",
-<<<<<<< HEAD
-=======
   "account.edit_profile_short": "Golygu",
->>>>>>> v4.5.0
   "account.enable_notifications": "Rhowch wybod i fi pan fydd @{name} yn postio",
   "account.endorse": "Dangos ar fy mhroffil",
   "account.familiar_followers_many": "Yn cael ei ddilyn gan {name1},{name2}, a {othersCount, plural, one {one other you know} other{# others you know}}",
@@ -44,14 +41,11 @@
   "account.featured_tags.last_status_never": "Dim postiadau",
   "account.follow": "Dilyn",
   "account.follow_back": "Dilyn nôl",
-<<<<<<< HEAD
-=======
   "account.follow_back_short": "Dilyn nôl",
   "account.follow_request": "Cais i ddilyn",
   "account.follow_request_cancel": "Diddymu cais",
   "account.follow_request_cancel_short": "Diddymu",
   "account.follow_request_short": "Gofyn",
->>>>>>> v4.5.0
   "account.followers": "Dilynwyr",
   "account.followers.empty": "Does neb yn dilyn y defnyddiwr hwn eto.",
   "account.followers_counter": "{count, plural, one {{counter} dilynwr} two {{counter} ddilynwr} other {{counter} dilynwr}}",
@@ -263,14 +257,11 @@
   "confirmations.remove_from_followers.confirm": "Dileu dilynwr",
   "confirmations.remove_from_followers.message": "Bydd {name} yn rhoi'r gorau i'ch dilyn. A ydych yn siŵr eich bod am fwrw ymlaen?",
   "confirmations.remove_from_followers.title": "Tynnu dilynwr?",
-<<<<<<< HEAD
-=======
   "confirmations.revoke_quote.confirm": "Dileu'r postiad",
   "confirmations.revoke_quote.message": "Does dim modd dadwneud y weithred hon.",
   "confirmations.revoke_quote.title": "Dileu'r postiad?",
   "confirmations.unblock.confirm": "Dadrwystro",
   "confirmations.unblock.title": "Dadrwystro {name}?",
->>>>>>> v4.5.0
   "confirmations.unfollow.confirm": "Dad-ddilyn",
   "confirmations.unfollow.title": "Dad-ddilyn {name}",
   "confirmations.withdraw_request.confirm": "Tynnu'r cais yn ôl",
@@ -345,10 +336,7 @@
   "empty_column.bookmarked_statuses": "Does gennych chi ddim unrhyw bostiad wedi'u cadw fel nod tudalen eto. Pan fyddwch yn gosod nod tudalen i un, mi fydd yn ymddangos yma.",
   "empty_column.community": "Mae'r ffrwd lleol yn wag. Beth am ysgrifennu rhywbeth cyhoeddus!",
   "empty_column.direct": "Does gennych chi unrhyw grybwylliadau preifat eto. Pan fyddwch chi'n anfon neu'n derbyn un, bydd yn ymddangos yma.",
-<<<<<<< HEAD
-=======
   "empty_column.disabled_feed": "Mae'r ffrwd hon wedi'i hanalluogi gan weinyddwyr eich gweinydd.",
->>>>>>> v4.5.0
   "empty_column.domain_blocks": "Does dim parthau wedi'u rhwystro eto.",
   "empty_column.explore_statuses": "Does dim pynciau llosg ar hyn o bryd. Dewch nôl nes ymlaen!",
   "empty_column.favourited_statuses": "Rydych chi heb ffafrio unrhyw bostiadau eto. Pan byddwch chi'n ffafrio un, bydd yn ymddangos yma.",
@@ -373,19 +361,16 @@
   "explore.trending_links": "Newyddion",
   "explore.trending_statuses": "Postiadau",
   "explore.trending_tags": "Hashnodau",
-<<<<<<< HEAD
-  "federation.change": "Adjust status federation",
-  "federation.federated.long": "Allow toot to reach other instances",
-  "federation.federated.short": "Federated",
-  "federation.local_only.long": "Restrict this toot only to my instance",
-  "federation.local_only.short": "Local-only",
-=======
->>>>>>> v4.5.0
   "featured_carousel.header": "{count, plural, one {Postiad wedi'i binio} other {Postiadau wedi'u pinio}}",
   "featured_carousel.next": "Nesaf",
   "featured_carousel.post": "Postiad",
   "featured_carousel.previous": "Blaenorol",
   "featured_carousel.slide": "{index} o {total}",
+  "federation.change": "Adjust status federation",
+  "federation.federated.long": "Allow toot to reach other instances",
+  "federation.federated.short": "Federated",
+  "federation.local_only.long": "Restrict this toot only to my instance",
+  "federation.local_only.short": "Local-only",
   "filter_modal.added.context_mismatch_explanation": "Dyw'r categori hidlo hwn ddim yn berthnasol i'r cyd-destun yr ydych wedi cyrchu'r postiad hwn ynddo. Os ydych chi am i'r postiad gael ei hidlo yn y cyd-destun hwn hefyd, bydd yn rhaid i chi olygu'r hidlydd.",
   "filter_modal.added.context_mismatch_title": "Diffyg cyfatebiaeth cyd-destun!",
   "filter_modal.added.expired_explanation": "Mae'r categori hidlydd hwn wedi dod i ben, bydd angen i chi newid y dyddiad dod i ben er mwyn iddo fod yn berthnasol.",
@@ -464,11 +449,6 @@
   "hints.profiles.see_more_followers": "Gweld mwy o ddilynwyr ar {domain}",
   "hints.profiles.see_more_follows": "Gweld mwy o 'yn dilyn' ar {domain}",
   "hints.profiles.see_more_posts": "Gweld mwy o bostiadau ar {domain}",
-<<<<<<< HEAD
-  "hints.threads.replies_may_be_missing": "Mae'n bosibl y bydd ymatebion gan weinyddion eraill ar goll.",
-  "hints.threads.see_more": "Gweld mwy o ymatebion ar {domain}",
-=======
->>>>>>> v4.5.0
   "home.column_settings.show_quotes": "Dangos dyfyniadau",
   "home.column_settings.show_reblogs": "Dangos hybiau",
   "home.column_settings.show_replies": "Dangos ymatebion",
@@ -490,28 +470,12 @@
   "ignore_notifications_modal.private_mentions_title": "Anwybyddu hysbysiadau o Grybwylliadau Preifat digymell?",
   "info_button.label": "Cymorth",
   "info_button.what_is_alt_text": "<h1>Beth yw testun amgen?</h1><p> Mae Testun Amgen yn darparu disgrifiadau delwedd ar gyfer pobl â nam ar eu golwg, cysylltiadau lled band isel, neu'r rhai sy'n ceisio cyd-destun ychwanegol.</p><p> Gallwch wella hygyrchedd a dealltwriaeth i bawb trwy ysgrifennu testun amgen clir, cryno a gwrthrychol.</p><ul><li> Dal elfennau pwysig</li><li> Crynhoi testun mewn delweddau</li><li> Defnyddiwch strwythur brawddegau rheolaidd</li><li> Osgoi gwybodaeth ddiangen</li><li> Canolbwyntio ar dueddiadau a chanfyddiadau allweddol mewn delweddau cymhleth (fel diagramau neu fapiau)</li></ul>",
-<<<<<<< HEAD
-  "interaction_modal.action.favourite": "I barhau, mae angen i chi hoffi o'ch cyfrif.",
-  "interaction_modal.action.follow": "I barhau, mae angen i chi ddilyn o'ch cyfrif.",
-  "interaction_modal.action.reblog": "I barhau, mae angen i chi ail-flogio o'ch cyfrif.",
-  "interaction_modal.action.reply": "I barhau, mae angen i chi ymateb o'ch cyfrif.",
-  "interaction_modal.action.vote": "I barhau, mae angen i chi bleidleisio o'ch cyfrif.",
-=======
   "interaction_modal.action": "I ryngweithio â phostiad {name}, mae angen i chi fewngofnodi i'ch cyfrif ar ba bynnag weinydd Mastodon rydych chi'n ei ddefnyddio.",
->>>>>>> v4.5.0
   "interaction_modal.go": "Mynd",
   "interaction_modal.no_account_yet": "Dim cyfrif eto?",
   "interaction_modal.on_another_server": "Ar weinydd gwahanol",
   "interaction_modal.on_this_server": "Ar y gweinydd hwn",
-<<<<<<< HEAD
-  "interaction_modal.title.favourite": "Ffafrio postiad {name}",
-  "interaction_modal.title.follow": "Dilyn {name}",
-  "interaction_modal.title.reblog": "Hybu postiad {name}",
-  "interaction_modal.title.reply": "Ymateb i bostiad {name}",
-  "interaction_modal.title.vote": "Pleidleisiwch ym mhleidlais {name}",
-=======
   "interaction_modal.title": "Mewngofnodwch i barhau",
->>>>>>> v4.5.0
   "interaction_modal.username_prompt": "e.e. {example}",
   "intervals.full.days": "{number, plural, one {# diwrnod} two {# ddiwrnod} other {# diwrnod}}",
   "intervals.full.hours": "{number, plural, one {# awr} other {# awr}}",
@@ -532,10 +496,7 @@
   "keyboard_shortcuts.home": "Agor ffrwd gartref",
   "keyboard_shortcuts.hotkey": "Bysell boeth",
   "keyboard_shortcuts.legend": "Dangos yr allwedd hon",
-<<<<<<< HEAD
-=======
   "keyboard_shortcuts.load_more": "Canolbwyntio ar y botwm \"Llwytho rhagor\"",
->>>>>>> v4.5.0
   "keyboard_shortcuts.local": "Agor ffrwd lleol",
   "keyboard_shortcuts.mention": "Crybwyll yr awdur",
   "keyboard_shortcuts.muted": "Agor rhestr defnyddwyr rydych wedi'u tewi",
@@ -544,10 +505,7 @@
   "keyboard_shortcuts.open_media": "Agor cyfryngau",
   "keyboard_shortcuts.pinned": "Agor rhestr postiadau wedi'u pinio",
   "keyboard_shortcuts.profile": "Agor proffil yr awdur",
-<<<<<<< HEAD
-=======
   "keyboard_shortcuts.quote": "Dyfynnu postiad",
->>>>>>> v4.5.0
   "keyboard_shortcuts.reply": "Ateb postiad",
   "keyboard_shortcuts.requests": "Agor rhestr ceisiadau dilyn",
   "keyboard_shortcuts.search": "Ffocysu ar y bar chwilio",
@@ -621,11 +579,7 @@
   "navigation_bar.favourites": "Ffefrynnau",
   "navigation_bar.filters": "Geiriau wedi'u tewi",
   "navigation_bar.follow_requests": "Ceisiadau dilyn",
-<<<<<<< HEAD
-  "navigation_bar.followed_tags": "Hashnodau a ddilynir",
-=======
   "navigation_bar.followed_tags": "Hashnodau sy'n cael eu dilyn",
->>>>>>> v4.5.0
   "navigation_bar.follows_and_followers": "Yn dilyn a dilynwyr",
   "navigation_bar.import_export": "Mewnforio ac allforio",
   "navigation_bar.lists": "Rhestrau",
@@ -665,10 +619,7 @@
   "notification.label.mention": "Crybwyll",
   "notification.label.private_mention": "Crybwyll preifat",
   "notification.label.private_reply": "Ymateb preifat",
-<<<<<<< HEAD
-=======
   "notification.label.quote": "Mae {name} wedi dyfynnu eich postiad",
->>>>>>> v4.5.0
   "notification.label.reply": "Ymateb",
   "notification.mention": "Crybwyll",
   "notification.mentioned_you": "Rydych wedi'ch crybwyll gan {name}",
@@ -683,10 +634,7 @@
   "notification.moderation_warning.action_suspend": "Mae eich cyfrif wedi'i atal.",
   "notification.own_poll": "Mae eich pleidlais wedi dod i ben",
   "notification.poll": "Mae arolwg rydych wedi pleidleisio ynddo wedi dod i ben",
-<<<<<<< HEAD
-=======
   "notification.quoted_update": "Golygodd {name} bostiad rydych chi wedi'i ddyfynnu",
->>>>>>> v4.5.0
   "notification.reblog": "Hybodd {name} eich post",
   "notification.reblog.name_and_others_with_link": "Mae {name} a <a>{count, plural, one {# arall} other {# arall}}</a> wedi hybu eich postiad",
   "notification.relationships_severance_event": "Wedi colli cysylltiad â {name}",
@@ -730,10 +678,7 @@
   "notifications.column_settings.mention": "Crybwylliadau:",
   "notifications.column_settings.poll": "Canlyniadau pleidlais:",
   "notifications.column_settings.push": "Hysbysiadau gwthio",
-<<<<<<< HEAD
-=======
   "notifications.column_settings.quote": "Dyfyniadau:",
->>>>>>> v4.5.0
   "notifications.column_settings.reblog": "Hybiau:",
   "notifications.column_settings.show": "Dangos yn y golofn",
   "notifications.column_settings.sound": "Chwarae sain",
@@ -837,12 +782,9 @@
   "relative_time.minutes": "{number} munud",
   "relative_time.seconds": "{number} eiliad",
   "relative_time.today": "heddiw",
-<<<<<<< HEAD
-=======
   "remove_quote_hint.button_label": "Iawn",
   "remove_quote_hint.message": "Gallwch wneud hynny o'r ddewislen dewisiadau {icon}.",
   "remove_quote_hint.title": "Eisiau dileu eich postiad sy'n cael ei ddyfynnu?",
->>>>>>> v4.5.0
   "reply_indicator.attachments": "{count, plural, one {# atodiad} other {# atodiad}}",
   "reply_indicator.cancel": "Diddymu",
   "reply_indicator.poll": "Pleidlais",
@@ -934,12 +876,6 @@
   "status.admin_account": "Agor rhyngwyneb cymedroli @{name}",
   "status.admin_domain": "Agor rhyngwyneb cymedroli {domain}",
   "status.admin_status": "Agor y postiad hwn yn y rhyngwyneb cymedroli",
-<<<<<<< HEAD
-  "status.block": "Rhwystro @{name}",
-  "status.bookmark": "Nod tudalen",
-  "status.cancel_reblog_private": "Dadhybu",
-  "status.cannot_reblog": "Does dim modd hybu'r postiad hwn",
-=======
   "status.all_disabled": "Mae hybu a dyfynnu wedi'u hanalluogi",
   "status.block": "Rhwystro @{name}",
   "status.bookmark": "Nod tudalen",
@@ -953,7 +889,6 @@
   "status.context.more_replies_found": "Mwy o atebion wedi'u canfod",
   "status.context.retry": "Ceisio eto",
   "status.context.show": "Dangos",
->>>>>>> v4.5.0
   "status.continued_thread": "Edefyn parhaus",
   "status.copy": "Copïo dolen i'r post",
   "status.delete": "Dileu",
@@ -980,15 +915,6 @@
   "status.mute_conversation": "Anwybyddu sgwrs",
   "status.open": "Ehangu'r post hwn",
   "status.pin": "Pinio ar y proffil",
-<<<<<<< HEAD
-  "status.quote_error.filtered": "Wedi'i guddio oherwydd un o'ch hidlwyr",
-  "status.quote_error.not_found": "Does dim modd dangos y postiad hwn.",
-  "status.quote_error.pending_approval": "Mae'r postiad hwn yn aros am gymeradwyaeth yr awdur gwreiddiol.",
-  "status.quote_error.rejected": "Does dim modd dangos y postiad hwn gan nad yw'r awdur gwreiddiol yn caniatáu iddo gael ei ddyfynnu.",
-  "status.quote_error.removed": "Cafodd y postiad hwn ei ddileu gan ei awdur.",
-  "status.quote_error.unauthorized": "Does dim modd dangos y postiad hwn gan nad oes gennych awdurdod i'w weld.",
-  "status.quote_post_author": "Postiad gan {name}",
-=======
   "status.quote": "Dyfynnu",
   "status.quote.cancel": "Diddymu'r dyfyniad",
   "status.quote_error.blocked_account_hint.title": "Mae'r postiad hwn wedi'i guddio oherwydd eich bod wedi rhwystro @{name}.",
@@ -1011,7 +937,6 @@
   "status.quotes.empty": "Does neb wedi dyfynnu'r postiad hwn eto. Pan fydd rhywun yn gwneud hynny, bydd yn ymddangos yma.",
   "status.quotes.local_other_disclaimer": "Bydd dyfyniadau wedi'u gwrthod gan yr awdur ddim yn cael eu dangos.",
   "status.quotes.remote_other_disclaimer": "Dim ond dyfyniadau o {domain} sy'n siŵr o gael eu dangos yma. Bydd dyfyniadau wedi'u gwrthod gan yr awdur ddim yn cael eu dangos.",
->>>>>>> v4.5.0
   "status.read_more": "Darllen rhagor",
   "status.reblog": "Hybu",
   "status.reblog_or_quote": "Hybu neu ddyfynnu",
@@ -1022,10 +947,7 @@
   "status.redraft": "Dileu ac ail lunio",
   "status.remove_bookmark": "Tynnu nod tudalen",
   "status.remove_favourite": "Tynnu o'r ffefrynnau",
-<<<<<<< HEAD
-=======
   "status.remove_quote": "Tynnu",
->>>>>>> v4.5.0
   "status.replied_in_thread": "Wedi ateb mewn edefyn",
   "status.replied_to": "Wedi ymateb i {name}",
   "status.reply": "Ymateb",
@@ -1067,26 +989,10 @@
   "units.short.million": "{count}miliwn",
   "units.short.thousand": "{count}mil",
   "upload_area.title": "Llusgwch a gollwng i lwytho",
-<<<<<<< HEAD
-  "upload_button.label": "Ychwanegwch gyfryngau (JPEG, PNG, GIF, WebM, MP4, MOV)",
-  "upload_error.limit": "Wedi pasio'r uchafswm llwytho.",
-  "upload_error.poll": "Nid oes modd llwytho ffeiliau â phleidleisiau.",
-  "upload_form.audio_description": "Disgrifio ar gyfer pobl sydd â cholled clyw",
-  "upload_form.description": "Disgrifio i'r rheini a nam ar ei golwg",
-  "upload_form.drag_and_drop.instructions": "I godi atodiad cyfryngau, pwyswch y space neu enter. Wrth lusgo, defnyddiwch y bysellau saeth i symud yr atodiad cyfryngau i unrhyw gyfeiriad penodol. Pwyswch space neu enter eto i ollwng yr atodiad cyfryngau yn ei safle newydd, neu pwyswch escape i ddiddymu.",
-  "upload_form.drag_and_drop.on_drag_cancel": "Cafodd llusgo ei ddiddymu. Cafodd atodiad cyfryngau {item} ei ollwng.",
-  "upload_form.drag_and_drop.on_drag_end": "Cafodd atodiad cyfryngau {item} ei ollwng.",
-  "upload_form.drag_and_drop.on_drag_over": "Symudwyd atodiad cyfryngau {item}.",
-  "upload_form.drag_and_drop.on_drag_start": "Atodiad cyfryngau godwyd {item}.",
-  "upload_button.label": "Ychwanegwch delweddau, fideo neu ffeil sain",
-  "upload_error.limit": "Wedi mynd heibio'r uchafswm llwytho.",
-  "upload_error.poll": "Does dim modd llwytho ffeiliau â phleidleisiau.",
-=======
   "upload_button.label": "Ychwanegwch delweddau, fideo neu ffeil sain",
   "upload_error.limit": "Wedi mynd heibio'r uchafswm llwytho.",
   "upload_error.poll": "Does dim modd llwytho ffeiliau â phleidleisiau.",
   "upload_error.quote": "Does dim hawl llwytho i fyny gyda dyfyniadau.",
->>>>>>> v4.5.0
   "upload_form.drag_and_drop.instructions": "I godi atodiad cyfryngau, pwyswch y space neu enter. Wrth lusgo, defnyddiwch y bysellau saeth i symud yr atodiad cyfryngau i unrhyw gyfeiriad penodol. Pwyswch space neu enter eto i ollwng yr atodiad cyfryngau yn ei safle newydd, neu pwyswch escape i ddiddymu.",
   "upload_form.drag_and_drop.on_drag_cancel": "Cafodd llusgo ei ddiddymu. Cafodd atodi cyfryngau {item} ei ollwng.",
   "upload_form.drag_and_drop.on_drag_end": "Cafodd atodiad cyfryngau {item} ei ollwng.",
@@ -1109,9 +1015,6 @@
   "video.skip_forward": "Symud ymlaen",
   "video.unmute": "Dad-dewi",
   "video.volume_down": "Lefel sain i lawr",
-<<<<<<< HEAD
-  "video.volume_up": "Lefel sain i fyny"
-=======
   "video.volume_up": "Lefel sain i fyny",
   "visibility_modal.button_title": "Gosod gwelededd",
   "visibility_modal.header": "Gwelededd a rhyngweithio",
@@ -1127,5 +1030,4 @@
   "visibility_modal.quote_nobody": "Dim ond fi",
   "visibility_modal.quote_public": "Pawb",
   "visibility_modal.save": "Cadw"
->>>>>>> v4.5.0
 }

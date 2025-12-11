@@ -921,10 +921,7 @@ gl:
       title: Publicacións da conta - @%{name}
       trending: Popular
       view_publicly: Ver publicamente
-<<<<<<< HEAD
-=======
       view_quoted_post: Ver publicación citada
->>>>>>> v4.5.0
       visibility: Visibilidade
       with_media: con medios
     strikes:
@@ -1604,8 +1601,6 @@ gl:
       expires_at: Caduca
       uses: Usos
     title: Convidar a persoas
-<<<<<<< HEAD
-=======
   link_preview:
     author_html: De %{name}
     potentially_sensitive_content:
@@ -1613,7 +1608,6 @@ gl:
       confirm_visit: Tes certeza de querer abrir esta ligazón?
       hide_button: Ocultar
       label: Posible contido sensible
->>>>>>> v4.5.0
   lists:
     errors:
       limit: Xa acadaches o número máximo de listas
@@ -1942,12 +1936,6 @@ gl:
       limit: Xa fixaches o número máximo permitido de publicacións
       ownership: Non podes fixar a publicación doutra usuaria
       reblog: Non se poden fixar as mensaxes promovidas
-<<<<<<< HEAD
-    quote_policies:
-      followers: Seguidoras e usuarias mencionadas
-      nobody: Só usuarias mencionadas
-      public: Calquera
-=======
     quote_error:
       not_available: Publicación non dispoñible
       pending_approval: Publicación pendente
@@ -1957,7 +1945,6 @@ gl:
       nobody: Só para min
       public: Calquera
     quote_post_author: Citou unha publicación de %{acct}
->>>>>>> v4.5.0
     title: '%{name}: "%{quote}"'
     visibilities:
       direct: Mención privada

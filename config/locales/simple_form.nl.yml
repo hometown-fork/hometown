@@ -57,22 +57,15 @@ nl:
         setting_advanced_layout: Geef Mastodon in meerdere kolommen weer, waarmee je jouw tijdlijn, meldingen en een derde kolom naar keuze in een opslag kunt bekijken. Niet aanbevolen voor kleinere schermen.
         setting_aggregate_reblogs: Geen nieuwe boosts tonen voor berichten die recentelijk nog zijn geboost (heeft alleen effect op nieuw ontvangen boosts)
         setting_always_send_emails: Normaliter worden er geen e-mailmeldingen verstuurd wanneer je actief Mastodon gebruikt
-<<<<<<< HEAD
-        setting_default_quote_policy: Het is voor gebruikers die vermeld worden altijd toegestaan om te citeren. Deze instelling is alleen van kracht voor berichten die gemaakt zijn met de volgende Mastodon-versie, maar je kunt je voorkeur nu alvast instellen
-=======
         setting_boost_modal: Wanneer dit is ingeschakeld, krijg je eerst een bevestigingsvenster te zien waarmee je de zichtbaarheid van je boost kunt wijzigen.
         setting_default_quote_policy_private: Berichten aan alleen volgers afkomstig van Mastodon kunnen niet door anderen worden geciteerd.
         setting_default_quote_policy_unlisted: Wanneer mensen jou citeren, verschijnt hun bericht ook niet onder trends.
->>>>>>> v4.5.0
         setting_default_sensitive: Gevoelige media wordt standaard verborgen en kan met één klik worden getoond
         setting_display_media_default: Als gevoelig gemarkeerde media verbergen
         setting_display_media_hide_all: Media altijd verbergen
         setting_display_media_show_all: Media altijd tonen
-<<<<<<< HEAD
-=======
         setting_emoji_style: Waarmee moeten emojis worden weergegeven. ‘Auto’ probeert de systeemeigen emojis te gebruiken, maar valt terug op Twemoji voor oudere webbrowsers.
         setting_quick_boosting_html: Wanneer dit is ingeschakeld, boost je in één keer wanneer je op het %{boost_icon} boostpictogram klikt en verplaatst de citeeroptie zich naar het %{options_icon} optiemenu. Wanneer dit is uitgeschakeld krijg je gelijk de mogelijkheid om te boosten of te citeren.
->>>>>>> v4.5.0
         setting_system_scrollbars_ui: Alleen van toepassing op desktopbrowsers gebaseerd op Safari en Chrome
         setting_use_blurhash: Wazige kleurovergangen zijn gebaseerd op de kleuren van de verborgen media, waarmee elk detail verdwijnt
         setting_use_pending_items: De tijdlijn wordt bijgewerkt door op het aantal nieuwe items te klikken, in plaats van dat deze automatisch wordt bijgewerkt
@@ -161,13 +154,8 @@ nl:
       user:
         chosen_languages: Alleen berichten in de aangevinkte talen worden op de openbare tijdlijnen getoond
         date_of_birth:
-<<<<<<< HEAD
-          one: We moeten er zeker van zijn dat je tenminste %{count} bent om Mastodon te mogen gebruiken. Deze informatie wordt niet door ons opgeslagen.
-          other: We moeten er zeker van zijn dat je tenminste %{count} bent om Mastodon te mogen gebruiken. Deze informatie wordt niet door ons opgeslagen.
-=======
           one: We moeten er zeker van zijn dat je tenminste %{count} bent om %{domain} te mogen gebruiken. Deze informatie wordt niet door ons opgeslagen.
           other: We moeten er zeker van zijn dat je tenminste %{count} bent om %{domain} te mogen gebruiken. Deze informatie wordt niet door ons opgeslagen.
->>>>>>> v4.5.0
         role: De rol bepaalt welke rechten de gebruiker heeft.
       user_role:
         color: Kleur die gebruikt wordt voor de rol in de UI, als RGB in hexadecimale formaat
@@ -252,15 +240,9 @@ nl:
         setting_boost_modal: Zichtbaarheid van boosts
         setting_default_language: Taal van berichten
         setting_default_privacy: Zichtbaarheid van nieuwe berichten
-<<<<<<< HEAD
-        setting_default_quote_policy: Wie kan citeren
-        setting_default_sensitive: Media altijd als gevoelig markeren
-        setting_delete_modal: Vraag voor het verwijderen van een bericht een bevestiging
-=======
         setting_default_quote_policy: Wie mag jou citeren
         setting_default_sensitive: Media altijd als gevoelig markeren
         setting_delete_modal: Waarschuw mij wanneer ik een bericht probeer te verwijderen
->>>>>>> v4.5.0
         setting_disable_hover_cards: Hover-kaarten met profielvoorbeelden uitschakelen
         setting_disable_swiping: Swipebewegingen uitschakelen
         setting_display_media: Mediaweergave
@@ -270,12 +252,8 @@ nl:
         setting_emoji_style: Emoji-stijl
         setting_expand_spoilers: Berichten met inhoudswaarschuwingen altijd uitklappen
         setting_hide_network: Jouw volgers en wie je volgt verbergen
-<<<<<<< HEAD
-        setting_missing_alt_text_modal: Bevestigingsvenster tonen voor het plaatsen van media zonder alt-tekst
-=======
         setting_missing_alt_text_modal: Waarschuw mij wanneer ik een bericht zonder alt-tekst probeer te plaatsen
         setting_quick_boosting: Snel boosten inschakelen
->>>>>>> v4.5.0
         setting_reduce_motion: Beweging in animaties verminderen
         setting_system_font_ui: Standaardlettertype van het systeem gebruiken
         setting_system_scrollbars_ui: Standaard scrollbalk van het systeem gebruiken
@@ -332,10 +310,6 @@ nl:
         status_page_url: URL van statuspagina
         theme: Standaardthema
         thumbnail: Server-miniatuur
-<<<<<<< HEAD
-        timeline_preview: Toegang tot de openbare tijdlijnen zonder in te loggen toestaan
-=======
->>>>>>> v4.5.0
         trendable_by_default: Trends goedkeuren zonder voorafgaande beoordeling
         trends: Trends inschakelen
       interactions:

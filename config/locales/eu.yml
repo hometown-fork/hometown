@@ -205,10 +205,7 @@ eu:
         destroy_user_role: Ezabatu rola
         disable_2fa_user: Desgaitu 2FA
         disable_custom_emoji: Desgaitu emoji pertsonalizatua
-<<<<<<< HEAD
-=======
         disable_relay: Erreleboa desaktibatu
->>>>>>> v4.5.0
         disable_sign_in_token_auth_user: Desgaitu email token autentifikazioa erabiltzailearentzat
         disable_user: Desgaitu erabiltzailea
         enable_custom_emoji: Gaitu emoji pertsonalizatua
@@ -474,16 +471,11 @@ eu:
     fasp:
       debug:
         callbacks:
-<<<<<<< HEAD
-          delete: Ezabatu
-          ip: IP helbidea
-=======
           created_at: Sortua hemen
           delete: Ezabatu
           ip: IP helbidea
           request_body: Eskaeraren edukia
           title: Atzera-deiak araztu
->>>>>>> v4.5.0
       providers:
         active: Aktibo
         base_url: Oinarrizko URL-a
@@ -500,11 +492,8 @@ eu:
         save: Gorde
         sign_in: Hasi saioa
         status: Egoera
-<<<<<<< HEAD
-=======
         title: Fedibertsoko zerbitzu osagarrien hornitzaileak
       title: FZOH
->>>>>>> v4.5.0
     follow_recommendations:
       description_html: "<strong>Jarraitzeko gomendioek erabiltzaile berriei eduki interesgarria azkar aurkitzen laguntzen diete</strong>. Erabiltzaile batek jarraitzeko gomendio pertsonalizatuak jasotzeko adina interakzio izan ez duenean, kontu hauek gomendatzen zaizkio. Egunero birkalkulatzen dira hizkuntza bakoitzerako, azken aldian parte-hartze handiena izan duten eta jarraitzaile lokal gehien dituzten kontuak nahasiz."
       language: Hizkuntza
@@ -809,10 +798,6 @@ eu:
         title: Erabiltzaileei bilaketa-motorraren indexaziotik at egoteko aukera ematen die lehenetsitako aukera modura
       discovery:
         follow_recommendations: Jarraitzeko gomendioak
-<<<<<<< HEAD
-        preamble: Eduki interesgarria aurkitzea garrantzitsua da Mastodoneko erabiltzaile berrientzat, behar bada inor ez dutelako ezagutuko. Kontrolatu zure zerbitzariko aurkikuntza-ezaugarriek nola funtzionatzen duten.
-=======
->>>>>>> v4.5.0
         privacy: Pribatutasuna
         profile_directory: Profil-direktorioa
         public_timelines: Denbora-lerro publikoak
@@ -937,10 +922,7 @@ eu:
         message_html: "<strong>Zure objektuen biltegiratzea ez dago ongi konfiguratua. Zure erabiltzaileen pribatutasuna arriskuan dago.</strong>"
     tags:
       moderation:
-<<<<<<< HEAD
-=======
         not_trendable: Ez dago modan
->>>>>>> v4.5.0
         not_usable: Ez erabilgarri
         pending_review: Berrikusketaren zain
         reviewed: Berrikusita
@@ -957,24 +939,17 @@ eu:
       title: Traolak
       updated_msg: Traola-ezarpenak ongi eguneratu dira
     terms_of_service:
-<<<<<<< HEAD
-      changelog: Zer aldatu da
-=======
       back: Zerbitzuaren baldintzetara itzuli
       changelog: Zer aldatu da
       create: Erabili zeurea
->>>>>>> v4.5.0
       current: Oraingoa
       draft: Zirriborroa
       generate: Txantiloila erabili
       generates:
         action: Sortu
-<<<<<<< HEAD
-=======
         chance_to_review_html: "<strong>Sortutako zerbitzu-baldintzak ez dira automatikoki argitaratuko.</strong> Emaitzak berrikusteko aukera izango duzu. Mesedez, bete beharrezko xehetasunak aurrera egiteko."
         explanation_html: Zerbitzu-baldintzen txantiloia informazio-helburuetarako soilik da, eta ez da gai bati buruzko aholku juridikotzat hartu behar. Mesedez, kontsultatu zure aholkulari juridikoa zure egoerari eta galdera juridiko zehatzei buruz.
       going_live_on_html: Argitaratua, indarrean %{date}
->>>>>>> v4.5.0
       history: Historia
       live: Zuzenean
       publish: Argitaratu
@@ -1813,11 +1788,8 @@ eu:
     does_not_match_previous_name: ez dator aurreko izenarekin bat
   terms_of_service:
     title: Erabilera baldintzak
-<<<<<<< HEAD
-=======
   terms_of_service_interstitial:
     future_preamble_html: Gure zerbitzu-baldintzetan aldaketa batzuk egiten ari gara, eta <strong>%{date}</strong>-tik aurrera jarriko dira indarrean. Eguneratutako baldintzak berrikustea gomendatzen dizugu.
->>>>>>> v4.5.0
   themes:
     contrast: Mastodon (Kontraste altua)
     default: Mastodon (Iluna)

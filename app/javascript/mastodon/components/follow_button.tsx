@@ -24,8 +24,6 @@ const longMessages = defineMessages({
   unmute: { id: 'account.unmute_short', defaultMessage: 'Unmute' },
   follow: { id: 'account.follow', defaultMessage: 'Follow' },
   followBack: { id: 'account.follow_back', defaultMessage: 'Follow back' },
-<<<<<<< HEAD
-=======
   followRequest: {
     id: 'account.follow_request',
     defaultMessage: 'Request to follow',
@@ -34,7 +32,6 @@ const longMessages = defineMessages({
     id: 'account.follow_request_cancel',
     defaultMessage: 'Cancel request',
   },
->>>>>>> v4.5.0
   editProfile: { id: 'account.edit_profile', defaultMessage: 'Edit profile' },
 });
 
@@ -60,13 +57,9 @@ const shortMessages = {
 export const FollowButton: React.FC<{
   accountId?: string;
   compact?: boolean;
-<<<<<<< HEAD
-}> = ({ accountId, compact }) => {
-=======
   labelLength?: 'auto' | 'short' | 'long';
   className?: string;
 }> = ({ accountId, compact, labelLength = 'auto', className }) => {
->>>>>>> v4.5.0
   const intl = useIntl();
   const dispatch = useAppDispatch();
   const { signedIn } = useIdentity();
@@ -143,13 +136,9 @@ export const FollowButton: React.FC<{
     label = intl.formatMessage(messages.editProfile);
   } else if (!relationship) {
     label = <LoadingIndicator />;
-<<<<<<< HEAD
-  } else if (relationship.following || relationship.requested) {
-=======
   } else if (relationship.muting) {
     label = intl.formatMessage(messages.unmute);
   } else if (relationship.following) {
->>>>>>> v4.5.0
     label = intl.formatMessage(messages.unfollow);
   } else if (relationship.blocking) {
     label = intl.formatMessage(messages.unblock);
@@ -167,11 +156,7 @@ export const FollowButton: React.FC<{
         href='/settings/profile'
         target='_blank'
         rel='noopener'
-<<<<<<< HEAD
-        className={classNames('button button-secondary', {
-=======
         className={classNames(className, 'button button-secondary', {
->>>>>>> v4.5.0
           'button--compact': compact,
         })}
       >
@@ -185,20 +170,12 @@ export const FollowButton: React.FC<{
       onClick={handleClick}
       disabled={
         relationship?.blocked_by ||
-<<<<<<< HEAD
-        relationship?.blocking ||
-=======
->>>>>>> v4.5.0
         (!(relationship?.following || relationship?.requested) &&
           (account?.suspended || !!account?.moved))
       }
       secondary={following}
       compact={compact}
-<<<<<<< HEAD
-      className={following ? 'button--destructive' : undefined}
-=======
       className={classNames(className, { 'button--destructive': following })}
->>>>>>> v4.5.0
     >
       {label}
     </Button>

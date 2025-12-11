@@ -11,11 +11,8 @@ import type {
 } from 'react-overlays/esm/usePopper';
 
 import { DropdownMenu } from 'mastodon/components/dropdown_menu';
-<<<<<<< HEAD
-=======
 import { useIdentity } from 'mastodon/identity_context';
 import type { MenuItem } from 'mastodon/models/dropdown_menu';
->>>>>>> v4.5.0
 import { useAppSelector } from 'mastodon/store';
 
 const messages = defineMessages({
@@ -50,10 +47,7 @@ interface TargetParams {
 
 export const HashtagMenuController: React.FC = () => {
   const intl = useIntl();
-<<<<<<< HEAD
-=======
   const { signedIn } = useIdentity();
->>>>>>> v4.5.0
   const [open, setOpen] = useState(false);
   const [{ accountId, hashtag }, setTargetParams] = useState<TargetParams>({});
   const targetRef = useRef<HTMLAnchorElement | null>(null);
@@ -105,13 +99,8 @@ export const HashtagMenuController: React.FC = () => {
     targetRef.current = null;
   }, [setOpen]);
 
-<<<<<<< HEAD
-  const menu = useMemo(
-    () => [
-=======
   const menu = useMemo(() => {
     const arr: MenuItem[] = [
->>>>>>> v4.5.0
       {
         text: intl.formatMessage(messages.browseHashtag, {
           hashtag,
@@ -125,32 +114,20 @@ export const HashtagMenuController: React.FC = () => {
         }),
         to: `/@${account?.acct}/tagged/${hashtag}`,
       },
-<<<<<<< HEAD
-      null,
-      {
-=======
     ];
 
     if (signedIn) {
       arr.push(null, {
->>>>>>> v4.5.0
         text: intl.formatMessage(messages.muteHashtag, {
           hashtag,
         }),
         href: '/filters',
         dangerous: true,
-<<<<<<< HEAD
-      },
-    ],
-    [intl, hashtag, account],
-  );
-=======
       });
     }
 
     return arr;
   }, [intl, hashtag, account, signedIn]);
->>>>>>> v4.5.0
 
   if (!open) {
     return null;

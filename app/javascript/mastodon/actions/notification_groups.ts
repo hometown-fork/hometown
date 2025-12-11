@@ -168,14 +168,9 @@ export const processNewNotificationForGroups = createAppAsyncThunk(
 
     const showInColumn =
       activeFilter === 'all'
-<<<<<<< HEAD
-        ? notificationShows[notification.type] !== false
-        : activeFilter === notification.type;
-=======
         ? notificationShows[notificationTypeForFilter(notification.type)] !==
           false
         : activeFilter === notificationTypeForQuickFilter(notification.type);
->>>>>>> v4.5.0
 
     if (!showInColumn) return;
 

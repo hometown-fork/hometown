@@ -8,20 +8,13 @@ import { replyComposeById } from 'mastodon/actions/compose';
 import { navigateToStatus } from 'mastodon/actions/statuses';
 import { Avatar } from 'mastodon/components/avatar';
 import { AvatarGroup } from 'mastodon/components/avatar_group';
-<<<<<<< HEAD
-=======
 import { Hotkeys } from 'mastodon/components/hotkeys';
->>>>>>> v4.5.0
 import type { IconProp } from 'mastodon/components/icon';
 import { Icon } from 'mastodon/components/icon';
 import { RelativeTimestamp } from 'mastodon/components/relative_timestamp';
 import { NOTIFICATIONS_GROUP_MAX_AVATARS } from 'mastodon/models/notification_group';
 import { useAppSelector, useAppDispatch } from 'mastodon/store';
 
-<<<<<<< HEAD
-import { DisplayedName } from './displayed_name';
-=======
->>>>>>> v4.5.0
 import { EmbeddedStatus } from './embedded_status';
 
 const AVATAR_SIZE = 28;

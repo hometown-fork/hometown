@@ -1903,15 +1903,9 @@ eo:
       ownership: Mesaĝo de iu alia ne povas esti alpinglita
       reblog: Diskonigo ne povas esti alpinglita
     quote_policies:
-<<<<<<< HEAD
-      followers: Sekvantoj kaj menciitaj uzantoj
-      nobody: Nur menciitaj uzantoj
-      public: Ĉiuj
-=======
       followers: Nur sekvantoj
       nobody: Nur mi
       public: Iu ajn
->>>>>>> v4.5.0
     title: "%{name}: “%{quote}”"
     visibilities:
       direct: Privada mencio
@@ -1964,12 +1958,9 @@ eo:
     does_not_match_previous_name: ne kongruas kun la antaŭa nomo
   terms_of_service:
     title: Kondiĉoj de uzado
-<<<<<<< HEAD
-=======
   terms_of_service_interstitial:
     past_preamble_html: Ni ŝanĝis niajn servkondiĉojn ekde via lasta vizito. Ni instigas vin revizii la ĝisdatigitajn kondiĉojn.
     title: La servkondiĉoj de %{domain} ŝanĝiĝas
->>>>>>> v4.5.0
   themes:
     contrast: Mastodon (Forta kontrasto)
     default: Mastodon (Malhela)

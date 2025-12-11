@@ -827,11 +827,7 @@ zh-TW:
         title: 預設將使用者排除於搜尋引擎索引
       discovery:
         follow_recommendations: 跟隨建議
-<<<<<<< HEAD
-        preamble: 呈現有趣的內容有助於 Mastodon 上一人不識的新手上路。控制各種不同的分類於您伺服器上如何被探索到。
-=======
         preamble: 呈現有趣的內容有助於 Mastodon 上一人不識的新手上路。控制您伺服器上各類探索功能之運作方式。
->>>>>>> v4.5.0
         privacy: 隱私權
         profile_directory: 個人檔案目錄
         public_timelines: 公開時間軸
@@ -913,10 +909,7 @@ zh-TW:
       title: 嘟文帳號 - @%{name}
       trending: 熱門
       view_publicly: 公開檢視
-<<<<<<< HEAD
-=======
       view_quoted_post: 檢視引用嘟文
->>>>>>> v4.5.0
       visibility: 可見性
       with_media: 含有媒體檔案
     strikes:
@@ -1902,12 +1895,6 @@ zh-TW:
       limit: 釘選嘟文的數量已達上限
       ownership: 不能釘選他人的嘟文
       reblog: 不能釘選轉嘟
-<<<<<<< HEAD
-    quote_policies:
-      followers: 跟隨者與已提及使用者
-      nobody: 僅限已提及使用者
-      public: 任何人
-=======
     quote_error:
       not_available: 無法取得該嘟文
       pending_approval: 嘟文正在等候審核中
@@ -1917,7 +1904,6 @@ zh-TW:
       nobody: 僅有我
       public: 所有人
     quote_post_author: 已引用 %{acct} 之嘟文
->>>>>>> v4.5.0
     title: "%{name}：「%{quote}」"
     visibilities:
       direct: 私訊

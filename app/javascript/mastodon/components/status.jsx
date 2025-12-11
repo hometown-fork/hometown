@@ -118,10 +118,7 @@ class Status extends ImmutablePureComponent {
     unread: PropTypes.bool,
     showThread: PropTypes.bool,
     isQuotedPost: PropTypes.bool,
-<<<<<<< HEAD
-=======
     shouldHighlightOnMount: PropTypes.bool,
->>>>>>> v4.5.0
     getScrollPosition: PropTypes.func,
     updateScrollBottom: PropTypes.func,
     cacheMediaWidth: PropTypes.func,
@@ -414,9 +411,6 @@ class Status extends ImmutablePureComponent {
     const matchedFilters = status.get('matched_filters');
 
     if (status.get('reblog', null) !== null && typeof status.get('reblog') === 'object') {
-<<<<<<< HEAD
-      const display_name_html = { __html: status.getIn(['account', 'display_name_html']) };
-=======
       const name = (
         <LinkedDisplayName
           displayProps={{
@@ -426,16 +420,11 @@ class Status extends ImmutablePureComponent {
           className='status__display-name muted'
         />
       )
->>>>>>> v4.5.0
 
       prepend = (
         <div className='status__prepend'>
           <div className='status__prepend__icon'><Icon id='retweet' icon={RepeatIcon} /></div>
-<<<<<<< HEAD
-          <FormattedMessage id='status.reblogged_by' defaultMessage='{name} boosted' values={{ name: <Link data-id={status.getIn(['account', 'id'])} data-hover-card-account={status.getIn(['account', 'id'])} to={`/@${status.getIn(['account', 'acct'])}`} className='status__display-name muted'><bdi><strong dangerouslySetInnerHTML={display_name_html} /></bdi></Link> }} />
-=======
           <FormattedMessage id='status.reblogged_by' defaultMessage='{name} boosted' values={{ name }} />
->>>>>>> v4.5.0
         </div>
       );
 
@@ -460,21 +449,13 @@ class Status extends ImmutablePureComponent {
 
     if (hidden) {
       return (
-<<<<<<< HEAD
-        <HotKeys handlers={handlers} tabIndex={unfocusable ? null : -1}>
-=======
         <Hotkeys handlers={handlers} focusable={!unfocusable}>
->>>>>>> v4.5.0
           <div ref={this.handleRef} className={classNames('status__wrapper', { focusable: !this.props.muted })} tabIndex={unfocusable ? null : 0}>
             <span>{status.getIn(['account', 'display_name']) || status.getIn(['account', 'username'])}</span>
             {status.get('spoiler_text').length > 0 && (<span>{status.get('spoiler_text')}</span>)}
             {expanded && <span>{status.get('content')}</span>}
           </div>
-<<<<<<< HEAD
-        </HotKeys>
-=======
         </Hotkeys>
->>>>>>> v4.5.0
       );
     }
 
@@ -588,10 +569,7 @@ class Status extends ImmutablePureComponent {
                 'status--first-in-thread': previousId && (!connectUp || connectToRoot), muted: this.props.muted,
                 'status--is-quote': isQuotedPost,
                 'status--has-quote': !!status.get('quote'),
-<<<<<<< HEAD
-=======
                 'status--highlighted-entry': this.props.shouldHighlightOnMount,
->>>>>>> v4.5.0
               })
             }
             data-id={status.get('id')}
@@ -604,20 +582,12 @@ class Status extends ImmutablePureComponent {
                 <RelativeTimestamp timestamp={status.get('created_at')} />{status.get('edited_at') && <abbr title={intl.formatMessage(messages.edited, { date: intl.formatDate(status.get('edited_at'), { year: 'numeric', month: 'short', day: '2-digit', hour: '2-digit', minute: '2-digit' }) })}> *</abbr>}
               </Link>
 
-<<<<<<< HEAD
-              <Link to={`/@${status.getIn(['account', 'acct'])}`} title={status.getIn(['account', 'acct'])} data-hover-card-account={status.getIn(['account', 'id'])} className='status__display-name'>
-=======
               <LinkedDisplayName displayProps={{account: status.get('account')}} className='status__display-name'>
->>>>>>> v4.5.0
                 <div className='status__avatar'>
                   {statusAvatar}
                 </div>
               </LinkedDisplayName>
 
-<<<<<<< HEAD
-                <DisplayName account={status.get('account')} />
-              </Link>
-=======
               {isQuotedPost && !!this.props.onQuoteCancel &&  (
                 <IconButton
                   onClick={this.handleQuoteCancel}
@@ -627,17 +597,12 @@ class Status extends ImmutablePureComponent {
                   iconComponent={CancelFillIcon}
                 />
               )}
->>>>>>> v4.5.0
             </div>
 
             {matchedFilters && <FilterWarning title={matchedFilters.join(', ')} expanded={this.state.showDespiteFilter} onClick={this.handleFilterToggle} />}
 
-<<<<<<< HEAD
-            {(statusActivityObjectType !== 'Article' && status.get('spoiler_text').length > 0 && (!matchedFilters || this.state.showDespiteFilter)) && <ContentWarning text={status.getIn(['translation', 'spoilerHtml']) || status.get('spoilerHtml')} expanded={expanded} onClick={this.handleExpandedToggle} />}
+            {(statusActivityObjectType !== 'Article' && status.get('spoiler_text').length > 0 && (!matchedFilters || this.state.showDespiteFilter)) && <ContentWarning status={status} expanded={expanded} onClick={this.handleExpandedToggle} />}
             {(statusActivityObjectType === 'Article' && (!matchedFilters || this.state.showDespiteFilter)) && <StatusContent status={status} onClick={this.handleClick} onTranslate={this.handleTranslate} collapsible onCollapsedToggle={this.handleCollapsedToggle} statusActivityObjectType={statusActivityObjectType} {...statusContentProps} />}
-=======
-            {(!matchedFilters || this.state.showDespiteFilter) && <ContentWarning status={status} expanded={expanded} onClick={this.handleExpandedToggle} />}
->>>>>>> v4.5.0
 
             {expanded && (
               <>

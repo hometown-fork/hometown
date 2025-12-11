@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-import { useLinks } from 'mastodon/hooks/useLinks';
-=======
 import classNames from 'classnames';
->>>>>>> v4.5.0
 
 import { useAppSelector } from '../store';
 

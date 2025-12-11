@@ -131,11 +131,7 @@
   "annual_report.summary.new_posts.new_posts": "postaichean ùra",
   "annual_report.summary.percentile.text": "<topLabel>Tha thu am measg</topLabel><percentage></percentage><bottomLabel>dhen luchd-cleachdaidh as cliùitiche air {domain}.</bottomLabel>",
   "annual_report.summary.percentile.we_wont_tell_bernie": "Ainmeil ’nad latha ’s ’nad linn.",
-<<<<<<< HEAD
-  "annual_report.summary.thanks": "Mòran taing airson conaltradh air Mastodon.",
-=======
   "annual_report.summary.thanks": "Mòran taing airson conaltradh air Mastodon!",
->>>>>>> v4.5.0
   "attachments_list.unprocessed": "(gun phròiseasadh)",
   "audio.hide": "Falaich an fhuaim",
   "block_modal.remote_users_caveat": "Iarraidh sinn air an fhrithealaiche {domain} gun gèill iad ri do cho-dhùnadh. Gidheadh, chan eil barantas gun gèill iad on a làimhsicheas cuid a fhrithealaichean bacaidhean air dòigh eadar-dhealaichte. Dh’fhaoidte gum faic daoine gun chlàradh a-steach na postaichean poblach agad fhathast.",
@@ -177,11 +173,8 @@
   "column.edit_list": "Deasaich an liosta",
   "column.favourites": "Annsachdan",
   "column.firehose": "An saoghal beò",
-<<<<<<< HEAD
-=======
   "column.firehose_local": "Loidhne-ama bheò an fhrithealaiche seo",
   "column.firehose_singular": "Loidhne-ama bheò beò",
->>>>>>> v4.5.0
   "column.follow_requests": "Iarrtasan leantainn",
   "column.home": "Dachaigh",
   "column.list_members": "Stiùir buill na liosta",
@@ -269,14 +262,11 @@
   "confirmations.remove_from_followers.confirm": "Thoir an neach-leantainn air falbh",
   "confirmations.remove_from_followers.message": "Cha lean {name} thu tuilleadh. A bheil thu cinnteach gu bheil thu airson leantainn air adhart?",
   "confirmations.remove_from_followers.title": "A bheil thu airson an neach-leantainn a thoirt air falbh?",
-<<<<<<< HEAD
-=======
   "confirmations.revoke_quote.confirm": "Thoir am post air falbh",
   "confirmations.revoke_quote.message": "Cha ghabh seo a neo-dhèanamh.",
   "confirmations.revoke_quote.title": "A bheil thu airson am post a thoirt air falbh?",
   "confirmations.unblock.confirm": "Dì-bhac",
   "confirmations.unblock.title": "A bheil thu airson {name} a dhì-bhacadh?",
->>>>>>> v4.5.0
   "confirmations.unfollow.confirm": "Na lean tuilleadh",
   "confirmations.unfollow.title": "A bheil thu airson sgur de {name} a leantainn?",
   "confirmations.withdraw_request.confirm": "Cuir d’ iarrtas dhan dàrna taobh",
@@ -459,11 +449,6 @@
   "hints.profiles.see_more_followers": "Faic barrachd luchd-leantainn air {domain}",
   "hints.profiles.see_more_follows": "Faic barrachd a tha 'gan leantainn air {domain}",
   "hints.profiles.see_more_posts": "Faic barrachd phostaichean air {domain}",
-<<<<<<< HEAD
-  "hints.threads.replies_may_be_missing": "Dh’fhaoidte gu bheil freagairtean o fhrithealaichean eile a dhìth.",
-  "hints.threads.see_more": "Faic barrachd fhreagairtean air {domain}",
-=======
->>>>>>> v4.5.0
   "home.column_settings.show_quotes": "Seall luaidhean",
   "home.column_settings.show_reblogs": "Seall na brosnachaidhean",
   "home.column_settings.show_replies": "Seall na freagairtean",
@@ -485,28 +470,12 @@
   "ignore_notifications_modal.private_mentions_title": "A bheil thu airson na brathan o iomraidhean phrìobhaideach gun iarraidh a leigeil seachad?",
   "info_button.label": "Cobhair",
   "info_button.what_is_alt_text": "<h1>Dè a th’ ann an roghainn teacsa?</h1> <p>Bheir roghainn teacsa tuairisgeulan dhealbhan dhan fheadhainn air a bheil cion lèirsinne, aig a bheil ceangal air leud-banna cumhang no a tha a’ sireadh barrachd co-theacsa.</p> <p>’S urrainn dhut piseach a thoirt air an t-so-ruigsinneachd is an tuigse dhan a h-uile duine ma sgrìobhas tu roghainn teacsa a tha soilleir, goirid is cuspaireach.</p> <ul> <li>Gabh a-steach na nithean cudromach</li> <li>Dèan geàrr-chunntas dhen teacsa sna dealbhan</li> <li>Cleachd structar sheantansan àbhaisteach</li><li>\\nSeachainn fiosrachadh anabarrach</li> <li>Cùm an aire air treandaichean is puingean cudromach ann an dealbhan iom-fhillte (mar diagram no mapa)</li> </ul>",
-<<<<<<< HEAD
-  "interaction_modal.action.favourite": "Airson leantainn air adhart, feumaidh tu a chur ris na h-annsachdan on chunntas agad.",
-  "interaction_modal.action.follow": "Airson leantainn air adhart, feumaidh tu a leantainn on chunntas agad.",
-  "interaction_modal.action.reblog": "Airson leantainn air adhart, feumaidh tu a bhrosnachadh on chunntas agad.",
-  "interaction_modal.action.reply": "Airson leantainn air adhart, feumaidh tu fhreagairt on chunntas agad.",
-  "interaction_modal.action.vote": "Airson leantainn air adhart, feumaidh tu bhòtadh on chunntas agad.",
-=======
   "interaction_modal.action": "Mus eadar-ghabh thu leis a’ phost le {name}, feumaidh tu clàradh a-steach dhan chunntas agad air ge b’ e dè am frithealaiche Mastodon a chleachdas tu.",
->>>>>>> v4.5.0
   "interaction_modal.go": "Siuthad",
   "interaction_modal.no_account_yet": "Nach eil cunntas agad fhathast?",
   "interaction_modal.on_another_server": "Air frithealaiche eile",
   "interaction_modal.on_this_server": "Air an frithealaiche seo",
-<<<<<<< HEAD
-  "interaction_modal.title.favourite": "Cuir am post aig {name} ris na h-annsachdan",
-  "interaction_modal.title.follow": "Lean {name}",
-  "interaction_modal.title.reblog": "Brosnaich am post aig {name}",
-  "interaction_modal.title.reply": "Freagair dhan phost aig {name}",
-  "interaction_modal.title.vote": "Bhòt sa chunntas-bheachd aig {name}",
-=======
   "interaction_modal.title": "Clàraich a-steach airson leantainn air adhart",
->>>>>>> v4.5.0
   "interaction_modal.username_prompt": "M.e. {example}",
   "intervals.full.days": "{number, plural, one {# latha} two {# latha} few {# làithean} other {# latha}}",
   "intervals.full.hours": "{number, plural, one {# uair a thìde} two {# uair a thìde} few {# uairean a thìde} other {# uair a thìde}}",
@@ -947,15 +916,6 @@
   "status.mute_conversation": "Mùch an còmhradh",
   "status.open": "Leudaich am post seo",
   "status.pin": "Prìnich ris a’ phròifil",
-<<<<<<< HEAD
-  "status.quote_error.filtered": "Falaichte le criathrag a th’ agad",
-  "status.quote_error.not_found": "Chan urrainn dhuinn am post seo a shealltainn.",
-  "status.quote_error.pending_approval": "Tha am post seo a’ feitheamh air aontachadh leis an ùghdar tùsail.",
-  "status.quote_error.rejected": "Chan urrainn dhuinn am post seo a shealltainn air sgàth ’s nach ceadaich an t-ùghdar tùsail aige gun dèid a luaidh.",
-  "status.quote_error.removed": "Chaidh am post seo a thoirt air falbh le ùghdar.",
-  "status.quote_error.unauthorized": "Chan urrainn dhuinn am post seo a shealltainn air sgàth ’s nach eil cead agad fhaicinn.",
-  "status.quote_post_author": "Post le {name}",
-=======
   "status.quote": "Luaidh",
   "status.quote.cancel": "Sguir dhen luaidh",
   "status.quote_error.blocked_account_hint.title": "Tha am post seo falaichte on a bhac thu @{name}.",
@@ -978,7 +938,6 @@
   "status.quotes.empty": "Chan deach am post seo a luaidh le duine sam bith fhathast. Nuair a luaidheas cuideigin e, nochdaidh iad an-seo.",
   "status.quotes.local_other_disclaimer": "Cha tèid luaidhean a dhiùilt an ùghdar a shealltainn.",
   "status.quotes.remote_other_disclaimer": "Cha dèid ach luaidhean o {domain} a shealltainn an-seo le cinnt. Cha dèid luaidhean a dhiùilt an ùghdar a shealltainn.",
->>>>>>> v4.5.0
   "status.read_more": "Leugh an còrr",
   "status.reblog": "Brosnaich",
   "status.reblog_or_quote": "Brosnaich no luaidh",
@@ -989,10 +948,7 @@
   "status.redraft": "Sguab às ⁊ dèan dreachd ùr",
   "status.remove_bookmark": "Thoir an comharra-lìn air falbh",
   "status.remove_favourite": "Thoir air falbh o na h-annsachdan",
-<<<<<<< HEAD
-=======
   "status.remove_quote": "Thoir air falbh",
->>>>>>> v4.5.0
   "status.replied_in_thread": "Freagairt do shnàithlean",
   "status.replied_to": "Air {name} fhreagairt",
   "status.reply": "Freagair",
@@ -1037,10 +993,7 @@
   "upload_button.label": "Cuir ris dealbhan, video no faidhle fuaime",
   "upload_error.limit": "Luchdaich thu suas na tha ceadaichte dhut a dh’fhaidhlichean mu thràth.",
   "upload_error.poll": "Chan fhaod thu faidhle a luchdadh suas an cois cunntais-bheachd.",
-<<<<<<< HEAD
-=======
   "upload_error.quote": "Chan fhaod thu faidhle a luchdadh suas an cois luaidh.",
->>>>>>> v4.5.0
   "upload_form.drag_and_drop.instructions": "Airson ceanglachan meadhain a thogail, brùth air space no enter. Fhad ’ a bhios tu ’ga shlaodadh, cleachd na h-iuchraichean-saighde airson an ceanglachan meadhain a ghluasad gu comhair sam bith. Brùth air space no enter a-rithist airson an ceanglachen meadhain a leigeil às air an ionad ùr aige no brùth air escape airson sgur dheth.",
   "upload_form.drag_and_drop.on_drag_cancel": "Chaidh sgur dhen t-slaodadh. Chaidh an ceanglachan meadhain {item} a leigeil às.",
   "upload_form.drag_and_drop.on_drag_end": "Chaidh an ceanglachan meadhain {item} a leigeil às.",
@@ -1063,9 +1016,6 @@
   "video.skip_forward": "Geàrr leum air adhart",
   "video.unmute": "Dì-mhùch",
   "video.volume_down": "Lùghdaich an fhuaim",
-<<<<<<< HEAD
-  "video.volume_up": "Cuir an fhuaim an àirde"
-=======
   "video.volume_up": "Cuir an fhuaim an àirde",
   "visibility_modal.button_title": "Suidhich an fhaicsinneachd",
   "visibility_modal.direct_quote_warning.text": "Ma shàbhaileas tu na roghainnean làithreach, thèid ceangal a dhèanamh dhen luaidh leabaichte.",
@@ -1083,5 +1033,4 @@
   "visibility_modal.quote_nobody": "Mi fhìn a-mhàin",
   "visibility_modal.quote_public": "Neach sam bith",
   "visibility_modal.save": "Sàbhail"
->>>>>>> v4.5.0
 }

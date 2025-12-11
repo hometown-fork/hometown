@@ -9,10 +9,7 @@ interface BaseProps
   extends Omit<React.ButtonHTMLAttributes<HTMLButtonElement>, 'children'> {
   block?: boolean;
   secondary?: boolean;
-<<<<<<< HEAD
-=======
   plain?: boolean;
->>>>>>> v4.5.0
   compact?: boolean;
   dangerous?: boolean;
   loading?: boolean;
@@ -39,10 +36,7 @@ export const Button: React.FC<Props> = ({
   disabled,
   block,
   secondary,
-<<<<<<< HEAD
-=======
   plain,
->>>>>>> v4.5.0
   compact,
   dangerous,
   loading,
@@ -70,10 +64,7 @@ export const Button: React.FC<Props> = ({
     <button
       className={classNames('button', className, {
         'button-secondary': secondary,
-<<<<<<< HEAD
-=======
         'button--plain': plain,
->>>>>>> v4.5.0
         'button--compact': compact,
         'button--block': block,
         'button--dangerous': dangerous,

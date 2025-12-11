@@ -1,11 +1,7 @@
 {
   "about.blocks": "کارسازهای نظارت شده",
   "about.contact": "تماس:",
-<<<<<<< HEAD
-  "about.default_locale": "پیش‌فرض",
-=======
   "about.default_locale": "پیش‌گزیده",
->>>>>>> v4.5.0
   "about.disclaimer": "ماستودون نرم‌افزار آزاد و نشان تجاری یک شرکت غیر انتفاعی با مسئولیت محدود آلمانی است.",
   "about.domain_blocks.no_reason_available": "دلیلی موجود نیست",
   "about.domain_blocks.preamble": "ماستودون عموماً می‌گذارد محتوا را از از هر کارساز دیگری در دنیای شبکه‌های اجتماعی غیرمتمرکز دیده و با آنان برهم‌کنش داشته باشید. این‌ها استثناهایی هستند که روی این کارساز خاص وضع شده‌اند.",
@@ -38,11 +34,7 @@
   "account.familiar_followers_many": "پی‌گرفته از سوی {name1}، {name2} و {othersCount, plural,one {یکی دیگر از پی‌گرفته‌هایتان} other {# نفر دیگر از پی‌گرفته‌هایتان}}",
   "account.familiar_followers_one": "پی‌گرفته از سوی {name1}",
   "account.familiar_followers_two": "پی‌گرفته از سوی {name1} و {name2}",
-<<<<<<< HEAD
-  "account.featured": " پیشنهادی",
-=======
   "account.featured": "پیشنهادی",
->>>>>>> v4.5.0
   "account.featured.accounts": "نمایه‌ها",
   "account.featured.hashtags": "برچسب‌ها",
   "account.featured_tags.last_status_at": "آخرین فرسته در {date}",
@@ -57,11 +49,7 @@
   "account.followers": "پی‌گیرندگان",
   "account.followers.empty": "هنوز کسی پی‌گیر این کاربر نیست.",
   "account.followers_counter": "{count, plural, one {{counter} پی‌گیرنده} other {{counter} پی‌گیرنده}}",
-<<<<<<< HEAD
-  "account.followers_you_know_counter": "{counter} را می‌شناسید",
-=======
   "account.followers_you_know_counter": "{counter} نفر را می‌شناسید",
->>>>>>> v4.5.0
   "account.following": "پی می‌گیرید",
   "account.following_counter": "{count, plural, one {{counter} پی‌گرفته} other {{counter} پی‌گرفته}}",
   "account.follows.empty": "این کاربر هنوز پی‌گیر کسی نیست.",
@@ -80,11 +68,7 @@
   "account.mute_notifications_short": "خموشی آگاهی‌ها",
   "account.mute_short": "خموشی",
   "account.muted": "خموش",
-<<<<<<< HEAD
-  "account.muting": "خموش کرده",
-=======
   "account.muting": "خموشش کرده‌اید",
->>>>>>> v4.5.0
   "account.mutual": "یکدیگر را پی می‌گیرید",
   "account.no_bio": "شرحی فراهم نشده.",
   "account.open_original_page": "گشودن صفحهٔ اصلی",
@@ -259,11 +243,7 @@
   "confirmations.logout.message": "مطمئنید می‌خواهید خارج شوید؟",
   "confirmations.logout.title": "خروج؟",
   "confirmations.missing_alt_text.confirm": "متن جایگزین را اضافه کنید",
-<<<<<<< HEAD
-  "confirmations.missing_alt_text.message": "پست شما حاوی رسانه بدون متن جایگزین است. افزودن توضیحات کمک می کند تا محتوای شما برای افراد بیشتری قابل دسترسی باشد.",
-=======
   "confirmations.missing_alt_text.message": "فرسته‌تان رسانه‌هایی بدون متن جایگزین دارد. افزودن شرح به دسترس‌پذیر شدن محتوایتان برای افراد بیش‌تری کمک می‌کند.",
->>>>>>> v4.5.0
   "confirmations.missing_alt_text.secondary": "به هر حال پست کن",
   "confirmations.missing_alt_text.title": "متن جایگزین اضافه شود؟",
   "confirmations.mute.confirm": "خموش",
@@ -277,14 +257,11 @@
   "confirmations.remove_from_followers.confirm": "برداشتن پی‌گیرنده",
   "confirmations.remove_from_followers.message": "دیگر {name} پیتان نخواهد گرفت. مطمئنید که می‌خواهید ادامه دهید؟",
   "confirmations.remove_from_followers.title": "برداشتن پی‌گیرنده؟",
-<<<<<<< HEAD
-=======
   "confirmations.revoke_quote.confirm": "حذف فرسته",
   "confirmations.revoke_quote.message": "این اقدام قابل بازگشت نیست.",
   "confirmations.revoke_quote.title": "آیا فرسته را حذف کنم؟",
   "confirmations.unblock.confirm": "رفع انسداد",
   "confirmations.unblock.title": "رفع انسداد {name}؟",
->>>>>>> v4.5.0
   "confirmations.unfollow.confirm": "پی‌نگرفتن",
   "confirmations.unfollow.title": "ناپی‌گیری {name}؟",
   "confirmations.withdraw_request.confirm": "انصراف از درخواست",
@@ -384,19 +361,16 @@
   "explore.trending_links": "اخبار",
   "explore.trending_statuses": "فرسته‌ها",
   "explore.trending_tags": "برچسب‌ها",
-<<<<<<< HEAD
-  "federation.change": "Adjust status federation",
-  "federation.federated.long": "Allow toot to reach other instances",
-  "federation.federated.short": "Federated",
-  "federation.local_only.long": "Restrict this toot only to my instance",
-  "federation.local_only.short": "Local-only",
-=======
   "featured_carousel.header": "{count, plural, one {فرسته سنجاق‌شده} other {فرسته‌های سنجاق‌شده}}",
   "featured_carousel.next": "بعدی",
   "featured_carousel.post": "فرسته",
   "featured_carousel.previous": "قبلی",
   "featured_carousel.slide": "{index} از {total}",
->>>>>>> v4.5.0
+  "federation.change": "Adjust status federation",
+  "federation.federated.long": "Allow toot to reach other instances",
+  "federation.federated.short": "Federated",
+  "federation.local_only.long": "Restrict this toot only to my instance",
+  "federation.local_only.short": "Local-only",
   "filter_modal.added.context_mismatch_explanation": "این دستهٔ پالایه به بافتاری که در آن به این فرسته دسترسی دارید اعمال نمی‌شود. اگر می‌خواهید فرسته در این بافتار هم پالوده شود، باید پالایه را ویرایش کنید.",
   "filter_modal.added.context_mismatch_title": "بافتار نامطابق!",
   "filter_modal.added.expired_explanation": "این دستهٔ پالایه منقضی شده است. برای اعمالش باید تاریخ انقضا را عوض کنید.",
@@ -475,13 +449,7 @@
   "hints.profiles.see_more_followers": "دیدن پی‌گیرندگان بیش‌تر روی {domain}",
   "hints.profiles.see_more_follows": "دیدن پی‌گرفته‌های بیش‌تر روی {domain}",
   "hints.profiles.see_more_posts": "دیدن فرسته‌های بیش‌تر روی {domain}",
-<<<<<<< HEAD
-  "hints.threads.replies_may_be_missing": "شاید پاسخ‌ها از دیگر کارسازها نباشند.",
-  "hints.threads.see_more": "دیدن پاسخ‌های بیش‌تر روی {domain}",
-  "home.column_settings.show_quotes": "نمایش نقل‌قول‌ها",
-=======
   "home.column_settings.show_quotes": "نمایش نقل‌ها",
->>>>>>> v4.5.0
   "home.column_settings.show_reblogs": "نمایش تقویت‌ها",
   "home.column_settings.show_replies": "نمایش پاسخ‌ها",
   "home.hide_announcements": "نهفتن اعلامیه‌ها",
@@ -502,28 +470,12 @@
   "ignore_notifications_modal.private_mentions_title": "چشم‌پوشی از نام‌بری‌های خصوصی ناخواسته؟",
   "info_button.label": "راهنما",
   "info_button.what_is_alt_text": "<h1>متن جایگزین چیست؟</h1> <p>متن جایگزین توضیحات تصویری را برای افراد دارای اختلالات بینایی، اتصالات با پهنای باند کم یا کسانی که به دنبال زمینه اضافی هستند ارائه می دهد.</p> <p>با نوشتن متن جایگزین واضح، مختصر و عینی می توانید دسترسی و درک را برای همه بهبود بخشید.</p> <ul> <li>عناصر مهم را ضبط کنید</li> <li>متن را در تصاویر خلاصه کنید</li> <li>از ساختار جمله منظم استفاده کنید</li> <li>از اطلاعات اضافی خودداری کنید</li> <li>روی روندها و یافته های کلیدی در تصاویر پیچیده (مانند نمودارها یا نقشه ها) تمرکز کنید.</li> </ul>",
-<<<<<<< HEAD
-  "interaction_modal.action.favourite": "برای ادامه، باید از حساب خود به دلخواه انتخاب کنید.",
-  "interaction_modal.action.follow": "برای ادامه، باید از حساب کاربری خود دنبال کنید.",
-  "interaction_modal.action.reblog": "برای ادامه، باید از حساب خود مجددا بلاگ کنید.",
-  "interaction_modal.action.reply": "برای ادامه، باید از حساب خود پاسخ دهید.",
-  "interaction_modal.action.vote": "برای ادامه، باید از حساب کاربری خود رای دهید.",
-=======
   "interaction_modal.action": "برای تعامل با فرستهٔ {name} باید به حسابتان روی هر کارساز ماستودونی که استفاده می‌کنید وارد شوید.",
->>>>>>> v4.5.0
   "interaction_modal.go": "برو",
   "interaction_modal.no_account_yet": "هنوز حساب کاربری ندارید؟",
   "interaction_modal.on_another_server": "روی کارسازی دیگر",
   "interaction_modal.on_this_server": "روی این کارساز",
-<<<<<<< HEAD
-  "interaction_modal.title.favourite": "فرسته‌های برگزیدهٔ {name}",
-  "interaction_modal.title.follow": "پیگیری {name}",
-  "interaction_modal.title.reblog": "تقویت فرستهٔ {name}",
-  "interaction_modal.title.reply": "پاسخ به فرستهٔ {name}",
-  "interaction_modal.title.vote": "رأی دادن در نظرسنجی {name}",
-=======
   "interaction_modal.title": "ورود برای ادامه",
->>>>>>> v4.5.0
   "interaction_modal.username_prompt": "به عنوان مثال {example}",
   "intervals.full.days": "{number, plural, one {# روز} other {# روز}}",
   "intervals.full.hours": "{number, plural, one {# ساعت} other {# ساعت}}",
@@ -610,13 +562,8 @@
   "mute_modal.hide_options": "گزینه‌های نهفتن",
   "mute_modal.indefinite": "تا وقتی ناخموشش کنم",
   "mute_modal.show_options": "نمایش گزینه‌ها",
-<<<<<<< HEAD
-  "mute_modal.they_can_mention_and_follow": "می‌توانند به شما اشاره کرده و پیتان بگیرند، ولی نخواهید دیدشان.",
-  "mute_modal.they_wont_know": "نخواهند دانست که خموش شده‌اند.",
-=======
   "mute_modal.they_can_mention_and_follow": "می‌تواند به شما اشاره کرده و پیتان بگیرد؛ ولی نخواهید دیدش.",
   "mute_modal.they_wont_know": "نخواهد دانست که خموش شده.",
->>>>>>> v4.5.0
   "mute_modal.title": "خموشی کاربر؟",
   "mute_modal.you_wont_see_mentions": "فرسته‌هایی که به او اشاره کرده‌اند را نخواهید دید.",
   "mute_modal.you_wont_see_posts": "همچنان می‌تواند فرسته‌هایتان را ببینند؛ ولی فرسته‌هایش را نمی‌بینید.",
@@ -703,11 +650,7 @@
   "notification_requests.confirm_accept_multiple.message": "در حال پذیرش {count, plural,one {یک}other {#}} درخواست آگاهی هستید. مطمئنید که می‌خواهید ادامه دهید؟",
   "notification_requests.confirm_accept_multiple.title": "پذیرش درخواست‌های آگاهی؟",
   "notification_requests.confirm_dismiss_multiple.button": "رد {count, plural,one {درخواست} other {درخواست‌ها}}",
-<<<<<<< HEAD
-  "notification_requests.confirm_dismiss_multiple.message": "شما در شرف رد کردن {count, plural, one {یک درخواست آگاهی} other {درخواست آگاهی}} هستید. دیگر نمی توانید به راحتی به {count, plural, one {آن} other {آن‌ها}} دسترسی پیدا کنید. آیا مطمئن هستید که می خواهید ادامه دهید؟",
-=======
   "notification_requests.confirm_dismiss_multiple.message": "دارید {count, plural, one {یک درخواست آگاهی} other {# درخواست آگاهی}} را رد می‌کنید که دیگر نمی توانید به راحتی به {count, plural, one {آن} other {آن‌ها}} دسترسی پیدا کنید. مطمئنید که می‌خواهید ادامه دهید؟",
->>>>>>> v4.5.0
   "notification_requests.confirm_dismiss_multiple.title": "رد کردن درخواست‌های آگاهی؟",
   "notification_requests.dismiss": "دورانداختن",
   "notification_requests.dismiss_multiple": "{count, plural, one {دورانداختن درخواست…} other {دورانداختن درخواست‌ها…}}",
@@ -766,11 +709,7 @@
   "notifications.policy.filter_limited_accounts_title": "حساب‌های مدیریت شده",
   "notifications.policy.filter_new_accounts.hint": "ساخته شده در {days, plural, one {یک} other {#}} روز اخیر",
   "notifications.policy.filter_new_accounts_title": "حساب‌های جدید",
-<<<<<<< HEAD
-  "notifications.policy.filter_not_followers_hint": "از جمله کسانی که کم‌تر از {days, plural, one {یک} other {#}} روز است پی‌تان می‌گیرند",
-=======
   "notifications.policy.filter_not_followers_hint": "از جمله کسانی که کم‌تر از {days, plural, one {یک} other {#}} روز است پیتان می‌گیرند",
->>>>>>> v4.5.0
   "notifications.policy.filter_not_followers_title": "کسانی که شما را دنبال میکنند",
   "notifications.policy.filter_not_following_hint": "تا به صورت دستی تأییدشان کنید",
   "notifications.policy.filter_not_following_title": "کسانی که پی نمی‌گیرید",
@@ -976,15 +915,6 @@
   "status.mute_conversation": "خموشاندن گفت‌وگو",
   "status.open": "گسترش این فرسته",
   "status.pin": "سنجاق به نمایه",
-<<<<<<< HEAD
-  "status.quote_error.filtered": "نهفته بنا بر یکی از پالایه‌هایتان",
-  "status.quote_error.not_found": "این فرسته قابل نمایش نیست.",
-  "status.quote_error.pending_approval": "این فرسته منظر تأیید نگارندهٔ اصلی است.",
-  "status.quote_error.rejected": "از آن‌جا که نگارندهٔ اصلی فرسته اجازهٔ نقل قولش را نمی‌دهد این فرسته قابل نمایش نیست.",
-  "status.quote_error.removed": "این فرسته به دست نگارنده‌اش برداشته شده.",
-  "status.quote_error.unauthorized": "از آن‌جا که اجازهٔ دیدن این فرسته را ندارید قابل نمایش نیست.",
-  "status.quote_post_author": "فرسته توسط {name}",
-=======
   "status.quote": "نقل‌قول",
   "status.quote.cancel": "لغو نقل",
   "status.quote_error.blocked_account_hint.title": "این فرسته نهفته است چرا که ‪@{name}‬ را مسدود کرده‌اید.",
@@ -1007,7 +937,6 @@
   "status.quotes.empty": "هنوز کسی این فرسته را نقل نکرده. وقتی کسی چنین کند این‌جا نشان داده خواهد شد.",
   "status.quotes.local_other_disclaimer": "نقل‌هایی که به دست نگارنده رد شده باشند نشان داده نخواهند شد.",
   "status.quotes.remote_other_disclaimer": "تنها نقل‌ها از {domain} تضمین نمایش در این‌جا را دارند. نقل‌های رد شده به دست نگاره نشان داده نخواهند شد.",
->>>>>>> v4.5.0
   "status.read_more": "بیشتر بخوانید",
   "status.reblog": "تقویت",
   "status.reblog_or_quote": "نقل یا تقویت",
@@ -1018,10 +947,7 @@
   "status.redraft": "حذف و بازنویسی",
   "status.remove_bookmark": "برداشتن نشانک",
   "status.remove_favourite": "حذف از موارد دلخواه",
-<<<<<<< HEAD
-=======
   "status.remove_quote": "برداشتن",
->>>>>>> v4.5.0
   "status.replied_in_thread": "در رشته پاسخ داده",
   "status.replied_to": "به {name} پاسخ داد",
   "status.reply": "پاسخ",
@@ -1066,10 +992,7 @@
   "upload_button.label": "افزودن تصاویر، ویدیو یا یک پروندهٔ صوتی",
   "upload_error.limit": "از حد مجاز بارگذاری پرونده فراتر رفتید.",
   "upload_error.poll": "بارگذاری پرونده در نظرسنجی‌ها مجاز نیست.",
-<<<<<<< HEAD
-=======
   "upload_error.quote": "بارگذاری پرونده در نقل‌ها محاز نیست.",
->>>>>>> v4.5.0
   "upload_form.drag_and_drop.instructions": "برای دریافت پیوست رسانه، space را فشار دهید یا وارد کنید. در حین کشیدن، از کلیدهای جهت دار برای حرکت دادن پیوست رسانه در هر جهت معین استفاده کنید. برای رها کردن ضمیمه رسانه در موقعیت جدید خود، مجدداً space یا enter را فشار دهید، یا برای لغو، escape را فشار دهید.",
   "upload_form.drag_and_drop.on_drag_cancel": "کشیدن لغو شد. پیوست رسانه {item} حذف شد.",
   "upload_form.drag_and_drop.on_drag_end": "پیوست رسانه {item} حذف شد.",
@@ -1092,9 +1015,6 @@
   "video.skip_forward": "پرش به پیش",
   "video.unmute": "ناخموشی",
   "video.volume_down": "کاهش حجم صدا",
-<<<<<<< HEAD
-  "video.volume_up": "افزایش حجم صدا"
-=======
   "video.volume_up": "افزایش حجم صدا",
   "visibility_modal.button_title": "تنظیم نمایانی",
   "visibility_modal.header": "نمایانی و برهم‌کنش",
@@ -1110,5 +1030,4 @@
   "visibility_modal.quote_nobody": "فقط من",
   "visibility_modal.quote_public": "هرکسی",
   "visibility_modal.save": "ذخیره"
->>>>>>> v4.5.0
 }

@@ -839,11 +839,7 @@ it:
         title: Esclude gli utenti dall'indicizzazione dei motori di ricerca per impostazione predefinita
       discovery:
         follow_recommendations: Segui le raccomandazioni
-<<<<<<< HEAD
-        preamble: La comparsa di contenuti interessanti è determinante per l'arrivo di nuovi utenti che potrebbero non conoscere nessuno su Mastodon. Controlla in che modo varie funzionalità di scoperta funzionano sul tuo server.
-=======
         preamble: La scoperta di contenuti interessanti è fondamentale per l'inserimento di nuovi utenti che potrebbero non conoscere nessuno su Mastodon. Controlla l'andamento delle varie funzionalità di scoperta sul tuo server.
->>>>>>> v4.5.0
         privacy: Privacy
         profile_directory: Directory del profilo
         public_timelines: Timeline pubbliche
@@ -925,10 +921,7 @@ it:
       title: Post dell'account - @%{name}
       trending: Di tendenza
       view_publicly: Visualizza pubblicamente
-<<<<<<< HEAD
-=======
       view_quoted_post: Visualizza il post citato
->>>>>>> v4.5.0
       visibility: Visibilità
       with_media: con media
     strikes:
@@ -1943,12 +1936,6 @@ it:
       limit: Hai già fissato in cima il massimo numero di post
       ownership: Non puoi fissare in cima un post di qualcun altro
       reblog: Un toot condiviso non può essere fissato in cima
-<<<<<<< HEAD
-    quote_policies:
-      followers: Seguaci e utenti menzionati
-      nobody: Solo gli utenti menzionati
-      public: Tutti
-=======
     quote_error:
       not_available: Post non disponibile
       pending_approval: Post in attesa
@@ -1958,7 +1945,6 @@ it:
       nobody: Solo io
       public: Chiunque
     quote_post_author: Citato un post di %{acct}
->>>>>>> v4.5.0
     title: '%{name}: "%{quote}"'
     visibilities:
       direct: Menzione privata

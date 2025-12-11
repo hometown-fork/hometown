@@ -1,17 +1,10 @@
 ---
 ru:
   about:
-<<<<<<< HEAD
-    about_mastodon_html: 'Социальная сеть будущего: никакой рекламы или слежки со стороны корпораций, этичный дизайн и децентрализация! С Mastodon ваши данные находятся только под вашим контролем!'
-    contact_missing: Не указано
-    contact_unavailable: N/A
-    hosted_on: Сервер Mastodon на домене %{domain}
-=======
     about_mastodon_html: 'Социальная сеть будущего: никакой рекламы или слежки со стороны корпораций, этичный дизайн и децентрализация. С Mastodon ваши данные находятся только под вашим контролем!'
     contact_missing: Не указано
     contact_unavailable: N/A
     hosted_on: Сервер Mastodon на сайте %{domain}
->>>>>>> v4.5.0
     title: О проекте
   accounts:
     followers:
@@ -203,10 +196,7 @@ ru:
         create_relay: Создание ретранслятора
         create_unavailable_domain: Добавление домена в список недоступных
         create_user_role: Создание ролей
-<<<<<<< HEAD
-=======
         create_username_block: Создать правило имени пользователя
->>>>>>> v4.5.0
         demote_user: Разжалование пользователей
         destroy_announcement: Удаление объявлений
         destroy_canonical_email_block: Удаление блокировок e-mail
@@ -220,10 +210,7 @@ ru:
         destroy_status: Удаление постов
         destroy_unavailable_domain: Исключение доменов из списка недоступных
         destroy_user_role: Удаление ролей
-<<<<<<< HEAD
-=======
         destroy_username_block: Удалить правило имени пользователя
->>>>>>> v4.5.0
         disable_2fa_user: Отключение 2FA
         disable_custom_emoji: Отключение эмодзи
         disable_relay: Отключение ретранслятора
@@ -258,10 +245,7 @@ ru:
         update_report: Изменение жалоб
         update_status: Изменение постов
         update_user_role: Изменение ролей
-<<<<<<< HEAD
-=======
         update_username_block: Обновить правило имени пользователя
->>>>>>> v4.5.0
       actions:
         approve_appeal_html: "%{name} одобрил(а) обжалование действий модерации от %{target}"
         approve_user_html: "%{name} утвердил(а) регистрацию %{target}"
@@ -366,15 +350,9 @@ ru:
       copy: Копировать
       copy_failed_msg: Не удалось создать локальную копию эмодзи
       create_new_category: Создать новую категорию
-<<<<<<< HEAD
-      created_msg: Эмодзи добавлен!
-      delete: Удалить
-      destroyed_msg: Эмодзи удалён!
-=======
       created_msg: Эмодзи добавлен
       delete: Удалить
       destroyed_msg: Эмодзи удалён
->>>>>>> v4.5.0
       disable: Отключить
       disabled: Отключён
       disabled_msg: Эмодзи отключён
@@ -382,20 +360,12 @@ ru:
       enable: Включить
       enabled: Включён
       enabled_msg: Эмодзи включён
-<<<<<<< HEAD
-      image_hint: Поддерживаются файлы PNG или GIF размером не более %{size}
-=======
       image_hint: Поддерживаются файлы PNG и GIF размером не более %{size}
->>>>>>> v4.5.0
       list: В список
       listed: В списке
       new:
         title: Добавить новый эмодзи
-<<<<<<< HEAD
-      no_emoji_selected: Ни один эмодзи не был изменён, поскольку не было отмечено ни одного эмодзи
-=======
       no_emoji_selected: Не было изменено ни одного эмодзи
->>>>>>> v4.5.0
       not_permitted: У вас недостаточно прав для выполнения этого действия
       overwrite: Заменить
       shortcode: Краткий код
@@ -405,11 +375,7 @@ ru:
       unlist: Из списка
       unlisted: Не в списке
       update_failed_msg: Не удалось обновить эмодзи
-<<<<<<< HEAD
-      updated_msg: Эмодзи обновлён!
-=======
       updated_msg: Эмодзи обновлён
->>>>>>> v4.5.0
       upload: Загрузить
     dashboard:
       active_users: активные пользователи
@@ -539,13 +505,6 @@ ru:
     fasp:
       debug:
         callbacks:
-<<<<<<< HEAD
-          delete: Удалить
-          ip: IP-адрес
-      providers:
-        base_url: Основной URL
-        delete: Удалить
-=======
           created_at: Создано в
           delete: Удалить
           ip: IP-адрес
@@ -559,15 +518,11 @@ ru:
         name: Имя
         providers: Поставщики
         registration_requested: Требуется регистрация
->>>>>>> v4.5.0
         registrations:
           confirm: Подтвердить
           reject: Отклонить
         save: Сохранить
-<<<<<<< HEAD
-=======
         select_capabilities: Выберите возможности
->>>>>>> v4.5.0
         sign_in:
         status: Пост
       title: FASP
@@ -1246,14 +1201,7 @@ ru:
     hint_html: Если вы собираетесь переехать с другой учётной записи на эту, то, прежде чем вы сможете перенести подписчиков со старой учётной записи, вы должны связать учётные записи здесь. Это действие само по себе <strong>безвредно и обратимо.</strong> <strong>Начать переезд можно только со старой учётной записи.</strong>
     remove: Отвязать учётную запись
   appearance:
-<<<<<<< HEAD
-    advanced_web_interface: Многоколоночный интерфейс
-    advanced_web_interface_hint: 'Многоколоночный интерфейс даёт возможность использовать всю ширину экрана, позволяя вам обозревать столько информации, сколько вы захотите. Вы можете добавить множество различных столбцов: главную ленту, уведомления, глобальную ленту, неограниченное количество списков и хештегов.'
     animations_and_accessibility: Анимации и доступность
-    confirmation_dialogs: Диалоговые окна подтверждений
-=======
-    animations_and_accessibility: Анимации и доступность
->>>>>>> v4.5.0
     discovery: Актуальное
     localization:
       body: Mastodon переводится добровольцами.
@@ -1295,17 +1243,6 @@ ru:
     delete_account: Удалить учётную запись
     delete_account_html: Вы можете <a href="%{path}">удалить свою учётную запись</a>. Перед удалением у вас будет запрошено подтверждение.
     description:
-<<<<<<< HEAD
-      prefix_invited_by_user: Вы получили приглашение на сервер Mastodon от @%{name}!
-      prefix_sign_up: Зарегистрируйтесь в Mastodon прямо сейчас!
-      suffix: С учётной записью вы сможете подписываться на людей, публиковать посты и обмениваться сообщениями с пользователями любого сервера Mastodon — и не только!
-    didnt_get_confirmation: Не получили письмо со ссылкой для подтверждения?
-    dont_have_your_security_key: У вас нет ключа безопасности?
-    forgot_password: Забыли пароль?
-    invalid_reset_password_token: Токен сброса пароля недействителен либо устарел. Пожалуйста, повторите запрос на восстановление пароля.
-    link_to_otp: Введите двухфакторный код с телефона или код восстановления
-    link_to_webauth: Используйте устройство с ключом безопасности
-=======
       prefix_invited_by_user: Вы получили приглашение на сервер Mastodon от @%{name}.
       prefix_sign_up: Зарегистрируйтесь в Mastodon прямо сейчас!
       suffix: С учётной записью вы сможете подписываться на людей, публиковать посты и обмениваться сообщениями с пользователями любого сервера Mastodon — и не только!
@@ -1315,7 +1252,6 @@ ru:
     invalid_reset_password_token: Токен сброса пароля недействителен либо устарел. Пожалуйста, повторите запрос на восстановление пароля.
     link_to_otp: Введите одноразовый код из приложения на смартфоне или один из ваших резервных кодов
     link_to_webauth: Использовать электронный ключ
->>>>>>> v4.5.0
     log_in_with: Войдите с помощью
     login: Войти
     logout: Выйти
@@ -1337,11 +1273,7 @@ ru:
     rules:
       accept: Принять
       back: Назад
-<<<<<<< HEAD
-      invited_by: 'Вы можете зарегистрироваться на сервере %{domain}, потому что вы получили приглашение от:'
-=======
       invited_by: Вы можете зарегистрироваться на сервере %{domain}, потому что вы получили приглашение от
->>>>>>> v4.5.0
       preamble: Модераторы сервера %{domain} установили эти правила и следят за их исполнением.
       preamble_invited: Прежде чем продолжить, ознакомьтесь с основными правилами, установленными модераторами сервера %{domain}.
       title: Несколько основных правил.
@@ -1352,11 +1284,7 @@ ru:
       email_below_hint_html: Проверьте папку «Спам» или нажмите на кнопку ниже, чтобы выслать письмо повторно. Вы можете исправить свой адрес электронной почты, если вы ввели его неверно.
       email_settings_hint_html: Чтобы начать пользоваться Mastodon, перейдите по ссылке, которую мы отправили на адрес %{email}.
       link_not_received: Не приходит письмо?
-<<<<<<< HEAD
-      new_confirmation_instructions_sent: Через несколько минут вы получите новое письмо со ссылкой для подтверждения!
-=======
       new_confirmation_instructions_sent: В течение нескольких минут вы получите новое письмо со ссылкой для подтверждения!
->>>>>>> v4.5.0
       title: Проверьте свою почту
     sign_in:
       preamble_html: Введите здесь данные своей учётной записи на сервере <strong>%{domain}</strong>, чтобы войти. Вы не сможете войти, если ваша учётная запись размещена на другом сервере.
@@ -1374,11 +1302,7 @@ ru:
       self_destruct: Поскольку %{domain} закрывается, вы получите ограниченный доступ к вашей учетной записи.
       view_strikes: Просмотр предупреждений, которые модераторы выносили вам ранее
     too_fast: Форма отправлена слишком быстро, попробуйте еще раз.
-<<<<<<< HEAD
-    use_security_key: Использовать ключ безопасности
-=======
     use_security_key: Использовать электронный ключ
->>>>>>> v4.5.0
     user_agreement_html: Мной прочитаны и приняты <a href="%{terms_of_service_path}" target="_blank">пользовательское соглашение</a> и <a href="%{privacy_policy_path}" target="_blank">политика конфиденциальности</a>
     user_privacy_agreement_html: Мной прочитана и принята <a href="%{privacy_policy_path}" target="_blank">политика конфиденциальности</a>
   author_attribution:
@@ -1387,11 +1311,7 @@ ru:
     instructions: 'Добавьте следующий код в HTML-разметку ваших статей:'
     more_from_html: 'Автор: %{name}'
     s_blog: "%{name} ведёт блог"
-<<<<<<< HEAD
-    then_instructions: Затем впишите доменное имя сайта, где вы публикуетесь, в поле ниже.
-=======
     then_instructions: Затем впишите доменное имя сайта, на котором вы публикуетесь, в поле ниже.
->>>>>>> v4.5.0
     title: Упоминание авторства
   challenge:
     confirm: Продолжить
@@ -1505,13 +1425,8 @@ ru:
     csv: CSV
     domain_blocks: Заблокированные домены
     lists: Списки
-<<<<<<< HEAD
-    mutes: Ваши игнорируемые
-    storage: Ваши файлы
-=======
     mutes: Игнорируемые пользователи
     storage: Хранилище медиа
->>>>>>> v4.5.0
   featured_tags:
     add_new: Добавить
     errors:
@@ -1528,13 +1443,8 @@ ru:
       add_keyword: Добавить ключевое слово
       keywords: Ключевые слова
       statuses: Отдельные посты
-<<<<<<< HEAD
-      statuses_hint_html: Этот фильтр применяется для выбора отдельных постов, независимо от того, соответствуют ли они ключевым словам ниже. <a href="%{path}">Просмотрите или удалите посты из фильтра</a>.
-      title: Изменить фильтр
-=======
       statuses_hint_html: Этот фильтр применяется к отдельным постам, которые могут и не соответствовать указанным ниже ключевым словам. Вы можете <a href="%{path}">просмотреть отфильтрованные посты и удалить их из фильтра</a>.
       title: Редактировать фильтр
->>>>>>> v4.5.0
     errors:
       deprecated_api_multiple_keywords: С помощью этого приложения невозможно изменить те параметры фильтра, которые относятся к нескольким ключевым словам. Воспользуйтесь другим, более современным приложением или веб-интерфейсом.
       invalid_context: отсутствует или имеет недопустимое значение
@@ -1619,43 +1529,6 @@ ru:
       overwrite_long: Заменить имеющиеся данные новыми
     overwrite_preambles:
       blocking_html:
-<<<<<<< HEAD
-        few: Вы собираетесь <strong>заменить свой список блокировки</strong>, в котором сейчас <strong>%{count} аккаунта</strong>, из файла <strong>%{filename}</strong>.
-        many: Вы собираетесь <strong>заменить свой список блокировки</strong>, в котором сейчас <strong>%{count} аккаунов</strong>, из файла <strong>%{filename}</strong>.
-        one: Вы собираетесь <strong>заменить свой список блокировки</strong>, в котором сейчас <strong>%{count} аккаунт</strong>, из файла <strong>%{filename}</strong>.
-        other: Вы собираетесь <strong>заменить свой список блокировки</strong>, в котором сейчас <strong>%{count} аккаунтов</strong>, из файла <strong>%{filename}</strong>.
-      bookmarks_html:
-        few: Вы собираетесь <strong>заменить свои закладки</strong>, в которых сейчас <strong>%{count} поста</strong>, из файла <strong>%{filename}</strong>.
-        many: Вы собираетесь <strong>заменить свои закладки</strong>, в которых сейчас <strong>%{count} постов</strong>, из файла <strong>%{filename}</strong>.
-        one: Вы собираетесь <strong>заменить свои закладки</strong>, в которых сейчас <strong>%{count} пост</strong>, из файла <strong>%{filename}</strong>.
-        other: Вы собираетесь <strong>заменить свои закладки</strong>, в которых сейчас <strong>%{count} постов</strong>, из файла <strong>%{filename}</strong>.
-      domain_blocking_html:
-        few: Вы собираетесь <strong>заменить свой список доменных блокировок</strong>, в котором сейчас <strong>%{count} домена</strong>, из файла <strong>%{filename}</strong>.
-        many: Вы собираетесь <strong>заменить свой список доменных блокировок</strong>, в котором сейчас <strong>%{count} доменов</strong>, из файла <strong>%{filename}</strong>.
-        one: Вы собираетесь <strong>заменить свой список доменных блокировок</strong>, в котором сейчас <strong>%{count} домен</strong>, из файла <strong>%{filename}</strong>.
-        other: Вы собираетесь <strong>заменить свой список доменных блокировок</strong>, в котором сейчас <strong>%{count} доменов</strong>, из файла <strong>%{filename}</strong>.
-      following_html:
-        few: Вы собираетесь <strong>подписаться</strong> на <strong>%{count} аккаунта</strong> из файла <strong>%{filename}</strong> и <strong>отписаться от всех прочих</strong>.
-        many: Вы собираетесь <strong>подписаться</strong> на <strong>%{count} аккаунтов</strong> из файла <strong>%{filename}</strong> и <strong>отписаться от всех прочих</strong>.
-        one: Вы собираетесь <strong>подписаться</strong> на <strong>%{count} аккаунт</strong> из файла <strong>%{filename}</strong> и <strong>отписаться от всех прочих</strong>.
-        other: Вы собираетесь <strong>подписаться</strong> на <strong>%{count} аккаунтов</strong> из файла <strong>%{filename}</strong> и <strong>отписаться от всех прочих</strong>.
-      lists_html:
-        few: Вы собираетесь <strong>заменить свои списки</strong> содержимым файла <strong>%{filename}</strong>. В новые списки будут добавлены <strong>%{count} аккаунта</strong>.
-        many: Вы собираетесь <strong>заменить свои списки</strong> содержимым файла <strong>%{filename}</strong>. В новые списки будут добавлены <strong>%{count} аккаунтов</strong>.
-        one: Вы собираетесь <strong>заменить свои списки</strong> содержимым файла <strong>%{filename}</strong>. В новые списки будет добавлен <strong>%{count} аккаунт</strong>.
-        other: Вы собираетесь <strong>заменить свои списки</strong> содержимым файла <strong>%{filename}</strong>. В новые списки будут добавлены <strong>%{count} аккаунтов</strong>.
-      muting_html:
-        few: Вы собираетесь <strong>заменить свой список игнорируемых пользователей</strong> списком из <strong>%{count} аккаунтов</strong> из файла <strong>%{filename}</strong>.
-        many: Вы собираетесь <strong>заменить свой список игнорируемых пользователей</strong> списком из <strong>%{count} аккаунтов</strong> из файла <strong>%{filename}</strong>.
-        one: Вы собираетесь <strong>заменить свой список игнорируемых пользователей</strong> списком из <strong>%{count} аккаунта</strong> из файла <strong>%{filename}</strong>.
-        other: Вы собираетесь <strong>заменить свой список игнорируемых пользователей</strong> списком из <strong>%{count} аккаунтов</strong> из файла <strong>%{filename}</strong>.
-    preambles:
-      blocking_html:
-        few: Вы собираетесь <strong>заблокировать</strong> <strong>%{count} аккаунта</strong> из файла <strong>%{filename}</strong>.
-        many: Вы собираетесь <strong>заблокировать</strong> <strong>%{count} аккаунтов</strong> из файла <strong>%{filename}</strong>.
-        one: Вы собираетесь <strong>заблокировать</strong> <strong>%{count} аккаунт</strong> из файла <strong>%{filename}</strong>.
-        other: Вы собираетесь <strong>заблокировать</strong> <strong>%{count} аккаунтов</strong> из файла <strong>%{filename}</strong>.
-=======
         few: Вы собираетесь <strong>заменить свой список заблокированных пользователей</strong> данными из файла <strong>%{filename}</strong>, после чего вы будете блокировать <strong>%{count} пользователей</strong>.
         many: Вы собираетесь <strong>заменить свой список заблокированных пользователей</strong> данными из файла <strong>%{filename}</strong>, после чего вы будете блокировать <strong>%{count} пользователей</strong>.
         one: Вы собираетесь <strong>заменить свой список заблокированных пользователей</strong> данными из файла <strong>%{filename}</strong>, после чего вы будете блокировать <strong>%{count} пользователя</strong>.
@@ -1691,7 +1564,6 @@ ru:
         many: Вы собираетесь <strong>заблокировать</strong> <strong>%{count} пользователей</strong> из файла <strong>%{filename}</strong>.
         one: Вы собираетесь <strong>заблокировать</strong> <strong>%{count} пользователя</strong> из файла <strong>%{filename}</strong>.
         other: Вы собираетесь <strong>заблокировать</strong> <strong>%{count} пользователей</strong> из файла <strong>%{filename}</strong>.
->>>>>>> v4.5.0
       bookmarks_html:
         few: Вы собираетесь добавить <strong>%{count} поста</strong> из файла <strong>%{filename}</strong> в свои <strong>закладки</strong>.
         many: Вы собираетесь добавить <strong>%{count} постов</strong> из файла <strong>%{filename}</strong> в свои <strong>закладки</strong>.
@@ -1703,24 +1575,6 @@ ru:
         one: Вы собираетесь <strong>заблокировать</strong> <strong>%{count} домен</strong> из файла <strong>%{filename}</strong>.
         other: Вы собираетесь <strong>заблокировать</strong> <strong>%{count} доменов</strong> из файла <strong>%{filename}</strong>.
       following_html:
-<<<<<<< HEAD
-        few: Вы собираетесь <strong>подписаться</strong> на <strong>%{count} аккаунта</strong> из файла <strong>%{filename}</strong>.
-        many: Вы собираетесь <strong>подписаться</strong> на <strong>%{count} аккаунтов</strong> из файла <strong>%{filename}</strong>.
-        one: Вы собираетесь <strong>подписаться</strong> на <strong>%{count} аккаунт</strong> из файла <strong>%{filename}</strong>.
-        other: Вы собираетесь <strong>подписаться</strong> на <strong>%{count} аккаунтов</strong> из файла <strong>%{filename}</strong>.
-      lists_html:
-        few: Вы собираетесь добавить <strong>%{count} аккаунта</strong> из файла <strong>%{filename}</strong> в свои <strong>списки</strong>. Если соответствующих списков нет, они будут созданы.
-        many: Вы собираетесь добавить <strong>%{count} аккаунтов</strong> из файла <strong>%{filename}</strong> в свои <strong>списки</strong>. Если соответствующих списков нет, они будут созданы.
-        one: Вы собираетесь добавить <strong>%{count} аккаунт</strong> из файла <strong>%{filename}</strong> в свои <strong>списки</strong>. Если соответствующих списков нет, они будут созданы.
-        other: Вы собираетесь добавить <strong>%{count} аккаунтов</strong> из файла <strong>%{filename}</strong> в свои <strong>списки</strong>. Если соответствующих списков нет, они будут созданы.
-      muting_html:
-        few: Вы собираетесь <strong>начать игнорировать</strong> <strong>%{count} аккаунта</strong> из файла <strong>%{filename}</strong>.
-        many: Вы собираетесь <strong>начать игнорировать</strong> <strong>%{count} аккаунтов</strong> из файла <strong>%{filename}</strong>.
-        one: Вы собираетесь <strong>начать игнорировать</strong> <strong>%{count} аккаунт</strong> из файла <strong>%{filename}</strong>.
-        other: Вы собираетесь <strong>начать игнорировать</strong> <strong>%{count} аккаунтов</strong> из файла <strong>%{filename}</strong>.
-    preface: Вы можете загрузить некоторые данные, например, списки людей, на которых Вы подписаны или которых блокируете, в Вашу учётную запись на этом узле из файлов, экспортированных с другого узла.
-    recent_imports: Недавно импортированное
-=======
         few: Вы собираетесь <strong>подписаться</strong> на <strong>%{count} пользователей</strong> из файла <strong>%{filename}</strong>.
         many: Вы собираетесь <strong>подписаться</strong> на <strong>%{count} пользователей</strong> из файла <strong>%{filename}</strong>.
         one: Вы собираетесь <strong>подписаться</strong> на <strong>%{count} пользователя</strong> из файла <strong>%{filename}</strong>.
@@ -1737,7 +1591,6 @@ ru:
         other: Вы собираетесь <strong>игнорировать</strong> <strong>%{count} пользователей</strong> из файла <strong>%{filename}</strong>.
     preface: Вы можете перенести прежде экспортированные с другого сервера данные, такие как блокируемые вами пользователи и ваши подписки.
     recent_imports: История импорта
->>>>>>> v4.5.0
     states:
       finished: Завершён
       in_progress: Выполняется
@@ -1776,11 +1629,7 @@ ru:
       '604800': 1 неделя
       '86400': 1 день
     expires_in_prompt: Бессрочно
-<<<<<<< HEAD
-    generate: Сгенерировать
-=======
     generate: Создать ссылку
->>>>>>> v4.5.0
     invalid: Это приглашение недействительно
     invited_by: 'Вы были приглашены этим пользователем:'
     max_uses:
@@ -1811,11 +1660,6 @@ ru:
     unsubscribe:
       action: Да, я хочу отписаться
       complete: Подписка отменена
-<<<<<<< HEAD
-      confirmation_html: Вы точно желаете отписаться от всех уведомления типа «%{type}», доставляемых из сервера Mastodon %{domain} на ваш адрес электронной почты %{email}? Вы всегда сможете подписаться снова в <a href="%{settings_path}">настройках e-mail уведомлений</a>.
-      resubscribe_html: Если вы отписались от рассылки по ошибке, вы можете повторно подписаться на рассылку в настройках <a href="%{settings_path}">настроек почтовых уведомлений</a>.
-      success_html: Вы больше не будете получать %{type} для Mastodon на %{domain} на вашу электронную почту %{email}.
-=======
       confirmation_html: Вы уверены в том, что хотите отписаться от всех %{type}, которые вы получаете на адрес %{email} для учётной записи на сервере Mastodon %{domain}? Вы всегда сможете подписаться снова в <a href="%{settings_path}">настройках уведомлений по электронной почте</a>.
       emails:
         notification_emails:
@@ -1826,7 +1670,6 @@ ru:
           reblog: уведомлений о продвижении ваших постов
       resubscribe_html: Если вы отписались по ошибке и хотите подписаться снова, перейдите на страницу <a href="%{settings_path}">настройки уведомлений по электронной почте</a>.
       success_html: Вы отказались от %{type}, которые вы получали на адрес %{email} для вашей учётной записи на сервере Mastodon %{domain}.
->>>>>>> v4.5.0
       title: Отписаться
   media_attachments:
     validations:
@@ -1847,11 +1690,7 @@ ru:
       on_cooldown: Вы пока не можете переезжать
     followers_count: Подписчиков на момент переезда
     incoming_migrations: Переезд со старой учётной записи
-<<<<<<< HEAD
-    incoming_migrations_html: Переезжаете с другой учётной записи? <a href="%{path}">Настройте псевдоним</a> для переноса подписчиков.
-=======
     incoming_migrations_html: Вы можете <a href="%{path}">добавить связанную учётную запись</a>, если собираетесь перенести оттуда подписчиков.
->>>>>>> v4.5.0
     moved_msg: Теперь ваша учётная запись перенаправляет к %{acct}, туда же перемещаются подписчики.
     not_redirecting: Прямо сейчас ваша учётная запись никуда не перенаправлена.
     on_cooldown: Вы уже недавно переносили свою учётную запись. Эта возможность будет снова доступна через %{count} дн.
@@ -1945,21 +1784,12 @@ ru:
     truncate: "&hellip;"
   polls:
     errors:
-<<<<<<< HEAD
-      already_voted: Вы уже голосовали в этом опросе
-      duplicate_options: не должны повторяться
-      duration_too_long: слишком велика
-      duration_too_short: слишком мала
-      expired: Опрос уже завершился
-      invalid_choice: Выбранного варианта голосования не существует
-=======
       already_voted: Вы уже проголосовали в этом опросе
       duplicate_options: не должны повторяться
       duration_too_long: слишком велика
       duration_too_short: слишком мала
       expired: Этот опрос уже завершился
       invalid_choice: Выбранного вами варианта ответа не существует
->>>>>>> v4.5.0
       over_character_limit: не должны превышать %{max} символов
       self_vote: Вы не можете голосовать в своих опросах
       too_few_options: должны содержать не меньше двух опций
@@ -2018,15 +1848,9 @@ ru:
       account: Публичные посты @%{acct}
       tag: 'Публичные посты с хештегом #%{hashtag}'
   scheduled_statuses:
-<<<<<<< HEAD
-    over_daily_limit: Вы превысили лимит в %{limit} запланированных постов на указанный день
-    over_total_limit: Вы превысили лимит на %{limit} запланированных постов
-    too_soon: дата публикации должна быть в будущем
-=======
     over_daily_limit: За сутки можно создать не более %{limit} отложенных постов
     over_total_limit: Всего можно создать не более %{limit} отложенных постов
     too_soon: задано слишком рано
->>>>>>> v4.5.0
   self_destruct:
     lead_html: К сожалению, <strong>%{domain}</strong> закрывается навсегда. Если вас учётная запись находиться здесь вы не сможете продолжить использовать его, но вы можете запросить резервную копию ваших данных.
     title: Этот сервер закрывается
@@ -2085,15 +1909,9 @@ ru:
     back: Назад в Mastodon
     delete: Удаление учётной записи
     development: Разработчикам
-<<<<<<< HEAD
-    edit_profile: Изменить профиль
-    export: Экспорт
-    featured_tags: Избранные хэштеги
-=======
     edit_profile: " Данные профиля"
     export: Экспорт
     featured_tags: Рекомендации хештегов
->>>>>>> v4.5.0
     import: Импорт
     import_and_export: Импорт и экспорт
     migrate: Настройка перенаправления
@@ -2114,11 +1932,7 @@ ru:
       user_domain_block: Вы заблокировали %{target_name}
     lost_followers: Потерянные подписчики
     lost_follows: Потерянные подписки
-<<<<<<< HEAD
-    preamble: Вы можете потерять подписчиков и последователей, если заблокируете домен или, если ваши модераторы решат приостановить работу удаленного сервера. Когда это произойдет, вы сможете загрузить списки разорванных отношений, чтобы проверить их и, возможно, импортировать на другой сервер.
-=======
     preamble: Когда вы блокируете сервер или это делают модераторы вашего сервера, вы теряете подписчиков и перестаёте быть подписаны на пользователей с заблокированного сервера. После блокировки вы сможете скачать списки пользователей, отношения с которыми были разорваны, чтобы рассмотреть их или чтобы импортировать их на другом сервере.
->>>>>>> v4.5.0
     purged: Информация об этом сервере была удалена администраторами вашего сервера.
     type: Событие
   statuses:
@@ -2204,13 +2018,10 @@ ru:
     does_not_match_previous_name: не совпадает с предыдущим именем
   terms_of_service:
     title: Пользовательское соглашение
-<<<<<<< HEAD
-=======
   terms_of_service_interstitial:
     past_preamble_html: Мы изменили наше пользовательское соглашение с момента вашего последнего посещения. Мы рекомендуем вам ознакомиться с обновленным соглашением.
     review_link: Посмотреть пользовательское соглашение
     title: Изменяется пользовательское соглашение %{domain}
->>>>>>> v4.5.0
   themes:
     contrast: Mastodon (высококонтрастная)
     default: Mastodon (тёмная)

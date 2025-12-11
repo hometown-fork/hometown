@@ -69,11 +69,7 @@
   "account.mute_short": "뮤트",
   "account.muted": "뮤트됨",
   "account.muting": "뮤트함",
-<<<<<<< HEAD
-  "account.mutual": "서로 팔로우 중입니다",
-=======
   "account.mutual": "서로 팔로우",
->>>>>>> v4.5.0
   "account.no_bio": "제공된 설명이 없습니다.",
   "account.open_original_page": "원본 페이지 열기",
   "account.posts": "게시물",
@@ -171,11 +167,7 @@
   "column.bookmarks": "북마크",
   "column.community": "로컬 타임라인",
   "column.create_list": "리스트 만들기",
-<<<<<<< HEAD
-  "column.direct": "개인적인 멘션",
-=======
   "column.direct": "개인 멘션",
->>>>>>> v4.5.0
   "column.directory": "프로필 둘러보기",
   "column.domain_blocks": "차단한 도메인",
   "column.edit_list": "리스트 편집",
@@ -268,14 +260,11 @@
   "confirmations.remove_from_followers.confirm": "팔로워 제거",
   "confirmations.remove_from_followers.message": "{name} 님이 나를 팔로우하지 않게 됩니다. 계속할까요?",
   "confirmations.remove_from_followers.title": "팔로워를 제거할까요?",
-<<<<<<< HEAD
-=======
   "confirmations.revoke_quote.confirm": "게시물 삭제",
   "confirmations.revoke_quote.message": "이 작업은 되돌릴 수 없습니다.",
   "confirmations.revoke_quote.title": "게시물을 지울까요?",
   "confirmations.unblock.confirm": "차단 해제",
   "confirmations.unblock.title": "{name} 님을 차단 해제할까요?",
->>>>>>> v4.5.0
   "confirmations.unfollow.confirm": "팔로우 해제",
   "confirmations.unfollow.title": "{name} 님을 언팔로우 할까요?",
   "confirmations.withdraw_request.confirm": "요청 삭제",
@@ -375,19 +364,16 @@
   "explore.trending_links": "소식",
   "explore.trending_statuses": "게시물",
   "explore.trending_tags": "해시태그",
-<<<<<<< HEAD
-  "federation.change": "Adjust status federation",
-  "federation.federated.long": "Allow toot to reach other instances",
-  "federation.federated.short": "Federated",
-  "federation.local_only.long": "Restrict this toot only to my instance",
-  "federation.local_only.short": "Local-only",
-=======
->>>>>>> v4.5.0
   "featured_carousel.header": "{count, plural, other {고정된 게시물}}",
   "featured_carousel.next": "다음",
   "featured_carousel.post": "게시물",
   "featured_carousel.previous": "이전",
   "featured_carousel.slide": "{total} 중 {index}",
+  "federation.change": "Adjust status federation",
+  "federation.federated.long": "Allow toot to reach other instances",
+  "federation.federated.short": "Federated",
+  "federation.local_only.long": "Restrict this toot only to my instance",
+  "federation.local_only.short": "Local-only",
   "filter_modal.added.context_mismatch_explanation": "이 필터 카테고리는 당신이 이 게시물에 접근한 문맥에 적용되지 않습니다. 만약 이 문맥에서도 필터되길 원한다면, 필터를 수정해야 합니다.",
   "filter_modal.added.context_mismatch_title": "문맥 불일치!",
   "filter_modal.added.expired_explanation": "이 필터 카테고리는 만료되었습니다, 적용하려면 만료 일자를 변경할 필요가 있습니다.",
@@ -466,11 +452,6 @@
   "hints.profiles.see_more_followers": "{domain}에서 더 많은 팔로워 보기",
   "hints.profiles.see_more_follows": "{domain}에서 더 많은 팔로우 보기",
   "hints.profiles.see_more_posts": "{domain}에서 더 많은 게시물 보기",
-<<<<<<< HEAD
-  "hints.threads.replies_may_be_missing": "다른 서버의 답글은 일부 누락되었을 수 있습니다.",
-  "hints.threads.see_more": "{domain}에서 더 많은 답글 보기",
-=======
->>>>>>> v4.5.0
   "home.column_settings.show_quotes": "인용 보기",
   "home.column_settings.show_reblogs": "부스트 표시",
   "home.column_settings.show_replies": "답글 표시",
@@ -492,27 +473,11 @@
   "ignore_notifications_modal.private_mentions_title": "요청하지 않은 개인 멘션 알림을 무시할까요?",
   "info_button.label": "도움말",
   "info_button.what_is_alt_text": "<h1>대체 텍스트가 무엇인가요?</h1> <p>대체 텍스트는 저시력자, 낮은 인터넷 대역폭 사용자, 더 자세한 문맥을 위해 이미지에 대한 설명을 제공하는 것입니다.</p> <p>깔끔하고 간결하고 객관적인 대체 텍스트를 작성해 모두가 이해하기 쉽게 만들고 접근성이 높아질 수 있습니다.</p><ul><li>중요한 요소에 중점을 두세요</li> <li>이미지 안의 글자를 요약하세요</li> <li>정형화된 문장 구조를 사용하세요</li> <li>중복된 정보를 피하세요</li> <li>복잡한 시각자료(도표나 지도 같은)에선 추세와 주요 결과에 중점을 두세요</li> </ul>",
-<<<<<<< HEAD
-  "interaction_modal.action.favourite": "계속하려면 내 계정으로 즐겨찾기해야 합니다.",
-  "interaction_modal.action.follow": "계속하려면 내 계정으로 팔로우해야 합니다.",
-  "interaction_modal.action.reblog": "계속하려면 내 계정으로 리블로그해야 합니다.",
-  "interaction_modal.action.reply": "계속하려면 내 계정으로 답장해야 합니다.",
-  "interaction_modal.action.vote": "계속하려면 내 계정으로 투표해야 합니다.",
-=======
->>>>>>> v4.5.0
   "interaction_modal.go": "이동",
   "interaction_modal.no_account_yet": "아직 계정이 없나요?",
   "interaction_modal.on_another_server": "다른 서버에",
   "interaction_modal.on_this_server": "이 서버에서",
-<<<<<<< HEAD
-  "interaction_modal.title.favourite": "{name} 님의 게시물을 좋아하기",
-  "interaction_modal.title.follow": "{name} 님을 팔로우",
-  "interaction_modal.title.reblog": "{name} 님의 게시물을 부스트",
-  "interaction_modal.title.reply": "{name} 님의 게시물에 답글",
-  "interaction_modal.title.vote": "{name} 님의 투표에 참여",
-=======
   "interaction_modal.title": "로그인해서 계속하기",
->>>>>>> v4.5.0
   "interaction_modal.username_prompt": "예시: {example}",
   "intervals.full.days": "{number} 일",
   "intervals.full.hours": "{number} 시간",
@@ -571,11 +536,7 @@
   "lists.add_to_lists": "리스트에 {name} 추가",
   "lists.create": "생성",
   "lists.create_a_list_to_organize": "새 리스트를 만들어 홈 피드를 정리하세요",
-<<<<<<< HEAD
-  "lists.create_list": "리스트 생성",
-=======
   "lists.create_list": "리스트 만들기",
->>>>>>> v4.5.0
   "lists.delete": "리스트 삭제",
   "lists.done": "완료",
   "lists.edit": "리스트 편집",
@@ -615,11 +576,7 @@
   "navigation_bar.automated_deletion": "게시물 자동 삭제",
   "navigation_bar.blocks": "차단한 사용자",
   "navigation_bar.bookmarks": "북마크",
-<<<<<<< HEAD
-  "navigation_bar.direct": "개인적인 멘션",
-=======
   "navigation_bar.direct": "개인 멘션",
->>>>>>> v4.5.0
   "navigation_bar.domain_blocks": "차단한 도메인",
   "navigation_bar.favourites": "좋아요",
   "navigation_bar.filters": "뮤트한 단어",
@@ -952,10 +909,7 @@
   "status.history.created": "{name} 님이 {date}에 게시함",
   "status.history.edited": "{name} 님이 {date}에 수정함",
   "status.load_more": "더보기",
-<<<<<<< HEAD
   "status.local_only": "This post is only visible by other users of your instance",
-=======
->>>>>>> v4.5.0
   "status.media.open": "클릭하여 열기",
   "status.media.show": "클릭하여 보기",
   "status.media_hidden": "미디어 숨겨짐",
@@ -965,15 +919,6 @@
   "status.mute_conversation": "대화 뮤트",
   "status.open": "상세 정보 표시",
   "status.pin": "고정",
-<<<<<<< HEAD
-  "status.quote_error.filtered": "필터에 의해 가려짐",
-  "status.quote_error.not_found": "이 게시물은 표시할 수 없습니다.",
-  "status.quote_error.pending_approval": "이 게시물은 원작자의 승인을 기다리고 있습니다.",
-  "status.quote_error.rejected": "이 게시물은 원작자가 인용을 허용하지 않았기 때문에 표시할 수 없습니다.",
-  "status.quote_error.removed": "이 게시물은 작성자에 의해 삭제되었습니다.",
-  "status.quote_error.unauthorized": "이 게시물은 권한이 없기 때문에 볼 수 없습니다.",
-  "status.quote_post_author": "{name} 님의 게시물",
-=======
   "status.quote": "인용",
   "status.quote.cancel": "인용 취소",
   "status.quote_error.blocked_account_hint.title": "@{name}을 차단했기 때문에 이 게시물은 숨겨졌습니다.",
@@ -996,7 +941,6 @@
   "status.quotes.empty": "아직 아무도 이 게시물을 인용하지 않았습니다. 누군가 인용한다면 여기에 표시됩니다.",
   "status.quotes.local_other_disclaimer": "원작자가 거부한 인용은 표시되지 않습니다.",
   "status.quotes.remote_other_disclaimer": "{domain}의 인용만 여기에 확정적으로 보여집니다. 원작자가 거부한 인용은 보여지지 않습니다.",
->>>>>>> v4.5.0
   "status.read_more": "더 보기",
   "status.reblog": "부스트",
   "status.reblog_or_quote": "부스트 또는 인용",
@@ -1007,10 +951,7 @@
   "status.redraft": "지우고 다시 쓰기",
   "status.remove_bookmark": "북마크 삭제",
   "status.remove_favourite": "즐겨찾기에서 제거",
-<<<<<<< HEAD
-=======
   "status.remove_quote": "삭제",
->>>>>>> v4.5.0
   "status.replied_in_thread": "글타래에 답장",
   "status.replied_to": "{name} 님에게",
   "status.reply": "답장",
@@ -1055,10 +996,7 @@
   "upload_button.label": "이미지, 영상, 오디오 파일 추가",
   "upload_error.limit": "파일 업로드 제한에 도달했습니다.",
   "upload_error.poll": "파일 업로드는 설문과 함께 쓸 수 없습니다.",
-<<<<<<< HEAD
-=======
   "upload_error.quote": "파일 업로드는 인용과 함께 쓸 수 없습니다.",
->>>>>>> v4.5.0
   "upload_form.drag_and_drop.instructions": "미디어 첨부파일을 집으려면 스페이스나 엔터를 누르세요. 드래그 하는 동안 방향키를 이용해 원하는 방향으로 이동할 수 있습니다. 스페이스나 엔터를 다시 눌러 새 위치에 놓거나 ESC를 이용해 취소할 수 있습니다.",
   "upload_form.drag_and_drop.on_drag_cancel": "드래그가 취소되었습니다. 미디어 첨부파일 {item}은 이동되지 않았습니다.",
   "upload_form.drag_and_drop.on_drag_end": "미디어 첨부파일 {item}은 이동되지 않았습니다.",
@@ -1081,9 +1019,6 @@
   "video.skip_forward": "앞으로 건너뛰기",
   "video.unmute": "음소거 해제",
   "video.volume_down": "음량 감소",
-<<<<<<< HEAD
-  "video.volume_up": "음량 증가"
-=======
   "video.volume_up": "음량 증가",
   "visibility_modal.button_title": "공개범위 설정",
   "visibility_modal.header": "공개범위와 반응",
@@ -1099,5 +1034,4 @@
   "visibility_modal.quote_nobody": "나에게만",
   "visibility_modal.quote_public": "아무나",
   "visibility_modal.save": "저장"
->>>>>>> v4.5.0
 }

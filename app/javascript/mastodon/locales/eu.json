@@ -30,10 +30,7 @@
   "account.edit_profile": "Editatu profila",
   "account.enable_notifications": "Jakinarazi @{name} erabiltzaileak argitaratzean",
   "account.endorse": "Nabarmendu profilean",
-<<<<<<< HEAD
-=======
   "account.familiar_followers_many": "Jarraitzaileak: {name1}, {name2} eta beste {othersCount, plural, one {ezagun bat} other {# ezagun}}",
->>>>>>> v4.5.0
   "account.familiar_followers_one": "{name1}-k jarraitzen du",
   "account.familiar_followers_two": "{name1}-k eta {name2}-k jarraitzen dute",
   "account.featured": "Gailenak",
@@ -121,11 +118,8 @@
   "annual_report.summary.most_used_hashtag.most_used_hashtag": "traola erabiliena",
   "annual_report.summary.most_used_hashtag.none": "Bat ere ez",
   "annual_report.summary.new_posts.new_posts": "bidalketa berriak",
-<<<<<<< HEAD
-=======
   "annual_report.summary.percentile.text": "<topLabel>Horrek jartzen zaitu top </topLabel> <percentage> </percentage>(e)an <bottomLabel> {domain} erabiltzaileen artean </bottomLabel>",
   "annual_report.summary.percentile.we_wont_tell_bernie": "Bernieri ez diogu ezer esango ;)..",
->>>>>>> v4.5.0
   "annual_report.summary.thanks": "Eskerrik asko Mastodonen parte izateagatik!",
   "attachments_list.unprocessed": "(prozesatu gabe)",
   "audio.hide": "Ezkutatu audioa",
@@ -224,10 +218,7 @@
   "confirmations.discard_draft.edit.message": "Jarraitzeak editatzen ari zaren mezuan egindako aldaketak baztertuko ditu.",
   "confirmations.discard_draft.edit.title": "Baztertu zure argitalpenari egindako aldaketak?",
   "confirmations.discard_draft.post.cancel": "Zirriborroa berrekin",
-<<<<<<< HEAD
-=======
   "confirmations.discard_draft.post.message": "Jarraituz gero, idazten ari zaren sarrera bertan behera geratuko da.",
->>>>>>> v4.5.0
   "confirmations.discard_draft.post.title": "Zure argitalpenaren zirriborroa baztertu nahi duzu?",
   "confirmations.discard_edit_media.confirm": "Baztertu",
   "confirmations.discard_edit_media.message": "Multimediaren deskribapen edo aurrebistan gorde gabeko aldaketak daude, baztertu nahi dituzu?",
@@ -341,18 +332,15 @@
   "explore.trending_links": "Berriak",
   "explore.trending_statuses": "Tutak",
   "explore.trending_tags": "Traolak",
-<<<<<<< HEAD
+  "featured_carousel.next": "Hurrengoa",
+  "featured_carousel.post": "Argitaratu",
+  "featured_carousel.previous": "Aurrekoa",
+  "featured_carousel.slide": "{total}-tik {index}",
   "federation.change": "Adjust status federation",
   "federation.federated.long": "Allow toot to reach other instances",
   "federation.federated.short": "Federated",
   "federation.local_only.long": "Restrict this toot only to my instance",
   "federation.local_only.short": "Local-only",
-=======
->>>>>>> v4.5.0
-  "featured_carousel.next": "Hurrengoa",
-  "featured_carousel.post": "Argitaratu",
-  "featured_carousel.previous": "Aurrekoa",
-  "featured_carousel.slide": "{total}-tik {index}",
   "filter_modal.added.context_mismatch_explanation": "Iragazki-kategoria hau ez zaio aplikatzen bidalketa honetara sartzeko erabili duzun testuinguruari. Bidalketa testuinguru horretan ere iragaztea nahi baduzu, iragazkia editatu beharko duzu.",
   "filter_modal.added.context_mismatch_title": "Testuingurua ez dator bat!",
   "filter_modal.added.expired_explanation": "Iragazki kategoria hau iraungi da, eragina izan dezan bere iraungitze-data aldatu beharko duzu.",
@@ -431,11 +419,6 @@
   "hints.profiles.see_more_followers": "Ikusi jarraitzaile gehiago {domain}-(e)n",
   "hints.profiles.see_more_follows": "Ikusi jarraitzaile gehiago {domain}-(e)n",
   "hints.profiles.see_more_posts": "Ikusi bidalketa gehiago {domain}-(e)n",
-<<<<<<< HEAD
-  "hints.threads.replies_may_be_missing": "Baliteke beste zerbitzari batzuen erantzun batzuk ez erakustea.",
-  "hints.threads.see_more": "Ikusi erantzun gehiago {domain}-(e)n",
-=======
->>>>>>> v4.5.0
   "home.column_settings.show_quotes": "Erakutsi aipamenak",
   "home.column_settings.show_reblogs": "Erakutsi bultzadak",
   "home.column_settings.show_replies": "Erakutsi erantzunak",
@@ -456,25 +439,11 @@
   "ignore_notifications_modal.not_following_title": "Jarraitzen ez dituzun pertsonen jakinarazpenei ez ikusiarena egin?",
   "ignore_notifications_modal.private_mentions_title": "Eskatu gabeko aipamen pribatuen jakinarazpenei ez ikusiarena egin?",
   "info_button.label": "Laguntza",
-<<<<<<< HEAD
-  "interaction_modal.action.favourite": "Jarraitzeko, zure kontutik atsegindu behar duzu.",
-  "interaction_modal.action.follow": "Jarraitzeko zure kontutik jarraitu behar duzu.",
-  "interaction_modal.action.reply": "Jarraitzeko zure kontutik erantzun behar duzu.",
-  "interaction_modal.action.vote": "Jarraitzeko, zure kontutik bozkatu behar duzu.",
-=======
   "info_button.what_is_alt_text": "<h1>Zer da Alt testua?</h1><p>Alt testuak irudiak deskribatzeko aukera ematen du, ikusmen-urritasunak, banda-zabalera txikiko konexioak edo testuinguru gehigarria nahi duten pertsonentzat.</p><p>Alt testu argi, zehatz eta objektiboen bidez, guztion irisgarritasuna eta ulermena hobetu ditzakezu.</p><ul><li>Hartu elementu garrantzitsuenak</li><li>Laburbildu irudietako testua</li><li>Erabili esaldien egitura erregularra</li><li>Baztertu informazio erredundantea.</li><li>Enfokatu joeretan eta funtsezko elementuetan irudi konplexuetan (diagrametan edo mapetan, adibidez)</li></ul>",
->>>>>>> v4.5.0
   "interaction_modal.go": "Joan",
   "interaction_modal.no_account_yet": "Ez al duzu konturik oraindik?",
   "interaction_modal.on_another_server": "Beste zerbitzari batean",
   "interaction_modal.on_this_server": "Zerbitzari honetan",
-<<<<<<< HEAD
-  "interaction_modal.title.favourite": "Egin gogoko {name}(r)en bidalketa",
-  "interaction_modal.title.follow": "Jarraitu {name}(r)i",
-  "interaction_modal.title.reblog": "Bultzatu {name}(r)en bidalketa",
-  "interaction_modal.title.reply": "Erantzun {name}(r)en bidalketari",
-=======
->>>>>>> v4.5.0
   "interaction_modal.username_prompt": "Adib. {example}",
   "intervals.full.days": "{number, plural, one {egun #} other {# egun}}",
   "intervals.full.hours": "{number, plural, one {ordu #} other {# ordu}}",
@@ -869,11 +838,6 @@
   "status.mute_conversation": "Mututu elkarrizketa",
   "status.open": "Hedatu bidalketa hau",
   "status.pin": "Finkatu profilean",
-<<<<<<< HEAD
-  "status.quote_error.not_found": "Bidalketa hau ezin da erakutsi.",
-  "status.quote_error.pending_approval": "Bidalketa hau egile originalak onartzeko zain dago.",
-=======
->>>>>>> v4.5.0
   "status.read_more": "Irakurri gehiago",
   "status.reblog": "Bultzada",
   "status.reblogged_by": "{name}(r)en bultzada",
@@ -933,11 +897,8 @@
   "video.hide": "Ezkutatu bideoa",
   "video.pause": "Pausatu",
   "video.play": "Jo",
-<<<<<<< HEAD
-=======
   "video.skip_forward": "Jauzi aurrerantz",
   "video.unmute": "Soinua ezarri",
   "video.volume_down": "Bolumena jaitsi",
->>>>>>> v4.5.0
   "video.volume_up": "Bolumena Igo"
 }

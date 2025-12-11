@@ -61,10 +61,7 @@ eu:
         setting_display_media_default: Ezkutatu hunkigarri gisa markatutako multimedia
         setting_display_media_hide_all: Ezkutatu multimedia guztia beti
         setting_display_media_show_all: Erakutsi beti hunkigarri gisa markatutako multimedia
-<<<<<<< HEAD
-=======
         setting_emoji_style: Nola bistaratu emojiak. "Automatikoki" aukeran emoji natiboak erabiltzen saiatuko dira, baina Twemojira itzuliko dira arakatzaile zaharretarako.
->>>>>>> v4.5.0
         setting_system_scrollbars_ui: Safari eta Chrome-n oinarritutako mahaigaineko nabigatzaileei bakarrik aplikatzen zaie
         setting_use_blurhash: Gradienteak ezkutatutakoaren koloreetan oinarritzen dira, baina xehetasunak ezkutatzen dituzte
         setting_use_pending_items: Ezkutatu denbora-lerroko eguneraketak klik baten atzean jarioa automatikoki korritu ordez

@@ -1,11 +1,7 @@
 {
   "about.blocks": "Reguligitaj serviloj",
   "about.contact": "Kontakto:",
-<<<<<<< HEAD
-  "about.default_locale": "기본",
-=======
   "about.default_locale": "Defaŭlta",
->>>>>>> v4.5.0
   "about.disclaimer": "Mastodon estas libera, malfermitkoda programo kaj varmarko de la firmao Mastodon gGmbH.",
   "about.domain_blocks.no_reason_available": "Kialo ne disponeblas",
   "about.domain_blocks.preamble": "Mastodon ĝenerale rajtigas vidi la enhavojn de uzantoj el aliaj serviloj en la fediverso, kaj komuniki kun ili. Jen la limigoj deciditaj de tiu ĉi servilo mem.",
@@ -34,11 +30,8 @@
   "account.edit_profile": "Redakti la profilon",
   "account.enable_notifications": "Sciigu min kiam @{name} afiŝos",
   "account.endorse": "Montri en profilo",
-<<<<<<< HEAD
-=======
   "account.familiar_followers_one": "Sekvita de {name1}",
   "account.familiar_followers_two": "Sekvita de {name1} kaj {name2}",
->>>>>>> v4.5.0
   "account.featured": "Montrita",
   "account.featured.accounts": "Profiloj",
   "account.featured.hashtags": "Kradvortoj",
@@ -252,12 +245,9 @@
   "confirmations.remove_from_followers.confirm": "Forigi sekvanton",
   "confirmations.remove_from_followers.message": "{name} ne plu sekvos vin. Ĉu vi certas ke vi volas daŭri?",
   "confirmations.remove_from_followers.title": "Forigi sekvanton?",
-<<<<<<< HEAD
-=======
   "confirmations.revoke_quote.confirm": "Forigi afiŝon",
   "confirmations.revoke_quote.message": "Ĉi tiu ago ne povas esti malfarita.",
   "confirmations.revoke_quote.title": "Ĉu forigi afiŝon?",
->>>>>>> v4.5.0
   "confirmations.unfollow.confirm": "Ne plu sekvi",
   "content_warning.hide": "Kaŝi afiŝon",
   "content_warning.show": "Montri ĉiukaze",
@@ -318,10 +308,7 @@
   "emoji_button.search_results": "Serĉaj rezultoj",
   "emoji_button.symbols": "Simboloj",
   "emoji_button.travel": "Vojaĝoj kaj lokoj",
-<<<<<<< HEAD
-=======
   "empty_column.account_featured.me": "Vi ankoraŭ nenion prezentis. Ĉu vi sciis, ke vi povas prezenti viajn plej ofte uzatajn kradvortojn, kaj eĉ la kontojn de viaj amikoj sur via profilo?",
->>>>>>> v4.5.0
   "empty_column.account_featured_other.unknown": "Ĉi tiu konto ankoraŭ ne montris ion ajn.",
   "empty_column.account_hides_collections": "Ĉi tiu uzanto elektis ne disponebligi ĉi tiu informon",
   "empty_column.account_suspended": "Konto suspendita",
@@ -355,22 +342,16 @@
   "explore.trending_links": "Novaĵoj",
   "explore.trending_statuses": "Afiŝoj",
   "explore.trending_tags": "Kradvortoj",
-<<<<<<< HEAD
-  "federation.change": "Adjust status federation",
-  "federation.federated.long": "Allow toot to reach other instances",
-  "federation.federated.short": "Federated",
-  "federation.local_only.long": "Restrict this toot only to my instance",
-  "federation.local_only.short": "Local-only",
-  "featured_carousel.next": "Antaŭen",
-  "featured_carousel.post": "Afiŝi",
-  "featured_carousel.previous": "Malantaŭen",
-=======
   "featured_carousel.header": "{count, plural, one {Alpinglita afiŝo} other {Alpinglitaj afiŝoj}}",
   "featured_carousel.next": "Antaŭen",
   "featured_carousel.post": "Afiŝi",
   "featured_carousel.previous": "Malantaŭen",
   "featured_carousel.slide": "{index} de {total}",
->>>>>>> v4.5.0
+  "federation.change": "Adjust status federation",
+  "federation.federated.long": "Allow toot to reach other instances",
+  "federation.federated.short": "Federated",
+  "federation.local_only.long": "Restrict this toot only to my instance",
+  "federation.local_only.short": "Local-only",
   "filter_modal.added.context_mismatch_explanation": "Ĉi tiu filtrilkategorio ne kongruas kun la kunteksto en kiu vi akcesis ĉi tiun afiŝon. Se vi volas ke la afiŝo estas ankaŭ filtrita en ĉi tiu kunteksto, vi devus redakti la filtrilon.",
   "filter_modal.added.context_mismatch_title": "Ne kongruas la kunteksto!",
   "filter_modal.added.expired_explanation": "Ĉi tiu filtrilkategorio eksvalidiĝis, vu bezonos ŝanĝi la eksvaliddaton por ĝi.",
@@ -470,26 +451,10 @@
   "ignore_notifications_modal.private_mentions_title": "Ĉu ignori sciigojn de nepetitaj privataj mencioj?",
   "info_button.label": "Helpo",
   "info_button.what_is_alt_text": "<h1>Kio estas la alternativa teksto?</h1> <p>La alternativa teksto ofertas priskribojn de la bildoj por individuoj kun vidaj malfacilaĵoj, konektoj kun malalta larĝa bando aŭ kiuj serĉas plian kuntekston.</p> <p>Vi povas plibonigi alireblecon kaj komprenon por ĉiuj per skribado de klaraj, koncizaj, kaj objektivaj alternativaj tekstoj.</p><ul><li>Kaptu gravajn elementojn.</li><li> Resumu tekston en bildoj.</li> <li>Uzu regulan frazstrukturon.</li> <li>Evitu redundan informon.</li><li>Fokusu sur tendencoj kaj ĉefaj trovoj en kompleksaj visualoj (kiel diagramoj aŭ mapoj).</li></ul>",
-<<<<<<< HEAD
-  "interaction_modal.action.favourite": "Por daŭrigi, vi devas stelumi el via konto.",
-  "interaction_modal.action.follow": "Por daŭrigi, vi devas sekvi el via konto.",
-  "interaction_modal.action.reblog": "Por daŭrigi, vi devas diskonigi el via konto.",
-  "interaction_modal.action.reply": "Por daŭrigi, vi devas respondi el via konto.",
-  "interaction_modal.action.vote": "Por daŭrigi, vi devas voĉdoni el via konto.",
-=======
->>>>>>> v4.5.0
   "interaction_modal.go": "Iru",
   "interaction_modal.no_account_yet": "Ĉu vi ankoraŭ ne havas konton?",
   "interaction_modal.on_another_server": "En alia servilo",
   "interaction_modal.on_this_server": "En ĉi tiu servilo",
-<<<<<<< HEAD
-  "interaction_modal.title.favourite": "Stelumi la afiŝon de {name}",
-  "interaction_modal.title.follow": "Sekvi {name}",
-  "interaction_modal.title.reblog": "Akceli la afiŝon de {name}",
-  "interaction_modal.title.reply": "Respondi al la afiŝo de {name}",
-  "interaction_modal.title.vote": "Voĉdonu en la balotenketo de {name}",
-=======
->>>>>>> v4.5.0
   "interaction_modal.username_prompt": "Ekz. {example}",
   "intervals.full.days": "{number, plural, one {# tago} other {# tagoj}}",
   "intervals.full.hours": "{number, plural, one {# horo} other {# horoj}}",
@@ -518,10 +483,7 @@
   "keyboard_shortcuts.open_media": "Malfermi vidaŭdaĵon",
   "keyboard_shortcuts.pinned": "Malfermu alpinglitajn afiŝojn-liston",
   "keyboard_shortcuts.profile": "Malfermu la profilon de aŭtoroprofilo",
-<<<<<<< HEAD
-=======
   "keyboard_shortcuts.quote": "Citi afiŝon",
->>>>>>> v4.5.0
   "keyboard_shortcuts.reply": "Respondu al afiŝo",
   "keyboard_shortcuts.requests": "Malfermi la liston de petoj por sekvado",
   "keyboard_shortcuts.search": "Enfokusigi la serĉbreton",
@@ -533,11 +495,8 @@
   "keyboard_shortcuts.translate": "Traduki afiŝon",
   "keyboard_shortcuts.unfocus": "Senfokusigi verki tekstareon/serĉon",
   "keyboard_shortcuts.up": "Movu supren en la listo",
-<<<<<<< HEAD
-=======
   "learn_more_link.got_it": "Komprenite",
   "learn_more_link.learn_more": "Lernu pli",
->>>>>>> v4.5.0
   "lightbox.close": "Fermi",
   "lightbox.next": "Antaŭen",
   "lightbox.previous": "Malantaŭen",
@@ -608,14 +567,10 @@
   "navigation_bar.mutes": "Silentigitaj uzantoj",
   "navigation_bar.opened_in_classic_interface": "Afiŝoj, kontoj, kaj aliaj specifaj paĝoj kiuj estas malfermititaj defaulta en la klasika reta interfaco.",
   "navigation_bar.preferences": "Preferoj",
-<<<<<<< HEAD
-  "navigation_bar.search": "Serĉi",
-=======
   "navigation_bar.privacy_and_reach": "Privateco kaj atingo",
   "navigation_bar.search": "Serĉi",
   "navigation_panel.expand_followed_tags": "Malfermi la menuon de sekvataj haŝetikedoj",
   "navigation_panel.expand_lists": "Malfermi la listmenuon",
->>>>>>> v4.5.0
   "not_signed_in_indicator.not_signed_in": "Necesas saluti por aliri tiun rimedon.",
   "notification.admin.report": "{name} raportis {target}",
   "notification.admin.report_account": "{name} raportis {count, plural, one {afiŝon} other {# afiŝojn}} de {target} por {category}",
@@ -891,10 +846,7 @@
   "status.admin_account": "Malfermi fasadon de la reguligado por @{name}",
   "status.admin_domain": "Malfermi fasadon de la reguligado por {domain}",
   "status.admin_status": "Malfermi ĉi tiun afiŝon en la fasado de la reguligado",
-<<<<<<< HEAD
-=======
   "status.all_disabled": "Diskonigoj kaj citaĵoj estas \tmalvalidigitaj",
->>>>>>> v4.5.0
   "status.block": "Bloki @{name}",
   "status.bookmark": "Aldoni al la legosignoj",
   "status.cancel_reblog_private": "Ne plu diskonigi",
@@ -927,8 +879,6 @@
   "status.mute_conversation": "Silentigi konversacion",
   "status.open": "Pligrandigu ĉi tiun afiŝon",
   "status.pin": "Alpingli al la profilo",
-<<<<<<< HEAD
-=======
   "status.quote": "Citaĵo",
   "status.quote.cancel": "Nuligi citaĵon",
   "status.quote_error.filtered": "Kaŝita pro unu el viaj filtriloj",
@@ -943,7 +893,6 @@
   "status.quote_private": "Privataj afiŝoj ne povas esti cititaj",
   "status.quotes": "{count, plural,one {citaĵo} other {citaĵoj}}",
   "status.quotes.empty": "Neniu citis ĉi tiun afiŝon ankoraŭ. Kiam iu faros tion, ĝi aperos ĉi tie.",
->>>>>>> v4.5.0
   "status.read_more": "Legi pli",
   "status.reblog": "Diskonigi",
   "status.reblog_or_quote": "Diskonigi aŭ citi",
@@ -954,10 +903,7 @@
   "status.redraft": "Forigi kaj reskribi",
   "status.remove_bookmark": "Forigi legosignon",
   "status.remove_favourite": "Forigi el plej ŝatataj",
-<<<<<<< HEAD
-=======
   "status.remove_quote": "Forigi",
->>>>>>> v4.5.0
   "status.replied_in_thread": "Respondis en fadeno",
   "status.replied_to": "Respondis al {name}",
   "status.reply": "Respondi",
@@ -982,10 +928,7 @@
   "tabs_bar.home": "Hejmo",
   "tabs_bar.menu": "Menuo",
   "tabs_bar.notifications": "Sciigoj",
-<<<<<<< HEAD
-=======
   "tabs_bar.publish": "Nova afiŝo",
->>>>>>> v4.5.0
   "tabs_bar.search": "Serĉi",
   "terms_of_service.effective_as_of": "Ĝi ekvalidas de {date}",
   "terms_of_service.title": "Kondiĉoj de uzado",
@@ -1005,10 +948,7 @@
   "upload_button.label": "Aldonu bildojn, filmeton aŭ sondosieron",
   "upload_error.limit": "Limo de dosiera alŝutado transpasita.",
   "upload_error.poll": "Alŝuto de dosiero ne permesita kun balotenketo.",
-<<<<<<< HEAD
-=======
   "upload_error.quote": "Ne estas permesita alŝuto de dosieroj kun citaĵoj.",
->>>>>>> v4.5.0
   "upload_form.drag_and_drop.instructions": "Por preni amaskomunikilaron aldonaĵon, premu spacoklavon aŭ enen-klavon. Dum trenado, uzu la sagoklavojn por movi la amaskomunikilaron aldonaĵon en iu ajn direkto. Premu spacoklavon aŭ enen-klavon denove por faligi la amaskomunikilaron aldonaĵon en ĝia nova pozicio, aŭ premu eskapan klavon por nuligi.",
   "upload_form.drag_and_drop.on_drag_cancel": "Trenado estis nuligita. Amaskomunikila aldonaĵo {item} estis forigita.",
   "upload_form.drag_and_drop.on_drag_end": "Amaskomunikila aldonaĵo {item} estis forigita.",
@@ -1031,9 +971,6 @@
   "video.skip_forward": "Preterpasi antaŭen",
   "video.unmute": "Ne plu silentigi",
   "video.volume_down": "Laŭteco Malpliigi",
-<<<<<<< HEAD
-  "video.volume_up": "Laŭteco pliigi"
-=======
   "video.volume_up": "Laŭteco pliigi",
   "visibility_modal.button_title": "Agordu videblon",
   "visibility_modal.header": "Videblo kaj interago",
@@ -1048,5 +985,4 @@
   "visibility_modal.quote_nobody": "Nur mi",
   "visibility_modal.quote_public": "Iu ajn",
   "visibility_modal.save": "Konservi"
->>>>>>> v4.5.0
 }

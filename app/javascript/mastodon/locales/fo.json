@@ -122,11 +122,7 @@
   "annual_report.summary.followers.total": "{count} íalt",
   "annual_report.summary.here_it_is": "Her er ein samandráttur av {year}:",
   "annual_report.summary.highlighted_post.by_favourites": "mest dámdi postur",
-<<<<<<< HEAD
-  "annual_report.summary.highlighted_post.by_reblogs": "oftast lyfti postur",
-=======
   "annual_report.summary.highlighted_post.by_reblogs": "oftast stimbraði postur",
->>>>>>> v4.5.0
   "annual_report.summary.highlighted_post.by_replies": "postur við flestum svarum",
   "annual_report.summary.highlighted_post.possessive": "hjá {name}",
   "annual_report.summary.most_used_app.most_used_app": "mest brúkta app",
@@ -266,14 +262,11 @@
   "confirmations.remove_from_followers.confirm": "Strika fylgjara",
   "confirmations.remove_from_followers.message": "{name} fer ikki longur at fylgja tær. Er tú vís/ur í at tú vilt halda fram?",
   "confirmations.remove_from_followers.title": "Strika fylgjara?",
-<<<<<<< HEAD
-=======
   "confirmations.revoke_quote.confirm": "Strika post",
   "confirmations.revoke_quote.message": "Hendan atgerðin kann ikki angrast.",
   "confirmations.revoke_quote.title": "Strika post?",
   "confirmations.unblock.confirm": "Banna ikki",
   "confirmations.unblock.title": "Banna ikki {name}?",
->>>>>>> v4.5.0
   "confirmations.unfollow.confirm": "Fylg ikki",
   "confirmations.unfollow.title": "Gevst at fylgja {name}?",
   "confirmations.withdraw_request.confirm": "Tak umbønina aftur",
@@ -456,15 +449,8 @@
   "hints.profiles.see_more_followers": "Sí fleiri fylgjarar á {domain}",
   "hints.profiles.see_more_follows": "Sí fleiri, ið viðkomandi fylgir, á {domain}",
   "hints.profiles.see_more_posts": "Sí fleiri postar á {domain}",
-<<<<<<< HEAD
-  "hints.threads.replies_may_be_missing": "Svar frá øðrum ambætarum mangla møguliga.",
-  "hints.threads.see_more": "Sí fleiri svar á {domain}",
-  "home.column_settings.show_quotes": "Vís siteringar",
-  "home.column_settings.show_reblogs": "Vís lyft",
-=======
   "home.column_settings.show_quotes": "Vís siteringar",
   "home.column_settings.show_reblogs": "Vís stimbranir",
->>>>>>> v4.5.0
   "home.column_settings.show_replies": "Vís svar",
   "home.hide_announcements": "Fjal kunngerðir",
   "home.pending_critical_update.body": "Vinarliga dagfør Mastodon ambætaran hjá tær so skjótt sum møguligt!",
@@ -484,28 +470,12 @@
   "ignore_notifications_modal.private_mentions_title": "Lat sum um tú ikki sær fráboðanir frá óbiðnum privatum umrøðum?",
   "info_button.label": "Hjálp",
   "info_button.what_is_alt_text": "<h1>Hvat er alt tekstur?</h1> <p>Alt tekstur lýsir myndir fyri fólki, sum síggja illa, ella sum hava ringt net samband ella tey, sum vilja vita meira um samanhangin.</p> <p>Tú kanst bøta um atkomuna og fatanina hjá øllum við at skriva kláran, stuttan og objektivan alt tekst.</p> <ul> <li>Fanga týdningarmikil element</li> <li>Samanfata tekst í myndum</li> <li>Brúka reglubundnan setningsbygnað</li> <li>Lat vera við at siga ting upp í saman</li> <li>Fokusera á rák og høvuðsúrslit í kompleksum myndum (sosum diagrammir og kort)</li> </ul>",
-<<<<<<< HEAD
-  "interaction_modal.action.favourite": "Fyri at halda fram, so mást tú yndismerkja frá tínari kontu.",
-  "interaction_modal.action.follow": "Fyri at halda fram, mást tú fylgja frá tínari kontu.",
-  "interaction_modal.action.reblog": "Fyri at halda fram, mást tú endurblogga frá tínari kontu.",
-  "interaction_modal.action.reply": "Fyri at halda fram, mást tú svara frá tínari kontu.",
-  "interaction_modal.action.vote": "Fyri at halda fram, mást tú atkvøða frá tínari kontu.",
-=======
   "interaction_modal.action": "Fyri at samvirka við postin hjá {name}, mást tú rita inn á Mastodon-ambætaranum, sum tú brúkar.",
->>>>>>> v4.5.0
   "interaction_modal.go": "Far",
   "interaction_modal.no_account_yet": "Hevur tú onga kontu enn?",
   "interaction_modal.on_another_server": "Á øðrum ambætara",
   "interaction_modal.on_this_server": "Á hesum ambætaranum",
-<<<<<<< HEAD
-  "interaction_modal.title.favourite": "Dáma postin hjá {name}",
-  "interaction_modal.title.follow": "Fylg {name}",
-  "interaction_modal.title.reblog": "Stimbra postin hjá {name}",
-  "interaction_modal.title.reply": "Svara postinum hjá {name}",
-  "interaction_modal.title.vote": "Atkvøði í spurnarkanningini hjá {name}",
-=======
   "interaction_modal.title": "Rita inn fyri at halda fram",
->>>>>>> v4.5.0
   "interaction_modal.username_prompt": "T.d. {example}",
   "intervals.full.days": "{number, plural, one {# dagur} other {# dagar}}",
   "intervals.full.hours": "{number, plural, one {# tími} other {# tímar}}",
@@ -946,15 +916,6 @@
   "status.mute_conversation": "Doyv samrøðu",
   "status.open": "Víðka henda postin",
   "status.pin": "Ger fastan í vangan",
-<<<<<<< HEAD
-  "status.quote_error.filtered": "Eitt av tínum filtrum fjalir hetta",
-  "status.quote_error.not_found": "Tað ber ikki til at vísa hendan postin.",
-  "status.quote_error.pending_approval": "Hesin posturin bíðar eftir góðkenning frá upprunahøvundinum.",
-  "status.quote_error.rejected": "Hesin posturin kann ikki vísast, tí upprunahøvundurin loyvir ikki at posturin verður siteraður.",
-  "status.quote_error.removed": "Hesin posturin var strikaður av høvundinum.",
-  "status.quote_error.unauthorized": "Hesin posturin kann ikki vísast, tí tú hevur ikki rættindi at síggja hann.",
-  "status.quote_post_author": "Postur hjá @{name}",
-=======
   "status.quote": "Sitat",
   "status.quote.cancel": "Ógilda sitat",
   "status.quote_error.blocked_account_hint.title": "Hesin posturin er fjaldur, tí tú hevur blokerað @{name}.",
@@ -977,7 +938,6 @@
   "status.quotes.empty": "Eingin hevur siterað hendan postin enn. Tá onkur siterar postin, verður hann sjónligur her.",
   "status.quotes.local_other_disclaimer": "Sitatir, sum eru avvíst av høvundanum, verða ikki víst.",
   "status.quotes.remote_other_disclaimer": "Einans sitatir frá {domain} vera garanterað víst her. Sitatir, sum eru avvíst av høvundanum, verða ikki víst.",
->>>>>>> v4.5.0
   "status.read_more": "Les meira",
   "status.reblog": "Stimbra",
   "status.reblog_or_quote": "Stimbra ella sitera",
@@ -988,10 +948,7 @@
   "status.redraft": "Strika & ger nýggja kladdu",
   "status.remove_bookmark": "Gloym",
   "status.remove_favourite": "Strika í yndismerkjum",
-<<<<<<< HEAD
-=======
   "status.remove_quote": "Burturbein",
->>>>>>> v4.5.0
   "status.replied_in_thread": "Svaraði í tráðnum",
   "status.replied_to": "Svaraði {name}",
   "status.reply": "Svara",
@@ -1036,10 +993,7 @@
   "upload_button.label": "Legg myndir, sjónfílu ella ljóðfílu afturat",
   "upload_error.limit": "Farið er um markið fyri fíluuppsending.",
   "upload_error.poll": "Ikki loyvt at leggja fílur upp í spurnarkanningum.",
-<<<<<<< HEAD
-=======
   "upload_error.quote": "Ikki loyvt at leggja fílur upp við siteringum.",
->>>>>>> v4.5.0
   "upload_form.drag_and_drop.instructions": "Fyri at heinta eitt miðlaviðfesti, trýst á millumrúm ella returknapp. Meðan tú dregur, brúka pílarnar fyri at flyta miðaviðfesti í einhvønn rætning. Trýst á millumrúm ella returknapp aftur fyri at sleppa miðlaviðfestinum í nýggja staðnum ella trýst á esc-knappin fyri at angra.",
   "upload_form.drag_and_drop.on_drag_cancel": "Draging varð steðgað. Miðlaviðfestið {item} varð slept.",
   "upload_form.drag_and_drop.on_drag_end": "Miðlaviðfestið {item} var slept.",
@@ -1062,9 +1016,6 @@
   "video.skip_forward": "Leyp um frameftir",
   "video.unmute": "Doyv ikki",
   "video.volume_down": "Minka ljóðstyrki",
-<<<<<<< HEAD
-  "video.volume_up": "Øk um ljóðstyrki"
-=======
   "video.volume_up": "Øk um ljóðstyrki",
   "visibility_modal.button_title": "Set sýni",
   "visibility_modal.direct_quote_warning.text": "Um tú goymir verandi stillingar, verður innskotna sitatið umskapað til eitt leinki.",
@@ -1082,5 +1033,4 @@
   "visibility_modal.quote_nobody": "Bara eg",
   "visibility_modal.quote_public": "Ein og hvør",
   "visibility_modal.save": "Goym"
->>>>>>> v4.5.0
 }

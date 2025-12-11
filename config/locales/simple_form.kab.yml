@@ -153,14 +153,10 @@ kab:
       tag:
         name: Ahacṭag
       terms_of_service:
-<<<<<<< HEAD
-        text: Tiwtilin n useqdec
-=======
         changelog: Amaynut?
         text: Tiwtilin n useqdec
       terms_of_service_generator:
         domain: Taɣult
->>>>>>> v4.5.0
       user:
         date_of_birth_1i: Ass
         date_of_birth_2i: Ayyur

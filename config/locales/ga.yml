@@ -881,11 +881,7 @@ ga:
         title: Diúltaigh d'innéacsú inneall cuardaigh mar réamhshocrú d'úsáideoirí
       discovery:
         follow_recommendations: Lean na moltaí
-<<<<<<< HEAD
-        preamble: Tá sé ríthábhachtach dromchla a chur ar ábhar suimiúil chun úsáideoirí nua a chur ar bord nach bhfuil aithne acu ar dhuine ar bith Mastodon. Rialú conas a oibríonn gnéithe fionnachtana éagsúla ar do fhreastalaí.
-=======
         preamble: Tá sé ríthábhachtach ábhar suimiúil a chur chun cinn chun úsáideoirí nua a thabhairt isteach ar Mastodon, úsáideoirí nach mbeadh aithne acu ar aon duine. Rialú conas a oibríonn gnéithe éagsúla fionnachtana ar do fhreastalaí.
->>>>>>> v4.5.0
         privacy: Príobháideacht
         profile_directory: Eolaire próifíle
         public_timelines: Amlínte poiblí
@@ -967,10 +963,7 @@ ga:
       title: Postálacha cuntais - @%{name}
       trending: Ag treochtáil
       view_publicly: Féach go poiblí
-<<<<<<< HEAD
-=======
       view_quoted_post: Féach ar an bpost atá luaite
->>>>>>> v4.5.0
       visibility: Infheictheacht
       with_media: Le meáin
     strikes:
@@ -2074,12 +2067,6 @@ ga:
       limit: Tá uaslíon na bpostálacha pinn agat cheana féin
       ownership: Ní féidir postáil duine éigin eile a phionnáil
       reblog: Ní féidir treisiú a phinnáil
-<<<<<<< HEAD
-    quote_policies:
-      followers: Leantóirí agus úsáideoirí luaite
-      nobody: Úsáideoirí luaite amháin
-      public: Gach duine
-=======
     quote_error:
       not_available: Níl an postáil ar fáil
       pending_approval: Post ar feitheamh
@@ -2089,7 +2076,6 @@ ga:
       nobody: Mise amháin
       public: Aon duine
     quote_post_author: Luaigh mé post le %{acct}
->>>>>>> v4.5.0
     title: '%{name}: "%{quote}"'
     visibilities:
       direct: Lua príobháideach

@@ -325,10 +325,7 @@ fr:
         create: Créer une annonce
         title: Nouvelle annonce
       preview:
-<<<<<<< HEAD
-=======
         disclaimer: Étant donné que les utilisateurs ne peuvent pas s'en retirer, les notifications par courriel devraient être limitées à des annonces importantes telles que des violations de données personnelles ou des notifications de fermeture de serveur.
->>>>>>> v4.5.0
         explanation_html: 'L''e-mail sera envoyé à <strong>%{display_count} utilisateurs</strong>. Le texte suivant sera inclus :'
         title: Aperçu de la notification d'annonce
       publish: Publier
@@ -498,11 +495,6 @@ fr:
           created_at: Créé à
           delete: Supprimer
           ip: Adresse IP
-<<<<<<< HEAD
-      providers:
-        name: Nom
-        providers: Fournisseur
-=======
           request_body: Corps de la demande
       providers:
         active: Activé
@@ -514,7 +506,6 @@ fr:
         name: Nom
         providers: Fournisseur
         registration_requested: Inscription demandée
->>>>>>> v4.5.0
         registrations:
           confirm: Confirmer
           description: Vous avez reçu une souscription d'un FSAF. Rejetez-la si vous ne l'avez pas initiée. Si c'est bien votre intention, comparez le nom et l'empreinte de la clé avant de confirmer la souscription.
@@ -525,10 +516,7 @@ fr:
         sign_in: Se connecter
         status: État
         title: Fournisseurs de Services Auxiliaire du Fedivers
-<<<<<<< HEAD
-=======
       title: FASP
->>>>>>> v4.5.0
     follow_recommendations:
       description_html: "<strong>Les recommandations d'abonnement aident les nouvelles personnes à trouver rapidement du contenu intéressant</strong>. Si un·e utilisateur·rice n'a pas assez interagi avec les autres pour avoir des recommandations personnalisées, ces comptes sont alors recommandés. La sélection est mise à jour quotidiennement depuis un mélange de comptes ayant le plus d'interactions récentes et le plus grand nombre d'abonné·e·s locaux pour une langue donnée."
       language: Pour la langue
@@ -598,14 +586,11 @@ fr:
         limited: Limité
         title: Modération
       moderation_notes:
-<<<<<<< HEAD
-=======
         create: Ajouter une note de modération
         created_msg: Note de modération de l'instance créée avec succès !
         description_html: Voir et laisser des notes pour les autres modérateurs et pour référence future
         destroyed_msg: Note de modération de l'instance supprimée avec succès !
         placeholder: Informations à propos de cette instance, actions entreprises ou de toute autre chose qui vous aidera à modérer cette instance à l'avenir.
->>>>>>> v4.5.0
         title: Notes de modération
       private_comment: Commentaire privé
       public_comment: Commentaire public
@@ -827,10 +812,7 @@ fr:
       title: Règles du serveur
       translation: Traduction
       translations: Traductions
-<<<<<<< HEAD
-=======
       translations_explanation: Vous pouvez éventuellement ajouter des traductions pour les règles. La valeur par défaut sera affichée si aucune version traduite n'est disponible. Veuillez toujours vous assurer que toute traduction fournie est synchronisée avec la valeur par défaut.
->>>>>>> v4.5.0
     settings:
       about:
         manage_rules: Gérer les règles du serveur
@@ -935,10 +917,7 @@ fr:
       title: Messages du compte - @%{name}
       trending: Tendances
       view_publicly: Afficher de manière publique
-<<<<<<< HEAD
-=======
       view_quoted_post: Voir la publication citée
->>>>>>> v4.5.0
       visibility: Visibilité
       with_media: Avec médias
     strikes:
@@ -1928,12 +1907,9 @@ fr:
         other: "%{count} vidéos"
     boosted_from_html: Partagé depuis %{acct_link}
     content_warning: 'Avertissement de contenu : %{warning}'
-<<<<<<< HEAD
-=======
     content_warnings:
       hide: Masquer le message
       show: Afficher plus
->>>>>>> v4.5.0
     default_language: Même langue que celle de l’interface
     disallowed_hashtags:
       one: 'contient un hashtag désactivé : %{tags}'
@@ -2008,11 +1984,8 @@ fr:
     does_not_match_previous_name: ne correspond pas au nom précédent
   terms_of_service:
     title: Conditions d'utilisation
-<<<<<<< HEAD
-=======
   terms_of_service_interstitial:
     title: Les conditions d'utilisation de %{domain} ont changées
->>>>>>> v4.5.0
   themes:
     contrast: Mastodon (Contraste élevé)
     default: Mastodon (Sombre)

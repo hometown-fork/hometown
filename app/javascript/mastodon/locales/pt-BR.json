@@ -109,11 +109,7 @@
   "alt_text_modal.add_text_from_image": "Adicione texto da imagem",
   "alt_text_modal.cancel": "Cancelar",
   "alt_text_modal.change_thumbnail": "Alterar miniatura",
-<<<<<<< HEAD
-  "alt_text_modal.describe_for_people_with_hearing_impairments": "…Descreva isso para pessoas com deficiências auditivas.…",
-=======
   "alt_text_modal.describe_for_people_with_hearing_impairments": "Descreva isso para pessoas com deficiências auditivas...",
->>>>>>> v4.5.0
   "alt_text_modal.describe_for_people_with_visual_impairments": "Descreva isso para pessoas com deficiências visuais…",
   "alt_text_modal.done": "Feito",
   "announcement.announcement": "Comunicados",
@@ -217,13 +213,8 @@
   "compose_form.poll.switch_to_multiple": "Permitir múltiplas escolhas",
   "compose_form.poll.switch_to_single": "Opção única",
   "compose_form.poll.type": "Estilo",
-<<<<<<< HEAD
-  "compose_form.publish": "Publicação",
-  "compose_form.reply": "Resposta",
-=======
   "compose_form.publish": "Publicar",
   "compose_form.reply": "Responder",
->>>>>>> v4.5.0
   "compose_form.save_changes": "Atualização",
   "compose_form.spoiler.marked": "Com Aviso de Conteúdo",
   "compose_form.spoiler.unmarked": "Sem Aviso de Conteúdo",
@@ -241,11 +232,8 @@
   "confirmations.discard_draft.edit.message": "Continuar vai descartar quaisquer mudanças feitas ao post sendo editado.",
   "confirmations.discard_draft.edit.title": "Descartar mudanças no seu post?",
   "confirmations.discard_draft.post.cancel": "Continuar rascunho",
-<<<<<<< HEAD
-=======
   "confirmations.discard_draft.post.message": "Continuar eliminará a publicação que está sendo elaborada no momento.",
   "confirmations.discard_draft.post.title": "Eliminar seu esboço de publicação?",
->>>>>>> v4.5.0
   "confirmations.discard_edit_media.confirm": "Descartar",
   "confirmations.discard_edit_media.message": "Há mudanças não salvas na descrição ou pré-visualização da mídia. Descartar assim mesmo?",
   "confirmations.follow_to_list.confirm": "Seguir e adicionar à lista",
@@ -269,14 +257,11 @@
   "confirmations.remove_from_followers.confirm": "Remover seguidor",
   "confirmations.remove_from_followers.message": "{name} vai parar de te seguir. Tem certeza de que deseja continuar?",
   "confirmations.remove_from_followers.title": "Remover seguidor?",
-<<<<<<< HEAD
-=======
   "confirmations.revoke_quote.confirm": "Remover publicação",
   "confirmations.revoke_quote.message": "Essa ação não pode ser desfeita.",
   "confirmations.revoke_quote.title": "Remover publicação?",
   "confirmations.unblock.confirm": "Desbloquear",
   "confirmations.unblock.title": "Desbloquear {name}?",
->>>>>>> v4.5.0
   "confirmations.unfollow.confirm": "Deixar de seguir",
   "confirmations.unfollow.title": "Deixar de seguir {name}?",
   "confirmations.withdraw_request.confirm": "Retirar solicitação",
@@ -340,11 +325,8 @@
   "emoji_button.search_results": "Resultado da pesquisa",
   "emoji_button.symbols": "Símbolos",
   "emoji_button.travel": "Viagem e Lugares",
-<<<<<<< HEAD
-=======
   "empty_column.account_featured.me": "Você ainda não destacou nada. Você sabia que pode destacar seus posts, hashtags que você mais usa e até mesmo contas de seus amigos no seu perfil?",
   "empty_column.account_featured.other": "{acct} Ainda não destacou nada. Você sabia que pode destacar suas publicações, hashtags que você mais usa e até mesmo contas de seus amigos no seu perfil?",
->>>>>>> v4.5.0
   "empty_column.account_featured_other.unknown": "Esta conta ainda não destacou nada.",
   "empty_column.account_hides_collections": "A pessoa optou por não disponibilizar esta informação",
   "empty_column.account_suspended": "Conta suspensa",
@@ -375,16 +357,6 @@
   "errors.unexpected_crash.copy_stacktrace": "Copiar dados do erro para área de transferência",
   "errors.unexpected_crash.report_issue": "Reportar problema",
   "explore.suggested_follows": "Pessoas",
-<<<<<<< HEAD
-  "explore.trending_links": "Notícias",
-  "explore.trending_statuses": "Publicações",
-  "explore.trending_tags": "Hashtags",
-  "federation.change": "Ajustar federação do toot",
-  "federation.federated.long": "Permitir que o toot chegue a outras instâncias",
-  "federation.federated.short": "Federado",
-  "federation.local_only.long": "Restringir o toot somente à minha instância",
-  "federation.local_only.short": "Somente local",
-=======
   "explore.title": "Em alta",
   "explore.trending_links": "Notícias",
   "explore.trending_statuses": "Publicações",
@@ -394,7 +366,11 @@
   "featured_carousel.post": "Publicação",
   "featured_carousel.previous": "Anterior",
   "featured_carousel.slide": "{index} de {total}",
->>>>>>> v4.5.0
+  "federation.change": "Ajustar federação do toot",
+  "federation.federated.long": "Permitir que o toot chegue a outras instâncias",
+  "federation.federated.short": "Federado",
+  "federation.local_only.long": "Restringir o toot somente à minha instância",
+  "federation.local_only.short": "Somente local",
   "filter_modal.added.context_mismatch_explanation": "Esta categoria de filtro não se aplica ao contexto no qual você acessou esta publicação. Se quiser que a publicação seja filtrada nesse contexto também, você terá que editar o filtro.",
   "filter_modal.added.context_mismatch_title": "Incompatibilidade de contexto!",
   "filter_modal.added.expired_explanation": "Esta categoria de filtro expirou, você precisará alterar a data de expiração para aplicar.",
@@ -494,28 +470,12 @@
   "ignore_notifications_modal.private_mentions_title": "Ignorar notificações de menções privadas não solicitadas?",
   "info_button.label": "Ajuda",
   "info_button.what_is_alt_text": "<h1>O que é texto alternativo?</h1><p>O texto alternativo fornece descrições de imagens para pessoas com deficiências visuais, conexões de internet de baixa largura de banda ou aquelas que buscam mais contexto.</p><p>Você pode melhorar a acessibilidade e a compreensão para todos escrevendo texto alternativo claro, conciso e objetivo.</p> <ul> <li>Capture elementos importantes</li> <li>Resuma textos em imagens</li> <li>Use estrutura de frases regular</li> <li>Evite informações redundantes</li> <li>Foque em tendências e descobertas principais em visuais complexos (como diagramas ou mapas)</li> </ul>",
-<<<<<<< HEAD
-  "interaction_modal.action.favourite": "Para continuar, você precisa favoritar na sua conta.",
-  "interaction_modal.action.follow": "Para continuar, você precisa seguir da sua conta.",
-  "interaction_modal.action.reblog": "Para continuar, você precisa impulsionar na sua conta.",
-  "interaction_modal.action.reply": "Para continuar, você precisa responder na sua conta.",
-  "interaction_modal.action.vote": "Para continuar, você precisa votar na sua conta.",
-=======
   "interaction_modal.action": "Para interagir com o post de {name}, você precisa entrar em sua conta em qualquer servidor Mastodon que você use.",
->>>>>>> v4.5.0
   "interaction_modal.go": "Ir",
   "interaction_modal.no_account_yet": "Não possui uma conta ainda?",
   "interaction_modal.on_another_server": "Em um servidor diferente",
   "interaction_modal.on_this_server": "Neste servidor",
-<<<<<<< HEAD
-  "interaction_modal.title.favourite": "Favoritar publicação de {name}",
-  "interaction_modal.title.follow": "Seguir {name}",
-  "interaction_modal.title.reblog": "Impulsionar publicação de {name}",
-  "interaction_modal.title.reply": "Responder à publicação de {name}",
-  "interaction_modal.title.vote": "Votar na enquete de {name}",
-=======
   "interaction_modal.title": "Faça login para continuar",
->>>>>>> v4.5.0
   "interaction_modal.username_prompt": "p. e.x.: {example}",
   "intervals.full.days": "{number, plural, one {# dia} other {# dias}}",
   "intervals.full.hours": "{number, plural, one {# hora} other {# horas}}",
@@ -631,9 +591,6 @@
   "navigation_bar.mutes": "Usuários silenciados",
   "navigation_bar.opened_in_classic_interface": "Publicações, contas e outras páginas específicas são abertas por padrão na interface 'web' clássica.",
   "navigation_bar.preferences": "Preferências",
-<<<<<<< HEAD
-  "navigation_bar.search": "Buscar",
-=======
   "navigation_bar.privacy_and_reach": "Privacidade e alcance",
   "navigation_bar.search": "Buscar",
   "navigation_bar.search_trends": "Pesquisa / Em alta",
@@ -641,7 +598,6 @@
   "navigation_panel.collapse_lists": "Fechar lista de menu",
   "navigation_panel.expand_followed_tags": "Expandir o menu de hashtags seguidas",
   "navigation_panel.expand_lists": "Expandir lista de menu",
->>>>>>> v4.5.0
   "not_signed_in_indicator.not_signed_in": "Você precisa se autenticar para acessar este recurso.",
   "notification.admin.report": "{name} denunciou {target}",
   "notification.admin.report_account": "{name} reportou {count, plural, one {Um post} other {# posts}} de {target} para {category}",
@@ -959,15 +915,6 @@
   "status.mute_conversation": "Silenciar conversa",
   "status.open": "Abrir toot",
   "status.pin": "Fixar",
-<<<<<<< HEAD
-  "status.quote_error.filtered": "Oculto devido a um dos seus filtros",
-  "status.quote_error.not_found": "Esta postagem não pode ser exibida.",
-  "status.quote_error.pending_approval": "Esta postagem está pendente de aprovação do autor original.",
-  "status.quote_error.rejected": "Esta publicação não pode ser exibida porque o autor original não permite que seja citada.",
-  "status.quote_error.removed": "Esta postagem foi removida pelo autor.",
-  "status.quote_error.unauthorized": "Esta publicação não pode ser exibida, pois, você não está autorizado a vê-la.",
-  "status.quote_post_author": "Publicação por {name}",
-=======
   "status.quote": "Citar",
   "status.quote.cancel": "Cancelar citação",
   "status.quote_error.blocked_account_hint.title": "Esta publicação está oculta porque você bloqueou @{name}.",
@@ -990,7 +937,6 @@
   "status.quotes.empty": "Ninguém citou essa publicação até agora. Quando alguém citar aparecerá aqui.",
   "status.quotes.local_other_disclaimer": "Citações rejeitadas pelo autor não serão exibidas.",
   "status.quotes.remote_other_disclaimer": "Apenas citações do {domain} têm a garantia de serem exibidas aqui. Citações rejeitadas pelo autor não serão exibidas.",
->>>>>>> v4.5.0
   "status.read_more": "Ler mais",
   "status.reblog": "Dar boost",
   "status.reblog_or_quote": "Acelerar ou citar",
@@ -1001,10 +947,7 @@
   "status.redraft": "Excluir e rascunhar",
   "status.remove_bookmark": "Remover do Salvos",
   "status.remove_favourite": "Remover dos favoritos",
-<<<<<<< HEAD
-=======
   "status.remove_quote": "Remover",
->>>>>>> v4.5.0
   "status.replied_in_thread": "Respondido na conversa",
   "status.replied_to": "Em resposta a {name}",
   "status.reply": "Responder",
@@ -1029,11 +972,8 @@
   "tabs_bar.home": "Página inicial",
   "tabs_bar.menu": "Menu",
   "tabs_bar.notifications": "Notificações",
-<<<<<<< HEAD
-=======
   "tabs_bar.publish": "Nova publicação",
   "tabs_bar.search": "Buscar",
->>>>>>> v4.5.0
   "terms_of_service.effective_as_of": "Em vigor a partir de {date}",
   "terms_of_service.title": "Termos de serviço",
   "terms_of_service.upcoming_changes_on": "Próximas mudanças em {date}",
@@ -1052,10 +992,7 @@
   "upload_button.label": "Adicionar mídia",
   "upload_error.limit": "Limite de anexação alcançado.",
   "upload_error.poll": "Mídias não podem ser anexadas em toots com enquetes.",
-<<<<<<< HEAD
-=======
   "upload_error.quote": "Mídias não podem ser anexadas com enquetes.",
->>>>>>> v4.5.0
   "upload_form.drag_and_drop.instructions": "Para pegar um anexo de mídia, pressione espaço ou enter. Enquanto arrastar, use as setas do teclado para mover o anexo de mídia em qualquer direção. Pressione espaço ou insira novamente para soltar o anexo de mídia em sua nova posição, ou pressione escape para cancelar.",
   "upload_form.drag_and_drop.on_drag_cancel": "O arrastamento foi cancelado. O anexo da mídia {item} foi descartado.",
   "upload_form.drag_and_drop.on_drag_end": "O anexo {item} foi removido.",
@@ -1078,9 +1015,6 @@
   "video.skip_forward": "Avançar",
   "video.unmute": "Ativar som",
   "video.volume_down": "Diminuir o volume",
-<<<<<<< HEAD
-  "video.volume_up": "Aumentar o volume"
-=======
   "video.volume_up": "Aumentar o volume",
   "visibility_modal.button_title": "Selecionar Visibilidade",
   "visibility_modal.header": "Visibilidade e interação",
@@ -1096,5 +1030,4 @@
   "visibility_modal.quote_nobody": "Apenas eu",
   "visibility_modal.quote_public": "Qualquer um",
   "visibility_modal.save": "Salvar"
->>>>>>> v4.5.0
 }

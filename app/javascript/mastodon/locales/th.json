@@ -237,15 +237,12 @@
   "confirmations.redraft.confirm": "ลบแล้วร่างใหม่",
   "confirmations.redraft.message": "คุณแน่ใจหรือไม่ว่าต้องการลบโพสต์นี้แล้วร่างโพสต์ใหม่? รายการโปรดและการดันจะสูญหาย และการตอบกลับโพสต์ดั้งเดิมจะไม่มีความเกี่ยวพัน",
   "confirmations.redraft.title": "ลบแล้วร่างโพสต์ใหม่?",
-<<<<<<< HEAD
-=======
   "confirmations.remove_from_followers.confirm": "เอาผู้ติดตามออก",
   "confirmations.remove_from_followers.title": "เอาผู้ติดตามออก?",
   "confirmations.revoke_quote.confirm": "เอาโพสต์ออก",
   "confirmations.revoke_quote.title": "เอาโพสต์ออก?",
   "confirmations.unblock.confirm": "เลิกปิดกั้น",
   "confirmations.unblock.title": "เลิกปิดกั้น {name}?",
->>>>>>> v4.5.0
   "confirmations.unfollow.confirm": "เลิกติดตาม",
   "confirmations.unfollow.title": "เลิกติดตาม {name}?",
   "confirmations.withdraw_request.confirm": "ถอนคำขอ",
@@ -339,19 +336,16 @@
   "explore.trending_links": "ข่าว",
   "explore.trending_statuses": "โพสต์",
   "explore.trending_tags": "แฮชแท็ก",
-<<<<<<< HEAD
+  "featured_carousel.header": "{count, plural, other {โพสต์ที่ปักหมุด}}",
+  "featured_carousel.next": "ถัดไป",
+  "featured_carousel.post": "โพสต์",
+  "featured_carousel.previous": "ก่อนหน้า",
+  "featured_carousel.slide": "{index} จาก {total}",
   "federation.change": "Adjust status federation",
   "federation.federated.long": "Allow toot to reach other instances",
   "federation.federated.short": "Federated",
   "federation.local_only.long": "Restrict this toot only to my instance",
   "federation.local_only.short": "Local-only",
-=======
-  "featured_carousel.header": "{count, plural, other {โพสต์ที่ปักหมุด}}",
->>>>>>> v4.5.0
-  "featured_carousel.next": "ถัดไป",
-  "featured_carousel.post": "โพสต์",
-  "featured_carousel.previous": "ก่อนหน้า",
-  "featured_carousel.slide": "{index} จาก {total}",
   "filter_modal.added.context_mismatch_explanation": "หมวดหมู่ตัวกรองนี้ไม่นำไปใช้กับบริบทที่คุณได้เข้าถึงโพสต์นี้ หากคุณต้องการกรองโพสต์ในบริบทนี้ด้วย คุณจะต้องแก้ไขตัวกรอง",
   "filter_modal.added.context_mismatch_title": "บริบทไม่ตรงกัน!",
   "filter_modal.added.expired_explanation": "หมวดหมู่ตัวกรองนี้หมดอายุแล้ว คุณจะต้องเปลี่ยนวันหมดอายุสำหรับหมวดหมู่เพื่อนำไปใช้",
@@ -404,11 +398,8 @@
   "generic.saved": "บันทึกแล้ว",
   "getting_started.heading": "เริ่มต้นใช้งาน",
   "hashtag.admin_moderation": "เปิดส่วนติดต่อการกลั่นกรองสำหรับ #{name}",
-<<<<<<< HEAD
-=======
   "hashtag.browse": "เรียกดูโพสต์ใน #{hashtag}",
   "hashtag.browse_from_account": "เรียกดูโพสต์จาก @{name} ใน #{hashtag}",
->>>>>>> v4.5.0
   "hashtag.column_header.tag_mode.all": "และ {additional}",
   "hashtag.column_header.tag_mode.any": "หรือ {additional}",
   "hashtag.column_header.tag_mode.none": "โดยไม่มี {additional}",
@@ -452,27 +443,11 @@
   "ignore_notifications_modal.not_following_title": "เพิกเฉยการแจ้งเตือนจากผู้คนที่คุณไม่ได้ติดตาม?",
   "ignore_notifications_modal.private_mentions_title": "เพิกเฉยการแจ้งเตือนจากการกล่าวถึงแบบส่วนตัวที่ไม่พึงประสงค์?",
   "info_button.label": "ช่วยเหลือ",
-<<<<<<< HEAD
-  "interaction_modal.action.favourite": "เพื่อดำเนินการต่อ คุณจำเป็นต้องชื่นชอบจากบัญชีของคุณ",
-  "interaction_modal.action.follow": "เพื่อดำเนินการต่อ คุณจำเป็นต้องติดตามจากบัญชีของคุณ",
-  "interaction_modal.action.reblog": "เพื่อดำเนินการต่อ คุณจำเป็นต้องดันจากบัญชีของคุณ",
-  "interaction_modal.action.reply": "เพื่อดำเนินการต่อ คุณจำเป็นต้องตอบกลับจากบัญชีของคุณ",
-  "interaction_modal.action.vote": "เพื่อดำเนินการต่อ คุณจำเป็นต้องลงคะแนนจากบัญชีของคุณ",
-=======
->>>>>>> v4.5.0
   "interaction_modal.go": "ไป",
   "interaction_modal.no_account_yet": "ยังไม่มีบัญชี?",
   "interaction_modal.on_another_server": "ในเซิร์ฟเวอร์อื่น",
   "interaction_modal.on_this_server": "ในเซิร์ฟเวอร์นี้",
-<<<<<<< HEAD
-  "interaction_modal.title.favourite": "ชื่นชอบโพสต์ของ {name}",
-  "interaction_modal.title.follow": "ติดตาม {name}",
-  "interaction_modal.title.reblog": "ดันโพสต์ของ {name}",
-  "interaction_modal.title.reply": "ตอบกลับโพสต์ของ {name}",
-  "interaction_modal.title.vote": "ลงคะแนนในการสำรวจความคิดเห็นของ {name}",
-=======
   "interaction_modal.title": "ลงชื่อเข้าเพื่อดำเนินการต่อ",
->>>>>>> v4.5.0
   "interaction_modal.username_prompt": "เช่น {example}",
   "intervals.full.days": "{number, plural, other {# วัน}}",
   "intervals.full.hours": "{number, plural, other {# ชั่วโมง}}",
@@ -586,11 +561,8 @@
   "navigation_bar.preferences": "การกำหนดลักษณะ",
   "navigation_bar.privacy_and_reach": "ความเป็นส่วนตัวและการเข้าถึง",
   "navigation_bar.search": "ค้นหา",
-<<<<<<< HEAD
-=======
   "navigation_panel.collapse_lists": "ยุบเมนูรายการ",
   "navigation_panel.expand_lists": "ขยายเมนูรายการ",
->>>>>>> v4.5.0
   "not_signed_in_indicator.not_signed_in": "คุณจำเป็นต้องเข้าสู่ระบบเพื่อเข้าถึงทรัพยากรนี้",
   "notification.admin.report": "{name} ได้รายงาน {target}",
   "notification.admin.report_account": "{name} ได้รายงาน {count, plural, other {# โพสต์}}จาก {target} สำหรับ {category}",
@@ -886,10 +858,6 @@
   "status.mute_conversation": "ซ่อนการสนทนา",
   "status.open": "ขยายโพสต์นี้",
   "status.pin": "ปักหมุดในโปรไฟล์",
-<<<<<<< HEAD
-  "status.quote_post_author": "โพสต์โดย {name}",
-=======
->>>>>>> v4.5.0
   "status.read_more": "อ่านเพิ่มเติม",
   "status.reblog": "ดัน",
   "status.reblogged_by": "{name} ได้ดัน",
@@ -898,10 +866,6 @@
   "status.redraft": "ลบแล้วร่างใหม่",
   "status.remove_bookmark": "เอาที่คั่นหน้าออก",
   "status.remove_favourite": "เอาออกจากรายการโปรด",
-<<<<<<< HEAD
-=======
-  "status.remove_quote": "เอาออก",
->>>>>>> v4.5.0
   "status.replied_in_thread": "ตอบกลับในกระทู้",
   "status.replied_to": "ตอบกลับ {name}",
   "status.reply": "ตอบกลับ",

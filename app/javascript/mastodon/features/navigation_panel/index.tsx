@@ -35,10 +35,6 @@ import { Search } from 'mastodon/features/compose/components/search';
 import { ColumnLink } from 'mastodon/features/ui/components/column_link';
 import { useBreakpoint } from 'mastodon/features/ui/hooks/useBreakpoint';
 import { useIdentity } from 'mastodon/identity_context';
-<<<<<<< HEAD
-import { timelinePreview, trendsEnabled, me } from 'mastodon/initial_state';
-import { transientSingleColumn } from 'mastodon/is_mobile';
-=======
 import {
   localLiveFeedAccess,
   remoteLiveFeedAccess,
@@ -47,7 +43,6 @@ import {
 } from 'mastodon/initial_state';
 import { transientSingleColumn } from 'mastodon/is_mobile';
 import { canViewFeed } from 'mastodon/permissions';
->>>>>>> v4.5.0
 import { selectUnreadNotificationGroupsCount } from 'mastodon/selectors/notifications';
 import { useAppSelector, useAppDispatch } from 'mastodon/store';
 
@@ -66,13 +61,10 @@ const messages = defineMessages({
   },
   explore: { id: 'explore.title', defaultMessage: 'Trending' },
   firehose: { id: 'column.firehose', defaultMessage: 'Live feeds' },
-<<<<<<< HEAD
-=======
   firehose_singular: {
     id: 'column.firehose_singular',
     defaultMessage: 'Live feed',
   },
->>>>>>> v4.5.0
   direct: { id: 'navigation_bar.direct', defaultMessage: 'Private mentions' },
   favourites: { id: 'navigation_bar.favourites', defaultMessage: 'Favorites' },
   bookmarks: { id: 'navigation_bar.bookmarks', defaultMessage: 'Bookmarks' },
@@ -207,11 +199,7 @@ export const NavigationPanel: React.FC<{ multiColumn?: boolean }> = ({
   multiColumn = false,
 }) => {
   const intl = useIntl();
-<<<<<<< HEAD
-  const { signedIn, disabledAccountId } = useIdentity();
-=======
   const { signedIn, permissions, disabledAccountId } = useIdentity();
->>>>>>> v4.5.0
   const location = useLocation();
   const showSearch = useBreakpoint('full') && !multiColumn;
 
@@ -279,16 +267,6 @@ export const NavigationPanel: React.FC<{ multiColumn?: boolean }> = ({
           />
         )}
 
-<<<<<<< HEAD
-        {(signedIn || timelinePreview) && (
-          <ColumnLink
-            transparent
-            to='/public/local'
-            icon='globe'
-            iconComponent={PublicIcon}
-            isActive={isFirehoseActive}
-            text={intl.formatMessage(messages.firehose)}
-=======
         {(canViewFeed(signedIn, permissions, localLiveFeedAccess) ||
           canViewFeed(signedIn, permissions, remoteLiveFeedAccess)) && (
           <ColumnLink
@@ -307,7 +285,6 @@ export const NavigationPanel: React.FC<{ multiColumn?: boolean }> = ({
                 ? messages.firehose
                 : messages.firehose_singular,
             )}
->>>>>>> v4.5.0
           />
         )}
 
@@ -474,10 +451,7 @@ export const CollapsibleNavigationPanel: React.FC = () => {
       filterTaps: true,
       bounds: isLtrDir ? { left: 0 } : { right: 0 },
       rubberband: true,
-<<<<<<< HEAD
-=======
       enabled: openable,
->>>>>>> v4.5.0
     },
   );
 

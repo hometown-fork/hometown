@@ -8,10 +8,7 @@ const meta = {
   component: Button,
   args: {
     secondary: false,
-<<<<<<< HEAD
-=======
     plain: false,
->>>>>>> v4.5.0
     compact: false,
     dangerous: false,
     disabled: false,
@@ -61,8 +58,6 @@ export const Secondary: Story = {
   play: buttonTest,
 };
 
-<<<<<<< HEAD
-=======
 export const Plain: Story = {
   args: {
     plain: true,
@@ -71,7 +66,6 @@ export const Plain: Story = {
   play: buttonTest,
 };
 
->>>>>>> v4.5.0
 export const Compact: Story = {
   args: {
     compact: true,
@@ -116,8 +110,6 @@ export const SecondaryDisabled: Story = {
   play: disabledButtonTest,
 };
 
-<<<<<<< HEAD
-=======
 export const PlainDisabled: Story = {
   args: {
     ...Plain.args,
@@ -126,7 +118,6 @@ export const PlainDisabled: Story = {
   play: disabledButtonTest,
 };
 
->>>>>>> v4.5.0
 const loadingButtonTest: Story['play'] = async ({
   args,
   canvas,

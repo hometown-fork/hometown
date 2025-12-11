@@ -921,10 +921,7 @@ hu:
       title: Fiók bejegyzései – @%{name}
       trending: Felkapott
       view_publicly: Megtekintés nyilvánosan
-<<<<<<< HEAD
-=======
       view_quoted_post: Idézett bejegyzés megtekintése
->>>>>>> v4.5.0
       visibility: Láthatóság
       with_media: Médiával
     strikes:
@@ -1938,12 +1935,6 @@ hu:
       limit: Elérted a kitűzhető bejegyzések maximális számát
       ownership: Nem tűzheted ki valaki más bejegyzését
       reblog: Megtolt bejegyzést nem tudsz kitűzni
-<<<<<<< HEAD
-    quote_policies:
-      followers: Követők és említett felhasználók
-      nobody: Csak említett felhasználók
-      public: Mindenki
-=======
     quote_error:
       not_available: A bejegyzés nem érhető el
       pending_approval: A bejegyzés függőben van
@@ -1953,7 +1944,6 @@ hu:
       nobody: Csak én
       public: Bárki
     quote_post_author: Idézte %{acct} bejegyzését
->>>>>>> v4.5.0
     title: "%{name}: „%{quote}”"
     visibilities:
       direct: Privát említés

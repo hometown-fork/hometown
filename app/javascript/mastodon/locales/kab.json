@@ -7,10 +7,7 @@
   "about.domain_blocks.preamble": "Maṣṭudun s umata yeḍmen-ak ad teẓreḍ agbur, ad tesdemreḍ akked yimseqdacen-nniḍen seg yal aqeddac deg fedivers. Ha-tent-an ɣur-k tsuraf i yellan deg uqeddac-agi.",
   "about.domain_blocks.silenced.title": "Ɣur-s talast",
   "about.domain_blocks.suspended.title": "Yettwaḥbes",
-<<<<<<< HEAD
-=======
   "about.language_label": "Tutlayt",
->>>>>>> v4.5.0
   "about.not_available": "Talɣut-a ur tettwabder ara deg uqeddac-a.",
   "about.powered_by": "Azeṭṭa inmetti yettwasɣelsen sɣur {mastodon}",
   "about.rules": "Ilugan n uqeddac",
@@ -27,17 +24,12 @@
   "account.direct": "Bder-d @{name} weḥd-s",
   "account.disable_notifications": "Ḥbes ur iyi-d-ttazen ara ilɣa mi ara d-isuffeɣ @{name}",
   "account.edit_profile": "Ẓreg amaɣnu",
-<<<<<<< HEAD
-  "account.enable_notifications": "Azen-iyi-d ilɣa mi ara d-isuffeɣ @{name}",
-  "account.endorse": "Welleh fell-as deg umaɣnu-inek",
-=======
   "account.edit_profile_short": "Ẓreg",
   "account.enable_notifications": "Azen-iyi-d ilɣa mi ara d-isuffeɣ @{name}",
   "account.endorse": "Welleh fell-as deg umaɣnu-inek",
   "account.familiar_followers_many": "Yeṭṭafaṛ-it {name1} d {name2}, akked {othersCount, plural, one {yiwen nniḍen i tessneḍ} other {# nniḍen i tessneḍ}}",
   "account.familiar_followers_one": "Yeṭṭafar-it {name1}",
   "account.familiar_followers_two": "Yeṭṭafar-it {name1} akked {name2}",
->>>>>>> v4.5.0
   "account.featured.accounts": "Imeɣna",
   "account.featured.hashtags": "Ihacṭagen",
   "account.featured_tags.last_status_at": "Tasuffeɣt taneggarut ass n {date}",
@@ -68,10 +60,7 @@
   "account.mute_notifications_short": "Susem ilɣa",
   "account.mute_short": "Sgugem",
   "account.muted": "Yettwasgugem",
-<<<<<<< HEAD
-=======
   "account.mutual": "Temmeḍfaṛem",
->>>>>>> v4.5.0
   "account.no_bio": "Ulac aglam i d-yettunefken.",
   "account.open_original_page": "Ldi asebter anasli",
   "account.posts": "Tisuffaɣ",
@@ -103,11 +92,6 @@
   "alt_text_modal.cancel": "Semmet",
   "alt_text_modal.done": "Immed",
   "announcement.announcement": "Ulɣu",
-<<<<<<< HEAD
-  "annual_report.summary.most_used_app.most_used_app": "asnas yettwasqedcen s waṭas",
-  "annual_report.summary.most_used_hashtag.none": "Ula yiwen",
-  "annual_report.summary.new_posts.new_posts": "tisuffaɣ timaynutin",
-=======
   "annual_report.summary.followers.followers": "imeḍfaṛen",
   "annual_report.summary.followers.total": "{count} deg aɣrud",
   "annual_report.summary.most_used_app.most_used_app": "asnas yettwasqedcen s waṭas",
@@ -115,7 +99,6 @@
   "annual_report.summary.new_posts.new_posts": "tisuffaɣ timaynutin",
   "annual_report.summary.percentile.we_wont_tell_bernie": "Ur as-neqqar i yiwen.",
   "annual_report.summary.thanks": "Tanemmirt imi i tettekkiḍ deg Mastodon!",
->>>>>>> v4.5.0
   "audio.hide": "Ffer amesli",
   "block_modal.show_less": "Ssken-d drus",
   "block_modal.show_more": "Ssken-d ugar",
@@ -200,10 +183,7 @@
   "confirmations.discard_draft.confirm": "Ttu-t u kemmel",
   "confirmations.discard_edit_media.confirm": "Sefsex",
   "confirmations.follow_to_list.confirm": "Ḍfeṛ-it sakin rnu-t ɣer tebdart",
-<<<<<<< HEAD
-=======
   "confirmations.follow_to_list.title": "Ḍfer aseqdac?",
->>>>>>> v4.5.0
   "confirmations.logout.confirm": "Ffeɣ",
   "confirmations.logout.message": "D tidet tebɣiḍ ad teffɣeḍ?",
   "confirmations.logout.title": "Tebɣiḍ ad teffɣeḍ ssya?",
@@ -214,14 +194,11 @@
   "confirmations.quiet_post_quote_info.dismiss": "Ur iyi-d-smektay ara",
   "confirmations.quiet_post_quote_info.got_it": "Gziɣ-t",
   "confirmations.redraft.confirm": "Kkes sakin ɛiwed tira",
-<<<<<<< HEAD
-=======
   "confirmations.remove_from_followers.confirm": "Kkes aneḍfar",
   "confirmations.revoke_quote.confirm": "Kkes tasuffeɣt",
   "confirmations.revoke_quote.title": "Kkes tasuffeɣt?",
   "confirmations.unblock.confirm": "Serreḥ",
   "confirmations.unblock.title": "Serreḥ i {name}?",
->>>>>>> v4.5.0
   "confirmations.unfollow.confirm": "Ur ḍḍafaṛ ara",
   "confirmations.unfollow.title": "Ḥbes aḍfar n {name}?",
   "confirmations.withdraw_request.confirm": "Agwi asuter",
@@ -292,10 +269,7 @@
   "errors.unexpected_crash.copy_stacktrace": "Nɣel stacktrace ɣef wafus",
   "errors.unexpected_crash.report_issue": "Mmel ugur",
   "explore.suggested_follows": "Imdanen",
-<<<<<<< HEAD
-=======
   "explore.title": "Inezzaɣ",
->>>>>>> v4.5.0
   "explore.trending_links": "Isallen",
   "explore.trending_statuses": "Tisuffaɣ",
   "explore.trending_tags": "Ihacṭagen",
@@ -357,40 +331,21 @@
   "hashtag.follow": "Ḍfeṛ ahacṭag",
   "hashtag.mute": "Sgugem #{hashtag}",
   "hashtags.and_other": "…d {count, plural, one {}other {# nniḍen}}",
-<<<<<<< HEAD
-  "hints.threads.replies_may_be_missing": "Tiririyin d-yusan deg iqeddacen nniḍen, yezmer ur d-ddant ara.",
-  "hints.threads.see_more": "Wali ugar n tririt deg {domain}",
-=======
   "hints.profiles.see_more_posts": "Wali ugar n tsuffaɣ ɣef {domain}",
   "home.column_settings.show_quotes": "Sken-d tibdarin",
->>>>>>> v4.5.0
   "home.column_settings.show_reblogs": "Ssken-d beṭṭu",
   "home.column_settings.show_replies": "Ssken-d tiririyin",
   "home.hide_announcements": "Ffer ulɣuyen",
   "home.pending_critical_update.body": "Ma ulac aɣilif, leqqem aqeddac-ik Mastodon akken kan tzemreḍ !",
   "home.pending_critical_update.link": "Wali ileqman",
   "home.show_announcements": "Ssken-d ulɣuyen",
-<<<<<<< HEAD
-  "info_button.label": "Tallelt",
-  "interaction_modal.action.favourite": "I wakken ad tkemmleḍ, yessefk ad d-tḥemmleḍ seg umiḍan-ik·im.",
-  "interaction_modal.action.follow": "I wakken ad tkemmleḍ, yessefk ad d-tḍefreḍ seg umiḍan-ik·im.",
-  "interaction_modal.action.reblog": "I wakken ad tkemmleḍ, yessefk ad d-snernuḍ seg umiḍan-ik·im.",
-  "interaction_modal.action.reply": "I wakken ad tkemmleḍ, yessefk ad d-terreḍ seg umiḍan-ik·im.",
-  "interaction_modal.action.vote": "I wakken ad tkemmleḍ, yessefk ad d-tferneḍ seg umiḍan-ik·im.",
-=======
   "ignore_notifications_modal.ignore": "Ttu ilɣa",
   "info_button.label": "Tallelt",
->>>>>>> v4.5.0
   "interaction_modal.go": "Ddu",
   "interaction_modal.no_account_yet": "Werɛad ur tesɛid amiḍan?",
   "interaction_modal.on_another_server": "Deg uqeddac nniḍen",
   "interaction_modal.on_this_server": "Deg uqeddac-ayi",
-<<<<<<< HEAD
-  "interaction_modal.title.follow": "Ḍfer {name}",
-  "interaction_modal.title.reply": "Tiririt i tsuffeɣt n {name}",
-=======
   "interaction_modal.title": "Qqen i wakken ad tkemmleḍ",
->>>>>>> v4.5.0
   "interaction_modal.username_prompt": "Amedya: {example}",
   "intervals.full.days": "{number, plural, one {# wass} other {# wussan}}",
   "intervals.full.hours": "{number, plural, one {# usarag} other {# yisragen}}",
@@ -444,17 +399,11 @@
   "lists.add_to_list": "Rnu ɣer tebdart",
   "lists.add_to_lists": "Rnu {name} ɣer tebdarin",
   "lists.create": "Snulfu-d",
-<<<<<<< HEAD
-  "lists.delete": "Kkes tabdart",
-  "lists.done": "Immed",
-  "lists.edit": "Ẓreg tabdart",
-=======
   "lists.create_list": "Snulfu-d tabdart",
   "lists.delete": "Kkes tabdart",
   "lists.done": "Immed",
   "lists.edit": "Ẓreg tabdart",
   "lists.find_users_to_add": "Af-d iseqdacen ara ternuḍ",
->>>>>>> v4.5.0
   "lists.list_name": "Isem n tebdart",
   "lists.new_list_name": "Isem n tebdart tamaynut",
   "lists.no_lists_yet": "Ulac tibdarin akka tura.",
@@ -497,12 +446,6 @@
   "navigation_bar.live_feed_public": "Asuddem usrid (azayaz)",
   "navigation_bar.logout": "Ffeɣ",
   "navigation_bar.moderation": "Aseɣyed",
-<<<<<<< HEAD
-  "navigation_bar.mutes": "Iseqdacen yettwasusmen",
-  "navigation_bar.opened_in_classic_interface": "Tisuffaɣ, imiḍanen akked isebtar-nniḍen igejdanen ldin-d s wudem amezwer deg ugrudem web aklasiki.",
-  "navigation_bar.preferences": "Imenyafen",
-  "navigation_bar.search": "Nadi",
-=======
   "navigation_bar.more": "Ugar",
   "navigation_bar.mutes": "Iseqdacen yettwasusmen",
   "navigation_bar.opened_in_classic_interface": "Tisuffaɣ, imiḍanen akked isebtar-nniḍen igejdanen ldin-d s wudem amezwer deg ugrudem web aklasiki.",
@@ -511,7 +454,6 @@
   "navigation_bar.search": "Nadi",
   "navigation_bar.search_trends": "Anadi / Anezzuɣ",
   "navigation_panel.collapse_lists": "Sneḍfes umuɣ n tebdart",
->>>>>>> v4.5.0
   "not_signed_in_indicator.not_signed_in": "You need to sign in to access this resource.",
   "notification.admin.report": "Yemla-t-id {name} {target}",
   "notification.admin.sign_up": "Ijerred {name}",
@@ -542,15 +484,10 @@
   "notification_requests.exit_selection": "Immed",
   "notification_requests.notifications_from": "Ilɣa sɣur {name}",
   "notification_requests.title": "Ilɣa yettwasizdgen",
-<<<<<<< HEAD
-  "notifications.clear": "Sfeḍ ilɣa",
-  "notifications.clear_confirmation": "Tebɣiḍ s tidet ad tekkseḍ akk ilɣa-inek·em i lebda?",
-=======
   "notification_requests.view": "Wali ilɣa",
   "notifications.clear": "Sfeḍ ilɣa",
   "notifications.clear_confirmation": "Tebɣiḍ s tidet ad tekkseḍ akk ilɣa-inek·em i lebda?",
   "notifications.clear_title": "Sfeḍ ilɣa?",
->>>>>>> v4.5.0
   "notifications.column_settings.admin.report": "Ineqqisen imaynuten:",
   "notifications.column_settings.alert": "Ilɣa n tnarit",
   "notifications.column_settings.favourite": "Imenyafen:",
@@ -562,10 +499,7 @@
   "notifications.column_settings.mention": "Abdar:",
   "notifications.column_settings.poll": "Igemmaḍ n usenqed:",
   "notifications.column_settings.push": "Ilɣa yettudemmren",
-<<<<<<< HEAD
-=======
   "notifications.column_settings.quote": "Yebder-d:",
->>>>>>> v4.5.0
   "notifications.column_settings.reblog": "Seǧhed:",
   "notifications.column_settings.show": "Ssken-d tilɣa deg ujgu",
   "notifications.column_settings.sound": "Rmed imesli",
@@ -625,20 +559,13 @@
   "privacy.private.short": "Imeḍfaren",
   "privacy.public.long": "Kra n win yellan deg Masṭudun neɣ berra-s",
   "privacy.public.short": "Azayez",
-<<<<<<< HEAD
-  "privacy.unlisted.long": "Kra kan yiwarzimen",
-=======
->>>>>>> v4.5.0
   "privacy.unlisted.short": "Azayez asusam",
   "privacy_policy.last_updated": "Aleqqem aneggaru {date}",
   "privacy_policy.title": "Tasertit tabaḍnit",
   "recommended": "Yettuwelleh",
   "refresh": "Smiren",
   "regeneration_indicator.please_stand_by": "Ttxil rǧu.",
-<<<<<<< HEAD
-=======
   "regeneration_indicator.preparing_your_home_feed": "Ha-tt-an tsuddemt-ik·im tagejdant tettwaheggay…",
->>>>>>> v4.5.0
   "relative_time.days": "{number}u",
   "relative_time.full.days": "{number, plural, one {# n wass} other {# n wussan}} aya",
   "relative_time.full.hours": "{number, plural, one {# n usrag} other {# n yesragen}} aya",
@@ -648,12 +575,9 @@
   "relative_time.minutes": "{number}tis",
   "relative_time.seconds": "{number}tas",
   "relative_time.today": "ass-a",
-<<<<<<< HEAD
-=======
   "remove_quote_hint.button_label": "Gziɣ-t",
   "remove_quote_hint.title": "D tidet, tebɣiḍ ad tekkseḍ tasuffeɣt-inek·inem i d-yettwabedren?",
   "reply_indicator.attachments": "{count, plural, one {# n umedday} other {# n imeddayen}}",
->>>>>>> v4.5.0
   "reply_indicator.cancel": "Sefsex",
   "reply_indicator.poll": "Afmiḍi",
   "report.block": "Sewḥel",
@@ -731,14 +655,11 @@
   "status.bookmark": "Creḍ",
   "status.cancel_reblog_private": "Sefsex beṭṭu",
   "status.cannot_reblog": "Tasuffeɣt-a ur tezmir ara ad tettwabḍu tikelt-nniḍen",
-<<<<<<< HEAD
-=======
   "status.contains_quote": "Yegber tanebdurt",
   "status.context.loading": "Aɛebbi n tririyin nniḍen",
   "status.context.more_replies_found": "Ugar n tririyin ttwafent",
   "status.context.retry": "Ɛreḍ tikkelt nniḍen",
   "status.context.show": "Sken-d",
->>>>>>> v4.5.0
   "status.continued_thread": "Asqerdec yettkemmil",
   "status.copy": "Nɣel assaɣ ɣer tasuffeɣt",
   "status.delete": "Kkes",
@@ -764,8 +685,6 @@
   "status.mute_conversation": "Sgugem adiwenni",
   "status.open": "Semɣeṛ tasuffeɣt-ayi",
   "status.pin": "Senteḍ-itt deg umaɣnu",
-<<<<<<< HEAD
-=======
   "status.quote": "Tanebdurt",
   "status.quote.cancel": "Semmet tanebdurt",
   "status.quote_error.limited_account_hint.action": "Sken-d akken ibɣu yili",
@@ -774,7 +693,6 @@
   "status.quote_noun": "Tanebdurt",
   "status.quote_policy_change": "Snifel anwa i izemren ad d-yebder",
   "status.quote_post_author": "Yebder-d tasuffeɣt sɣur @{name}",
->>>>>>> v4.5.0
   "status.read_more": "Issin ugar",
   "status.reblog": "Bḍu",
   "status.reblog_or_quote": "Zuzer neɣ ader-d",
@@ -783,10 +701,7 @@
   "status.reblogs.empty": "Ula yiwen ur yebḍi tajewwiqt-agi ar tura. Ticki yebḍa-tt yiwen, ad d-iban da.",
   "status.redraft": "Kkes tɛiwdeḍ tira",
   "status.remove_bookmark": "Kkes tacreḍt",
-<<<<<<< HEAD
-=======
   "status.remove_quote": "Kkes",
->>>>>>> v4.5.0
   "status.replied_in_thread": "Y·t·erra-d deg usqerdec",
   "status.replied_to": "Y·terra-yas i {name}",
   "status.reply": "Err",
@@ -800,24 +715,16 @@
   "status.show_original": "Sken aɣbalu",
   "status.title.with_attachments": "{user} posted {attachmentCount, plural, one {an attachment} other {# attachments}}",
   "status.translate": "Suqel",
-<<<<<<< HEAD
-  "status.translated_from_with": "Yettwasuqel seg {lang} s {provider}",
-=======
   "status.translated_from_with": "Tettwasuqel seg {lang} s {provider}",
->>>>>>> v4.5.0
   "status.uncached_media_warning": "Ulac taskant",
   "status.unmute_conversation": "Kkes asgugem n udiwenni",
   "status.unpin": "Kkes asenteḍ seg umaɣnu",
   "subscribed_languages.save": "Sekles ibeddilen",
   "tabs_bar.home": "Agejdan",
-<<<<<<< HEAD
-  "tabs_bar.notifications": "Ilɣa",
-=======
   "tabs_bar.menu": "Umuɣ",
   "tabs_bar.notifications": "Ilɣa",
   "tabs_bar.publish": "Tasuffeɣt tamaynut",
   "tabs_bar.search": "Nadi",
->>>>>>> v4.5.0
   "terms_of_service.title": "Tiwtilin n useqdec",
   "time_remaining.days": "Mazal {number, plural, one {# wass} other {# wussan}}",
   "time_remaining.hours": "Mazal {number, plural, one {# usarag} other {# yisragen}}",
@@ -847,9 +754,6 @@
   "video.mute": "Sgugem",
   "video.pause": "Sgunfu",
   "video.play": "Seddu",
-<<<<<<< HEAD
-  "video.unmute": "Kkes asgugem"
-=======
   "video.skip_backward": "Uɣal ɣer deffir",
   "video.skip_forward": "Ddu ɣer zdat",
   "video.unmute": "Kkes asgugem",
@@ -860,5 +764,4 @@
   "visibility_modal.quote_nobody": "Nekki kan",
   "visibility_modal.quote_public": "Yal yiwen",
   "visibility_modal.save": "Sekles"
->>>>>>> v4.5.0
 }

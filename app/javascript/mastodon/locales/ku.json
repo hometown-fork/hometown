@@ -36,13 +36,10 @@
   "account.featured_tags.last_status_never": "Şandî tune ne",
   "account.follow": "Bişopîne",
   "account.follow_back": "Bişopîne",
-<<<<<<< HEAD
-=======
   "account.follow_request": "Bo şopandinê daxwaz bike",
   "account.follow_request_cancel": "Daxwazê têk bibe",
   "account.follow_request_cancel_short": "Têk bibe",
   "account.follow_request_short": "Daxwaz bike",
->>>>>>> v4.5.0
   "account.followers": "Şopîner",
   "account.followers.empty": "Kesekî hin ev bikarhêner neşopandiye.",
   "account.followers_counter": "{count, plural, one {{counter} şopîner} other {{counter} şopîner}}",
@@ -182,10 +179,6 @@
   "confirmations.redraft.confirm": "Jê bibe & ji nû ve serrast bike",
   "confirmations.redraft.message": "Bi rastî tu dixwazî şandî ye jê bibî û ji nû ve reşnivîsek çê bikî? Bijarte û şandî wê wenda bibin û bersivên ji bo şandiyê resen wê sêwî bimînin.",
   "confirmations.unfollow.confirm": "Neşopîne",
-<<<<<<< HEAD
-  "confirmations.unfollow.message": "Ma tu dixwazî ku dev ji şopa {name} berdî?",
-=======
->>>>>>> v4.5.0
   "content_warning.show_more": "Bêtir nîşan bide",
   "conversation.delete": "Axaftinê jê bibe",
   "conversation.mark_as_read": "Wekî xwendî nîşan bide",

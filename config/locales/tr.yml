@@ -1,11 +1,7 @@
 ---
 tr:
   about:
-<<<<<<< HEAD
-    about_mastodon_html: Jetub Max<em>ücretsiz ve açık kaynaklı</em> bir sosyal ağdır. <em>Merkezi olmayan</em> yapısı sayesinde diğer ticari sosyal platformların aksine iletişimininizin tek bir firmada tutulmasının/yönetilmesinin önüne geçer. Güvendiğiniz bir sunucuyu seçerek oradaki kişilerle etkileşimde bulunabilirsiniz. Herkes kendi Jetub Max sunucusunu kurabilir ve sorunsuz bir şekilde Jetub Max<em>sosyal ağına</em> dahil edebilir!
-=======
     about_mastodon_html: 'Geleceğin sosyal ağı: Reklam yok, kurumsal gözetim yok, etik tasarım ve merkeziyetsizlik! Mastodon ile verilerinizin sahibi olun!'
->>>>>>> v4.5.0
     contact_missing: Ayarlanmadı
     contact_unavailable: Bulunamadı
     hosted_on: Mastodon %{domain} üzerinde barındırılıyor
@@ -925,10 +921,7 @@ tr:
       title: Hesap gönderileri - @%{name}
       trending: Öne çıkanlar
       view_publicly: Herkese açık görüntüle
-<<<<<<< HEAD
-=======
       view_quoted_post: Alıntılanmış gönderiyi görüntüle
->>>>>>> v4.5.0
       visibility: Görünürlük
       with_media: Medya ile
     strikes:
@@ -1943,12 +1936,6 @@ tr:
       limit: Halihazırda maksimum sayıda gönderi sabitlediniz
       ownership: Başkasının gönderisi sabitlenemez
       reblog: Bir gönderi sabitlenemez
-<<<<<<< HEAD
-    quote_policies:
-      followers: Takipçiler ve bahsedilen kullanıcılar
-      nobody: Sadece bahsedilen kullanıcılar
-      public: Herkes
-=======
     quote_error:
       not_available: Gönderi kullanılamıyor
       pending_approval: Gönderi beklemede
@@ -1958,7 +1945,6 @@ tr:
       nobody: Sadece ben
       public: Herkes
     quote_post_author: "@%{acct} adlı kullanıcının bir gönderisini alıntıladı"
->>>>>>> v4.5.0
     title: '%{name}: "%{quote}"'
     visibilities:
       direct: Özel değini

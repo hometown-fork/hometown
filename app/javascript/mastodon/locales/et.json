@@ -64,17 +64,10 @@
   "account.media": "Meedia",
   "account.mention": "Maini @{name}",
   "account.moved_to": "{name} on teada andnud, et ta uus konto on nüüd:",
-<<<<<<< HEAD
-  "account.mute": "Vaigista @{name}",
-  "account.mute_notifications_short": "Vaigista teavitused",
-  "account.mute_short": "Vaigista",
-  "account.muted": "Vaigistatud",
-=======
   "account.mute": "Summuta @{name}",
   "account.mute_notifications_short": "Summuta teavitused",
   "account.mute_short": "Summuta",
   "account.muted": "Summutatud",
->>>>>>> v4.5.0
   "account.muting": "Summutatud konto",
   "account.mutual": "Te jälgite teineteist",
   "account.no_bio": "Kirjeldust pole lisatud.",
@@ -180,20 +173,13 @@
   "column.edit_list": "Muuda loendit",
   "column.favourites": "Lemmikud",
   "column.firehose": "Postitused reaalajas",
-<<<<<<< HEAD
-=======
   "column.firehose_local": "Selle serveri sisuvoog reaalajas",
   "column.firehose_singular": "Postitused reaalajas",
->>>>>>> v4.5.0
   "column.follow_requests": "Jälgimistaotlused",
   "column.home": "Kodu",
   "column.list_members": "Halda loendi liikmeid",
   "column.lists": "Loetelud",
-<<<<<<< HEAD
-  "column.mutes": "Vaigistatud kasutajad",
-=======
   "column.mutes": "Summutatud kasutajad",
->>>>>>> v4.5.0
   "column.notifications": "Teated",
   "column.pins": "Kinnitatud postitused",
   "column.public": "Föderatiivne ajajoon",
@@ -260,9 +246,6 @@
   "confirmations.missing_alt_text.message": "Sinu postituses on ilma alt-tekstita meediat. Kirjelduse lisamine aitab su sisu muuta ligipääsetavaks rohkematele inimestele.",
   "confirmations.missing_alt_text.secondary": "Postita siiski",
   "confirmations.missing_alt_text.title": "Lisada alt-tekst?",
-<<<<<<< HEAD
-  "confirmations.mute.confirm": "Vaigista",
-=======
   "confirmations.mute.confirm": "Summuta",
   "confirmations.private_quote_notify.cancel": "Tagasi muutmise juurde",
   "confirmations.private_quote_notify.confirm": "Avalda postitus",
@@ -273,21 +256,17 @@
   "confirmations.quiet_post_quote_info.got_it": "Sain aru",
   "confirmations.quiet_post_quote_info.message": "Vaikse, aga avaliku postituse tsiteerimisel sinu postitus on peidetud populaarsust koguvatel ajajoontel.",
   "confirmations.quiet_post_quote_info.title": "Vaikse, aga avaliku postituse tsiteerimine",
->>>>>>> v4.5.0
   "confirmations.redraft.confirm": "Kustuta & taasalusta",
   "confirmations.redraft.message": "Kindel, et soovid postituse kustutada ja võtta uue aluseks? Lemmikuks märkimised ja jagamised lähevad kaotsi ning vastused jäävad ilma algse postituseta.",
   "confirmations.redraft.title": "Kustudada ja luua postituse mustand?",
   "confirmations.remove_from_followers.confirm": "Eemalda jälgija",
   "confirmations.remove_from_followers.message": "{name} lõpetab sellega sinu jälgimise. Kas oled kindel, et soovid jätkata?",
   "confirmations.remove_from_followers.title": "Kas eemaldame jälgija?",
-<<<<<<< HEAD
-=======
   "confirmations.revoke_quote.confirm": "Eemalda postitus",
   "confirmations.revoke_quote.message": "Seda tegevust ei saa tagasi pöörata.",
   "confirmations.revoke_quote.title": "Kas eemaldame postituse?",
   "confirmations.unblock.confirm": "Lõpeta blokeerimine",
   "confirmations.unblock.title": "Kas lõpetad {name} kasutaja blokeerimise?",
->>>>>>> v4.5.0
   "confirmations.unfollow.confirm": "Ära jälgi",
   "confirmations.unfollow.title": "Kas lõpetad {name} kasutaja jälgimise?",
   "confirmations.withdraw_request.confirm": "Tühista päring",
@@ -316,11 +295,7 @@
   "domain_block_modal.they_can_interact_with_old_posts": "Inimesed sellest serverist saavad suhestuda sinu vanade postitustega.",
   "domain_block_modal.they_cant_follow": "Sellest serverist ei saa keegi sind jälgida.",
   "domain_block_modal.they_wont_know": "Nad ei tea, et nad on blokeeritud.",
-<<<<<<< HEAD
-  "domain_block_modal.title": "Blokeerida domeen?",
-=======
   "domain_block_modal.title": "Kas blokeerid domeeni?",
->>>>>>> v4.5.0
   "domain_block_modal.you_will_lose_num_followers": "Sult kaob {followersCount, plural, one {{followersCountDisplay} jälgija} other {{followersCountDisplay} jälgijat}} ja {followingCount, plural, one {{followingCountDisplay} inimene} other {{followingCountDisplay} inimest}}, keda sa ise jälgid.",
   "domain_block_modal.you_will_lose_relationships": "Sa kaotad kõik oma jälgijad ja inimesed, kes sind jälgivad sellest serverist.",
   "domain_block_modal.you_wont_see_posts": "Sa ei näe selle serveri kasutajate postitusi ega teavitusi.",
@@ -376,11 +351,7 @@
   "empty_column.hashtag": "Selle sildi all ei ole ühtegi postitust.",
   "empty_column.home": "Su koduajajoon on tühi. Jälgi rohkemaid inimesi, et seda täita {suggestions}",
   "empty_column.list": "Siin loetelus pole veel midagi. Kui loetelu liikmed teevad uusi postitusi, näed neid siin.",
-<<<<<<< HEAD
-  "empty_column.mutes": "Sa pole veel ühtegi kasutajat vaigistanud.",
-=======
   "empty_column.mutes": "Sa pole veel ühtegi kasutajat summutanud.",
->>>>>>> v4.5.0
   "empty_column.notification_requests": "Kõik tühi! Siin pole mitte midagi. Kui saad uusi teavitusi, ilmuvad need siin vastavalt sinu seadistustele.",
   "empty_column.notifications": "Ei ole veel teateid. Kui keegi suhtleb sinuga, näed seda siin.",
   "empty_column.public": "Siin pole midagi! Kirjuta midagi avalikku või jälgi ise kasutajaid täitmaks seda ruumi",
@@ -468,11 +439,7 @@
   "hashtag.counter_by_uses_today": "{count, plural, one {{counter} postitust} other {{counter} postitust}} täna",
   "hashtag.feature": "Tõsta profiilis esile",
   "hashtag.follow": "Jälgi silti",
-<<<<<<< HEAD
-  "hashtag.mute": "Vaigista @#{hashtag}",
-=======
   "hashtag.mute": "Summuta teemaviide @#{hashtag}",
->>>>>>> v4.5.0
   "hashtag.unfeature": "Ära tõsta profiilis esile",
   "hashtag.unfollow": "Lõpeta sildi jälgimine",
   "hashtags.and_other": "…ja {count, plural, one {}other {# veel}}",
@@ -482,11 +449,6 @@
   "hints.profiles.see_more_followers": "Vaata rohkem jälgijaid kohas {domain}",
   "hints.profiles.see_more_follows": "Vaata rohkem jälgitavaid kohas {domain}",
   "hints.profiles.see_more_posts": "Vaata rohkem postitusi kohas {domain}",
-<<<<<<< HEAD
-  "hints.threads.replies_may_be_missing": "Vastuseid teistest serveritest võib olla puudu.",
-  "hints.threads.see_more": "Vaata rohkem vastuseid kohas {domain}",
-=======
->>>>>>> v4.5.0
   "home.column_settings.show_quotes": "Näita tsiteeritut",
   "home.column_settings.show_reblogs": "Näita jagamisi",
   "home.column_settings.show_replies": "Näita vastuseid",
@@ -508,28 +470,12 @@
   "ignore_notifications_modal.private_mentions_title": "Ignoreeri soovimatute eraviisiliste mainimiste teateid?",
   "info_button.label": "Abi",
   "info_button.what_is_alt_text": "<h1>Mis on alt-tekst?</h1> <p>Alt-tekst pakub pildi kirjeldust nägemispuudega inimeste jaoks või neile, kel on aeglane internet või neile, kes otsivad lisaselgitust</p> <p>Saad parandada ligipääsetavust ja mõistmist kõigi jaoks, kirjutades selge, lühida ja objektiivse alt-teksti.</p> <ul> <li>Lisa tähtsad elemendid</li> <li>Tee pildil olevast tekstist kokkuvõte</li> <li>Kasuta reeglipärast lausestruktuuri</li> <li>Väldi ebaolulist infot</li> <li>Keskendu keerukate vaadete puhul (näiteks diagrammid ja kaardid) puhul trendidele ja põhiseostele</li> </ul>",
-<<<<<<< HEAD
-  "interaction_modal.action.favourite": "Jätkamiseks pead oma konto alt lemmikuks märkima.",
-  "interaction_modal.action.follow": "Jätkamiseks pead oma konto alt lemmikuks märkima.",
-  "interaction_modal.action.reblog": "Jätkamiseks pead jagama oma konto alt.",
-  "interaction_modal.action.reply": "Jätkamiseks pead vastama oma konto alt.",
-  "interaction_modal.action.vote": "Jätkamiseks pead hääletama oma konto alt.",
-=======
   "interaction_modal.action": "Suhestumaks kasutaja {name} postitusega palun logi sisse oma Mastodoni kasutajakontoga sõltumata serverist, mida kasutad.",
->>>>>>> v4.5.0
   "interaction_modal.go": "Mine",
   "interaction_modal.no_account_yet": "Pole veel kontot?",
   "interaction_modal.on_another_server": "Teises serveris",
   "interaction_modal.on_this_server": "Selles serveris",
-<<<<<<< HEAD
-  "interaction_modal.title.favourite": "Lisa konto {name} postitus lemmikuks",
-  "interaction_modal.title.follow": "Jälgi kontot {name}",
-  "interaction_modal.title.reblog": "Jaga {name} postitust",
-  "interaction_modal.title.reply": "Vasta kasutaja {name} postitusele",
-  "interaction_modal.title.vote": "Hääleta {name} küsitluses",
-=======
   "interaction_modal.title": "Jätkamiseks logi sisse",
->>>>>>> v4.5.0
   "interaction_modal.username_prompt": "Nt {example}",
   "intervals.full.days": "{number, plural, one {# päev} other {# päeva}}",
   "intervals.full.hours": "{number, plural, one {# tund} other {# tundi}}",
@@ -642,11 +588,7 @@
   "navigation_bar.logout": "Logi välja",
   "navigation_bar.moderation": "Modereerimine",
   "navigation_bar.more": "Lisavalikud",
-<<<<<<< HEAD
-  "navigation_bar.mutes": "Vaigistatud kasutajad",
-=======
   "navigation_bar.mutes": "Summutatud kasutajad",
->>>>>>> v4.5.0
   "navigation_bar.opened_in_classic_interface": "Postitused, kontod ja teised spetsiaalsed lehed avatakse vaikimisi klassikalises veebiliideses.",
   "navigation_bar.preferences": "Eelistused",
   "navigation_bar.privacy_and_reach": "Privaatsus ja ulatus",
@@ -974,15 +916,6 @@
   "status.mute_conversation": "Summuta vestlus",
   "status.open": "Laienda postitus",
   "status.pin": "Kinnita profiilile",
-<<<<<<< HEAD
-  "status.quote_error.filtered": "Peidetud mõne kasutatud filtri tõttu",
-  "status.quote_error.not_found": "Seda postitust ei saa näidata.",
-  "status.quote_error.pending_approval": "See postitus on algse autori kinnituse ootel.",
-  "status.quote_error.rejected": "Seda postitust ei saa näidata, kuina algne autor ei luba teda tsiteerida.",
-  "status.quote_error.removed": "Autor kustutas selle postituse.",
-  "status.quote_error.unauthorized": "Kuna sul pole luba selle postituse nägemiseks, siis seda ei saa kuvada.",
-  "status.quote_post_author": "Postitajaks {name}",
-=======
   "status.quote": "Tsiteeri",
   "status.quote.cancel": "Katkesta tsiteerimine",
   "status.quote_error.blocked_account_hint.title": "Kuna sa oled blokeerinud kasutaja @{name}, siis see postitus on peidetud.",
@@ -1005,7 +938,6 @@
   "status.quotes.empty": "Keegi pole seda postitust veel tsiteerinud. Kui keegi seda teeb, siis on ta nähtav siin.",
   "status.quotes.local_other_disclaimer": "Autori poolt tagasilükatud tsitaate ei kuvata.",
   "status.quotes.remote_other_disclaimer": "Kui kasutaja on {domain} domeenist, siis siin on tagatud vaid tema tsitaatide näitamine. Autori poolt tagasilükatud tsitaate ei kuvata.",
->>>>>>> v4.5.0
   "status.read_more": "Loe veel",
   "status.reblog": "Jaga",
   "status.reblog_or_quote": "Anna hoogu või tsiteeri",
@@ -1016,10 +948,7 @@
   "status.redraft": "Kustuta & alga uuesti",
   "status.remove_bookmark": "Eemalda järjehoidja",
   "status.remove_favourite": "Eemalda lemmikute seast",
-<<<<<<< HEAD
-=======
   "status.remove_quote": "Eemalda",
->>>>>>> v4.5.0
   "status.replied_in_thread": "Vastatud lõimes",
   "status.replied_to": "Vastas kasutajale {name}",
   "status.reply": "Vasta",
@@ -1064,12 +993,8 @@
   "upload_button.label": "Lisa pilte, üks video- või helifail",
   "upload_error.limit": "Faili üleslaadimise piir ületatud.",
   "upload_error.poll": "Küsitlustes pole faili üleslaadimine lubatud.",
-<<<<<<< HEAD
-  "upload_form.drag_and_drop.instructions": "Vajuta tühikut või enterit, et tõsta manus. Lohistamise ajal kasuta nooleklahve, et manust liigutada teatud suunas. Vajuta tühikut või enterit uuesti, et paigutada manus oma uuele kohale, või escape tühistamiseks.",
-=======
   "upload_error.quote": "Tsiteerimisel pole faili üleslaadimine lubatud.",
   "upload_form.drag_and_drop.instructions": "Manuse valimiseks vajuta tühikut või sisestusklahvi. Lohistamise ajal kasuta nooleklahve, et manust liigutada teatud suunas. Vajuta tühikut või enterit uuesti, et paigutada manus oma uuele kohale, või escape tühistamiseks.",
->>>>>>> v4.5.0
   "upload_form.drag_and_drop.on_drag_cancel": "Lohistamine tühistati. Manus {item} on asetatud.",
   "upload_form.drag_and_drop.on_drag_end": "Manus {item} on asetatud.",
   "upload_form.drag_and_drop.on_drag_over": "Manus {item} on liigutatud.",
@@ -1084,20 +1009,11 @@
   "video.expand": "Suurenda video",
   "video.fullscreen": "Täisekraan",
   "video.hide": "Peida video",
-<<<<<<< HEAD
-  "video.mute": "Vaigista",
-=======
   "video.mute": "Summuta",
->>>>>>> v4.5.0
   "video.pause": "Paus",
   "video.play": "Mängi",
   "video.skip_backward": "Keri tagasi",
   "video.skip_forward": "Keri edasi",
-<<<<<<< HEAD
-  "video.unmute": "Lõpeta vaigistamine",
-  "video.volume_down": "Heli vaiksemaks",
-  "video.volume_up": "Heli valjemaks"
-=======
   "video.unmute": "Lõpeta summutamine",
   "video.volume_down": "Heli vaiksemaks",
   "video.volume_up": "Heli valjemaks",
@@ -1117,5 +1033,4 @@
   "visibility_modal.quote_nobody": "Ainult mina",
   "visibility_modal.quote_public": "Kõik",
   "visibility_modal.save": "Salvesta"
->>>>>>> v4.5.0
 }

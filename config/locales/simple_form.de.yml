@@ -54,29 +54,18 @@ de:
         password: Verwende mindestens 8 Zeichen
         phrase: Wird unabhängig von der Groß- und Kleinschreibung im Text oder der Inhaltswarnung eines Beitrags abgeglichen
         scopes: Welche Schnittstellen der Applikation erlaubt sind. Wenn du einen Top-Level-Scope auswählst, dann musst du nicht jeden einzelnen darunter auswählen.
-<<<<<<< HEAD
-        setting_aggregate_reblogs: Beiträge, die erst kürzlich geteilt wurden, werden nicht noch einmal angezeigt (betrifft nur zukünftig geteilte Beiträge)
-        setting_always_send_emails: Normalerweise werden Benachrichtigungen nicht per E-Mail versendet, wenn du gerade auf Mastodon aktiv bist
-        setting_noindex_html: Affects your public profile and post pages. Public replies you make to other people may still be indexed on their pages. <a href="https://github.com/hometown-fork/hometown/issues/1234">See here for more information.</a>
-        setting_default_federation_html: <ul><li>Wenn ausgewählt, werden neue Beiträge mit anderen Instanzen geteilt, es sei denn, es wird beim Verfassen in der Weboberfläche manuell überschrieben.</li><li>Wenn diese Option nicht aktiviert ist, bleiben Ihre neuen Beiträge lokal, es sei denn, sie werden beim Verfassen in der Weboberfläche manuell geändert.</li><li>Anwendungen von Drittanbietern werden neue Beiträge erstellen, die diese Einstellung berücksichtigen. <a href="https://github.com/hometown-fork/hometown/wiki/Local-only-posting#note-on-3rd-party-apps">Weitere for more info on third-party apps</a></li></ul>
-        setting_default_quote_policy: Erwähnte Profile dürfen immer zitieren. Diese Einstellung gilt nur für Beiträge, die mit der zukünftigen Mastodon-Version erstellt wurden. Als Vorbereitung darauf kannst du bereits jetzt die Einstellung vornehmen
-=======
         setting_advanced_layout: Dadurch wird Mastodon in mehrere Spalten aufgeteilt, womit du deine Timeline, Benachrichtigungen und eine dritte Spalte deiner Wahl nebeneinander siehst. Nicht bei einem kleinen Bildschirm empfohlen.
         setting_aggregate_reblogs: Beiträge, die erst kürzlich geteilt wurden, werden nicht noch einmal angezeigt (betrifft nur zukünftig geteilte Beiträge)
         setting_always_send_emails: Normalerweise werden Benachrichtigungen nicht per E-Mail versendet, wenn du gerade auf Mastodon aktiv bist
         setting_boost_modal: Dadurch wird beim Teilen ein Bestätigungsdialog angezeigt, um die Sichtbarkeit anzupassen.
         setting_default_quote_policy_private: Beiträge, die nur für deine Follower bestimmt sind und auf Mastodon verfasst wurden, können nicht von anderen zitiert werden.
         setting_default_quote_policy_unlisted: Sollten dich andere zitieren, werden ihre zitierten Beiträge ebenfalls nicht in den Trends und öffentlichen Timelines angezeigt.
->>>>>>> v4.5.0
         setting_default_sensitive: Medien, die mit einer Inhaltswarnung versehen worden sind, werden – je nach Einstellung – erst nach einem zusätzlichen Klick angezeigt
         setting_display_media_default: Medien mit Inhaltswarnung ausblenden
         setting_display_media_hide_all: Medien immer ausblenden
         setting_display_media_show_all: Medien mit Inhaltswarnung immer anzeigen
-<<<<<<< HEAD
-=======
         setting_emoji_style: 'Wie Emojis dargestellt werden: „Automatisch“ verwendet native Emojis, für veraltete Browser wird jedoch Twemoji verwendet.'
         setting_quick_boosting_html: Dadurch wird der Beitrag beim Anklicken des %{boost_icon} Teilen-Symbols sofort geteilt, anstatt das Drop-down-Menü zu öffnen. Die Möglichkeit zum Zitieren wird dabei in %{options_icon} Mehr verschoben.
->>>>>>> v4.5.0
         setting_system_scrollbars_ui: Betrifft nur Desktop-Browser, die auf Chrome oder Safari basieren
         setting_use_blurhash: Der Farbverlauf basiert auf den Farben der ausgeblendeten Medien, verschleiert aber jegliche Details
         setting_use_pending_items: Neue Beiträge hinter einem Klick verstecken, anstatt automatisch zu scrollen
@@ -165,13 +154,8 @@ de:
       user:
         chosen_languages: Wenn du hier eine oder mehrere Sprachen auswählst, werden ausschließlich Beiträge in diesen Sprachen in deinen öffentlichen Timelines angezeigt
         date_of_birth:
-<<<<<<< HEAD
-          one: Wir müssen sicherstellen, dass du mindestens %{count} Jahre alt bist, um Mastodon nutzen zu können. Wir werden diese Information nicht aufbewahren.
-          other: Wir müssen sicherstellen, dass du mindestens %{count} Jahre alt bist, um Mastodon nutzen zu können. Wir werden diese Information nicht aufbewahren.
-=======
           one: Wir müssen sicherstellen, dass du mindestens %{count} Jahr alt bist, um %{domain} verwenden zu können. Wir werden diese Information nicht aufbewahren.
           other: Wir müssen sicherstellen, dass du mindestens %{count} Jahre alt bist, um %{domain} verwenden zu können. Wir werden diese Information nicht aufbewahren.
->>>>>>> v4.5.0
         role: Die Rolle bestimmt, welche Berechtigungen das Konto hat.
       user_role:
         color: Farbe, die für diese Rolle in der gesamten Benutzerschnittstelle verwendet wird, als RGB im Hexadezimalsystem
@@ -253,18 +237,10 @@ de:
         setting_aggregate_reblogs: Geteilte Beiträge in den Timelines gruppieren
         setting_always_send_emails: Benachrichtigungen immer senden
         setting_auto_play_gif: Animierte GIFs automatisch abspielen
-<<<<<<< HEAD
-        setting_boost_modal: Bestätigungsdialog beim Teilen eines Beitrags anzeigen
-        setting_default_federation: Erlaube meinen Beiträgen, andere Instanzen standardmäßig zu erreichen
-        setting_default_language: Beitragssprache
-        setting_default_privacy: Beitragssichtbarkeit
-        setting_default_quote_policy: Wer darf zitieren
-=======
         setting_boost_modal: Sichtbarkeit für geteilte Beiträge anpassen
         setting_default_language: Beitragssprache
         setting_default_privacy: Beitragssichtbarkeit
         setting_default_quote_policy: Wer zitieren darf
->>>>>>> v4.5.0
         setting_default_sensitive: Medien immer mit einer Inhaltswarnung versehen
         setting_delete_modal: Vor dem Löschen bestätigen
         setting_disable_hover_cards: Profilvorschau deaktivieren, wenn die Maus über das Profil bewegt wird
@@ -276,19 +252,11 @@ de:
         setting_emoji_style: Emoji-Stil
         setting_expand_spoilers: Beiträge mit Inhaltswarnung immer ausklappen
         setting_hide_network: Follower und „Folge ich“ nicht anzeigen
-<<<<<<< HEAD
-        setting_noindex: Opt-out of search engine indexing
-        setting_missing_alt_text_modal: Bestätigungsdialog anzeigen, bevor Medien ohne Bildbeschreibung veröffentlicht werden
-        setting_reduce_motion: Bewegung in Animationen verringern
-        setting_system_font_ui: Standardschriftart des Browsers verwenden
-        setting_system_scrollbars_ui: Bildlaufleiste des Systems verwenden
-=======
         setting_missing_alt_text_modal: Erinnerung für Bildbeschreibung anzeigen
         setting_quick_boosting: Schnelles Teilen aktivieren
         setting_reduce_motion: Bewegung in Animationen verringern
         setting_system_font_ui: Standardschriftart des Browsers verwenden
         setting_system_scrollbars_ui: Bildlaufleiste des Betriebssystems verwenden
->>>>>>> v4.5.0
         setting_theme: Design
         setting_trends: Heutige Trends anzeigen
         setting_unfollow_modal: Bestätigungsdialog beim Entfolgen eines Profils anzeigen

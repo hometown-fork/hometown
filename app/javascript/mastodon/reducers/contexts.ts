@@ -4,10 +4,7 @@ import type { Draft, UnknownAction } from '@reduxjs/toolkit';
 import type { List as ImmutableList } from 'immutable';
 
 import { timelineDelete } from 'mastodon/actions/timelines_typed';
-<<<<<<< HEAD
-=======
 import type { AsyncRefreshHeader } from 'mastodon/api';
->>>>>>> v4.5.0
 import type { ApiRelationshipJSON } from 'mastodon/api_types/relationships';
 import type {
   ApiStatusJSON,
@@ -16,16 +13,12 @@ import type {
 import type { Status } from 'mastodon/models/status';
 
 import { blockAccountSuccess, muteAccountSuccess } from '../actions/accounts';
-<<<<<<< HEAD
-import { fetchContext } from '../actions/statuses';
-=======
 import {
   fetchContext,
   completeContextRefresh,
   showPendingReplies,
   clearPendingReplies,
 } from '../actions/statuses';
->>>>>>> v4.5.0
 import { TIMELINE_UPDATE } from '../actions/timelines';
 import { compareId } from '../compare_id';
 
@@ -38,21 +31,16 @@ interface TimelineUpdateAction extends UnknownAction {
 interface State {
   inReplyTos: Record<string, string>;
   replies: Record<string, string[]>;
-<<<<<<< HEAD
-=======
   pendingReplies: Record<
     string,
     Pick<ApiStatusJSON, 'id' | 'in_reply_to_id'>[]
   >;
   refreshing: Record<string, AsyncRefreshHeader>;
->>>>>>> v4.5.0
 }
 
 const initialState: State = {
   inReplyTos: {},
   replies: {},
-<<<<<<< HEAD
-=======
   pendingReplies: {},
   refreshing: {},
 };
@@ -71,7 +59,6 @@ const addReply = (
     siblings.splice(index + 1, 0, id);
     state.inReplyTos[id] = in_reply_to_id;
   }
->>>>>>> v4.5.0
 };
 
 const normalizeContext = (
@@ -79,34 +66,6 @@ const normalizeContext = (
   id: string,
   { ancestors, descendants }: ApiContextJSON,
 ): void => {
-<<<<<<< HEAD
-  const addReply = ({
-    id,
-    in_reply_to_id,
-  }: {
-    id: string;
-    in_reply_to_id?: string;
-  }) => {
-    if (!in_reply_to_id) {
-      return;
-    }
-
-    if (!state.inReplyTos[id]) {
-      const siblings = (state.replies[in_reply_to_id] ??= []);
-      const index = siblings.findIndex((sibling) => compareId(sibling, id) < 0);
-      siblings.splice(index + 1, 0, id);
-      state.inReplyTos[id] = in_reply_to_id;
-    }
-  };
-
-  // We know in_reply_to_id of statuses but `id` itself.
-  // So we assume that the status of the id replies to last ancestors.
-
-  ancestors.forEach(addReply);
-
-  if (ancestors[0]) {
-    addReply({
-=======
   ancestors.forEach((item) => {
     addReply(state, item);
   });
@@ -115,15 +74,11 @@ const normalizeContext = (
   // So we assume that the status of the id replies to last ancestors.
   if (ancestors[0]) {
     addReply(state, {
->>>>>>> v4.5.0
       id,
       in_reply_to_id: ancestors[ancestors.length - 1]?.id,
     });
   }
 
-<<<<<<< HEAD
-  descendants.forEach(addReply);
-=======
   descendants.forEach((item) => {
     addReply(state, item);
   });
@@ -154,7 +109,6 @@ const storePrefetchedReplies = (
       pendingReplies.push({ id, in_reply_to_id });
     }
   });
->>>>>>> v4.5.0
 };
 
 const deleteFromContexts = (state: Draft<State>, ids: string[]): void => {
@@ -212,9 +166,6 @@ const updateContext = (state: Draft<State>, status: ApiStatusJSON): void => {
 export const contextsReducer = createReducer(initialState, (builder) => {
   builder
     .addCase(fetchContext.fulfilled, (state, action) => {
-<<<<<<< HEAD
-      normalizeContext(state, action.meta.arg.statusId, action.payload.context);
-=======
       const currentReplies = state.replies[action.meta.arg.statusId] ?? [];
       const hasReplies = currentReplies.length > 0;
       // Ignore prefetchOnly if there are no replies - then we can load them immediately
@@ -244,7 +195,6 @@ export const contextsReducer = createReducer(initialState, (builder) => {
     })
     .addCase(completeContextRefresh, (state, action) => {
       delete state.refreshing[action.payload.statusId];
->>>>>>> v4.5.0
     })
     .addCase(blockAccountSuccess, (state, action) => {
       filterContexts(

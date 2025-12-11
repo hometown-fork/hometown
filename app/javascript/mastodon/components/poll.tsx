@@ -8,21 +8,12 @@ import classNames from 'classnames';
 import { animated, useSpring } from '@react-spring/web';
 import escapeTextContentForBrowser from 'escape-html';
 
-<<<<<<< HEAD
-=======
 import { EmojiHTML } from '@/mastodon/components/emoji/html';
->>>>>>> v4.5.0
 import CheckIcon from '@/material-icons/400-24px/check.svg?react';
 import { openModal } from 'mastodon/actions/modal';
 import { fetchPoll, vote } from 'mastodon/actions/polls';
 import { Icon } from 'mastodon/components/icon';
-<<<<<<< HEAD
-import emojify from 'mastodon/features/emoji/emoji';
 import { useIdentity } from 'mastodon/identity_context';
-import { makeEmojiMap } from 'mastodon/models/custom_emoji';
-=======
-import { useIdentity } from 'mastodon/identity_context';
->>>>>>> v4.5.0
 import type * as Model from 'mastodon/models/poll';
 import type { Status } from 'mastodon/models/status';
 import { useAppDispatch, useAppSelector } from 'mastodon/store';
@@ -117,10 +108,6 @@ export const Poll: React.FC<PollProps> = ({ pollId, disabled, status }) => {
         openModal({
           modalType: 'INTERACTION',
           modalProps: {
-<<<<<<< HEAD
-            type: 'vote',
-=======
->>>>>>> v4.5.0
             accountId: status.getIn(['account', 'id']),
             url: status.get('uri'),
           },
@@ -246,20 +233,11 @@ const PollOption: React.FC<PollOptionProps> = (props) => {
     let titleHtml = option.translation?.titleHtml ?? option.titleHtml;
 
     if (!titleHtml) {
-<<<<<<< HEAD
-      const emojiMap = makeEmojiMap(poll.emojis);
-      titleHtml = emojify(escapeTextContentForBrowser(title), emojiMap);
-    }
-
-    return titleHtml;
-  }, [option, poll, title]);
-=======
       titleHtml = escapeTextContentForBrowser(title);
     }
 
     return titleHtml;
   }, [option, title]);
->>>>>>> v4.5.0
 
   // Handlers
   const handleOptionChange = useCallback(() => {
@@ -325,18 +303,11 @@ const PollOption: React.FC<PollOptionProps> = (props) => {
           </span>
         )}
 
-<<<<<<< HEAD
-        <span
-          className='poll__option__text translate'
-          lang={lang}
-          dangerouslySetInnerHTML={{ __html: titleHtml }}
-=======
         <EmojiHTML
           className='poll__option__text translate'
           lang={lang}
           htmlString={titleHtml}
           extraEmojis={poll.emojis}
->>>>>>> v4.5.0
         />
 
         {!!voted && (

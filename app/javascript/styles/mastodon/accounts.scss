@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-=======
 @use 'sass:color';
->>>>>>> v4.5.0
 @use 'variables' as *;
 @use 'functions' as *;
 
@@ -165,11 +162,7 @@
 
 .nothing-here {
   background: $ui-base-color;
-<<<<<<< HEAD
-  box-shadow: 0 0 15px rgba($base-shadow-color, 0.2);
-=======
   box-shadow: 0 0 15px color.change($base-shadow-color, $alpha: 0.2);
->>>>>>> v4.5.0
   color: $darker-text-color;
   font-size: 14px;
   font-weight: 500;

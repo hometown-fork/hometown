@@ -57,22 +57,15 @@ cy:
         setting_advanced_layout: Dangos Mastodon fel cynllun aml-golofn, sy'n eich galluogi i weld y llinell amser, hysbysiadau, a thrydedd golofn o'ch dewis chi. Nid gyfer sgriniau llai.
         setting_aggregate_reblogs: Peidiwch â dangos hybiau newydd ar bostiadau sydd wedi cael eu hybu'n ddiweddar (dim ond yn effeithio ar hybiau newydd ei dderbyn)
         setting_always_send_emails: Fel arfer ni fydd hysbysiadau e-bost yn cael eu hanfon pan fyddwch chi wrthi'n defnyddio Mastodon
-<<<<<<< HEAD
-        setting_default_quote_policy: Mae defnyddwyr sy'n cael eu crybwyll yn cael dyfynnu bob amser. Dim ond ar gyfer postiadau a grëwyd gyda'r fersiwn nesaf o Mastodon y bydd y gosodiad hwn yn dod i rym, ond gallwch ddewis eich dewis wrth baratoi
-=======
         setting_boost_modal: Pan fydd wedi'i alluogi, bydd hybu'n agor deialog cadarnhau yn gyntaf lle gallwch newid gwelededd eich hwb.
         setting_default_quote_policy_private: Does dim modd dyfynnu postiadau sydd wedi'u hysgrifennu ar Mastodon ar gyfer dim ond dilynwyr.
         setting_default_quote_policy_unlisted: Pan fydd pobl yn eich dyfynnu, bydd eu postiad hefyd yn cael ei guddio rhag llinellau amser sy'n trendio.
->>>>>>> v4.5.0
         setting_default_sensitive: Mae cyfryngau sensitif wedi'u cuddio yn rhagosodedig a gellir eu datgelu trwy glicio
         setting_display_media_default: Cuddio cyfryngau wedi eu marcio'n sensitif
         setting_display_media_hide_all: Cuddio cyfryngau bob tro
         setting_display_media_show_all: Dangos cyfryngau bob tro
-<<<<<<< HEAD
-=======
         setting_emoji_style: Sut i arddangos emojis. Bydd "Awto" yn ceisio defnyddio emoji cynhenid, ond mae'n disgyn yn ôl i Twemoji ar gyfer porwyr traddodiadol.
         setting_quick_boosting_html: Pan fydd wedi'i alluogi, bydd clicio ar yr eicon Hwb %{boost_icon} yn rhoi hwb ar unwaith yn lle agor y gwymplen hwb/dyfynnu. Mae'n symud y weithred dyfynnu i'r ddewislen %{options_icon} (Dewisiadau).
->>>>>>> v4.5.0
         setting_system_scrollbars_ui: Yn berthnasol i borwyr bwrdd gwaith yn seiliedig ar Safari a Chrome yn unig
         setting_use_blurhash: Mae graddiannau wedi'u seilio ar liwiau'r delweddau cudd ond maen nhw'n cuddio unrhyw fanylion
         setting_use_pending_items: Cuddio diweddariadau llinell amser y tu ôl i glic yn lle sgrolio'n awtomatig
@@ -161,21 +154,12 @@ cy:
       user:
         chosen_languages: Wedi eu dewis, dim ond tŵtiau yn yr ieithoedd hyn bydd yn cael eu harddangos mewn ffrydiau cyhoeddus
         date_of_birth:
-<<<<<<< HEAD
-          few: Mae'n rhai i ni wneud yn siŵr eich bod o leiaf yn %{count} i ddefnyddio Mastodon. Fyddwn ni ddim yn cadw hwn.
-          many: Mae'n rhai i ni wneud yn siŵr eich bod o leiaf yn %{count} i ddefnyddio Mastodon. Fyddwn ni ddim yn cadw hwn.
-          one: Mae'n rhai i ni wneud yn siŵr eich bod o leiaf yn %{count} i ddefnyddio Mastodon. Fyddwn ni ddim yn cadw hwn.
-          other: Mae'n rhai i ni wneud yn siŵr eich bod o leiaf yn %{count} i ddefnyddio Mastodon. Fyddwn ni ddim yn cadw hwn.
-          two: Mae'n rhai i ni wneud yn siŵr eich bod o leiaf yn %{count} i ddefnyddio Mastodon. Fyddwn ni ddim yn cadw hwn.
-          zero: Gwnewch yn siŵr eich bod o leiaf yn %{count} i ddefnyddio Mastodon. Fyddwn ni ddim yn cadw hwn.
-=======
           few: Mae'n rhaid i ni sicrhau eich bod chi yn o leiaf %{count} oed i ddefnyddio %{domain}. Fyddwn ni ddim yn cadw hyn.
           many: Mae'n rhaid i ni sicrhau eich bod chi yn o leiaf %{count} oed i ddefnyddio %{domain}. Fyddwn ni ddim yn cadw hyn.
           one: Mae'n rhaid i ni sicrhau eich bod chi yn o leiaf %{count} oed i ddefnyddio %{domain}. Fyddwn ni ddim yn cadw hyn.
           other: Mae'n rhaid i ni sicrhau eich bod chi yn o leiaf %{count} oed i ddefnyddio %{domain}. Fyddwn ni ddim yn cadw hyn.
           two: Mae'n rhaid i ni sicrhau eich bod chi yn o leiaf %{count} oed i ddefnyddio %{domain}. Fyddwn ni ddim yn cadw hyn.
           zero: Mae'n rhaid i ni sicrhau eich bod chi yn o leiaf %{count} oed i ddefnyddio %{domain}. Fyddwn ni ddim yn cadw hyn.
->>>>>>> v4.5.0
         role: Mae'r rôl yn rheoli pa ganiatâd sydd gan y defnyddiwr.
       user_role:
         color: Lliw i'w ddefnyddio ar gyfer y rôl drwy'r UI, fel RGB mewn fformat hecs
@@ -259,11 +243,7 @@ cy:
         setting_auto_play_gif: Chwarae GIFs wedi'u hanimeiddio yn awtomatig
         setting_boost_modal: Rheoli hybu gwelededd
         setting_default_language: Iaith postio
-<<<<<<< HEAD
-        setting_default_privacy: Preifatrwydd cyhoeddi
-=======
         setting_default_privacy: Gwelededd postio
->>>>>>> v4.5.0
         setting_default_quote_policy: Pwy sy'n gallu dyfynnu
         setting_default_sensitive: Marcio cyfryngau fel eu bod yn sensitif bob tro
         setting_delete_modal: Rhybuddio fi cyn dileu postiad
@@ -276,12 +256,8 @@ cy:
         setting_emoji_style: Arddull Emojis
         setting_expand_spoilers: Dangos postiadau wedi'u marcio â rhybudd cynnwys bob tro
         setting_hide_network: Cuddio eich graff cymdeithasol
-<<<<<<< HEAD
-        setting_missing_alt_text_modal: Dangos deialog cadarnhau cyn postio cyfrwng heb destun amgen
-=======
         setting_missing_alt_text_modal: Rhybuddio fi cyn postio cyfryngau heb destun amgen
         setting_quick_boosting: Galluogi hybu cyflym
->>>>>>> v4.5.0
         setting_reduce_motion: Lleihau mudiant mewn animeiddiadau
         setting_system_font_ui: Defnyddio ffont rhagosodedig y system
         setting_system_scrollbars_ui: Defnyddiwch far sgrolio rhagosodedig y system

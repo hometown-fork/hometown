@@ -493,15 +493,10 @@ et:
           delete: Kustuta
           ip: IP-aadress
           request_body: Päringu sisu
-<<<<<<< HEAD
-      providers:
-        active: Aktiivne
-=======
           title: Veaotsingu tagasikutsepäringud
       providers:
         active: Aktiivne
         base_url: Baas-URL
->>>>>>> v4.5.0
         callback: Pöördliiklus
         delete: Kustuta
         edit: Muuda teenusepakkujat
@@ -516,10 +511,7 @@ et:
           reject: Keeldu
           title: Kinnita FASP-i registreerimine
         save: Salvesta
-<<<<<<< HEAD
-=======
         select_capabilities: Vali oskused
->>>>>>> v4.5.0
         sign_in: Logi sisse
         status: Olek
         title: Täiendavad teenusepakkujad Födiversumis (FASP - Fediverse Auxiliary Service Providers)
@@ -819,10 +811,7 @@ et:
       title: Serveri reeglid
       translation: Tõlge
       translations: Tõlked
-<<<<<<< HEAD
-=======
       translations_explanation: Soovi korral võid lisada reeglitele tõlkeid. Kui tõlget pole, siis kuvatakse vaikimisi väärtust. Palun taga alati, et tõlke sisu oleks sünkroonis vaikimisi reegli sisuga.
->>>>>>> v4.5.0
     settings:
       about:
         manage_rules: Halda serveri reegleid
@@ -932,10 +921,7 @@ et:
       title: Postitus kontolt - @%{name}
       trending: Populaarne
       view_publicly: Nähtav avalikult
-<<<<<<< HEAD
-=======
       view_quoted_post: Vaata tsiteeritud postitust
->>>>>>> v4.5.0
       visibility: Nähtavus
       with_media: Meediaga
     strikes:
@@ -1026,16 +1012,12 @@ et:
         chance_to_review_html: "<strong>Loodud teenusetingimusi ei avaldata automaatselt.</strong> Sul on võimalus tulemused üle vaadata. Palun täida vajalikud andmed, et jätkata."
         explanation_html: Esitatud teenusetingimuste näidis on mõeldud ainult teavitamise eesmärgil ja seda ei tohiks tõlgendada kui juriidilist nõuannet mis tahes küsimuses. Palun konsulteeri olukorra ja konkreetsete juriidiliste küsimuste osas oma õigusnõustajaga.
         title: Teenuse tingimuste seadistamine
-<<<<<<< HEAD
-      history: Ajalugu
-=======
       going_live_on_html: Avaldatud ja kehtib alates %{date}
       history: Ajalugu
       live: Avaldatud
       no_history: Teenuse tingimustesl pole veel salvestatud muudatusi.
       no_terms_of_service_html: Hetkel pole sa selle serveri kasutustingimusi kirjeldanud. Kasutustingimused tagavad kõikidele osapooltele selguse ja kautsevad sind kasutajatega seotud võimalike vaidluste korral.
       notified_on_html: 'Kasutajad on teavitatud: %{date}'
->>>>>>> v4.5.0
       notify_users: Teata kasutajatele
       preview:
         explanation_html: 'See e-kiri saadetakse <strong>%{display_count}-le kasutajale</strong>, kes olid liitunud enne %{date}. E-kirjas sisaldub järgnev tekst:'
@@ -1043,15 +1025,10 @@ et:
         send_to_all:
           one: Saada %{display_count} e-kiri
           other: Saada %{display_count} e-kirja
-<<<<<<< HEAD
-      publish: Postita
-      published_on_html: Postitatud %{date}
-=======
         title: Teenuse teadaande eelvaade
       publish: Postita
       published_on_html: Postitatud %{date}
       save_draft: Salvesta kavandina
->>>>>>> v4.5.0
       title: Kasutustingimused
     title: Administreerimine
     trends:
@@ -1302,11 +1279,7 @@ et:
     security: Turvalisus
     set_new_password: Uue salasõna määramine
     setup:
-<<<<<<< HEAD
-      email_below_hint_html: Kontrolli rämpsposti kausta või taotle uut. Saad oma e-posti aadressi parandada, kui see on vale.
-=======
       email_below_hint_html: Kontrolli rämpsposti kausta või palu uue kirja saatmist. Kui sinu e-posti aadress on vale, siis saad seda parandada.
->>>>>>> v4.5.0
       email_settings_hint_html: Klõpsa aadressile %{email} saadetud linki, et alustada Mastodoni kasutamist. Me oleme ootel.
       link_not_received: Kas ei saanud linki?
       new_confirmation_instructions_sent: Saad mõne minuti pärast uue kinnituslingiga e-kirja!
@@ -1450,11 +1423,7 @@ et:
     csv: CSV
     domain_blocks: Domeeni blokeeringud
     lists: Loetelud
-<<<<<<< HEAD
-    mutes: Oled vaigistanud
-=======
     mutes: Oled summutanud
->>>>>>> v4.5.0
     storage: Meedia hoidla
   featured_tags:
     add_new: Lisa uus
@@ -1559,13 +1528,8 @@ et:
         one: Oled <strong>asendamas oma loetelusid</strong> faili <strong>%{filename}</strong> sisuga. Uutesse loeteludesse lisatakse kuni <strong>%{count} konto</strong>.
         other: Oled <strong>asendamas oma loetelusid</strong> faili <strong>%{filename}</strong> sisuga. Uutesse loeteludesse lisatakse kuni <strong>%{count} kontot</strong>.
       muting_html:
-<<<<<<< HEAD
-        one: Oled <strong>asendamas oma vaigistatud kontode loetelu</strong> faili <strong>%{filename}</strong> sisuga, milles on kuni <strong>%{count} konto</strong>.
-        other: Oled <strong>asendamas oma vaigistatud kontode loetelu</strong> faili <strong>%{filename}</strong> sisuga, milles on kuni <strong>%{count} kontot</strong>.
-=======
         one: Oled <strong>asendamas oma summutatud kontode loetelu</strong> faili <strong>%{filename}</strong> sisuga, milles on kuni <strong>%{count} konto</strong>.
         other: Oled <strong>asendamas oma summutatud kontode loetelu</strong> faili <strong>%{filename}</strong> sisuga, milles on kuni <strong>%{count} kontot</strong>.
->>>>>>> v4.5.0
     preambles:
       blocking_html:
         one: Oled <strong>blokeerimas</strong> kuni <strong>%{count} konto</strong> failist <strong>%{filename}</strong>.
@@ -1583,13 +1547,8 @@ et:
         one: Oled lisamas oma <strong>loeteludesse</strong> failist <strong>%{filename}</strong> kuni <strong>%{count} konto</strong>. Kui pole loetelusi, kuhu lisada, luuakse uued loetelud.
         other: Oled lisamas oma <strong>loeteludesse</strong> failist <strong>%{filename}</strong> kuni <strong>%{count} kontot</strong>. Kui pole loetelusi, kuhu lisada, luuakse uued loetelud.
       muting_html:
-<<<<<<< HEAD
-        one: Oled <strong>vaigistamas</strong> kuni <strong>%{count} konto</strong> failist <strong>%{filename}</strong>.
-        other: Oled <strong>vaigistamas</strong> kuni <strong>%{count} kontot</strong> failist <strong>%{filename}</strong>.
-=======
         one: Oled <strong>summutamas</strong> kuni <strong>%{count} konto</strong> failist <strong>%{filename}</strong>.
         other: Oled <strong>summutamas</strong> kuni <strong>%{count} kontot</strong> failist <strong>%{filename}</strong>.
->>>>>>> v4.5.0
     preface: Saad importida mistahes andmeid, mis on eksporditud teisest serverist. Näiteks nimekirja inimestest, keda jälgid ja keda blokeerid.
     recent_imports: Viimati imporditud
     states:
@@ -1977,12 +1936,6 @@ et:
       limit: Kinnitatud on juba maksimaalne arv postitusi
       ownership: Kellegi teise postitust ei saa kinnitada
       reblog: Jagamist ei saa kinnitada
-<<<<<<< HEAD
-    quote_policies:
-      followers: Jälgijad ja mainitud kasutajad
-      nobody: Vaid mainitud kasutajad
-      public: Kõik
-=======
     quote_error:
       not_available: Postitus pole saadaval
       pending_approval: Postitus on ootel
@@ -1992,21 +1945,14 @@ et:
       nobody: Ainult mina
       public: Kõik
     quote_post_author: Tsiteeris kasutaja %{acct} postitust
->>>>>>> v4.5.0
     title: '%{name}: "%{quote}"'
     visibilities:
       direct: Privaatne mainimine
       private: Ainult jälgijad
       public: Avalik
-<<<<<<< HEAD
-      public_long: Postitused on kõigile näha
-      unlisted: Ajajooneväline
-      unlisted_long: Kõigile näha, kuid ei näidata avalikel ajajoontel
-=======
       public_long: Nii kasutajad kui mittekasutajad
       unlisted: Vaikselt avalik
       unlisted_long: Peidetud Mastodoni otsingutulemustest, pupulaarsust koguva sisu voost ja avalikult ajajoonelt
->>>>>>> v4.5.0
   statuses_cleanup:
     enabled: Vanade postituste automaatne kustutamine
     enabled_hint: Kustutab automaatselt postitused, mis ületavad määratud ajalimiiti, välja arvatud allpool toodud erandite puhul
@@ -2125,11 +2071,8 @@ et:
     terms_of_service_changed:
       agreement: Jätkates %{domain} teenuse kasutamisega nõustud sa kasutustingimustega. Kui sa pole tingimustega nõus, siis võid oma kasutajakonto kustutamisega lepingu %{domain} saidiga alati lõpetada.
       changelog: 'Selle uuenduse ülevaade sinu jaoks:'
-<<<<<<< HEAD
-=======
       description: 'Sa oled saanud selle teavituskirja, kuna oleme muutnud %{domain} teenuse kasutustingimusi. Muudatused jõustuvad %{date}. Me soovitame, et vaatad muutunud tingimuste täisteksti üle siin:'
       description_html: Sa oled saanud selle teavituskirja, kuna oleme muutnud %{domain} teenuse kasutustingimusi. Muudatused jõustuvad <strong>%{date}</strong>. Me soovitame, et vaatad <a href="%{path}" target="_blank">muutunud tingimuste täisteksti üle siin</a>.
->>>>>>> v4.5.0
       sign_off: "%{domain} saidi tiim"
       subject: Meie kasutustingimuste uuendused
       subtitle: "%{domain} saidi kasutustingimused muutuvad"

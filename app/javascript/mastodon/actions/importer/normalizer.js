@@ -1,11 +1,5 @@
 import escapeTextContentForBrowser from 'escape-html';
 
-<<<<<<< HEAD
-import { makeEmojiMap } from 'mastodon/models/custom_emoji';
-
-import emojify from '../../features/emoji/emoji';
-=======
->>>>>>> v4.5.0
 import { expandSpoilers } from '../../initial_state';
 
 const domParser = new DOMParser();
@@ -97,14 +91,11 @@ export function normalizeStatus(status, normalOldStatus) {
     normalStatus.spoilerHtml  = escapeTextContentForBrowser(spoilerText);
     normalStatus.hidden       = expandSpoilers ? false : spoilerText.length > 0 || normalStatus.sensitive;
 
-<<<<<<< HEAD
-=======
     // Remove quote fallback link from the DOM so it doesn't mess with paragraph margins
     if (normalStatus.quote) {
       normalStatus.contentHtml = stripQuoteFallback(normalStatus.contentHtml);
     }
 
->>>>>>> v4.5.0
     if (normalStatus.url && !(normalStatus.url.startsWith('http://') || normalStatus.url.startsWith('https://'))) {
       normalStatus.url = null;
     }
@@ -142,14 +133,11 @@ export function normalizeStatusTranslation(translation, status) {
     spoiler_text: translation.spoiler_text,
   };
 
-<<<<<<< HEAD
-=======
   // Remove quote fallback link from the DOM so it doesn't mess with paragraph margins
   if (status.get('quote')) {
     normalTranslation.contentHtml = stripQuoteFallback(normalTranslation.contentHtml);
   }
 
->>>>>>> v4.5.0
   return normalTranslation;
 }
 

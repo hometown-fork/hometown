@@ -15,10 +15,7 @@ import { synchronouslySubmitMarkers, submitMarkers, fetchMarkers } from 'mastodo
 import { fetchNotifications } from 'mastodon/actions/notification_groups';
 import { INTRODUCTION_VERSION } from 'mastodon/actions/onboarding';
 import { AlertsController } from 'mastodon/components/alerts_controller';
-<<<<<<< HEAD
-=======
 import { Hotkeys } from 'mastodon/components/hotkeys';
->>>>>>> v4.5.0
 import { HoverCardController } from 'mastodon/components/hover_card_controller';
 import { PictureInPicture } from 'mastodon/features/picture_in_picture';
 import { identityContextPropShape, withIdentity } from 'mastodon/identity_context';
@@ -78,10 +75,7 @@ import {
   PrivacyPolicy,
   TermsOfService,
   AccountFeatured,
-<<<<<<< HEAD
-=======
   Quotes,
->>>>>>> v4.5.0
 } from './util/async-components';
 import { ColumnsContextProvider } from './util/columns_context';
 import { focusColumn, getFocusedItemIndex, focusItemSibling } from './util/focusUtils';
@@ -105,43 +99,6 @@ const mapStateToProps = state => ({
   username: state.getIn(['accounts', me, 'username']),
 });
 
-<<<<<<< HEAD
-const keyMap = {
-  help: '?',
-  new: 'n',
-  search: ['s', '/'],
-  forceNew: 'option+n',
-  toggleComposeSpoilers: 'option+x',
-  focusColumn: ['1', '2', '3', '4', '5', '6', '7', '8', '9'],
-  reply: 'r',
-  favourite: 'f',
-  boost: 'b',
-  mention: 'm',
-  open: ['enter', 'o'],
-  openProfile: 'p',
-  moveDown: ['down', 'j'],
-  moveUp: ['up', 'k'],
-  back: 'backspace',
-  goToHome: 'g h',
-  goToNotifications: 'g n',
-  goToLocal: 'g l',
-  goToFederated: 'g t',
-  goToDirect: 'g d',
-  goToStart: 'g s',
-  goToFavourites: 'g f',
-  goToPinned: 'g p',
-  goToProfile: 'g u',
-  goToBlocked: 'g b',
-  goToMuted: 'g m',
-  goToRequests: 'g r',
-  toggleHidden: 'x',
-  toggleSensitive: 'h',
-  openMedia: 'e',
-  onTranslate: 't',
-};
-
-=======
->>>>>>> v4.5.0
 class SwitchingColumnsArea extends PureComponent {
   static propTypes = {
     identity: identityContextPropShape,
@@ -192,15 +149,13 @@ class SwitchingColumnsArea extends PureComponent {
       redirect = <Redirect from='/' to={`/@${initialState.accounts[owner].username}`} exact />;
     } else if (trendsEnabled && landingPage === 'trends') {
       redirect = <Redirect from='/' to='/explore' exact />;
-<<<<<<< HEAD
+    }
       // Hometown: if signed-out landing page is the about page, don't render the app shell, just redirect
     } else if (window.location.pathname === '/' || window.location.pathname === '') {
       window.location = '/about';
       return null;
-=======
     } else if (localLiveFeedAccess === 'public' && landingPage === 'local_feed') {
       redirect = <Redirect from='/' to='/public/local' exact />;
->>>>>>> v4.5.0
     } else {
       redirect = <Redirect from='/' to='/about' exact />;
     }
@@ -518,8 +473,6 @@ class UI extends PureComponent {
     }
   };
 
-<<<<<<< HEAD
-=======
   handleMoveDown = () => {
     const currentItemIndex = getFocusedItemIndex();
     if (currentItemIndex === -1) {
@@ -532,7 +485,6 @@ class UI extends PureComponent {
     }
   };
 
->>>>>>> v4.5.0
   handleHotkeyBack = e => {
     e.preventDefault();
 

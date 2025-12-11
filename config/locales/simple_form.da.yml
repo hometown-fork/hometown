@@ -9,13 +9,8 @@ da:
         fields: Din hjemmeside, dine pronominer, din alder, eller hvad du har lyst til.
         indexable: Dine offentlige indlæg vil kunne vises i Mastodon-søgeresultater. Folk, som har interageret med dem, vil kunne finde dem uanset.
         note: 'Du kan @omtale andre personer eller #hashtags.'
-<<<<<<< HEAD
-        show_collections: Folk vil ikke kunne tjekke dine Følger og Følgere. Folk, du selv følger, vil stadig kunne se dette.
-        unlocked: Man vil kunne følges af folk uden først at godkende dem. Ønsker man at gennemgå Følg-anmodninger og individuelt acceptere/afvise nye følgere, så fjern markeringen.
-=======
         show_collections: Folk vil kunne se, hvem du følger, og hvem der følger dig. Personer, som du følger, vil kunne se, at du følger dem.
         unlocked: Folk vil kunne følge dig uden at anmode om godkendelse. Fjern markeringen, hvis du vil gennemgå anmodninger om at følge, og vælge, om du vil acceptere eller afvise nye følgere.
->>>>>>> v4.5.0
       account_alias:
         acct: Angiv brugernavn@domain for den konto, hvorfra du vil flytte
       account_migration:
@@ -59,29 +54,19 @@ da:
         password: Brug mindst 8 tegn
         phrase: Matches uanset uanset brug af store/små bogstaver i teksten eller indholdsadvarsel for et indlæg
         scopes: De API'er, som applikationen vil kunne tilgå. Vælges en topniveaudstrækning, vil detailvalg være unødvendige.
-<<<<<<< HEAD
-        setting_aggregate_reblogs: Vis ikke nye fremhævelser for nyligt fremhævede indlæg (påvirker kun nyligt modtagne fremhævelser)
-        setting_always_send_emails: Normalt sendes ingen e-mailnotifikationer under aktivt brug af Mastodon
-        setting_default_quote_policy: Nævnte brugere har altid lov til at citere. Denne indstilling vil kun træde i kraft for indlæg oprettet med den næste Mastodon-version, men man kan som forberedelse vælge sin præference
-=======
         setting_advanced_layout: Vis Mastodon som et layout med flere kolonner, så du kan se tidslinjen, notifikationer og en tredje kolonne efter eget valg. Anbefales ikke til mindre skærme.
         setting_aggregate_reblogs: Vis ikke nye fremhævelser for nyligt fremhævede indlæg (påvirker kun nyligt modtagne fremhævelser)
         setting_always_send_emails: Normalt sendes ingen e-mailnotifikationer under aktivt brug af Mastodon
         setting_boost_modal: Når aktiveret, åbnes der ved fremhævelse først en bekræftelsesdialog, hvor du kan ændre synligheden af din fremhævelse.
         setting_default_quote_policy_private: Kun-følgere indlæg forfattet på Mastodon kan ikke citeres af andre.
         setting_default_quote_policy_unlisted: Når folk citerer dig, vil deres indlæg også blive skjult fra trendtidslinjer.
->>>>>>> v4.5.0
         setting_default_sensitive: Sensitive medier er som standard skjult og kan vises med et klik
         setting_display_media_default: Skjul medier med sensitiv-markering
         setting_display_media_hide_all: Skjul altid medier
         setting_display_media_show_all: Vis altid medier
-<<<<<<< HEAD
-        setting_system_scrollbars_ui: Gælder kun for computerwebbrowsere baseret på Safari og Chrome
-=======
         setting_emoji_style: Hvordan emojis skal vises. "Auto" vil forsøge at bruge indbyggede emojis, men skifter tilbage til Twemoji i ældre webbrowsere.
         setting_quick_boosting_html: Når aktiveret, vil klik på %{boost_icon} fremhæv-ikonet straks fremhæve i stedet for at åbne fremhæv/citér-foldudmenuen. Flytter citeringshandlingen til %{options_icon} menuen (Indstillinger).
         setting_system_scrollbars_ui: Gælder kun for desktop-browsere baseret på Safari og Chrome
->>>>>>> v4.5.0
         setting_use_blurhash: Gradienter er baseret på de skjulte grafikelementers farver, men slører alle detaljer
         setting_use_pending_items: Skjul tidslinjeopdateringer bag et klik i stedet for brug af auto-feedrulning
         username: Bogstaver, cifre og understregningstegn kan benyttes
@@ -169,13 +154,8 @@ da:
       user:
         chosen_languages: Når markeret, vil kun indlæg på de valgte sprog fremgå på offentlige tidslinjer
         date_of_birth:
-<<<<<<< HEAD
-          one: Vi er nødt til at sikre, at man er fyldt %{count} for at bruge Mastodon. Denne information gemmes ikke.
-          other: Vi er nødt til at sikre, at man er fyldt %{count} for at bruge Mastodon. Denne information gemmes ikke.
-=======
           one: Vi skal sikre os, at du er mindst %{count} for at kunne bruge %{domain}. Informationen gemmes ikke.
           other: Vi skal sikre os, at du er mindst %{count} for at kunne bruge %{domain}. Informationen gemmes ikke.
->>>>>>> v4.5.0
         role: Rollen styrer, hvilke tilladelser brugeren er tildelt.
       user_role:
         color: Farven, i RGB hex-format, der skal bruges til rollen i hele UI'en
@@ -257,17 +237,10 @@ da:
         setting_aggregate_reblogs: Gruppér fremhævelser på tidslinjer
         setting_always_send_emails: Send altid e-mailnotifikationer
         setting_auto_play_gif: Autoafspil animerede GIF'er
-<<<<<<< HEAD
-        setting_boost_modal: Vis bekræftelsesdialog inden fremhævelse
-        setting_default_language: Sprog for indlæg
-        setting_default_privacy: Fortrolighed for indlæg
-        setting_default_quote_policy: Hvem, som kan citere
-=======
         setting_boost_modal: Kontrollér synlighed af fremhævelse
         setting_default_language: Sprog for indlæg
         setting_default_privacy: Indlægssynlighed
         setting_default_quote_policy: Hvem kan citere
->>>>>>> v4.5.0
         setting_default_sensitive: Markér altid medier som sensitive
         setting_delete_modal: Advar mig før sletning af et indlæg
         setting_disable_hover_cards: Deaktivér profilforhåndsvisning ved svæv (hover)
@@ -276,17 +249,11 @@ da:
         setting_display_media_default: Standard
         setting_display_media_hide_all: Skjul alle
         setting_display_media_show_all: Vis alle
-<<<<<<< HEAD
-        setting_expand_spoilers: Udvid altid indlæg markeret med indholdsadvarsler
-        setting_hide_network: Skjul din sociale graf
-        setting_missing_alt_text_modal: Vis bekræftelsesdialog inden medier uden alt-tekst lægges op
-=======
         setting_emoji_style: Emoji-stil
         setting_expand_spoilers: Udvid altid indlæg markeret med indholdsadvarsler
         setting_hide_network: Skjul din sociale graf
         setting_missing_alt_text_modal: Advar mig, før medier uden alternativ tekst lægges op
         setting_quick_boosting: Aktivér hurtig fremhævelse
->>>>>>> v4.5.0
         setting_reduce_motion: Reducér animationsbevægelse
         setting_system_font_ui: Brug systemets standardskrifttype
         setting_system_scrollbars_ui: Brug standard systemrullebjælke
@@ -343,10 +310,6 @@ da:
         status_page_url: Statusside-URL
         theme: Standardtema
         thumbnail: Serverminiaturebillede
-<<<<<<< HEAD
-        timeline_preview: Tillad ikke-godkendt adgang til offentlige tidslinjer
-=======
->>>>>>> v4.5.0
         trendable_by_default: Tillad ikke-reviderede trends
         trends: Aktivér trends
       interactions:
@@ -373,10 +336,7 @@ da:
         follow_request: Nogen anmodede om at følge dig
         mention: Nogen omtalte dig
         pending_account: Ny konto kræver gennemgang
-<<<<<<< HEAD
-=======
         quote: Nogen citerede dig
->>>>>>> v4.5.0
         reblog: Nogen fremhævede dit indlæg
         report: Ny anmeldelse indsendt
         software_updates:

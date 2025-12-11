@@ -57,22 +57,15 @@ fi:
         setting_advanced_layout: Näytä Mastodon usean sarakkeen asetteluna, jossa voit tarkastella aikajanaa, ilmoituksia ja valitsemaasi kolmatta saraketta. Ei suositella pienemmille näytöille.
         setting_aggregate_reblogs: Älä näytä uusia tehostuksia julkaisuille, joita on äskettäin tehostettu (koskee vain juuri vastaanotettuja tehostuksia)
         setting_always_send_emails: Yleensä sähköposti-ilmoituksia ei lähetetä, kun käytät Mastodonia aktiivisesti
-<<<<<<< HEAD
-        setting_default_quote_policy: Mainitut käyttäjät saavat aina lainata. Tämä asetus koskee vain julkaisuja, jotka on luotu seuraavalla Mastodon-versiolla, mutta voit valita asetuksesi valmistautuaksesi
-=======
         setting_boost_modal: Kun käytössä, tehostaminen avaa ensin vahvistusikkunan, josta voit vaihtaa tehostuksesi näkyvyyttä.
         setting_default_quote_policy_private: Muut eivät voi lainata vain seuraajille tarkoitettuja, Mastodonissa kirjoitettuja julkaisuja.
         setting_default_quote_policy_unlisted: Kun ihmiset lainaavat sinua, heidän julkaisunsa piilotetaan suosittujen julkaisujen aikajanoilta.
->>>>>>> v4.5.0
         setting_default_sensitive: Arkaluonteinen media piilotetaan oletusarvoisesti, ja se voidaan näyttää yhdellä napsautuksella
         setting_display_media_default: Piilota arkaluonteiseksi merkitty mediasisältö
         setting_display_media_hide_all: Piilota mediasisältö aina
         setting_display_media_show_all: Näytä mediasisältö aina
-<<<<<<< HEAD
-=======
         setting_emoji_style: Miten emojit näkyvät. ”Automaattinen” pyrkii käyttämään natiiveja emojeita, mutta Twemoji-emojeita käytetään varavaihtoehtoina vanhoissa selaimissa.
         setting_quick_boosting_html: Kun käytössä, %{boost_icon} Tehosta-kuvakkeen painaminen tehostaa välittömästi sen sijaan, että Tehosta/Lainaa-pudotusvalikko avautuisi. Siirtää lainaustoiminnon %{options_icon} (Valinnat) -valikkoon.
->>>>>>> v4.5.0
         setting_system_scrollbars_ui: Koskee vain Safari- ja Chrome-pohjaisia työpöytäselaimia
         setting_use_blurhash: Liukuvärit perustuvat piilotettujen kuvien väreihin mutta sumentavat yksityiskohdat
         setting_use_pending_items: Piilota aikajanan päivitykset napsautuksen taakse syötteen automaattisen vierityksen sijaan
@@ -152,10 +145,7 @@ fi:
         admin_email: Oikeudellisiin ilmoituksiin kuuluvat vastailmoitukset, oikeuden määräykset, poistopyynnöt ja lainvalvontaviranomaisten pyynnöt.
         arbitration_address: Voi olla sama kuin edellä mainittu Fyysinen osoite tai ”N/A”, jos käytät sähköpostia.
         arbitration_website: Voi olla verkkolomake tai ”N/A”, jos käytät sähköpostia.
-<<<<<<< HEAD
-=======
         choice_of_law: Kaupunki, alue, territorio tai valtio, jonka sisäinen aineellinen oikeus säätelee kaikkia vaatimuksia.
->>>>>>> v4.5.0
         dmca_address: Yhdysvaltalaisten operaattoreiden on käytettävä DMCA Designated Agent Directory -luetteloon rekisteröityä osoitetta. Postilokeroluettelo on saatavissa suoralla pyynnöllä, joten käytä DMCA Designated Agent Post Office Box Waiver Request -lomaketta lähettääksesi sähköpostia tekijänoikeusvirastolle ja kuvaile, että olet kotona toimiva sisältömoderaattori, joka pelkää kostoa tai rangaistusta toimistaan ja tarvitsee postilokeroa pitääkseen kotiosoitteensa poissa julkisuudesta.
         dmca_email: Voi olla sama kuin edellä mainittu ”Sähköpostiosoite oikeudellisille ilmoituksille”.
         domain: Tarjoamasi verkkopalvelun yksilöllinen tunniste.
@@ -164,13 +154,8 @@ fi:
       user:
         chosen_languages: Jos valitset kieliä oheisesta luettelosta, vain niidenkieliset julkaisut näkyvät sinulle julkisilla aikajanoilla
         date_of_birth:
-<<<<<<< HEAD
-          one: Meidän on varmistettava, että olet vähintään %{count}, jotta voi käyttää Mastodonia. Emme tallenna tätä.
-          other: Meidän on varmistettava, että olet vähintään %{count}, jotta voi käyttää Mastodonia. Emme tallenna tätä.
-=======
           one: Meidän tulee varmistaa, että olet vähintään %{count}, jotta voit käyttää %{domain}. Emme tallenna tätä.
           other: Meidän tulee varmistaa, että olet vähintään %{count}, jotta voit käyttää %{domain}. Emme tallenna tätä.
->>>>>>> v4.5.0
         role: Rooli määrää, millaiset käyttöoikeudet käyttäjällä on.
       user_role:
         color: Väri, jota käytetään roolille kaikkialla käyttöliittymässä, RGB-heksadesimaalimuodossa
@@ -189,11 +174,7 @@ fi:
     labels:
       account:
         attribution_domains: Verkkosivustot, jotka voivat antaa sinulle tunnustusta
-<<<<<<< HEAD
-        discoverable: Pidä profiiliasi ja julkaisujasi esillä löytämisalgoritmeissa
-=======
         discoverable: Pidä profiiliasi ja julkaisujasi esillä löydettävyysalgoritmeissa
->>>>>>> v4.5.0
         fields:
           name: Nimike
           value: Sisältö
@@ -271,12 +252,8 @@ fi:
         setting_emoji_style: Emojityyli
         setting_expand_spoilers: Laajenna aina sisältövaroituksilla merkityt julkaisut
         setting_hide_network: Piilota verkostotietosi
-<<<<<<< HEAD
-        setting_missing_alt_text_modal: Näytä vahvistusikkuna ennen kuin julkaistaan mediaa ilman vaihtoehtoista tekstiä
-=======
         setting_missing_alt_text_modal: Varoita ennen kuin julkaisen mediaa ilman vaihtoehtoista tekstiä
         setting_quick_boosting: Ota nopea tehostus käyttöön
->>>>>>> v4.5.0
         setting_reduce_motion: Vähennä animaatioiden liikettä
         setting_system_font_ui: Käytä järjestelmän oletusfonttia
         setting_system_scrollbars_ui: Käytä järjestelmän oletusarvoista vierityspalkkia
@@ -388,10 +365,7 @@ fi:
         admin_email: Sähköpostiosoite oikeudellisille ilmoituksille
         arbitration_address: Fyysinen osoite välimiesmenettelyn ilmoituksille
         arbitration_website: Sähköpostiosoite välimiesmenettelyn ilmoituksille
-<<<<<<< HEAD
-=======
         choice_of_law: Sovellettava lainsäädäntö
->>>>>>> v4.5.0
         dmca_address: Fyysinen osoite DMCA-/tekijänoikeusilmoituksille
         dmca_email: Sähköpostiosoite DMCA-/tekijänoikeusilmoituksille
         domain: Verkkotunnus

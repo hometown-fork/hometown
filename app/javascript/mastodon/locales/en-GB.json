@@ -334,10 +334,7 @@
   "errors.unexpected_crash.copy_stacktrace": "Copy stacktrace to clipboard",
   "errors.unexpected_crash.report_issue": "Report issue",
   "explore.suggested_follows": "People",
-<<<<<<< HEAD
-=======
   "explore.title": "Trending",
->>>>>>> v4.5.0
   "explore.trending_links": "News",
   "explore.trending_statuses": "Posts",
   "explore.trending_tags": "Hashtags",
@@ -424,11 +421,6 @@
   "hints.profiles.see_more_followers": "See more followers on {domain}",
   "hints.profiles.see_more_follows": "See more follows on {domain}",
   "hints.profiles.see_more_posts": "See more posts on {domain}",
-<<<<<<< HEAD
-  "hints.threads.replies_may_be_missing": "Replies from other servers may be missing.",
-  "hints.threads.see_more": "See more replies on {domain}",
-=======
->>>>>>> v4.5.0
   "home.column_settings.show_quotes": "Show quotes",
   "home.column_settings.show_reblogs": "Show boosts",
   "home.column_settings.show_replies": "Show replies",
@@ -450,26 +442,10 @@
   "ignore_notifications_modal.private_mentions_title": "Ignore notifications from unsolicited Private Mentions?",
   "info_button.label": "Help",
   "info_button.what_is_alt_text": "<h1>What is alt text?</h1> <p>Alt text provides image descriptions for people with vision impairments, low-bandwidth connections, or those seeking extra context.</p> <p>You can improve accessibility and understanding for everyone by writing clear, concise, and objective alt text.</p> <ul> <li>Capture important elements</li> <li>Summarise text in images</li> <li>Use regular sentence structure</li> <li>Avoid redundant information</li> <li>Focus on trends and key findings in complex visuals (like diagrams or maps)</li> </ul>",
-<<<<<<< HEAD
-  "interaction_modal.action.favourite": "To continue, you need to favourite from your account.",
-  "interaction_modal.action.follow": "To continue, you need to follow from your account.",
-  "interaction_modal.action.reblog": "To continue, you need to reblog from your account.",
-  "interaction_modal.action.reply": "To continue, you need to reply from your account.",
-  "interaction_modal.action.vote": "To continue, you need to vote from your account.",
-=======
->>>>>>> v4.5.0
   "interaction_modal.go": "Go",
   "interaction_modal.no_account_yet": "Don't have an account yet?",
   "interaction_modal.on_another_server": "On a different server",
   "interaction_modal.on_this_server": "On this server",
-<<<<<<< HEAD
-  "interaction_modal.title.favourite": "Favourite {name}'s post",
-  "interaction_modal.title.follow": "Follow {name}",
-  "interaction_modal.title.reblog": "Boost {name}'s post",
-  "interaction_modal.title.reply": "Reply to {name}'s post",
-  "interaction_modal.title.vote": "Vote in {name}'s poll",
-=======
->>>>>>> v4.5.0
   "interaction_modal.username_prompt": "E.g. {example}",
   "intervals.full.days": "{number, plural, one {# day} other {# days}}",
   "intervals.full.hours": "{number, plural, one {# hour} other {# hours}}",
@@ -581,9 +557,6 @@
   "navigation_bar.mutes": "Muted users",
   "navigation_bar.opened_in_classic_interface": "Posts, accounts, and other specific pages are opened by default in the classic web interface.",
   "navigation_bar.preferences": "Preferences",
-<<<<<<< HEAD
-  "navigation_bar.search": "Search",
-=======
   "navigation_bar.privacy_and_reach": "Privacy and reach",
   "navigation_bar.search": "Search",
   "navigation_bar.search_trends": "Search / Trending",
@@ -591,7 +564,6 @@
   "navigation_panel.collapse_lists": "Collapse list menu",
   "navigation_panel.expand_followed_tags": "Expand followed hashtags menu",
   "navigation_panel.expand_lists": "Expand list menu",
->>>>>>> v4.5.0
   "not_signed_in_indicator.not_signed_in": "You need to sign in to access this resource.",
   "notification.admin.report": "{name} reported {target}",
   "notification.admin.report_account": "{name} reported {count, plural, one {one post} other {# posts}} from {target} for {category}",
@@ -885,15 +857,6 @@
   "status.open": "Expand this post",
   "status.pin": "Pin on profile",
   "status.quote_error.filtered": "Hidden due to one of your filters",
-<<<<<<< HEAD
-  "status.quote_error.not_found": "This post cannot be displayed.",
-  "status.quote_error.pending_approval": "This post is pending approval from the original author.",
-  "status.quote_error.rejected": "This post cannot be displayed as the original author does not allow it to be quoted.",
-  "status.quote_error.removed": "This post was removed by its author.",
-  "status.quote_error.unauthorized": "This post cannot be displayed as you are not authorised",
-  "status.quote_post_author": "Post by {name}",
-=======
->>>>>>> v4.5.0
   "status.read_more": "Read more",
   "status.reblog": "Boost",
   "status.reblogged_by": "{name} boosted",
@@ -924,11 +887,8 @@
   "tabs_bar.home": "Home",
   "tabs_bar.menu": "Menu",
   "tabs_bar.notifications": "Notifications",
-<<<<<<< HEAD
-=======
   "tabs_bar.publish": "New Post",
   "tabs_bar.search": "Search",
->>>>>>> v4.5.0
   "terms_of_service.effective_as_of": "Effective as of {date}",
   "terms_of_service.title": "Terms of Service",
   "terms_of_service.upcoming_changes_on": "Upcoming changes on {date}",

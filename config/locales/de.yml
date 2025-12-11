@@ -187,11 +187,7 @@ de:
         create_domain_block: Domain sperren
         create_email_domain_block: E-Mail-Domain-Sperre erstellen
         create_ip_block: IP-Regel erstellen
-<<<<<<< HEAD
-        create_relay: Relay erstellen
-=======
         create_relay: Relais erstellen
->>>>>>> v4.5.0
         create_unavailable_domain: Nicht verfügbare Domain erstellen
         create_user_role: Rolle erstellen
         create_username_block: Regel für Profilnamen erstellen
@@ -204,30 +200,18 @@ de:
         destroy_email_domain_block: E-Mail-Domain-Sperre entfernen
         destroy_instance: Domain-Daten entfernen
         destroy_ip_block: IP-Regel löschen
-<<<<<<< HEAD
-        destroy_relay: Relay löschen
-=======
         destroy_relay: Relais löschen
->>>>>>> v4.5.0
         destroy_status: Beitrag entfernen
         destroy_unavailable_domain: Nicht-verfügbare Domain entfernen
         destroy_user_role: Rolle entfernen
         destroy_username_block: Regel für Profilnamen löschen
         disable_2fa_user: 2FA deaktivieren
         disable_custom_emoji: Eigenes Emoji deaktivieren
-<<<<<<< HEAD
-        disable_relay: Relay deaktivieren
-        disable_sign_in_token_auth_user: E-Mail-Token-Authentisierung für dieses Konto deaktivieren
-        disable_user: Benutzer*in deaktivieren
-        enable_custom_emoji: Eigenes Emoji aktivieren
-        enable_relay: Relay aktivieren
-=======
         disable_relay: Relais deaktivieren
         disable_sign_in_token_auth_user: E-Mail-Token-Authentisierung für dieses Konto deaktivieren
         disable_user: Benutzer*in deaktivieren
         enable_custom_emoji: Eigenes Emoji aktivieren
         enable_relay: Relais aktivieren
->>>>>>> v4.5.0
         enable_sign_in_token_auth_user: E-Mail-Token-Authentisierung für dieses Konto aktivieren
         enable_user: Benutzer*in aktivieren
         memorialize_account: Gedenkkonto
@@ -284,30 +268,18 @@ de:
         destroy_email_domain_block_html: "%{name} entsperrte die E-Mail-Domain %{target}"
         destroy_instance_html: "%{name} entfernte die Daten der Domain %{target} von diesem Server"
         destroy_ip_block_html: "%{name} entfernte eine IP-Regel für %{target}"
-<<<<<<< HEAD
-        destroy_relay_html: "%{name} löschte das Relay %{target}"
-=======
         destroy_relay_html: "%{name} löschte das Relais %{target}"
->>>>>>> v4.5.0
         destroy_status_html: "%{name} entfernte einen Beitrag von %{target}"
         destroy_unavailable_domain_html: "%{name} nahm die Zustellung an die Domain %{target} wieder auf"
         destroy_user_role_html: "%{name} löschte die Rolle %{target}"
         destroy_username_block_html: "%{name} entfernte eine Regel für Profilnamen mit %{target}"
         disable_2fa_user_html: "%{name} deaktivierte die Zwei-Faktor-Authentisierung für %{target}"
         disable_custom_emoji_html: "%{name} deaktivierte das Emoji %{target}"
-<<<<<<< HEAD
-        disable_relay_html: "%{name} deaktivierte das Relay %{target}"
-        disable_sign_in_token_auth_user_html: "%{name} deaktivierte die E-Mail-Token-Authentisierung für %{target}"
-        disable_user_html: "%{name} deaktivierte den Zugang für %{target}"
-        enable_custom_emoji_html: "%{name} aktivierte das Emoji %{target}"
-        enable_relay_html: "%{name} aktivierte das Relay %{target}"
-=======
         disable_relay_html: "%{name} deaktivierte das Relais %{target}"
         disable_sign_in_token_auth_user_html: "%{name} deaktivierte die E-Mail-Token-Authentisierung für %{target}"
         disable_user_html: "%{name} deaktivierte den Zugang für %{target}"
         enable_custom_emoji_html: "%{name} aktivierte das Emoji %{target}"
         enable_relay_html: "%{name} aktivierte das Relais %{target}"
->>>>>>> v4.5.0
         enable_sign_in_token_auth_user_html: "%{name} aktivierte die E-Mail-Token-Authentisierung für %{target}"
         enable_user_html: "%{name} aktivierte den Zugang für %{target}"
         memorialize_account_html: "%{name} wandelte das Konto von %{target} in eine Gedenkseite um"
@@ -867,11 +839,7 @@ de:
         title: Profile standardmäßig von der Suchmaschinen-Indizierung ausnehmen
       discovery:
         follow_recommendations: Follower-Empfehlungen
-<<<<<<< HEAD
-        preamble: Das Auffinden interessanter Inhalte ist wichtig, um neue Nutzer einzubinden, die Mastodon noch nicht kennen. Bestimme, wie verschiedene Suchfunktionen auf deinem Server funktionieren.
-=======
         preamble: Interessante Inhalte sichtbar zu machen, ist entscheidend, um neue Nutzer*innen, die möglicherweise noch niemanden auf Mastodon kennen, zu gewinnen. Überprüfe, wie die einzelnen Suchfunktionen auf deinem Server funktionieren.
->>>>>>> v4.5.0
         privacy: Datenschutz
         profile_directory: Profilverzeichnis
         public_timelines: Öffentliche Timeline
@@ -953,10 +921,7 @@ de:
       title: Beiträge des Kontos – @%{name}
       trending: Trends
       view_publicly: Öffentlich anzeigen
-<<<<<<< HEAD
-=======
       view_quoted_post: Zitierten Beitrag anzeigen
->>>>>>> v4.5.0
       visibility: Sichtbarkeit
       with_media: Mit Medien
     strikes:
@@ -1008,11 +973,7 @@ de:
         message_html: Ein kritisches Mastodon-Update ist verfügbar – bitte aktualisiere so schnell wie möglich.
       software_version_patch_check:
         action: Verfügbare Updates ansehen
-<<<<<<< HEAD
-        message_html: Ein Mastodon-Update für Fehlerkorrekturen ist verfügbar.
-=======
         message_html: Ein Mastodon-Update mit Bugfixes ist verfügbar.
->>>>>>> v4.5.0
       upload_check_privacy_error:
         action: Für weitere Informationen hier klicken
         message_html: "<strong>Die Konfiguration deines Servers ist fehlerhaft. Die Privatsphäre deiner Benutzer*innen ist gefährdet.</strong>"
@@ -1343,11 +1304,7 @@ de:
     user_agreement_html: Ich stimme den <a href="%{terms_of_service_path}" target="_blank">Nutzungsbedingungen</a> sowie der <a href="%{privacy_policy_path}" target="_blank">Datenschutzerklärung</a> zu
     user_privacy_agreement_html: Ich stimme der <a href="%{privacy_policy_path}" target="_blank">Datenschutzerklärung</a> zu
   author_attribution:
-<<<<<<< HEAD
-    example_title: Beispieltext
-=======
     example_title: Beispieltitel
->>>>>>> v4.5.0
     hint_html: Schreibst du außerhalb von Mastodon journalistische Artikel oder andere Texte, beispielsweise in einem Blog? Lege hier fest, wann auf dein Profil verwiesen werden soll, wenn Links zu deinen Werken auf Mastodon geteilt werden.
     instructions: 'Der nachfolgende Code muss im HTML-Header deines zu verlinkenden Textes stehen:'
     more_from_html: Mehr von %{name}
@@ -1979,12 +1936,6 @@ de:
       limit: Du hast bereits die maximale Anzahl an Beiträgen angeheftet
       ownership: Du kannst nur eigene Beiträge anheften
       reblog: Du kannst keine geteilten Beiträge anheften
-<<<<<<< HEAD
-    quote_policies:
-      followers: Follower und erwähnte Profile
-      nobody: Nur erwähnte Profile
-      public: Alle
-=======
     quote_error:
       not_available: Beitrag nicht verfügbar
       pending_approval: Veröffentlichung ausstehend
@@ -1994,7 +1945,6 @@ de:
       nobody: Nur ich
       public: Alle
     quote_post_author: Zitierte %{acct}
->>>>>>> v4.5.0
     title: "%{name}: „%{quote}“"
     visibilities:
       direct: Private Erwähnung

@@ -6,11 +6,7 @@ import api from '../api';
 
 import { showAlert } from './alerts';
 import { ensureComposeIsVisible, setComposeToStatus } from './compose';
-<<<<<<< HEAD
-import { importFetchedStatus, importFetchedStatuses, importFetchedAccount } from './importer';
-=======
 import { importFetchedStatus, importFetchedAccount } from './importer';
->>>>>>> v4.5.0
 import { fetchContext } from './statuses_typed';
 import { deleteFromTimelines } from './timelines';
 
@@ -165,11 +161,7 @@ export function deleteStatus(id, withRedraft = false) {
 
     dispatch(deleteStatusRequest(id));
 
-<<<<<<< HEAD
-    api().delete(`/api/v1/statuses/${id}`, { params: { delete_media: !withRedraft } }).then(response => {
-=======
     return api().delete(`/api/v1/statuses/${id}`, { params: { delete_media: !withRedraft } }).then(response => {
->>>>>>> v4.5.0
       dispatch(deleteStatusSuccess(id));
       dispatch(deleteFromTimelines(id));
       dispatch(importFetchedAccount(response.data.account));

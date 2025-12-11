@@ -586,17 +586,10 @@ es-AR:
         title: Moderación
       moderation_notes:
         create: Agregar nota de moderación
-<<<<<<< HEAD
-        created_msg: "¡Nota de moderación de instancia creada!"
-        description_html: Ver y dejar notas para otros moderadores y a tu yo futuro
-        destroyed_msg: "¡Nota de moderación de instancia eliminada con éxito!"
-        placeholder: Información sobre esta instancia, acciones tomadas o cualquier otra cosa que te ayude a moderar esta instancia en el futuro.
-=======
         created_msg: "¡Nota de moderación de servidor creada exitosamente!"
         description_html: Ver y dejar notas para otros moderadores y como referencia futura
         destroyed_msg: "¡Nota de moderación de servidor eliminada exitosamente!"
         placeholder: Información sobre este servidor, acciones tomadas, o cualquier otra cosa que te ayude a moderar al mismo en el futuro.
->>>>>>> v4.5.0
         title: Notas de moderación
       private_comment: Comentario privado
       public_comment: Comentario público
@@ -928,10 +921,7 @@ es-AR:
       title: Mensajes de cuenta - @%{name}
       trending: En tendencia
       view_publicly: Ver públicamente
-<<<<<<< HEAD
-=======
       view_quoted_post: Ver mensaje citado
->>>>>>> v4.5.0
       visibility: Visibilidad
       with_media: Con medios
     strikes:
@@ -1946,12 +1936,6 @@ es-AR:
       limit: Ya fijaste el número máximo de mensajes
       ownership: No se puede fijar el mensaje de otra cuenta
       reblog: No se puede fijar una adhesión
-<<<<<<< HEAD
-    quote_policies:
-      followers: Seguidores y usuarios mencionados
-      nobody: Solo usuarios mencionados
-      public: Todos
-=======
     quote_error:
       not_available: Mensaje no disponible
       pending_approval: Mensaje pendiente
@@ -1961,7 +1945,6 @@ es-AR:
       nobody: Solo yo
       public: Cualquier cuenta
     quote_post_author: Se citó un mensaje de %{acct}
->>>>>>> v4.5.0
     title: '%{name}: "%{quote}"'
     visibilities:
       direct: Mención privada

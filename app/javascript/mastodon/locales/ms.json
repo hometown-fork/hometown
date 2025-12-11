@@ -222,11 +222,6 @@
   "confirmations.redraft.message": "Adakah anda pasti anda ingin memadam hantaran ini dan gubal semula? Sukaan dan galakan akan hilang, dan balasan ke hantaran asal akan menjadi yatim.",
   "confirmations.redraft.title": "Padam & gubah semula hantaran?",
   "confirmations.unfollow.confirm": "Nyahikut",
-<<<<<<< HEAD
-  "confirmations.unfollow.message": "Adakah anda pasti anda ingin nyahikuti {name}?",
-  "confirmations.unfollow.title": "Berhenti mengikut pengguna?",
-=======
->>>>>>> v4.5.0
   "content_warning.hide": "Sorok hantaran",
   "content_warning.show": "Tunjuk saja",
   "content_warning.show_more": "Tunjuk lebih",
@@ -376,18 +371,8 @@
   "home.pending_critical_update.link": "Lihat pengemaskinian",
   "home.pending_critical_update.title": "Kemas kini keselamatan kritikal tersedia!",
   "home.show_announcements": "Tunjukkan pengumuman",
-<<<<<<< HEAD
-  "interaction_modal.action.favourite": "Untuk sambung, anda perlu suka dari akaun anda.",
   "interaction_modal.on_another_server": "Di pelayan lain",
   "interaction_modal.on_this_server": "Pada pelayan ini",
-  "interaction_modal.title.favourite": "Suka hantaran {name}",
-  "interaction_modal.title.follow": "Ikuti {name}",
-  "interaction_modal.title.reblog": "Galak hantaran {name}",
-  "interaction_modal.title.reply": "Balas siaran {name}",
-=======
-  "interaction_modal.on_another_server": "Di pelayan lain",
-  "interaction_modal.on_this_server": "Pada pelayan ini",
->>>>>>> v4.5.0
   "intervals.full.days": "{number, plural, other {# hari}}",
   "intervals.full.hours": "{number, plural, other {# jam}}",
   "intervals.full.minutes": "{number, plural, other {# minit}}",
@@ -655,10 +640,6 @@
   "status.pin": "Semat di profil",
   "status.read_more": "Baca lagi",
   "status.reblog": "Galakkan",
-<<<<<<< HEAD
-  "status.reblog_private": "Galakkan dengan ketampakan asal",
-=======
->>>>>>> v4.5.0
   "status.reblogged_by": "{name} galakkan",
   "status.reblogs": "{count, plural, other {galakan}}",
   "status.reblogs.empty": "Tiada sesiapa yang galakkan hantaran ini. Apabila ada yang galakkan, hantaran akan muncul di sini.",

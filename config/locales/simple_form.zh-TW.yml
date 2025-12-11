@@ -57,22 +57,15 @@ zh-TW:
         setting_advanced_layout: 將 Mastodon 顯示為多欄位介面，使您能檢視時間軸、通知，以及您所選擇之第三欄位。不建議於較小的螢幕使用。
         setting_aggregate_reblogs: 不顯示最近已被轉嘟之嘟文的最新轉嘟（只影響最新收到的嘟文）
         setting_always_send_emails: 一般情況下若您活躍使用 Mastodon ，我們不會寄送電子郵件通知
-<<<<<<< HEAD
-        setting_default_quote_policy: 已提及使用者總是能引用嘟文。此設定將僅生效於下一版本 Mastodon 建立之嘟文，但您可以預先選好您的偏好設定
-=======
         setting_boost_modal: 當啟用時，轉嘟前將先開啟確認對話框，您能於其變更轉嘟之可見性。
         setting_default_quote_policy_private: Mastodon 上發佈之僅限跟隨者嘟文無法被其他使用者引用。
         setting_default_quote_policy_unlisted: 當其他人引用您時，他們的嘟文也會自熱門時間軸隱藏。
->>>>>>> v4.5.0
         setting_default_sensitive: 敏感內容媒體預設隱藏，且按一下即可重新顯示
         setting_display_media_default: 隱藏標為敏感內容的媒體
         setting_display_media_hide_all: 總是隱藏所有媒體
         setting_display_media_show_all: 總是顯示標為敏感內容的媒體
-<<<<<<< HEAD
-=======
         setting_emoji_style: 如何顯示 emoji 表情符號。「自動」將嘗試使用原生 emoji ，但於老式瀏覽器使用 Twemoji。
         setting_quick_boosting_html: 當啟用時，點擊 %{boost_icon} 轉嘟圖示將立即轉嘟而非開啟轉嘟/引用之下拉選單。將引用嘟文操作移至 %{options_icon} （選項）選單中。
->>>>>>> v4.5.0
         setting_system_scrollbars_ui: 僅套用至基於 Safari 或 Chrome 之桌面瀏覽器
         setting_use_blurhash: 彩色漸層圖樣是基於隱藏媒體內容顏色產生，所有細節將變得模糊
         setting_use_pending_items: 關閉自動捲動更新，時間軸僅於點擊後更新
@@ -161,11 +154,7 @@ zh-TW:
       user:
         chosen_languages: 當選取時，只有選取語言之嘟文會於公開時間軸中顯示
         date_of_birth:
-<<<<<<< HEAD
-          other: 我們必須確認您至少年滿 %{count} 以使用 Mastodon。我們不會儲存此資料。
-=======
           other: 我們必須確認您至少年滿 %{count} 以使用 %{domain}。我們不會儲存此資料。
->>>>>>> v4.5.0
         role: 角色控制使用者有哪些權限。
       user_role:
         color: 於整個使用者介面中用於角色的顏色，十六進位格式的 RGB
@@ -249,11 +238,7 @@ zh-TW:
         setting_auto_play_gif: 自動播放 GIF 動畫
         setting_boost_modal: 控制轉嘟可見性
         setting_default_language: 嘟文語言
-<<<<<<< HEAD
-        setting_default_privacy: 嘟文隱私設定
-=======
         setting_default_privacy: 嘟文可見性
->>>>>>> v4.5.0
         setting_default_quote_policy: 誰能引用此嘟文
         setting_default_sensitive: 總是將媒體標記為敏感內容
         setting_delete_modal: 於刪除嘟文前警告我
@@ -266,12 +251,8 @@ zh-TW:
         setting_emoji_style: emoji 風格
         setting_expand_spoilers: 永遠展開標有內容警告的嘟文
         setting_hide_network: 隱藏您的社交網路
-<<<<<<< HEAD
-        setting_missing_alt_text_modal: 發表未包含說明文字之多媒體嘟文前先詢問我
-=======
         setting_missing_alt_text_modal: 於發出未含有 ALT 說明文字之嘟文前警告我
         setting_quick_boosting: 啟用快速轉嘟
->>>>>>> v4.5.0
         setting_reduce_motion: 減少過渡動畫效果
         setting_system_font_ui: 使用系統預設字型
         setting_system_scrollbars_ui: 使用系統預設捲動軸

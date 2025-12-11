@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-import { apiGetContext } from 'mastodon/api/statuses';
-import { createDataLoadingThunk } from 'mastodon/store/typed_functions';
-
-=======
 import { createAction } from '@reduxjs/toolkit';
 
 import { apiGetContext, apiSetQuotePolicy } from 'mastodon/api/statuses';
@@ -10,30 +5,19 @@ import { createDataLoadingThunk } from 'mastodon/store/typed_functions';
 
 import type { ApiQuotePolicy } from '../api_types/quotes';
 
->>>>>>> v4.5.0
 import { importFetchedStatuses } from './importer';
 
 export const fetchContext = createDataLoadingThunk(
   'status/context',
-<<<<<<< HEAD
-  ({ statusId }: { statusId: string }) => apiGetContext(statusId),
-  (context, { dispatch }) => {
-=======
   ({ statusId }: { statusId: string; prefetchOnly?: boolean }) =>
     apiGetContext(statusId),
   ({ context, refresh }, { dispatch, actionArg: { prefetchOnly = false } }) => {
->>>>>>> v4.5.0
     const statuses = context.ancestors.concat(context.descendants);
 
     dispatch(importFetchedStatuses(statuses));
 
     return {
       context,
-<<<<<<< HEAD
-    };
-  },
-);
-=======
       refresh,
       prefetchOnly,
     };
@@ -58,4 +42,3 @@ export const setStatusQuotePolicy = createDataLoadingThunk(
     return apiSetQuotePolicy(statusId, policy);
   },
 );
->>>>>>> v4.5.0

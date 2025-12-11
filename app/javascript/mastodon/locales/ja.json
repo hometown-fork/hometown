@@ -250,13 +250,10 @@
   "confirmations.remove_from_followers.confirm": "フォロワーを削除",
   "confirmations.remove_from_followers.message": "{name}さんはあなたをフォローしなくなります。本当によろしいですか？",
   "confirmations.remove_from_followers.title": "フォロワーを削除しますか？",
-<<<<<<< HEAD
-=======
   "confirmations.revoke_quote.confirm": "投稿を削除",
   "confirmations.revoke_quote.title": "投稿を削除しますか?",
   "confirmations.unblock.confirm": "ブロック解除",
   "confirmations.unblock.title": "@{name}さんのブロックを解除しますか？",
->>>>>>> v4.5.0
   "confirmations.unfollow.confirm": "フォロー解除",
   "confirmations.unfollow.title": "{name} さんのフォローを解除しますか？",
   "confirmations.withdraw_request.confirm": "リクエスト取り消し",
@@ -351,26 +348,20 @@
   "errors.unexpected_crash.copy_stacktrace": "スタックトレースをクリップボードにコピー",
   "errors.unexpected_crash.report_issue": "問題を報告",
   "explore.suggested_follows": "ユーザー",
-<<<<<<< HEAD
-  "explore.trending_links": "ニュース",
-  "explore.trending_statuses": "投稿",
-  "explore.trending_tags": "ハッシュタグ",
-  "federation.change": "Adjust status federation",
-  "federation.federated.long": "Allow toot to reach other instances",
-  "federation.federated.short": "Federated",
-  "federation.local_only.long": "Restrict this toot only to my instance",
-  "federation.local_only.short": "Local-only",
-=======
   "explore.title": "トレンド",
   "explore.trending_links": "ニュース",
   "explore.trending_statuses": "投稿",
   "explore.trending_tags": "ハッシュタグ",
   "featured_carousel.header": "{count, plural, other {固定された投稿}}",
->>>>>>> v4.5.0
   "featured_carousel.next": "次へ",
   "featured_carousel.post": "投稿",
   "featured_carousel.previous": "前へ",
   "featured_carousel.slide": "{index} / {total}",
+  "federation.change": "Adjust status federation",
+  "federation.federated.long": "Allow toot to reach other instances",
+  "federation.federated.short": "Federated",
+  "federation.local_only.long": "Restrict this toot only to my instance",
+  "federation.local_only.short": "Local-only",
   "filter_modal.added.context_mismatch_explanation": "このフィルターカテゴリーはあなたがアクセスした投稿のコンテキストには適用されません。この投稿のコンテキストでもフィルターを適用するにはフィルターを編集する必要があります。",
   "filter_modal.added.context_mismatch_title": "コンテキストが一致しません！",
   "filter_modal.added.expired_explanation": "このフィルターカテゴリーは有効期限が切れています。適用するには有効期限を更新してください。",
@@ -470,26 +461,10 @@
   "ignore_notifications_modal.private_mentions_title": "本当に「外部からの非公開の返信」を無視するようにしますか？",
   "info_button.label": "ヘルプ",
   "info_button.what_is_alt_text": "<h1>代替テキストとは何ですか？</h1> <p>代替テキストは、視覚障害、低速ネットワーク接続の人や追加コンテンツを求める人に役立つ画像説明です。</p> <p>明確、簡潔、客観的に記述することでアクセシビリティが向上し、より多くの人に理解されるようになります。</p> <ul> <li>要点をとらえる</li> <li>画像内のテキストを要約する</li> <li>平易な文章で説明する</li> <li>情報の重複を避ける</li> <li>複雑な内容 (図や地図など) では傾向やポイントを見つける</li> </ul>",
-<<<<<<< HEAD
-  "interaction_modal.action.favourite": "お気に入り登録はあなたのアカウントがあるサーバーで行う必要があります。",
-  "interaction_modal.action.follow": "ユーザーをフォローするには、あなたのアカウントがあるサーバーからフォローする必要があります。",
-  "interaction_modal.action.reblog": "投稿をブーストするには、あなたのアカウントがあるサーバーでブーストする必要があります。",
-  "interaction_modal.action.reply": "リプライを送るには、あなたのアカウントがあるサーバーから送る必要があります。",
-  "interaction_modal.action.vote": "票を入れるには、あなたのアカウントがあるサーバーから投票する必要があります。",
-=======
->>>>>>> v4.5.0
   "interaction_modal.go": "サーバーに移動",
   "interaction_modal.no_account_yet": "アカウントを持っていない場合は:",
   "interaction_modal.on_another_server": "別のサーバー",
   "interaction_modal.on_this_server": "このサーバー",
-<<<<<<< HEAD
-  "interaction_modal.title.favourite": "{name}さんの投稿をお気に入り登録",
-  "interaction_modal.title.follow": "{name}さんをフォロー",
-  "interaction_modal.title.reblog": "{name}さんの投稿をブースト",
-  "interaction_modal.title.reply": "{name}さんの投稿にリプライ",
-  "interaction_modal.title.vote": "{name}さんのアンケートに投票",
-=======
->>>>>>> v4.5.0
   "interaction_modal.username_prompt": "例: {example}",
   "intervals.full.days": "{number}日",
   "intervals.full.hours": "{number}時間",
@@ -601,9 +576,6 @@
   "navigation_bar.mutes": "ミュートしたユーザー",
   "navigation_bar.opened_in_classic_interface": "投稿やプロフィールを直接開いた場合は一時的に標準UIで表示されます。",
   "navigation_bar.preferences": "ユーザー設定",
-<<<<<<< HEAD
-  "navigation_bar.search": "検索",
-=======
   "navigation_bar.privacy_and_reach": "プライバシーとつながりやすさ",
   "navigation_bar.search": "検索",
   "navigation_bar.search_trends": "検索 / トレンド",
@@ -611,7 +583,6 @@
   "navigation_panel.collapse_lists": "リストメニューを閉じる",
   "navigation_panel.expand_followed_tags": "フォロー中のハッシュタグメニューを展開",
   "navigation_panel.expand_lists": "リストメニューを展開",
->>>>>>> v4.5.0
   "not_signed_in_indicator.not_signed_in": "この機能を使うにはログインする必要があります。",
   "notification.admin.report": "{name}さんが{target}さんを通報しました",
   "notification.admin.report_account": "{name}さんが{target}さんの投稿{count, plural, other {#件}}を「{category}」として通報しました",
@@ -684,21 +655,12 @@
   "notifications.column_settings.alert": "デスクトップ通知",
   "notifications.column_settings.favourite": "お気に入り",
   "notifications.column_settings.filter_bar.advanced": "すべてのカテゴリを表示",
-<<<<<<< HEAD
-  "notifications.column_settings.filter_bar.category": "クイックフィルターバー:",
-  "notifications.column_settings.follow": "新しいフォロワー:",
-  "notifications.column_settings.follow_request": "新しいフォローリクエスト:",
-  "notifications.column_settings.group": "グループ",
-  "notifications.column_settings.mention": "返信:",
-  "notifications.column_settings.poll": "アンケート結果:",
-=======
   "notifications.column_settings.filter_bar.category": "クイックフィルターバー",
   "notifications.column_settings.follow": "新しいフォロワー",
   "notifications.column_settings.follow_request": "新しいフォローリクエスト",
   "notifications.column_settings.group": "グループ",
   "notifications.column_settings.mention": "返信",
   "notifications.column_settings.poll": "アンケート結果",
->>>>>>> v4.5.0
   "notifications.column_settings.push": "プッシュ通知",
   "notifications.column_settings.quote": "引用",
   "notifications.column_settings.reblog": "ブースト",
@@ -895,10 +857,7 @@
   "status.cancel_reblog_private": "ブースト解除",
   "status.cannot_quote": "この投稿は引用できません",
   "status.cannot_reblog": "この投稿はブーストできません",
-<<<<<<< HEAD
-=======
   "status.context.retry": "リトライ",
->>>>>>> v4.5.0
   "status.continued_thread": "続きのスレッド",
   "status.copy": "投稿へのリンクをコピー",
   "status.delete": "削除",
@@ -926,15 +885,6 @@
   "status.mute_conversation": "会話をミュート",
   "status.open": "詳細を表示",
   "status.pin": "プロフィールに固定表示",
-<<<<<<< HEAD
-  "status.quote_error.filtered": "あなたのフィルター設定によって非表示になっています",
-  "status.quote_error.not_found": "この投稿は表示できません。",
-  "status.quote_error.pending_approval": "この投稿は投稿者の承認待ちです。",
-  "status.quote_error.rejected": "この投稿は、オリジナルの投稿者が引用することを許可していないため、表示できません。",
-  "status.quote_error.removed": "この投稿は投稿者によって削除されました。",
-  "status.quote_error.unauthorized": "この投稿を表示する権限がないため、表示できません。",
-  "status.quote_post_author": "{name} の投稿",
-=======
   "status.quote": "引用",
   "status.quote.cancel": "引用をキャンセル",
   "status.quote_error.filtered": "あなたのフィルター設定によって非表示になっています",
@@ -944,7 +894,6 @@
   "status.quote_private": "非公開の投稿は引用できません",
   "status.quotes": "{count, plural, other {引用}}",
   "status.quotes.local_other_disclaimer": "投稿者が拒否した引用は表示されません。",
->>>>>>> v4.5.0
   "status.read_more": "もっと見る",
   "status.reblog": "ブースト",
   "status.reblog_or_quote": "ブーストか引用",
@@ -954,10 +903,7 @@
   "status.redraft": "削除して下書きに戻す",
   "status.remove_bookmark": "ブックマークを削除",
   "status.remove_favourite": "お気に入りから削除",
-<<<<<<< HEAD
-=======
   "status.remove_quote": "削除",
->>>>>>> v4.5.0
   "status.replied_in_thread": "ほかのユーザーへ",
   "status.replied_to": "{name}さんへの返信",
   "status.reply": "返信",
@@ -981,11 +927,8 @@
   "tabs_bar.home": "ホーム",
   "tabs_bar.menu": "メニュー",
   "tabs_bar.notifications": "通知",
-<<<<<<< HEAD
-=======
   "tabs_bar.publish": "新しい投稿",
   "tabs_bar.search": "検索",
->>>>>>> v4.5.0
   "terms_of_service.effective_as_of": "{date}より有効",
   "terms_of_service.title": "サービス利用規約",
   "terms_of_service.upcoming_changes_on": "{date}から適用される変更",
@@ -1004,10 +947,7 @@
   "upload_button.label": "メディアを追加 (複数の画像または1つの動画か音声ファイル)",
   "upload_error.limit": "アップロードできる上限を超えています。",
   "upload_error.poll": "アンケートではファイルをアップロードできません。",
-<<<<<<< HEAD
-=======
   "upload_error.quote": "引用ではファイルをアップロードできません。",
->>>>>>> v4.5.0
   "upload_form.drag_and_drop.instructions": "メディア添付ファイルを選択するには、スペースキーまたはエンターキーを押してください。ドラッグ中は、矢印キーを使ってメディア添付ファイルを任意の方向に移動できます。再度スペースキーまたはエンターキーを押すと新しい位置にメディア添付ファイルをドロップできます。キャンセルするにはエスケープキーを押してください。",
   "upload_form.drag_and_drop.on_drag_cancel": "ドラッグがキャンセルされました。メディア添付ファイル {item} がドロップされました。",
   "upload_form.drag_and_drop.on_drag_end": "メディア添付ファイル {item} がドロップされました。",
@@ -1030,9 +970,6 @@
   "video.skip_forward": "前方にスキップ",
   "video.unmute": "ミュート解除",
   "video.volume_down": "音量を下げる",
-<<<<<<< HEAD
-  "video.volume_up": "音量を上げる"
-=======
   "video.volume_up": "音量を上げる",
   "visibility_modal.button_title": "公開範囲の設定",
   "visibility_modal.header": "公開範囲と引用",
@@ -1046,5 +983,4 @@
   "visibility_modal.quote_nobody": "自分のみ",
   "visibility_modal.quote_public": "誰でも",
   "visibility_modal.save": "保存"
->>>>>>> v4.5.0
 }

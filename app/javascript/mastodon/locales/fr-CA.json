@@ -41,14 +41,11 @@
   "account.featured_tags.last_status_never": "Aucune publication",
   "account.follow": "Suivre",
   "account.follow_back": "Suivre en retour",
-<<<<<<< HEAD
-=======
   "account.follow_back_short": "Suivre en retour",
   "account.follow_request": "Demande d’abonnement",
   "account.follow_request_cancel": "Annuler la demande",
   "account.follow_request_cancel_short": "Annuler",
   "account.follow_request_short": "Requête",
->>>>>>> v4.5.0
   "account.followers": "abonné·e·s",
   "account.followers.empty": "Personne ne suit ce compte pour l'instant.",
   "account.followers_counter": "{count, plural, one {{counter} abonné·e} other {{counter} abonné·e·s}}",
@@ -260,11 +257,6 @@
   "confirmations.remove_from_followers.confirm": "Supprimer l'abonné·e",
   "confirmations.remove_from_followers.message": "{name} cessera de vous suivre. Êtes-vous sûr de vouloir continuer ?",
   "confirmations.remove_from_followers.title": "Supprimer l'abonné·e ?",
-<<<<<<< HEAD
-  "confirmations.unfollow.confirm": "Ne plus suivre",
-  "confirmations.unfollow.message": "Voulez-vous vraiment arrêter de suivre {name}?",
-  "confirmations.unfollow.title": "Se désabonner de l'utilisateur·rice ?",
-=======
   "confirmations.revoke_quote.confirm": "Retirer la publication",
   "confirmations.revoke_quote.message": "Cette action ne peut pas être annulée.",
   "confirmations.revoke_quote.title": "Retirer la publication ?",
@@ -274,7 +266,6 @@
   "confirmations.unfollow.title": "Ne plus suivre {name} ?",
   "confirmations.withdraw_request.confirm": "Rejeter la demande",
   "confirmations.withdraw_request.title": "Rejeter la demande de suivre {name} ?",
->>>>>>> v4.5.0
   "content_warning.hide": "Masquer le message",
   "content_warning.show": "Montrer quand même",
   "content_warning.show_more": "Montrer plus",
@@ -370,10 +361,7 @@
   "explore.trending_links": "Nouvelles",
   "explore.trending_statuses": "Messages",
   "explore.trending_tags": "Hashtags",
-<<<<<<< HEAD
-=======
   "featured_carousel.header": "{count, plural, one {Pinned Post} other {Pinned Posts}}",
->>>>>>> v4.5.0
   "featured_carousel.next": "Suivant",
   "featured_carousel.post": "Poste",
   "featured_carousel.previous": "Précédent",
@@ -456,11 +444,6 @@
   "hints.profiles.see_more_followers": "Afficher plus d'abonné·e·s sur {domain}",
   "hints.profiles.see_more_follows": "Afficher plus d'abonné·e·s sur {domain}",
   "hints.profiles.see_more_posts": "Voir plus de messages sur {domain}",
-<<<<<<< HEAD
-  "hints.threads.replies_may_be_missing": "Les réponses provenant des autres serveurs pourraient être manquantes.",
-  "hints.threads.see_more": "Afficher plus de réponses sur {domain}",
-=======
->>>>>>> v4.5.0
   "home.column_settings.show_quotes": "Afficher les citations",
   "home.column_settings.show_reblogs": "Afficher boosts",
   "home.column_settings.show_replies": "Afficher réponses",
@@ -482,28 +465,12 @@
   "ignore_notifications_modal.private_mentions_title": "Ignorer les notifications issues des mentions privées non sollicitées ?",
   "info_button.label": "Aide",
   "info_button.what_is_alt_text": "<h1>Qu'est-ce que le texte alternatif ?</h1> <p>Un texte alternatif fournit une description de l'image aux personnes avec un handicap visuel ou une connexion limitée ou qui souhaitent avoir un contexte supplémentaire.</p> <p>Vous pouvez améliorer l'accessibilité et la compression de tout le monde en écrivant un texte alternatif clair, concis et objectif.</p> <ul> <li>Identifiez les éléments importants</li> <li>Résumez le texte présent à l'image</li> <li>Utilisez une structure de phrase normale</li> <li>Évitez les informations redondantes</li> <li>Pour les visuels complexes (tels que les diagrammes ou les cartes), indiquez les tendances ou points-clés</li> </ul>",
-<<<<<<< HEAD
-  "interaction_modal.action.favourite": "Pour continuer, vous devez ajouter en favori depuis votre compte.",
-  "interaction_modal.action.follow": "Pour continuer, vous devez suivre depuis votre compte.",
-  "interaction_modal.action.reblog": "Pour continuer, vous devez booster depuis votre compte.",
-  "interaction_modal.action.reply": "Pour continuer, vous devez répondre depuis votre compte.",
-  "interaction_modal.action.vote": "Pour continuer, vous devez voter depuis votre compte.",
-=======
   "interaction_modal.action": "Pour interagir avec le message de {name}, vous devez vous connecter à votre compte sur le serveur Mastodon que vous utilisez.",
->>>>>>> v4.5.0
   "interaction_modal.go": "Valider",
   "interaction_modal.no_account_yet": "Vous n'avez pas encore de compte ?",
   "interaction_modal.on_another_server": "Sur un autre serveur",
   "interaction_modal.on_this_server": "Sur ce serveur",
-<<<<<<< HEAD
-  "interaction_modal.title.favourite": "Ajouter la publication de {name} aux favoris",
-  "interaction_modal.title.follow": "Suivre {name}",
-  "interaction_modal.title.reblog": "Booster la publication de {name}",
-  "interaction_modal.title.reply": "Répondre à la publication de {name}",
-  "interaction_modal.title.vote": "Voter pour le sondage de {name}",
-=======
   "interaction_modal.title": "Connectez-vous pour continuer",
->>>>>>> v4.5.0
   "interaction_modal.username_prompt": "Par exemple : {example}",
   "intervals.full.days": "{number, plural, one {# jour} other {# jours}}",
   "intervals.full.hours": "{number, plural, one {# heure} other {# heures}}",
@@ -599,11 +566,7 @@
   "navigation_bar.account_settings": "Mot de passe et sécurité",
   "navigation_bar.administration": "Administration",
   "navigation_bar.advanced_interface": "Ouvrir dans l’interface avancée",
-<<<<<<< HEAD
-  "navigation_bar.automated_deletion": "Suppression automatique du message",
-=======
   "navigation_bar.automated_deletion": "Suppression automatique de messages",
->>>>>>> v4.5.0
   "navigation_bar.blocks": "Comptes bloqués",
   "navigation_bar.bookmarks": "Signets",
   "navigation_bar.direct": "Mention privée",
@@ -626,13 +589,10 @@
   "navigation_bar.privacy_and_reach": "Vie privée et visibilité",
   "navigation_bar.search": "Rechercher",
   "navigation_bar.search_trends": "Recherche / Tendance",
-<<<<<<< HEAD
-=======
   "navigation_panel.collapse_followed_tags": "Réduire le menu des hashtags suivis",
   "navigation_panel.collapse_lists": "Réduire le menu de la liste",
   "navigation_panel.expand_followed_tags": "Développer le menu des hashtags suivis",
   "navigation_panel.expand_lists": "Développer le menu de la liste",
->>>>>>> v4.5.0
   "not_signed_in_indicator.not_signed_in": "Vous devez vous connecter pour accéder à cette ressource.",
   "notification.admin.report": "{name} a signalé {target}",
   "notification.admin.report_account": "{name} a signalé {count, plural, one {un message} other {# messages}} de {target} pour {category}",
@@ -950,11 +910,6 @@
   "status.mute_conversation": "Masquer la conversation",
   "status.open": "Afficher la publication entière",
   "status.pin": "Épingler sur profil",
-<<<<<<< HEAD
-  "status.quote_error.removed": "Ce message a été retiré par son auteur·ice.",
-  "status.quote_error.unauthorized": "Ce message ne peut pas être affiché car vous n'êtes pas autorisé·e à le voir.",
-  "status.quote_post_author": "Message par {name}",
-=======
   "status.quote": "Citer",
   "status.quote.cancel": "Annuler la citation",
   "status.quote_error.blocked_account_hint.title": "Ce message est masqué car vous avez bloqué @{name}.",
@@ -977,7 +932,6 @@
   "status.quotes.empty": "Personne n'a encore cité ce message. Quand quelqu'un le fera, il apparaîtra ici.",
   "status.quotes.local_other_disclaimer": "Les citations rejetées par l'auteur ne seront pas affichées.",
   "status.quotes.remote_other_disclaimer": "Seules les citations de {domain} sont garanties d'être affichées ici. Les citations rejetées par l'auteur ne seront pas affichées.",
->>>>>>> v4.5.0
   "status.read_more": "En savoir plus",
   "status.reblog": "Booster",
   "status.reblog_or_quote": "Boost ou citation",
@@ -988,10 +942,7 @@
   "status.redraft": "Supprimer et réécrire",
   "status.remove_bookmark": "Retirer des signets",
   "status.remove_favourite": "Retirer des favoris",
-<<<<<<< HEAD
-=======
   "status.remove_quote": "Supprimer",
->>>>>>> v4.5.0
   "status.replied_in_thread": "A répondu dans un fil de discussion",
   "status.replied_to": "A répondu à {name}",
   "status.reply": "Répondre",
@@ -1036,10 +987,7 @@
   "upload_button.label": "Ajouter des images, une vidéo ou un fichier audio",
   "upload_error.limit": "Taille maximale d'envoi de fichier dépassée.",
   "upload_error.poll": "L’envoi de fichiers n’est pas autorisé avec les sondages.",
-<<<<<<< HEAD
-=======
   "upload_error.quote": "L’envoi de fichiers n’est pas autorisé avec les sondages.",
->>>>>>> v4.5.0
   "upload_form.drag_and_drop.instructions": "Pour choisir un média joint, appuyez sur la touche espace ou entrée. Tout en faisant glisser, utilisez les touches fléchées pour déplacer le fichier média dans une direction donnée. Appuyez à nouveau sur la touche espace ou entrée pour déposer le fichier média dans sa nouvelle position, ou appuyez sur la touche Echap pour annuler.",
   "upload_form.drag_and_drop.on_drag_cancel": "Le glissement a été annulé. La pièce jointe {item} n'a pas été ajoutée.",
   "upload_form.drag_and_drop.on_drag_end": "La pièce jointe du média {item} a été déplacée.",
@@ -1058,11 +1006,6 @@
   "video.mute": "Couper le son",
   "video.pause": "Pause",
   "video.play": "Lecture",
-<<<<<<< HEAD
-  "video.unmute": "Rétablir le son",
-  "video.volume_down": "Baisser le volume",
-  "video.volume_up": "Augmenter le volume"
-=======
   "video.skip_backward": "Revenir en arrière",
   "video.skip_forward": "Avancer",
   "video.unmute": "Rétablir le son",
@@ -1082,5 +1025,4 @@
   "visibility_modal.quote_nobody": "Juste moi",
   "visibility_modal.quote_public": "Tout le monde",
   "visibility_modal.save": "Sauvegarder"
->>>>>>> v4.5.0
 }

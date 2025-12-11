@@ -262,14 +262,11 @@
   "confirmations.remove_from_followers.confirm": "Bain leantóir",
   "confirmations.remove_from_followers.message": "Scoirfidh {name} de bheith ag leanúint leat. An bhfuil tú cinnte gur mian leat leanúint ar aghaidh?",
   "confirmations.remove_from_followers.title": "Bain an leantóir?",
-<<<<<<< HEAD
-=======
   "confirmations.revoke_quote.confirm": "Bain postáil",
   "confirmations.revoke_quote.message": "Ní féidir an gníomh seo a chealú.",
   "confirmations.revoke_quote.title": "Bain postáil?",
   "confirmations.unblock.confirm": "Díbhlocáil",
   "confirmations.unblock.title": "Díbhlocáil {name}?",
->>>>>>> v4.5.0
   "confirmations.unfollow.confirm": "Ná lean",
   "confirmations.unfollow.title": "Díleanúint {name}?",
   "confirmations.withdraw_request.confirm": "Iarratas ar tharraingt siar",
@@ -452,11 +449,6 @@
   "hints.profiles.see_more_followers": "Féach ar a thuilleadh leantóirí ar {domain}",
   "hints.profiles.see_more_follows": "Féach tuilleadh seo a leanas ar {domain}",
   "hints.profiles.see_more_posts": "Féach ar a thuilleadh postálacha ar {domain}",
-<<<<<<< HEAD
-  "hints.threads.replies_may_be_missing": "Seans go bhfuil freagraí ó fhreastalaithe eile in easnamh.",
-  "hints.threads.see_more": "Féach ar a thuilleadh freagraí ar {domain}",
-=======
->>>>>>> v4.5.0
   "home.column_settings.show_quotes": "Taispeáin Sleachta",
   "home.column_settings.show_reblogs": "Taispeáin moltaí",
   "home.column_settings.show_replies": "Taispeán freagraí",
@@ -478,28 +470,12 @@
   "ignore_notifications_modal.private_mentions_title": "An dtugann tú aird ar fhógraí ó Luaintí Príobháideacha gan iarraidh?",
   "info_button.label": "Cabhrú",
   "info_button.what_is_alt_text": "<h1>Cad is téacs altach ann?</h1> <p>Soláthraíonn téacs Alt cur síos ar íomhánna do dhaoine le lagú radhairc, naisc íseal-bandaleithead, nó daoine atá ag lorg comhthéacs breise.</p> <p>Is féidir leat inrochtaineacht agus tuiscint a fheabhsú do chách trí théacs alt soiléir, gonta, oibiachtúil a scríobh.</p> <ul> <li>Glac gnéithe tábhachtacha</li> <li>Déan achoimre ar théacs in íomhánna</li> <li>Úsáid struchtúr abairtí rialta</li> li> <li>Seachain faisnéis iomarcach</li> <li>Fócas ar threochtaí agus ar phríomhthorthaí i bhfíseanna casta (amhail léaráidí nó léarscáileanna)</li> </ul>",
-<<<<<<< HEAD
-  "interaction_modal.action.favourite": "Chun leanúint ar aghaidh, ní mór duit an ceann is fearr leat ó do chuntas.",
-  "interaction_modal.action.follow": "Chun leanúint ar aghaidh, ní mór duit leanúint ó do chuntas.",
-  "interaction_modal.action.reblog": "Chun leanúint ar aghaidh, ní mór duit athbhlagáil ó do chuntas.",
-  "interaction_modal.action.reply": "Chun leanúint ar aghaidh, ní mór duit freagra a thabhairt ó do chuntas.",
-  "interaction_modal.action.vote": "Chun leanúint ar aghaidh, ní mór duit vótáil ó do chuntas.",
-=======
   "interaction_modal.action": "Chun idirghníomhú le post {name}, ní mór duit síniú isteach i do chuntas ar cibé freastalaí Mastodon a úsáideann tú.",
->>>>>>> v4.5.0
   "interaction_modal.go": "Téigh",
   "interaction_modal.no_account_yet": "Níl cuntas agat fós?",
   "interaction_modal.on_another_server": "Ar freastalaí eile",
   "interaction_modal.on_this_server": "Ar an freastalaí seo",
-<<<<<<< HEAD
-  "interaction_modal.title.favourite": "An postáil {name} is fearr leat",
-  "interaction_modal.title.follow": "Lean {name}",
-  "interaction_modal.title.reblog": "Mol postáil de chuid {name}",
-  "interaction_modal.title.reply": "Freagair postáil {name}",
-  "interaction_modal.title.vote": "Vótáil i vótaíocht {name}",
-=======
   "interaction_modal.title": "Sínigh isteach le leanúint ar aghaidh",
->>>>>>> v4.5.0
   "interaction_modal.username_prompt": "M.sh. {example}",
   "intervals.full.days": "{number, plural, one {# lá} other {# lá}}",
   "intervals.full.hours": "{number, plural, one {# uair} other {# uair}}",
@@ -940,15 +916,6 @@
   "status.mute_conversation": "Balbhaigh comhrá",
   "status.open": "Leathnaigh an post seo",
   "status.pin": "Pionnáil ar do phróifíl",
-<<<<<<< HEAD
-  "status.quote_error.filtered": "I bhfolach mar gheall ar cheann de do scagairí",
-  "status.quote_error.not_found": "Ní féidir an post seo a thaispeáint.",
-  "status.quote_error.pending_approval": "Tá an post seo ag feitheamh ar cheadú ón údar bunaidh.",
-  "status.quote_error.rejected": "Ní féidir an post seo a thaispeáint mar ní cheadaíonn an t-údar bunaidh é a lua.",
-  "status.quote_error.removed": "Baineadh an post seo ag a údar.",
-  "status.quote_error.unauthorized": "Ní féidir an post seo a thaispeáint mar níl údarú agat é a fheiceáil.",
-  "status.quote_post_author": "Postáil le {name}",
-=======
   "status.quote": "Luachan",
   "status.quote.cancel": "Cealaigh an luachan",
   "status.quote_error.blocked_account_hint.title": "Tá an post seo i bhfolach mar gur chuir tú bac ar @{name}.",
@@ -971,7 +938,6 @@
   "status.quotes.empty": "Níl an post seo luaite ag aon duine go fóill. Nuair a dhéanann duine é, taispeánfar anseo é.",
   "status.quotes.local_other_disclaimer": "Ní thaispeánfar sleachta ar dhiúltaigh an t-údar dóibh.",
   "status.quotes.remote_other_disclaimer": "Níl ráthaíocht ann go dtaispeánfar anseo ach sleachta ó {domain}. Ní thaispeánfar sleachta ar dhiúltaigh an t-údar dóibh.",
->>>>>>> v4.5.0
   "status.read_more": "Léan a thuilleadh",
   "status.reblog": "Treisiú",
   "status.reblog_or_quote": "Borradh nó luachan",
@@ -982,10 +948,7 @@
   "status.redraft": "Scrios ⁊ athdhréachtaigh",
   "status.remove_bookmark": "Bain leabharmharc",
   "status.remove_favourite": "Bain ó cheanáin",
-<<<<<<< HEAD
-=======
   "status.remove_quote": "Bain",
->>>>>>> v4.5.0
   "status.replied_in_thread": "D'fhreagair sa snáithe",
   "status.replied_to": "D'fhreagair {name}",
   "status.reply": "Freagair",
@@ -1030,10 +993,7 @@
   "upload_button.label": "Cuir íomhánna, físeán nó comhad fuaime leis",
   "upload_error.limit": "Sáraíodh an teorainn uaslódála comhaid.",
   "upload_error.poll": "Ní cheadaítear uaslódáil comhad le pobalbhreith.",
-<<<<<<< HEAD
-=======
   "upload_error.quote": "Ní cheadaítear uaslódáil comhaid le comharthaí athfhriotail.",
->>>>>>> v4.5.0
   "upload_form.drag_and_drop.instructions": "Chun ceangaltán meán a phiocadh suas, brúigh spás nó cuir isteach. Agus tú ag tarraingt, bain úsáid as na heochracha saigheada chun an ceangaltán meán a bhogadh i dtreo ar bith. Brúigh spás nó cuir isteach arís chun an ceangaltán meán a scaoileadh ina phost nua, nó brúigh éalú chun cealú.",
   "upload_form.drag_and_drop.on_drag_cancel": "Cuireadh an tarraingt ar ceal. Scaoileadh ceangaltán meán {item}.",
   "upload_form.drag_and_drop.on_drag_end": "Scaoileadh ceangaltán meán {item}.",
@@ -1056,9 +1016,6 @@
   "video.skip_forward": "Scipeáil ar aghaidh",
   "video.unmute": "Díbhalbhú",
   "video.volume_down": "Toirt síos",
-<<<<<<< HEAD
-  "video.volume_up": "Toirt suas"
-=======
   "video.volume_up": "Toirt suas",
   "visibility_modal.button_title": "Socraigh infheictheacht",
   "visibility_modal.direct_quote_warning.text": "Má shábhálann tú na socruithe reatha, déanfar an luachan leabaithe a thiontú ina nasc.",
@@ -1076,5 +1033,4 @@
   "visibility_modal.quote_nobody": "Mise amháin",
   "visibility_modal.quote_public": "Aon duine",
   "visibility_modal.save": "Sábháil"
->>>>>>> v4.5.0
 }

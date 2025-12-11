@@ -219,10 +219,7 @@ export function createNotificationGroupFromNotificationJSON(
     case 'quote':
     case 'poll':
     case 'update':
-<<<<<<< HEAD
-=======
     case 'quoted_update':
->>>>>>> v4.5.0
       return {
         ...group,
         type: notification.type,

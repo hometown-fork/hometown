@@ -57,22 +57,15 @@ es-MX:
         setting_advanced_layout: Mostrar Mastodon con vista de varias columnas, permitiéndote ver tu cronología, notificaciones y una tercera columna que tú elijas. No recomendado para pantallas pequeñas.
         setting_aggregate_reblogs: No mostrar nuevos impulsos para las publicaciones que han sido recientemente impulsadas (sólo afecta a las publicaciones recibidas recientemente)
         setting_always_send_emails: Normalmente las notificaciones por correo electrónico no se enviarán cuando estés usando Mastodon activamente
-<<<<<<< HEAD
-        setting_default_quote_policy: Los usuarios mencionados siempre pueden citar. Esta configuración solo se aplicará a las publicaciones creadas con la próxima versión de Mastodon, pero puedes seleccionar tus preferencias anticipadamente
-=======
         setting_boost_modal: Si está activado, impulsar una publicación abrirá una ventana donde podrás cambiar la visibilidad de tu impulso.
         setting_default_quote_policy_private: Las publicaciones solo para seguidores hechas en Mastodon no pueden ser citadas por otros usuarios.
         setting_default_quote_policy_unlisted: Cuando las personas te citen, su publicación también se ocultará en las cronologías públicas.
->>>>>>> v4.5.0
         setting_default_sensitive: El contenido multimedia sensible está oculto por defecto y puede ser mostrado con un clic
         setting_display_media_default: Ocultar contenido multimedia marcado como sensible
         setting_display_media_hide_all: Siempre ocultar todo el contenido multimedia
         setting_display_media_show_all: Mostrar siempre contenido multimedia marcado como sensible
-<<<<<<< HEAD
-=======
         setting_emoji_style: Cómo se muestran los emojis. «Automático» intentará usar emojis nativos, pero vuelve a Twemoji para los navegadores antiguos.
         setting_quick_boosting_html: Cuando está activado, pulsar en el icono %{boost_icon} Impulsar impulsará inmediatamente en lugar de abrir el menú desplegable Impulsar/Citas. Mueve la acción de citar al menú %{options_icon} (Opciones).
->>>>>>> v4.5.0
         setting_system_scrollbars_ui: Solo se aplica a los navegadores de escritorio basados en Safari y Chrome
         setting_use_blurhash: Los degradados se basan en los colores de los elementos visuales ocultos, pero ocultan cualquier detalle
         setting_use_pending_items: Ocultar las publicaciones de la línea de tiempo tras un clic en lugar de desplazar automáticamente el feed
@@ -161,13 +154,8 @@ es-MX:
       user:
         chosen_languages: Cuando se marca, solo se mostrarán las publicaciones en los idiomas seleccionados en las líneas de tiempo públicas
         date_of_birth:
-<<<<<<< HEAD
-          one: Necesitamos asegurarnos de que tengas al menos %{count} para usar Mastodon. No guardaremos esta información.
-          other: Necesitamos asegurarnos de que tengas al menos %{count} para usar Mastodon. No guardaremos esta información.
-=======
           one: Tenemos que asegurarnos de que tienes al menos %{count} para usar %{domain}. No almacenaremos esta información.
           other: Tenemos que asegurarnos de que tienes al menos %{count} para usar %{domain}. No almacenaremos esta información.
->>>>>>> v4.5.0
         role: El rol controla qué permisos tiene el usuario.
       user_role:
         color: Color que se usará para el rol en toda la interfaz de usuario, como RGB en formato hexadecimal
@@ -251,11 +239,7 @@ es-MX:
         setting_auto_play_gif: Reproducir automáticamente los GIFs animados
         setting_boost_modal: Control de visibilidad de impulsos
         setting_default_language: Idioma de publicación
-<<<<<<< HEAD
-        setting_default_privacy: Privacidad de publicaciones
-=======
         setting_default_privacy: Visibilidad de publicación
->>>>>>> v4.5.0
         setting_default_quote_policy: Quién puede citar
         setting_default_sensitive: Marcar siempre imágenes como sensibles
         setting_delete_modal: Avisarme antes de borrar una publicación
@@ -268,12 +252,8 @@ es-MX:
         setting_emoji_style: Estilo de emoji
         setting_expand_spoilers: Siempre expandir las publicaciones marcadas con advertencias de contenido
         setting_hide_network: Ocultar tu red
-<<<<<<< HEAD
-        setting_missing_alt_text_modal: Mostrar cuadro de diálogo de confirmación antes de publicar contenido multimedia sin texto alternativo
-=======
         setting_missing_alt_text_modal: Avisarme antes de publicar multimedia sin descripción de texto
         setting_quick_boosting: Habilitar impulso rápido
->>>>>>> v4.5.0
         setting_reduce_motion: Reducir el movimiento de las animaciones
         setting_system_font_ui: Usar la fuente por defecto del sistema
         setting_system_scrollbars_ui: Usar la barra de desplazamiento por defecto del sistema

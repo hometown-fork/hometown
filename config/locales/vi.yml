@@ -269,10 +269,7 @@ vi:
         destroy_status_html: "%{name} đã xóa tút của %{target}"
         destroy_unavailable_domain_html: "%{name} tiếp tục liên hợp với máy chủ %{target}"
         destroy_user_role_html: "%{name} đã xóa vai trò %{target}"
-<<<<<<< HEAD
-=======
         destroy_username_block_html: "%{name} xóa quy tắc cho tên người dùng chứa %{target}"
->>>>>>> v4.5.0
         disable_2fa_user_html: "%{name} đã vô hiệu hóa xác thực 2 bước của %{target}"
         disable_custom_emoji_html: "%{name} đã ẩn emoji %{target}"
         disable_relay_html: "%{name} đã tắt relay %{target}"
@@ -828,11 +825,7 @@ vi:
         title: Mặc định người dùng không xuất hiện trong công cụ tìm kiếm
       discovery:
         follow_recommendations: Gợi ý theo dõi
-<<<<<<< HEAD
-        preamble: Hiển thị nội dung thú vị là công cụ để thu hút người dùng mới, những người có thể không quen bất kỳ ai trong Mastodon. Kiểm soát cách các tính năng khám phá hoạt động trên máy chủ của bạn.
-=======
         preamble: Hiển thị nội dung thú vị là công cụ để thu hút người dùng mới, những người có thể không quen bất kỳ ai trên Mastodon. Kiểm soát cách các tính năng khám phá hoạt động trên máy chủ của bạn.
->>>>>>> v4.5.0
         privacy: Riêng tư
         profile_directory: Danh bạ
         public_timelines: Bảng tin
@@ -914,10 +907,7 @@ vi:
       title: Tút từ tài khoản - @%{name}
       trending: Xu hướng
       view_publicly: Xem công khai
-<<<<<<< HEAD
-=======
       view_quoted_post: Xem những tút được trích dẫn
->>>>>>> v4.5.0
       visibility: Hiển thị
       with_media: Có media
     strikes:
@@ -1187,12 +1177,7 @@ vi:
     hint_html: Nếu bạn muốn chuyển từ máy chủ khác sang máy chủ này, bắt buộc bạn phải tạo tên người dùng mới thì mới có thể tiến hành chuyển được người theo dõi. Hành động này <strong>không ảnh hưởng gì và có thể đảo ngược</strong>. <strong>Việc di chuyển tài khoản được bắt đầu từ tài khoản cũ</strong>.
     remove: Bỏ liên kết bí danh
   appearance:
-<<<<<<< HEAD
-    advanced_web_interface: Bố cục
-    advanced_web_interface_hint: Xếp giao diện thành nhiều cột, hợp với màn hình rộng.
-=======
     advanced_settings: Cài đặt nâng cao
->>>>>>> v4.5.0
     animations_and_accessibility: Hiệu ứng
     boosting_preferences: Thiết lập đăng lại
     boosting_preferences_info_html: "<strong>Mẹo:</strong> Bất kể cài đặt, <kbd>Shift</kbd> + <kbd>Click</kbd> trên biểu tượng %{icon} Đăng lại sẽ lập tức đăng lại."
@@ -1684,13 +1669,10 @@ vi:
       title: Lượt nhắc mới
     poll:
       subject: Vốt của %{name} đã kết thúc
-<<<<<<< HEAD
-=======
     quote:
       body: 'Tút của bạn được trích dẫn bởi %{name}:'
       subject: "%{name} vừa trích dẫn tút của bạn"
       title: Trích dẫn mới
->>>>>>> v4.5.0
     reblog:
       body: Tút của bạn vừa được %{name} đăng lại
       subject: "%{name} vừa đăng lại tút của bạn"
@@ -1894,12 +1876,9 @@ vi:
         other: "%{count} video"
     boosted_from_html: Đã đăng lại từ %{acct_link}
     content_warning: 'Cảnh báo nội dung: %{warning}'
-<<<<<<< HEAD
-=======
     content_warnings:
       hide: Ẩn tút
       show: Mở rộng
->>>>>>> v4.5.0
     default_language: Giống giao diện
     disallowed_hashtags:
       other: 'chứa các hashtag bị cấm: %{tags}'
@@ -1914,12 +1893,6 @@ vi:
       limit: Bạn đã ghim quá số lượng tút cho phép
       ownership: Không thể ghim tút của người khác
       reblog: Không thể ghim tút đăng lại
-<<<<<<< HEAD
-    quote_policies:
-      followers: Người được nhắc đến và người theo dõi
-      nobody: Người được nhắc đến
-      public: Mọi người
-=======
     quote_error:
       not_available: Tút không khả dụng
       pending_approval: Tút đang chờ duyệt
@@ -1929,7 +1902,6 @@ vi:
       nobody: Chỉ tôi
       public: Bất cứ ai
     quote_post_author: Trích dẫn từ tút của @%{acct}
->>>>>>> v4.5.0
     title: '%{name}: "%{quote}"'
     visibilities:
       direct: Nhắn riêng

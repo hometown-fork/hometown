@@ -262,11 +262,6 @@
   "confirmations.remove_from_followers.confirm": "Xóa người theo dõi",
   "confirmations.remove_from_followers.message": "{name} sẽ không còn theo dõi bạn.Bạn có chắc tiếp tục?",
   "confirmations.remove_from_followers.title": "Xóa người theo dõi?",
-<<<<<<< HEAD
-  "confirmations.unfollow.confirm": "Bỏ theo dõi",
-  "confirmations.unfollow.message": "Bạn có chắc muốn bỏ theo dõi {name}?",
-  "confirmations.unfollow.title": "Bỏ theo dõi",
-=======
   "confirmations.revoke_quote.confirm": "Gỡ tút",
   "confirmations.revoke_quote.message": "Hành động này không thể hoàn tác.",
   "confirmations.revoke_quote.title": "Gỡ tút?",
@@ -276,7 +271,6 @@
   "confirmations.unfollow.title": "Bỏ theo dõi {name}?",
   "confirmations.withdraw_request.confirm": "Thu hồi yêu cầu",
   "confirmations.withdraw_request.title": "Thu hồi yêu cầu theo dõi {name}?",
->>>>>>> v4.5.0
   "content_warning.hide": "Thu gọn",
   "content_warning.show": "Vẫn xem",
   "content_warning.show_more": "Mở rộng",
@@ -305,11 +299,7 @@
   "domain_block_modal.you_will_lose_num_followers": "Bạn sẽ mất {followersCount, plural, other {{followersCountDisplay} người theo dõi}} và {followingCount, plural, other {{followingCountDisplay} người bạn theo dõi}}.",
   "domain_block_modal.you_will_lose_relationships": "Bạn sẽ mất tất cả người theo dõi và những người bạn theo dõi từ máy chủ này.",
   "domain_block_modal.you_wont_see_posts": "Bạn không còn thấy tút hoặc thông báo từ thành viên máy chủ này.",
-<<<<<<< HEAD
-  "domain_pill.activitypub_lets_connect": "Nó cho phép bạn kết nối và tương tác với mọi người không chỉ trên Mastodon mà còn trên các ứng dụng xã hội khác.",
-=======
   "domain_pill.activitypub_lets_connect": "Nó cho phép bạn kết nối và tương tác với mọi người, không chỉ trên Mastodon mà còn trên các nền tảng khác.",
->>>>>>> v4.5.0
   "domain_pill.activitypub_like_language": "ActivityPub giống như ngôn ngữ Mastodon giao tiếp với các mạng xã hội khác.",
   "domain_pill.server": "Máy chủ",
   "domain_pill.their_handle": "Địa chỉ Mastodon:",
@@ -459,11 +449,6 @@
   "hints.profiles.see_more_followers": "Xem thêm người theo dõi ở {domain}",
   "hints.profiles.see_more_follows": "Xem thêm người mà người này theo dõi ở {domain}",
   "hints.profiles.see_more_posts": "Xem thêm tút ở {domain}",
-<<<<<<< HEAD
-  "hints.threads.replies_may_be_missing": "Những trả lời từ máy chủ khác có thể không đầy đủ.",
-  "hints.threads.see_more": "Xem thêm ở {domain}",
-=======
->>>>>>> v4.5.0
   "home.column_settings.show_quotes": "Hiện những trích dẫn",
   "home.column_settings.show_reblogs": "Hiện những lượt đăng lại",
   "home.column_settings.show_replies": "Hiện những tút dạng trả lời",
@@ -485,28 +470,12 @@
   "ignore_notifications_modal.private_mentions_title": "Bỏ qua thông báo từ những lượt nhắn riêng không mong muốn?",
   "info_button.label": "Trợ giúp",
   "info_button.what_is_alt_text": "<h1>Văn bản thay thế là gì?</h1> <p>Văn bản thay thế giúp mô tả hình ảnh cho những người khiếm thị, kết nối mạng chậm hoặc đơn giản là bổ sung ngữ cảnh.</p> <p>Bạn có thể cải thiện khả năng tiếp cận và giải thích kỹ hơn cho mọi người bằng cách viết văn bản thay thế rõ ràng, ngắn gọn và khách quan.</p> <ul> <li>Nắm bắt thành phần quan trọng</li> <li>Tóm tắt văn bản trong hình</li> <li>Dùng cấu trúc câu đơn</li> <li>Tránh giải thích rối rắm</li> <li>Tập trung vào các xu hướng và kết luận chính trong hình ảnh phức tạp (như biểu đồ hoặc bản đồ)</li> </ul>",
-<<<<<<< HEAD
-  "interaction_modal.action.favourite": "Bạn cần dùng tài khoản của mình để thích.",
-  "interaction_modal.action.follow": "Bạn cần dùng tài khoản của mình để theo dõi.",
-  "interaction_modal.action.reblog": "Bạn cần dùng tài khoản của mình để đăng lại.",
-  "interaction_modal.action.reply": "Bạn cần dùng tài khoản của mình để trả lời.",
-  "interaction_modal.action.vote": "Bạn cần dùng tài khoản của mình để vốt.",
-=======
   "interaction_modal.action": "Để tương tác với tút của {name}, bạn cần đăng nhập vào tài khoản trên một máy chủ Mastodon bất kỳ.",
->>>>>>> v4.5.0
   "interaction_modal.go": "Đi",
   "interaction_modal.no_account_yet": "Chưa có tài khoản?",
   "interaction_modal.on_another_server": "Trên máy chủ khác",
   "interaction_modal.on_this_server": "Trên máy chủ này",
-<<<<<<< HEAD
-  "interaction_modal.title.favourite": "Thích tút của {name}",
-  "interaction_modal.title.follow": "Theo dõi {name}",
-  "interaction_modal.title.reblog": "Đăng lại tút của {name}",
-  "interaction_modal.title.reply": "Trả lời tút của {name}",
-  "interaction_modal.title.vote": "Vốt cùng {name}",
-=======
   "interaction_modal.title": "Đăng nhập để tiếp tục",
->>>>>>> v4.5.0
   "interaction_modal.username_prompt": "Ví dụ: {example}",
   "intervals.full.days": "{number, plural, other {# ngày}}",
   "intervals.full.hours": "{number, plural, other {# giờ}}",
@@ -665,10 +634,7 @@
   "notification.moderation_warning.action_suspend": "Tài khoản của bạn đã bị vô hiệu hóa.",
   "notification.own_poll": "Vốt của bạn đã kết thúc",
   "notification.poll": "Vốt mà bạn tham gia đã kết thúc",
-<<<<<<< HEAD
-=======
   "notification.quoted_update": "{name} đã chỉnh sửa tút mà bạn trích dẫn",
->>>>>>> v4.5.0
   "notification.reblog": "{name} đăng lại tút của bạn",
   "notification.reblog.name_and_others_with_link": "{name} và <a>{count, plural, other {# người khác}}</a> đã đăng lại tút của bạn",
   "notification.relationships_severance_event": "Mất kết nối với {name}",
@@ -788,16 +754,11 @@
   "privacy.private.short": "Người theo dõi",
   "privacy.public.long": "Bất cứ ai",
   "privacy.public.short": "Công khai",
-<<<<<<< HEAD
-  "privacy.unlisted.additional": "Công khai, nhưng tút sẽ không hiện trong bảng tin, hashtag, khám phá hoặc tìm kiếm Mastodon, kể cả trong cài đặt tài khoản bạn chọn cho phép.",
-  "privacy.unlisted.long": "Ít hướng thuật toán hơn",
-=======
   "privacy.quote.anyone": "{visibility}, mọi người có thể trích dẫn",
   "privacy.quote.disabled": "{visibility}, tắt trích dẫn",
   "privacy.quote.limited": "{visibility}, hạn chế trích dẫn",
   "privacy.unlisted.additional": "Công khai, nhưng tút sẽ không hiện trong bảng tin, hashtag, khám phá hoặc tìm kiếm Mastodon, kể cả trong cài đặt tài khoản bạn chọn cho phép.",
   "privacy.unlisted.long": "Ẩn khỏi kết quả tìm kiếm, xu hướng và dòng thời gian công khai của Mastodon",
->>>>>>> v4.5.0
   "privacy.unlisted.short": "Hạn chế",
   "privacy_policy.last_updated": "Cập nhật lần cuối {date}",
   "privacy_policy.title": "Chính sách bảo mật",
@@ -920,10 +881,7 @@
   "status.block": "Chặn @{name}",
   "status.bookmark": "Lưu",
   "status.cancel_reblog_private": "Bỏ đăng lại",
-<<<<<<< HEAD
-=======
   "status.cannot_quote": "Bạn không được phép trích dẫn tút này",
->>>>>>> v4.5.0
   "status.cannot_reblog": "Không thể đăng lại tút này",
   "status.contains_quote": "Chứa trích dẫn",
   "status.context.loading": "Tải thêm các trả lời",
@@ -958,15 +916,6 @@
   "status.mute_conversation": "Tắt thông báo",
   "status.open": "Mở tút",
   "status.pin": "Ghim lên hồ sơ",
-<<<<<<< HEAD
-  "status.quote_error.filtered": "Bị ẩn vì một bộ lọc của bạn",
-  "status.quote_error.not_found": "Tút này không thể hiển thị.",
-  "status.quote_error.pending_approval": "Tút này cần chờ cho phép từ người đăng.",
-  "status.quote_error.rejected": "Tút này không thể hiển thị vì người đăng không cho phép trích dẫn nó.",
-  "status.quote_error.removed": "Tút này đã bị người đăng xóa.",
-  "status.quote_error.unauthorized": "Tút này không thể hiển thị vì bạn không được cấp quyền truy cập nó.",
-  "status.quote_post_author": "Tút của {name}",
-=======
   "status.quote": "Trích dẫn",
   "status.quote.cancel": "Bỏ trích dẫn",
   "status.quote_error.blocked_account_hint.title": "Tút này bị ẩn vì bạn đã chặn @{name}.",
@@ -989,7 +938,6 @@
   "status.quotes.empty": "Tút này chưa có ai trích dẫn. Nếu có, nó sẽ hiển thị ở đây.",
   "status.quotes.local_other_disclaimer": "Những trích dẫn bị tác giả từ chối sẽ không được hiển thị.",
   "status.quotes.remote_other_disclaimer": "Chỉ những trích dẫn từ {domain} mới được hiển thị ở đây. Những trích dẫn bị tác giả từ chối sẽ không được hiển thị.",
->>>>>>> v4.5.0
   "status.read_more": "Đọc tiếp",
   "status.reblog": "Đăng lại",
   "status.reblog_or_quote": "Đăng lại hoặc trích dẫn",
@@ -1000,10 +948,7 @@
   "status.redraft": "Xóa và viết lại",
   "status.remove_bookmark": "Bỏ lưu",
   "status.remove_favourite": "Bỏ thích",
-<<<<<<< HEAD
-=======
   "status.remove_quote": "Gỡ",
->>>>>>> v4.5.0
   "status.replied_in_thread": "Trả lời thảo luận",
   "status.replied_to": "Trả lời {name}",
   "status.reply": "Trả lời",
@@ -1048,10 +993,7 @@
   "upload_button.label": "Thêm media (JPEG, PNG, GIF, WebM, MP4, MOV)",
   "upload_error.limit": "Tập tin tải lên vượt quá giới hạn cho phép.",
   "upload_error.poll": "Không cho phép đính kèm tập tin.",
-<<<<<<< HEAD
-=======
   "upload_error.quote": "Không cho phép đính kèm tập tin với trích dẫn.",
->>>>>>> v4.5.0
   "upload_form.drag_and_drop.instructions": "Để chọn tập tin đính kèm, hãy nhấn phím cách hoặc phím Enter. Trong khi kéo, sử dụng các phím mũi tên để di chuyển tập tin đính kèm theo bất kỳ hướng nào. Nhấn phím cách hoặc phím Enter một lần nữa để thả tập tin đính kèm vào vị trí mới hoặc nhấn phím thoát để hủy.",
   "upload_form.drag_and_drop.on_drag_cancel": "Kéo thả đã bị hủy bỏ. Tập tin đính kèm {item} bị bỏ qua.",
   "upload_form.drag_and_drop.on_drag_end": "Tập tin đính kèm {item} bị bỏ qua.",
@@ -1074,9 +1016,6 @@
   "video.skip_forward": "Tua tới",
   "video.unmute": "Bật tiếng",
   "video.volume_down": "Giảm âm lượng",
-<<<<<<< HEAD
-  "video.volume_up": "Tăng âm lượng"
-=======
   "video.volume_up": "Tăng âm lượng",
   "visibility_modal.button_title": "Thay đổi quyền riêng tư",
   "visibility_modal.direct_quote_warning.text": "Nếu bạn lưu cài đặt hiện tại, trích dẫn được nhúng sẽ được chuyển đổi thành liên kết.",
@@ -1094,5 +1033,4 @@
   "visibility_modal.quote_nobody": "Chỉ tôi",
   "visibility_modal.quote_public": "Bất cứ ai",
   "visibility_modal.save": "Lưu"
->>>>>>> v4.5.0
 }

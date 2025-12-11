@@ -57,22 +57,15 @@ gl:
         setting_advanced_layout: Mostrar Mastodon coa disposición en varias columnas, para poder ver a cronoloxía, notificacións e unha terceira columna da túa elección. Non se recomenda con pantallas pequenas.
         setting_aggregate_reblogs: Non mostrar novas promocións de publicacións que foron promovidas recentemente (só afecta a promocións recén recibidas)
         setting_always_send_emails: Como norma xeral non che enviamos correos electrónicos se usas activamente Mastodon
-<<<<<<< HEAD
-        setting_default_quote_policy: As usuarias mencionadas sempre teñen permiso para citar. Este axuste só ten efecto para publicacións creadas coa próxima versión de Mastodon, pero xa podes ir preparando o axuste.
-=======
         setting_boost_modal: Ao activar a opción as promocións primeiro abrirán un cadro de confirmación no que poderás cambiar a visibilidade da túa promoción.
         setting_default_quote_policy_private: As publicacións só para seguidoras creadas con Mastodon non poden ser citadas.
         setting_default_quote_policy_unlisted: Cando alguén te cite, a súa publicación non aparecerá nas cronoloxías de popularidade.
->>>>>>> v4.5.0
         setting_default_sensitive: Medios sensibles marcados como ocultos por defecto e móstranse cun click
         setting_display_media_default: Ocultar medios marcados como sensibles
         setting_display_media_hide_all: Ocultar sempre os medios
         setting_display_media_show_all: Mostrar sempre os medios marcados como sensibles
-<<<<<<< HEAD
-=======
         setting_emoji_style: Forma de mostrar emojis. «Auto» intentará usar os emojis nativos, e se falla recurrirase a Twemoji en navegadores antigos.
         setting_quick_boosting_html: Se está activo, ao premer na icona %{boost_icon} Promover farase automáticamente a promoción no lugar de abrir  o menú despregable promover/citar. Sitúa a acción de citar no menú %{options_icon} (Opcións).
->>>>>>> v4.5.0
         setting_system_scrollbars_ui: Aplícase só en navegadores de escritorio baseados en Safari e Chrome
         setting_use_blurhash: Os gradientes toman as cores da imaxe oculta pero esvaecendo tódolos detalles
         setting_use_pending_items: Agochar actualizacións da cronoloxía tras un click no lugar de desprazar automáticamente os comentarios
@@ -161,13 +154,8 @@ gl:
       user:
         chosen_languages: Se ten marca, só as publicacións nos idiomas seleccionados serán mostrados en cronoloxías públicas
         date_of_birth:
-<<<<<<< HEAD
-          one: Temos que confirmar que tes %{count} anos polo menos para usar Mastodon. Non gardamos este dato.
-          other: Temos que confirmar que tes %{count} anos polo menos para usar Mastodon. Non gardamos este dato.
-=======
           one: Temos que confirmar que tes %{count} anos polo menos para usar %{domain}. Non gardamos este dato.
           other: Temos que confirmar que tes %{count} anos polo menos para usar %{domain}. Non gardamos este dato.
->>>>>>> v4.5.0
         role: Os roles establecen os permisos que ten a usuaria.
       user_role:
         color: Cor que se usará para o rol a través da IU, como RGB en formato hex
@@ -251,11 +239,7 @@ gl:
         setting_auto_play_gif: Reprodución automática de GIFs animados
         setting_boost_modal: Controlar a visibilidade das promocións
         setting_default_language: Idioma de publicación
-<<<<<<< HEAD
-        setting_default_privacy: Privacidade da publicación
-=======
         setting_default_privacy: Visibilidade da publicación
->>>>>>> v4.5.0
         setting_default_quote_policy: Quen pode citar
         setting_default_sensitive: Marcar sempre multimedia como sensible
         setting_delete_modal: Avisarme antes de eliminar unha publicación
@@ -268,12 +252,8 @@ gl:
         setting_emoji_style: Estilo dos emojis
         setting_expand_spoilers: Despregar sempre as publicacións marcadas con avisos de contido
         setting_hide_network: Non mostrar contactos
-<<<<<<< HEAD
-        setting_missing_alt_text_modal: Mostrar mensaxe de confirmación antes de publicar multimedia sen texto descritivo
-=======
         setting_missing_alt_text_modal: Avisarme antes de publicar multimedia sen descrición alternativa
         setting_quick_boosting: Activar promocións rápidas
->>>>>>> v4.5.0
         setting_reduce_motion: Reducir o movemento nas animacións
         setting_system_font_ui: Utilizar a tipografía por defecto do sistema
         setting_system_scrollbars_ui: Usar barras de desprazamento predeterminadas no sistema

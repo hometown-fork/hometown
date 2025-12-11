@@ -19,11 +19,7 @@ ja:
         domain:
           invalid: 有効なドメイン名ではありません
       messages:
-<<<<<<< HEAD
-        invalid_domain_on_line: "%{value} は有効なドメイン名ではありません"
-=======
         invalid_domain_on_line: "%{value}は有効なドメイン名ではありません"
->>>>>>> v4.5.0
       models:
         account:
           attributes:

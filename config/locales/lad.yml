@@ -474,13 +474,6 @@ lad:
     fasp:
       debug:
         callbacks:
-<<<<<<< HEAD
-          delete: Efasa
-      providers:
-        active: Aktivo
-        delete: Efasa
-        name: Nombre
-=======
           created_at: Kriyado en
           delete: Efasa
           ip: Adreso IP
@@ -493,17 +486,13 @@ lad:
         name: Nombre
         providers: Prokuradores
         registration_requested: Enrejistrasyon rekerida
->>>>>>> v4.5.0
         registrations:
           confirm: Konfirma
           reject: Refuza
         save: Guadra
         sign_in: Konektate
         status: Estado
-<<<<<<< HEAD
-=======
       title: FASP
->>>>>>> v4.5.0
     follow_recommendations:
       description_html: "<strong>Las rekomendasyones de kuentos ayudan a los muevos utilizadores a topar presto kontenido enteresante</strong>. Kuando un utilizador no tiene enteraktuado kon otros lo sufisiente komo para djenerar rekomendasyones personalizadas de kuentos a las ke segir, en sus lugar se le rekomiendan estes kuentos. Se rekalkulan diariamente a partir de una mikstura de kuentos kon el mayor numero de enteraksyones rezientes i kon el mayor numero de suivantes lokales kon una lingua determinada."
       language: Para la lingua
@@ -969,11 +958,6 @@ lad:
       updated_msg: Konfigurasyon de etiketas aktualizada kon sukseso
     terms_of_service:
       changelog: Ke troko
-<<<<<<< HEAD
-      history: Istorya
-      live: En bivo
-      publish: Publika
-=======
       create: Uza los tuyos
       current: Aktual
       generate: Uza modelo
@@ -985,7 +969,6 @@ lad:
       notify_users: Aviza a los utilizadores
       publish: Publika
       published_on_html: Puvlikado el %{date}
->>>>>>> v4.5.0
       title: Terminos de servisyo
     title: Administrasyon
     trends:
@@ -1248,10 +1231,7 @@ lad:
     example_title: Teksto de enshemplo
     more_from_html: Mas de %{name}
     s_blog: Blog de %{name}
-<<<<<<< HEAD
-=======
     title: Atribusyon del otor
->>>>>>> v4.5.0
   challenge:
     confirm: Kontinua
     hint_html: "<strong>Konsejo:</strong> No retornaremos a demandarte por el kod durante la sigiente ora."
@@ -1718,10 +1698,7 @@ lad:
   scheduled_statuses:
     over_daily_limit: Tienes superado el limito de %{limit} publikasyones programadas para akel diya
     over_total_limit: Tienes superado el limito de %{limit} publikasyones programadas
-<<<<<<< HEAD
-=======
     too_soon: data tiene ke ser en el avenir
->>>>>>> v4.5.0
   self_destruct:
     lead_html: Malorozamente, <strong>%{domain}</strong> va serrar permanentemente. Si teniyas un kuento ayi, ya no podras utilizarlo, ama ainda puedes solisitar una kopya de tus datos.
     title: Este sirvidor esta serrando
@@ -1835,10 +1812,6 @@ lad:
       limit: Ya tienes fiksado el numero maksimo de publikasyones
       ownership: La publikasyon de otra persona no puede fiksarse
       reblog: No se puede fixar una repartajasyon
-<<<<<<< HEAD
-    quote_policies:
-      public: Todos
-=======
     quote_error:
       not_available: Puvlikasyon no desponivle
       pending_approval: Puvlikasyon esta asperando
@@ -1848,7 +1821,6 @@ lad:
       nobody: Solo yo
       public: Todos
     quote_post_author: Sito una puvlikasyon de %{acct}
->>>>>>> v4.5.0
     title: '%{name}: "%{quote}"'
     visibilities:
       direct: Enmentadura privada
@@ -1962,11 +1934,8 @@ lad:
       subject: Tu kuento fue aksedido dizde un muevo adreso IP
       title: Una mueva koneksyon kon tu kuento
     terms_of_service_changed:
-<<<<<<< HEAD
-=======
       sign_off: La taifa de %{domain}
       subject: Aktualizasyones de muestros terminos de sirvisyo
->>>>>>> v4.5.0
       title: Aktualizasyon emportante
     warning:
       appeal: Embia una apelasyon

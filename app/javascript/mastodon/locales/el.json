@@ -229,14 +229,11 @@
   "confirmations.delete_list.title": "Διαγραφή λίστας;",
   "confirmations.discard_draft.confirm": "Απόρριψη και συνέχεια",
   "confirmations.discard_draft.edit.cancel": "Συνέχιση επεξεργασίας",
-<<<<<<< HEAD
-=======
   "confirmations.discard_draft.edit.message": "Συνεχίζοντας θα απορρίψει τυχόν αλλαγές που έχετε κάνει στην ανάρτηση που επεξεργάζεστε.",
   "confirmations.discard_draft.edit.title": "Απόρριψη αλλαγών στην ανάρτηση σας;",
   "confirmations.discard_draft.post.cancel": "Συνέχιση προχείρου",
   "confirmations.discard_draft.post.message": "Συνεχίζοντας θα απορρίψει την ανάρτηση που συνθέτετε.",
   "confirmations.discard_draft.post.title": "Απόρριψη της πρόχειρης ανάρτησης σας;",
->>>>>>> v4.5.0
   "confirmations.discard_edit_media.confirm": "Απόρριψη",
   "confirmations.discard_edit_media.message": "Έχεις μη αποθηκευμένες αλλαγές στην περιγραφή πολυμέσων ή στην προεπισκόπηση, απόρριψη ούτως ή άλλως;",
   "confirmations.follow_to_list.confirm": "Ακολούθησε και πρόσθεσε στη λίστα",
@@ -248,11 +245,7 @@
   "confirmations.missing_alt_text.confirm": "Προσθήκη εναλ κειμένου",
   "confirmations.missing_alt_text.message": "Η ανάρτησή σου περιέχει πολυμέσα χωρίς εναλλακτικό κείμενο. Η προσθήκη περιγραφών βοηθά να γίνει το περιεχόμενό σου προσβάσιμο σε περισσότερους ανθρώπους.",
   "confirmations.missing_alt_text.secondary": "Δημοσίευση όπως και να ΄χει",
-<<<<<<< HEAD
-  "confirmations.missing_alt_text.title": "Προσθήκη alt κειμένου;",
-=======
   "confirmations.missing_alt_text.title": "Προσθήκη εναλλακτικού κειμένου;",
->>>>>>> v4.5.0
   "confirmations.mute.confirm": "Αποσιώπηση",
   "confirmations.private_quote_notify.cancel": "Πίσω στην επεξεργασία",
   "confirmations.private_quote_notify.confirm": "Δημοσίευση ανάρτησης",
@@ -269,14 +262,11 @@
   "confirmations.remove_from_followers.confirm": "Αφαίρεση ακολούθου",
   "confirmations.remove_from_followers.message": "Ο χρήστης {name} θα σταματήσει να σε ακολουθεί. Σίγουρα θες να συνεχίσεις;",
   "confirmations.remove_from_followers.title": "Αφαίρεση ακολούθου;",
-<<<<<<< HEAD
-=======
   "confirmations.revoke_quote.confirm": "Αφαίρεση ανάρτησης",
   "confirmations.revoke_quote.message": "Αυτή η ενέργεια δεν μπορεί να αναιρεθεί.",
   "confirmations.revoke_quote.title": "Αφαίρεση ανάρτησης;",
   "confirmations.unblock.confirm": "Άρση αποκλεισμού",
   "confirmations.unblock.title": "Άρση αποκλεισμού {name};",
->>>>>>> v4.5.0
   "confirmations.unfollow.confirm": "Άρση ακολούθησης",
   "confirmations.unfollow.title": "Κατάργηση ακολούθησης του/της {name};",
   "confirmations.withdraw_request.confirm": "Απόσυρση αιτήματος",
@@ -376,19 +366,16 @@
   "explore.trending_links": "Νέα",
   "explore.trending_statuses": "Αναρτήσεις",
   "explore.trending_tags": "Ετικέτες",
-<<<<<<< HEAD
-  "federation.change": "Adjust status federation",
-  "federation.federated.long": "Allow toot to reach other instances",
-  "federation.federated.short": "Federated",
-  "federation.local_only.long": "Restrict this toot only to my instance",
-  "federation.local_only.short": "Local-only",
-=======
->>>>>>> v4.5.0
   "featured_carousel.header": "{count, plural, one {Καρφιτσωμένη Ανάρτηση} other {Καρφιτσωμένες Αναρτήσεις}}",
   "featured_carousel.next": "Επόμενο",
   "featured_carousel.post": "Ανάρτηση",
   "featured_carousel.previous": "Προηγούμενο",
   "featured_carousel.slide": "{index} από {total}",
+  "federation.change": "Adjust status federation",
+  "federation.federated.long": "Allow toot to reach other instances",
+  "federation.federated.short": "Federated",
+  "federation.local_only.long": "Restrict this toot only to my instance",
+  "federation.local_only.short": "Local-only",
   "filter_modal.added.context_mismatch_explanation": "Αυτή η κατηγορία φίλτρων δεν ισχύει για το περιεχόμενο εντός του οποίου προσπελάσατε αυτή την ανάρτηση. Αν θέλετε να φιλτραριστεί η ανάρτηση και εντός αυτού του πλαισίου, θα πρέπει να τροποποιήσετε το φίλτρο.",
   "filter_modal.added.context_mismatch_title": "Ασυμφωνία περιεχομένου!",
   "filter_modal.added.expired_explanation": "Αυτή η κατηγορία φίλτρων έχει λήξει, πρέπει να αλλάξετε την ημερομηνία λήξης για να ισχύσει.",
@@ -467,11 +454,6 @@
   "hints.profiles.see_more_followers": "Δες περισσότερους ακόλουθους στο {domain}",
   "hints.profiles.see_more_follows": "Δες περισσότερα άτομα που ακολουθούνται στο {domain}",
   "hints.profiles.see_more_posts": "Δες περισσότερες αναρτήσεις στο {domain}",
-<<<<<<< HEAD
-  "hints.threads.replies_may_be_missing": "Απαντήσεις από άλλους διακομιστές μπορεί να λείπουν.",
-  "hints.threads.see_more": "Δες περισσότερες αναρτήσεις στο {domain}",
-=======
->>>>>>> v4.5.0
   "home.column_settings.show_quotes": "Εμφάνιση παραθεμάτων",
   "home.column_settings.show_reblogs": "Εμφάνιση προωθήσεων",
   "home.column_settings.show_replies": "Εμφάνιση απαντήσεων",
@@ -493,28 +475,12 @@
   "ignore_notifications_modal.private_mentions_title": "Αγνόηση ειδοποιήσεων από μη ζητηθείσες ιδιωτικές αναφορές;",
   "info_button.label": "Βοήθεια",
   "info_button.what_is_alt_text": "Το εναλλακτικό κείμενο παρέχει περιγραφές εικόνας για άτομα με προβλήματα όρασης, διαδικτυακές συνδέσεις χαμηλής ταχύτητας ή για άτομα που αναζητούν επιπλέον περιεχόμενο.\\n\\nΜπορείς να βελτιώσεις την προσβασιμότητα και την κατανόηση για όλους, γράφοντας σαφές, συνοπτικό και αντικειμενικό εναλλακτικό κείμενο.\\n\\n<ul><li>Κατέγραψε σημαντικά στοιχεία</li>\\n<li>Συνόψισε το κείμενο στις εικόνες</li>\\n<li>Χρησιμοποίησε δομή κανονικής πρότασης</li>\\n<li>Απέφυγε περιττές πληροφορίες</li>\\n<li>Εστίασε στις τάσεις και τα βασικά ευρήματα σε σύνθετα οπτικά στοιχεία (όπως διαγράμματα ή χάρτες)</li></ul>",
-<<<<<<< HEAD
-  "interaction_modal.action.favourite": "Για να συνεχίσεις, θα πρέπει να αγαπήσεις από τον λογαριασμό σου.",
-  "interaction_modal.action.follow": "Για να συνεχίσεις, θα πρέπει να ακολουθήσεις από τον λογαριασμό σου.",
-  "interaction_modal.action.reblog": "Για να συνεχίσεις, θα πρέπει να αναδημοσιεύσεις από τον λογαριασμό σου.",
-  "interaction_modal.action.reply": "Για να συνεχίσεις, θα πρέπει να απαντήσεις από τον λογαριασμό σου.",
-  "interaction_modal.action.vote": "Για να συνεχίσεις, θα πρέπει να ψηφίσεις από τον λογαριασμό σου.",
-=======
   "interaction_modal.action": "Για να αλληλεπιδράσετε με την ανάρτηση του/της {name}, πρέπει να συνδεθείτε στον λογαριασμό σας σε οποιονδήποτε διακομιστή Mastodon χρησιμοποιείτε.",
->>>>>>> v4.5.0
   "interaction_modal.go": "Πάμε",
   "interaction_modal.no_account_yet": "Δεν έχεις ακόμη λογαριασμό;",
   "interaction_modal.on_another_server": "Σε διαφορετικό διακομιστή",
   "interaction_modal.on_this_server": "Σε αυτόν τον διακομιστή",
-<<<<<<< HEAD
-  "interaction_modal.title.favourite": "Favorite {name}'s post\nΠροτίμησε την ανάρτηση της/του {name}",
-  "interaction_modal.title.follow": "Ακολούθησε {name}",
-  "interaction_modal.title.reblog": "Ενίσχυσε την ανάρτηση του {name}",
-  "interaction_modal.title.reply": "Απάντηση στην ανάρτηση του {name}",
-  "interaction_modal.title.vote": "Ψήφισε στη δημοσκόπηση του χρήστη {name}",
-=======
   "interaction_modal.title": "Συνδεθείτε για να συνεχίσετε",
->>>>>>> v4.5.0
   "interaction_modal.username_prompt": "Πχ. {example}",
   "intervals.full.days": "{number, plural, one {# μέρα} other {# μέρες}}",
   "intervals.full.hours": "{number, plural, one {# ώρα} other {# ώρες}}",
@@ -553,11 +519,7 @@
   "keyboard_shortcuts.toggle_hidden": "Εμφάνιση/απόκρυψη κειμένου πίσω από το CW",
   "keyboard_shortcuts.toggle_sensitivity": "Εμφάνιση/απόκρυψη πολυμέσων",
   "keyboard_shortcuts.toot": "Δημιουργία νέας ανάρτησης",
-<<<<<<< HEAD
-  "keyboard_shortcuts.translate": "να μεταφράσει μια δημοσίευση",
-=======
   "keyboard_shortcuts.translate": "για να μεταφραστεί μια ανάρτηση",
->>>>>>> v4.5.0
   "keyboard_shortcuts.unfocus": "Αποεστίαση του πεδίου σύνθεσης/αναζήτησης",
   "keyboard_shortcuts.up": "Μετακίνηση προς τα πάνω στη λίστα",
   "learn_more_link.got_it": "Το κατάλαβα",
@@ -637,15 +599,9 @@
   "navigation_bar.privacy_and_reach": "Ιδιωτικότητα και προσιτότητα",
   "navigation_bar.search": "Αναζήτηση",
   "navigation_bar.search_trends": "Αναζήτηση / Τάσεις",
-<<<<<<< HEAD
-  "navigation_panel.collapse_followed_tags": "Σύμπτυξη μενού ετικετών που ακολουθούνται",
-  "navigation_panel.collapse_lists": "Σύμπτυξη μενού λίστας",
-  "navigation_panel.expand_followed_tags": "Επέκταση μενού ετικετών που ακολουθούνται",
-=======
   "navigation_panel.collapse_followed_tags": "Σύμπτυξη μενού ετικετών που ακολουθείτε",
   "navigation_panel.collapse_lists": "Σύμπτυξη μενού λίστας",
   "navigation_panel.expand_followed_tags": "Επέκταση μενού ετικετών που ακολουθείτε",
->>>>>>> v4.5.0
   "navigation_panel.expand_lists": "Επέκταση μενού λίστας",
   "not_signed_in_indicator.not_signed_in": "Πρέπει να συνδεθείς για να αποκτήσεις πρόσβαση σε αυτόν τον πόρο.",
   "notification.admin.report": "Ο/Η {name} ανέφερε τον {target}",
@@ -657,19 +613,11 @@
   "notification.admin.sign_up.name_and_others": "{name} και {count, plural, one {# ακόμη} other {# ακόμη}} έχουν εγγραφεί",
   "notification.annual_report.message": "Το #Wrapstodon {year} σε περιμένει! Αποκάλυψε τα στιγμιότυπα της χρονιάς και αξέχαστες στιγμές σου στο Mastodon!",
   "notification.annual_report.view": "Προβολή #Wrapstodon",
-<<<<<<< HEAD
-  "notification.favourite": "{name} favorited your post\n{name} προτίμησε την ανάρτηση σου",
-  "notification.favourite.name_and_others_with_link": "{name} και <a>{count, plural, one {# ακόμη} other {# ακόμη}}</a> αγάπησαν την ανάρτησή σου",
-  "notification.favourite_pm": "Ο χρήστης {name} αγάπησε την ιδιωτική σου επισήμανση",
-  "notification.favourite_pm.name_and_others_with_link": "Ο χρήστης {name} και <a>{count, plural, one {# ακόμη} other {# ακόμη}}</a> αγάπησαν την ιδωτική σου επισήμανση",
-  "notification.follow": "Ο/Η {name} σε ακολούθησε",
-=======
   "notification.favourite": "{name} αγάπησε την ανάρτηση σου",
   "notification.favourite.name_and_others_with_link": "{name} και <a>{count, plural, one {# ακόμη} other {# ακόμη}}</a> αγάπησαν την ανάρτησή σου",
   "notification.favourite_pm": "Ο χρήστης {name} αγάπησε την ιδιωτική σου επισήμανση",
   "notification.favourite_pm.name_and_others_with_link": "Ο χρήστης {name} και <a>{count, plural, one {# ακόμη} other {# ακόμη}}</a> αγάπησαν την ιδωτική σου επισήμανση",
   "notification.follow": "Ο χρήστης {name} σε ακολούθησε",
->>>>>>> v4.5.0
   "notification.follow.name_and_others": "Ο χρήστης {name} και <a>{count, plural, one {# ακόμη} other {# ακόμη}}</a> σε ακολούθησαν",
   "notification.follow_request": "Ο/H {name} ζήτησε να σε ακολουθήσει",
   "notification.follow_request.name_and_others": "{name} και {count, plural, one {# άλλος} other {# άλλοι}} ζήτησαν να σε ακολουθήσουν",
@@ -805,11 +753,7 @@
   "poll_button.add_poll": "Προσθήκη δημοσκόπησης",
   "poll_button.remove_poll": "Αφαίρεση δημοσκόπησης",
   "privacy.change": "Προσαρμογή ιδιωτικότητας ανάρτησης",
-<<<<<<< HEAD
-  "privacy.direct.long": "Όλοι όσοι αναφέρθηκαν στη δημοσίευση",
-=======
   "privacy.direct.long": "Όλοι όσοι επισημάνθηκαν στην ανάρτηση",
->>>>>>> v4.5.0
   "privacy.direct.short": "Ιδιωτική επισήμανση",
   "privacy.private.long": "Μόνο οι ακόλουθοί σας",
   "privacy.private.short": "Ακόλουθοι",
@@ -899,11 +843,7 @@
   "report_notification.categories.spam_sentence": "ανεπιθύμητα",
   "report_notification.categories.violation": "Παραβίαση κανόνα",
   "report_notification.categories.violation_sentence": "παραβίαση κανόνα",
-<<<<<<< HEAD
-  "report_notification.open": "Ανοιχτή αναφορά",
-=======
   "report_notification.open": "Άνοιγμα αναφοράς",
->>>>>>> v4.5.0
   "search.clear": "Εκκαθάριση αναζήτησης",
   "search.no_recent_searches": "Καμία πρόσφατη αναζήτηση",
   "search.placeholder": "Αναζήτηση",
@@ -982,15 +922,6 @@
   "status.mute_conversation": "Σίγαση συνομιλίας",
   "status.open": "Επέκταση ανάρτησης",
   "status.pin": "Καρφίτσωσε στο προφίλ",
-<<<<<<< HEAD
-  "status.quote_error.filtered": "Κρυφό λόγω ενός από τα φίλτρα σου",
-  "status.quote_error.not_found": "Αυτή η ανάρτηση δεν μπορεί να εμφανιστεί.",
-  "status.quote_error.pending_approval": "Αυτή η ανάρτηση εκκρεμεί έγκριση από τον αρχικό συντάκτη.",
-  "status.quote_error.rejected": "Αυτή η ανάρτηση δεν μπορεί να εμφανιστεί καθώς ο αρχικός συντάκτης δεν επιτρέπει τις παραθέσεις.",
-  "status.quote_error.removed": "Αυτή η ανάρτηση αφαιρέθηκε από τον συντάκτη της.",
-  "status.quote_error.unauthorized": "Αυτή η ανάρτηση δεν μπορεί να εμφανιστεί καθώς δεν έχεις εξουσιοδότηση για να τη δεις.",
-  "status.quote_post_author": "Ανάρτηση από {name}",
-=======
   "status.quote": "Παράθεση",
   "status.quote.cancel": "Ακύρωση παράθεσης",
   "status.quote_error.blocked_account_hint.title": "Αυτή η ανάρτηση είναι κρυμμένη επειδή έχετε μπλοκάρει τον/την @{name}.",
@@ -1013,7 +944,6 @@
   "status.quotes.empty": "Κανείς δεν έχει παραθέσει αυτή την ανάρτηση ακόμα. Μόλις το κάνει, θα εμφανιστεί εδώ.",
   "status.quotes.local_other_disclaimer": "Οι παραθέσεις που απορρίφθηκαν από τον συντάκτη δε θα εμφανιστούν.",
   "status.quotes.remote_other_disclaimer": "Μόνο παραθέσεις από το {domain} είναι εγγυημένες ότι θα εμφανιστούν εδώ. Παραθέσεις που απορρίφθηκαν από τον συντάκτη δε θα εμφανιστούν.",
->>>>>>> v4.5.0
   "status.read_more": "Διάβασε περισότερα",
   "status.reblog": "Ενίσχυση",
   "status.reblog_or_quote": "Ενίσχυση ή παράθεση",
@@ -1024,10 +954,7 @@
   "status.redraft": "Σβήσε & ξαναγράψε",
   "status.remove_bookmark": "Αφαίρεση σελιδοδείκτη",
   "status.remove_favourite": "Κατάργηση από τα αγαπημένα",
-<<<<<<< HEAD
-=======
   "status.remove_quote": "Αφαίρεση",
->>>>>>> v4.5.0
   "status.replied_in_thread": "Απαντήθηκε σε νήμα",
   "status.replied_to": "Απάντησε στον {name}",
   "status.reply": "Απάντησε",
@@ -1072,10 +999,7 @@
   "upload_button.label": "Πρόσθεσε εικόνες, ένα βίντεο ή ένα αρχείο ήχου",
   "upload_error.limit": "Υπέρβαση ορίου μεγέθους ανεβασμένων αρχείων.",
   "upload_error.poll": "Στις δημοσκοπήσεις δεν επιτρέπεται η μεταφόρτωση αρχείου.",
-<<<<<<< HEAD
-=======
   "upload_error.quote": "Δεν επιτρέπεται η μεταφόρτωση αρχείου με παραθέσεις.",
->>>>>>> v4.5.0
   "upload_form.drag_and_drop.instructions": "Για να επιλέξετε ένα συνημμένο αρχείο πολυμέσων, πατήστε το Space ή το Enter. Ενώ το σέρνετε, χρησιμοποιήστε τα πλήκτρα βέλους για να μετακινήσετε το συνημμένο αρχείο πολυμέσων προς οποιαδήποτε κατεύθυνση. Πατήστε ξανά το Space ή το Enter για να αποθέσετε το συνημμένο αρχείο πολυμέσων στη νέα του θέση ή πατήστε το Escape για ακύρωση.",
   "upload_form.drag_and_drop.on_drag_cancel": "Η μετακίνηση ακυρώθηκε. Έγινε απόθεση του συνημμένου αρχείου πολυμέσων «{item}».",
   "upload_form.drag_and_drop.on_drag_end": "Έγινε απόθεση του συνημμένου αρχείου πολυμέσων «{item}».",
@@ -1098,9 +1022,6 @@
   "video.skip_forward": "Παράλειψη εμπρός",
   "video.unmute": "Άρση σίγασης",
   "video.volume_down": "Μείωση έντασης",
-<<<<<<< HEAD
-  "video.volume_up": "Αύξηση έντασης"
-=======
   "video.volume_up": "Αύξηση έντασης",
   "visibility_modal.button_title": "Ορισμός ορατότητας",
   "visibility_modal.direct_quote_warning.text": "Εάν αποθηκεύσετε τις τρέχουσες ρυθμίσεις, η ενσωματωμένη παράθεση θα μετατραπεί σε σύνδεσμο.",
@@ -1118,5 +1039,4 @@
   "visibility_modal.quote_nobody": "Μόνο εγώ",
   "visibility_modal.quote_public": "Οποιοσδήποτε",
   "visibility_modal.save": "Αποθήκευση"
->>>>>>> v4.5.0
 }

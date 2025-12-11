@@ -6,11 +6,7 @@
   "about.domain_blocks.no_reason_available": "Grund unbekannt",
   "about.domain_blocks.preamble": "Mastodon erlaubt es dir grundsätzlich, alle Inhalte von allen Nutzer*innen auf allen Servern im Fediverse zu sehen und mit ihnen zu interagieren. Für diesen Server gibt es aber ein paar Ausnahmen.",
   "about.domain_blocks.silenced.explanation": "Standardmäßig werden von diesem Server keine Inhalte oder Profile angezeigt. Du kannst die Profile und Inhalte aber dennoch sehen, wenn du explizit nach diesen suchst oder diesen folgst.",
-<<<<<<< HEAD
-  "about.domain_blocks.silenced.title": "Stummgeschaltet",
-=======
   "about.domain_blocks.silenced.title": "Ausgeblendet",
->>>>>>> v4.5.0
   "about.domain_blocks.suspended.explanation": "Es werden keine Daten von diesem Server verarbeitet, gespeichert oder ausgetauscht, sodass eine Interaktion oder Kommunikation mit Nutzer*innen dieses Servers nicht möglich ist.",
   "about.domain_blocks.suspended.title": "Gesperrt",
   "about.language_label": "Sprache",
@@ -237,11 +233,7 @@
   "confirmations.discard_draft.edit.title": "Änderungen an diesem Beitrag verwerfen?",
   "confirmations.discard_draft.post.cancel": "Entwurf fortsetzen",
   "confirmations.discard_draft.post.message": "Beim Fortfahren wird der gerade verfasste Beitrag verworfen.",
-<<<<<<< HEAD
-  "confirmations.discard_draft.post.title": "Beitragsentwurf verwerfen?",
-=======
   "confirmations.discard_draft.post.title": "Entwurf verwerfen?",
->>>>>>> v4.5.0
   "confirmations.discard_edit_media.confirm": "Verwerfen",
   "confirmations.discard_edit_media.message": "Du hast Änderungen an der Medienbeschreibung oder -vorschau vorgenommen, die noch nicht gespeichert sind. Trotzdem verwerfen?",
   "confirmations.follow_to_list.confirm": "Folgen und zur Liste hinzufügen",
@@ -270,14 +262,11 @@
   "confirmations.remove_from_followers.confirm": "Follower entfernen",
   "confirmations.remove_from_followers.message": "{name} wird dir nicht länger folgen. Bist du dir sicher?",
   "confirmations.remove_from_followers.title": "Follower entfernen?",
-<<<<<<< HEAD
-=======
   "confirmations.revoke_quote.confirm": "Beitrag entfernen",
   "confirmations.revoke_quote.message": "Diese Aktion kann nicht rückgängig gemacht werden.",
   "confirmations.revoke_quote.title": "Beitrag entfernen?",
   "confirmations.unblock.confirm": "Nicht mehr blockieren",
   "confirmations.unblock.title": "{name} nicht mehr blockieren?",
->>>>>>> v4.5.0
   "confirmations.unfollow.confirm": "Entfolgen",
   "confirmations.unfollow.title": "{name} entfolgen?",
   "confirmations.withdraw_request.confirm": "Anfrage zurückziehen",
@@ -377,19 +366,16 @@
   "explore.trending_links": "Neuigkeiten",
   "explore.trending_statuses": "Beiträge",
   "explore.trending_tags": "Hashtags",
-<<<<<<< HEAD
-  "federation.change": "Status-Föderation bearbeiten",
-  "federation.federated.long": "Status erlauben, andere Instanzen zu erreichen",
-  "federation.federated.short": "Föderiert",
-  "federation.local_only.long": "Status auf diese Instanz beschränken",
-  "federation.local_only.short": "Nur lokal",
-=======
->>>>>>> v4.5.0
   "featured_carousel.header": "{count, plural, one {Angehefteter Beitrag} other {Angeheftete Beiträge}}",
   "featured_carousel.next": "Vor",
   "featured_carousel.post": "Beitrag",
   "featured_carousel.previous": "Zurück",
   "featured_carousel.slide": "{index} von {total}",
+  "federation.change": "Status-Föderation bearbeiten",
+  "federation.federated.long": "Status erlauben, andere Instanzen zu erreichen",
+  "federation.federated.short": "Föderiert",
+  "federation.local_only.long": "Status auf diese Instanz beschränken",
+  "federation.local_only.short": "Nur lokal",
   "filter_modal.added.context_mismatch_explanation": "Diese Filterkategorie gilt nicht für den Kontext, in welchem du auf diesen Beitrag zugegriffen hast. Wenn der Beitrag auch in diesem Kontext gefiltert werden soll, musst du den Filter bearbeiten.",
   "filter_modal.added.context_mismatch_title": "Kontext stimmt nicht überein!",
   "filter_modal.added.expired_explanation": "Diese Filterkategorie ist abgelaufen. Du musst das Ablaufdatum für diese Kategorie ändern.",
@@ -406,11 +392,7 @@
   "filter_modal.select_filter.subtitle": "Einem vorhandenen Filter hinzufügen oder einen neuen erstellen",
   "filter_modal.select_filter.title": "Diesen Beitrag filtern",
   "filter_modal.title.status": "Beitrag per Filter ausblenden",
-<<<<<<< HEAD
-  "filter_warning.matches_filter": "Übereinstimmend mit dem Filter „<span>{title}</span>“",
-=======
   "filter_warning.matches_filter": "Ausgeblendet wegen des Filters „<span>{title}</span>“",
->>>>>>> v4.5.0
   "filtered_notifications_banner.pending_requests": "Von {count, plural, =0 {keinem Profil, das dir möglicherweise bekannt ist} one {einem Profil, das dir möglicherweise bekannt ist} other {# Profilen, die dir möglicherweise bekannt sind}}",
   "filtered_notifications_banner.title": "Gefilterte Benachrichtigungen",
   "firehose.all": "Alle Server",
@@ -472,11 +454,6 @@
   "hints.profiles.see_more_followers": "Weitere Follower auf {domain} ansehen",
   "hints.profiles.see_more_follows": "Weitere gefolgte Profile auf {domain} ansehen",
   "hints.profiles.see_more_posts": "Weitere Beiträge auf {domain} ansehen",
-<<<<<<< HEAD
-  "hints.threads.replies_may_be_missing": "Möglicherweise werden nicht alle Antworten von anderen Servern angezeigt.",
-  "hints.threads.see_more": "Weitere Antworten auf {domain} ansehen",
-=======
->>>>>>> v4.5.0
   "home.column_settings.show_quotes": "Zitierte Beiträge anzeigen",
   "home.column_settings.show_reblogs": "Geteilte Beiträge anzeigen",
   "home.column_settings.show_replies": "Antworten anzeigen",
@@ -498,28 +475,12 @@
   "ignore_notifications_modal.private_mentions_title": "Benachrichtigungen von unerwünschten privaten Erwähnungen ignorieren?",
   "info_button.label": "Hilfe",
   "info_button.what_is_alt_text": "<h1>Was ist Alt-Text?</h1> <p>Alt-Text bietet Bildbeschreibungen für Personen mit einer Sehschwäche, einer schlechten Internetverbindung und für alle, die zusätzlichen Kontext möchten.</p> <p>Du kannst die Zugänglichkeit und die Verständlichkeit für alle verbessern, indem du eine klare, genaue und objektive Bildbeschreibung hinzufügst.</p> <ul> <li>Erfasse wichtige Elemente</li> <li>Fasse Text in Bildern zusammen</li> <li>Verwende einen korrekten Satzbau</li> <li>Vermeide unwichtige Informationen</li> <li>Konzentriere dich bei komplexen Darstellungen (z. B. Diagramme oder Karten) auf Trends und wichtige Erkenntnisse</li> </ul>",
-<<<<<<< HEAD
-  "interaction_modal.action.favourite": "Du musst von deinem Konto aus favorisieren, um fortzufahren.",
-  "interaction_modal.action.follow": "Du musst von deinem Konto aus folgen, um fortzufahren.",
-  "interaction_modal.action.reblog": "Du musst von deinem Konto aus teilen, um fortzufahren.",
-  "interaction_modal.action.reply": "Du musst von deinem Konto aus antworten, um fortzufahren.",
-  "interaction_modal.action.vote": "Du musst von deinem Konto aus abstimmen, um fortzufahren.",
-=======
   "interaction_modal.action": "Melde dich auf deinem Mastodon-Server an, damit du mit dem Beitrag von {name} interagieren kannst.",
->>>>>>> v4.5.0
   "interaction_modal.go": "Los",
   "interaction_modal.no_account_yet": "Du hast noch kein Konto?",
   "interaction_modal.on_another_server": "Auf einem anderen Server",
   "interaction_modal.on_this_server": "Auf diesem Server",
-<<<<<<< HEAD
-  "interaction_modal.title.favourite": "Beitrag von {name} favorisieren",
-  "interaction_modal.title.follow": "Folge {name}",
-  "interaction_modal.title.reblog": "Beitrag von {name} teilen",
-  "interaction_modal.title.reply": "Auf Beitrag von {name} antworten",
-  "interaction_modal.title.vote": "An der Umfrage von {name} teilnehmen",
-=======
   "interaction_modal.title": "Melde dich an, um fortzufahren",
->>>>>>> v4.5.0
   "interaction_modal.username_prompt": "z. B. {example}",
   "intervals.full.days": "{number, plural, one {# Tag} other {# Tage}}",
   "intervals.full.hours": "{number, plural, one {# Stunde} other {# Stunden}}",
@@ -961,15 +922,6 @@
   "status.mute_conversation": "Unterhaltung stummschalten",
   "status.open": "Beitrag öffnen",
   "status.pin": "Im Profil anheften",
-<<<<<<< HEAD
-  "status.quote_error.filtered": "Ausgeblendet wegen eines deiner Filter",
-  "status.quote_error.not_found": "Dieser Beitrag kann nicht angezeigt werden.",
-  "status.quote_error.pending_approval": "Dieser Beitrag muss noch durch das ursprüngliche Profil genehmigt werden.",
-  "status.quote_error.rejected": "Dieser Beitrag kann nicht angezeigt werden, weil das ursprüngliche Profil das Zitieren nicht erlaubt.",
-  "status.quote_error.removed": "Dieser Beitrag wurde durch das Profil entfernt.",
-  "status.quote_error.unauthorized": "Dieser Beitrag kann nicht angezeigt werden, weil du zum Ansehen nicht berechtigt bist.",
-  "status.quote_post_author": "Beitrag von {name}",
-=======
   "status.quote": "Zitieren",
   "status.quote.cancel": "Zitat abbrechen",
   "status.quote_error.blocked_account_hint.title": "Dieser Beitrag wurde ausgeblendet, weil du @{name} blockiert hast.",
@@ -992,7 +944,6 @@
   "status.quotes.empty": "Diesen Beitrag hat bisher noch niemand zitiert. Sobald es jemand tut, wird das Profil hier erscheinen.",
   "status.quotes.local_other_disclaimer": "Durch Autor*in abgelehnte Zitate werden nicht angezeigt.",
   "status.quotes.remote_other_disclaimer": "Nur Zitate von {domain} werden hier garantiert angezeigt. Durch Autor*in abgelehnte Zitate werden nicht angezeigt.",
->>>>>>> v4.5.0
   "status.read_more": "Gesamten Beitrag anschauen",
   "status.reblog": "Teilen",
   "status.reblog_or_quote": "Teilen oder zitieren",
@@ -1003,10 +954,7 @@
   "status.redraft": "Löschen und neu erstellen",
   "status.remove_bookmark": "Lesezeichen entfernen",
   "status.remove_favourite": "Aus Favoriten entfernen",
-<<<<<<< HEAD
-=======
   "status.remove_quote": "Entfernen",
->>>>>>> v4.5.0
   "status.replied_in_thread": "Antwortete im Thread",
   "status.replied_to": "Antwortete {name}",
   "status.reply": "Antworten",
@@ -1051,10 +999,7 @@
   "upload_button.label": "Bilder, Video oder Audio hinzufügen",
   "upload_error.limit": "Dateiupload-Limit überschritten.",
   "upload_error.poll": "Medien-Anhänge sind zusammen mit Umfragen nicht erlaubt.",
-<<<<<<< HEAD
-=======
   "upload_error.quote": "Medien-Anhänge sind zusammen mit Zitaten nicht erlaubt.",
->>>>>>> v4.5.0
   "upload_form.drag_and_drop.instructions": "Drücke zum Aufnehmen eines Medienanhangs die Eingabe- oder Leertaste. Verwende beim Ziehen die Pfeiltasten, um den Medienanhang zur gewünschten Position zu bewegen. Drücke erneut die Eingabe- oder Leertaste, um den Medienanhang an der gewünschten Position abzulegen. Mit der Escape-Taste kannst du den Vorgang abbrechen.",
   "upload_form.drag_and_drop.on_drag_cancel": "Das Ziehen wurde abgebrochen und der Medienanhang {item} wurde abgelegt.",
   "upload_form.drag_and_drop.on_drag_end": "Der Medienanhang {item} wurde abgelegt.",
@@ -1077,9 +1022,6 @@
   "video.skip_forward": "Vorspulen",
   "video.unmute": "Stummschaltung aufheben",
   "video.volume_down": "Leiser",
-<<<<<<< HEAD
-  "video.volume_up": "Lauter"
-=======
   "video.volume_up": "Lauter",
   "visibility_modal.button_title": "Sichtbarkeit festlegen",
   "visibility_modal.direct_quote_warning.text": "Wenn diese Einstellungen gespeichert werden, wird das eingebettete Zitat in einen Link umgewandelt.",
@@ -1097,5 +1039,4 @@
   "visibility_modal.quote_nobody": "Nur ich",
   "visibility_modal.quote_public": "Alle",
   "visibility_modal.save": "Speichern"
->>>>>>> v4.5.0
 }

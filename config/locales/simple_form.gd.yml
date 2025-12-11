@@ -57,22 +57,15 @@ gd:
         setting_advanced_layout: Seall Mastodon ’na ioma-cholbh ach am faic thu an loidhne-ama, na brathan agus treas colbh a thaghas tu fhèin. Cha mholamaid seo air sgrìnichean beaga.
         setting_aggregate_reblogs: Na seall brosnachaidhean ùra do phostaichean a chaidh a bhrosnachadh o chionn goirid (cha doir seo buaidh ach air brosnachaidhean ùra o seo a-mach)
         setting_always_send_emails: Mar as àbhaist, cha dèid brathan puist-d a chur nuair a a bhios tu ri Mastodon gu cunbhalach
-<<<<<<< HEAD
-        setting_default_quote_policy: Faodaidh luchd-cleachdaidh le iomradh orra luaidh an-còmhnaidh. Cha bhi an roghainn seo ann sàs ach air postaichean a thèid a chruthachadh leis an ath-thionndadh de Mhastodon ach ’s urrainn dhut do roghainn a thaghadh airson ullachadh dha.
-=======
         setting_boost_modal: Ma tha seo an comas, thèid còmhradh dearbhaidh a shealltainn far an urrainn dhut faicsinneachd a’ phuist agad atharrachadh nuair a bhios tu ri brosnachadh.
         setting_default_quote_policy_private: Chan urrainn do chàch postaichean dhan luchd-leantainn a-mhàin a chaidh a sgrìobhadh le Mastodon a luaidh.
         setting_default_quote_policy_unlisted: Nuair a luaidheas daoine thu, thèid am post aca-san fhalach o loidhnichean-ama nan treandaichean.
->>>>>>> v4.5.0
         setting_default_sensitive: Thèid meadhanan frionasach fhalach a ghnàth is gabhaidh an nochdadh le briogadh orra
         setting_display_media_default: Falaich meadhanan ris a bheil comharra gu bheil iad frionasach
         setting_display_media_hide_all: Falaich na meadhanan an-còmhnaidh
         setting_display_media_show_all: Seall na meadhanan an-còmhnaidh
-<<<<<<< HEAD
-=======
         setting_emoji_style: An dòigh air an dèid emojis a shealltainn. Feuchaidh “Fèin-obrachail” ris na h-emojis tùsail a chleachdadh ach thèid Twemoji a chleachdadh ’nan àite air seann-bhrabhsairean.
         setting_quick_boosting_html: Ma tha seo an comas, ma nì thu briogadh air ìomhaigheag %{boost_icon} a’ bhrosnachaidh, thèid a bhrosnachadh sa bhad seach a bhith a’ fosgladh clàr-taice teàrnach a’ bhrosnachaidh/luaidh. Thèid gnìomh an luaidh a ghluasad gu clàr-taice %{options_icon} nan roghainnean.
->>>>>>> v4.5.0
         setting_system_scrollbars_ui: Chan obraich seo ach air brabhsairean desktop stèidhichte air Safari ’s Chrome
         setting_use_blurhash: Tha caiseadan stèidhichte air dathan nan nithean lèirsinneach a chaidh fhalach ach chan fhaicear am mion-fhiosrachadh
         setting_use_pending_items: Falaich ùrachaidhean na loidhne-ama air cùlaibh briogaidh seach a bhith a’ sgroladh nam postaichean gu fèin-obrachail
@@ -161,17 +154,10 @@ gd:
       user:
         chosen_languages: Nuair a bhios cromag ris, cha nochd ach postaichean sna cànain a thagh thu air loidhnichean-ama poblach
         date_of_birth:
-<<<<<<< HEAD
-          few: Feumaidh sinn dèanamh cinnteach gu bheil thu %{count} bliadhnaichean a dh’aois air a char as lugha mus cleachd thu Mastodon. Cha chlàraich sinn seo.
-          one: Feumaidh sinn dèanamh cinnteach gu bheil thu %{count} bhliadhna a dh’aois air a char as lugha mus cleachd thu Mastodon. Cha chlàraich sinn seo.
-          other: Feumaidh sinn dèanamh cinnteach gu bheil thu %{count} bliadhna a dh’aois air a char as lugha mus cleachd thu Mastodon. Cha chlàraich sinn seo.
-          two: Feumaidh sinn dèanamh cinnteach gu bheil thu %{count} bhliadhna a dh’aois air a char as lugha mus cleachd thu Mastodon. Cha chlàraich sinn seo.
-=======
           few: Feumaidh sinn dèanamh cinnteach gu bheil thu %{count} bliadhnaichean a dh’aois air a char as lugha mus cleachd thu %{domain}. Cha chlàraich sinn seo.
           one: Feumaidh sinn dèanamh cinnteach gu bheil thu %{count} bhliadhna a dh’aois air a char as lugha mus cleachd thu %{domain}. Cha chlàraich sinn seo.
           other: Feumaidh sinn dèanamh cinnteach gu bheil thu %{count} bliadhna a dh’aois air a char as lugha mus cleachd thu %{domain}. Cha chlàraich sinn seo.
           two: Feumaidh sinn dèanamh cinnteach gu bheil thu %{count} bhliadhna a dh’aois air a char as lugha mus cleachd thu %{domain}. Cha chlàraich sinn seo.
->>>>>>> v4.5.0
         role: Stiùiridh an dreuchd dè na ceadan a bhios aig cleachdaiche.
       user_role:
         color: An datha a bhios air an dreuchd air feadh na h-eadar-aghaidh, ’na RGB san fhòrmat sia-dheicheach
@@ -255,11 +241,7 @@ gd:
         setting_auto_play_gif: Cluich GIFs beòthaichte gu fèin-obrachail
         setting_boost_modal: Smachd air faicsinneachd nam brosnachaidhean
         setting_default_language: Cànan postaidh
-<<<<<<< HEAD
-        setting_default_privacy: Prìobhaideachd postaidh
-=======
         setting_default_privacy: Faicsinneachd nam post
->>>>>>> v4.5.0
         setting_default_quote_policy: Cò dh’fhaodas luaidh
         setting_default_sensitive: Cuir comharra ri meadhanan an-còmhnaidh gu bheil iad frionasach
         setting_delete_modal: Thoir rabhadh dhomh mus dèid post a sguabadh às
@@ -272,12 +254,8 @@ gd:
         setting_emoji_style: Stoidhle nan Emojis
         setting_expand_spoilers: Leudaich postaichean ris a bheil rabhadh susbainte an-còmhnaidh
         setting_hide_network: Falaich an graf sòisealta agad
-<<<<<<< HEAD
-        setting_missing_alt_text_modal: Faic còmhradh dearbhaidh mus postaich thu meadhan às aonais roghainn teacsa
-=======
         setting_missing_alt_text_modal: Thoir rabhadh dhomh mus postaich mi meadhan às aonais roghainn teacsa
         setting_quick_boosting: Cuir am brosnachadh luath an comas
->>>>>>> v4.5.0
         setting_reduce_motion: Ìslich an gluasad sna beòthachaidhean
         setting_system_font_ui: Cleachd cruth-clò bunaiteach an t-siostaim
         setting_system_scrollbars_ui: Seall bàr-sgrolaidh bunaiteach an t-siostaim

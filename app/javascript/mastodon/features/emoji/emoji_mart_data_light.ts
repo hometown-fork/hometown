@@ -9,11 +9,7 @@ import type {
   ShortCodesToEmojiData,
 } from 'virtual:mastodon-emoji-compressed';
 
-<<<<<<< HEAD
-import { unicodeToUnifiedName } from './unicode_to_unified_name';
-=======
 import { unicodeToUnifiedName } from './unicode_utils';
->>>>>>> v4.5.0
 
 type Emojis = Record<
   NonNullable<keyof ShortCodesToEmojiData>,

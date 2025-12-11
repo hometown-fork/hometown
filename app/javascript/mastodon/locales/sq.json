@@ -113,10 +113,7 @@
   "alt_text_modal.describe_for_people_with_visual_impairments": "Përshkruajeni këtë për persona me mangësi shikimi…",
   "alt_text_modal.done": "U bë",
   "announcement.announcement": "Lajmërim",
-<<<<<<< HEAD
-=======
   "annual_report.summary.archetype.oracle": "Orakulli",
->>>>>>> v4.5.0
   "annual_report.summary.followers.followers": "ndjekës",
   "annual_report.summary.followers.total": "{count} gjithsej",
   "annual_report.summary.here_it_is": "Ja {year} juaj e shqyrtuar:",
@@ -261,14 +258,11 @@
   "confirmations.remove_from_followers.confirm": "Hiqe ndjekësin",
   "confirmations.remove_from_followers.message": "{name} do të reshtë së ndjekuri ju. Jeni i sigurt se doni të vazhdohet?",
   "confirmations.remove_from_followers.title": "Të hiqet ndjekësi?",
-<<<<<<< HEAD
-=======
   "confirmations.revoke_quote.confirm": "Hiqe postimin",
   "confirmations.revoke_quote.message": "Ky veprim s’mund të zhbëhet.",
   "confirmations.revoke_quote.title": "Të hiqet postimi?",
   "confirmations.unblock.confirm": "Zhbllokoje",
   "confirmations.unblock.title": "Të zhbllojohet {name}?",
->>>>>>> v4.5.0
   "confirmations.unfollow.confirm": "Resht së ndjekuri",
   "confirmations.unfollow.title": "Të ndalet ndjekja për {name}?",
   "confirmations.withdraw_request.confirm": "Tërhiqeni mbrapsht kërkesën",
@@ -368,19 +362,16 @@
   "explore.trending_links": "Lajme",
   "explore.trending_statuses": "Postime",
   "explore.trending_tags": "Hashtagë",
-<<<<<<< HEAD
-  "federation.change": "Adjust status federation",
-  "federation.federated.long": "Allow toot to reach other instances",
-  "federation.federated.short": "Federated",
-  "federation.local_only.long": "Restrict this toot only to my instance",
-  "federation.local_only.short": "Local-only",
-=======
->>>>>>> v4.5.0
   "featured_carousel.header": "{count, plural, one {Postim i Fiksuar} other {Postime të Fiksuar}}",
   "featured_carousel.next": "Pasuesi",
   "featured_carousel.post": "Postim",
   "featured_carousel.previous": "I mëparshmi",
   "featured_carousel.slide": "{index} nga {total}",
+  "federation.change": "Adjust status federation",
+  "federation.federated.long": "Allow toot to reach other instances",
+  "federation.federated.short": "Federated",
+  "federation.local_only.long": "Restrict this toot only to my instance",
+  "federation.local_only.short": "Local-only",
   "filter_modal.added.context_mismatch_explanation": "Kjo kategori filtrash nuk aplikohet për kontekstin nën të cilin po merreni me këtë postim. Nëse doni që postimi të filtrohet edhe në këtë kontekst, do t’ju duhet të përpunoni filtrin.",
   "filter_modal.added.context_mismatch_title": "Mospërputhje kontekstesh!",
   "filter_modal.added.expired_explanation": "Kjo kategori filtrash ka skaduar, do t’ju duhet të ndryshoni datën e skadimit për të, pa të aplikohet.",
@@ -459,11 +450,6 @@
   "hints.profiles.see_more_followers": "Shihni më tepër ndjekës në {domain}",
   "hints.profiles.see_more_follows": "Shihni më tepër ndjekje në {domain}",
   "hints.profiles.see_more_posts": "Shihni më tepër postime në {domain}",
-<<<<<<< HEAD
-  "hints.threads.replies_may_be_missing": "Mund të mungojnë përgjigje nga shërbyes të tjerë.",
-  "hints.threads.see_more": "Shihni më tepër përgjigje në {domain}",
-=======
->>>>>>> v4.5.0
   "home.column_settings.show_quotes": "Shfaq thonjëza",
   "home.column_settings.show_reblogs": "Shfaq përforcime",
   "home.column_settings.show_replies": "Shfaq përgjigje",
@@ -485,28 +471,12 @@
   "ignore_notifications_modal.private_mentions_title": "Të shpërfillen njoftime nga Përmendje Private të pakërkuara?",
   "info_button.label": "Ndihmë",
   "info_button.what_is_alt_text": "<h1>Ç’është teksti alternativ?</h1> <p>Teksti alternativ jep përshkrime figurash për persona me mangësi në të parët, lidhje me gjerësi bande të ulët, ose për ata që duan kontekst shtesë.</p> <p>Mund të përmirësoni përdorimin nga persona me aftësi të kufizuara dhe kuptimin për këto, duke shkruar tekst alternativ të qartë, konciz dhe objektiv.</p> <ul> <li>Rrokni elementët e rëndësishëm</li> <li>Përmblidhni tekst në figura</li> <li>Përdorni strukturë të rregullt fjalish</li> <li>Shmangni përsëritje informacioni</li> <li>Në aspekte pamore të ndërlikuara (fjala vjen, diagrame ose harta) përqendrohuni te prirje dhe gjetje gjërash kyçe</li> </ul>",
-<<<<<<< HEAD
-  "interaction_modal.action.favourite": "Që të vazhdoni, lypset t’i vini shenjë si i parapëlqyer që nga llogaria juaj.",
-  "interaction_modal.action.follow": "Që të vazhdoni, lypset ta ndiqni që nga llogaria juaj.",
-  "interaction_modal.action.reblog": "Që të vazhdoni, lypset ta riblogoni që nga llogaria juaj.",
-  "interaction_modal.action.reply": "Që të vazhdoni, lypset të përgjigjeni që nga llogaria juaj.",
-  "interaction_modal.action.vote": "Që të vazhdoni, lypset të votoni që nga llogaria juaj.",
-=======
   "interaction_modal.action": "Që të ndërveproni me postimin nga {name}, lypset të bëni hyrjen në llogarinë tuaj, ose në çfarëdo shërbyesi Mastodon që përdorni.",
->>>>>>> v4.5.0
   "interaction_modal.go": "Shko",
   "interaction_modal.no_account_yet": "S’keni ende një llogari?",
   "interaction_modal.on_another_server": "Në një tjetër shërbyes",
   "interaction_modal.on_this_server": "Në këtë shërbyes",
-<<<<<<< HEAD
-  "interaction_modal.title.favourite": "Bëje të parapëlqyer postimin e {name}",
-  "interaction_modal.title.follow": "Ndiq {name}",
-  "interaction_modal.title.reblog": "Përforconi postimin e {name}",
-  "interaction_modal.title.reply": "Përgjigjuni postimit të {name}",
-  "interaction_modal.title.vote": "Votoni te pyetësori nga {name}",
-=======
   "interaction_modal.title": "Që të vazhdohet, bëni hyrjen",
->>>>>>> v4.5.0
   "interaction_modal.username_prompt": "P.sh., {example}",
   "intervals.full.days": "{number, plural, one {# ditë} other {# ditë}}",
   "intervals.full.hours": "{number, plural, one {# orë} other {# orë}}",
@@ -948,15 +918,6 @@
   "status.mute_conversation": "Heshtoje bisedën",
   "status.open": "Zgjeroje këtë mesazh",
   "status.pin": "Fiksoje në profil",
-<<<<<<< HEAD
-  "status.quote_error.filtered": "Fshehur për shkak të njërit nga filtrat tuaj",
-  "status.quote_error.not_found": "Ky postim s’mund të shfaqet.",
-  "status.quote_error.pending_approval": "Ky postim është në pritje të miratimit nga autori origjinal.",
-  "status.quote_error.rejected": "Ky postim s’mund të shfaqet, ngaqë autori origjinal nuk lejon citim të tij.",
-  "status.quote_error.removed": "Ky postim u hoq nga autori i tij.",
-  "status.quote_error.unauthorized": "Ky postim s’mund të shfaqet, ngaqë s’jeni i autorizuar ta shihni.",
-  "status.quote_post_author": "Postim nga {name}",
-=======
   "status.quote": "Citojeni",
   "status.quote.cancel": "Anuloje citimin",
   "status.quote_error.blocked_account_hint.title": "Ky postim është i fshehur, ngaqë keni bllokuar @{name}.",
@@ -979,7 +940,6 @@
   "status.quotes.empty": "Këtë postim ende s’e ka cituar kush. Kur dikush ta bëjë, do të shfaqet këtu.",
   "status.quotes.local_other_disclaimer": "Citimet e hedhura poshtë nga autori s’do të shfaqen.",
   "status.quotes.remote_other_disclaimer": "Këtu garantohet të shfaqen vetëm citime nga {domain}. Citime të hedhura poshtë nga autori s’do të shfaqen.",
->>>>>>> v4.5.0
   "status.read_more": "Lexoni më tepër",
   "status.reblog": "Përforcojeni",
   "status.reblog_or_quote": "Përforconi ose citoni",
@@ -990,10 +950,7 @@
   "status.redraft": "Fshijeni & rihartojeni",
   "status.remove_bookmark": "Hiqe faqerojtësin",
   "status.remove_favourite": "Hiqe nga të parapëlqyerat",
-<<<<<<< HEAD
-=======
   "status.remove_quote": "Hiqe",
->>>>>>> v4.5.0
   "status.replied_in_thread": "U përgjigj te rrjedha",
   "status.replied_to": "Iu përgjigj {name}",
   "status.reply": "Përgjigjuni",
@@ -1038,10 +995,7 @@
   "upload_button.label": "Shtoni figura, një video ose një kartelë audio",
   "upload_error.limit": "U tejkalua kufi ngarkimi kartelash.",
   "upload_error.poll": "Me pyetësorët s’lejohet ngarkim kartelash.",
-<<<<<<< HEAD
-=======
   "upload_error.quote": "Nuk lejohet ngarkim kartelash me citime.",
->>>>>>> v4.5.0
   "upload_form.drag_and_drop.instructions": "Që të merrni një bashkëngjitje media, shtypni tastin Space ose Enter. Teksa bëhet tërheqje, përdorni tastet shigjetë për ta shpënë bashkëngjitjen media në cilëndo drejtori që doni. Shtypni sërish Space ose Enter që të lihet bashkëngjitja media në pozicionin e vet të ri, ose shtypni Esc, që të anulohet veprimi.",
   "upload_form.drag_and_drop.on_drag_cancel": "Tërheqja u anulua. Bashkëngjitja media {item} u la.",
   "upload_form.drag_and_drop.on_drag_end": "Bashkëngjitja media {item} u la.",
@@ -1064,9 +1018,6 @@
   "video.skip_forward": "Anashkalo pasardhësen",
   "video.unmute": "Hiqi heshtimin",
   "video.volume_down": "Ulje volumi",
-<<<<<<< HEAD
-  "video.volume_up": "Ngritje volumi"
-=======
   "video.volume_up": "Ngritje volumi",
   "visibility_modal.button_title": "Caktoni dukshmëri",
   "visibility_modal.direct_quote_warning.text": "Nëse ruani rregullimet e tanishme, citimi i trupëzuar do të shndërrohet në një lidhje.",
@@ -1084,5 +1035,4 @@
   "visibility_modal.quote_nobody": "Thjesht unë",
   "visibility_modal.quote_public": "Cilido",
   "visibility_modal.save": "Ruaje"
->>>>>>> v4.5.0
 }

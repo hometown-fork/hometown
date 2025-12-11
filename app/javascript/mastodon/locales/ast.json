@@ -155,11 +155,6 @@
   "confirmations.redraft.confirm": "Desaniciar y reeditar",
   "confirmations.redraft.title": "¿Desaniciar y reeditar la publicación?",
   "confirmations.unfollow.confirm": "Dexar de siguir",
-<<<<<<< HEAD
-  "confirmations.unfollow.message": "¿De xuru que quies dexar de siguir a {name}?",
-  "confirmations.unfollow.title": "¿Dexar de siguir al usuariu?",
-=======
->>>>>>> v4.5.0
   "content_warning.hide": "Esconder la publicación",
   "content_warning.show": "Amosar de toes toes",
   "content_warning.show_more": "Amosar más",
@@ -218,14 +213,11 @@
   "explore.trending_links": "Noticies",
   "explore.trending_statuses": "Artículos",
   "explore.trending_tags": "Etiquetes",
-<<<<<<< HEAD
   "federation.change": "Adjust status federation",
   "federation.federated.long": "Allow toot to reach other instances",
   "federation.federated.short": "Federated",
   "federation.local_only.long": "Restrict this toot only to my instance",
   "federation.local_only.short": "Local-only",
-=======
->>>>>>> v4.5.0
   "filter_modal.added.context_mismatch_explanation": "Esta categoría de peñera nun s'aplica al contestu nel qu'accediesti a esta publicación. Si tamién quies que se peñere la publicación nesti contestu, tienes d'editar la peñera.",
   "filter_modal.added.context_mismatch_title": "¡El contestu nun coincide!",
   "filter_modal.added.expired_explanation": "Esta categoría de peñera caducó, tienes de camudar la so data de caducidá p'aplicala.",
@@ -287,12 +279,6 @@
   "interaction_modal.no_account_yet": "¿Tovía nun tienes una cuenta?",
   "interaction_modal.on_another_server": "N'otru sirvidor",
   "interaction_modal.on_this_server": "Nesti sirvidor",
-<<<<<<< HEAD
-  "interaction_modal.title.follow": "Siguir a {name}",
-  "interaction_modal.title.reply": "Rempuesta a la publicación de: {name}",
-  "interaction_modal.title.vote": "Vota na encuesta de {name}",
-=======
->>>>>>> v4.5.0
   "intervals.full.days": "{number, plural, one {# día} other {# díes}}",
   "intervals.full.hours": "{number, plural, one {# hora} other {# hores}}",
   "intervals.full.minutes": "{number, plural, one {# minutu} other {# minutos}}",

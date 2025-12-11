@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-az:
-=======
 ---
 az:
   about:
@@ -343,4 +340,3 @@ az:
     go_to_sso_account_settings: Kimlik provayderinizin hesab ayarlarına gedin
     otp_lost_help_html: Hər ikisinə də erişə bilmirsinizsə, %{email} ilə əlaqə saxlayın
     seamless_external_login: Xarici bir server üzərindən giriş etdiyiniz üçün parol və e-poçt ayarları mövcud deyil.
->>>>>>> v4.5.0

@@ -13,10 +13,7 @@ $content-width: 840px;
   box-sizing: border-box;
   width: 100%;
   min-height: 100vh;
-<<<<<<< HEAD
-=======
   min-height: 100dvh;
->>>>>>> v4.5.0
   padding: env(safe-area-inset-top) env(safe-area-inset-right)
     env(safe-area-inset-bottom) env(safe-area-inset-left);
 
@@ -1968,24 +1965,15 @@ a.sparkline {
 .status__card {
   padding: 15px;
   border-radius: 4px;
-<<<<<<< HEAD
-  background: $ui-base-color;
-  font-size: 15px;
-  line-height: 20px;
-  word-wrap: break-word;
-=======
   font-size: 15px;
   line-height: 20px;
   overflow-wrap: break-word;
->>>>>>> v4.5.0
   font-weight: 400;
   border: 1px solid lighten($ui-base-color, 4%);
   color: $primary-text-color;
   box-sizing: border-box;
   min-height: 100%;
 
-<<<<<<< HEAD
-=======
   &.status--has-quote {
     .quote-inline {
       display: none;
@@ -2007,20 +1995,12 @@ a.sparkline {
     }
   }
 
->>>>>>> v4.5.0
   .status__prepend {
     padding: 0 0 15px;
     gap: 4px;
     align-items: center;
   }
 
-<<<<<<< HEAD
-  .status__content {
-    padding-top: 0;
-
-    summary {
-      display: list-item;
-=======
   > details {
     summary {
       display: block;
@@ -2127,7 +2107,6 @@ a.sparkline {
     .detailed-status__datetime,
     .detailed-status__link {
       color: inherit;
->>>>>>> v4.5.0
     }
   }
 }
