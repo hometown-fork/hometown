@@ -4,7 +4,6 @@ import classNames from 'classnames';
 
 import CheckIcon from '@/material-icons/400-24px/check.svg?react';
 import { Icon } from 'mastodon/components/icon';
-import { useLinks } from 'mastodon/hooks/useLinks';
 import type { Account } from 'mastodon/models/account';
 
 import { CustomEmojiProvider } from './emoji/context';
