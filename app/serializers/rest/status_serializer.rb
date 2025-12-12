@@ -41,10 +41,6 @@ class REST::StatusSerializer < ActiveModel::Serializer
     object.quote if object.quote&.acceptable?
   end
 
-  def quote
-    object.quote if object.quote&.acceptable?
-  end
-
   def id
     object.id.to_s
   end

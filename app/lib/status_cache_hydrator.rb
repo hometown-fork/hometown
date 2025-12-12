@@ -114,44 +114,6 @@ class StatusCacheHydrator
     end
   end
 
-  def fill_status_payload(payload, status, account_id, nested: false)
-    payload[:favourited] = Favourite.exists?(account_id: account_id, status_id: status.id)
-    payload[:reblogged]  = Status.exists?(account_id: account_id, reblog_of_id: status.id)
-    payload[:muted]      = ConversationMute.exists?(account_id: account_id, conversation_id: status.conversation_id)
-    payload[:bookmarked] = Bookmark.exists?(account_id: account_id, status_id: status.id)
-    payload[:pinned]     = StatusPin.exists?(account_id: account_id, status_id: status.id) if status.account_id == account_id
-    payload[:filtered]   = mapped_applied_custom_filter(account_id, status)
-    payload[:quote] = hydrate_quote_payload(payload[:quote], status.quote, account_id, nested:) if payload[:quote]
-  end
-
-  def hydrate_quote_payload(empty_payload, quote, account_id, nested: false)
-    return unless quote&.acceptable?
-
-    empty_payload.tap do |payload|
-      payload.delete(:quoted_status) if nested
-
-      # TODO: performance improvements
-      if quote.accepted?
-        if quote.quoted_status.nil?
-          payload[nested ? :quoted_status_id : :quoted_status] = nil
-          payload[:state] = 'deleted'
-        elsif StatusFilter.new(quote.quoted_status, Account.find_by(id: account_id)).filtered?
-          payload[nested ? :quoted_status_id : :quoted_status] = nil
-          payload[:state] = 'unauthorized'
-        else
-          payload[:state] = 'accepted'
-          if nested
-            payload[:quoted_status_id] = quote.quoted_status_id&.to_s
-          else
-            payload[:quoted_status] = StatusCacheHydrator.new(quote.quoted_status).hydrate(account_id, nested: true)
-          end
-        end
-      else
-        payload[nested ? :quoted_status_id : :quoted_status] = nil
-      end
-    end
-  end
-
   def mapped_applied_custom_filter(account_id, status)
     CustomFilter
       .apply_cached_filters(CustomFilter.cached_filters_for(account_id), status)

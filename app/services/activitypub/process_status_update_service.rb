@@ -81,10 +81,6 @@ class ActivityPub::ProcessStatusUpdateService < BaseService
     @status.update(quote_approval_policy: @status_parser.quote_policy)
   end
 
-  def update_interaction_policies!
-    @status.quote_approval_policy = @status_parser.quote_policy
-  end
-
   def update_media_attachments!
     previous_media_attachments     = @status.media_attachments.to_a
     previous_media_attachments_ids = @status.ordered_media_attachment_ids || previous_media_attachments.map(&:id)
