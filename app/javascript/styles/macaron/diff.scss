@@ -58,7 +58,7 @@ html {
 .getting-started,
 .column-inline-form {
   background: $white;
-  border: 1px solid lighten(#eeeeee, 4%);
+  border: 1px solid lighten(#eee, 4%);
   border-top: 0;
 }
 
@@ -146,7 +146,7 @@ html {
 .box-widget input[type='password'],
 .box-widget textarea,
 .statuses-grid .detailed-status .audio-player {
-  border: 1px solid lighten(#eeeeee, 4%);
+  border: 1px solid lighten(#eee, 4%);
 }
 
 .poll__chart {
@@ -166,7 +166,7 @@ html {
 }
 
 .status {
-  border-bottom: 1px solid lighten(#eeeeee, 4%);
+  border-bottom: 1px solid lighten(#eee, 4%);
 }
 
 .detailed-status__action-bar {
@@ -454,7 +454,7 @@ body.admin {
 
 .admin-wrapper .content h2,
 .admin-wrapper .content h4 {
-  border-bottom: 1px solid #eeeeee;
+  border-bottom: 1px solid #eee;
 }
 
 .admin-wrapper {
@@ -658,7 +658,7 @@ body.admin {
 .landing .hero-widget__text,
 .landing-page__information.contact-widget {
   background: $white;
-  border: 1px solid lighten(#eeeeee, 4%);
+  border: 1px solid lighten(#eee, 4%);
 
   @media screen and (max-width: mastodon.$no-gap-breakpoint) {
     border-left: 0;
@@ -876,7 +876,7 @@ body.admin {
 
 .public-layout {
   .activity-stream {
-    border-color: lighten(#eeeeee, 4%);
+    border-color: lighten(#eee, 4%);
   }
 
   .account__section-headline {
@@ -1075,12 +1075,12 @@ a.status-card.compact:hover {
 }
 
 .account {
-  border-bottom: 1px solid #eeeeee;
+  border-bottom: 1px solid #eee;
 }
 
 .notification-favourite .status.status-direct:not(.read) {
   background: transparent;
-  border-bottom: 1px solid lighten(#eeeeee, 4%);
+  border-bottom: 1px solid lighten(#eee, 4%);
 }
 
 .loading-indicator__figure {

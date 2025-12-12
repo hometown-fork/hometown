@@ -13,7 +13,7 @@
 
     .grid {
       display: grid;
-      grid-gap: 10px;
+      gap: 10px;
       grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
 
       .column-0 {
@@ -119,7 +119,7 @@
     }
 
     .word-wrap {
-      word-wrap: break-word;
+      overflow-wrap: break-word;
     }
 
     .brand {
