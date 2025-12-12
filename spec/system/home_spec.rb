@@ -56,7 +56,8 @@ RSpec.describe 'Home page' do
       it 'visits the root path and is redirected to the local live feed page', :js do
         visit root_path
 
-        expect(page).to have_current_path('/public/local')
+        # Hometown: the logged-out homepage is /about, not the local feed
+        expect(page).to have_current_path('/about')
       end
     end
   end
