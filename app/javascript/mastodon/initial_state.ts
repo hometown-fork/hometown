@@ -10,6 +10,7 @@ interface InitialStateMeta {
   admin: string;
   boost_modal?: boolean;
   quick_boosting?: boolean;
+  max_toot_chars?: number;
   delete_modal?: boolean;
   missing_alt_text_modal?: boolean;
   disable_swiping?: boolean;
@@ -47,6 +48,7 @@ interface InitialStateMeta {
   status_page_url: string;
   terms_of_service_enabled: boolean;
   emoji_style?: string;
+  expand_usernames?: boolean;
 }
 
 interface Role {
@@ -92,6 +94,8 @@ export const autoPlayGif = getMeta('auto_play_gif');
 export const boostModal = getMeta('boost_modal');
 export const quickBoosting = getMeta('quick_boosting');
 export const deleteModal = getMeta('delete_modal');
+// Hometown: max chars
+export const maxChars = getMeta('max_toot_chars') ?? 500;
 export const missingAltTextModal = getMeta('missing_alt_text_modal');
 export const disableSwiping = getMeta('disable_swiping');
 export const disableHoverCards = getMeta('disable_hover_cards');
@@ -99,6 +103,8 @@ export const disabledAccountId = getMeta('disabled_account_id');
 export const displayMedia = getMeta('display_media');
 export const domain = getMeta('domain');
 export const emojiStyle = getMeta('emoji_style') ?? 'auto';
+// Hometown: expand usernames
+export const expandUsernames = getMeta('expand_usernames');
 export const expandSpoilers = getMeta('expand_spoilers');
 export const forceSingleColumn = !getMeta('advanced_layout');
 export const limitedFederationMode = getMeta('limited_federation_mode');
