@@ -6,9 +6,9 @@ import HeadphonesIcon from '@/material-icons/400-24px/headphones-fill.svg?react'
 import MovieIcon from '@/material-icons/400-24px/movie-fill.svg?react';
 import VisibilityOffIcon from '@/material-icons/400-24px/visibility_off.svg?react';
 import { AltTextBadge } from 'mastodon/components/alt_text_badge';
-import { NoAltTextBadge } from 'mastodon/components/no_alt_text_badge';
 import { Blurhash } from 'mastodon/components/blurhash';
 import { Icon } from 'mastodon/components/icon';
+import { NoAltTextBadge } from 'mastodon/components/no_alt_text_badge';
 import { formatTime } from 'mastodon/features/video';
 import { autoPlayGif, displayMedia, useBlurhash } from 'mastodon/initial_state';
 import type { Status, MediaAttachment } from 'mastodon/models/status';

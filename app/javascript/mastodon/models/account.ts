@@ -10,8 +10,8 @@ import type {
 } from 'mastodon/api_types/accounts';
 import { unescapeHTML } from 'mastodon/utils/html';
 
-import { CustomEmojiFactory, makeEmojiMap } from './custom_emoji';
-import type { CustomEmoji, EmojiMap } from './custom_emoji';
+import { CustomEmojiFactory } from './custom_emoji';
+import type { CustomEmoji } from './custom_emoji';
 
 // AccountField
 interface AccountFieldShape extends Required<ApiAccountFieldJSON> {

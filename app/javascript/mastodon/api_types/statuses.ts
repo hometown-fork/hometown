@@ -140,8 +140,3 @@ export function isStatusVisibility(
 ): visibility is StatusVisibility {
   return ['public', 'unlisted', 'private', 'direct'].includes(visibility);
 }
-
-export interface ApiContextJSON {
-  ancestors: ApiStatusJSON[];
-  descendants: ApiStatusJSON[];
-}
