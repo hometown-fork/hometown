@@ -34,7 +34,7 @@ class SoftwareUpdate < ApplicationRecord
 
   class << self
     def check_enabled?
-      false
+      Rails.configuration.x.mastodon.software_update_url.present?
     end
 
     def by_version
