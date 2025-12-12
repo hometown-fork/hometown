@@ -425,22 +425,11 @@ export const DetailedStatus: React.FC<{
           />
         )}
 
-        {(!matchedFilters || showDespiteFilter) && (
-          <ContentWarning
-            status={status}
-            expanded={expanded}
-            onClick={handleExpandedToggle}
-          />
-        )}
-
         {statusActivityObjectType !== 'Article' &&
           status.get('spoiler_text').length > 0 &&
           (!matchedFilters || showDespiteFilter) && (
             <ContentWarning
-              text={
-                status.getIn(['translation', 'spoilerHtml']) ||
-                status.get('spoilerHtml')
-              }
+              status={status}
               expanded={expanded}
               onClick={handleExpandedToggle}
             />
