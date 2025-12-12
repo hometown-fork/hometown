@@ -2,7 +2,7 @@
 
 class AddIsExclusiveToLists < ActiveRecord::Migration[5.2]
   def change
-    add_column :lists, :is_exclusive, :boolean
-    change_column_default :lists, :is_exclusive, false
+    add_column :lists, :is_exclusive, :boolean # rubocop:disable Rails/ThreeStateBooleanColumn
+    change_column_default :lists, :is_exclusive, false # rubocop:disable Rails/ReversibleMigration
   end
 end
