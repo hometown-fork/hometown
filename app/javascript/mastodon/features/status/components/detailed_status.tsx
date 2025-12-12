@@ -369,8 +369,8 @@ export const DetailedStatus: React.FC<{
   const matchedFilters = status.get('matched_filters');
 
   const expanded =
-    (!matchedFilters || showDespiteFilter) &&
-    (!status.get('hidden') || status.get('spoiler_text').length === 0) ||
+    ((!matchedFilters || showDespiteFilter) &&
+      (!status.get('hidden') || status.get('spoiler_text').length === 0)) ||
     statusActivityObjectType === 'Article';
 
   return (
