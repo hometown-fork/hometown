@@ -22,6 +22,8 @@ RSpec.describe Admin::SystemCheck::SoftwareVersionCheck do
       before { allow(user).to receive(:can?).with(:view_devops).and_return(true) }
 
       it 'returns false' do
+        skip('version checks currently skipped in Hometown')
+
         expect(check.skip?).to be false
       end
 
@@ -53,6 +55,8 @@ RSpec.describe Admin::SystemCheck::SoftwareVersionCheck do
       end
 
       it 'returns false' do
+        skip('version checks currently skipped in Hometown')
+
         expect(check.pass?).to be false
       end
     end
@@ -63,6 +67,8 @@ RSpec.describe Admin::SystemCheck::SoftwareVersionCheck do
       end
 
       it 'returns false' do
+        skip('version checks currently skipped in Hometown')
+
         expect(check.pass?).to be false
       end
     end
@@ -73,6 +79,8 @@ RSpec.describe Admin::SystemCheck::SoftwareVersionCheck do
       end
 
       it 'returns false' do
+        skip('version checks currently skipped in Hometown')
+
         expect(check.pass?).to be false
       end
     end
@@ -83,6 +91,8 @@ RSpec.describe Admin::SystemCheck::SoftwareVersionCheck do
       end
 
       it 'returns false' do
+        skip('version checks currently skipped in Hometown')
+
         expect(check.pass?).to be false
       end
     end
@@ -93,6 +103,8 @@ RSpec.describe Admin::SystemCheck::SoftwareVersionCheck do
       end
 
       it 'returns false' do
+        skip('version checks currently skipped in Hometown')
+
         expect(check.pass?).to be false
       end
     end
@@ -105,6 +117,8 @@ RSpec.describe Admin::SystemCheck::SoftwareVersionCheck do
       end
 
       it 'sends class name symbol to message instance' do
+        skip('version checks currently skipped in Hometown')
+
         allow(Admin::SystemCheck::Message).to receive(:new)
           .with(:software_version_patch_check, anything, anything)
 
@@ -121,6 +135,8 @@ RSpec.describe Admin::SystemCheck::SoftwareVersionCheck do
       end
 
       it 'sends class name symbol to message instance' do
+        skip('version checks currently skipped in Hometown')
+
         allow(Admin::SystemCheck::Message).to receive(:new)
           .with(:software_version_critical_check, anything, anything, anything)
 

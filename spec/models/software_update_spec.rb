@@ -93,6 +93,8 @@ RSpec.describe SoftwareUpdate do
       let(:mastodon_version) { '3.4.0' }
 
       it 'returns the expected versions' do
+        skip('version checks currently skipped in Hometown')
+
         expect(described_class.pending_to_a.pluck(:version)).to contain_exactly('3.4.42', '3.5.0', '4.2.0')
       end
     end
@@ -113,6 +115,8 @@ RSpec.describe SoftwareUpdate do
       end
 
       it 'returns the expected versions' do
+        skip('version checks currently skipped in Hometown')
+
         expect(described_class.pending_to_a.pluck(:version)).to contain_exactly('4.3.0-nightly.2023-09-12')
       end
     end
@@ -121,6 +125,8 @@ RSpec.describe SoftwareUpdate do
       let(:mastodon_version) { '4.2.0-nightly.2023-07-10' }
 
       it 'returns the expected versions' do
+        skip('version checks currently skipped in Hometown')
+
         expect(described_class.pending_to_a.pluck(:version)).to contain_exactly('4.2.0')
       end
     end
@@ -133,6 +139,8 @@ RSpec.describe SoftwareUpdate do
       end
 
       it 'returns the expected versions' do
+        skip('version checks currently skipped in Hometown')
+
         expect(described_class.pending_to_a.pluck(:version)).to contain_exactly('4.3.0-0.dev.2')
       end
     end
@@ -145,6 +153,8 @@ RSpec.describe SoftwareUpdate do
       end
 
       it 'returns the expected versions' do
+        skip('version checks currently skipped in Hometown')
+
         expect(described_class.pending_to_a.pluck(:version)).to contain_exactly('4.3.0-beta2')
       end
     end
@@ -157,6 +167,8 @@ RSpec.describe SoftwareUpdate do
       end
 
       it 'returns the expected versions' do
+        skip('version checks currently skipped in Hometown')
+
         expect(described_class.pending_to_a.pluck(:version)).to contain_exactly('4.3.0-rc1')
       end
     end

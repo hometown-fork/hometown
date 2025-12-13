@@ -11,6 +11,8 @@ RSpec.describe 'finding software updates through the admin interface' do
   end
 
   it 'shows a link to the software updates page, which links to release notes' do
+    skip('version checks currently skipped in Hometown')
+
     visit settings_profile_path
     click_on I18n.t('admin.critical_update_pending')
 

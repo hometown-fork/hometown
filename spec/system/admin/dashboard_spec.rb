@@ -14,6 +14,8 @@ RSpec.describe 'Admin Dashboard' do
     end
 
     it 'returns page with system check messages' do
+      skip('version checks currently skipped in Hometown')
+
       visit admin_dashboard_path
 
       expect(page)

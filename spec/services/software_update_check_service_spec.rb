@@ -86,11 +86,15 @@ RSpec.describe SoftwareUpdateCheckService do
       end
 
       it 'updates the list of known updates' do
+        skip('version checks currently skipped in Hometown')
+
         expect { subject.call }.to change { SoftwareUpdate.pluck(:version).sort }.from(['3.5.0', '42.13.12', 'Malformed']).to(['4.2.1', '4.3.0', '5.0.0'])
       end
 
       context 'when no update is urgent' do
         it 'sends e-mail notifications according to settings', :aggregate_failures do
+          skip('version checks currently skipped in Hometown')
+
           expect { subject.call }.to have_enqueued_mail(AdminMailer, :new_software_updates)
             .with(hash_including(params: { recipient: owner_user.account })).once
             .and(have_enqueued_mail(AdminMailer, :new_software_updates).with(hash_including(params: { recipient: patch_user.account })).once)
@@ -113,6 +117,8 @@ RSpec.describe SoftwareUpdateCheckService do
         end
 
         it 'sends e-mail notifications according to settings', :aggregate_failures do
+          skip('version checks currently skipped in Hometown')
+
           expect { subject.call }.to have_enqueued_mail(AdminMailer, :new_critical_software_updates)
             .with(hash_including(params: { recipient: owner_user.account })).once
             .and(have_enqueued_mail(AdminMailer, :new_critical_software_updates).with(hash_including(params: { recipient: patch_user.account })).once)
