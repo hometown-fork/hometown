@@ -59,7 +59,6 @@ class ActivityPub::Activity::Create < ActivityPub::Activity
       attach_tags(@status)
       attach_mentions(@status)
       attach_counts(@status)
-      attach_quote(@status)
     end
 
     resolve_thread(@status)
@@ -481,10 +480,6 @@ class ActivityPub::Activity::Create < ActivityPub::Activity
 
   def unsupported_media_type?(mime_type)
     mime_type.present? && !MediaAttachment.supported_mime_types.include?(mime_type)
-  end
-
-  def blurhash_valid_chars?(blurhash)
-    /^[\w#$%*+-.:;=?@\[\]^{|}~]+$/.match?(blurhash)
   end
 
   def skip_download?
