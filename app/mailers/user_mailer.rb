@@ -38,7 +38,7 @@ class UserMailer < Devise::Mailer
     return unless @resource.active_for_authentication?
 
     I18n.with_locale(locale(use_current_locale: true)) do
-      mail subject: I18n.t('devise.mailer.reset_password_instructions.subject', title: Setting.site_title)
+      mail subject: default_devise_subject
     end
   end
 
@@ -48,7 +48,7 @@ class UserMailer < Devise::Mailer
     return unless @resource.active_for_authentication?
 
     I18n.with_locale(locale(use_current_locale: true)) do
-      mail subject: I18n.t('devise.mailer.password_change.subject', title: Setting.site_title)
+      mail subject: default_devise_subject
     end
   end
 
@@ -58,7 +58,7 @@ class UserMailer < Devise::Mailer
     return unless @resource.active_for_authentication?
 
     I18n.with_locale(locale(use_current_locale: true)) do
-      mail subject: I18n.t('devise.mailer.email_changed.subject', title: Setting.site_title)
+      mail subject: default_devise_subject
     end
   end
 
@@ -68,7 +68,7 @@ class UserMailer < Devise::Mailer
     return unless @resource.active_for_authentication?
 
     I18n.with_locale(locale(use_current_locale: true)) do
-      mail subject: I18n.t('devise.mailer.two_factor_enabled.subject', title: Setting.site_title)
+      mail subject: default_devise_subject
     end
   end
 
@@ -78,7 +78,7 @@ class UserMailer < Devise::Mailer
     return unless @resource.active_for_authentication?
 
     I18n.with_locale(locale(use_current_locale: true)) do
-      mail subject: I18n.t('devise.mailer.two_factor_disabled.subject', title: Setting.site_title)
+      mail subject: default_devise_subject
     end
   end
 
@@ -88,7 +88,7 @@ class UserMailer < Devise::Mailer
     return unless @resource.active_for_authentication?
 
     I18n.with_locale(locale(use_current_locale: true)) do
-      mail subject: I18n.t('devise.mailer.two_factor_recovery_codes_changed.subject', title: Setting.site_title)
+      mail subject: default_devise_subject
     end
   end
 
@@ -98,7 +98,7 @@ class UserMailer < Devise::Mailer
     return unless @resource.active_for_authentication?
 
     I18n.with_locale(locale(use_current_locale: true)) do
-      mail subject: I18n.t('devise.mailer.webauthn_enabled.subject', title: Setting.site_title)
+      mail subject: default_devise_subject
     end
   end
 
@@ -108,7 +108,7 @@ class UserMailer < Devise::Mailer
     return unless @resource.active_for_authentication?
 
     I18n.with_locale(locale(use_current_locale: true)) do
-      mail I18n.t('devise.mailer.webauthn_disabled.subject', title: Setting.site_title)
+      mail subject: default_devise_subject
     end
   end
 
@@ -146,7 +146,7 @@ class UserMailer < Devise::Mailer
     @has_statuses = @resource.account.statuses.exists?
 
     I18n.with_locale(locale) do
-      mail subject: I18n.t('user_mailer.welcome.subject', title: Setting.site_title)
+      mail subject: default_i18n_subject(title: Setting.site_title)
     end
   end
 
@@ -157,7 +157,7 @@ class UserMailer < Devise::Mailer
     return unless @resource.active_for_authentication?
 
     I18n.with_locale(locale) do
-      mail subject: I18n.t('user_mailer.backup_ready.subject', title: Setting.site_title)
+      mail subject: default_i18n_subject(title: Setting.site_title)
     end
   end
 
@@ -176,7 +176,7 @@ class UserMailer < Devise::Mailer
     @appeal   = appeal
 
     I18n.with_locale(locale) do
-      mail subject: I18n.t('user_mailer.appeal_approved.subject', date: l(@appeal.created_at), title: Setting.site_title)
+      mail subject: default_i18n_subject(date: l(@appeal.created_at), title: Setting.site_title)
     end
   end
 
@@ -185,7 +185,7 @@ class UserMailer < Devise::Mailer
     @appeal   = appeal
 
     I18n.with_locale(locale) do
-      mail subject: I18n.t('user_mailer.appeal_rejected.subject', date: l(@appeal.created_at), title: Setting.site_title)
+      mail subject: default_i18n_subject(date: l(@appeal.created_at), title: Setting.site_title)
     end
   end
 
@@ -197,7 +197,7 @@ class UserMailer < Devise::Mailer
     @timestamp  = timestamp.to_time.utc
 
     I18n.with_locale(locale) do
-      mail subject: I18n.t('user_mailer.suspicious_sign_in.subject', title: Setting.site_title)
+      mail subject: default_i18n_subject(title: Setting.site_title)
     end
   end
 
@@ -209,7 +209,7 @@ class UserMailer < Devise::Mailer
     @timestamp  = timestamp.to_time.utc
 
     I18n.with_locale(locale) do
-      mail subject: default_i18n_subject
+      mail subject: default_i18n_subject(title: Setting.site_title)
     end
   end
 
@@ -219,7 +219,7 @@ class UserMailer < Devise::Mailer
     @markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML, escape_html: true, no_images: true)
 
     I18n.with_locale(locale) do
-      mail subject: default_i18n_subject
+      mail subject: default_i18n_subject(title: Setting.site_title)
     end
   end
 
@@ -228,7 +228,7 @@ class UserMailer < Devise::Mailer
     @announcement = announcement
 
     I18n.with_locale(locale) do
-      mail subject: default_i18n_subject
+      mail subject: default_i18n_subject(title: Setting.site_title)
     end
   end
 
