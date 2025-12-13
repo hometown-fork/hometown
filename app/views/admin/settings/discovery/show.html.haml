@@ -8,7 +8,7 @@
 = simple_form_for @admin_settings, url: admin_settings_discovery_path, html: { method: :patch } do |f|
   = render 'shared/error_messages', object: @admin_settings
 
-  %p.lead= t('admin.settings.discovery.preamble')
+  %p.lead= t('admin.settings.discovery.preamble', title: Setting.site_title)
 
   %h4= t('admin.settings.discovery.trends')
 

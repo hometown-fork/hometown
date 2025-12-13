@@ -8,7 +8,7 @@
 = simple_form_for @admin_settings, url: admin_settings_content_retention_path, html: { method: :patch } do |f|
   = render 'shared/error_messages', object: @admin_settings
 
-  %p.lead= t('admin.settings.content_retention.preamble')
+  %p.lead= t('admin.settings.content_retention.preamble', title: Setting.site_title)
 
   .fields-group
     = f.input :media_cache_retention_period,
