@@ -64,13 +64,5 @@ RSpec.describe OAuth::AuthorizedApplicationsController do
       expect(redis_pipeline_stub)
         .to have_received(:publish).with("timeline:access_token:#{access_token.id}", '{"event":"kill"}')
     end
-
-    it 'removes the web_push_subscription' do
-      expect { web_push_subscription.reload }.to raise_error(ActiveRecord::RecordNotFound)
-    end
-
-    it 'sends a session kill payload to the streaming server' do
-      expect(redis_pipeline_stub).to have_received(:publish).with("timeline:access_token:#{access_token.id}", '{"event":"kill"}')
-    end
   end
 end

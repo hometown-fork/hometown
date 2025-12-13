@@ -102,12 +102,6 @@ RSpec.describe LinkDetailsExtractor do
             language: eq('en')
           )
       end
-
-      describe '#language' do
-        it 'returns the language from structured data' do
-          expect(subject.language).to eq 'en'
-        end
-      end
     end
 
     context 'when is wrapped in CDATA tags' do
