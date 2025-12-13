@@ -33,7 +33,7 @@ module InstanceHelper
 
   def description_prefix(invite)
     if invite.present?
-      I18n.t('auth.description.prefix_invited_by_user', name: invite.user.account.username)
+      I18n.t('auth.description.prefix_invited_by_user', name: invite.user.account.username, title: Setting.site_title)
     else
       I18n.t('auth.description.prefix_sign_up')
     end

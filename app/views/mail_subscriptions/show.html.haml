@@ -8,6 +8,7 @@
         domain: content_tag(:strong, site_hostname),
         type: content_tag(:strong, I18n.t(@type, scope: 'mail_subscriptions.unsubscribe.emails')),
         email: content_tag(:strong, @user.email),
+        title: Setting.site_title,
         settings_path: settings_preferences_notifications_path
 
   = form_with url: unsubscribe_path do |form|

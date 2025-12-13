@@ -1,4 +1,4 @@
-<%= raw t('admin_mailer.new_software_updates.body') %>
+<%= raw t('admin_mailer.new_software_updates.body', title: Setting.site_title) %>
 
 <% @software_updates.each do |update| %>
 - Mastodon <%= update.version %>: <%= update.release_notes %>

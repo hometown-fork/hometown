@@ -88,7 +88,8 @@ RSpec.describe UserMailer do
 
     it_behaves_like 'localized subject',
                     'devise.mailer.confirmation_instructions.subject',
-                    instance: Rails.configuration.x.local_domain
+                    instance: Rails.configuration.x.local_domain,
+                    title: Setting.site_title
     it_behaves_like 'delivery to memorialized user'
   end
 
@@ -328,7 +329,7 @@ RSpec.describe UserMailer do
     it 'renders welcome mail' do
       expect(mail)
         .to be_present
-        .and(have_subject(I18n.t('user_mailer.welcome.subject')))
+        .and(have_subject(I18n.t('user_mailer.welcome.subject', title: Setting.site_title)))
         .and(have_body_text(I18n.t('user_mailer.welcome.explanation')))
     end
 
@@ -343,7 +344,7 @@ RSpec.describe UserMailer do
       expect(mail)
         .to be_present
         .and(have_subject(I18n.t('user_mailer.backup_ready.subject')))
-        .and(have_body_text(I18n.t('user_mailer.backup_ready.explanation')))
+        .and(have_body_text(I18n.t('user_mailer.backup_ready.explanation', title: Setting.site_title)))
     end
 
     it_behaves_like 'delivery to memorialized user'

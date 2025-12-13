@@ -17,7 +17,7 @@ class AdminMailer < ApplicationMailer
     @report = report
 
     locale_for_account(@me) do
-      mail subject: default_i18n_subject(instance: @instance, id: @report.id)
+      mail subject: default_i18n_subject(instance: @instance, id: @report.id, title: Setting.site_title)
     end
   end
 
@@ -25,7 +25,7 @@ class AdminMailer < ApplicationMailer
     @appeal = appeal
 
     locale_for_account(@me) do
-      mail subject: default_i18n_subject(instance: @instance, username: @appeal.account.username)
+      mail subject: default_i18n_subject(instance: @instance, username: @appeal.account.username, title: Setting.site_title)
     end
   end
 
@@ -33,7 +33,7 @@ class AdminMailer < ApplicationMailer
     @account = user.account
 
     locale_for_account(@me) do
-      mail subject: default_i18n_subject(instance: @instance, username: @account.username)
+      mail subject: default_i18n_subject(instance: @instance, username: @account.username, title: Setting.site_title)
     end
   end
 
@@ -43,7 +43,7 @@ class AdminMailer < ApplicationMailer
     @statuses               = statuses
 
     locale_for_account(@me) do
-      mail subject: default_i18n_subject(instance: @instance)
+      mail subject: default_i18n_subject(instance: @instance, title: Setting.site_title)
     end
   end
 
@@ -51,7 +51,7 @@ class AdminMailer < ApplicationMailer
     @software_updates = SoftwareUpdate.by_version
 
     locale_for_account(@me) do
-      mail subject: default_i18n_subject(instance: @instance)
+      mail subject: default_i18n_subject(instance: @instance, title: Setting.site_title)
     end
   end
 
@@ -59,13 +59,13 @@ class AdminMailer < ApplicationMailer
     @software_updates = SoftwareUpdate.urgent.by_version
 
     locale_for_account(@me) do
-      mail subject: default_i18n_subject(instance: @instance)
+      mail subject: default_i18n_subject(instance: @instance, title: Setting.site_title)
     end
   end
 
   def auto_close_registrations
     locale_for_account(@me) do
-      mail subject: default_i18n_subject(instance: @instance)
+      mail subject: default_i18n_subject(instance: @instance, title: Setting.site_title)
     end
   end
 

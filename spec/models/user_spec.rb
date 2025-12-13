@@ -471,7 +471,7 @@ RSpec.describe User do
         expect(emails.first)
           .to have_attributes(
             to: contain_exactly(user.email),
-            subject: eq(I18n.t('user_mailer.welcome.subject'))
+            subject: eq(I18n.t('user_mailer.welcome.subject', title: Setting.site_title))
           )
       end
     end
