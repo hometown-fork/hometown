@@ -60,7 +60,7 @@ class Item extends PureComponent {
     return this.props.autoplay || autoPlayGif;
   }
 
-  hoverToPlay() {
+  hoverToPlay () {
     const { attachment } = this.props;
     return !this.getAutoPlay() && ['gifv', 'video'].includes(attachment.get('type'));
   }
@@ -93,7 +93,7 @@ class Item extends PureComponent {
 
     let badges = [], thumbnail;
 
-    let width = 50;
+    let width  = 50;
     let height = 100;
 
     if (size === 1) {
@@ -130,25 +130,25 @@ class Item extends PureComponent {
         </div>
       );
     } else if (attachment.get('type') === 'image') {
-      const previewUrl = attachment.get('preview_url');
+      const previewUrl   = attachment.get('preview_url');
       const previewWidth = attachment.getIn(['meta', 'small', 'width']);
 
-      const originalUrl = attachment.get('url');
+      const originalUrl   = attachment.get('url');
       const originalWidth = attachment.getIn(['meta', 'original', 'width']);
 
       const hasSize = typeof originalWidth === 'number' && typeof previewWidth === 'number';
 
       const srcSet = hasSize ? `${originalUrl} ${originalWidth}w, ${previewUrl} ${previewWidth}w` : null;
-      const sizes = hasSize && (displayWidth > 0) ? `${displayWidth * (width / 100)}px` : null;
+      const sizes  = hasSize && (displayWidth > 0) ? `${displayWidth * (width / 100)}px` : null;
 
       const focusX = attachment.getIn(['meta', 'focus', 'x']) || 0;
       const focusY = attachment.getIn(['meta', 'focus', 'y']) || 0;
-      const x = ((focusX / 2) + .5) * 100;
-      const y = ((focusY / -2) + .5) * 100;
+      const x      = ((focusX /  2) + .5) * 100;
+      const y      = ((focusY / -2) + .5) * 100;
 
       thumbnail = (
         <a
-          className={classNames("media-gallery__item-thumbnail", { "media-missing-description": !hasMediaDescription })}
+          className={classNames('media-gallery__item-thumbnail', { "media-missing-description": !hasMediaDescription })}
           href={attachment.get('remote_url') || originalUrl}
           onClick={this.handleClick}
           target='_blank'
@@ -179,7 +179,7 @@ class Item extends PureComponent {
       thumbnail = (
         <div className={classNames('media-gallery__gifv', { autoplay: autoPlay })}>
           <video
-            className={classNames("media-gallery__item-gifv-thumbnail", { "media-missing-description": !hasMediaDescription })}
+            className={classNames('media-gallery__item-gifv-thumbnail', { "media-missing-description": !hasMediaDescription })}
             aria-label={description}
             lang={lang}
             role='application'
@@ -242,15 +242,15 @@ class MediaGallery extends PureComponent {
     width: this.props.defaultWidth,
   };
 
-  componentDidMount() {
+  componentDidMount () {
     window.addEventListener('resize', this.handleResize, { passive: true });
   }
 
-  componentWillUnmount() {
+  componentWillUnmount () {
     window.removeEventListener('resize', this.handleResize);
   }
 
-  UNSAFE_componentWillReceiveProps(nextProps) {
+  UNSAFE_componentWillReceiveProps (nextProps) {
     if (!is(nextProps.media, this.props.media) && nextProps.visible === undefined) {
       this.setState({ visible: displayMedia !== 'hide_all' && !nextProps.sensitive || displayMedia === 'show_all' });
     } else if (!is(nextProps.visible, this.props.visible) && nextProps.visible !== undefined) {
@@ -286,7 +286,7 @@ class MediaGallery extends PureComponent {
     }
   };
 
-  _setDimensions() {
+  _setDimensions () {
     const width = this.node.offsetWidth;
 
     // offsetWidth triggers a layout, so only calculate when we need to

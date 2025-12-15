@@ -1,8 +1,8 @@
 import { FormattedMessage } from 'react-intl';
 
-import { useSelector } from 'react-redux';
-
 import { Link } from 'react-router-dom';
+
+import { useSelector } from 'react-redux';
 
 import BarChart4BarsIcon from '@/material-icons/400-24px/bar_chart_4_bars.svg?react';
 import PhotoLibraryIcon from '@/material-icons/400-24px/photo_library.svg?react';
