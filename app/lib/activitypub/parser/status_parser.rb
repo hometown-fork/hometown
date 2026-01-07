@@ -39,7 +39,11 @@ class ActivityPub::Parser::StatusParser
 
   def text
     if @object['content'].present?
-      @object['content']
+      if @object['type'] == 'Article'
+        article_format(@object['content'])
+      else
+        @object['content']
+      end
     elsif content_language_map?
       @object['contentMap'].values.first
     end

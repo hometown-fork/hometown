@@ -252,7 +252,8 @@ RSpec.describe ActivityPub::Activity::Update do
           expect { subject.perform }
             .to(change { status.reload.text })
 
-          expect(status.text).to start_with("<h2>Future of the Fediverse</h2>\n\n<p>Guest article by Jane Mastodon</p><p>The fediverse is great reading this you will find out why!</p>")
+          # Hometown: expected Article text is different from upstream
+          expect(status.text).to start_with('Foo')
         end
       end
     end

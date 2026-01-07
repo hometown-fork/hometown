@@ -168,7 +168,8 @@ RSpec.describe ActivityPub::FetchRemoteStatusService do
           id: 'https://foo.bar/blog/future-of-the-fediverse',
           type: 'Article',
           name: 'Future of the Fediverse',
-          content: 'Lorem Ipsum',
+          # Hometown: testing with HTML in content
+          content: '<h1>Hi! Welcome to Hometown!</h1> <a href="https://example.com">Here is a link</a>',
           summary: '<p>Guest article by <a href="https://john.mastodon">John Mastodon</a></p><p>The fediverse is great reading this you will find out why!</p>',
           attributedTo: ActivityPub::TagManager.instance.uri_for(sender),
         }
@@ -179,8 +180,8 @@ RSpec.describe ActivityPub::FetchRemoteStatusService do
 
         expect(status).to_not be_nil
         expect(status.url).to eq object[:id]
-        expect(status.text).to start_with "<h2>#{object[:name]}</h2>\n\n#{object[:summary]}\n\n"
-        expect(status.text).to include "href=\"#{object[:id]}\""
+        # Hometown: expected Article text is different from upstream
+        expect(status.text).to eq '<h1>Hi! Welcome to Hometown!</h1> <a href="https://example.com" rel="nofollow noopener" target="_blank">Here is a link</a>'
       end
     end
 
