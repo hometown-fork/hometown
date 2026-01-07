@@ -13,6 +13,11 @@
   }
 }
 
+.autosuggest-textarea__textarea,
+.spoiler-input__input {
+  background: $simple-background-color !important;
+}
+
 .reply-indicator__content,
 .reply-indicator__display-name {
   color: $white;
@@ -159,7 +164,7 @@ body.admin {
   background: $purple3;
 }
 
-.compose-form .compose-form__buttons-wrapper {
+.compose-form .compose-form__highlightable {
   background: lighten($purple4, 8%);
 }
 
