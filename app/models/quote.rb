@@ -49,7 +49,7 @@ class Quote < ApplicationRecord
   def accept!
     update!(state: :accepted)
 
-    reset_parent_cache! if attribute_changed?(:state)
+    reset_parent_cache! if attribute_previously_changed?(:state)
   end
 
   def reject!
