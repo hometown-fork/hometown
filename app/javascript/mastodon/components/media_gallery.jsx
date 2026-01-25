@@ -113,10 +113,6 @@ class Item extends PureComponent {
       badges.push(<NoAltTextBadge key='no-alt' />);
     }
 
-    if (description?.length > 0) {
-      badges.push(<AltTextBadge key='alt' description={description} />);
-    }
-
     if (attachment.get('type') === 'unknown') {
       return (
         <div className={classNames('media-gallery__item', { standalone, 'media-gallery__item--tall': height === 100, 'media-gallery__item--wide': width === 100, 'media-missing-description': !hasMediaDescription  })} key={attachment.get('id')}>
