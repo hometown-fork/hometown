@@ -3,7 +3,7 @@
 
 %meta{ name: 'description', content: description }/
 
-= opengraph 'og:site_name', t('about.hosted_on', domain: site_hostname)
+= opengraph 'og:site_name', t('about.hosted_on', domain: site_hostname, title: Setting.site_title)
 = opengraph 'og:url', url_for(only_path: false)
 = opengraph 'og:type', 'website'
 = opengraph 'og:title', instance_presenter.title

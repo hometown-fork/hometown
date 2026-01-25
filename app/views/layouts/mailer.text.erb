@@ -1,5 +1,5 @@
 <%= yield %>
 ---
 
-<%= t 'about.hosted_on', domain: site_hostname %>
+<%= t 'about.hosted_on', domain: site_hostname, title: Setting.site_title %>
 <%= t('application_mailer.settings', link: settings_preferences_url) %>
