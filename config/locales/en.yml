@@ -21,7 +21,7 @@ en:
     documentation: Documentation
     federation_hint_html: With an account on %{instance} you'll be able to follow people on any Hometown or Mastodon server and beyond.
     get_apps: Try a mobile app
-    hosted_on: Hometown hosted on %{domain}
+    hosted_on: '%{title} hosted on %{domain}'
     instance_actor_flash: |
       This account is a virtual actor used to represent the server itself and not any individual user.
       It is used for federation purposes and should not be blocked unless you want to block the whole instance, in which case you should use a domain block.
