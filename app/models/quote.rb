@@ -40,6 +40,7 @@ class Quote < ApplicationRecord
   validates :approval_uri, absence: true, if: -> { quoted_account&.local? }
   validate :validate_visibility
   validate :validate_original_quoted_status
+  validate :validate_federation
 
   after_create_commit :increment_counter_caches!
   after_destroy_commit :decrement_counter_caches!
@@ -88,6 +89,12 @@ class Quote < ApplicationRecord
 
   def validate_original_quoted_status
     errors.add(:quoted_status_id, :reblog_unallowed) if quoted_status&.reblog?
+  end
+
+  def validate_federation
+    return if quoted_status.nil? || !quoted_status.local_only
+
+    errors.add(:quoted_status_id, :federating_quote_of_local_only_status) unless status.local_only
   end
 
   def set_activity_uri
