@@ -67,6 +67,7 @@ class ComposeForm extends ImmutablePureComponent {
     onChangeSpoilerText: PropTypes.func.isRequired,
     onPaste: PropTypes.func.isRequired,
     onPickEmoji: PropTypes.func.isRequired,
+    disableFederation: PropTypes.func.isRequired,
     autoFocus: PropTypes.bool,
     withoutNavigation: PropTypes.bool,
     anyMedia: PropTypes.bool,
@@ -192,6 +193,10 @@ class ComposeForm extends ImmutablePureComponent {
 
   componentDidUpdate (prevProps) {
     this._updateFocusAndSelection(prevProps);
+
+    if (this.props.quoteOfLocalOnly && prevProps.quoteOfLocalOnly !== this.props.quoteOfLocalOnly) {
+      this.props.disableFederation();
+    }
   }
 
   _updateFocusAndSelection = (prevProps) => {
@@ -253,6 +258,7 @@ class ComposeForm extends ImmutablePureComponent {
   render () {
     const { intl, onPaste, autoFocus, withoutNavigation, maxChars, isSubmitting } = this.props;
     const { highlighted } = this.state;
+    const disabled = this.props.quoteOfLocalOnly || this.props.isEditing;
 
     return (
       <form className='compose-form' onSubmit={this.handleSubmit}>
@@ -265,7 +271,7 @@ class ComposeForm extends ImmutablePureComponent {
 
           <div className='compose-form__dropdowns'>
             <VisibilityButton disabled={this.props.isEditing} />
-            <FederationDropdownContainer disabled={this.props.isEditing} />
+            <FederationDropdownContainer disabled={disabled} />
             <LanguageDropdown />
           </div>
 
