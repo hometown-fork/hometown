@@ -16,6 +16,12 @@
 .autosuggest-textarea__textarea,
 .spoiler-input__input {
   background: $simple-background-color !important;
+  color: $black !important;
+}
+
+.compose-form__modifiers {
+  background: $simple-background-color !important;
+  color: $black !important;
 }
 
 .reply-indicator__content,
@@ -66,6 +72,10 @@
   &:active {
     text-decoration: none;
   }
+}
+
+.status__relative-time {
+  color: $purpleicon;
 }
 
 .getting-started__footer a {
@@ -166,6 +176,14 @@ body.admin {
 
 .compose-form .compose-form__highlightable {
   background: lighten($purple4, 8%);
+}
+
+.compose-form__poll__select__value {
+  background: lighten($purple4, 8%);
+}
+
+.compose-form__poll__select__label {
+  color: $black;
 }
 
 .text-icon-button.active {
@@ -274,7 +292,7 @@ body.admin {
   background: $purple2;
 }
 
-.status {
+.status:not(.status--is-quote) {
   border-bottom: 1px solid lighten($purple2, 8%);
 }
 
@@ -310,8 +328,32 @@ body.admin {
   }
 }
 
+.character-counter {
+  color: $classic-lighter-text-color;
+  font-weight: bold;
+}
+
+.dropdown-button {
+  color: $classic-lighter-text-color !important;
+  border: 1px solid $classic-lighter-text-color;
+
+  &.active {
+    color: darken($pink, 8%) !important;
+    background-color: lighten($purple4, 8%);
+  }
+}
+
+.icon-button {
+  color: $purpleicon !important;
+}
+
+.compose-form__footer .icon-button {
+  color: $classic-lighter-text-color !important;
+}
+
 .icon-button.active {
-  color: $pink;
+  color: darken($pink, 8%) !important;
+  background-color: lighten($purple4, 8%) !important;
 }
 
 .notification__favourite-icon-wrapper .star-icon,
@@ -344,6 +386,12 @@ a.mention,
 
 .poll__chart.leading {
   color: $coral;
+}
+
+.emoji-mart-search input,
+.language-dropdown__dropdown .emoji-mart-search input,
+.poll__option input[type='text'] {
+  background: $white;
 }
 
 .emoji-mart-bar:first-child {
@@ -649,4 +697,74 @@ a.mention,
 .dropdown-menu__container__header {
   color: $lighter-text-color;
   font-weight: 900;
+}
+
+.privacy-dropdown__option,
+.visibility-dropdown__option {
+  &:focus,
+  &.active {
+    background: $coral;
+  }
+
+  background: $white;
+  color: $black;
+
+  .privacy-dropdown__option__content,
+  .privacy-dropdown__option__content strong,
+  .privacy-dropdown__option__additional,
+  .visibility-dropdown__option__content,
+  .visibility-dropdown__option__content strong,
+  .visibility-dropdown__option__additional {
+    color: $purple1;
+  }
+
+  &:hover,
+  &:active {
+    background: $coral;
+    color: var(--dropdown-text-color);
+
+    .privacy-dropdown__option__content,
+    .privacy-dropdown__option__content strong,
+    .privacy-dropdown__option__additional,
+    .visibility-dropdown__option__content,
+    .visibility-dropdown__option__content strong,
+    .visibility-dropdown__option__additional {
+      color: var(--dropdown-text-color);
+    }
+  }
+
+  // Make sure adjacent hover/active states don't have a meeting radius.
+  &:hover + &:is(:focus, .active),
+  &:is(:focus, .active) + &:hover,
+  &:is(:focus, .active) + &:is(:focus, .active) {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+}
+
+.dialog-modal__header,
+.dialog-modal__content__description {
+  color: darken($classic-lighter-text-color, 10%);
+}
+
+.visibility-dropdown > label {
+  color: darken($classic-lighter-text-color, 10%);
+}
+
+.visibility-dropdown__button {
+  color: darken($classic-lighter-text-color, 10%);
+  background-color: $white;
+}
+
+.language-dropdown__dropdown__results__item {
+  color: $classic-lighter-text-color;
+}
+
+.language-dropdown__dropdown__results__item:focus,
+.language-dropdown__dropdown__results__item.active,
+.language-dropdown__dropdown__results__item:focus
+  .language-dropdown__dropdown__results__item__common-name,
+.language-dropdown__dropdown__results__item.active
+  .language-dropdown__dropdown__results__item__common-name {
+  background-color: $coral;
 }

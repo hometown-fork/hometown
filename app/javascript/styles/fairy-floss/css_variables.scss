@@ -1,0 +1,24 @@
+@use 'sass:color';
+@use '../mastodon/variables' as *;
+@use 'variables' as *;
+@use '../mastodon/functions' as *;
+
+body {
+  --dropdown-background-color: #fff;
+  --modal-border-color: hsl(240deg, 25%, 88%);
+  --modal-background-color: var(--background-color);
+  --background-color: #c8c4d4;
+  --background-color-tint: rgba(255, 255, 255, 80%);
+  --background-filter: blur(10px);
+  --surface-variant-background-color: #f1ebfb;
+  --on-surface-color: #{color.adjust(#2e2b3b, $alpha: -0.65)};
+  --rich-text-container-color: rgba(255, 216, 231, 100%);
+  --rich-text-text-color: rgba(114, 47, 83, 100%);
+  --rich-text-decorations-color: rgba(255, 175, 212, 100%);
+  --input-placeholder-color: #{color.adjust(#ada6bf, $alpha: -0.5)};
+  --input-background-color: #{darken(#2e2b3b, 10%)};
+}
+
+body.admin {
+  --background-color: #2e2b3b;
+}
