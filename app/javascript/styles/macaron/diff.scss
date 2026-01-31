@@ -12,6 +12,17 @@ html {
   background-color: $green;
 }
 
+.autosuggest-textarea__textarea,
+.spoiler-input__input {
+  background: $white !important;
+  color: $black !important;
+}
+
+.compose-form__modifiers {
+  background: $white !important;
+  color: $black !important;
+}
+
 .status__content a,
 .reply-indicator__content a {
   &:hover,
@@ -65,6 +76,23 @@ html {
 .getting-started {
   background: $green;
   border: 1px solid lighten($green, 8%);
+}
+
+.status__relative-time {
+  color: $dark-text-color;
+}
+
+.compose-form .compose-form__highlightable {
+  background: $ui-base-color;
+}
+
+.compose-form__poll__select__value {
+  color: $classic-base-color;
+  background: darken($ui-base-color, 6%);
+}
+
+.compose-form__poll__select__label {
+  color: $dark-text-color;
 }
 
 .column-back-button,
@@ -126,6 +154,11 @@ html {
   }
 }
 
+.column-link,
+.column-header {
+  color: $classic-base-color !important;
+}
+
 .getting-started .navigation-bar {
   border-top: 1px solid lighten($ui-base-color, 8%);
   border-bottom: 1px solid lighten($ui-base-color, 8%);
@@ -165,7 +198,7 @@ html {
   background: rgba($pink, 0.8);
 }
 
-.status {
+.status:not(.status--is-quote) {
   border-bottom: 1px solid lighten(#eee, 4%);
 }
 
@@ -218,7 +251,7 @@ html {
   background: $green;
 }
 
-.compose-form .compose-form__buttons-wrapper {
+.compose-form .compose-form__highlightable {
   background: $ui-base-color;
   border: 1px solid lighten($ui-base-color, 8%);
   border-top: 0;
@@ -268,7 +301,7 @@ html {
     }
   }
 
-  .compose-form__buttons-wrapper {
+  .compose-form__highlightable {
     background: darken($ui-base-color, 6%);
   }
 
@@ -290,6 +323,10 @@ html {
   border-color: lighten($purple, 8%);
 }
 
+.poll__option input[type='text'] {
+  background: $white;
+}
+
 .emoji-mart-bar {
   border-color: lighten($ui-base-color, 4%);
 
@@ -299,7 +336,7 @@ html {
 }
 
 .emoji-mart-search input {
-  background: rgba($ui-base-color, 0.3);
+  background: rgba($ui-base-color, 0.3) !important;
   border-color: $ui-base-color;
 }
 
@@ -338,6 +375,10 @@ html {
   &:hover {
     background: lighten($pink, 4%);
   }
+}
+
+.navigation-panel__menu {
+  background: $cream;
 }
 
 // Change the background colors of media and video spoilers
@@ -393,6 +434,29 @@ html {
 
 body.admin {
   background: $cream;
+}
+
+.character-counter {
+  color: $classic-base-color;
+  font-weight: bold;
+}
+
+.dropdown-button {
+  color: $classic-base-color !important;
+  border: 1px solid $classic-base-color;
+
+  &.active {
+    color: $white !important;
+    background-color: $blueberry;
+  }
+}
+
+.icon-button {
+  color: $darker-text-color !important;
+}
+
+.compose-form__footer .icon-button {
+  color: $lighter-text-color !important;
 }
 
 .card > a:hover {
@@ -806,6 +870,11 @@ body.admin {
   }
 }
 
+.status__display-name .display-name strong,
+.account__display-name .display-name strong {
+  color: $primary-text-color;
+}
+
 .accounts-grid {
   .account-grid-card {
     .controls {
@@ -1167,6 +1236,76 @@ a.status-card.compact:hover {
     background-color: darken($ui-highlight-color, 20%);
     color: darken($ui-highlight-color, 30%);
   }
+}
+
+.privacy-dropdown__option,
+.visibility-dropdown__option {
+  &:focus,
+  &.active {
+    background: $blueberry;
+  }
+
+  background: $white;
+  color: $black;
+
+  .privacy-dropdown__option__content,
+  .privacy-dropdown__option__content strong,
+  .privacy-dropdown__option__additional,
+  .visibility-dropdown__option__content,
+  .visibility-dropdown__option__content strong,
+  .visibility-dropdown__option__additional {
+    color: $black;
+  }
+
+  &:hover,
+  &:active {
+    background: $blueberry;
+    color: var(--dropdown-text-color);
+
+    .privacy-dropdown__option__content,
+    .privacy-dropdown__option__content strong,
+    .privacy-dropdown__option__additional,
+    .visibility-dropdown__option__content,
+    .visibility-dropdown__option__content strong,
+    .visibility-dropdown__option__additional {
+      color: var(--dropdown-text-color);
+    }
+  }
+
+  // Make sure adjacent hover/active states don't have a meeting radius.
+  &:hover + &:is(:focus, .active),
+  &:is(:focus, .active) + &:hover,
+  &:is(:focus, .active) + &:is(:focus, .active) {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+}
+
+.dialog-modal__header,
+.dialog-modal__content__description {
+  color: darken($lighter-text-color, 10%);
+}
+
+.visibility-dropdown > label {
+  color: darken($lighter-text-color, 10%);
+}
+
+.visibility-dropdown__button {
+  color: darken($lighter-text-color, 10%);
+  background-color: $white;
+}
+
+.language-dropdown__dropdown__results__item {
+  color: $lighter-text-color;
+}
+
+.language-dropdown__dropdown__results__item:focus,
+.language-dropdown__dropdown__results__item.active,
+.language-dropdown__dropdown__results__item:focus
+  .language-dropdown__dropdown__results__item__common-name,
+.language-dropdown__dropdown__results__item.active
+  .language-dropdown__dropdown__results__item__common-name {
+  background-color: $blueberry;
 }
 
 // Tablet layout
