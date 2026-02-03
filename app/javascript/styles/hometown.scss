@@ -34,8 +34,8 @@
 // admin sidebar, therefore we unset the dimensions [1], center the link [2] and unset the color for it [3].
 .admin-wrapper .sidebar .logo {
   // 1
-  width: unset;
-  height: unset;
+  width: unset !important;
+  height: unset !important;
 
   // 2
   h2 {

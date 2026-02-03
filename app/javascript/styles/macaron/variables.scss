@@ -44,6 +44,35 @@ $ui-button-secondary-focus-color: $light-text-color;
 // Newly added colors
 $account-background-color: $white !default;
 
+// Ensure we override base variables in the right places
+// TODO: Fix the duplication here; this is a kludge because of the
+//       hastily-reworked import => use migration when prepping the
+//       Mastodon 4.5 merge.
+@use '../mastodon/variables' with (
+  $base-overlay-background: $base-overlay-background,
+  $valid-value-color: $success-green,
+
+  $ui-base-color: $ui-base-color,
+  $ui-base-lighter-color: $ui-base-lighter-color,
+  $ui-primary-color: $ui-primary-color,
+  $ui-secondary-color: $classic-base-color,
+  $ui-highlight-color: $ui-highlight-color,
+  $highlight-text-color: $highlight-text-color,
+  $ui-button-secondary-color: $ui-button-secondary-color,
+  $ui-button-secondary-border-color: $ui-button-secondary-border-color,
+
+  $primary-text-color: $black,
+  $darker-text-color: $darker-text-color,
+  $dark-text-color: $dark-text-color,
+  $action-button-color: $action-button-color,
+
+  $inverted-text-color: $inverted-text-color,
+  $lighter-text-color: $lighter-text-color,
+  $light-text-color: $light-text-color,
+
+  $ui-button-secondary-focus-color: $ui-button-secondary-focus-color
+);
+
 // Invert darkened and lightened colors
 @function darken($color, $amount) {
   @return hsl(hue($color), saturation($color), lightness($color) + $amount);
