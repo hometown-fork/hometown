@@ -2008,9 +2008,9 @@ en:
       direct: Private mention
       private: Followers only
       public: Public
-      public_long: Anyone on and off %{title}
+      public_long: Anyone on and off Mastodon
       unlisted: Quiet public
-      unlisted_long: Hidden from %{title} search results, trending, and public timelines
+      unlisted_long: Hidden from Mastodon search results, trending, and public timelines
   statuses_cleanup:
     enabled: Automatically delete old posts
     enabled_hint: Automatically deletes your posts once they reach a specified age threshold, unless they match one of the exceptions below
