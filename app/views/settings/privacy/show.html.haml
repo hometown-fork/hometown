@@ -7,7 +7,7 @@
 = simple_form_for @account, url: settings_privacy_path do |f|
   = render 'shared/error_messages', object: @account
 
-  %p.lead= t('privacy.hint_html')
+  %p.lead= t('privacy.hint_html', title: Setting.site_title)
 
   %h4= t('privacy.reach')
 
@@ -25,7 +25,7 @@
 
   %h4= t('privacy.search')
 
-  %p.lead= t('privacy.search_hint_html')
+  %p.lead= t('privacy.search_hint_html', title: Setting.site_title)
 
   .fields-group
     = f.input :indexable, as: :boolean, wrapper: :with_label

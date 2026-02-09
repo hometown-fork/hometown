@@ -8,7 +8,7 @@
 .simple_form.form-section
   %h3= t('verification.website_verification')
 
-  %p.lead= t('verification.hint_html')
+  %p.lead= t('verification.hint_html', title: Setting.site_title)
 
   %h4= t('verification.here_is_how')
 
@@ -36,7 +36,7 @@
 
   %h3= t('author_attribution.title')
 
-  %p.lead= t('author_attribution.hint_html')
+  %p.lead= t('author_attribution.hint_html', title: Setting.site_title)
 
   .fields-group.fade-out-top
     %div

@@ -4,7 +4,7 @@
 - content_for :heading_actions do
   = link_to t('admin.webhooks.add_new'), new_admin_webhook_path, class: 'button' if can?(:create, :webhook)
 
-%p= t('admin.webhooks.description_html')
+%p= t('admin.webhooks.description_html', title: Setting.site_title)
 
 %hr.spacer/
 

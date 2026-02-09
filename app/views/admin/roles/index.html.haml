@@ -4,7 +4,7 @@
 - content_for :heading_actions do
   = link_to t('admin.roles.add_new'), new_admin_role_path, class: 'button' if can?(:create, :user_role)
 
-%p= t('admin.roles.description_html')
+%p= t('admin.roles.description_html', title: Setting.site_title)
 
 %hr.spacer/
 
