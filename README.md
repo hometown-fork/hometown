@@ -50,9 +50,9 @@ This is based on rich text work by [Claire Girka](https://sitedethib.com), and m
 
 Reading more content types also helps make the fediverse better. ActivityPub supports all kinds of content, but most ActivityPub servers shoehorn all their content into `Note` because that's the type that Mastodon treats as first-class. This has important implications for the fediverse and also on your day to do user experience.
 
-Take the "quote tweet" debate for example.
+Take the "quote post" debate for example.
 
-Twitter has a feature called "quote tweeting" that lets you embed what someone else tweets, with your own comment right next to it. It's really useful for provide commentary in context, like this, where I point people to a sale and they can read both my comment on the sale and the original tweet about the sale in one post:
+Mastodon has a feature called "quote tweeting" that lets you embed what someone else posts, with your own comment right next to it. It's really useful for provide commentary in context, like this, where I point people to a sale and they can read both my comment on the sale and the original tweet about the sale in one post:
 
 <img width="600" src="http://tinysubversions.com/pics/quote-tweet.png" alt="An example of a quote tweet from Twitter.">
 
