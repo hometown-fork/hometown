@@ -29,7 +29,7 @@ module Mastodon
     end
 
     def hometown_version
-      'hometown-1.2.2'
+      'hometown-1.2.1'
     end
 
     def to_a
