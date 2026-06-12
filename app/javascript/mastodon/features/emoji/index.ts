@@ -1,6 +1,5 @@
 import { initialState } from '@/mastodon/initial_state';
 
-import { EMOJI_DB_RELOAD_EVENT } from './constants';
 import { toSupportedLocale } from './locale';
 import type { EmojiWorkerMessage } from './types';
 import { emojiLogger } from './utils';
@@ -14,12 +13,6 @@ const workerLog = emojiLogger('worker');
 
 // This is too short, but better to fallback quickly than wait.
 const WORKER_TIMEOUT = 2_000;
-
-// Handle reload events
-window.addEventListener(
-  EMOJI_DB_RELOAD_EVENT,
-  () => void handleEmojiDbReload(),
-);
 
 export async function initializeEmoji() {
   log('initializing emojis');
@@ -58,8 +51,6 @@ export async function initializeEmoji() {
         workerLog(message.message);
       } else if (type === 'done' && message.storeName === 'custom') {
         void loadEmojisToStore();
-      } else if (type === 'db-blocked') {
-        window.dispatchEvent(new Event(EMOJI_DB_RELOAD_EVENT));
       }
 
       if (type !== 'ready') {
@@ -139,11 +130,4 @@ async function loadEmojisToStore() {
   await store.dispatch(loadCustomEmojis());
 
   log('loaded emoji data into store');
-}
-
-async function handleEmojiDbReload() {
-  log('Emoji database reload needed, triggering warning');
-  const { store } = await import('@/mastodon/store');
-  const { needsReload } = await import('@/mastodon/actions/app');
-  store.dispatch(needsReload());
 }
