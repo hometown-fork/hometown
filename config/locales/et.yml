@@ -4,7 +4,6 @@ et:
     about_mastodon_html: 'Tuleviku sotsiaalvõrgustik: Reklaamivaba, korporatiivse jälitamiseta, eetiline kujundus ning hajutatus! Mastodonis omad sa enda andmeid ka päriselt!'
     contact_missing: Määramata
     contact_unavailable: Pole saadaval
-    default_thumbnail_description: Kaks naeratavat mammutit (kes näevad tavaliste londiste moodi välja) loobivad omavahel paberlennukit. Nende taustal on sinine taevas ning ringilendavad planeedid, igal planeedil on puud ja veel palju teisi mastodone.
     hosted_on: Mastodoni teenus serveris %{domain}
     title: Veebirakenduse teave
   accounts:
@@ -36,16 +35,16 @@ et:
     account_moderation_notes:
       create: Jäta teade
       created_msg: Modereerimisteade edukalt koostatud!
-      destroyed_msg: Modereerimisteate kustutamine õnnestus!
+      destroyed_msg: Modereerimisteade edukalt kustutatud!
     accounts:
       add_email_domain_block: Blokeeri e-posti domeen
       approve: Võta vastu
       approved_msg: Kasutaja %{username} liitumisavaldus rahuldatud
       are_you_sure: Kas oled kindel?
-      avatar: Tunnuspilt
+      avatar: Profiilipilt
       by_domain: Domeen
       change_email:
-        changed_msg: E-posti aadress on vahetatud!
+        changed_msg: E-posti aadress vahetatud!
         current_email: Praegune e-postiaadress
         label: Muuda e-posti aadressi
         new_email: Uus е-posti aadress
@@ -64,8 +63,8 @@ et:
       custom: Kohandatud
       delete: Kustuta andmed
       deleted: Kustutatud
-      demote: Vähenda õigusi
-      destroyed_msg: Kasutaja %{username} andmed on nüüd lõpliku kustutamise ootel
+      demote: Alanda
+      destroyed_msg: "%{username} andmed on nüüd lõpliku kustutamise ootel"
       disable: Lukusta
       disable_sign_in_token_auth: E-posti võtme abil autentimise väljalülitamine
       disable_two_factor_authentication: Keela 2FA
@@ -73,8 +72,8 @@ et:
       display_name: Kuvanimi
       domain: Domeen
       edit: Muuda
-      email: E-posti aadress
-      email_status: E-posti aadressi olek
+      email: E-post
+      email_status: E-posti olek
       enable: Luba
       enable_sign_in_token_auth: Luba e-posti võtme abil autentimine
       enabled: Lubatud
@@ -82,11 +81,11 @@ et:
       followers: Jälgijad
       follows: Jälgib
       header: Päis
-      inbox_url: Sisendkausta võrguaadress
+      inbox_url: Sisendkausta URL
       invite_request_text: Põhjendused liitumiseks
       invited_by: Kutsuja
-      ip: IP-aadress
-      joined: Liitumise aeg
+      ip: IP
+      joined: Liitus
       location:
         all: Kõik
         local: Kohalik
@@ -507,9 +506,6 @@ et:
         last_email: Viimane e-post
         lead: Allpool kuvatakse kontod, kus see funktsioon on aktiveeritud ja millel on tellijaid.
         show:
-          confirm_disable_feature: Kas lõpetad uudiskirjade saatmise %{name} aadressile? Seega antud kasutaja ei saa enam e-kirja teel teavet uuenduste kohta, aga saab sellise võimaluse oma seadistusest uuesti kasutusele võtta. Eemaldamaks lõplikult võimaluse seda funktsionaalsust kasutada muuda kasutajakonto õigusi Rollide vaatest.
-          confirm_remove_subscriber: "%{email} ei saa enam kirju saatjalt %{name}. Seda tegevust ei saa tagasi pöörata."
-          consent: Tellijad on vaid nõustunud postituste edastamisega e-kirja teel. Ära kasuta seda loendit muul eesmärgil.
           date: Liitumise kuupäev
           disable_feature: Lülita funktsionaalsus välja
           disabled: See funktsionaalsus on lülitatud välja ja e-kirju enam seda loendisse ei saadeta.
@@ -518,9 +514,6 @@ et:
             hint: Mitte keegi pole seda kontot veel tellinud.
             no_subscribers_yet: Tellijaid veel pole
           enable_feature: Lülita funktsionaalsus sisse
-          no_access_html: Sellel kasutajakontol pole enam õigusi selle funktsionaalsuse sisselülitamiseks. Seda saad muuta<a href="%{roles_path}">Rollide vaates</a>.
-          title: Uudiskirjad teenusest %{name}
-          view_account: Vaata kasutajakontot
         status: Olek
         subscribers: Tellijad
         title: Meililistid
@@ -1226,7 +1219,6 @@ et:
           other: Kasutatud %{count} kasutaja poolt viimase nädala jooksul
       title: Soovitused ja trendid
       trending: Trendid
-    update_available: Uuendus saadaval
     username_blocks:
       add_new: Lisa uus
       block_registrations: Blokeeri registreerimisi
@@ -1516,7 +1508,6 @@ et:
       your_appeal_rejected: Vaidlustus on tagasi lükatud
   edit_profile:
     other: Muu
-    privacy_redesign_body: Nüüd saad otse oma profiili vaatest valida, kas tahad näidata jälgijavaid ja jälgijaid.
     redesign_body: Profiili muutmisele pääseb nüüd ligi otse profiili lehelt.
     redesign_button: Mine sinna
     redesign_title: Profiili muutmine on nüüd teistmoodi
@@ -1669,7 +1660,6 @@ et:
       invalid_csv_file: 'Vigane CSV-fail. Veateade: %{error}'
       invalid_json_file: 'Vigane JSON-fail. Viga: %{error}'
       over_rows_processing_limit: sisaldab rohkem, kui %{count} rida
-      status_not_found_warning: Mõned sinu filtrid peidavad teatavaid postitusi, mis pole sellele serverile teada. Kui server neid tuvastab, siis nad jäävad automaatselt filtreerimata.
       too_large: Fail on liiga suur
     failures: Ebaõnnestumised
     imported: Imporditud
@@ -1686,9 +1676,6 @@ et:
       bookmarks_html:
         one: Oled <strong>asendamas oma järjehoidjad</strong> faili <strong>%{filename}</strong> sisuga, milles on kuni <strong>%{count} postitus</strong>.
         other: Oled <strong>asendamas oma järjehoidjad</strong> faili <strong>%{filename}</strong> sisuga, milles on kuni <strong>%{count} postitust</strong>.
-      custom_filters_html:
-        one: Järgnevaga sa <strong>asendad oma filtrid</strong> <strong>%{filename}</strong> failis leiduva sisuga. Uue filtrina lisatakse kuni <strong>%{count} filter</strong>.
-        other: Järgnevaga sa <strong>asendad oma filtrid</strong> <strong>%{filename}</strong> failis leiduva sisuga. Uute filtritena lisatakse kuni <strong>%{count} filtrit</strong>.
       domain_blocking_html:
         one: Oled <strong>asendamas oma domeenide blokeeringu loetelu</strong> faili <strong>%{filename}</strong> sisuga, milles on kuni <strong>%{count} domeen</strong>.
         other: Oled <strong>asendamas oma domeenide blokeeringu loetelu</strong> faili <strong>%{filename}</strong> sisuga, milles on kuni <strong>%{count} domeen</strong>.
