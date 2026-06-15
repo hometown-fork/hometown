@@ -563,7 +563,6 @@
   "confirmations.remove_from_followers.message": "{name} mun hætta að fylgja þér. Ertu viss um að þú viljir halda áfram?",
   "confirmations.remove_from_followers.title": "Fjarlægja fylgjanda?",
   "confirmations.revoke_collection_inclusion.confirm": "Fjarlægja mig",
-  "confirmations.revoke_collection_inclusion.message": "Umsjónaraðilinn getur ekki bætt þér aftur í þetta safn í næstu 24 klukkustundir. Til að koma endanlega í veg fyrir að viðkomandi geti bætt þér í söfn ættirðu að loka á hann.",
   "confirmations.revoke_collection_inclusion.title": "Á að fjarlægja þig úr þessu safni?",
   "confirmations.revoke_quote.confirm": "Fjarlægja færslu",
   "confirmations.revoke_quote.message": "Þessa aðgerð er ekki hægt að afturkalla.",

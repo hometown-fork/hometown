@@ -562,7 +562,6 @@
   "confirmations.remove_from_followers.message": "{name} vai parar de seguir-te. Tens a certeza que prentedes continuar?",
   "confirmations.remove_from_followers.title": "Remover seguidor?",
   "confirmations.revoke_collection_inclusion.confirm": "Remover-me",
-  "confirmations.revoke_collection_inclusion.message": "O curador não poderá voltar a adicioná-lo a esta coleção durante 24 horas. Para impedir que o adicione a coleções de forma permanente, pode bloqueá-lo.",
   "confirmations.revoke_collection_inclusion.title": "Remover-se desta coleção?",
   "confirmations.revoke_quote.confirm": "Remover publicação",
   "confirmations.revoke_quote.message": "Esta ação é irreversível.",
