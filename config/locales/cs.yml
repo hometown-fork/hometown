@@ -276,7 +276,7 @@ cs:
         demote_user_html: Uživatel %{name} degradoval uživatele %{target}
         destroy_announcement_html: Uživatel %{name} odstranil oznámení %{target}
         destroy_canonical_email_block_html: "%{name} odblokoval*a e-mail s hashem %{target}"
-        destroy_collection_html: "%{name} odstranil kolekci od %{target}"
+        destroy_collection_html: "%{name} odstranil sbírku od %{target}"
         destroy_custom_emoji_html: "%{name} odstranil emoji %{target}"
         destroy_domain_allow_html: Uživatel %{name} zakázal federaci s doménou %{target}
         destroy_domain_block_html: Uživatel %{name} odblokoval doménu %{target}
@@ -316,7 +316,7 @@ cs:
         unsilence_account_html: Uživatel %{name} zrušil omezení účtu %{target}
         unsuspend_account_html: Uživatel %{name} zrušil pozastavení účtu uživatele %{target}
         update_announcement_html: Uživatel %{name} aktualizoval oznámení %{target}
-        update_collection_html: "%{name} aktualizoval kolekci od %{target}"
+        update_collection_html: "%{name} aktualizoval sbírku od %{target}"
         update_custom_emoji_html: Uživatel %{name} aktualizoval emoji %{target}
         update_domain_block_html: "%{name} aktualizoval blokaci domény %{target}"
         update_ip_block_html: "%{name} změnil pravidlo pro IP %{target}"
@@ -360,16 +360,16 @@ cs:
         add_to_report: 'Přidat do hlášení #%{id}'
         remove_from_report: Odebrat z hlášení
         report: Hlášení
-      collection_title: Kolekce od %{name}
+      collection_title: Sbírka od %{name}
       contents: Obsah
-      no_collection_selected: Žádná kolekce nebyla změněna, jelikož nebyla ani žádná vybrána
+      no_collection_selected: Žádná sbírka nebyla změněna, jelikož nebyla ani žádná vybrána
       number_of_accounts:
         few: "%{count} účty"
         many: "%{count} účtů"
         one: 1 účet
         other: "%{count} účtů"
       open: Otevřít
-      title: Kolekce účtu - @%{name}
+      title: Sbírky účtu - @%{name}
       view_publicly: Zobrazit veřejně
     critical_update_pending: Čeká se na kritickou aktualizaci
     custom_emojis:
