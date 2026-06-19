@@ -730,6 +730,8 @@ hu:
       new:
         title: Új IP szabály létrehozása
       no_ip_block_selected: Nem változott meg egy IP-szabály sem, mert semmi sem volt kiválasztva
+      reset: Visszaállítás
+      search: Keresés
       title: IP szabály
     relationships:
       title: "%{acct} kapcsolatai"
