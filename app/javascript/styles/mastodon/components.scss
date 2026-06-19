@@ -518,7 +518,7 @@ body > [data-popper-placement] {
 }
 
 .autosuggest-account .account__avatar,
-.autosuggest-emoji .emojione {
+.autosuggest-emoji img {
   display: block;
   width: 24px;
   height: 24px;
@@ -1497,10 +1497,6 @@ body > [data-popper-placement] {
   }
 }
 
-.status--has-quote .quote-inline {
-  display: none;
-}
-
 .status {
   padding: 16px;
   min-height: 54px;
@@ -1624,7 +1620,6 @@ body > [data-popper-placement] {
     content: '';
     position: absolute;
     inset: 0;
-    z-index: -1;
     background: var(--color-bg-brand-softest);
     opacity: 0;
     animation: fade 0.7s reverse both 0.3s;
@@ -1747,7 +1742,7 @@ body > [data-popper-placement] {
   font-weight: 500;
   color: var(--color-text-secondary);
 
-  .status__wrapper-reply.status__wrapper--in-thread & {
+  .status__wrapper-reply & {
     --thread-margin: calc(46px + 8px);
 
     margin-inline-start: var(--thread-margin);
@@ -3901,7 +3896,6 @@ a.account__display-name {
 }
 
 .scrollable {
-  container: column / inline-size;
   overflow-y: scroll;
   overflow-x: hidden;
   flex: 1 1 auto;
@@ -4096,8 +4090,9 @@ a.account__display-name {
   align-items: center;
   gap: 8px;
   width: 100%;
-  padding: 12px;
-  padding-inline-start: 16px;
+  padding: 10px;
+  padding-inline-start: 14px;
+  overflow: hidden;
   font-size: 16px;
   font-weight: 400;
   text-decoration: none;
@@ -4108,7 +4103,7 @@ a.account__display-name {
     var(--color-text-secondary)
   );
   background: transparent;
-  border: none;
+  border: 2px solid transparent;
   border-radius: 4px;
 
   &:hover,
@@ -4122,14 +4117,14 @@ a.account__display-name {
   }
 
   &:focus-visible {
-    outline: var(--outline-focus-default);
-    outline-offset: -2px;
+    outline: none;
+    border-color: var(--color-border-brand);
     background: var(--color-bg-brand-softest);
   }
 
   &--logo {
-    padding: 10px;
-    padding-inline-start: 14px;
+    padding: 8px;
+    padding-inline-start: 12px;
   }
 }
 
@@ -4582,7 +4577,6 @@ a.status-card {
 }
 
 .column-header__wrapper {
-  container: column / inline-size;
   position: relative;
   flex: 0 0 auto;
   z-index: 1;
@@ -7259,7 +7253,6 @@ a.status-card {
   border-radius: 8px;
   position: relative;
   width: 100%;
-  max-width: 100%;
   min-height: 64px;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -8264,10 +8257,6 @@ noscript {
   justify-content: center;
   align-items: center;
 
-  img {
-    user-select: none;
-  }
-
   &.dragging {
     cursor: grabbing;
   }
@@ -8279,7 +8268,7 @@ noscript {
     transform: translate(-50%, -50%);
     border: 2px solid var(--color-text-on-media);
     border-radius: 50%;
-    box-shadow: 0 0 0 9999em rgb(from black r g b / 25%);
+    box-shadow: 0 0 0 9999em var(--color-shadow-primary);
     pointer-events: none;
   }
 }
@@ -8582,7 +8571,7 @@ noscript {
   }
 
   &__pagination {
-    padding: 0 12px 15px 0;
+    padding: 15px;
     color: var(--color-text-secondary);
     position: absolute;
     bottom: 3px;
@@ -8607,10 +8596,7 @@ noscript {
   align-items: center;
   margin-top: 15px;
   margin-inline-start: -2px;
-
-  --pagination-width: 70px;
-
-  width: calc(100% - var(--pagination-width));
+  width: calc(100% - (90px - 33px));
 
   &__item {
     flex-shrink: 0;
@@ -8744,7 +8730,6 @@ noscript {
   bottom: 20px;
   inset-inline-end: 20px;
   width: 300px;
-  background-color: var(--color-bg-primary);
   box-shadow: var(--dropdown-shadow);
 
   &__footer {
