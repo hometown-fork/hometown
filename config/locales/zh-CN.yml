@@ -14,7 +14,7 @@ zh-CN:
       other: 关注者
     following:
       other: 正在关注
-    instance_actor_flash: 该账号用来代表虚拟角色，并不代表个人用户，仅代表服务器本身。该账号用于联合目的，不应该被停用。
+    instance_actor_flash: 该账号代表服务器虚拟主体，专为联邦宇宙互联而生。请勿封禁。
     last_active: 上次活跃时间
     link_verified_on: 此链接的所有权已在 %{date} 验证
     nothing_here: 空空如也！
