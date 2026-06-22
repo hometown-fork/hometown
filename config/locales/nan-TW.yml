@@ -498,7 +498,7 @@ nan-TW:
         lead: 有啟用tsit ê功能koh有訂ê lâng ê口座ē展示佇下kha。
         show:
           confirm_disable_feature: Kám beh kā %{name} 停止電子報？電子phue更新ē buē koh對 tsit ê口座送出。Tsit ê用者猶原通佇in ê口座設定內底重啟用tsit ê功能。Beh永永禁止接近使用tsit ê功能，請佇角色內底編tsit ê口座ê權限。
-          confirm_remove_subscriber: "%{email} 會無法度收著uì %{name} 來ê電子批。Tsit ê功能bē當復原。"
+          confirm_remove_subscriber: "%{email} 會無法度收著uì %{name} 來ê電子phue。Tsit ê功能bē當復原。"
           consent: 訂ê lâng kan-ta同意通過電子phue收著PO文。請毋通kā tsit ê列單用做別途。
           date: 註冊日
           disable_feature: Kā功能停止使用
@@ -508,6 +508,9 @@ nan-TW:
             hint: Iáu無半个lâng訂tsit ê口座。
             no_subscribers_yet: Iáu無訂ê lâng
           enable_feature: 啟用功能
+          no_access_html: Tsit ê口座buē koh有需要ê權限來啟用tsit ê功能。請佇<a href="%{roles_path}">角色</a>內底改。
+          title: "%{name} ê電子報"
+          view_account: 看口座
         status: 狀態
         subscribers: 訂ê lâng
         title: 電子phue列單
@@ -714,6 +717,8 @@ nan-TW:
       new:
         title: 建立新ê IP規則
       no_ip_block_selected: 因為無揀任何IP規則，所以lóng無改變
+      reset: 重頭設
+      search: Tshiau-tshuē
       title: IP規則
     relationships:
       title: "%{acct} ê關係"
@@ -2182,14 +2187,6 @@ nan-TW:
       follow_request: 跟tuè請求電子phue
       mention: 提起通知電子phue
       reblog: 轉送通知電子phue
-    show:
-      action: 取消訂
-      email_subscription:
-        confirmation_html: 當tsit ê口座刊出新PO文ê時，汝bē koh收著電子phue。
-        title: Kám beh取消訂 %{name}？
-      user:
-        confirmation_html: Lí ē停止收著對 %{domain} 來ê Mastodon ê %{type}。
-        title: Kám beh取消訂 %{type}？
   user_mailer:
     announcement_published:
       description: "%{domain} ê管理員leh發布公告："
