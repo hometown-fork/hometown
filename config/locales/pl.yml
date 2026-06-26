@@ -348,9 +348,7 @@ pl:
     collections:
       batch:
         report: Zgłoś
-      collection_title: Kolekcje od użytkownika %{name}
       contents: Zawartość
-      title: Kolekcje kont — @%{name}
       view_publicly: Wyświetl publicznie
     critical_update_pending: Czeka krytyczna aktualizacja
     custom_emojis:
