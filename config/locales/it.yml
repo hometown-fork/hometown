@@ -1936,7 +1936,6 @@ it:
     next: Avanti
     older: Più vecchio
     prev: Indietro
-    truncate: "&hellip;"
   polls:
     errors:
       already_voted: Hai già votato in questo sondaggio

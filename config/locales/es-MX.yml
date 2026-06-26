@@ -1936,7 +1936,6 @@ es-MX:
     next: Próximo
     older: Más antiguo
     prev: Anterior
-    truncate: "&hellip;"
   polls:
     errors:
       already_voted: Ya has votado en esta encuesta

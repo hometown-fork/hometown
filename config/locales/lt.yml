@@ -1156,10 +1156,6 @@ lt:
     next: Kitas
     older: Senesnis
     prev: Ankstesnis
-    truncate: "&hellip;"
-  polls:
-    errors:
-      over_character_limit: negali būti ilgesnis nei %{max} simbolių
   preferences:
     other: Kita
     posting_defaults: Skelbimo numatytosios nuostatos
