@@ -2024,7 +2024,6 @@ cs:
     next: Další
     older: Starší
     prev: Předchozí
-    truncate: "&hellip;"
   polls:
     errors:
       already_voted: V této anketě jste již hlasovali

@@ -1936,7 +1936,6 @@ el:
     next: Επόμενη
     older: Παλαιότερες
     prev: Προηγούμενη
-    truncate: "&hellip;"
   polls:
     errors:
       already_voted: Έχετε ήδη ψηφίσει σε αυτήν τη δημοσκόπηση
