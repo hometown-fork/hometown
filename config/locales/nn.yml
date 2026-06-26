@@ -730,6 +730,8 @@ nn:
       new:
         title: Opprett ny IP-regel
       no_ip_block_selected: Ingen IP-regler ble endret da ingen ble valgt
+      reset: Nullstill
+      search: Søk
       title: IP-regler
     relationships:
       title: "%{acct} sitt forhold"
