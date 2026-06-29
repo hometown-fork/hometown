@@ -1891,6 +1891,7 @@ nan-TW:
     next: 後一頁
     older: 較舊ê
     prev: 頂一頁
+    truncate_html: "&hellip;"
   polls:
     errors:
       already_voted: Lí有投票ah
@@ -2186,6 +2187,14 @@ nan-TW:
       follow_request: 跟tuè請求電子phue
       mention: 提起通知電子phue
       reblog: 轉送通知電子phue
+    show:
+      action: 取消訂
+      email_subscription:
+        confirmation_html: 當tsit ê口座刊出新PO文ê時，汝bē koh收著電子phue。
+        title: Kám beh取消訂 %{name}？
+      user:
+        confirmation_html: Lí ē停止收著對 %{domain} 來ê Mastodon ê %{type}。
+        title: Kám beh取消訂 %{type}？
   user_mailer:
     announcement_published:
       description: "%{domain} ê管理員leh發布公告："
@@ -2207,19 +2216,6 @@ nan-TW:
       extra: 備辦好勢，通載落去！
       subject: Lí ê備份檔案ē當載落去
       title: 輸出備份檔
-    failed_2fa:
-      details: 下kha是hit ê試登入ê詳細：
-      explanation: 有lâng捌試登入lí ê口座，毋koh提供無效ê第二認證因素。
-      further_actions_html: Nā準tse毋是汝，guán建議汝連鞭 %{action}，因為伊凡勢hőng入侵ah。
-      subject: 第二因素驗證失敗
-      title: 第二因素驗證失敗
-    suspicious_sign_in:
-      change_password: 換lí ê密碼
-      details: 下kha是hit ê登入ê詳細：
-      explanation: Lán有偵測出新ê IP地址登入lí ê口座。
-      further_actions_html: Nā準tse毋是lí，guán建議lí連鞭 %{action}，koh啟用雙因素驗證，來保持lí ê口座安全。
-      subject: Lí ê口座有予新ê IP接近使用
-      title: 新ê登入
     terms_of_service_changed:
       agreement: 通過繼續用 %{domain}，lí同意tsiah ê條款。若準lí無同意更新ê條款，lí通不管時thâi掉lí ê口座，來中止kap %{domain} ê協議。
       changelog: 簡單講，tsit改更新ê摘要是：

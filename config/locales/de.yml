@@ -1937,6 +1937,7 @@ de:
     next: Weiter
     older: Älter
     prev: Zurück
+    truncate_html: "&hellip;"
   polls:
     errors:
       already_voted: An dieser Umfrage hast du bereits teilgenommen
