@@ -297,7 +297,11 @@ cs:
         enable_relay_html: "%{name} aktivoval*a relay %{target}"
         enable_sign_in_token_auth_user_html: "%{name} aktivoval*a ověřování e-mailovým tokenem pro %{target}"
         enable_user_html: Uživatel %{name} povolil přihlašování pro uživatele %{target}
+        listable_tag_html: může být doporučován
         memorialize_account_html: Uživatel %{name} změnil účet %{target} na „in memoriam“ stránku
+        not_listable_tag_html: nebude doporučován
+        not_trendable_tag_html: nebude se zobrazovat v trendech
+        not_usable_tag_html: nelze použít
         promote_user_html: Uživatel %{name} povýšil uživatele %{target}
         publish_terms_of_service_html: "%{name} zveřejnil*a aktualizace podmínek služby"
         reject_appeal_html: Uživatel %{name} zamítl odvolání proti rozhodnutí moderátora %{target}
@@ -310,6 +314,7 @@ cs:
         sensitive_account_html: "%{name} označil média účtu %{target} jako citlivá"
         silence_account_html: Uživatel %{name} omezil účet %{target}
         suspend_account_html: Uživatel %{name} pozastavil účet uživatele %{target}
+        trendable_tag_html: může se objevit v trendech
         unassigned_report_html: Uživatel %{name} odebral hlášení %{target}
         unblock_email_account_html: Uživatel %{name} odblokoval e-mailovou adresu %{target}
         unsensitive_account_html: "%{name} zrušil označení médií účtu %{target} jako citlivých"
@@ -322,8 +327,10 @@ cs:
         update_ip_block_html: "%{name} změnil pravidlo pro IP %{target}"
         update_report_html: "%{name} aktualizoval hlášení %{target}"
         update_status_html: Uživatel %{name} aktualizoval příspěvek uživatele %{target}
+        update_tag_html: "%{name} změnil/a nastavení %{target} na: "
         update_user_role_html: "%{name} změnil %{target} roli"
         update_username_block_html: "%{name} aktualizovali pravidlo pro uživatelská jména obsahující %{target}"
+        usable_tag_html: lze použít;
       deleted_account: smazaný účet
       empty: Nebyly nalezeny žádné záznamy.
       filter_by_action: Filtrovat podle akce
@@ -756,6 +763,8 @@ cs:
       new:
         title: Vytvořit nové IP pravidlo
       no_ip_block_selected: Nebyla změněna žádná IP pravidla, protože nebylo žádné zaškrtnuto
+      reset: Obnovit
+      search: Hledat
       title: IP pravidla
     relationships:
       title: Vztahy uživatele %{acct}
@@ -1008,7 +1017,6 @@ cs:
           overview_html: Stránka zobrazující popis serveru vedle nejnovějších lokálních příspěvků uživatelů na tomto serveru.
           trends_html: Stránka, která zobrazuje, co je teď na tomto serveru populární.
         values:
-          about: Informační stránka
           local_feed: Místní živý kanál
           overview: Přehled
           trends: Populární
