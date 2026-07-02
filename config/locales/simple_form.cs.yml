@@ -4,7 +4,7 @@ cs:
     hints:
       account:
         attribution_domains: Jeden na řádek. Chrání před falešným připisováním autorství.
-        discoverable: Můžete být uvedeni v kolekcích vytvořených jinými uživateli. Vy a vaše veřejné příspěvky mohou být doporučeny také uživatelům v jiných objevovacích zážitcích Mastodonu.
+        discoverable: Můžete být uvedeni v kolekcích vytvořených jinými uživateli. Vy a vaše veřejné příspěvky mohou být doporučeny také uživatelům v jiném doporučeném obsahu Mastodonu.
         display_name: Vaše celé jméno nebo přezdívka.
         fields: Vaše domovská stránka, zájmena, věk, cokoliv chcete.
         indexable: Vaše veřejné příspěvky se mohou objevit ve výsledcích vyhledávání na Mastodonu. Lidé, kteří s vašimi příspěvky interagovaly, je mohou stále vyhledávat.
