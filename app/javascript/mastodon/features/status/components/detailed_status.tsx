@@ -476,7 +476,7 @@ export const DetailedStatus: React.FC<{
           status.get('spoiler_text').length > 0 &&
           (!matchedFilters || showDespiteFilter) && (
             <ContentWarning
-              status={status}
+              statusId={status.get('id')}
               expanded={expanded}
               onClick={handleExpandedToggle}
             />
@@ -485,7 +485,7 @@ export const DetailedStatus: React.FC<{
         {statusActivityObjectType !== 'Article' && expanded && (
           <>
             <StatusContent
-              status={status}
+              statusId={status.get('id')}
               onTranslate={handleTranslate}
               {...(statusContentProps as any)}
             />
