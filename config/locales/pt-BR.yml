@@ -306,7 +306,7 @@ pt-BR:
         sensitive_account_html: "%{name} marcou a mídia de %{target} como sensível"
         silence_account_html: "%{name} silenciou a conta de %{target}"
         suspend_account_html: "%{name} suspendeu a conta de %{target}"
-        trendable_tag_html: aparecerá em alta
+        trendable_tag_html: poderá aparecer em alta
         unassigned_report_html: "%{name} desatribuiu a denúncia %{target}"
         unblock_email_account_html: "%{name} desbloqueou o endereço de e-mail de %{target}"
         unsensitive_account_html: "%{name} desmarcou a mídia de %{target} como sensível"
