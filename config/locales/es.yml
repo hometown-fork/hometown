@@ -294,7 +294,7 @@ es:
         not_listable_tag_html: no puede ser recomendada
         not_trendable_tag_html: no puede aparecer en tendencia
         not_usable_tag_html: no puede usarse
-        promote_user_html: "%{name} promoción al usuario %{target}"
+        promote_user_html: "%{name} promocionó al usuario %{target}"
         publish_terms_of_service_html: "%{name} ha publicado actualizaciones de los términos del servicio"
         reject_appeal_html: "%{name} rechazó la solicitud de moderación de %{target}"
         reject_user_html: "%{name} rechazó el registro de %{target}"
@@ -307,7 +307,7 @@ es:
         silence_account_html: "%{name} limitó la cuenta de %{target}"
         suspend_account_html: "%{name} suspendió la cuenta de %{target}"
         trendable_tag_html: puede aparecer en tendencia
-        unassigned_report_html: "%{name} des-asignó el informe %{target}"
+        unassigned_report_html: "%{name} desasignó el informe %{target}"
         unblock_email_account_html: "%{name} ha desbloqueado la dirección de correo de %{target}"
         unsensitive_account_html: "%{name} desmarcó la multimedia de %{target} como sensible"
         unsilence_account_html: "%{name} desilenció la cuenta de %{target}"
@@ -755,7 +755,7 @@ es:
       enabled: Habilitado
       inbox_url: URL del relé
       pending: Esperando la aprobación del relé
-      save_and_enable: Guardar y habilitar
+      save_and_enable: Guardar y conectar
       setup: Preparar una conexión de relés
       signatures_not_enabled: Los relés pueden no funcionar correctamente mientras que el modo seguro o el modo federación limitada está habilitado
       status: Estado
@@ -1207,7 +1207,7 @@ es:
         confirm_allow_account: "¿Estás seguro de que deseas permitir las cuentas seleccionadas?"
         confirm_disallow: "¿Estás seguro de que deseas restringir los estados seleccionados?"
         confirm_disallow_account: "¿Estás seguro de que deseas restringir las cuentas seleccionadas?"
-        description_html: Estas son publicaciones que tu servidor conoce que están siendo muy compartidas y marcadas como favoritas en este momento. Pueden ayudar a tus usuarios nuevos y retornantes a encontrar más personas a las que seguir. No hay mensajes que se muestren públicamente hasta que apruebes el autor y el autor permita que su cuenta sea sugerida a otros. También puedes permitir o rechazar mensajes individuales.
+        description_html: Estas son publicaciones que tu servidor conoce que están siendo compartidas y marcadas como favoritas mucho en este momento. Pueden ayudar a tus usuarios nuevos y retornantes a encontrar más personas a las que seguir. No hay mensajes que se muestren públicamente hasta que apruebes el autor y el autor permita que su cuenta sea sugerida a otros. También puedes permitir o rechazar mensajes individuales.
         disallow: No permitir publicación
         disallow_account: No permitir autor
         no_status_selected: No se cambió ninguna publicación en tendencia, ya que no se seleccionó ninguna
