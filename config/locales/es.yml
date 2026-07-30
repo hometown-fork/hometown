@@ -755,9 +755,9 @@ es:
       enabled: Habilitado
       inbox_url: URL del relé
       pending: Esperando la aprobación del relé
-      save_and_enable: Guardar y conectar
+      save_and_enable: Guardar y habilitar
       setup: Preparar una conexión de relés
-      signatures_not_enabled: Los relés pueden no funcionar correctamente mientras que el modo seguro o el modo federación limitada está habilitado
+      signatures_not_enabled: Los repetidores pueden no funcionar correctamente mientras que el modo seguro o el modo federación limitada está habilitado
       status: Estado
       title: Relés
     report_notes:
@@ -1207,7 +1207,7 @@ es:
         confirm_allow_account: "¿Estás seguro de que deseas permitir las cuentas seleccionadas?"
         confirm_disallow: "¿Estás seguro de que deseas restringir los estados seleccionados?"
         confirm_disallow_account: "¿Estás seguro de que deseas restringir las cuentas seleccionadas?"
-        description_html: Estas son publicaciones que tu servidor conoce que están siendo compartidas y marcadas como favoritas mucho en este momento. Pueden ayudar a tus usuarios nuevos y retornantes a encontrar más personas a las que seguir. No hay mensajes que se muestren públicamente hasta que apruebes el autor y el autor permita que su cuenta sea sugerida a otros. También puedes permitir o rechazar mensajes individuales.
+        description_html: Estas son publicaciones que tu servidor conoce que están siendo muy compartidas y marcadas como favoritas en este momento. Pueden ayudar a tus usuarios nuevos y retornantes a encontrar más personas a las que seguir. No hay mensajes que se muestren públicamente hasta que apruebes el autor y el autor permita que su cuenta sea sugerida a otros. También puedes permitir o rechazar mensajes individuales.
         disallow: No permitir publicación
         disallow_account: No permitir autor
         no_status_selected: No se cambió ninguna publicación en tendencia, ya que no se seleccionó ninguna
