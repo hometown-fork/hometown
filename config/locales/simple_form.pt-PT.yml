@@ -345,6 +345,7 @@ pt-PT:
       notification_emails:
         appeal: Alguém contestou uma decisão de moderação
         digest: Enviar e-mails de resumo
+        end_of_support: A versão atual do Mastodon está a aproximar-se do fim do suporte
         favourite: Quando alguém adiciona uma publicação sua aos favoritos
         follow: Alguém começou a segui-lo
         follow_request: Alguém pediu para ser seu seguidor
