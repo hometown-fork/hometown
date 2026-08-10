@@ -66,6 +66,7 @@
   "account.follows.empty": "Потребителят още никого не следва.",
   "account.follows_you": "Следва ви",
   "account.go_to_profile": "Към профила",
+  "account.hame.invalid_handle": "Името не е достъпно",
   "account.hide_reblogs": "Скриване на подсилвания от @{name}",
   "account.in_memoriam": "В памет на.",
   "account.join_modal.day": "Ден",
