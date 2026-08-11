@@ -9,6 +9,8 @@ import type { Map as ImmutableMap, List as ImmutableList } from 'immutable';
 import { Helmet } from '@unhead/react/helmet';
 
 import elephantUIPlane from '@/images/elephant_ui_plane.svg';
+import { Column } from '@/mastodon/components/column';
+import { ColumnHeader } from '@/mastodon/components/column/header';
 import EditIcon from '@/material-icons/400-24px/edit_square.svg?react';
 import PeopleIcon from '@/material-icons/400-24px/group.svg?react';
 import HomeIcon from '@/material-icons/400-24px/home-fill.svg?react';
@@ -23,8 +25,6 @@ import {
   unmountCompose,
 } from 'mastodon/actions/compose';
 import { openModal } from 'mastodon/actions/modal';
-import { Column } from 'mastodon/components/column';
-import { ColumnHeader } from 'mastodon/components/column_header';
 import { Icon } from 'mastodon/components/icon';
 import { mascot, reduceMotion } from 'mastodon/initial_state';
 import { useAppDispatch, useAppSelector } from 'mastodon/store';
