@@ -2098,6 +2098,7 @@ it:
     appearance: Interfaccia
     authorized_apps: Applicazioni autorizzate
     back: Torna su Mastodon
+    delete: Cancellazione account
     development: Sviluppo
     edit_profile: Modifica profilo
     export: Esporta
