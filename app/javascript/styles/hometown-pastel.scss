@@ -1,5 +1,11 @@
 @use "application";
 
+// Set the color of scrollable containers.
+// Especially import for the light theme to set it to light for better contrast.
+.column > .scrollable {
+  background: var(--color-hometown-main-col);
+}
+
 /* Previously known as Macaron theme (Pastel light) */
 [data-color-scheme="light"] {
   --color-macaron-purple: #c8c4dd;
@@ -27,6 +33,7 @@
   --color-bg-brand-softest: var(--color-macaron-green);
 
   /* HOMETOWN OVERRIDES */
+  --color-hometown-main-col: var(--color-white);
 
   // Override the column background to a light purple.
   .column-header,
@@ -81,4 +88,7 @@
   --color-bg-brand-base: var(--color-fairyfloss-purple-700);
   --color-bg-brand-soft: var(--color-fairyfloss-purple-900);
   --color-bg-brand-softest: var(--color-fairyfloss-purple-950);
+
+  /* HOMETOWN OVERRIDES */
+  --color-hometown-main-col: var(--color-fairyfloss-purple-800);
 }
