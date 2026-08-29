@@ -1,5 +1,57 @@
 @use "application";
 
+/* Previously known as Macaron theme (Pastel light) */
+[data-color-scheme="light"] {
+  --color-macaron-purple: #c8c4dd;
+  --color-macaron-blue: #c8dbee;
+  --color-macaron-green: #dff6eb;
+  --color-macaron-pink: #ffcbcb;
+  --color-macaron-blueberry: #5971ad;
+  --color-macaron-cream: #fffdef;
+  --color-macaron-bilberry: #ad599c;
+
+  /* TEXT TOKENS */
+
+  --color-text-brand: var(--color-macaron-blueberry);
+
+  /* BACKGROUND TOKENS */
+
+  // Neutrals
+  --color-bg-primary: var(--color-macaron-cream);
+  --color-bg-secondary: var(--color-macaron-green);
+
+  // Brand
+  --color-bg-brand-base: var(--color-macaron-bilberry);
+  --color-bg-brand-soft: var(--color-macaron-blueberry);
+  --color-bg-brand-base-hover: var(--color-bg-brand-soft);
+  --color-bg-brand-softest: var(--color-macaron-green);
+
+  /* HOMETOWN OVERRIDES */
+
+  // Override the column background to a light purple.
+  .column-header,
+  .tabs-bar__wrapper {
+    background: var(--color-macaron-purple);
+
+    // For better contrast, make the back button black.
+    .column-header__back-button,
+    .column-back-button {
+      color: var(--color-black);
+    }
+  }
+
+  // Highlight the current toot in the thread overview.
+  .detailed-status__wrapper {
+    background: var(--color-indigo-50);
+  }
+
+  // The toot compose form should be white too.
+  .compose-form__highlightable,
+  .compose-form__poll__select__value {
+    background: var(--color-white);
+  }
+}
+
 /* Previously known as fairy-floss (Pastel dark) */
 [data-color-scheme="dark"] {
   --color-fairyfloss-purple-100: oklch(0.75 0.1 310);
