@@ -1,4 +1,6 @@
-@use 'macaron/variables';
-@use 'macaron/css_variables';
-@use 'application';
-@use 'macaron/diff';
+/*
+  This theme is legacy. Because Vite doesn't seem to resolve
+  symlinks, we keep the entrypoint for now and just import the
+  hometown-pastel theme.
+*/
+@use 'hometown-pastel';
