@@ -1738,11 +1738,11 @@ fi:
         one: Olet aikeissa <strong>estää</strong> kaikkiaan <strong>%{count} tilin</strong> tiedostosta <strong>%{filename}</strong>.
         other: Olet aikeissa <strong>estää</strong> kaikkiaan <strong>%{count} tiliä</strong> tiedostosta <strong>%{filename}</strong>.
       bookmarks_html:
-        one: Olet aikeissa lisätä kaikkiaan <strong>%{count} julkaisun</strong> tiedostosta <strong>%{filename}</strong><strong>kirjanmerkkeihisi</strong>.
-        other: Olet aikeissa lisätä kaikkiaan <strong>%{count} julkaisua</strong> tiedostosta <strong>%{filename}</strong><strong>kirjanmerkkeihisi</strong>.
+        one: Olet aikeissa lisätä kaikkiaan <strong>%{count} julkaisun</strong> tiedostosta <strong>%{filename}</strong><strong>kirjanmerkkeihisi</strong>.
+        other: Olet aikeissa lisätä kaikkiaan <strong>%{count} julkaisua</strong> tiedostosta <strong>%{filename}</strong><strong>kirjanmerkkeihisi</strong>.
       custom_filters_html:
-        one: Olet aikeissa lisätä kaikkiaan <strong>%{count} suodattimen</strong> tiedostosta <strong>%{filename}</strong> <strong>suodattimiisi</strong>.
-        other: Olet aikeissa lisätä kaikkiaan <strong>%{count} suodatinta</strong> tiedostosta <strong>%{filename}</strong> <strong>suodattimiisi</strong>.
+        one: Olet aikeissa lisätä kaikkiaan <strong>%{count} suodattimen</strong> tiedostosta <strong>%{filename}</strong> <strong>suodattimiisi</strong>.
+        other: Olet aikeissa lisätä kaikkiaan <strong>%{count} suodatinta</strong> tiedostosta <strong>%{filename}</strong> <strong>suodattimiisi</strong>.
       domain_blocking_html:
         one: Olet aikeissa <strong>estää</strong> kaikkiaan <strong>%{count} verkkotunnuksen</strong> tiedostosta <strong>%{filename}</strong>.
         other: Olet aikeissa <strong>estää</strong> kaikkiaan <strong>%{count} verkkotunnusta</strong> tiedostosta <strong>%{filename}</strong>.
