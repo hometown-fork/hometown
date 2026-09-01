@@ -24,7 +24,7 @@
 
   .flash-message= t('statuses_cleanup.explanation')
 
-  %h4= t('statuses_cleanup.exceptions')
+  %h2= t('statuses_cleanup.exceptions')
 
   .fields-row
     .fields-row__column.fields-row__column-6.fields-group
@@ -72,7 +72,7 @@
     .fields-row__column.fields-row__column-6.fields-group
       = f.input :keep_local, wrapper: :with_label, label: t('statuses_cleanup.keep_local'), hint: t('statuses_cleanup.keep_local_hint')
 
-  %h4= t('statuses_cleanup.interaction_exceptions')
+  %h2= t('statuses_cleanup.interaction_exceptions')
 
   .fields-row
     .fields-row__column.fields-row__column-6.fields-group

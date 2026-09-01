@@ -4,7 +4,6 @@ eu:
     hints:
       account:
         attribution_domains: Lerroko bat. Atribuzio faltsuetatik babesten ditu.
-        discoverable: Zure bidalketa publikoak eta profila nabarmendu edo gomendatu egin daitezke Mastodon-go hainbat eremutan eta zure profila beste erabiltzaile batzuei iradoki dakieke.
         display_name: Zure izena edo ezizena.
         fields: Zure webgunea, izenordainak, adina, nahi duzun guztia.
         indexable: Zure argitalpen publikoak bilaketa-emaitzetan ager daitezke Mastodonen. Zure argitalpenekin elkarregin duten jendeak ikusi ahal izango dituzte, hala ere.
@@ -61,11 +60,7 @@ eu:
         setting_default_quote_policy_private: Jarraitzaileentzat soilik sortutako bidalketak Mastodonen ezin dituzte beste batzuek aipatu.
         setting_default_quote_policy_unlisted: Jendeak aipatzen zaituenean, bere bidalketa ere joeren denbora-lerro publikoetatik ezkutatuko da.
         setting_default_sensitive: Multimedia hunkigarria lehenetsita ezkutatzen da, eta sakatuz ikusi daiteke
-        setting_display_media_default: Ezkutatu hunkigarri gisa markatutako multimedia
-        setting_display_media_hide_all: Ezkutatu multimedia guztia beti
-        setting_display_media_show_all: Erakutsi beti hunkigarri gisa markatutako multimedia
         setting_emoji_style: Nola bistaratu emojiak. "Automatikoki" aukeran emoji natiboak erabiltzen saiatuko dira, baina Twemojira itzuliko dira arakatzaile zaharretarako.
-        setting_system_scrollbars_ui: Safari eta Chrome-n oinarritutako mahaigaineko nabigatzaileei bakarrik aplikatzen zaie
         setting_use_blurhash: Gradienteak ezkutatutakoaren koloreetan oinarritzen dira, baina xehetasunak ezkutatzen dituzte
         setting_use_pending_items: Ezkutatu denbora-lerroko eguneraketak klik baten atzean jarioa automatikoki korritu ordez
         username: Hizkiak, zenbakiak eta azpimarrak erabil ditzakezu
@@ -87,7 +82,7 @@ eu:
         activity_api_enabled: Lokalki argitaratutako bidalketak, erabiltzaile aktiboak, eta izen-emateen kopuruak astero zenbatzen ditu
         app_icon: WEBP, PNG, GIF edo JPG. Aplikazioaren ikono lehenetsia gainidazten du ikono pertsonalizatu batekin gailu mugikorretan.
         backups_retention_period: Erabiltzaileek geroago deskarga dezaketen beren argitalpenen artxiboak sor ditzakete. Balio positibo bat ezartzean, artxibo hauek biltegiratzetik automatikoki ezabatuko dira zehazturiko egunen buruan.
-        bootstrap_timeline_accounts: Kontu hauek erabiltzaile berrien jarraitzeko gomendioen goiko aldean ainguratuko dira.
+        bootstrap_timeline_accounts: Erabiltzaile berrien jarraipenerako gomendioen goiko aldean agertuko dira kontu horiek. Eman komaz bereizitako kontuen zerrenda.
         closed_registrations_message: Izen-ematea itxia dagoenean bistaratua
         content_cache_retention_period: Beste zerbitzarietako argitalpen guztiak (bultzadak eta erantzunak barne) ezabatuko dira zehazturiko egunen buruan, argitalpen horiek izan ditzaketen erabiltzaile lokalaren interakzioa kontuan izanik gabe. Instantzia desberdinetako erabiltzaileen arteko aipamen pribatuak ere galdu egingo dira eta ezin izango dira berreskuratu. Ezarpen honen erabilera xede berezia duten instantziei zuzendua dago eta erabiltzaileen itxaropena hausten da orotariko erabilerarako inplementatzean.
         custom_css: Estilo pertsonalizatuak aplikatu ditzakezu Mastodonen web bertsioan.
@@ -109,6 +104,7 @@ eu:
         thumbnail: Zerbitzariaren informazioaren ondoan erakusten den 2:1 inguruko irudia.
         trendable_by_default: Saltatu joeretako edukiaren eskuzko berrikuspena. Ondoren elementuak banan-bana kendu daitezke joeretatik.
         trends: Joeretan zure zerbitzarian bogan dauden bidalketa, traola eta albisteak erakusten dira.
+        wrapstodon: Bertako erabiltzaileei Mastodonen urteko erabileraren laburpen ludiko bat sortzea eskaini. Ezaugarri hori urte bakoitzeko abenduaren 10etik 31ra bitartean dago eskuragarri, eta urtean gutxienez hashtag bat erabili duten erabiltzaileei eskaintzen zaie.
       form_challenge:
         current_password: Zonalde seguruan sartzen ari zara
       imports:
@@ -149,7 +145,6 @@ eu:
         jurisdiction: Zerrendatu fakturak ordaintzen dituen pertsona bizi den herrialdea. Enpresa edo bestelako erakunde bat bada, adierazi egoitza duen herrialdea eta, kasuan kasu, hiria, eskualdea, lurraldea edo estatua.
         min_age: Ez luke izan behar zure jurisdikzioko legeek eskatzen duten gutxieneko adinetik beherakoa.
       user:
-        chosen_languages: Markatzean, hautatutako hizkuntzetan dauden tutak besterik ez dira erakutsiko.
         role: Rolak erabiltzaileak dituen baimenak zeintzuk diren kontrolatzen du.
       user_role:
         color: Rolarentzat erabiltzaile interfazean erabiliko den kolorea, formatu hamaseitarreko RGB bezala
@@ -167,7 +162,6 @@ eu:
     labels:
       account:
         attribution_domains: Akreditatzeko baimendutako webguneak
-        discoverable: Ezagutarazi profila eta bidalketak bilaketa algoritmoetan
         fields:
           name: Etiketa
           value: Edukia
@@ -305,6 +299,7 @@ eu:
         thumbnail: Zerbitzariaren koadro txikia
         trendable_by_default: Onartu joerak aurrez berrikusi gabe
         trends: Gaitu joerak
+        wrapstodon: Gaitu Wrapstodon
       interactions:
         must_be_follower: Blokeatu jarraitzaile ez direnen jakinarazpenak
         must_be_following: Blokeatu zuk jarraitzen ez dituzu horien jakinarazpenak
@@ -365,9 +360,9 @@ eu:
         jurisdiction: Jurisdikzio legala
         min_age: Gutxieneko adina
       user:
-        date_of_birth_1i: Eguna
+        date_of_birth_1i: Urtea
         date_of_birth_2i: Hilabetea
-        date_of_birth_3i: Urtea
+        date_of_birth_3i: Eguna
         role: Rola
         time_zone: Ordu zona
       user_role:

@@ -64,7 +64,7 @@ it:
         subtitle: I precedenti codici di recupero sono stati annullati e dei nuovi sono stati generati.
         title: Codici di recupero A2F cambiati
       unlock_instructions:
-        subject: '%{title}: Istruzioni di sblocco'
+        subject: 'Mastodon: Istruzioni di sblocco'
       webauthn_credential:
         added:
           explanation: La seguente chiave di sicurezza è stata aggiunta al tuo profilo

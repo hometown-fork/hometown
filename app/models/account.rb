@@ -5,66 +5,65 @@
 # Table name: accounts
 #
 #  id                            :bigint(8)        not null, primary key
-#  username                      :string           default(""), not null
-#  domain                        :string
-#  private_key                   :text
-#  public_key                    :text             default(""), not null
-#  created_at                    :datetime         not null
-#  updated_at                    :datetime         not null
-#  note                          :text             default(""), not null
-#  display_name                  :string           default(""), not null
-#  uri                           :string           default(""), not null
-#  url                           :string
-#  avatar_file_name              :string
+#  actor_type                    :string
+#  also_known_as                 :string           is an Array
+#  attribution_domains           :string           default([]), is an Array
 #  avatar_content_type           :string
+#  avatar_description            :string           default(""), not null
+#  avatar_file_name              :string
 #  avatar_file_size              :integer
-#  avatar_updated_at             :datetime
-#  header_file_name              :string
-#  header_content_type           :string
-#  header_file_size              :integer
-#  header_updated_at             :datetime
 #  avatar_remote_url             :string
-#  locked                        :boolean          default(FALSE), not null
-#  header_remote_url             :string           default(""), not null
-#  last_webfingered_at           :datetime
-#  inbox_url                     :string           default(""), not null
-#  outbox_url                    :string           default(""), not null
-#  shared_inbox_url              :string           default(""), not null
-#  followers_url                 :string           default(""), not null
-#  following_url                 :string           default(""), not null
-#  protocol                      :integer          default("ostatus"), not null
-#  memorial                      :boolean          default(FALSE), not null
-#  moved_to_account_id           :bigint(8)
+#  avatar_storage_schema_version :integer
+#  avatar_updated_at             :datetime
+#  collections_url               :string
+#  discoverable                  :boolean
+#  display_name                  :string           default(""), not null
+#  domain                        :string
+#  feature_approval_policy       :integer          default(0), not null
 #  featured_collection_url       :string
 #  fields                        :jsonb
-#  actor_type                    :string
-#  discoverable                  :boolean
-#  also_known_as                 :string           is an Array
+#  followers_url                 :string           default(""), not null
+#  following_url                 :string           default(""), not null
+#  header_content_type           :string
+#  header_description            :string           default(""), not null
+#  header_file_name              :string
+#  header_file_size              :integer
+#  header_remote_url             :string           default(""), not null
+#  header_storage_schema_version :integer
+#  header_updated_at             :datetime
+#  hide_collections              :boolean
+#  id_scheme                     :integer          default("numeric_ap_id")
+#  inbox_url                     :string           default(""), not null
+#  indexable                     :boolean          default(FALSE), not null
+#  last_webfingered_at           :datetime
+#  locked                        :boolean          default(FALSE), not null
+#  memorial                      :boolean          default(FALSE), not null
+#  note                          :text             default(""), not null
+#  outbox_url                    :string           default(""), not null
+#  private_key                   :text
+#  protocol                      :integer          default("ostatus"), not null
+#  public_key                    :text             default(""), not null
+#  requested_review_at           :datetime
+#  reviewed_at                   :datetime
+#  sensitized_at                 :datetime
+#  shared_inbox_url              :string           default(""), not null
+#  show_featured                 :boolean          default(TRUE), not null
+#  show_media                    :boolean          default(TRUE), not null
+#  show_media_replies            :boolean          default(TRUE), not null
 #  silenced_at                   :datetime
 #  suspended_at                  :datetime
-#  hide_collections              :boolean
-#  avatar_storage_schema_version :integer
-#  header_storage_schema_version :integer
 #  suspension_origin             :integer
-#  sensitized_at                 :datetime
 #  trendable                     :boolean
-#  reviewed_at                   :datetime
-#  requested_review_at           :datetime
-#  indexable                     :boolean          default(FALSE), not null
-#  attribution_domains           :string           default([]), is an Array
-#  id_scheme                     :integer          default("numeric_ap_id")
+#  uri                           :string           default(""), not null
+#  url                           :string
+#  username                      :string           default(""), not null
+#  created_at                    :datetime         not null
+#  updated_at                    :datetime         not null
+#  moved_to_account_id           :bigint(8)
 #
 
 class Account < ApplicationRecord
-  self.ignored_columns += %w(
-    devices_url
-    hub_url
-    remote_url
-    salmon_url
-    secret
-    subscription_expires_at
-    trust_level
-  )
+  self.ignored_columns += %w(devices_url)
 
   BACKGROUND_REFRESH_INTERVAL = 1.week.freeze
   REFRESH_DEADLINE = 6.hours
@@ -77,7 +76,7 @@ class Account < ApplicationRecord
   URL_PREFIX_RE = %r{\Ahttp(s?)://[^/]+}
   USERNAME_ONLY_RE = /\A#{USERNAME_RE}\z/i
   USERNAME_LENGTH_LIMIT = 30
-  DISPLAY_NAME_LENGTH_LIMIT = 30
+  DISPLAY_NAME_LENGTH_LIMIT = 40
   NOTE_LENGTH_LIMIT = 500
 
   # Hard limits for federated content
@@ -97,6 +96,7 @@ class Account < ApplicationRecord
   include Account::FaspConcern
   include Account::FinderConcern
   include Account::Header
+  include Account::InteractionPolicyConcern
   include Account::Interactions
   include Account::Mappings
   include Account::Merging
@@ -185,8 +185,10 @@ class Account < ApplicationRecord
            :role,
            :locale,
            :shows_application?,
+           :email_subscriptions_enabled?,
            :prefers_noindex?,
            :time_zone,
+           :can?,
            to: :user,
            prefix: true,
            allow_nil: true
@@ -255,8 +257,26 @@ class Account < ApplicationRecord
     last_webfingered_at.nil? || last_webfingered_at <= STALE_THRESHOLD.ago
   end
 
+  def needs_background_refresh?
+    return false if local?
+
+    return true if last_webfingered_at.blank? || last_webfingered_at <= BACKGROUND_REFRESH_INTERVAL.ago
+
+    # TODO: Remove some time after 4.6
+    # This is temporary workaround to speed up account refreshs after
+    # collections have been enabled / deployed.
+    # Accounts will be refreshed when they lack a feature_approval_policy
+    # but we know from other account's on the same server that they should
+    # have.
+    return false unless feature_approval_policy.zero?
+
+    Rails.cache.fetch("feature_approval_policy_availability:#{domain}", expires_in: 30.minutes) do
+      Account.where(domain:).where.not(feature_approval_policy: 0).exists?
+    end
+  end
+
   def schedule_refresh_if_stale!
-    return unless last_webfingered_at.present? && last_webfingered_at <= BACKGROUND_REFRESH_INTERVAL.ago
+    return unless needs_background_refresh?
 
     AccountRefreshWorker.perform_in(rand(REFRESH_DEADLINE), id)
   end
@@ -320,16 +340,16 @@ class Account < ApplicationRecord
     old_fields = self[:fields] || []
     old_fields = [] if old_fields.is_a?(Hash)
 
-    if attributes.is_a?(Hash)
-      attributes.each_value do |attr|
-        next if attr[:name].blank? && attr[:value].blank?
+    attributes = attributes.values if attributes.is_a?(Hash)
 
-        previous = old_fields.find { |item| item['value'] == attr[:value] }
+    attributes.each do |attr|
+      next if attr[:name].blank? && attr[:value].blank?
 
-        attr[:verified_at] = previous['verified_at'] if previous && previous['verified_at'].present?
+      previous = old_fields.find { |item| item['value'] == attr[:value] }
 
-        fields << attr
-      end
+      attr[:verified_at] = previous['verified_at'] if previous && previous['verified_at'].present?
+
+      fields << attr
     end
 
     self[:fields] = fields
@@ -460,6 +480,12 @@ class Account < ApplicationRecord
 
     generate_keys
     save!
+  end
+
+  def featureable_by?(other_account)
+    return discoverable? && (!locked? || followed_by?(other_account) || other_account.id == id) if local?
+
+    feature_policy_for_account(other_account).in?(%i(automatic manual))
   end
 
   private

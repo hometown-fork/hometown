@@ -17,7 +17,8 @@ Hometown federates just like Mastodon, so the document below (identical to Masto
 - [FEP-f1d5: NodeInfo in Fediverse Software](https://codeberg.org/fediverse/fep/src/branch/main/fep/f1d5/fep-f1d5.md)
 - [FEP-8fcf: Followers collection synchronization across servers](https://codeberg.org/fediverse/fep/src/branch/main/fep/8fcf/fep-8fcf.md)
 - [FEP-5feb: Search indexing consent for actors](https://codeberg.org/fediverse/fep/src/branch/main/fep/5feb/fep-5feb.md)
-- [FEP-044f: Consent-respecting quote posts](https://codeberg.org/fediverse/fep/src/branch/main/fep/044f/fep-044f.md): partial support for incoming quote-posts
+- [FEP-044f: Consent-respecting quote posts](https://codeberg.org/fediverse/fep/src/branch/main/fep/044f/fep-044f.md)
+- [FEP-3b86: Activity Intents](https://codeberg.org/fediverse/fep/src/branch/main/fep/3b86/fep-3b86.md): offer handlers for `Object` and `Create` (with support for the `content` parameter only), has support for the `Follow`, `Announce`, `Like` and `Object` intents
 
 ## ActivityPub in Mastodon
 
@@ -56,8 +57,8 @@ Mastodon requires all `POST` requests to be signed, and MAY require `GET` reques
 ## Size limits
 
 Mastodon imposes a few hard limits on federated content.
-These limits are intended to be very generous and way above what the Mastodon user experience is optimized for, so as to accomodate future changes and unusual or unforeseen usage patterns, while still providing some limits for performance reasons.
-The following table attempts to summary those limits.
+These limits are intended to be very generous and way above what the Mastodon user experience is optimized for, so as to accommodate future changes and unusual or unforeseen usage patterns, while still providing some limits for performance reasons.
+The following table summarizes those limits.
 
 | Limited property                                              | Size limit | Consequence of exceeding the limit |
 | ------------------------------------------------------------- | ---------- | ---------------------------------- |
@@ -71,4 +72,6 @@ The following table attempts to summary those limits.
 | Account `attributionDomains`                                  | 256        | List will be truncated             |
 | Account aliases (actor `alsoKnownAs`)                         | 256        | List will be truncated             |
 | Custom emoji shortcode (`Emoji` `name`)                       | 2048       | Emoji will be rejected             |
-| Media descriptions (`name`/`summary`)                         | 10000      | Description will be truncated      |
+| Media and avatar/header descriptions (`name`/`summary`)       | 10000      | Description will be truncated      |
+| Collection name (`FeaturedCollection` `name`)                 | 256        | Name will be truncated             |
+| Collection description (`FeaturedCollection` `summary`)       | 2048       | Description will be truncated      |

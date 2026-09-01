@@ -7,12 +7,13 @@ sl:
     hosted_on: Mastodon gostuje na %{domain}
     title: O programu
   accounts:
+    errors:
+      cannot_be_added_to_collections: Tega računa ni možno dodati v zbirke.
     followers:
       few: Sledilci
       one: Sledilec
       other: Sledilcev
       two: Sledilca
-    following: Sledi
     instance_actor_flash: Ta račun je navidezni akter, ki se uporablja za predstavljanje strežnika samega in ne posameznega uporabnika. Uporablja se za namene federacije in se ne sme začasno ustaviti.
     last_active: zadnja dejavnost
     link_verified_on: Lastništvo te povezave je bilo preverjeno %{date}
@@ -671,7 +672,6 @@ sl:
       action_log: Revizijski zapisnik
       action_taken_by: Dejanje, ki ga je sprejel
       actions:
-        delete_description_html: Prijavljene objave bodo izbrisane in ukrep bo zabeležen, da vam pomaga stopnjevati ukrepe ob naslednjih kršitvah z istega računa.
         mark_as_sensitive_description_html: Mediji v prijavljenih objavah bodo označeni kot občutljivi in ukrep bo zabeležen, da vam pomaga stopnjevati ukrepe ob naslednjih kršitvah z istega računa.
         other_description_html: Oglejte si več možnosti za nadzor vedenja računa in prilagodite komunikacijo s prijavljenim računom.
         resolve_description_html: Proti prijavljenemu računu ne bo izvedeno nobeno dejanje, noben ukrep ne bo zabeležen in prijava bo zaprta.
@@ -697,7 +697,6 @@ sl:
       confirm: Potrdi
       confirm_action: Potrdite dejanje moderiranja proti @%{acct}
       created_at: Prijavljeno
-      delete_and_resolve: Izbriši objave
       forwarded: Posredovano
       forwarded_replies_explanation: To poročilo je od oddaljenega uporabnika in se nanaša na oddaljeno vsebino. Posredovano vam je bilo, ker je vsebina, o kateri poroča, odgovor enemu od vaših uporabnikov.
       forwarded_to: Posredovano na %{domain}
@@ -725,7 +724,6 @@ sl:
       resolved_msg: Prijava je uspešno razrešena!
       skip_to_actions: Preskoči na dejanja
       status: Stanje
-      statuses: Prijavljena vsebina
       statuses_description_html: Žaljiva vsebina bo citirana v komunikaciji z računom iz prijave
       summary:
         action_preambles:
@@ -859,6 +857,7 @@ sl:
         publish_statistics: Objavi statistiko
         title: Razkrivanje
         trends: Trendi
+        wrapstodon: Wrapstodon
       domain_blocks:
         all: Vsem
         disabled: Nikomur
@@ -867,10 +866,6 @@ sl:
         modes:
           authenticated: Samo overjeni uporabniki
           public: Vsi
-      landing_page:
-        values:
-          local_feed: Krajevni vir
-          trends: Trendi
       registrations:
         moderation_recommandation: Preden prijave odprete za vse poskrbite, da imate v ekipi moderatorjev zadosti aktivnih članov.
         preamble: Nadzirajte, kdo lahko ustvari račun na vašem strežniku.
@@ -1226,7 +1221,6 @@ sl:
   application_mailer:
     notification_preferences: Spremenite e-poštne nastavitve
     salutation: "%{name},"
-    settings: 'Spremenite e-poštne nastavitve: %{link}'
     unsubscribe: Odjavi od naročnine
     view: 'Pogled:'
     view_profile: Ogled profila
@@ -1333,6 +1327,13 @@ sl:
     hint_html: "<strong>Namig:</strong> naslednjo uro vas ne bomo več vprašali po vašem geslu."
     invalid_password: Neveljavno geslo
     prompt: Potrdite geslo za nadaljevanje
+  color_scheme:
+    auto: Samodejno
+    dark: Temno
+    light: Svetlo
+  contrast:
+    auto: Samodejno
+    high: Visoko
   crypto:
     errors:
       invalid_key: ni veljaven ključ Ed25519 ali Curve25519
@@ -1402,8 +1403,6 @@ sl:
       your_appeal_pending: Oddali ste pritožbo
       your_appeal_rejected: Vaša pritožba je bila zavržena
   edit_profile:
-    basic_information: Osnovni podatki
-    hint_html: "<strong>Prilagodite, kaj ljudje vidijo na vašem javnem profilu in poleg vaših objav.</strong> Drugi vam bodo raje sledili nazaj in z vami klepetali, če boste imeli izpolnjen profil in nastavljeno profilno sliko."
     other: Drugo
   emoji_styles:
     auto: Samodejno
@@ -1442,10 +1441,8 @@ sl:
     mutes: Utišani
     storage: Shranjeni mediji
   featured_tags:
-    add_new: Dodaj novo
     errors:
       limit: Ste že dodali največje število ključnikov
-    hint_html: "<strong>Kaj so izpostavljeni ključniki?</strong> Prikazani so vidno na vašem javnem profilu in ljudem omogočajo brskanje po vaših javnih objavah posebej pod temi ključniki. So odlično orodje za spremljanje ustvarjalnih del ali dolgoročnih projektov."
   filters:
     contexts:
       account: Profili
@@ -1677,21 +1674,6 @@ sl:
     failed_sign_in_html: Spodletela prijava z metodo %{method} iz %{ip} (%{browser})
     successful_sign_in_html: Uspešna prijava z metodo %{method} iz %{ip} (%{browser})
     title: Zgodovina overjanja
-  mail_subscriptions:
-    unsubscribe:
-      action: Da, odjavi me
-      complete: Odjavljeni
-      confirmation_html: Ali se res želite odjaviti od prejemanja %{type} za Mastodon na %{domain} na svojo e-pošto %{email}? Kadarkoli se lahko znova prijavite iz svojih <a href="%{settings_path}">nastavitev e-poštnih obvestil</a>.
-      emails:
-        notification_emails:
-          favourite: e-sporočil z obvestili o priljubljenosti
-          follow: e-sporočil z obvestili o sledenju
-          follow_request: e-sporočil o zahtevah za sledenje
-          mention: e-sporočil z obvestili o omembah
-          reblog: e-sporočil z obvestili o izpostavljanju
-      resubscribe_html: Če ste se odjavili po pomoti, se lahko znova prijavite iz svojih <a href="%{settings_path}">nastavitev e-poštnih obvestil</a>.
-      success_html: Nič več ne boste prejemali %{type} za Mastodon na %{domain} na svoj e-naslov %{email}.
-      title: Odjavi od naročnine
   media_attachments:
     validations:
       images_and_video: Videoposnetka ni mogoče priložiti objavi, ki že vsebuje slike
@@ -1727,7 +1709,6 @@ sl:
       disabled_account: Vaš trenutni račun zatem ne bo polno uporaben. Vendar pa boste imeli dostop do izvoza podatkov kot tudi do ponovne aktivacije.
       followers: S tem dejanjem boste preselili vse sledilce iz trenutnega računa na novi račun
       only_redirect_html: Namesto tega lahko <a href="%{path}">na svojem profilu zgolj vzpostavite preusmeritev</a>.
-      other_data: Nobeni drugi podatki se ne bodo preselili samodejno
       redirect: Profil vašega trenutnega računa bo posodobljen z obvestilom o preusmeritvi in bo izključen iz iskanj
   moderation:
     title: Moderiranje
@@ -1761,6 +1742,8 @@ sl:
       body: "%{name} vas je omenil/a v:"
       subject: "%{name} vas je omenil/a"
       title: Nova omemba
+    moderation_warning:
+      subject: Prejeli ste opozorilo moderatorjev
     poll:
       subject: Anketa, ki jo je pripravil/a %{name}, se je iztekla
     quote:
@@ -2013,11 +1996,9 @@ sl:
     enabled: Samodejno izbriši stare objave
     enabled_hint: Samodejno izbriše vaše objave, ko dosežejo določen starostni prag, razen če ne ustrezajo eni od spodnjih izjem
     exceptions: Izjeme
-    explanation: Ker je brisanje objav draga operacija, se to postopoma izvaja počasi, ko strežnik sicer ni zaseden. Zaradi tega se lahko vaše objave izbrišejo nekaj časa po tem, ko dosežejo starostni prag.
     ignore_favs: Prezri priljubljene
     ignore_reblogs: Prezri izpostavitve
     interaction_exceptions: Izjeme na osnovi interakcije
-    interaction_exceptions_explanation: Upoštevajte, da ni nobene garancije za objave, ki bodo izbrisane, če padejo pod prag priljubljenosti ali izpostavljenosti, ko so ga že enkrat presegle.
     keep_direct: Ohrani neposredna sporočila
     keep_direct_hint: Ne izbriše nobenega izmed vaših neposrednih sporočil
     keep_media: Ohrani objave z medijskimi priponkami
@@ -2055,11 +2036,6 @@ sl:
     title: Pogoji uporabe
   terms_of_service_interstitial:
     title: Spreminjajo se pogoji uporabe domene %{domain}
-  themes:
-    contrast: Mastodon (Visok kontrast)
-    default: Mastodon (Temna)
-    mastodon-light: Mastodon (Svetla)
-    system: Samodejno (uporabi sistemsko temo)
   time:
     formats:
       default: "%b %d %Y, %H:%M"
@@ -2229,8 +2205,12 @@ sl:
       error: Pri brisanju vašega varnostnega ključa je prišlo do težav. Poskusite znova.
       success: Vaš varnostni ključ je bil uspešno izbrisan.
     invalid_credential: Neveljaven varnostni ključ
+    nickname: Vzdevek
     nickname_hint: Vnesite vzdevek svojega novega varnostnega ključa
     not_enabled: Niste še omogočili WebAuthn
     not_supported: Ta brskalnik ne podpira varnostnih ključev
     otp_required: Za uporabo varnostnih ključev morate najprej omogočiti 2FA (dvostopenjsko overjanje).
     registered_on: Datum registracije %{date}
+  wrapstodon:
+    description: Oglejte si, kako je %{name} letos uporabljal/a Mastodon!
+    title: Wrapstodon %{year} za %{name}

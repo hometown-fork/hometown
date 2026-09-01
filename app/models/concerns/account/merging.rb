@@ -10,16 +10,16 @@ module Account::Merging
       Follow, FollowRequest, Block, Mute,
       AccountModerationNote, AccountPin, AccountStat, ListAccount,
       PollVote, Mention, AccountDeletionRequest, AccountNote, FollowRecommendationSuppression,
-      Appeal, TagFollow, Quote
+      Appeal, TagFollow, Quote, Collection, CollectionItem
     ],
     from_account_id: [
       Notification, NotificationPermission, NotificationRequest
     ],
     target_account_id: [
-      Follow, FollowRequest, Block, Mute, AccountModerationNote, AccountPin, AccountNote
+      Follow, FollowRequest, Block, Mute, AccountModerationNote, AccountPin, AccountNote,
+      AccountWarning
     ],
     reference_account_id: [CanonicalEmailBlock],
-    account_warning_id: [Appeal],
     local_account_id: [SeveredRelationship],
     remote_account_id: [SeveredRelationship],
     quoted_account_id: [Quote],

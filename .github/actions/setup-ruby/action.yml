@@ -1,4 +1,4 @@
-name: 'Setup RUby'
+name: 'Setup Ruby'
 description: 'Setup a Ruby environment ready to run the Mastodon code'
 inputs:
   ruby-version:
@@ -13,6 +13,7 @@ runs:
     - name: Install system dependencies
       shell: bash
       run: |
+        sudo sed -i s:azure\.archive\.ubuntu\.com:archive.ubuntu.com:g /etc/apt/apt-mirrors.txt
         sudo apt-get update
         sudo apt-get install --no-install-recommends -y \
           libicu-dev \
@@ -23,7 +24,7 @@ runs:
           ${{ inputs.additional-system-dependencies }}
 
     - name: Set up Ruby
-      uses: ruby/setup-ruby@v1
+      uses: ruby/setup-ruby@afeafc3d1ab54a631816aba4c914a0081c12ff2f # v1
       with:
         ruby-version: ${{ inputs.ruby-version }}
         bundler-cache: true

@@ -4,6 +4,7 @@ module ContextHelper
   NAMED_CONTEXT_MAP = {
     activitystreams: 'https://www.w3.org/ns/activitystreams',
     security: 'https://w3id.org/security/v1',
+    webfinger: 'https://purl.archive.org/socialweb/webfinger',
   }.freeze
 
   CONTEXT_EXTENSION_MAP = {
@@ -25,6 +26,12 @@ module ContextHelper
     voters_count: { 'toot' => 'http://joinmastodon.org/ns#', 'votersCount' => 'toot:votersCount' },
     suspended: { 'toot' => 'http://joinmastodon.org/ns#', 'suspended' => 'toot:suspended' },
     attribution_domains: { 'toot' => 'http://joinmastodon.org/ns#', 'attributionDomains' => { '@id' => 'toot:attributionDomains', '@container' => '@set' } },
+    profile_settings: {
+      'toot' => 'http://joinmastodon.org/ns#',
+      'showFeatured' => 'toot:showFeatured',
+      'showMedia' => 'toot:showMedia',
+      'showRepliesInMedia' => 'toot:showRepliesInMedia',
+    },
     quote_requests: { 'QuoteRequest' => 'https://w3id.org/fep/044f#QuoteRequest' },
     quotes: {
       'quote' => { '@id' => 'https://w3id.org/fep/044f#quote', '@type' => '@id' },
@@ -35,6 +42,7 @@ module ContextHelper
     interaction_policies: {
       'gts' => 'https://gotosocial.org/ns#',
       'interactionPolicy' => { '@id' => 'gts:interactionPolicy', '@type' => '@id' },
+      'canFeature' => { '@id' => 'https://w3id.org/fep/7aa9#canFeature', '@type' => '@id' },
       'canQuote' => { '@id' => 'gts:canQuote', '@type' => '@id' },
       'automaticApproval' => { '@id' => 'gts:automaticApproval', '@type' => '@id' },
       'manualApproval' => { '@id' => 'gts:manualApproval', '@type' => '@id' },
@@ -42,6 +50,22 @@ module ContextHelper
     quote_authorizations: {
       'gts' => 'https://gotosocial.org/ns#',
       'QuoteAuthorization' => 'https://w3id.org/fep/044f#QuoteAuthorization',
+      'interactingObject' => { '@id' => 'gts:interactingObject', '@type' => '@id' },
+      'interactionTarget' => { '@id' => 'gts:interactionTarget', '@type' => '@id' },
+    },
+    feature_requests: { 'FeatureRequest' => 'https://w3id.org/fep/7aa9#FeatureRequest' },
+    featured_collections: {
+      'FeaturedCollection' => 'https://w3id.org/fep/7aa9#FeaturedCollection',
+      'FeaturedItem' => 'https://w3id.org/fep/7aa9#FeaturedItem',
+      'FeatureRequest' => 'https://w3id.org/fep/7aa9#FeatureRequest',
+      'FeatureAuthorization' => 'https://w3id.org/fep/7aa9#FeatureAuthorization',
+      'topic' => { '@id' => 'https://w3id.org/fep/7aa9#topic', '@type' => '@id' },
+      'featuredObject' => { '@id' => 'https://w3id.org/fep/7aa9#featuredObject', '@type' => '@id' },
+      'featureAuthorization' => { '@id' => 'https://w3id.org/fep/7aa9#featureAuthorization', '@type' => '@id' },
+    },
+    feature_authorizations: {
+      'gts' => 'https://gotosocial.org/ns#',
+      'FeatureAuthorization' => 'https://w3id.org/fep/7aa9#FeatureAuthorization',
       'interactingObject' => { '@id' => 'gts:interactingObject', '@type' => '@id' },
       'interactionTarget' => { '@id' => 'gts:interactionTarget', '@type' => '@id' },
     },

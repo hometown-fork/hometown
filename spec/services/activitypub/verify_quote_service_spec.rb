@@ -77,7 +77,7 @@ RSpec.describe ActivityPub::VerifyQuoteService do
 
       before do
         stub_request(:get, approval_uri)
-          .to_return(status: 200, body: JSON.generate(json), headers: { 'Content-Type': 'application/activity+json' })
+          .to_return(status: 200, body: json.to_json, headers: { 'Content-Type': 'application/activity+json' })
       end
 
       context 'with a valid activity for already-fetched posts' do
@@ -268,7 +268,7 @@ RSpec.describe ActivityPub::VerifyQuoteService do
           quoted_status.mentions << Mention.new(account: account)
         end
 
-        it 'does not the status' do
+        it 'does not update the status' do
           expect { subject.call(quote, approval_uri_arg) }
             .to_not change(quote, :state).from('pending')
         end

@@ -192,6 +192,23 @@ RSpec.describe ActivityPub::TagManager do
         expect(subject.uri_for(status.conversation)).to eq status.conversation.uri
       end
     end
+
+    context 'with a local collection' do
+      let(:collection) { Fabricate(:collection) }
+
+      it 'returns a string starting with web domain and with the expected path' do
+        expect(subject.uri_for(collection))
+          .to eq("#{host_prefix}/ap/users/#{collection.account.id}/collections/#{collection.id}")
+      end
+    end
+
+    context 'with a remote collection' do
+      let(:collection) { Fabricate(:remote_collection) }
+
+      it 'returns the expected URL' do
+        expect(subject.uri_for(collection)).to eq collection.uri
+      end
+    end
   end
 
   describe '#key_uri_for' do
@@ -653,6 +670,16 @@ RSpec.describe ActivityPub::TagManager do
     it 'returns the remote status by matching URI without fragment part' do
       status = Fabricate(:status, uri: 'https://example.com/123')
       expect(subject.uri_to_resource('https://example.com/123#456', Status)).to eq status
+    end
+
+    it 'returns the local featured collection' do
+      collection = Fabricate(:collection)
+      expect(subject.uri_to_resource(subject.uri_for(collection), Collection)).to eq collection
+    end
+
+    it 'returns the remote featured collection' do
+      collection = Fabricate(:remote_collection)
+      expect(subject.uri_to_resource(subject.uri_for(collection), Collection)).to eq collection
     end
   end
 end

@@ -1,25 +1,40 @@
-import { importCustomEmojiData, importEmojiData } from './loader';
+import debug from 'debug';
+
+import { EMOJI_DB_NAME_SHORTCODES, EMOJI_TYPE_CUSTOM } from './constants';
+import {
+  importCustomEmojiData,
+  importEmojiData,
+  importLegacyShortcodes,
+} from './loader';
+import type { EmojiWorkerMessage } from './types';
 
 addEventListener('message', handleMessage);
-self.postMessage('ready'); // After the worker is ready, notify the main thread
+self.postMessage({ type: 'ready' } satisfies EmojiWorkerMessage); // After the worker is ready, notify the main thread
 
-function handleMessage(event: MessageEvent<{ locale: string; path?: string }>) {
-  const {
-    data: { locale, path },
-  } = event;
-  void loadData(locale, path);
+function handleMessage(event: MessageEvent<EmojiWorkerMessage>) {
+  const { data } = event;
+  if (data.type === 'debug') {
+    debug.enable(data.debugValue);
+  } else if (data.type === 'load') {
+    void loadData(data.storeName);
+  }
 }
 
-async function loadData(locale: string, path?: string) {
+async function loadData(storeName: string) {
   let importCount: number | undefined;
-  if (locale === 'custom') {
+  if (storeName === EMOJI_TYPE_CUSTOM) {
     importCount = (await importCustomEmojiData())?.length;
-  } else if (path) {
-    importCount = (await importEmojiData(locale, path))?.length;
+  } else if (storeName === EMOJI_DB_NAME_SHORTCODES) {
+    importCount = (await importLegacyShortcodes())?.length;
   } else {
-    throw new Error('Path is required for loading locale emoji data');
+    importCount = (await importEmojiData(storeName))?.length;
   }
+
   if (importCount) {
-    self.postMessage(`loaded ${importCount} emojis into ${locale}`);
+    self.postMessage({
+      type: 'done',
+      storeName,
+      importCount,
+    } satisfies EmojiWorkerMessage);
   }
 }
