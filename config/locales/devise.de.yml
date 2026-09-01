@@ -68,7 +68,7 @@ de:
       webauthn_credential:
         added:
           explanation: Der folgende Sicherheitsschlüssel wurde zu deinem Konto hinzugefügt
-          subject: '%{title}: Neuer Sicherheitsschlüssel'
+          subject: 'Mastodon: Neuer Sicherheitsschlüssel'
           title: Ein neuer Sicherheitsschlüssel wurde hinzugefügt
         deleted:
           explanation: Der folgende Sicherheitsschlüssel wurde von deinem Konto entfernt

@@ -27,10 +27,10 @@ RSpec.describe 'Admin::Reset' do
   end
 
   def password_change_subject
-    I18n.t('devise.mailer.password_change.subject', title: Setting.site_title)
+    I18n.t('devise.mailer.password_change.subject')
   end
 
   def reset_instructions_subject
-    I18n.t('devise.mailer.reset_password_instructions.subject', title: Setting.site_title)
+    I18n.t('devise.mailer.reset_password_instructions.subject')
   end
 end

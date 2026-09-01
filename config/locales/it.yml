@@ -1372,7 +1372,7 @@ it:
     link_to_webauth: Usa il tuo dispositivo chiave di sicurezza
     log_in_with: Accedi con
     login: Entra
-    logout: Esci
+    logout: Esci da Mastodon
     migrate_account: Sposta ad un account differente
     migrate_account_html: Se vuoi che questo account sia reindirizzato a uno diverso, puoi <a href="%{path}">configurarlo qui</a>.
     or_log_in_with: Oppure accedi con
@@ -1571,7 +1571,7 @@ it:
       content: Siamo spiacenti, ma qualcosa non ha funzionato dal nostro lato.
       title: Questa pagina non è corretta
     '503': La pagina non può essere trasmessa a causa di un errore temporaneo del server.
-    noscript_html: Per usare l'interfaccia web di Mastodon devi abilitare JavaScript. In alternativa puoi provare una delle <a href="%{apps_path}">app native</a> per Mastodon per la tua piattaforma.
+    noscript_html: Per usare l'interfaccia web di Mastodon dovi abilitare JavaScript. In alternativa puoi provare una delle <a href="%{apps_path}">app native</a> per Mastodon per la tua piattaforma.
   existing_username_validator:
     not_found: impossibile trovare un utente locale con quel nome utente
     not_found_multiple: impossibile trovare %{usernames}
@@ -2063,7 +2063,7 @@ it:
     aliases: Alias dell'account
     appearance: Interfaccia
     authorized_apps: Applicazioni autorizzate
-    back: Torna a casa
+    back: Torna a Mastodon
     delete: Cancellazione account
     development: Sviluppo
     edit_profile: Modifica profilo
@@ -2364,7 +2364,6 @@ it:
     seamless_external_login: Hai effettuato l'accesso tramite un servizio esterno, pertanto le impostazioni relative alla password e all'e-mail non sono disponibili.
     signed_in_as: 'Hai effettuato l''accesso come:'
   verification:
-    explanation_html: 'Puoi <strong>certificare te stesso come proprietario dei link nei metadati del tuo profilo</strong>. Per farlo, il sito a cui punta il link deve contenere un link che punta al tuo profilo Mastodon. Il link di ritorno <strong>deve</strong> avere l''attributo <code>rel="me"</code>. Il testo del link non ha importanza. Ecco un esempio:'
     extra_instructions_html: <strong>Suggerimento:</strong> il collegamento sul tuo sito web può essere invisibile. La parte importante è <code>rel="me"</code> che impedisce l'impersonificazione su siti web con contenuti generati dagli utenti. Puoi anche usare un tag <code>link</code> nell'intestazione della pagina invece di <code>a</code>, ma l'HTML deve essere accessibile senza eseguire JavaScript.
     here_is_how: Ecco come
     hint_html: "<strong>La verifica della tua identità su Mastodon è per tutti.</strong> Basata su standard web aperti, ora e per sempre gratis. Tutto ciò di cui hai bisogno è un sito web personale in cui le persone ti riconoscano. Quando ti colleghi a questo sito web dal tuo profilo, verificheremo che il sito web rimandi al tuo profilo e mostreremo un indicatore visivo su di esso."

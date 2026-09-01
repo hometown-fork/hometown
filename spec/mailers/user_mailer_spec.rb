@@ -60,15 +60,14 @@ RSpec.describe UserMailer do
       receiver.update!(locale: nil)
 
       expect(mail.text_part.body)
-        .to match(I18n.t('devise.mailer.confirmation_instructions.title', title: Setting.site_title))
+        .to match(I18n.t('devise.mailer.confirmation_instructions.title'))
         .and match('spec')
         .and match(Rails.configuration.x.local_domain)
     end
 
     it_behaves_like 'localized subject',
                     'devise.mailer.confirmation_instructions.subject',
-                    instance: Rails.configuration.x.local_domain,
-                    title: Setting.site_title
+                    instance: Rails.configuration.x.local_domain
     it_behaves_like 'delivery to memorialized user'
   end
 
@@ -79,15 +78,14 @@ RSpec.describe UserMailer do
       receiver.update!(email: 'new-email@example.com', locale: nil)
 
       expect(mail.text_part.body)
-        .to match(I18n.t('devise.mailer.reconfirmation_instructions.title', title: Setting.site_title))
+        .to match(I18n.t('devise.mailer.reconfirmation_instructions.title'))
         .and match('spec')
         .and match(Rails.configuration.x.local_domain)
     end
 
     it_behaves_like 'localized subject',
                     'devise.mailer.confirmation_instructions.subject',
-                    instance: Rails.configuration.x.local_domain,
-                    title: Setting.site_title
+                    instance: Rails.configuration.x.local_domain
     it_behaves_like 'delivery to memorialized user'
   end
 
@@ -98,13 +96,12 @@ RSpec.describe UserMailer do
       receiver.update!(locale: nil)
 
       expect(mail.text_part.body)
-        .to match(I18n.t('devise.mailer.reset_password_instructions.title', title: Setting.site_title))
+        .to match(I18n.t('devise.mailer.reset_password_instructions.title'))
         .and match('spec')
     end
 
     it_behaves_like 'localized subject',
-                    'devise.mailer.reset_password_instructions.subject',
-                    title: Setting.site_title
+                    'devise.mailer.reset_password_instructions.subject'
     it_behaves_like 'delivery to memorialized user'
   end
 
@@ -115,12 +112,11 @@ RSpec.describe UserMailer do
       receiver.update!(locale: nil)
 
       expect(mail.text_part.body)
-        .to match(I18n.t('devise.mailer.password_change.title', title: Setting.site_title))
+        .to match(I18n.t('devise.mailer.password_change.title'))
     end
 
     it_behaves_like 'localized subject',
-                    'devise.mailer.password_change.subject',
-                    title: Setting.site_title
+                    'devise.mailer.password_change.subject'
     it_behaves_like 'delivery to memorialized user'
   end
 
@@ -131,12 +127,11 @@ RSpec.describe UserMailer do
       receiver.update!(locale: nil)
 
       expect(mail.text_part.body)
-        .to match(I18n.t('devise.mailer.email_changed.title', title: Setting.site_title))
+        .to match(I18n.t('devise.mailer.email_changed.title'))
     end
 
     it_behaves_like 'localized subject',
-                    'devise.mailer.email_changed.subject',
-                    title: Setting.site_title
+                    'devise.mailer.email_changed.subject'
     it_behaves_like 'delivery to memorialized user'
   end
 
@@ -319,7 +314,7 @@ RSpec.describe UserMailer do
 
     it 'renders welcome mail' do
       expect { mail.deliver }
-        .to send_email(subject: I18n.t('user_mailer.welcome.subject', title: Setting.site_title))
+        .to send_email(subject: I18n.t('user_mailer.welcome.subject'))
       expect(mail.text_part.body)
         .to match(I18n.t('user_mailer.welcome.explanation'))
     end
@@ -335,7 +330,7 @@ RSpec.describe UserMailer do
       expect { mail.deliver }
         .to send_email(subject: I18n.t('user_mailer.backup_ready.subject'))
       expect(mail.text_part.body)
-        .to match(I18n.t('user_mailer.backup_ready.explanation', title: Setting.site_title))
+        .to match(I18n.t('user_mailer.backup_ready.explanation'))
     end
 
     it_behaves_like 'delivery to memorialized user'

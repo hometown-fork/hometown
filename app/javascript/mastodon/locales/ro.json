@@ -516,7 +516,6 @@
   "status.mute_conversation": "Ignoră conversația",
   "status.open": "Extinde această stare",
   "status.pin": "Fixează pe profil",
-  "status.quotes": "{count, plural, one {citat} few {citate} other {de citate}}",
   "status.read_more": "Citește mai mult",
   "status.reblog": "Impuls",
   "status.reblogged_by": "{name} a distribuit",

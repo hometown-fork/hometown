@@ -364,7 +364,6 @@
   "hints.profiles.see_more_posts": "{domain}හි තවත් සටහන් බලන්න",
   "home.column_settings.show_reblogs": "බූස්ට් පෙන්වන්න",
   "home.column_settings.show_replies": "පිළිතුරු පෙන්වන්න",
-  "home.explore_prompt.title": "මෙය ඔබගේ මාස්ටඩන් මුල් පිටුවයි.",
   "home.hide_announcements": "නිවේදන සඟවන්න",
   "home.pending_critical_update.body": "කරුණාකර හැකි ඉක්මනින් ඔබේ Mastodon සේවාදායකය යාවත්කාලීන කරන්න!",
   "home.pending_critical_update.link": "යාවත්කාල බලන්න",
