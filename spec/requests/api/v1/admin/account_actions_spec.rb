@@ -55,7 +55,6 @@ RSpec.describe 'Account actions' do
 
       it_behaves_like 'forbidden for wrong scope', 'admin:read admin:read:accounts'
       it_behaves_like 'forbidden for wrong role', ''
-      it_behaves_like 'forbidden for disabled user'
       it_behaves_like 'a successful notification delivery'
       it_behaves_like 'a successful logged action', :disable, :user
 
@@ -72,7 +71,6 @@ RSpec.describe 'Account actions' do
 
       it_behaves_like 'forbidden for wrong scope', 'admin:read admin:read:accounts'
       it_behaves_like 'forbidden for wrong role', ''
-      it_behaves_like 'forbidden for disabled user'
       it_behaves_like 'a successful notification delivery'
       it_behaves_like 'a successful logged action', :sensitive, :account
 
@@ -89,7 +87,6 @@ RSpec.describe 'Account actions' do
 
       it_behaves_like 'forbidden for wrong scope', 'admin:read admin:read:accounts'
       it_behaves_like 'forbidden for wrong role', ''
-      it_behaves_like 'forbidden for disabled user'
       it_behaves_like 'a successful notification delivery'
       it_behaves_like 'a successful logged action', :silence, :account
 
@@ -106,7 +103,6 @@ RSpec.describe 'Account actions' do
 
       it_behaves_like 'forbidden for wrong scope', 'admin:read admin:read:accounts'
       it_behaves_like 'forbidden for wrong role', ''
-      it_behaves_like 'forbidden for disabled user'
       it_behaves_like 'a successful notification delivery'
       it_behaves_like 'a successful logged action', :suspend, :account
 

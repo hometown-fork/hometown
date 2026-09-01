@@ -19,8 +19,6 @@ class ApplicationPolicy
   end
 
   def role
-    return UserRole.nobody if current_user&.disabled?
-
     current_user&.role || UserRole.nobody
   end
 end

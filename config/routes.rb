@@ -12,7 +12,7 @@ class RedirectWithVary < ActionDispatch::Routing::PathRedirect
 end
 
 def redirect_with_vary(path)
-  RedirectWithVary.new(301, path, caller(1..1).first)
+  RedirectWithVary.new(301, path)
 end
 
 Rails.application.routes.draw do

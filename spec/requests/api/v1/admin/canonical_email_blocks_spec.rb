@@ -19,7 +19,6 @@ RSpec.describe 'Canonical Email Blocks' do
     it_behaves_like 'forbidden for wrong scope', 'read:statuses'
     it_behaves_like 'forbidden for wrong role', ''
     it_behaves_like 'forbidden for wrong role', 'Moderator'
-    it_behaves_like 'forbidden for disabled user'
 
     context 'when there is no canonical email block' do
       it 'returns an empty list' do
@@ -95,7 +94,6 @@ RSpec.describe 'Canonical Email Blocks' do
     it_behaves_like 'forbidden for wrong scope', 'read:statuses'
     it_behaves_like 'forbidden for wrong role', ''
     it_behaves_like 'forbidden for wrong role', 'Moderator'
-    it_behaves_like 'forbidden for disabled user'
 
     context 'when the requested canonical email block exists' do
       it 'returns the requested canonical email block data correctly', :aggregate_failures do
@@ -133,7 +131,6 @@ RSpec.describe 'Canonical Email Blocks' do
     it_behaves_like 'forbidden for wrong scope', 'read:statuses'
     it_behaves_like 'forbidden for wrong role', ''
     it_behaves_like 'forbidden for wrong role', 'Moderator'
-    it_behaves_like 'forbidden for disabled user'
 
     context 'when the required email param is not provided' do
       let(:params) { {} }
@@ -185,7 +182,6 @@ RSpec.describe 'Canonical Email Blocks' do
     it_behaves_like 'forbidden for wrong scope', 'read:statuses'
     it_behaves_like 'forbidden for wrong role', ''
     it_behaves_like 'forbidden for wrong role', 'Moderator'
-    it_behaves_like 'forbidden for disabled user'
 
     it 'returns the canonical_email_hash correctly', :aggregate_failures do
       subject
@@ -260,7 +256,6 @@ RSpec.describe 'Canonical Email Blocks' do
 
     it_behaves_like 'forbidden for wrong role', ''
     it_behaves_like 'forbidden for wrong role', 'Moderator'
-    it_behaves_like 'forbidden for disabled user'
 
     it 'deletes the canonical email block', :aggregate_failures do
       subject
