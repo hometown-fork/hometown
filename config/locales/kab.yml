@@ -218,8 +218,6 @@ kab:
       accounts: Imiḍanen
       back_to_account: Tuɣalin ɣer usebter n umiḍan
       back_to_report: Tuɣalin ɣer usebter n uneqqis
-      batch:
-        report: Cetki ɣef
       collection_title: Talkensit sɣur %{name}
       contents: Agbur
       number_of_accounts:
@@ -301,9 +299,7 @@ kab:
         account: Amiḍan
         last_email: Imayl aneggaru
         show:
-          disable_feature: Sens tamahilt
           email: Tansa imayl
-          enable_feature: Rmed tamahilt
           view_account: Wali amiḍan
         status: Addad
       compliance_settings:
@@ -521,7 +517,6 @@ kab:
       landing_page:
         values:
           about: Asebter n Ɣef
-          local_feed: Asuddem usrid adigan
       registrations:
         title: Ajerred
       registrations_mode:
@@ -982,17 +977,7 @@ kab:
   privacy:
     privacy: Tabaḍnit
     reach: Awwaḍ
-    reach_hint_html: |-
-      Ḍebber ma tebɣiḍ ad k-id-afen yemdanen imaynuten yerna ad k-ḍefren. Tebɣiḍ ad
-      d-ttbanen yiznan-ik deg ugdil n « Snirem »? Tebɣiḍ ad k-walin yemdanen-nniḍen
-      deg yisumer-nsen n uḍfar? Tebɣiḍ ad tqebleḍ akk ineḍfaren imaynuten s
-      wudem awurman, neɣ ad tḥekmeḍ deg yal yiwen iman-is?
     search: Anadi
-    search_hint_html: |-
-      Ḍebber amek i tebɣiḍ ad k-id-afen medden. Tebɣiḍ ad k-id-afen yemdanen s wayen i
-      d-tuzneḍ s wudem azayez? Tebɣiḍ wid ur nelli ara deg Mastodon ad d-afen
-      amaɣnu-ik mi ara nadin deg web? Err ddehn-ik dakken ur yezmir yiwen ad iḍmen
-      tuffra tummidt seg yimseddayen n unadi i telɣut tazayezt.
     title: Tabḍnit akked wawwaḍ
   privacy_policy:
     title: Tasertit tabaḍnit

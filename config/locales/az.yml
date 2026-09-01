@@ -225,7 +225,6 @@ az:
     warning:
       data_removal: Göndərişləriniz və digər veriləriniz həmişəlik silinəcək
       irreversible: Hesabınızı bərpa edə və ya təkrar aktivləşdirə bilməyəcəksiniz
-      more_details_html: Daha çox ayrıntı üçün <a href="%{terms_path}">məxfilik siyasətinə</a> baxın.
   email_subscription_mailer:
     notification:
       footer:
