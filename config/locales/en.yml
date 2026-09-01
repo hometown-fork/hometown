@@ -946,7 +946,7 @@ en:
         title: Require new users to solve a CAPTCHA to confirm their account
       content_retention:
         danger_zone: Danger zone
-        preamble: Control how user-generated content is stored in %{title}.
+        preamble: Control how user-generated content is stored in Mastodon.
         title: Content retention
       default_noindex:
         desc_html: Affects all users who have not changed this setting themselves
@@ -2377,7 +2377,7 @@ en:
   verification:
     extra_instructions_html: <strong>Tip:</strong> The link on your website can be invisible. The important part is <code>rel="me"</code> which prevents impersonation on websites with user-generated content. You can even use a <code>link</code> tag in the header of the page instead of <code>a</code>, but the HTML must be accessible without executing JavaScript.
     here_is_how: Here's how
-    hint_html: "<strong>Verifying your identity on %{title} is for everyone.</strong> Based on open web standards, now and forever free. All you need is a personal website that people recognize you by. When you link to this website from your profile, we will check that the website links back to your profile and show a visual indicator on it."
+    hint_html: "<strong>Verifying your identity on Mastodon is for everyone.</strong> Based on open web standards, now and forever free. All you need is a personal website that people recognize you by. When you link to this website from your profile, we will check that the website links back to your profile and show a visual indicator on it."
     instructions_html: Copy and paste the code below into the HTML of your website. Then add the address of your website into one of the extra fields on your profile from the "Edit profile" tab and save changes.
     verification: Verification
     verified_links: Your verified links
