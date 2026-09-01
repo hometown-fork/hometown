@@ -55,7 +55,7 @@ az:
         title: Bir xəta baş verdi
       new:
         prompt_html: "%{client_name} hesabınıza erişmək üçün izin istəyir. <strong>Yalnız bu mənbəni tanıyırsınızsa və ona güvənirsinizsə bu istəyi təsdiqləyin.</strong>"
-        review_permissions: İcazələri incələ
+        review_permissions: İzinləri incələ
         title: Səlahiyyət tələb olunur
       show:
         title: Bu səlahiyyət kodunu kopyalayın və tətbiqə yapışdırın.
