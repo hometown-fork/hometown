@@ -3,7 +3,6 @@
 class Api::V1::Admin::AccountsController < Api::BaseController
   include Authorization
   include AccountableConcern
-  include Admin::PermissionsConcern
 
   LIMIT = 100
 

@@ -172,10 +172,6 @@ class UserRole < ApplicationRecord
     name
   end
 
-  def administrator?
-    permissions & FLAGS[:administrator] == FLAGS[:administrator]
-  end
-
   private
 
   def in_permissions?(privilege)

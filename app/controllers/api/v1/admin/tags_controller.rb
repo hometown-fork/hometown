@@ -2,7 +2,6 @@
 
 class Api::V1::Admin::TagsController < Api::BaseController
   include Authorization
-  include Admin::PermissionsConcern
 
   before_action -> { authorize_if_got_token! :'admin:read' }, only: [:index, :show]
   before_action -> { authorize_if_got_token! :'admin:write' }, only: :update

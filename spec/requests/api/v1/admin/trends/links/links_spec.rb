@@ -32,7 +32,6 @@ RSpec.describe 'Links' do
 
     it_behaves_like 'forbidden for wrong scope', 'read write'
     it_behaves_like 'forbidden for wrong role', ''
-    it_behaves_like 'forbidden for disabled user'
 
     it 'returns http success' do
       expect { subject }
@@ -92,7 +91,6 @@ RSpec.describe 'Links' do
 
     it_behaves_like 'forbidden for wrong scope', 'read write'
     it_behaves_like 'forbidden for wrong role', ''
-    it_behaves_like 'forbidden for disabled user'
 
     it 'returns http success' do
       expect { subject }

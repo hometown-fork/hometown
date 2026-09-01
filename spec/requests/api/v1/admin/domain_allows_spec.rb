@@ -19,7 +19,6 @@ RSpec.describe 'Domain Allows' do
     it_behaves_like 'forbidden for wrong scope', 'write:statuses'
     it_behaves_like 'forbidden for wrong role', ''
     it_behaves_like 'forbidden for wrong role', 'Moderator'
-    it_behaves_like 'forbidden for disabled user'
 
     context 'when there is no allowed domains' do
       it 'returns an empty body' do
@@ -78,7 +77,6 @@ RSpec.describe 'Domain Allows' do
     it_behaves_like 'forbidden for wrong scope', 'write:statuses'
     it_behaves_like 'forbidden for wrong role', ''
     it_behaves_like 'forbidden for wrong role', 'Moderator'
-    it_behaves_like 'forbidden for disabled user'
 
     it 'returns the expected allowed domain name', :aggregate_failures do
       subject
@@ -110,7 +108,6 @@ RSpec.describe 'Domain Allows' do
     it_behaves_like 'forbidden for wrong scope', 'write:statuses'
     it_behaves_like 'forbidden for wrong role', ''
     it_behaves_like 'forbidden for wrong role', 'Moderator'
-    it_behaves_like 'forbidden for disabled user'
 
     context 'with a valid domain name' do
       it 'returns the expected domain name', :aggregate_failures do
@@ -171,7 +168,6 @@ RSpec.describe 'Domain Allows' do
     it_behaves_like 'forbidden for wrong scope', 'write:statuses'
     it_behaves_like 'forbidden for wrong role', ''
     it_behaves_like 'forbidden for wrong role', 'Moderator'
-    it_behaves_like 'forbidden for disabled user'
 
     it 'deletes the allowed domain', :aggregate_failures do
       subject

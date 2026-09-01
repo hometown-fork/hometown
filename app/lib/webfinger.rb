@@ -61,8 +61,6 @@ class Webfinger
     raise Webfinger::Error, "Invalid JSON in response for #{@uri}"
   rescue Addressable::URI::InvalidURIError
     raise Webfinger::Error, "Invalid URI for #{@uri}"
-  rescue *Mastodon::HTTP_CONNECTION_ERRORS => e
-    raise Webfinger::Error, "Error performing webfinger query for #{@uri}: #{e}"
   end
 
   private
