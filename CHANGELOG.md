@@ -2,6 +2,40 @@
 
 All notable changes to this project will be documented in this file.
 
+## [4.5.17] - 2026-09-01
+
+## Security
+
+- Update dependencies
+- Fix password authentication bypass in 2FA auth for LDAP/PAM/SSO accounts ([GHSA-vx32-x96w-qq65](https://github.com/mastodon/mastodon/security/advisories/GHSA-vx32-x96w-qq65))
+- Fix Denial of Service when processing pathological JSON-LD activities ([GHSA-vgm8-frgh-rh2v](https://github.com/mastodon/mastodon/security/advisories/GHSA-vgm8-frgh-rh2v))
+- Fix disabled staff accounts still having access to admin API ([GHSA-62j4-hvj7-px3f](https://github.com/mastodon/mastodon/security/advisories/GHSA-62j4-hvj7-px3f))
+
+### Fixes
+
+- Fix `config/` directory missing from Bootsnap precompilation options in Dockerfile (#40255 by @ClearlyClaire)
+- Fix various off-by-one errors in statistics time ranges (#40193 by @ClearlyClaire)
+
+## [4.5.16] - 2026-08-13
+
+### Changed
+
+- Change `mastodon:setup` task warning about trademark to match `masto` but ignore subdomains (#40143 by @ClearlyClaire)
+
+### Fixed
+
+- Fix connection errors when processing `fediverse:creator` preventing creation of preview cards (#40135 by @ClearlyClaire)
+- Fix Web UI being inaccessible with URLs ending with `.zip` (#40134 by @ClearlyClaire)
+- Fix domain block impact queries being rejected (#40122 by @ClearlyClaire)
+
+## [4.5.15] - 2026-08-06
+
+### Fixed
+
+- Fix typo in embedded quote handling code (#40049 by @shleeable)
+- Fix account merging worker incorrectly merging `Appeal` and `AccountWarning` records (#39982 by @shleeable)
+- Fix off-by-one in handling of updated remote posts allowing up to 5 attachments (#39978 by @shleeable)
+
 ## [4.5.14] - 2026-07-27
 
 ### Security
