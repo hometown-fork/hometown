@@ -148,7 +148,7 @@ az:
       updated_msg: Mövzu etiketi ayarları uğurla güncəlləndi
     terms_of_service:
       generates:
-        chance_to_review_html: "<strong>Tərtib olunmuş xidmət şərtləri avtomatik olaraq dərc olunmayacaq.</strong> Nəticələri incələmə şansınız olacaq. Davam etmək üçün lütfən gərəkli məlumatları qeyd edin."
+        chance_to_review_html: "<strong>Tərtib olunmuş xidmət şərtləri avtomatik olaraq dərc olunmayacaq.</strong> Nəticələri incələmə şansınız olacaq. Davam etmək üçün lütfən gərəkli ayrıntıları qeyd edin."
     trends:
       tags:
         used_by_over_week:
@@ -225,6 +225,7 @@ az:
     warning:
       data_removal: Göndərişləriniz və digər veriləriniz həmişəlik silinəcək
       irreversible: Hesabınızı bərpa edə və ya təkrar aktivləşdirə bilməyəcəksiniz
+      more_details_html: Daha çox ayrıntı üçün <a href="%{terms_path}">məxfilik siyasətinə</a> baxın.
   email_subscription_mailer:
     notification:
       footer:
