@@ -85,6 +85,10 @@ cy:
       disable_sign_in_token_auth: Analluogi dilysu tocyn e-bost
       disable_two_factor_authentication: Diffodd 2FA
       disabled: Wedi rhewi
+      discoverable:
+        disabled: Dyw'r awdur heb ddewis bod yn ddarganfyddadwy
+        enabled: Mae'r awdur wedi dewis bod yn ddarganfyddadwy
+        title: Darganfyddadwy
       display_name: Enw sgrin
       domain: Parth
       edit: Golygu
@@ -95,6 +99,12 @@ cy:
       enable_sign_in_token_auth: Galluogi dilysu tocyn e-bost
       enabled: Wedi ei alluogi
       enabled_msg: Wedi dadrewi cyfrif %{username} yn llwyddiannus
+      follow_recommendations:
+        allowed: Caniatawyd
+        suppress: Atal unrhyw argymhelliad dilyn
+        suppressed: Cyfyngwyd
+        title: Dilyn yr argymhellion
+        unsuppress: Adfer unrhyw argymhelliad dilyn
       followers: Dilynwyr
       follows: Yn dilyn
       header: Pennyn
@@ -183,6 +193,12 @@ cy:
       suspension_irreversible: Mae data'r cyfrif hwn wedi'i ddileu'n ddiwrthdro. Gallwch ddad-atal y cyfrif i'w wneud yn ddefnyddiadwy ond ni fydd yn adennill unrhyw ddata a oedd ganddo o'r blaen.
       suspension_reversible_hint_html: Mae'r cyfrif wedi'i atal, a bydd y data'n cael ei ddileu yn llawn ar %{date}. Tan hynny, mae modd adfer y cyfrif heb unrhyw effeithiau gwael. Os dymunwch gael gwared ar holl ddata'r cyfrif ar unwaith, gallwch wneud hynny isod.
       title: Cyfrifon
+      trends:
+        allow: Caniatáu
+        allowed: Caniatawyd
+        disallow: Peidio Caniatáu
+        disallowed: Peidio Caniatáu
+        title: Postiadau sy'n trendio
       unblock_email: Dadflocio cyfeiriad e-bost
       unblocked_email_msg: Llwyddwyd i ddadflocio cyfeiriad e-bost %{username}
       unconfirmed_email: E-bost heb ei gadarnhau
