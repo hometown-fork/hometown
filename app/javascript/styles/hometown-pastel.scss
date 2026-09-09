@@ -57,6 +57,14 @@
   .compose-form__poll__select__value {
     background: var(--color-white);
   }
+
+  // Change the color of the dropdowns to a blue
+  .privacy-dropdown__dropdown,
+  .language-dropdown__dropdown,
+  .visibility-dropdown__dropdown,
+  .dropdown-button.active {
+    --color-bg-brand-base: var(--color-macaron-blueberry);
+  }
 }
 
 /* Previously known as fairy-floss (Pastel dark) */
