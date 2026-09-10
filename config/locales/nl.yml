@@ -182,7 +182,7 @@ nl:
         allowed: Toegestaan
         disallow: Afwijzen
         disallowed: Afgewezen
-        title: Populaire berichten
+        title: Trending berichten
       unblock_email: E-mailadres deblokkeren
       unblocked_email_msg: Het e-mailadres van %{username} is gedeblokkeerd
       unconfirmed_email: Onbevestigd e-mailadres
