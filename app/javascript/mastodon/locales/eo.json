@@ -677,8 +677,6 @@
   "explore.trending_links": "Novaĵoj",
   "explore.trending_statuses": "Afiŝoj",
   "explore.trending_tags": "Kradvortoj",
-  "featured_carousel.header": "{count, plural, one {Alpinglita afiŝo} other {Alpinglitaj afiŝoj}}",
-  "featured_carousel.slide": "Afiŝo {current, number} de {max, number}",
   "featured_tags.more_items": "+{count}",
   "featured_tags.suggestions": "Lastatempe vi afiŝadis pri {items}. Ĉu aldoni ĝin kiel elstarigitaj kradvortoj?",
   "featured_tags.suggestions.add": "Aldoni",

@@ -72,6 +72,10 @@ et:
       disable_sign_in_token_auth: E-posti võtme abil autentimise väljalülitamine
       disable_two_factor_authentication: Keela 2FA
       disabled: Keelatud
+      discoverable:
+        disabled: Autor pole soovinud olla leitav
+        enabled: Autor on soovinud olla mitteleitav
+        title: Leitav
       display_name: Kuvanimi
       domain: Domeen
       edit: Muuda
@@ -81,6 +85,12 @@ et:
       enable_sign_in_token_auth: Luba e-posti võtme abil autentimine
       enabled: Lubatud
       enabled_msg: Kasutaja %{username} konto taastatud
+      follow_recommendations:
+        allowed: Lubatud
+        suppress: Ära kuva ühtegi jälgimissoovitust
+        suppressed: Mittekuvatav
+        title: Järgi soovitusi
+        unsuppress: Taasta kõik jälgimissoovitused
       followers: Jälgijad
       follows: Jälgib
       header: Päis
@@ -165,6 +175,12 @@ et:
       suspension_irreversible: Selle konto andmed on taastamatult kustutatud. Konto taastamisel on see taas kasutatav, aga eelmisi andmeid pole võimalik taastada.
       suspension_reversible_hint_html: Konto on lukustatud ja andmed kustutatakse täielikult %{date}. Seni on võimalik kontot täielikult taastada. Soovi korral on võimalik allpool kõik konto andmed kustutada koheselt.
       title: Kontod
+      trends:
+        allow: Luba
+        allowed: Lubatud
+        disallow: Ära luba
+        disallowed: Pole lubatud
+        title: Hetkel populaarsed postitused
       unblock_email: Lõpeta e-posti aadressi blokeerimine
       unblocked_email_msg: Kasutaja %{username} e-posti aadressi blokeerimine on lõpetatud
       unconfirmed_email: Kinnitamata e-post
