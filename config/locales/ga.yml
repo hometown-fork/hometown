@@ -194,6 +194,7 @@ ga:
         allowed: Ceadaithe
         disallow: Dícheadaigh
         disallowed: Neamhcheadaithe
+        title: Poist ag treocht
       unblock_email: Bain an bac den seoladh ríomhphoist
       unblocked_email_msg: D'éirigh leis an mbac a bhain le seoladh ríomhphoist %{username}
       unconfirmed_email: Ríomhphost neamhdheimhnithe

@@ -73,6 +73,10 @@ de:
       disable_sign_in_token_auth: E-Mail-Token-Authentisierung deaktivieren
       disable_two_factor_authentication: Zwei-Faktor-Authentisierung (2FA) deaktivieren
       disabled: Eingefroren
+      discoverable:
+        disabled: Autor*in hat sich dafür entschieden, nicht entdeckt zu werden
+        enabled: Autor*in hat sich dafür entschieden, entdeckt zu werden
+        title: Entdecken
       display_name: Anzeigename
       domain: Domain
       edit: Bearbeiten
@@ -85,6 +89,10 @@ de:
       enabled_msg: Konto von %{username} erfolgreich freigegeben
       follow_recommendations:
         allowed: Erlaubt
+        suppress: Follower-Empfehlungen unterbinden
+        suppressed: Unterbunden
+        title: Follower-Empfehlungen
+        unsuppress: Follower-Empfehlungen wiederherstellen
       followers: Follower
       follows: Folge ich
       header: Titelbild
