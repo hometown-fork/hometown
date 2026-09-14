@@ -88,10 +88,10 @@ fr:
       enabled: Activé
       enabled_msg: Le compte de %{username} a été activé avec succès
       follow_recommendations:
-        allowed: Autorisé
-        suppress: Supprimer toute recommandation de suivi
-        suppressed: Supprimée
-        title: Suivre les recommandations
+        allowed: Autorisées
+        suppress: Supprimer les recommandations d'abonnement
+        suppressed: Supprimées
+        title: Recommandations d'abonnement
         unsuppress: Rétablir les recommandations d'abonnement
       followers: Abonné·e·s
       follows: Abonnements
