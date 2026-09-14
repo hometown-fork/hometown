@@ -182,6 +182,7 @@ el:
         allowed: Επιτρέπεται
         disallow: Να μην επιτραπεί
         disallowed: Δεν επιτρέπεται
+        title: Αναρτήσεις σε τάση
       unblock_email: Άρση αποκλεισμού διεύθυνσης email
       unblocked_email_msg: Επιτυχής άρση αποκλεισμού διεύθυνσης email %{username}
       unconfirmed_email: Ανεπιβεβαίωτο email
