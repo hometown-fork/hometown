@@ -65,6 +65,17 @@
   .dropdown-button.active {
     --color-bg-brand-base: var(--color-macaron-blueberry);
   }
+
+  // Make the post/toot button blue
+  .compose-form__submit {
+    --color-bg-brand-base: var(--color-macaron-blueberry);
+
+    // Because --color-macaron-blueberry is used as the bg-brand-soft, which
+    // itself is used for the default hovering style, we have to change that, too.
+    //
+    // We use one of Mastodon's own indigo colors here, it just has to be distinct.
+    --color-bg-brand-base-hover: var(--color-indigo-800);
+  }
 }
 
 /* Previously known as fairy-floss (Pastel dark) */
