@@ -1,0 +1,113 @@
+@use "application";
+
+// Set the color of scrollable containers.
+// Especially import for the light theme to set it to light for better contrast.
+.column > .scrollable {
+  background: var(--color-hometown-main-col);
+}
+
+/* Previously known as Macaron theme (Pastel light) */
+[data-color-scheme="light"] {
+  --color-macaron-purple: #c8c4dd;
+  --color-macaron-blue: #c8dbee;
+  --color-macaron-green: #dff6eb;
+  --color-macaron-pink: #ffcbcb;
+  --color-macaron-blueberry: #5971ad;
+  --color-macaron-cream: #fffdef;
+  --color-macaron-bilberry: #ad599c;
+
+  /* TEXT TOKENS */
+
+  --color-text-brand: var(--color-macaron-blueberry);
+
+  /* BACKGROUND TOKENS */
+
+  // Neutrals
+  --color-bg-primary: var(--color-macaron-cream);
+  --color-bg-secondary: var(--color-macaron-green);
+
+  // Brand
+  --color-bg-brand-base: var(--color-macaron-bilberry);
+  --color-bg-brand-soft: var(--color-macaron-blueberry);
+  --color-bg-brand-base-hover: var(--color-bg-brand-soft);
+  --color-bg-brand-softest: var(--color-macaron-green);
+
+  /* HOMETOWN OVERRIDES */
+  --color-hometown-main-col: var(--color-white);
+
+  // Override the column background to a light purple.
+  .column-header,
+  .tabs-bar__wrapper {
+    background: var(--color-macaron-purple);
+
+    // For better contrast, make the back button black.
+    .column-header__back-button,
+    .column-back-button {
+      color: var(--color-black);
+    }
+  }
+
+  // Highlight the current toot in the thread overview.
+  .detailed-status__wrapper {
+    background: var(--color-indigo-50);
+  }
+
+  // The toot compose form should be white too.
+  .compose-form__highlightable,
+  .compose-form__poll__select__value {
+    background: var(--color-white);
+  }
+
+  // Change the color of the dropdowns to a blue
+  .privacy-dropdown__dropdown,
+  .language-dropdown__dropdown,
+  .visibility-dropdown__dropdown,
+  .dropdown-button.active {
+    --color-bg-brand-base: var(--color-macaron-blueberry);
+  }
+
+  // Make the post/toot button blue
+  .compose-form__submit {
+    --color-bg-brand-base: var(--color-macaron-blueberry);
+
+    // Because --color-macaron-blueberry is used as the bg-brand-soft, which
+    // itself is used for the default hovering style, we have to change that, too.
+    //
+    // We use one of Mastodon's own indigo colors here, it just has to be distinct.
+    --color-bg-brand-base-hover: var(--color-indigo-800);
+  }
+}
+
+/* Previously known as fairy-floss (Pastel dark) */
+[data-color-scheme="dark"] {
+  --color-fairyfloss-purple-100: oklch(0.75 0.1 310);
+  --color-fairyfloss-purple-300: oklch(0.666 0.1 310);
+  --color-fairyfloss-purple-500: oklch(0.5 0.1 310);
+  --color-fairyfloss-purple-700: oklch(0.3 0.09 310);
+  --color-fairyfloss-purple-800: oklch(0.25 0.08 310);
+  --color-fairyfloss-purple-900: oklch(0.2 0.08 310);
+  --color-fairyfloss-purple-950: oklch(0.1 0.08 310);
+
+  /* TEXT TOKENS */
+
+  --color-text-primary: var(--color-white);
+  --color-text-secondary: var(--color-fairyfloss-purple-100);
+  --color-text-brand: var(--color-fairyfloss-purple-300);
+
+  /* BACKGROUND TOKENS */
+
+  // Neutrals
+  --color-bg-primary: var(--color-fairyfloss-purple-900);
+  --color-bg-secondary: var(--color-fairyfloss-purple-700);
+
+  // Utility
+  --color-bg-inverted: var(--color-fairyfloss-purple-700);
+
+  // Brand
+  --color-bg-brand-base: var(--color-fairyfloss-purple-700);
+  --color-bg-brand-soft: var(--color-fairyfloss-purple-900);
+  --color-bg-brand-softest: var(--color-fairyfloss-purple-950);
+
+  /* HOMETOWN OVERRIDES */
+  --color-hometown-main-col: var(--color-fairyfloss-purple-800);
+}
