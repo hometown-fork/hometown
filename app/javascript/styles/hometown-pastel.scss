@@ -1,4 +1,4 @@
-@use "application";
+@use 'application';
 
 // Set the color of scrollable containers.
 // Especially import for the light theme to set it to light for better contrast.
@@ -7,7 +7,7 @@
 }
 
 /* Previously known as Macaron theme (Pastel light) */
-[data-color-scheme="light"] {
+[data-color-scheme='light'] {
   --color-macaron-purple: #c8c4dd;
   --color-macaron-blue: #c8dbee;
   --color-macaron-green: #dff6eb;
@@ -72,21 +72,20 @@
 
     // Because --color-macaron-blueberry is used as the bg-brand-soft, which
     // itself is used for the default hovering style, we have to change that, too.
-    //
     // We use one of Mastodon's own indigo colors here, it just has to be distinct.
     --color-bg-brand-base-hover: var(--color-indigo-800);
   }
 }
 
 /* Previously known as fairy-floss (Pastel dark) */
-[data-color-scheme="dark"] {
-  --color-fairyfloss-purple-100: oklch(0.75 0.1 310);
-  --color-fairyfloss-purple-300: oklch(0.666 0.1 310);
-  --color-fairyfloss-purple-500: oklch(0.5 0.1 310);
-  --color-fairyfloss-purple-700: oklch(0.3 0.09 310);
-  --color-fairyfloss-purple-800: oklch(0.25 0.08 310);
-  --color-fairyfloss-purple-900: oklch(0.2 0.08 310);
-  --color-fairyfloss-purple-950: oklch(0.1 0.08 310);
+[data-color-scheme='dark'] {
+  --color-fairyfloss-purple-100: oklch(75% 0.1 310deg);
+  --color-fairyfloss-purple-300: oklch(66.6% 0.1 310deg);
+  --color-fairyfloss-purple-500: oklch(50% 0.1 310deg);
+  --color-fairyfloss-purple-700: oklch(30% 0.09 310deg);
+  --color-fairyfloss-purple-800: oklch(25% 0.08 310deg);
+  --color-fairyfloss-purple-900: oklch(20% 0.08 310deg);
+  --color-fairyfloss-purple-950: oklch(10% 0.08 310deg);
 
   /* TEXT TOKENS */
 
