@@ -485,7 +485,7 @@ export const DetailedStatus: React.FC<{
         {statusActivityObjectType !== 'Article' && expanded && (
           <>
             <StatusContent
-              statusId={status.get('id')}
+              status={status}
               onTranslate={handleTranslate}
               {...(statusContentProps as any)}
             />
