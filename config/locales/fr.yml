@@ -64,6 +64,8 @@ fr:
       custom: Personnaliser
       delete: Supprimer les données
       deleted: Supprimé
+      deletion_irreversible: Les données de ce compte ont été supprimées définitivement.
+      deletion_reversible_hint_html: Ce compte est en attente de suppression, et les données seront complètement supprimées le %{date}.
       demote: Rétrograder
       destroyed_msg: Les données de %{username} sont maintenant en file d’attente pour être supprimées imminemment
       disable: Désactiver
@@ -289,7 +291,11 @@ fr:
         enable_relay_html: "%{name} a activé le relais %{target}"
         enable_sign_in_token_auth_user_html: "%{name} a activé l'authentification par jeton de courriel pour %{target}"
         enable_user_html: "%{name} a activé la connexion de l'utilisateur·rice %{target}"
+        listable_tag_html: peut être suggéré
         memorialize_account_html: "%{name} a converti le compte de %{target} en un mémorial"
+        not_listable_tag_html: ne sera pas suggéré
+        not_trendable_tag_html: n'apparaîtra pas dans les tendances
+        not_usable_tag_html: ne peut pas être utilisé
         promote_user_html: "%{name} a promu l'utilisateur·rice %{target}"
         publish_terms_of_service_html: "%{name} a publié des mises à jour des conditions d'utilisation"
         reject_appeal_html: "%{name} a rejeté l'appel de la décision de modération émis par %{target}"
@@ -302,6 +308,7 @@ fr:
         sensitive_account_html: "%{name} a marqué le média de %{target} comme sensible"
         silence_account_html: "%{name} a masqué le compte de %{target}"
         suspend_account_html: "%{name} a suspendu le compte de %{target}"
+        trendable_tag_html: peut apparaître dans les tendances
         unassigned_report_html: "%{name} a désassigné le signalement %{target}"
         unblock_email_account_html: "%{name} a débloqué l’adresse de courriel de %{target}"
         unsensitive_account_html: "%{name} a enlevé le marquage comme sensible du média de %{target}"
@@ -314,8 +321,10 @@ fr:
         update_ip_block_html: "%{name} a modifié la règle pour l'IP %{target}"
         update_report_html: "%{name} a mis à jour le rapport de signalement %{target}"
         update_status_html: "%{name} a mis à jour le message de %{target}"
+        update_tag_html: "%{name} a modifié les paramètres de %{target} pour : "
         update_user_role_html: "%{name} a changé le rôle %{target}"
         update_username_block_html: "%{name} a mis à jour une règle pour les noms d'utilisateurs contenant %{target}"
+        usable_tag_html: peut être utilisé ;
       deleted_account: compte supprimé
       empty: Aucun journal trouvé.
       filter_by_action: Filtrer par action
@@ -730,6 +739,8 @@ fr:
       new:
         title: Créer une nouvelle règle IP
       no_ip_block_selected: Aucune règle IP n’a été modifiée car aucune n’a été sélectionnée
+      reset: Réinitialiser
+      search: Rechercher
       title: Règles IP
     relationships:
       title: Relations de %{acct}
@@ -1004,13 +1015,17 @@ fr:
       critical_update: Critique — veuillez mettre à jour au plus vite
       description: Il est recommandé de maintenir votre installation de Mastodon à jour afin de bénéficier des derniers correctifs et fonctionnalités. Par ailleurs, il est parfois critique de mettre à jour Mastodon rapidement de manière à éviter les incidents relatifs à la sécurité. Pour ces raisons, Mastodon examine la disponibilté des mises à jour toutes les 30 minutes, et vous en avisera en fonction de vos préférences de notification par courriel.
       documentation_link: En savoir plus
+      nearing_eol: La branche que vous utilisez actuellement ne sera plus supportée à partir du %{date}, veuillez envisager la mise à jour.
       release_notes: Notes de mises à jour
+      supported_until: Le support se termine le %{date}
       title: Mises à jour disponibles
       type: Type
       types:
         major: Mise à jour majeure
         minor: Mise à jour mineure
         patch: Mise à jour corrective — corrections de bugs et changements faciles à appliquer
+      unsupported_branch: La branche que vous utilisez actuellement n'est plus supportée, veuillez la mettre à jour dès que possible.
+      unsupported_since: Non supportée depuis le %{date}
       version: Version
     statuses:
       account: Auteur·rice
@@ -1276,6 +1291,15 @@ fr:
     auto_close_registrations:
       body: En raison du manque d'activité récente des modérateurs, les inscriptions à %{instance} ont été automatiquement changées pour nécessiter une revue manuelle afin d'éviter que votre instance %{instance} ne soit utilisée comme plate-forme pour des acteurs potentiellement malveillants. Vous pouvez ré-ouvrir les inscriptions à tout moment.
       subject: Les inscriptions à %{instance} ont été automatiquement changées pour requérir une approbation
+    end_of_support_out_of_support_warning:
+      body: La version de Mastodon actuellement utilisée sur votre serveur n'est plus supportée. Nous vous recommandons de mettre à jour dès que possible !
+      subject: Mastodon %{branch} utilisé sur %{instance} n'est plus supporté !
+    end_of_support_three_months_warning:
+      body: La version de Mastodon actuellement utilisée sur votre serveur ne sera plus supportée dans 3 mois. Vous voudrez peut-être mettre à jour vers une nouvelle branche en avance.
+      subject: Le support de Mastodon %{branch} utilisé sur %{instance} se termine dans 3 mois.
+    end_of_support_two_weeks_warning:
+      body: La version de Mastodon actuellement utilisée sur votre serveur ne sera plus supportée dans 2 semaines. Nous vous recommandons de mettre à jour avant cette échéance.
+      subject: Le support de Mastodon %{branch} utilisé sur %{instance} se termine dans 2 semaines.
     new_appeal:
       actions:
         delete_statuses: effacer les messages
@@ -1911,6 +1935,7 @@ fr:
     administration_emails: Notifications d'administration par courriel
     email_events: Événements pour les notifications par courriel
     email_events_hint: 'Sélectionnez les événements pour lesquels vous souhaitez recevoir des notifications :'
+    moderation_emails: Notifications de modération par courriel
   number:
     human:
       decimal_units:
@@ -1934,7 +1959,7 @@ fr:
     next: Suivant
     older: Plus ancien
     prev: Précédent
-    truncate: "&hellip;"
+    truncate_html: "&hellip;"
   polls:
     errors:
       already_voted: Vous avez déjà participé à ce sondage

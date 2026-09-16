@@ -397,6 +397,7 @@ kab:
       new:
         title: Rnu alugen n IP amaynut
       no_ip_block_selected: Ula yiwen n ulugen n IP ur yettwabeddel acku ula yiwen ur yettwafren
+      search: Nadi
       title: Ilugan n IP
     relationships:
       title: Assaɣen n %{acct}
@@ -926,7 +927,6 @@ kab:
     next: Ɣer zdat
     older: Aqbuṛ
     prev: Win iɛeddan
-    truncate: "&hellip;"
   polls:
     vote: Dɣer
   preferences:
