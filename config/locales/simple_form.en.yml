@@ -58,7 +58,6 @@ en:
         setting_aggregate_reblogs: Do not show new boosts for posts that have been recently boosted (only affects newly-received boosts)
         setting_always_send_emails: Normally e-mail notifications won't be sent when you are actively using Mastodon
         setting_boost_modal: When enabled, boosting will first open a confirmation dialog in which you can change the visibility of your boost.
-        setting_default_federation_html: <ul><li>If checked, your new posts federate to other instances unless manually changed while composing in the web interface.</li><li>If unchecked, your new posts stay local unless manually changed while composing in the web interface.</li><li>Third party apps will make new posts that respect this setting. <a href="https://github.com/hometown-fork/hometown/wiki/Local-only-posting#note-on-3rd-party-apps">See here for more info on third-party apps</a></li></ul>
         setting_default_quote_policy_private: Followers-only posts authored on Mastodon can't be quoted by others.
         setting_default_quote_policy_unlisted: When people quote you, their post will also be hidden from trending timelines.
         setting_default_sensitive: Sensitive media is hidden by default and can be revealed with a click
@@ -66,7 +65,6 @@ en:
         setting_display_media_hide_all: Warn before showing all media
         setting_display_media_show_all: Show all media without warning, including media marked as sensitive
         setting_emoji_style: How to display emojis. "Auto" will try using native emoji, but falls back to Twemoji for legacy browsers.
-        setting_noindex_html: Affects your public profile and post pages. Public replies you make to other people may still be indexed on their pages. <a href="https://github.com/hometown-fork/hometown/issues/1234">See here for more information.</a>
         setting_quick_boosting_html: When enabled, clicking on the %{boost_icon} Boost icon will immediately boost instead of opening the boost/quote dropdown menu. Relocates the quoting action to the %{options_icon} (Options) menu.
         setting_use_blurhash: Gradients are based on the colors of the hidden visuals but obfuscate any details
         setting_use_pending_items: Hide timeline updates behind a click instead of automatically scrolling the feed
@@ -93,14 +91,12 @@ en:
         closed_registrations_message: Displayed when sign-ups are closed
         content_cache_retention_period: All posts from other servers (including boosts and replies) will be deleted after the specified number of days, without regard to any local user interaction with those posts. This includes posts where a local user has marked it as bookmarks or favorites. Private mentions between users from different instances will also be lost and impossible to restore. Use of this setting is intended for special purpose instances and breaks many user expectations when implemented for general purpose use.
         custom_css: You can apply custom styles on the web version of Mastodon.
-        default_federation: Affects all users who have not changed this setting themselves. Unchecking this means new users will post local-only by default unless they change it in their preferences.
         email_footer_text: Optional text that appears in the footer of newsletter emails only.
         favicon: WEBP, PNG, GIF or JPG. Overrides the default Mastodon favicon with a custom icon.
         landing_page: Selects what page new visitors see when they first arrive on your server. If you select "Trends", then trends needs to be enabled in the Discovery Settings. If you select "Local feed", then "Access to live feeds featuring local posts" needs to be set to "Everyone" in the Discovery Settings.
         mascot: Overrides the illustration in the advanced web interface.
         media_cache_retention_period: Media files from posts made by remote users are cached on your server. When set to a positive value, media will be deleted after the specified number of days. If the media data is requested after it is deleted, it will be re-downloaded, if the source content is still available. Due to restrictions on how often link preview cards poll third-party sites, it is recommended to set this value to at least 14 days, or link preview cards will not be updated on demand before that time.
         min_age: Users will be asked to confirm their date of birth during sign-up
-        norss: Affects all users who have not changed this setting themselves.
         peers_api_enabled: A list of domain names this server has encountered in the fediverse. No data is included here about whether you federate with a given server, just that your server knows about it. This is used by services that collect statistics on federation in a general sense.
         profile_directory: The profile directory lists all users who have opted-in to be discoverable.
         require_invite_text: When sign-ups require manual approval, make the “Why do you want to join?” text input mandatory rather than optional
@@ -250,7 +246,6 @@ en:
         setting_boost_modal: Control boosting visibility
         setting_color_scheme: Color scheme
         setting_contrast: Contrast
-        setting_default_federation: Allow my posts to reach other servers by default
         setting_default_language: Posting language
         setting_default_privacy: Posting visibility
         setting_default_quote_policy: Who can quote
@@ -264,10 +259,7 @@ en:
         setting_display_media_show_all: Show all
         setting_emoji_style: Emoji style
         setting_expand_spoilers: Always expand posts marked with content warnings
-        setting_expand_usernames: Show full username (including domain) for remote users
         setting_hide_network: Hide your social graph
-        setting_noindex: Opt-out of search engine indexing
-        setting_norss: Opt-out of an RSS feed for your public posts
         setting_missing_alt_text_modal: Warn me before posting media without alt text
         setting_quick_boosting: Enable quick boosting
         setting_reduce_motion: Reduce motion in animations
@@ -302,7 +294,6 @@ en:
         closed_registrations_message: Custom message when sign-ups are not available
         content_cache_retention_period: Remote content retention period
         custom_css: Custom CSS
-        default_federation: Set the default posting privacy for new users to federated
         email_footer_text: Additional footer text
         favicon: Favicon
         landing_page: Landing page for new visitors
@@ -311,10 +302,8 @@ en:
         mascot: Custom mascot (legacy)
         media_cache_retention_period: Media cache retention period
         min_age: Minimum age requirement
-        norss: Opt users out of having an RSS feed of their public posts by default
         peers_api_enabled: Publish list of discovered servers in the API
         profile_directory: Enable profile directory
-        peers_api_enabled: Publish list of discovered servers in the API
         registrations_mode: Who can sign-up
         remote_live_feed_access: Access to live feeds featuring remote posts
         remote_topic_feed_access: Access to hashtag and link feeds featuring remote posts

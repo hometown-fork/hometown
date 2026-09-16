@@ -230,7 +230,6 @@ sl:
         setting_emoji_style: Slog čustvenih simbolov
         setting_expand_spoilers: Vedno razširi objave, označene z opozorili o vsebini
         setting_hide_network: Skrij svoje omrežje
-        setting_missing_alt_text_modal: Pred objavo predstavnosti brez nadomestnega besedila pokaži potrditveno okno
         setting_reduce_motion: Zmanjšanje premikanja v animacijah
         setting_system_font_ui: Uporabi privzeto pisavo sistema
         setting_system_scrollbars_ui: Uporabi privzeti drsni trak sistema

@@ -1,8 +1,7 @@
 ---
 en:
   about:
-    about_hashtag_html: These are public posts tagged with <strong>#%{hashtag}</strong>. You can interact with them if you have an account anywhere in the fediverse.
-    about_mastodon_html: 'Hometown is adapted from Mastodon, a decentralized social network with no ads, no corporate surveillance, and ethical design.'
+    about_mastodon_html: 'The social network of the future: No ads, no corporate surveillance, ethical design, and decentralization! Own your data with Mastodon!'
     contact_missing: Not set
     contact_unavailable: N/A
     default_thumbnail_description: Two smiling cartoon mastodons (who look like elephants) toss a paper plane between them. They're surrounded by a bright blue sky and floating planets with trees and more mastodons on them.
@@ -976,10 +975,6 @@ en:
         all: To everyone
         disabled: To no one
         users: To logged-in local users
-      hometown:
-        title: Hometown
-        preamble: These site-wide settings are provided to you by Hometown. As the server admin, you should think carefully about what you want each setting to be, since this will have an impact in shaping your community.
-        privacy: Privacy
       feed_access:
         modes:
           authenticated: Authenticated users only
@@ -1601,7 +1596,7 @@ en:
       content: We're sorry, but something went wrong on our end.
       title: This page is not correct
     '503': The page could not be served due to a temporary server failure.
-    noscript_html: To use the web application, please enable JavaScript. Alternatively, try one of the <a href="%{apps_path}">native apps</a> for Hometown/Mastodon for your platform.
+    noscript_html: To use the Mastodon web application, please enable JavaScript. Alternatively, try one of the <a href="%{apps_path}">native apps</a> for Mastodon for your platform.
   existing_username_validator:
     not_found: could not find a local user with that username
     not_found_multiple: could not find %{usernames}
@@ -2151,8 +2146,6 @@ en:
       in_reply_not_found: The post you are trying to reply to does not appear to exist.
       quoted_status_not_found: The post you are trying to quote does not appear to exist.
       quoted_user_not_mentioned: Cannot quote a non-mentioned user in a Private Mention post.
-    local_only: Local-only
-    open_in_web: Open in web
     over_character_limit: character limit of %{max} exceeded
     pin_errors:
       direct: Posts that are only visible to mentioned users cannot be pinned
@@ -2187,8 +2180,6 @@ en:
     interaction_exceptions_explanation: Posts which temporarily exceed the favorite or boost threshold may be retained even if they are later decreased.
     keep_direct: Keep direct messages
     keep_direct_hint: Doesn't delete any of your direct messages
-    keep_local: Keep local-only messages
-    keep_local_hint: Doesn't delete any of your local-only posts
     keep_media: Keep posts with media attachments
     keep_media_hint: Doesn't delete any of your posts that have media attachments
     keep_pinned: Keep pinned posts
