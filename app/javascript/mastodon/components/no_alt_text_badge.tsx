@@ -2,11 +2,11 @@ import { useState, useCallback, useRef } from 'react';
 
 import { FormattedMessage } from 'react-intl';
 
-import Overlay from 'react-overlays/Overlay';
 import type {
   OffsetValue,
   UsePopperOptions,
 } from 'react-overlays/esm/usePopper';
+import Overlay from 'react-overlays/Overlay';
 
 import WarningIcon from '@/material-icons/400-24px/warning.svg?react';
 import { Icon } from 'mastodon/components/icon';
@@ -32,6 +32,7 @@ export const NoAltTextBadge: React.FC = () => {
         ref={anchorRef}
         className='media-gallery__no-alt__label'
         onClick={handleClick}
+        type='button'
       >
         <Icon id='warning' icon={WarningIcon} />
       </button>
@@ -40,7 +41,7 @@ export const NoAltTextBadge: React.FC = () => {
         rootClose
         onHide={handleClose}
         show={open}
-        target={anchorRef.current}
+        target={anchorRef}
         placement='top-end'
         flip
         offset={offset}

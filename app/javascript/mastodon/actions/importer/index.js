@@ -1,8 +1,10 @@
 import { createPollFromServerJSON } from 'mastodon/models/poll';
 
 import { importAccounts } from './accounts';
+import { importCustomEmoji } from './emoji';
 import { normalizeStatus } from './normalizer';
 import { importPolls } from './polls';
+import { fetchAccountsForCollectionPreview } from '@/mastodon/reducers/slices/collections';
 
 export const STATUS_IMPORT   = 'STATUS_IMPORT';
 export const STATUSES_IMPORT = 'STATUSES_IMPORT';
@@ -39,6 +41,10 @@ export function importFetchedAccounts(accounts) {
     if (account.moved) {
       processAccount(account.moved);
     }
+
+    if (account.emojis && account.username === account.acct) {
+      importCustomEmoji(account.emojis);
+    }
   }
 
   accounts.forEach(processAccount);
@@ -56,6 +62,7 @@ export function importFetchedStatuses(statuses, options = {}) {
     const normalStatuses = [];
     const polls = [];
     const filters = [];
+    const collections = [];
 
     function processStatus(status) {
       pushUnique(normalStatuses, normalizeStatus(status, getState().getIn(['statuses', status.id]), options));
@@ -77,8 +84,16 @@ export function importFetchedStatuses(statuses, options = {}) {
         pushUnique(polls, createPollFromServerJSON(status.poll, getState().polls[status.poll.id]));
       }
 
+      if (status.tagged_collections.length) {
+        status.tagged_collections.forEach(collection => pushUnique(collections, collection));
+      }
+
       if (status.card) {
         status.card.authors.forEach(author => author.account && pushUnique(accounts, author.account));
+      }
+
+      if (status.emojis && status.account.username === status.account.acct) {
+        importCustomEmoji(status.emojis);
       }
     }
 
@@ -88,5 +103,6 @@ export function importFetchedStatuses(statuses, options = {}) {
     dispatch(importFetchedAccounts(accounts));
     dispatch(importStatuses(normalStatuses));
     dispatch(importFilters(filters));
+    fetchAccountsForCollectionPreview(collections, dispatch);
   };
 }

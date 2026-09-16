@@ -1,4 +1,6 @@
-@use 'fairy-floss/css_variables';
-@import 'fairy-floss/variables';
-@import 'application';
-@import 'fairy-floss/diff';
+/*
+  This theme is legacy. Because Vite doesn't seem to resolve
+  symlinks, we keep the entrypoint for now and just import the
+  hometown-pastel theme.
+*/
+@use 'hometown-pastel';

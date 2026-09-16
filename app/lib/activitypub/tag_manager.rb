@@ -31,6 +31,8 @@ class ActivityPub::TagManager
       short_account_status_url(target.account, target)
     when :flag
       target.uri
+    when :featured_collection
+      collection_url(target)
     end
   end
 
@@ -62,6 +64,10 @@ class ActivityPub::TagManager
       emoji_url(target)
     when :flag
       target.uri
+    when :featured_collection
+      ap_account_collection_url(target.account.id, target)
+    when :featured_item
+      ap_account_collection_item_url(target.collection.account_id, target)
     end
   end
 
@@ -133,7 +139,7 @@ class ActivityPub::TagManager
   def collection_uri_for(target, ...)
     raise ArgumentError, 'target must be a local account' unless target.local?
 
-    target.numeric_ap_id? ? ap_account_collection_url(target.id, ...) : account_collection_url(target, ...)
+    target.numeric_ap_id? ? ap_account_actor_collection_url(target.id, ...) : account_actor_collection_url(target, ...)
   end
 
   def inbox_uri_for(target)
@@ -258,6 +264,14 @@ class ActivityPub::TagManager
     uri_to_resource(uri, Account)
   end
 
+  def uri_to_local_collection(uri)
+    path_params = Rails.application.routes.recognize_path(uri)
+    return unless path_params[:controller] == 'collections'
+
+    # TODO: check account, but this requires handling potentially two different schemes
+    Collection.find_by(id: path_params[:id])
+  end
+
   def uri_to_local_conversation(uri)
     path_params = Rails.application.routes.recognize_path(uri)
     return unless path_params[:controller] == 'activitypub/contexts'
@@ -275,6 +289,8 @@ class ActivityPub::TagManager
         uris_to_local_accounts([uri]).first
       when 'Conversation'
         uri_to_local_conversation(uri)
+      when 'Collection'
+        uri_to_local_collection(uri)
       else
         StatusFinder.new(uri).status
       end

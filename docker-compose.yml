@@ -27,8 +27,9 @@ services:
 
   # es:
   #   restart: always
-  #   image: docker.elastic.co/elasticsearch/elasticsearch:7.17.29
+  #   image: docker.elastic.co/elasticsearch/elasticsearch:8.19.15
   #   environment:
+  #     - "ELASTIC_PASSWORD=password"  #Username is elastic. Do not change the username.
   #     - "ES_JAVA_OPTS=-Xms512m -Xmx512m -Des.enforce.bootstrap.checks=true"
   #     - "xpack.license.self_generated.type=basic"
   #     - "xpack.security.enabled=false"
@@ -58,7 +59,8 @@ services:
 
   web:
     # You can uncomment the following line if you want to not use the prebuilt image, for example if you have local code changes
-    build: .
+    # build: .
+    image: ghcr.io/mastodon/mastodon:v4.6.7
     restart: always
     env_file: .env.production
     command: bundle exec puma -C config/puma.rb
@@ -78,9 +80,11 @@ services:
       - ./public/system:/mastodon/public/system
 
   streaming:
-    build:
-      dockerfile: ./streaming/Dockerfile
-      context: .
+    # You can uncomment the following lines if you want to not use the prebuilt image, for example if you have local code changes
+    # build:
+    #   dockerfile: ./streaming/Dockerfile
+    #   context: .
+    image: ghcr.io/mastodon/mastodon-streaming:v4.6.7
     restart: always
     env_file: .env.production
     command: node ./streaming/index.js
@@ -98,7 +102,8 @@ services:
 
   sidekiq:
     # You can uncomment the following line if you want to not use the prebuilt image, for example if you have local code changes
-    build: .
+    # build: .
+    image: ghcr.io/mastodon/mastodon:v4.6.7
     restart: always
     env_file: .env.production
     command: bundle exec sidekiq

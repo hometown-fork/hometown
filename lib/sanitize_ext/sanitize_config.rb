@@ -110,14 +110,13 @@ class Sanitize
       elements: %w(p br span a del s pre blockquote code b strong u i em ul ol li ruby rt rp abbr h1 h2 h3 h4 h5 img),
 
       attributes: {
-        'abbr' => %w(title),
-        'blockquote' => %w(cite),
-        'img' => %w(src alt),
-        'a' => %w(href rel class translate title),
+        :all => %w(lang),
+        'a' => %w(href rel class translate),
         'span' => %w(class translate),
         'ol' => %w(start reversed),
         'li' => %w(value),
         'p' => %w(class),
+        'img' => %w(src alt),
       },
 
       add_attributes: {

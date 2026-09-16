@@ -205,7 +205,7 @@ export function createDataLoadingThunk<LoadDataResult, Args extends ArgsType>(
   thunkOptions?: AppThunkOptions<Args>,
 ): ReturnType<typeof createAsyncThunk<Args, void>>;
 
-// Overload when the `onData` method returns nothing, then the mayload is the `onData` result
+// Overload when the `onData` method returns nothing, then the payload is the `onData` result
 export function createDataLoadingThunk<LoadDataResult, Args extends ArgsType>(
   name: string,
   loadData: LoadData<Args, LoadDataResult>,
@@ -230,7 +230,7 @@ export function createDataLoadingThunk<
 ): ReturnType<typeof createAsyncThunk<Args, Returned>>;
 
 /**
- * This function creates a Redux Thunk that handles loading data asynchronously (usually from the API), dispatching `pending`, `fullfilled` and `rejected` actions.
+ * This function creates a Redux Thunk that handles loading data asynchronously (usually from the API), dispatching `pending`, `fulfilled` and `rejected` actions.
  *
  * You can run a callback on the `onData` results to either dispatch side effects or modify the payload.
  *

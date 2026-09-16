@@ -19,6 +19,18 @@ RSpec.describe StatusCacheHydrator do
         end
       end
 
+      context 'when handling a new status with a preview card with unverified account attribution' do
+        let(:preview_card) { Fabricate(:preview_card, unverified_author_account: account) }
+
+        before do
+          PreviewCardsStatus.create(status: status, preview_card: preview_card)
+        end
+
+        it 'renders the same attributes as a full render' do
+          expect(subject).to eql(compare_to_hash)
+        end
+      end
+
       context 'when handling a new status with own poll' do
         let(:poll) { Fabricate(:poll, account: account) }
         let(:status) { Fabricate(:status, poll: poll, account: account) }
@@ -29,7 +41,7 @@ RSpec.describe StatusCacheHydrator do
       end
 
       context 'when handling a status with a quote policy' do
-        let(:status) { Fabricate(:status, quote_approval_policy: Status::QUOTE_APPROVAL_POLICY_FLAGS[:followers] << 16) }
+        let(:status) { Fabricate(:status, quote_approval_policy: InteractionPolicy::POLICY_FLAGS[:followers] << 16) }
 
         before do
           account.follow!(status.account)

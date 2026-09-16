@@ -32,6 +32,12 @@ ms:
           attributes:
             url:
               invalid: bukanlah URL yang sah
+        collection:
+          attributes:
+            collection_items:
+              too_many: terlalu banyak, tidak lebih daripada %{count} dibenarkan
+            tag:
+              unusable: mungkin tidak digunakan
         doorkeeper/application:
           attributes:
             website:

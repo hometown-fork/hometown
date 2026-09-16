@@ -5,6 +5,9 @@ class ActivityPub::ProcessStatusUpdateService < BaseService
   include Redisable
   include Lockable
 
+  CRAWL_DELAY = 1.minute
+  PROCESSING_DELAY = (30.seconds)..(10.minutes)
+
   def call(status, activity_json, object_json, request_id: nil)
     raise ArgumentError, 'Status has unsaved changes' if status.changed?
 
@@ -89,7 +92,7 @@ class ActivityPub::ProcessStatusUpdateService < BaseService
     as_array(@json['attachment']).each do |attachment|
       media_attachment_parser = ActivityPub::Parser::MediaAttachmentParser.new(attachment)
 
-      next if media_attachment_parser.remote_url.blank? || @next_media_attachments.size > Status::MEDIA_ATTACHMENTS_LIMIT
+      next if media_attachment_parser.remote_url.blank? || @next_media_attachments.size >= Status::MEDIA_ATTACHMENTS_LIMIT
 
       begin
         media_attachment   = previous_media_attachments.find { |previous_media_attachment| previous_media_attachment.remote_url == media_attachment_parser.remote_url }
@@ -128,7 +131,7 @@ class ActivityPub::ProcessStatusUpdateService < BaseService
       media_attachment.download_thumbnail! if media_attachment.thumbnail_remote_url_previously_changed?
       media_attachment.save
     rescue Mastodon::UnexpectedResponseError, *Mastodon::HTTP_CONNECTION_ERRORS
-      RedownloadMediaWorker.perform_in(rand(30..600).seconds, media_attachment.id)
+      RedownloadMediaWorker.perform_in(rand(PROCESSING_DELAY), media_attachment.id)
     rescue Seahorse::Client::NetworkingError => e
       Rails.logger.warn "Error storing media attachment: #{e}"
     end
@@ -182,9 +185,10 @@ class ActivityPub::ProcessStatusUpdateService < BaseService
   end
 
   def update_metadata!
-    @raw_tags     = []
+    @raw_tags = []
     @raw_mentions = []
-    @raw_emojis   = []
+    @raw_tagged_objects = []
+    @raw_emojis = []
 
     as_array(@json['tag']).each do |tag|
       if equals_or_includes?(tag['type'], 'Hashtag')
@@ -193,10 +197,13 @@ class ActivityPub::ProcessStatusUpdateService < BaseService
         @raw_mentions << tag['href'] if tag['href'].present?
       elsif equals_or_includes?(tag['type'], 'Emoji')
         @raw_emojis << tag
+      elsif equals_or_includes?(tag['type'], 'FeaturedCollection')
+        @raw_tagged_objects << tag if tag['id']
       end
     end
 
     update_tags!
+    update_tagged_objects!
     update_mentions!
     update_emojis!
     update_quote!
@@ -205,7 +212,7 @@ class ActivityPub::ProcessStatusUpdateService < BaseService
   def update_tags!
     previous_tags = @status.tags.to_a
     current_tags = @status.tags = @raw_tags.flat_map do |tag|
-      Tag.find_or_create_by_names([tag]).filter(&:valid?)
+      Tag.find_or_create_by_names([tag])
     rescue ActiveRecord::RecordInvalid
       []
     end.uniq
@@ -226,6 +233,40 @@ class ActivityPub::ProcessStatusUpdateService < BaseService
       @account.featured_tags.where(tag_id: removed_tags.pluck(:id)).find_each do |featured_tag|
         featured_tag.decrement(@status)
       end
+    end
+  end
+
+  def update_tagged_objects!
+    unresolved_tagged_objects = []
+
+    current_tagged_objects = @raw_tagged_objects.filter_map do |tagged_object|
+      url = tagged_object['id']
+
+      # TODO: We probably want to resolve unknown objects at authoring time
+      collection = ActivityPub::TagManager.instance.uri_to_resource(url, Collection)
+      collection ||= ActivityPub::FetchRemoteFeaturedCollectionService.new.call(url, request_id: @request_id)
+
+      collection
+    rescue Mastodon::UnexpectedResponseError, *Mastodon::HTTP_CONNECTION_ERRORS
+      # Since previous tagged objects are about already-known collections,
+      # they don't try to resolve again and won't fall into this case.
+      # In other words, this failure case is only for new collections and can safely be retried later
+      unresolved_tagged_objects << url
+      nil
+    end
+
+    # Any previously-unresolved URI would be resolved here
+    @status.tagged_objects.upsert_all(
+      current_tagged_objects.uniq.map { |object| { object_type: object.class.name, object_id: object.id, uri: ActivityPub::TagManager.instance.uri_for(object), ap_type: 'FeaturedCollection' } },
+      unique_by: %w(status_id uri)
+    )
+
+    # Remove unused links
+    @status.tagged_objects.where.not(uri: current_tagged_objects.map { |object| ActivityPub::TagManager.instance.uri_for(object) }).delete_all
+
+    # Queue unresolved collections for later
+    unresolved_tagged_objects.uniq.each do |uri|
+      TaggedCollectionResolveWorker.perform_in(rand(PROCESSING_DELAY), @status.id, uri, { 'request_id' => @request_id })
     end
   end
 
@@ -257,7 +298,7 @@ class ActivityPub::ProcessStatusUpdateService < BaseService
 
     # Queue unresolved mentions for later
     unresolved_mentions.uniq.each do |uri|
-      MentionResolveWorker.perform_in(rand(30...600).seconds, @status.id, uri, { 'request_id' => @request_id })
+      MentionResolveWorker.perform_in(rand(PROCESSING_DELAY), @status.id, uri, { 'request_id' => @request_id })
     end
   end
 
@@ -336,10 +377,10 @@ class ActivityPub::ProcessStatusUpdateService < BaseService
   end
 
   def fetch_and_verify_quote!(quote, approval_uri, quote_uri)
-    embedded_quote = safe_prefetched_embed(@account, @status_parser.quoted_object, @activity_json['context'])
+    embedded_quote = safe_prefetched_embed(@account, @status_parser.quoted_object, @activity_json['@context'])
     ActivityPub::VerifyQuoteService.new.call(quote, approval_uri, fetchable_quoted_uri: quote_uri, prefetched_quoted_object: embedded_quote, request_id: @request_id)
   rescue Mastodon::UnexpectedResponseError, *Mastodon::HTTP_CONNECTION_ERRORS
-    ActivityPub::RefetchAndVerifyQuoteWorker.perform_in(rand(30..600).seconds, quote.id, quote_uri, { 'request_id' => @request_id, 'approval_uri' => approval_uri })
+    ActivityPub::RefetchAndVerifyQuoteWorker.perform_in(rand(PROCESSING_DELAY), quote.id, quote_uri, { 'request_id' => @request_id, 'approval_uri' => approval_uri })
   end
 
   def update_counts!
@@ -397,7 +438,7 @@ class ActivityPub::ProcessStatusUpdateService < BaseService
 
   def reset_preview_card!
     @status.reset_preview_card!
-    LinkCrawlWorker.perform_in(rand(1..59).seconds, @status.id)
+    LinkCrawlWorker.perform_in(rand(CRAWL_DELAY), @status.id)
   end
 
   def broadcast_updates!

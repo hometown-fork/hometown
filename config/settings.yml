@@ -21,7 +21,8 @@ defaults: &defaults
   preview_sensitive_media: false
   noindex: false
   norss: false
-  theme: 'system'
+  theme: 'default'
+  thumbnail_description: ''
   trends: true
   trends_as_landing_page: false
   trendable_by_default: false
@@ -36,6 +37,7 @@ defaults: &defaults
   captcha_enabled: false
   allow_referrer_origin: false
   landing_page: 'trends'
+  wrapstodon: true
 
 development:
   <<: *defaults
