@@ -1,0 +1,5 @@
+it:
+  simple_form:
+    hints:
+      defaults:
+        setting_noindex_html: Affects your public profile and post pages. Public replies you make to other people may still be indexed on their pages. <a href="https://github.com/hometown-fork/hometown/issues/1234">See here for more information.</a>
