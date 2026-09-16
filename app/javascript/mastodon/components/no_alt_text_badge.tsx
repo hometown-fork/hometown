@@ -2,20 +2,14 @@ import { useState, useCallback, useRef } from 'react';
 
 import { FormattedMessage } from 'react-intl';
 
-import type {
-  OffsetValue,
-  UsePopperOptions,
-} from 'react-overlays/esm/usePopper';
-import Overlay from 'react-overlays/Overlay';
-
 import WarningIcon from '@/material-icons/400-24px/warning.svg?react';
 import { Icon } from 'mastodon/components/icon';
 
-const offset = [0, 4] as OffsetValue;
-const popperConfig = { strategy: 'fixed' } as UsePopperOptions;
+import { Popover } from './popover';
 
 export const NoAltTextBadge: React.FC = () => {
   const anchorRef = useRef<HTMLButtonElement>(null);
+  const [buttonElement, _] = useState<HTMLButtonElement | null>(null);
   const [open, setOpen] = useState(false);
 
   const handleClick = useCallback(() => {
@@ -37,15 +31,14 @@ export const NoAltTextBadge: React.FC = () => {
         <Icon id='warning' icon={WarningIcon} />
       </button>
 
-      <Overlay
-        rootClose
-        onHide={handleClose}
-        show={open}
-        target={anchorRef}
+      <Popover
+        onClose={handleClose}
+        isOpen={open}
+        reference={buttonElement}
         placement='top-end'
         flip
-        offset={offset}
-        popperConfig={popperConfig}
+        offset={4}
+        strategy='fixed'
       >
         {({ props }) => (
           <div {...props} className='hover-card-controller'>
@@ -62,7 +55,7 @@ export const NoAltTextBadge: React.FC = () => {
             </div>
           </div>
         )}
-      </Overlay>
+      </Popover>
     </>
   );
 };
