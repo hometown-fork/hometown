@@ -1,0 +1,5 @@
+ca:
+  simple_form:
+    labels:
+      defaults:
+        setting_missing_alt_text_modal: Mostra un diàleg de confirmació abans de publicar contingut sense text alternatiu

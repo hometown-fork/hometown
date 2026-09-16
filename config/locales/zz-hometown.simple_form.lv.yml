@@ -1,0 +1,5 @@
+lv:
+  simple_form:
+    labels:
+      defaults:
+        setting_missing_alt_text_modal: Rādīt apstiprināšanas lodziņu pirms informācijas nesēju bez aprakstošā teksta iesūtīšanas
