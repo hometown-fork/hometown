@@ -64,6 +64,8 @@ pt-BR:
       custom: Personalizado
       delete: Excluir dados
       deleted: Excluído
+      deletion_irreversible: Os dados desta conta foram excluídos de forma irreversível.
+      deletion_reversible_hint_html: Esta conta está com uma exclusão pendente, os dados serão totalmente excluídos em %{date}.
       demote: Rebaixar
       destroyed_msg: Os dados de %{username} estão na fila para serem excluídos em breve
       disable: Congelar
@@ -289,7 +291,11 @@ pt-BR:
         enable_relay_html: "%{name} ativou uma retransmissão %{target}"
         enable_sign_in_token_auth_user_html: "%{name} ativou a autenticação via token por e-mail para %{target}"
         enable_user_html: "%{name} ativou o login para %{target}"
+        listable_tag_html: pode ser sugerido
         memorialize_account_html: "%{name} transformou a conta de %{target} em um memorial"
+        not_listable_tag_html: não será sugerido
+        not_trendable_tag_html: não aparecerá em alta
+        not_usable_tag_html: não pode ser usado
         promote_user_html: "%{name} promoveu o usuário %{target}"
         publish_terms_of_service_html: "%{name} publicou atualizações aos termos de serviço"
         reject_appeal_html: "%{name} rejeitou a revisão da decisão da moderação em %{target}"
@@ -302,6 +308,7 @@ pt-BR:
         sensitive_account_html: "%{name} marcou a mídia de %{target} como sensível"
         silence_account_html: "%{name} silenciou a conta de %{target}"
         suspend_account_html: "%{name} suspendeu a conta de %{target}"
+        trendable_tag_html: poderá aparecer em alta
         unassigned_report_html: "%{name} desatribuiu a denúncia %{target}"
         unblock_email_account_html: "%{name} desbloqueou o endereço de e-mail de %{target}"
         unsensitive_account_html: "%{name} desmarcou a mídia de %{target} como sensível"
@@ -314,8 +321,10 @@ pt-BR:
         update_ip_block_html: "%{name} alterou a regra para o IP %{target}"
         update_report_html: "%{name} atualizou a denúncia %{target}"
         update_status_html: "%{name} atualizou a publicação de %{target}"
+        update_tag_html: "%{name} alterou as opções de %{target} para: "
         update_user_role_html: "%{name} alterou o cargo %{target}"
         update_username_block_html: Regra %{name} atualizada para nomes de usuários contendo %{target}
+        usable_tag_html: pode ser usado;
       deleted_account: conta excluída
       empty: Nenhum registro encontrado.
       filter_by_action: Filtrar por ação
@@ -730,6 +739,8 @@ pt-BR:
       new:
         title: Criar nova regra de IP
       no_ip_block_selected: Nenhuma regra de IP foi alterada pois nenhuma foi selecionada
+      reset: Redefinir
+      search: Buscar
       title: Regras de IP
     relationships:
       title: Relações de %{acct}
@@ -1004,13 +1015,17 @@ pt-BR:
       critical_update: Crítico — por favor, atualize rapidamente
       description: É recomendável que você mantenha a instalação do Mastodon atualizada para se beneficiar das correções e das novas funcionalidades. Além disso, às vezes é imprescindível atualizar o Mastodon rapidamente para evitar problemas de segurança. Por esses motivos, o Mastodon verifica se há atualizações a cada 30 minutos e notificará você de acordo com as suas preferências de notificação por e-mail.
       documentation_link: Saiba mais
+      nearing_eol: O suporte para o branch em execução encerrará em %{date}, considere atualizar.
       release_notes: Notas de lançamento
+      supported_until: O suporte encerra em %{date}
       title: Atualizações disponíveis
       type: Tipo
       types:
         major: Versão maior
         minor: Versão menor
         patch: Versão de atualização — correções de erros e alterações de fácil aplicação
+      unsupported_branch: O atual branch em execução não é mais suportado, por favor, atualize o mais rápido possível.
+      unsupported_since: Sem suporte desde %{date}
       version: Versão
     statuses:
       account: Autor
@@ -1276,6 +1291,15 @@ pt-BR:
     auto_close_registrations:
       body: Devido à falta de atividade recente dos moderadores, as inscrições em %{instance} foram automaticamente alteradas para exigir revisão manual, para evitar que %{instance} seja usada como uma plataforma para potenciais atores mal-intencionados. Você pode alterá-la de volta para inscrições abertas a qualquer momento.
       subject: As inscrições para %{instance} foram automaticamente alteradas para requerer aprovação
+    end_of_support_out_of_support_warning:
+      body: A atual versão do Mastodon em uso no servidor não é mais suportada. Recomendamos que atualize o mais rápido possível!
+      subject: Mastodon %{branch} usado em %{instance} agora não é mais suportada!
+    end_of_support_three_months_warning:
+      body: A atual versão do Mastodon em uso no servidor não será mais suportado em 3 meses. Você talvez deseje atualizar para um branch mais recente.
+      subject: O suporte para Mastodon %{branch} usado em %{instance} encerrará em 3 meses.
+    end_of_support_two_weeks_warning:
+      body: A atual versão do Mastodon em uso no seu servidor não será mais suportado em 2 semanas. Nós recomendamos atualizar para um branch mais recente.
+      subject: O suporte para Mastodon %{branch} usado em %{instance} encerrará em 2 semanas.
     new_appeal:
       actions:
         delete_statuses: para excluir suas publicações
@@ -1911,6 +1935,7 @@ pt-BR:
     administration_emails: Notificações de e-mail do administrador
     email_events: Eventos para notificações por e-mail
     email_events_hint: 'Selecione os eventos que deseja receber notificações:'
+    moderation_emails: Notificações de moderação por e-mail
   number:
     human:
       decimal_units:
@@ -1935,7 +1960,7 @@ pt-BR:
     next: Próximo
     older: Mais antigo
     prev: Anterior
-    truncate: "&hellip;"
+    truncate_html: "&hellip;"
   polls:
     errors:
       already_voted: Enquete votada

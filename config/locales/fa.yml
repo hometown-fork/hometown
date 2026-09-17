@@ -696,6 +696,7 @@ fa:
       new:
         title: ایجاد قانون جدید آی پی
       no_ip_block_selected: هیچ قاعدهٔ آی‌پی‌ای تغییری نکرد زیرا هیچ‌کدام گزیده نشده بودند
+      search: جست‌و‌جو
       title: قوانین آی پی
     relationships:
       title: روابط %{acct}
@@ -1858,7 +1859,6 @@ fa:
     next: بعدی
     older: قدیمی‌تر
     prev: قبلی
-    truncate: "&hellip;"
   polls:
     errors:
       already_voted: شما قبلاً در این نظرسنجی رأی داده‌اید

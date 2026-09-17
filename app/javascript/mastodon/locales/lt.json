@@ -1015,6 +1015,7 @@
   "status.more": "Daugiau",
   "status.mute": "Nutildyti @{name}",
   "status.mute_conversation": "Nutildyti pokalbį",
+  "status.not_quoted": "Šiame įraše Jūs nesate paminėtas",
   "status.open": "Išskleisti šį įrašą",
   "status.pin": "Prisegti prie profilio",
   "status.quote": "Cituoti su komentaru",
