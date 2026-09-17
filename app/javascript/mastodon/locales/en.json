@@ -1399,6 +1399,7 @@
   "status.history.created": "{name} created {date}",
   "status.history.edited": "{name} edited {date}",
   "status.likes_title": "Post Likes",
+  "status.link_preview.authors": "{count, plural, one {Find the author in the Fediverse:} other {Find the authors in the Fediverse:}}",
   "status.load_more": "Load more",
   "status.local_only": "This post is only visible by other users of your instance",
   "status.media.open": "Click to open",
