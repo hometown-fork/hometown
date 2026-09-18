@@ -134,6 +134,7 @@ zh-CN:
       push_subscription_expires: PuSH 订阅过期时间
       redownload: 刷新个人资料
       redownloaded_msg: 成功从来源站点刷新 %{username} 的账号信息
+      registration_app: 注册应用程序
       reject: 拒绝
       rejected_msg: 已拒绝 %{username} 的注册申请
       remote_suspension_irreversible: 此账号的数据已被不可逆转地删除。

@@ -138,6 +138,7 @@ sv:
       push_subscription_expires: PuSH-prenumerationen löper ut
       redownload: Uppdatera profil
       redownloaded_msg: Uppdaterade %{username}s profil från server
+      registration_app: Registreringsapp
       reject: Förkasta
       rejected_msg: Avvisade %{username}s registreringsansökan
       remote_suspension_irreversible: Detta konto har raderats och uppgifterna kan inte återkallas.
