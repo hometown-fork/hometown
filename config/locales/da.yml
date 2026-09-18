@@ -138,6 +138,7 @@ da:
       push_subscription_expires: PuSH-abonnement udløber
       redownload: Opfrisk profil
       redownloaded_msg: "%{username}s profil opfrisket fra oprindelsesserver"
+      registration_app: Registreringsapp
       reject: Afvis
       rejected_msg: "%{username}s tilmeldingsansøgning afvist"
       remote_suspension_irreversible: Denne kontos data er slettet permanent.

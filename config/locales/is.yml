@@ -138,6 +138,7 @@ is:
       push_subscription_expires: PuSH-áskrift rennur út
       redownload: Endurlesa notandasnið
       redownloaded_msg: Tókst að endurlesa notandasnið %{username} úr upphaflegu sniði
+      registration_app: Skráningarforrit
       reject: Hafna
       rejected_msg: Tókst að hafna skráningu fyrir %{username}
       remote_suspension_irreversible: Gögnum þessa notandaaðgangs hefur verið eytt óafturkvæmt.

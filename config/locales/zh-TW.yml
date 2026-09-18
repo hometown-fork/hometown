@@ -136,6 +136,7 @@ zh-TW:
       push_subscription_expires: PuSH 訂閱過期
       redownload: 重新整理個人檔案
       redownloaded_msg: 成功重新載入%{username} 的個人檔案頁面
+      registration_app: 註冊應用程式
       reject: 拒絕
       rejected_msg: 已成功婉拒 %{username} 的新帳號申請
       remote_suspension_irreversible: 此帳號之資料已被不可逆地刪除。

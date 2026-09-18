@@ -138,6 +138,7 @@ nl:
       push_subscription_expires: PuSH-abonnement verloopt op
       redownload: Profiel vernieuwen
       redownloaded_msg: Het herstellen van het oorspronkelijke profiel van %{username} is geslaagd
+      registration_app: Registratie-app
       reject: Afwijzen
       rejected_msg: Het afwijzen van het registratieverzoek van %{username} is geslaagd
       remote_suspension_irreversible: De gegevens van dit account zijn onomkeerbaar verwijderd.
