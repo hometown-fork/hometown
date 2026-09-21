@@ -146,6 +146,7 @@ be:
       push_subscription_expires: Падпіска PuSH канчаецца
       redownload: Абнавіць профіль
       redownloaded_msg: Профіль %{username} паспяхова абноўлены за арыгіналу
+      registration_app: Заяўка на рэгістрацыю
       reject: Адхіліць
       rejected_msg: Заяўка на рэгістрацыю %{username} адхіленая
       remote_suspension_irreversible: Даныя гэтага уліковага запісу былі незваротна выдалены.

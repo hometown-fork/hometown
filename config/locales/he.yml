@@ -142,6 +142,7 @@ he:
       push_subscription_expires: הרשמה להודעות בדחיפה פגה
       redownload: לקריאה מחדש של האווטאר
       redownloaded_msg: הפרופיל של %{username} רוענן בהצלחה מהמקור
+      registration_app: יישומון ההרשמה
       reject: דחויים
       rejected_msg: בקשת ההרשמה של %{username} נדחתה בהצלחה
       remote_suspension_irreversible: נתוני חשבון זה נמחקו באופן בלתי הפיך.

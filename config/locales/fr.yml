@@ -138,6 +138,7 @@ fr:
       push_subscription_expires: Expiration de l’abonnement PuSH
       redownload: Rafraîchir le profil
       redownloaded_msg: Le profil de %{username} a été actualisé avec succès depuis son serveur d'origine
+      registration_app: Application d'inscription
       reject: Rejeter
       rejected_msg: La demande d’inscription de %{username} a été rejetée avec succès
       remote_suspension_irreversible: Les données de ce compte ont été supprimées définitivement.

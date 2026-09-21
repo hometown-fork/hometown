@@ -138,6 +138,7 @@ tr:
       push_subscription_expires: PuSH aboneliği sona erdi
       redownload: Profili yenile
       redownloaded_msg: "%{username} kullanıcısının profili kökenden başarıyla yenilendi"
+      registration_app: Kayıt uygulaması
       reject: Reddet
       rejected_msg: "%{username} adlı kullanıcının kayıt başvurusu başarıyla reddedildi"
       remote_suspension_irreversible: Bu hesaba ait veriler geri dönüşümsüz bir şekilde silindi.

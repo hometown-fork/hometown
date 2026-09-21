@@ -138,6 +138,7 @@ hu:
       push_subscription_expires: A PuSH feliratkozás elévül
       redownload: Profilkép frissítése
       redownloaded_msg: "%{username} profilját sikeresen frissítettük az eredetiből"
+      registration_app: Regisztrációs alkalmazás
       reject: Elutasítás
       rejected_msg: A %{username} fiók regisztrációs kérelmét sikeresen elutasítottuk
       remote_suspension_irreversible: A fiók adatait véglegesen törölték.
