@@ -136,6 +136,7 @@ gl:
       push_subscription_expires: A subscrición PuSH expira
       redownload: Actualizar perfil
       redownloaded_msg: Actualizado o perfil de %{username} desde a orixe
+      registration_app: Aplicación coa que creou a conta
       reject: Rexeitar
       rejected_msg: Rexeitada a solicitude de rexistro de %{username}
       remote_suspension_irreversible: Elimináronse de xeito irreversible os datos desta conta.

@@ -68,6 +68,10 @@ ko:
       disable_sign_in_token_auth: 이메일 토큰 인증 비활성화
       disable_two_factor_authentication: 2단계 인증을 비활성화
       disabled: 동결됨
+      discoverable:
+        disabled: 작성자가 발견되도록 허용하지 않았습니다
+        enabled: 작성자가 발견되도록 허용했습니다
+        title: 발견 가능
       display_name: 표시되는 이름
       domain: 도메인
       edit: 수정
@@ -77,6 +81,12 @@ ko:
       enable_sign_in_token_auth: 이메일 토큰 인증 활성화
       enabled: 활성
       enabled_msg: "%{username}의 동결을 성공적으로 해제 했습니다."
+      follow_recommendations:
+        allowed: 허용됨
+        suppress: 팔로우 추천 모두 숨기기
+        suppressed: 숨겨짐
+        title: 팔로우 추천
+        unsuppress: 팔로우 추천 모두 복원
       followers: 팔로워
       follows: 팔로우
       header: 헤더
@@ -121,6 +131,7 @@ ko:
       push_subscription_expires: PuSH 구독 기간 만료
       redownload: 프로필 업데이트
       redownloaded_msg: 성공적으로 %{username}의 프로필을 원본으로부터 업데이트 하였습니다
+      registration_app: 가입한 앱
       reject: 거부
       rejected_msg: 성공적으로 %{username}의 가입 신청서를 반려하였습니다
       remote_suspension_irreversible: 이 계정의 데이터는 되돌릴 수 없도록 삭제되었습니다.
@@ -160,6 +171,12 @@ ko:
       suspension_irreversible: 이 계정의 데이터는 복구할 수 없도록 삭제되었습니다. 계정을 정지 해제함으로서 계정을 다시 사용 가능하게 할 수 있지만 이전에 삭제한 어떤 데이터도 복구되지 않습니다.
       suspension_reversible_hint_html: 계정이 정지되었습니다, 그리고 %{date}에 데이터가 완전히 삭제될 것입니다. 그 때까지는 어떤 안 좋은 효과 없이 계정이 복구 될 수 있습니다. 만약 지금 당장 계정의 모든 데이터를 삭제하고 싶다면, 아래에서 행할 수 있습니다.
       title: 계정
+      trends:
+        allow: 허용
+        allowed: 허용됨
+        disallow: 미허용
+        disallowed: 허용되지 않음
+        title: 유행하는 게시물
       unblock_email: 이메일 차단 해제하기
       unblocked_email_msg: "%{username}의 이메일 주소를 성공적으로 차단 해제했습니다"
       unconfirmed_email: 확인되지 않은 이메일 주소
