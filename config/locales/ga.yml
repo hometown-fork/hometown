@@ -73,6 +73,8 @@ ga:
       custom: Saincheaptha
       delete: Scrios sonraí
       deleted: Scriosta
+      deletion_irreversible: Scriosadh sonraí an chuntais seo go neamh-inchúlghairthe.
+      deletion_reversible_hint_html: Tá an cuntas seo ar feitheamh le scriosadh, agus bainfear na sonraí go hiomlán ar %{date}.
       demote: Ísligh
       destroyed_msg: Tá sonraí %{username} ciúáilte anois le scriosadh gan mhoill
       disable: Reoigh
@@ -301,7 +303,11 @@ ga:
         enable_relay_html: Chuir %{name} an sealaíocht %{target} ar chumas
         enable_sign_in_token_auth_user_html: Chuir %{name} fíordheimhniú comhartha ríomhphoist ar chumas %{target}
         enable_user_html: "%{name} logáil isteach cumasaithe don úsáideoir %{target}"
+        listable_tag_html: is féidir a mholadh
         memorialize_account_html: Rinne %{name} cuntas %{target} a iompú ina leathanach cuimhneacháin
+        not_listable_tag_html: ní mholfar
+        not_trendable_tag_html: ní bheidh sé le feiceáil faoi threochtaí
+        not_usable_tag_html: ní féidir é a úsáid
         promote_user_html: Chuir %{name} úsáideoir %{target} chun cinn
         publish_terms_of_service_html: D'fhoilsigh %{name} nuashonruithe ar na téarmaí seirbhíse
         reject_appeal_html: Dhiúltaigh %{name} achomharc ar chinneadh modhnóireachta ó %{target}
@@ -314,6 +320,7 @@ ga:
         sensitive_account_html: Mharcáil %{name} meán %{target} mar íogair
         silence_account_html: Chuir %{name} teorainn le cuntas %{target}
         suspend_account_html: Chuir %{name} cuntas %{target} ar fionraí
+        trendable_tag_html: is féidir le feiceáil faoi threochtaí
         unassigned_report_html: "%{name} tuairisc neamhshannta %{target}"
         unblock_email_account_html: Bhain %{name} seoladh ríomhphoist %{target} amach
         unsensitive_account_html: "%{name} meán %{target} gan mharcáil mar íogair"
@@ -326,8 +333,10 @@ ga:
         update_ip_block_html: D'athraigh %{name} riail an IP %{target}
         update_report_html: "%{name} tuairisc nuashonraithe %{target}"
         update_status_html: "%{name} postáil nuashonraithe faoi %{target}"
+        update_tag_html: 'D''athraigh %{name} socruithe %{target} go: '
         update_user_role_html: D'athraigh %{name} ról %{target}
         update_username_block_html: Nuashonraíodh riail %{name} le haghaidh ainmneacha úsáideora ina bhfuil %{target}
+        usable_tag_html: is féidir a úsáid;
       deleted_account: cuntas scriosta
       empty: Níor aimsíodh aon logaí.
       filter_by_action: Scag de réir gnímh
@@ -769,6 +778,8 @@ ga:
       new:
         title: Cruthaigh riail IP nua
       no_ip_block_selected: Níor athraíodh aon rialacha IP mar níor roghnaíodh ceann ar bith
+      reset: Athshocraigh
+      search: Cuardaigh
       title: Rialacha IP
     relationships:
       title: Caidrimh %{acct}
@@ -1052,13 +1063,17 @@ ga:
       critical_update: Criticiúil - nuashonraigh go tapa le do thoil
       description: Moltar do shuiteáil Mastodon a choinneáil cothrom le dáta chun leas a bhaint as na socruithe agus na gnéithe is déanaí. Ina theannta sin, tá sé ríthábhachtach uaireanta Mastodon a nuashonrú go tráthúil chun saincheisteanna slándála a sheachaint. Ar na cúiseanna seo, seiceálann Mastodon nuashonruithe gach 30 nóiméad, agus tabharfaidh sé fógra duit de réir do shainroghanna fógra ríomhphoist.
       documentation_link: Foghlaim níos mó
+      nearing_eol: Stopfaidh an tacaíocht don bhrainse atá á rith agat faoi láthair ar %{date}, smaoinigh ar nuashonrú.
       release_notes: Nótaí scaoilte
+      supported_until: Críochnaíonn an tacaíocht ar %{date}
       title: Nuashonruithe ar fáil
       type: Cineál
       types:
         major: Mórscaoileadh
         minor: Mionscaoileadh
         patch: Scaoileadh paiste - ceartúcháin agus athruithe atá éasca a chur i bhfeidhm
+      unsupported_branch: Ní thacaítear leis an mbrainse atá á rith agat faoi láthair, nuashonraigh chomh luath agus is féidir.
+      unsupported_since: Gan tacaíocht ó %{date}
       version: Leagan
     statuses:
       account: Údar
@@ -1339,6 +1354,15 @@ ga:
     auto_close_registrations:
       body: De bharr easpa gníomhaíochta modhnóra le déanaí, aistríodh clárúcháin ar %{instance} go huathoibríoch chuig athbhreithniú de láimh chun nach n-úsáidfear %{instance} mar ardán do dhrochghníomhaithe féideartha. Is féidir leat é a athrú ar ais chuig clárúcháin a oscailt am ar bith.
       subject: Athraíodh clárúcháin le haghaidh %{instance} go huathoibríoch chuig a dteastaíonn ceadú uathu
+    end_of_support_out_of_support_warning:
+      body: Ní thacaítear a thuilleadh leis an leagan Mastodon atá in úsáid faoi láthair ar do fhreastalaí. Molaimid duit nuashonrú a dhéanamh chomh luath agus is féidir!
+      subject: Ní thacaítear le mastodon %{branch} a úsáideadh ar %{instance} anois!
+    end_of_support_three_months_warning:
+      body: Ní thacófar leis an leagan Mastodon atá in úsáid faoi láthair ar do fhreastalaí i gceann 3 mhí. B'fhéidir gur mhaith leat nuashonrú chuig brainse níos nuaí roimh an am.
+      subject: Críochnaíonn an tacaíocht do Mastodon %{branch} ar %{instance} i gceann 3 mhí.
+    end_of_support_two_weeks_warning:
+      body: Ní thacófar leis an leagan Mastodon atá in úsáid faoi láthair ar do fhreastalaí i gceann coicíse. Molaimid duit nuashonrú a dhéanamh ar bhrainse níos nuaí roimh an am.
+      subject: Críochnaíonn an tacaíocht do Mastodon %{branch} ar %{instance} i gceann coicíse.
     new_appeal:
       actions:
         delete_statuses: a gcuid postálacha a scrios
@@ -2048,6 +2072,7 @@ ga:
     administration_emails: Fógraí ríomhphoist admin
     email_events: Imeachtaí le haghaidh fógraí ríomhphoist
     email_events_hint: 'Roghnaigh imeachtaí ar mhaith leat fógraí a fháil ina leith:'
+    moderation_emails: Fógraí ríomhphoist modhnóireachta
   number:
     human:
       decimal_units:
@@ -2071,7 +2096,7 @@ ga:
     next: An céad eile
     older: Níos sine
     prev: Ceann roimhe seo
-    truncate: "&hellip;"
+    truncate_html: "&hellip;"
   polls:
     errors:
       already_voted: Tá tú tar éis vótáil ar an vótaíocht seo cheana féin

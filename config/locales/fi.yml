@@ -64,6 +64,8 @@ fi:
       custom: Mukautettu
       delete: Poista tiedot
       deleted: Poistettu
+      deletion_irreversible: Tämä tilin tiedot on poistettu peruuttamattomasti.
+      deletion_reversible_hint_html: Tämä tili odottaa poistoa, ja tiedot poistetaan kokonaan %{date}.
       demote: Alenna
       destroyed_msg: Käyttäjän %{username} tiedot ovat nyt jonossa poistettavaksi välittömästi
       disable: Jäädytä
@@ -289,7 +291,11 @@ fi:
         enable_relay_html: "%{name} otti välittäjän %{target} käyttöön"
         enable_sign_in_token_auth_user_html: "%{name} otti sähköpostitunnuksella todennuksen käyttöön käyttäjälle %{target}"
         enable_user_html: "%{name} otti kirjautumisen käyttöön käyttäjälle %{target}"
+        listable_tag_html: voidaan ehdottaa
         memorialize_account_html: "%{name} muutti käyttäjän %{target} tilin muistosivuksi"
+        not_listable_tag_html: ei ehdoteta
+        not_trendable_tag_html: ei näy trendeissä
+        not_usable_tag_html: ei voida käyttää
         promote_user_html: "%{name} ylensi käyttäjän %{target}"
         publish_terms_of_service_html: "%{name} julkaisi päivityksiä käyttöehtoihin"
         reject_appeal_html: "%{name} hylkäsi käyttäjän %{target} valituksen moderointipäätöksestä"
@@ -302,6 +308,7 @@ fi:
         sensitive_account_html: "%{name} merkitsi käyttäjän %{target} median arkaluonteiseksi"
         silence_account_html: "%{name} rajoitti käyttäjän %{target} tiliä"
         suspend_account_html: "%{name} jäädytti käyttäjän %{target} tilin"
+        trendable_tag_html: voi näkyä trendeissä
         unassigned_report_html: "%{name} poisti raportin %{target} käsittelystä"
         unblock_email_account_html: "%{name} kumosi käyttäjän %{target} sähköpostiosoitteen eston"
         unsensitive_account_html: "%{name} kumosi käyttäjän %{target} median arkaluonteisuusmerkinnän"
@@ -314,8 +321,10 @@ fi:
         update_ip_block_html: "%{name} muutti IP-⁠osoitteen %{target} sääntöä"
         update_report_html: "%{name} päivitti raportin %{target}"
         update_status_html: "%{name} päivitti käyttäjän %{target} julkaisun"
+        update_tag_html: "%{name} muutti tunnisteen %{target} asetuksia: "
         update_user_role_html: "%{name} muutti roolia %{target}"
         update_username_block_html: "%{name} päivitti säännön käyttäjänimille, joihin sisältyy %{target}"
+        usable_tag_html: voidaan käyttää;
       deleted_account: poisti tilin
       empty: Lokeja ei löytynyt.
       filter_by_action: Suodata toimen mukaan
@@ -724,6 +733,8 @@ fi:
       new:
         title: Luo uusi IP-⁠sääntö
       no_ip_block_selected: IP-sääntöjä ei muutettu, koska yhtään ei ollut valittuna
+      reset: Palauta
+      search: Hae
       title: IP-säännöt
     relationships:
       title: Tilin %{acct} seurantasuhteet
@@ -999,12 +1010,14 @@ fi:
       description: On suositeltavaa pitää Mastodon-asennus ajantasaisena ja siten hyödyntää uusimpia korjauksia sekä ominaisuuksia. Lisäksi joskus on ratkaisevan tärkeää päivittää Mastodon ajoissa tietoturvaongelmien välttämiseksi. Näistä syistä Mastodon tarkistaa päivitykset 30 minuutin välein, ja ilmoittaa sinulle sähköposti-ilmoitusasetustesi mukaisesti.
       documentation_link: Lue lisää
       release_notes: Julkaisutiedot
+      supported_until: Tuki päättyy %{date}
       title: Saatavilla olevat päivitykset
       type: Tyyppi
       types:
         major: Pääversiojulkaisu
         minor: Väliversiojulkaisu
         patch: Korjausjulkaisu — korjauksia virheisiin sekä yksinkertaisia muutoksia
+      unsupported_since: Tuki päättynyt %{date}
       version: Versio
     statuses:
       account: Tekijä
@@ -1920,7 +1933,7 @@ fi:
     next: Seuraava
     older: Vanhemmat
     prev: Edellinen
-    truncate: "&hellip;"
+    truncate_html: "&hellip;"
   polls:
     errors:
       already_voted: Olet jo osallistunut tähän äänestykseen

@@ -298,6 +298,7 @@ eu:
         update_report_html: "%{name}-k %{target} txostena eguneratu du"
         update_status_html: "%{name} erabiltzaileak %{target} erabiltzailearen bidalketa eguneratu du"
         update_user_role_html: "%{name} erabiltzaileak %{target} rola aldatu du"
+        usable_tag_html: erabili daiteke;
       deleted_account: ezabatu kontua
       empty: Ez da egunkaririk aurkitu.
       filter_by_action: Iragazi ekintzen arabera
@@ -1656,7 +1657,6 @@ eu:
     next: Hurrengoa
     older: Zaharragoa
     prev: Aurrekoa
-    truncate: "&hellip;"
   polls:
     errors:
       already_voted: Inkesta honetan dagoeneko bozkatu duzu

@@ -532,6 +532,7 @@ lt:
       new:
         title: Kurti naują IP taisyklę
       no_ip_block_selected: IP taisyklės nebuvo pakeistos, nes nė viena nebuvo pasirinkta
+      reset: Išvalyti
       title: IP taisyklės
     relays:
       add_new: Pridėti naują pamainą
@@ -1156,7 +1157,6 @@ lt:
     next: Kitas
     older: Senesnis
     prev: Ankstesnis
-    truncate: "&hellip;"
   polls:
     errors:
       over_character_limit: negali būti ilgesnis nei %{max} simbolių

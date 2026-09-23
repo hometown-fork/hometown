@@ -64,6 +64,8 @@ es:
       custom: Personalizado
       delete: Eliminar datos
       deleted: Eliminado
+      deletion_irreversible: Los datos de esta cuenta han sido eliminados de forma irreversible.
+      deletion_reversible_hint_html: Está cuenta está pendiente de eliminación, y los datos se eliminarán completamente el %{date}.
       demote: Degradar
       destroyed_msg: Los datos de %{username} están ahora en cola para ser eliminados inminentemente
       disable: Deshabilitar
@@ -289,7 +291,11 @@ es:
         enable_relay_html: "%{name} activó el relé %{target}"
         enable_sign_in_token_auth_user_html: "%{name} ha habilitado la autenticación por token de correo electrónico para %{target}"
         enable_user_html: "%{name} habilitó el inicio de sesión para el usuario %{target}"
+        listable_tag_html: puede ser recomendada
         memorialize_account_html: "%{name} convirtió la cuenta de %{target} en una página in memoriam"
+        not_listable_tag_html: no puede ser recomendada
+        not_trendable_tag_html: no puede aparecer en tendencia
+        not_usable_tag_html: no puede usarse
         promote_user_html: "%{name} promocionó al usuario %{target}"
         publish_terms_of_service_html: "%{name} ha publicado actualizaciones de los términos del servicio"
         reject_appeal_html: "%{name} rechazó la solicitud de moderación de %{target}"
@@ -302,6 +308,7 @@ es:
         sensitive_account_html: "%{name} marcó la multimedia de %{target} como sensible"
         silence_account_html: "%{name} limitó la cuenta de %{target}"
         suspend_account_html: "%{name} suspendió la cuenta de %{target}"
+        trendable_tag_html: puede aparecer en tendencia
         unassigned_report_html: "%{name} desasignó el informe %{target}"
         unblock_email_account_html: "%{name} ha desbloqueado la dirección de correo de %{target}"
         unsensitive_account_html: "%{name} desmarcó la multimedia de %{target} como sensible"
@@ -314,8 +321,10 @@ es:
         update_ip_block_html: "%{name} cambió la regla para la IP %{target}"
         update_report_html: "%{name} actualizó el informe %{target}"
         update_status_html: "%{name} actualizó la publicación de %{target}"
+        update_tag_html: "%{name} cambió la configuración de %{target} a: "
         update_user_role_html: "%{name} cambió el rol %{target}"
         update_username_block_html: "%{name} actualizó una regla para los nombres de usuario que contienen %{target}"
+        usable_tag_html: puede usarse;
       deleted_account: cuenta eliminada
       empty: No se encontraron registros.
       filter_by_action: Filtrar por acción
@@ -732,6 +741,8 @@ es:
       new:
         title: Crear nueva regla IP
       no_ip_block_selected: No se han cambiado reglas IP, ya que no se ha seleccionado ninguna
+      reset: Restablecer
+      search: Buscar
       title: Reglas IP
     relationships:
       title: Relaciones de %{acct}
@@ -1006,13 +1017,17 @@ es:
       critical_update: Crítica— por favor actualiza rápidamente
       description: Se recomienda mantener actualizada tu instalación de Mastodon para beneficiarte de las últimas correcciones y características. Además, a veces es crítico actualizar Mastodon de manera oportuna para evitar problemas de seguridad. Por estas razones, Mastodon comprueba si hay actualizaciones cada 30 minutos, y te notificará de acuerdo a tus preferencias de notificación por correo electrónico.
       documentation_link: Aprender más
+      nearing_eol: El soporte para la rama que estás ejecutando se acabará el %{date}. Por favor, considera actualizar.
       release_notes: Notas de la versión
+      supported_until: El soporte termina el %{date}
       title: Actualizaciones disponibles
       type: Tipo
       types:
         major: Versión principal
         minor: Versión menor
         patch: Versión de parche — correcciones de errores y cambios fáciles de aplicar
+      unsupported_branch: La rama que estás ejecutando no tiene soporte. Por favor, actualiza lo antes posible.
+      unsupported_since: Sin soporte desde el %{date}
       version: Versión
     statuses:
       account: Autor
@@ -1278,6 +1293,15 @@ es:
     auto_close_registrations:
       body: Debido a la falta de moderadores activos, los registros en %{instance} han sido cambiados automáticamente para requerir revisión manual, para evitar que %{instance} se utilice potencialmente como plataforma por malos actores. Puedes volver a cambiarlo para abrir los registros en cualquier momento.
       subject: Se ha cambiado automáticamente el registro de %{instance} para requerir aprobación
+    end_of_support_out_of_support_warning:
+      body: La versión de Mastodon actualmente en uso en tu servidor ya no tiene soporte. ¡Te recomendamos que actualices lo antes posible!
+      subject: "¡Mastodon %{branch} usado en %{instance} no tiene soporte!"
+    end_of_support_three_months_warning:
+      body: La versión de Mastodon actualmente en uso en tu servidor dejará de tener soporte en 3 meses. Es posible que quieras actualizar a una rama más reciente con antelación.
+      subject: El soporte para Mastodon %{branch} usado en %{instance} terminará en 3 meses.
+    end_of_support_two_weeks_warning:
+      body: La versión de Mastodon actualmente en uso en tu servidor dejará de ser compatible en 2 semanas. Te recomendamos que actualices a una rama más reciente con antelación.
+      subject: El soporte para Mastodon %{branch} usado en %{instance} terminará en 2 semanas.
     new_appeal:
       actions:
         delete_statuses: para eliminar sus mensajes
@@ -1913,6 +1937,7 @@ es:
     administration_emails: Notificaciones administrativas por correo
     email_events: Eventos para notificaciones por correo electrónico
     email_events_hint: 'Selecciona los eventos para los que deseas recibir notificaciones:'
+    moderation_emails: Notificaciones de moderación por correo
   number:
     human:
       decimal_units:
@@ -1936,7 +1961,7 @@ es:
     next: Siguiente
     older: Más antiguo
     prev: Anterior
-    truncate: "&hellip;"
+    truncate_html: "&hellip;"
   polls:
     errors:
       already_voted: Ya has votado en esta encuesta

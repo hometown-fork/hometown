@@ -65,7 +65,6 @@ it:
         setting_display_media_hide_all: Avvisa prima di mostrare tutti i contenuti multimediali
         setting_display_media_show_all: Mostra tutti i contenuti multimediali senza preavviso, inclusi quelli contrassegnati come sensibili
         setting_emoji_style: Come visualizzare gli emoji. "Automatico" proverà a usare gli emoji nativi, ma per i browser più vecchi ricorrerà a Twemoji.
-        setting_noindex_html: Affects your public profile and post pages. Public replies you make to other people may still be indexed on their pages. <a href="https://github.com/hometown-fork/hometown/issues/1234">See here for more information.</a>
         setting_quick_boosting_html: Se abilitato, cliccando sull'icona Boost %{boost_icon}, il potenziamento verrà immediatamente attivato, anziché aprire il menu a discesa potenziamento/citazione. Sposta l'azione della citazione nel menu %{options_icon} (Opzioni).
         setting_use_blurhash: I gradienti sono basati sui colori delle immagini nascoste ma offuscano tutti i dettagli
         setting_use_pending_items: Fare clic per mostrare i nuovi messaggi invece di aggiornare la timeline automaticamente
@@ -346,6 +345,7 @@ it:
       notification_emails:
         appeal: Qualcuno ricorre contro una decisione del moderatore
         digest: Invia email riassuntive
+        end_of_support: La versione attuale di Mastodon si sta avvicinando alla fine del supporto
         favourite: Qualcuno ha apprezzato il tuo post
         follow: Invia email quando qualcuno ti segue
         follow_request: Invia email quando qualcuno chiede di seguirti

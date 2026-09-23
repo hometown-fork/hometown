@@ -64,6 +64,8 @@ el:
       custom: Προσαρμοσμένο
       delete: Διαγραφή δεδομένων
       deleted: Διαγεγραμμένοι
+      deletion_irreversible: Τα δεδομένα αυτού του λογαριασμού έχουν διαγραφεί αμετάκλητα.
+      deletion_reversible_hint_html: Εκκρεμεί η διαγραφή αυτού του λογαριασμού και τα δεδομένα θα διαγραφούν πλήρως στις %{date}.
       demote: Υποβιβασμός
       destroyed_msg: Τα δεδομένα του/της %{username} εκκρεμούν για άμεση διαγραφή
       disable: Πάγωμα
@@ -289,7 +291,11 @@ el:
         enable_relay_html: Ο χρήστης %{name} ενεργοποίησε το relay %{target}
         enable_sign_in_token_auth_user_html: Ο χρήστης %{name} ενεργοποίησε την πιστοποίηση αναγνωριστικού email του %{target}
         enable_user_html: Ο/Η %{name} ενεργοποίησε τη σύνδεση για τον χρήστη %{target}
+        listable_tag_html: μπορεί να προτείνεται
         memorialize_account_html: O/H %{name} μετέτρεψε τον λογαριασμό του %{target} σε σελίδα εις μνήμην
+        not_listable_tag_html: δεν θα προτείνεται
+        not_trendable_tag_html: δεν θα εμφανίζεται στις τάσεις
+        not_usable_tag_html: δεν θα μπορεί να χρησιμοποιείται
         promote_user_html: Ο/Η %{name} προβίβασε το χρήστη %{target}
         publish_terms_of_service_html: Ο χρήστης %{name} δημοσίευσε ενημερώσεις για τους όρους της υπηρεσίας
         reject_appeal_html: Ο/Η %{name} απέρριψε την έφεση της απόφασης των συντονιστών από %{target}
@@ -302,6 +308,7 @@ el:
         sensitive_account_html: Ο/Η %{name} σήμανε τα πολυμέσα του/της %{target} ως ευαίσθητα
         silence_account_html: Ο/Η %{name} περιόρισε τον λογαριασμό του/της %{target}
         suspend_account_html: Ο/Η %{name} ανέστειλε τον λογαριασμό του/της %{target}
+        trendable_tag_html: μπορεί να εμφανίζεται στις τάσεις
         unassigned_report_html: Ο/Η %{name} αποδέσμευσε την αναφορά %{target}
         unblock_email_account_html: "%{name} έκανε άρση αποκλεισμού στη διεύθυνση email του %{target}"
         unsensitive_account_html: Ο/Η %{name} σήμανε τα πολυμέσα του/της %{target} ως μη ευαίσθητα
@@ -314,8 +321,10 @@ el:
         update_ip_block_html: Ο/Η %{name} άλλαξε τον κανόνα για την IP %{target}
         update_report_html: Ο χρήστης %{name} ενημέρωσε την αναφορά %{target}
         update_status_html: Ο/Η %{name} ενημέρωσε την ανάρτηση του/της %{target}
+        update_tag_html: 'Ο/Η %{name} άλλαξε τις ρυθμίσεις %{target} σε: '
         update_user_role_html: Ο/Η %{name} άλλαξε τον ρόλο %{target}
         update_username_block_html: "%{name} ενημέρωσε κανόνα για ονόματα χρηστών που περιέχουν %{target}"
+        usable_tag_html: μπορεί να χρησιμοποιείται,
       deleted_account: λογαριασμός διαγράφηκε
       empty: Δεν βρέθηκαν αρχεία καταγραφής.
       filter_by_action: Φιλτράρισμα ανά ενέργεια
@@ -730,6 +739,8 @@ el:
       new:
         title: Δημιουργία νέου κανόνα IP
       no_ip_block_selected: Δεν άλλαξαν οι κανόνες IP καθώς κανένας δεν επιλέχθηκε
+      reset: Επαναφορά
+      search: Αναζήτηση
       title: Κανόνες IP
     relationships:
       title: Σχέσεις του/της %{acct}
@@ -1004,13 +1015,17 @@ el:
       critical_update: Κρίσιμο - παρακαλώ ενημέρωσε γρήγορα
       description: Συνιστάται να διατηρείς την εγκατάσταση του Mastodon ενημερωμένη για να επωφεληθείς από τις πιο πρόσφατες διορθώσεις και δυνατότητες. Επιπλέον, μερικές φορές είναι κρίσιμο να ενημερώσεις το Mastodon εγκαίρως για να αποφύγεις προβλήματα ασφαλείας. Για αυτούς τους λόγους, το Mastodon ελέγχει για ενημερώσεις κάθε 30 λεπτά και θα σε ειδοποιεί σύμφωνα με τις προτιμήσεις ειδοποίησης μέσω email.
       documentation_link: Μάθε περισσότερα
+      nearing_eol: Η υποστήριξη για τον κλάδο που τρέχετε αυτήν τη στιγμή θα σταματήσει στις %{date}, παρακαλούμε σκεφτείτε να τον ενημερώσετε.
       release_notes: Σημειώσεις έκδοσης
+      supported_until: Η υποστήριξη τελειώνει στις %{date}
       title: Διαθέσιμες ενημερώσεις
       type: Τύπος
       types:
         major: Κύρια έκδοση
         minor: Τυπική ενημέρωση
         patch: Ενημέρωση επιδιόρθωσης - διορθώσεις σφαλμάτων και εύκολα εφαρμόσιμες αλλαγές
+      unsupported_branch: Ο κλάδος που τρέχετε αυτήν τη στιγμή δεν υποστηρίζεται, παρακαλούμε ενημερώστε το συντομότερο δυνατό.
+      unsupported_since: Δεν υποστηρίζεται από %{date}
       version: Έκδοση
     statuses:
       account: Συντάκτης
@@ -1276,6 +1291,15 @@ el:
     auto_close_registrations:
       body: Λόγω έλλειψης πρόσφατης δραστηριότητας συντονιστών, οι εγγραφές στο %{instance} έχουν αλλάξει αυτόματα στην απαίτηση χειροκίνητου ελέγχου, για να αποτρέψει το %{instance} από το να χρησιμοποιηθεί ως πλατφόρμα για πιθανούς κακούς παράγοντες. Μπορείς να το αλλάξεις ξανά σε ανοιχτές εγγραφές ανά πάσα στιγμή.
       subject: Οι εγγραφές για το %{instance} έχουν αλλάξει αυτόματα σε απαίτηση έγκρισης
+    end_of_support_out_of_support_warning:
+      body: Η έκδοση Mastodon που χρησιμοποιείται σήμερα στον διακομιστή σας δεν υποστηρίζεται πλέον. Σας συνιστούμε να ενημερώσετε το συντομότερο δυνατόν!
+      subject: Το Mastodon %{branch} που χρησιμοποιείται στο %{instance}, τώρα δεν υποστηρίζεται!
+    end_of_support_three_months_warning:
+      body: Η έκδοση Mastodon που χρησιμοποιείται σήμερα στον διακομιστή σας θα σταματήσει να υποστηρίζεται σε 3 μήνες. Μπορεί να θέλετε να ενημερώσετε νωρίτερα σε έναν νεότερο κλάδο.
+      subject: Η υποστήριξη για Mastodon %{branch} που χρησιμοποιείται στο %{instance} τελειώνει σε 3 μήνες.
+    end_of_support_two_weeks_warning:
+      body: Η έκδοση Mastodon που χρησιμοποιείται σήμερα στον διακομιστή σας θα σταματήσει να υποστηρίζεται σε 2 εβδομάδες. Σας συνιστούμε να ενημερώσετε νωρίτερα σε έναν νεότερο κλάδο.
+      subject: Η υποστήριξη για Mastodon %{branch} που χρησιμοποιείται στο %{instance} τελειώνει σε 2 εβδομάδες.
     new_appeal:
       actions:
         delete_statuses: να διαγραφούν οι αναρτήσεις τους
@@ -1911,6 +1935,7 @@ el:
     administration_emails: Ειδοποιήσεις email διαχειριστή
     email_events: Συμβάντα για ειδοποιήσεις μέσω email
     email_events_hint: 'Επέλεξε συμβάντα για τα οποία θέλεις να λαμβάνεις ειδοποιήσεις μέσω email:'
+    moderation_emails: Ειδοποιήσεις email συντονισμού
   number:
     human:
       decimal_units:
@@ -1934,7 +1959,7 @@ el:
     next: Επόμενη
     older: Παλαιότερες
     prev: Προηγούμενη
-    truncate: "&hellip;"
+    truncate_html: "&hellip;"
   polls:
     errors:
       already_voted: Έχετε ήδη ψηφίσει σε αυτήν τη δημοσκόπηση

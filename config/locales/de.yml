@@ -64,6 +64,8 @@ de:
       custom: Angepasst
       delete: Daten löschen
       deleted: Gelöscht
+      deletion_irreversible: Diese Kontodaten wurden unwiderruflich gelöscht.
+      deletion_reversible_hint_html: Dieses Konto wurde zum Löschen vorgemerkt und die Daten werden am %{date} vollständig entfernt werden.
       demote: Zurückstufen
       destroyed_msg: Die Daten von %{username} befinden sich nun in der Warteschlange und werden in Kürze gelöscht
       disable: Einfrieren
@@ -289,7 +291,11 @@ de:
         enable_relay_html: "%{name} aktivierte das Relais %{target}"
         enable_sign_in_token_auth_user_html: "%{name} aktivierte die E-Mail-Token-Authentisierung für %{target}"
         enable_user_html: "%{name} aktivierte den Zugang für %{target}"
+        listable_tag_html: darf vorgeschlagen werden
         memorialize_account_html: "%{name} wandelte das Konto von %{target} in eine Gedenkseite um"
+        not_listable_tag_html: wird nicht vorgeschlagen
+        not_trendable_tag_html: erscheint nicht unter Trends
+        not_usable_tag_html: darf nicht verwendet werden
         promote_user_html: "%{name} beförderte %{target}"
         publish_terms_of_service_html: "%{name} aktualisierte die Nutzungsbedingungen"
         reject_appeal_html: "%{name} lehnte den Einspruch gegen eine Moderationsentscheidung von %{target} ab"
@@ -302,6 +308,7 @@ de:
         sensitive_account_html: "%{name} versah die Medien von %{target} mit einer Inhaltswarnung"
         silence_account_html: "%{name} schaltete das Konto von %{target} stumm"
         suspend_account_html: "%{name} sperrte das Konto von %{target}"
+        trendable_tag_html: darf unter Trends erscheinen
         unassigned_report_html: "%{name} entfernte die Zuweisung der Meldung %{target}"
         unblock_email_account_html: "%{name} entsperrte die E-Mail-Adresse von %{target}"
         unsensitive_account_html: "%{name} hob die Inhaltswarnung für Medien von %{target} auf"
@@ -314,8 +321,10 @@ de:
         update_ip_block_html: "%{name} änderte eine IP-Regel für %{target}"
         update_report_html: "%{name} überarbeitete die Meldung %{target}"
         update_status_html: "%{name} überarbeitete einen Beitrag von %{target}"
+        update_tag_html: "%{name} änderte %{target} zu: "
         update_user_role_html: "%{name} änderte die Rolle von %{target}"
         update_username_block_html: "%{name} aktualisierte eine Regel für Profilnamen mit %{target}"
+        usable_tag_html: darf verwendet werden;
       deleted_account: gelöschtes Konto
       empty: Protokolle nicht gefunden.
       filter_by_action: Nach Aktion filtern
@@ -730,6 +739,8 @@ de:
       new:
         title: Neue IP-Regel erstellen
       no_ip_block_selected: Keine IP-Regeln wurden geändert, weil keine ausgewählt wurde(n)
+      reset: Zurücksetzen
+      search: Suchen
       title: IP-Regeln
     relationships:
       title: Beziehungen von %{acct}
@@ -1004,13 +1015,17 @@ de:
       critical_update: Kritisch — bitte zügig aktualisieren
       description: Es wird empfohlen, deine Mastodon-Installation auf dem aktuellen Stand zu halten, um von den neuesten Fehlerkorrekturen und Funktionen zu profitieren. Darüber hinaus ist es wichtig, Mastodon zeitnah zu aktualisieren, um Sicherheitslücken zu schließen. Aus diesen Gründen prüft Mastodon alle 30 Minuten auf Updates und du wirst deinen Einstellungen entsprechend per E-Mail informiert.
       documentation_link: Mehr erfahren
+      nearing_eol: Der aktuelle Branch wird ab dem %{date} nicht mehr unterstützt. Bitte ziehe eine Aktualisierung in Erwägung.
       release_notes: Versionshinweise
+      supported_until: Support endet am %{date}
       title: Verfügbare Updates
       type: Art
       types:
         major: Hauptversion
         minor: Nebenversion
         patch: Revision — Fehlerkorrekturen und einfach zu implementierende Änderungen
+      unsupported_branch: Der aktuelle Branch wird nicht mehr unterstützt. Bitte führe so bald wie möglich eine Aktualisierung durch.
+      unsupported_since: Nicht mehr unterstützt seit %{date}
       version: Version
     statuses:
       account: Autor*in
@@ -1276,6 +1291,15 @@ de:
     auto_close_registrations:
       body: Aufgrund fehlender Aktivität von Moderator*innen müssen neue Registrierungen auf %{instance} jetzt manuell genehmigt werden. Dies wurde automatisch umgestellt, damit %{instance} nicht als Plattform für Böswillige missbraucht werden kann. Du kannst jederzeit auf uneingeschränkte Registrierungen zurückwechseln.
       subject: Registrierungen auf %{instance} müssen ab jetzt manuell genehmigt werden (automatisch umgestellt)
+    end_of_support_out_of_support_warning:
+      body: Die derzeitige Mastodon-Version wird nicht mehr unterstützt. Bitte führe so bald wie möglich eine Aktualisierung durch!
+      subject: Mastodon %{branch} auf %{instance} wird nicht länger unterstützt!
+    end_of_support_three_months_warning:
+      body: Die derzeitige Mastodon-Version wird in 3 Monaten nicht mehr unterstützt. Bitte führe so bald wie möglich eine Aktualisierung auf einen neueren Branch durch.
+      subject: Mastodon %{branch} auf %{instance} wird in 3 Monaten nicht mehr unterstützt.
+    end_of_support_two_weeks_warning:
+      body: Die derzeitige Mastodon-Version wird in 2 Wochen nicht mehr unterstützt. Bitte führe so bald wie möglich eine Aktualisierung auf einen neueren Branch durch.
+      subject: Mastodon %{branch} auf %{instance} wird in 2 Wochen nicht mehr unterstützt.
     new_appeal:
       actions:
         delete_statuses: das Löschen der Beiträge
@@ -1911,6 +1935,7 @@ de:
     administration_emails: Benachrichtigungen per E-Mail an die Admins
     email_events: Benachrichtigungen per E-Mail
     email_events_hint: 'Bitte die Ereignisse auswählen, für die du Benachrichtigungen per E-Mail erhalten möchtest:'
+    moderation_emails: Moderation E-Mail-Benachrichtigungen
   number:
     human:
       decimal_units:
@@ -1935,7 +1960,7 @@ de:
     next: Weiter
     older: Älter
     prev: Zurück
-    truncate: "&hellip;"
+    truncate_html: "&hellip;"
   polls:
     errors:
       already_voted: An dieser Umfrage hast du bereits teilgenommen
