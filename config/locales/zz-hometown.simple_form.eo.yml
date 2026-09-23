@@ -1,0 +1,5 @@
+eo:
+  simple_form:
+    labels:
+      defaults:
+        setting_missing_alt_text_modal: Montru konfirman dialogon antaŭ afiŝado de aŭdvidaĵoj sen altteksto
