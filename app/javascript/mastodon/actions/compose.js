@@ -1,6 +1,6 @@
 import { defineMessages } from 'react-intl';
 
-import axios from 'axios';
+import { isCancel } from 'axios';
 import { throttle } from 'lodash';
 
 import api from '@/mastodon/api';
@@ -569,7 +569,7 @@ const fetchComposeSuggestionsAccounts = throttle((dispatch, token) => {
     dispatch(importFetchedAccounts(response.data));
     dispatch(readyComposeSuggestionsAccounts(token, response.data));
   }).catch(error => {
-    if (!axios.isCancel(error)) {
+    if (!isCancel(error)) {
       dispatch(showAlertForError(error));
     }
   }).finally(() => {
@@ -619,7 +619,7 @@ const fetchComposeSuggestionsTags = throttle((dispatch, token) => {
   }).then(({ data }) => {
     dispatch(readyComposeSuggestionsTags(token, data.hashtags));
   }).catch(error => {
-    if (!axios.isCancel(error)) {
+    if (!isCancel(error)) {
       dispatch(showAlertForError(error));
     }
   }).finally(() => {
