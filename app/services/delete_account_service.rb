@@ -11,6 +11,7 @@ class DeleteAccountService < BaseService
     block_relationships
     blocked_by_relationships
     collections
+    collection_items
     conversation_mutes
     conversations
     custom_filters
@@ -162,6 +163,8 @@ class DeleteAccountService < BaseService
   end
 
   def purge_statuses!
+    @account.statuses.reorder(nil).where(id: reported_status_ids).in_batches.update_all('deleted_at = COALESCE(statuses.deleted_at, NOW())')
+
     @account.statuses.reorder(nil).where.not(id: reported_status_ids).in_batches do |statuses|
       BatchedRemoveStatusService.new.call(statuses, skip_side_effects: skip_side_effects?)
     end
@@ -252,6 +255,8 @@ class DeleteAccountService < BaseService
     @account.also_known_as       = []
     @account.avatar.destroy
     @account.header.destroy
+    @account.avatar_description = ''
+    @account.header_description = ''
     @account.save!
   end
 
