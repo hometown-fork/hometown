@@ -509,8 +509,6 @@ ia:
           description: Tu ha recipite un registration de un FSAF. Rejecta lo si tu non lo ha initiate. Si tu lo ha initiate, compara attentemente le nomine e le dactylogramma del clave ante de confirmar le registration.
           reject: Rejectar
           title: Confirmar registration FSAF
-        save: Salvar
-        select_capabilities: Selige capacitates
         sign_in: Aperir session
         status: Stato
         title: Fornitores de Servicios Auxiliar del Fediverso

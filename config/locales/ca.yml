@@ -508,8 +508,6 @@ ca:
           description: Heu rebut un registre d'un FASP. Rebutgeu-lo si no l'heu iniciat. Si ho heu fet, compareu amb cura el nom i la clau d'empremta abans de confirmar el registre.
           reject: Rebutja
           title: Confirmeu el registre a FASP
-        save: Desa
-        select_capabilities: Seleccioneu les capacitats
         sign_in: Inicieu la sessió
         status: Estat
         title: Proveïdors de Serveis Auxiliars del Fedivers

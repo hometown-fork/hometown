@@ -612,6 +612,11 @@ vi:
         title: Nhập máy chủ chặn
       no_file: Không có tệp nào được chọn
     fasp:
+      capabilities:
+        activation_msg: Tính năng đã được kích hoạt thành công.
+        deactivation_msg: Tính năng đã được tắt thành công.
+        disable: Tắt
+        enable: Bật
       debug:
         callbacks:
           created_at: Đã tạo lúc
@@ -623,6 +628,7 @@ vi:
         active: Hoạt động
         base_url: URL cơ sở
         callback: Callback
+        capabilities: Khả năng
         delete: Xóa
         edit: Chỉnh sửa nhà cung cấp
         finish_registration: Hoàn tất đăng ký
@@ -635,8 +641,6 @@ vi:
           description: Bạn đã nhận được đăng ký từ FASP. Hãy từ chối nếu bạn không phải là người khởi tạo. Nếu bạn đã khởi tạo, hãy so sánh cẩn thận tên và dấu vân tay khóa trước khi xác nhận đăng ký.
           reject: Từ chối
           title: Xác nhận đăng ký FASP
-        save: Lưu
-        select_capabilities: Chọn khả năng
         sign_in: Đăng nhập
         status: Trạng thái
         title: Fediverse Auxiliary Service Providers

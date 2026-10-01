@@ -240,7 +240,6 @@ br:
         name: Anv
         registrations:
           confirm: Kadarnaat
-        save: Enrollañ
         sign_in: Kevreañ
         status: Statud
     follow_recommendations:

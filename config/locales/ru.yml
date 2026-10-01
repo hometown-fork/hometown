@@ -615,8 +615,6 @@ ru:
           confirm: Подтвердить
           reject: Отклонить
           title: Подтвердить регистрацию FASP
-        save: Сохранить
-        select_capabilities: Выберите возможности
         sign_in:
         status: Пост
         title: Fediverse Auxiliary Service Providers

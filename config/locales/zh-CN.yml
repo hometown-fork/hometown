@@ -612,6 +612,11 @@ zh-CN:
         title: 导入域名列表
       no_file: 没有选择文件
     fasp:
+      capabilities:
+        activation_msg: 能力已成功启用。
+        deactivation_msg: 能力已成功禁用。
+        disable: 禁用
+        enable: 启用
       debug:
         callbacks:
           created_at: 创建于
@@ -623,6 +628,7 @@ zh-CN:
         active: 有效
         base_url: 基础 URL
         callback: 回调
+        capabilities: 能力
         delete: 删除
         edit: 编辑提供商
         finish_registration: 完成注册
@@ -635,8 +641,6 @@ zh-CN:
           description: 你收到了来自FASP的注册。若你没有发起这个请求，请拒绝。若你发起了这个请求，请仔细比对名称和密钥指纹后再确认注册。
           reject: 拒绝
           title: 确认FASP注册
-        save: 保存
-        select_capabilities: 选择能力
         sign_in: 登录
         status: 状态
         title: 联邦宇宙辅助服务提供商

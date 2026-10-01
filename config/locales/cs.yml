@@ -644,8 +644,6 @@ cs:
           description: Obdrželi jste registraci od FASP. Odmítněte ji, pokud jste ji neiniciovali. Pokud jste ji iniciovali, pečlivě porovnejte jméno a otisk klíče před jejím potvrzením.
           reject: Zamítnout
           title: Potvrdit registraci FASP
-        save: Uložit
-        select_capabilities: Vybrat možnosti
         sign_in: Přihlásit se
         status: Stav
         title: Fediverse Auxiliary Service Providers

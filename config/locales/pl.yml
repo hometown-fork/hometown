@@ -579,7 +579,6 @@ pl:
           confirm: Zatwierdź
           reject: Odrzuć
           title: Potwierdź rejestrację FASP
-        save: Zapisz
         sign_in: Zaloguj się
         status: Status
         title: Dostawcy usług pomocniczych Fediverse (Fediverse Auxiliary Service Providers)

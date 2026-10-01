@@ -484,7 +484,6 @@ th:
         registrations:
           confirm: ยืนยัน
           reject: ปฏิเสธ
-        save: บันทึก
         sign_in: ลงชื่อเข้า
         status: สถานะ
       title: FASP

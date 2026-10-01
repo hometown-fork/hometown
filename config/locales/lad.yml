@@ -510,7 +510,6 @@ lad:
         registrations:
           confirm: Konfirma
           reject: Refuza
-        save: Guadra
         sign_in: Konektate
         status: Estado
       title: FASP

@@ -437,7 +437,6 @@ zh-HK:
         registrations:
           confirm: 確認
           reject: 拒絕
-        save: 儲存
         sign_in: 登入
         status: 狀態
       title: FASP

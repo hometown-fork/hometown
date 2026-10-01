@@ -500,8 +500,6 @@ bg:
         registrations:
           confirm: Потвърждаване
           reject: Отхвърляне
-        save: Запазване
-        select_capabilities: Избор на възможности
         sign_in: Вход
         status: Състояние
     follow_recommendations:

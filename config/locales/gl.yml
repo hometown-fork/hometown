@@ -643,8 +643,6 @@ gl:
           description: Recibiches unha solicitude de rexistro desde un FASP. Rexeitaa se non iniciaches ti o proceso. Se foi iniciada por ti, compara con atención o nome e impresión dixital antes de confirmar o rexistro.
           reject: Rexeitar
           title: Confirmar o rexistro do FASP
-        save: Gardar
-        select_capabilities: Seleccionar funcións
         sign_in: Acceder
         status: Estado
         title: Provedores de Servizos Auxiliares do Fediverso

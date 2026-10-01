@@ -526,8 +526,6 @@ fo:
           description: Tú hevur móttikið eina skráseting frá einum FASP. Avvís, um tú ikki setti hetta í gongd. Um tú setti tað í gongd, so skal tú vandaliga samanbera navn og lyklafingramerki, áðrenn tú góðkennir skrásetingina.
           reject: Avvís
           title: Vátta FASP-skráseting
-        save: Goym
-        select_capabilities: Vel evni
         sign_in: Rita inn
         status: Støða
         title: Fediverse Auxiliary Service Providers
