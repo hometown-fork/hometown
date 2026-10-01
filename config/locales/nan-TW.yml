@@ -614,8 +614,6 @@ nan-TW:
           description: Lí收著FASP ê註冊ah。nā準lí bô啟動，請拒絕。若有啟動，請佇確認註冊以前，細膩比較名kap鎖匙ê指頭仔螺。
           reject: 拒絕
           title: 確認FASP註冊
-        save: 儲存
-        select_capabilities: 揀功能
         sign_in: 登入
         status: 狀態
         title: 聯邦宇宙輔助服務提供者 (FASP)

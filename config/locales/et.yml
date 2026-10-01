@@ -643,8 +643,6 @@ et:
           description: Sa oled saanud FASP-i registreerimispäringu. Kui sa seda ise ei algatanud, siis keeldu. Kui algatasid, siis enne kinnitamist kontrolli nime ja võtme sõrmejälge.
           reject: Keeldu
           title: Kinnita FASP-i registreerimine
-        save: Salvesta
-        select_capabilities: Vali oskused
         sign_in: Logi sisse
         status: Olek
         title: Täiendavad teenusepakkujad Födiversumis (FASP - Fediverse Auxiliary Service Providers)

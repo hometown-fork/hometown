@@ -524,7 +524,6 @@ sl:
           confirm: Potrdi
           reject: Zavrni
           title: Potrdri registracijo FASP
-        save: Shrani
         sign_in: Prijava
         status: Stanje
         title: Ponudniki dodatnih storitev Fediverse

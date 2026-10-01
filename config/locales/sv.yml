@@ -622,6 +622,11 @@ sv:
         title: Importera domänblockeringar
       no_file: Ingen fil vald
     fasp:
+      capabilities:
+        activation_msg: Funktionen har aktiverats.
+        deactivation_msg: Funktionen har inaktiverats.
+        disable: Inaktivera
+        enable: Aktivera
       debug:
         callbacks:
           created_at: Skapad den
@@ -633,6 +638,7 @@ sv:
         active: Aktiv
         base_url: Bas-URL
         callback: Återanrop
+        capabilities: Funktioner
         delete: Ta bort
         edit: Redigera leverantör
         finish_registration: Slutför registrering
@@ -645,8 +651,6 @@ sv:
           description: Du fick en registrering från en FASP. Avvisa den om du inte initierade detta. Om du initierat detta, jämför noggrant namn och nyckelns fingeravtryck innan du bekräftar registreringen.
           reject: Avvisa
           title: Bekräfta registrering av FASP
-        save: Spara
-        select_capabilities: Välj funktioner
         sign_in: Logga in
         status: Status
         title: Fediverse Auxiliary Service Providers

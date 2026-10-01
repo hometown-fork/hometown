@@ -622,6 +622,11 @@ es-AR:
         title: Importar bloques de dominio
       no_file: No hay ningún archivo seleccionado
     fasp:
+      capabilities:
+        activation_msg: Capacidad habilitada exitosamente.
+        deactivation_msg: Capacidad deshabilitada exitosamente.
+        disable: Deshabilitar
+        enable: Habilitar
       debug:
         callbacks:
           created_at: 'Fecha de creación:'
@@ -633,6 +638,7 @@ es-AR:
         active: Activo
         base_url: Dirección web base
         callback: Depuraciones
+        capabilities: Capacidades
         delete: Eliminar
         edit: Editar proveedor
         finish_registration: Finalizar registro
@@ -645,8 +651,6 @@ es-AR:
           description: Recibiste un registro de un FASP (Fediverse Auxiliary Service Providers; Proveedores de Servicio Auxiliares del Fediverso). Rechazalo si no iniciaste esto. Si, en cambio, iniciaste esto, compará cuidadosamente el nombre y la huella de la clave antes de confirmar el registro.
           reject: Rechazar
           title: Confirmar registro FASP
-        save: Guardar
-        select_capabilities: Seleccionar capacidades
         sign_in: Iniciar sesión
         status: Estado
         title: Proveedores de Servicios Auxiliares del Fediverso
