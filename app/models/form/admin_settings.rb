@@ -72,7 +72,6 @@ class Form::AdminSettings
     default_federation
     require_invite_text
     captcha_enabled
-    authorized_fetch
     wrapstodon
   ).freeze
 
