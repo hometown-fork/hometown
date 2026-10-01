@@ -84,6 +84,7 @@ namespace :admin do
     resource :appearance, only: [:show, :update], controller: 'appearance'
     resource :discovery, only: [:show, :update], controller: 'discovery'
     resource :hometown, only: [:show, :update], controller: 'hometown'
+    resource :external, only: [:show, :update], controller: 'external'
   end
 
   resources :site_uploads, only: [:destroy]
