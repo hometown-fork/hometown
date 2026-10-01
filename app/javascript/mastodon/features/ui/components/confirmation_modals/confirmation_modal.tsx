@@ -52,8 +52,8 @@ export const ConfirmationModal: React.FC<
   noCloseOnConfirm = false,
   noFocusButton = false,
 }) => {
-  const handleSubmit = useCallback(
-    (e: React.FormEvent) => {
+  const handleSubmit = useCallback<React.SubmitEventHandler<HTMLFormElement>>(
+    (e) => {
       e.preventDefault();
 
       if (!noCloseOnConfirm) {

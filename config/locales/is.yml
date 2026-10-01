@@ -64,6 +64,8 @@ is:
       custom: Sérsniðið
       delete: Eyða gögnum
       deleted: Eytt
+      deletion_irreversible: Gögnum þessa notandaaðgangs hefur verið eytt óafturkvæmt.
+      deletion_reversible_hint_html: Þessi notandaaðgangur biður eftir að verða eytt og verða gögn hans fjarlægð að fullu þann %{date}.
       demote: Lækka í tign
       destroyed_msg: Gögn notandans %{username} eru núna í bið eftir að vera endanlega eytt
       disable: Gera óvirkt
@@ -198,6 +200,7 @@ is:
         create_user_role: Útbúa hlutverk
         create_username_block: Búa til notandanafnsreglu
         demote_user: Lækka notanda í tign
+        destroy_account: Eyða aðgangsgögnum
         destroy_announcement: Eyða tilkynningu
         destroy_canonical_email_block: Eyða útilokunarblokk tölvupósts
         destroy_custom_emoji: Eyða sérsniðnu lyndistákni
@@ -266,6 +269,7 @@ is:
         create_user_role_html: "%{name} útbjó %{target} hlutverk"
         create_username_block_html: "%{name} bætti við reglu varðandi notendanöfn sem innihalda %{target}"
         demote_user_html: "%{name} lækkaði notandann %{target} í tign"
+        destroy_account_html: "%{name} eyddi aðgangsgögnum fyrir %{target}"
         destroy_announcement_html: "%{name} eyddi tilkynninguni %{target}"
         destroy_canonical_email_block_html: "%{name} tók af útilokun á tölvupósti með tætigildið %{target}"
         destroy_collection_html: "%{name} fjarlægði safn frá %{target}"
@@ -289,7 +293,11 @@ is:
         enable_relay_html: "%{name} virkjaði endurvarpann %{target}"
         enable_sign_in_token_auth_user_html: "%{name} gerði virka auðkenningu með teikni í tölvupósti fyrir %{target}"
         enable_user_html: "%{name} gerði innskráningu virka fyrir notandann %{target}"
+        listable_tag_html: má stinga uppá
         memorialize_account_html: "%{name} breytti notandaaðgangnum %{target} í minningargreinarsíðu"
+        not_listable_tag_html: mun ekki vera stungið uppá
+        not_trendable_tag_html: mun ekki birtast í vinsældum
+        not_usable_tag_html: má ekki nota
         promote_user_html: "%{name} hækkaði notandann %{target} í tign"
         publish_terms_of_service_html: "%{name} gaf út uppfærða þjónustuskilmála"
         reject_appeal_html: "%{name} hafnaði áfrýjun á ákvörðun umsjónarmanns frá %{target}"
@@ -302,6 +310,7 @@ is:
         sensitive_account_html: "%{name} merkti myndefni frá %{target} sem viðkvæmt"
         silence_account_html: "%{name} þaggaði niður í aðgangnum %{target}"
         suspend_account_html: "%{name} setti notandaaðganginn %{target} í frysti"
+        trendable_tag_html: má vera með í vinsældum
         unassigned_report_html: "%{name} fjarlægði úthlutun af kæru %{target}"
         unblock_email_account_html: "%{name} opnaði á tölvupóstfangið %{target}"
         unsensitive_account_html: "%{name} tók merkinguna viðkvæmt af myndefni frá %{target}"
@@ -314,8 +323,10 @@ is:
         update_ip_block_html: "%{name} breytti reglu fyrir IP-vistfangið %{target}"
         update_report_html: "%{name} uppfærði kæru %{target}"
         update_status_html: "%{name} uppfærði færslu frá %{target}"
+        update_tag_html: "%{name} breytti %{target} stillingum í: "
         update_user_role_html: "%{name} breytti hlutverki %{target}"
         update_username_block_html: "%{name} uppfærði reglu varðandi notendanöfn sem innihalda %{target}"
+        usable_tag_html: má nota;
       deleted_account: eyddur notandaaðgangur
       empty: Engar atvikaskrár fundust.
       filter_by_action: Sía eftir aðgerð
@@ -730,6 +741,8 @@ is:
       new:
         title: Búa til nýja IP-reglu
       no_ip_block_selected: Engum IP-reglum var breytt því ekkert var valið
+      reset: Endurstilla
+      search: Leita
       title: IP-reglur
     relationships:
       title: Vensl %{acct}
@@ -1006,13 +1019,17 @@ is:
       critical_update: Áríðandi - uppfærðu eins fljótt og auðið er
       description: Mælt er með því að þú haldir Mastodon-uppsetningunni þinni uppfærðri til að vera með nýjustu lagfæringar og eiginleika. Aukinheldur er mikilvægt að halda Mastodon uppfærðu til að komast hjá öryggisveilum. Af þessum ástæðum athugar Mastodon með uppfærslur á 30 mínútna fresti og mun gera þér viðvart í samræmi við stillingar þínar á tilkynningum í tölvupósti.
       documentation_link: Kanna nánar
+      nearing_eol: Stuðningur við kerfisgreinina sem þú ert að keyra mun hætta %{date}, íhugaðu að uppfæra.
       release_notes: Útgáfuupplýsingar
+      supported_until: Stuðningur endar þann %{date}
       title: Tiltækar uppfærslur
       type: Tegund
       types:
         major: Aðalútgáfa
         minor: Aukaútgáfa
         patch: Viðgerðauppfærsla - lagfæringar og ýmsar minniháttar breytingar
+      unsupported_branch: Kerfisgreinin sem þú ert að keyra er ekki með neinn stuðning lengur, uppfærðu kerfið við fyrsta tækifæri.
+      unsupported_since: Ekki stutt síðan %{date}
       version: Útgáfa
     statuses:
       account: Höfundur
@@ -1278,6 +1295,15 @@ is:
     auto_close_registrations:
       body: Vegna skorts á virkni umsjónaraðila að undanförnu, hafa nýskráningar á %{instance} sjálfkrafa verið stilltar á að þarfnast samþykktar umsjónaraðila, til að koma í veg fyrir að %{instance} verði mögulega misnotað af óprúttnum aðilum. Þú getur skipt hvenær sem er aftur yfir í opnar nýskráningar.
       subject: Nýskráningar á %{instance} hafa sjálfkrafa verið stilltar á að krefjast samþykktar
+    end_of_support_out_of_support_warning:
+      body: Sú útgáfa Mastodon sem þú ert að keyra er ekki með neinn stuðning lengur. Við mælum með að þú uppfærir kerfið við fyrsta tækifæri!
+      subject: Mastodon %{branch} sem notuð er á %{instance} er ekki lengur með stuðning!
+    end_of_support_three_months_warning:
+      body: Sú útgáfa Mastodon sem þú ert að keyra hættir að fá stuðning eftir 3 mánuði. Þú gætir viljað uppfæra í nýrri kerfisgrein áður en að því kemur.
+      subject: Stuðningi við Mastodon %{branch} sem notuð er á %{instance} lýkur eftir 3 mánuði.
+    end_of_support_two_weeks_warning:
+      body: Sú útgáfa Mastodon sem þú ert að keyra hættir að fá stuðning eftir 2 vikur. Þú gætir viljað uppfæra í nýrri kerfisgrein áður en að því kemur.
+      subject: Stuðningi við Mastodon %{branch} sem notuð er á %{instance} lýkur eftir 2 vikur.
     new_appeal:
       actions:
         delete_statuses: að eyða færslum viðkomandi
@@ -1474,9 +1500,11 @@ is:
   deletes:
     challenge_not_passed: Upplýsingarnar sem þú settir inn eru ekki réttar
     confirm_password: Settu inn núverandi lykilorð þitt til að staðfesta auðkennin þín
-    confirm_username: Skrifaðu inn notandanafnið þitt til að halda áfram með ferlið
+    confirm_username: Staðfestu notandanafn
+    confirm_username_hint_html: Skrifaðu <code>%{username}</code> til að staðfesta aðganginn sem þú ætlar að eyða
     proceed: Eyða notandaaðgangi
     success_msg: Það tókst að eyða notandaaðgangnum þínum
+    title: Eyða aðgangnum %{acct}
     warning:
       before: 'Áður en haldið er áfram, skaltu lesa þessa minnispunkta gaumgæfilega:'
       caches: Efni sem aðrir netþjónar hafa sett í skyndiminni gæti verið til staðar áfram
@@ -1576,6 +1604,7 @@ is:
       content: Því miður, en eitthvað fór úrskeiðis á okkar enda.
       title: Þessi síða er ekki rétt
     '503': Ekki var hægt að afgreiða síðuna vegna tímabundinnar bilunar á vefþjóni.
+    go_home: Fara heim
     noscript_html: Til að nota vefútgáfu Mastodon þarftu að virkja JavaScript. Þú getur líka prófað eitt af Mastodon <a href="%{apps_path}">forritunum</a> fyrir stýrikerfið þitt.
   existing_username_validator:
     not_found: Fann ekki staðværan notanda með þetta notandanafn
@@ -1672,6 +1701,7 @@ is:
       incompatible_type: Ekki samhæfanlegt valinni tegund innflutnings
       invalid_csv_file: 'Ógild CSV-skrá. Villa: %{error}'
       invalid_json_file: 'Ógild JSON-skrá. Villa: %{error}'
+      no_data: Þessi skrá inniheldur ekki nein gögn sem samsvata uppgefinni tegund innflutnings
       over_rows_processing_limit: inniheldur meira en %{count} raðir
       status_not_found_warning: Sumar af síunum þínum fela tilteknar færslur sem þessi netþjónn kann ekki skil á. Þessar færslur verða ekki síaðar sjálfkrafa ef netþjónninn uppgötvar þær síðar.
       too_large: Skráin er of stór
@@ -1915,6 +1945,7 @@ is:
     administration_emails: Kerfisstjórnunartilkynningar í tölvupósti
     email_events: Atburðir fyrir tilkynningar í tölvupósti
     email_events_hint: 'Veldu þá atburði sem þú vilt fá tilkynningar í tölvupósti þegar þeir koma upp:'
+    moderation_emails: Tilkynningar umsjónarmanna í tölvupósti
   number:
     human:
       decimal_units:
@@ -1938,7 +1969,7 @@ is:
     next: Næsta
     older: Eldra
     prev: Fyrra
-    truncate: "&hellip;"
+    truncate_html: "&hellip;"
   polls:
     errors:
       already_voted: Þú hefur þegar greitt atkvæði í þessari könnun
@@ -2069,7 +2100,6 @@ is:
     appearance: Útlit
     authorized_apps: Leyfð forrit
     back: Til baka í Mastodon
-    delete: Eyðing notandaaðgangs
     development: Þróun
     edit_profile: Breyta notandasniði
     export: Flytja út

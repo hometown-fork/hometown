@@ -61,6 +61,8 @@ zh-CN:
       custom: 自定义
       delete: 删除数据
       deleted: 已删除
+      deletion_irreversible: 此账号的数据已被不可逆转地删除。
+      deletion_reversible_hint_html: 此账号等待删除，数据将在 %{date} 完全移除。
       demote: 取消管理员
       destroyed_msg: "%{username} 的数据已被安排至删除队列"
       disable: 冻结
@@ -194,6 +196,7 @@ zh-CN:
         create_user_role: 创建角色
         create_username_block: 新建用户名规则
         demote_user: 取消管理员
+        destroy_account: 删除账号数据
         destroy_announcement: 删除公告
         destroy_canonical_email_block: 解除邮箱封禁
         destroy_custom_emoji: 删除自定义表情符号
@@ -262,6 +265,7 @@ zh-CN:
         create_user_role_html: "%{name} 创建了角色 %{target}"
         create_username_block_html: "%{name} 新增了有关包含 %{target} 的用户名的规则"
         demote_user_html: "%{name} 撤销了用户 %{target} 的管理权限"
+        destroy_account_html: "%{name} 删除了 %{target} 的账号数据"
         destroy_announcement_html: "%{name} 删除了公告 %{target}"
         destroy_canonical_email_block_html: "%{name} 解封了 hash 为 %{target} 的邮箱地址"
         destroy_collection_html: "%{name} 移除了 %{target} 的收藏列表"
@@ -285,7 +289,11 @@ zh-CN:
         enable_relay_html: "%{name} 启用了中继站 %{target}"
         enable_sign_in_token_auth_user_html: "%{name} 为 %{target} 启用了邮件令牌身份验证"
         enable_user_html: "%{name} 将用户 %{target} 设置为允许登录"
+        listable_tag_html: 可被推荐
         memorialize_account_html: "%{name} 将 %{target} 转为纪念账号"
+        not_listable_tag_html: 不会被推荐
+        not_trendable_tag_html: 不会出现在热门列表中
+        not_usable_tag_html: 不可使用
         promote_user_html: "%{name} 将用户 %{target} 设为管理员"
         publish_terms_of_service_html: "%{name} 更新了服务条款"
         reject_appeal_html: "%{name} 驳回了 %{target} 对审核结果的申诉"
@@ -298,6 +306,7 @@ zh-CN:
         sensitive_account_html: "%{name} 将 %{target} 的媒体标记为敏感内容"
         silence_account_html: "%{name} 隐藏了用户 %{target}"
         suspend_account_html: "%{name} 封禁了用户 %{target}"
+        trendable_tag_html: 可显示在热门列表中
         unassigned_report_html: "%{name} 放弃接管举报 %{target}"
         unblock_email_account_html: "%{name} 取消屏蔽了 %{target} 的邮件地址"
         unsensitive_account_html: "%{name} 去除了 %{target} 的媒体的敏感内容标记"
@@ -310,8 +319,10 @@ zh-CN:
         update_ip_block_html: "%{name} 修改了对 IP %{target} 的规则"
         update_report_html: "%{name} 更新了举报 %{target}"
         update_status_html: "%{name} 刷新了 %{target} 的嘟文"
+        update_tag_html: "%{name} 已将 %{target} 的设置更改为："
         update_user_role_html: "%{name} 更改了角色 %{target}"
         update_username_block_html: "%{name} 更新了有关包含 %{target} 的用户名的规则"
+        usable_tag_html: 可以使用；
       deleted_account: 账号已注销
       empty: 没有找到日志
       filter_by_action: 根据操作筛选
@@ -717,6 +728,8 @@ zh-CN:
       new:
         title: 创建新 IP 规则
       no_ip_block_selected: 未选中任何 IP 规则，所以没有更改
+      reset: 重置
+      search: 搜索
       title: IP 规则
     relationships:
       title: "%{acct} 的关系"
@@ -988,13 +1001,17 @@ zh-CN:
       critical_update: 紧急 — 请尽快更新
       description: 建议你及时更新Mastodon实例，以便获得最新修复和功能。此外，为避免安全问题，有时及时更新Mastodon是至关重要的。出于这些原因，Mastodon每30分钟检查一次更新，并根据你的邮件通知偏好向你发送通知。
       documentation_link: 详细了解
+      nearing_eol: 当前运行分支的支持将在 %{date} 停止，请考虑更新。
       release_notes: 发行说明
+      supported_until: 支持将于 %{date} 停止
       title: 可用的更新
       type: 类型
       types:
         major: 重大更新
         minor: 次要更新
         patch: 补丁级更新 - 修复了错误并进行了易于应用的更改
+      unsupported_branch: 当前运行的分支已不受支持，请尽快更新。
+      unsupported_since: 自 %{date} 起已不受支持
       version: 版本
     statuses:
       account: 作者
@@ -1255,6 +1272,15 @@ zh-CN:
     auto_close_registrations:
       body: 由于近期缺乏管理员活动， %{instance} 上的注册已自动切换为需要手动审核，以防止 %{instance} 被潜在的不良行为者用作平台。你可以随时将其切换回开放注册。
       subject: "%{instance} 的注册已自动切换为需要批准"
+    end_of_support_out_of_support_warning:
+      body: 你的服务器正在使用的 Mastodon 版本已经停止支持。我们推荐你尽快更新到新分支！
+      subject: "%{instance} 使用的 Mastodon %{branch} 已不再受支持！"
+    end_of_support_three_months_warning:
+      body: 你的服务器正在使用的 Mastodon 版本将在 3 个月后停止支持。我们推荐你提前更新到新分支。
+      subject: "%{instance} 使用的 Mastodon %{branch} 的支持将在 3 个月后结束。"
+    end_of_support_two_weeks_warning:
+      body: 你的服务器正在使用的 Mastodon 版本将在 2 周后停止支持。我们推荐你提前更新到新分支。
+      subject: "%{instance} 使用的 Mastodon %{branch} 的支持将在 2 周后结束。"
     new_appeal:
       actions:
         delete_statuses: 删除其嘟文
@@ -1449,9 +1475,11 @@ zh-CN:
   deletes:
     challenge_not_passed: 你输入的信息不正确
     confirm_password: 输入你当前的密码来验证身份
-    confirm_username: 输入你的用户名以继续
+    confirm_username: 确认用户名
+    confirm_username_hint_html: 请输入 <code>%{username}</code> 以确认你要删除的账号
     proceed: 删除账号
     success_msg: 你的账号已成功删除
+    title: 删除账号 %{acct}
     warning:
       before: 在删除前，请仔细阅读下列说明：
       caches: 已被其他服务器缓存的内容可能还会保留
@@ -1550,6 +1578,7 @@ zh-CN:
       content: 抱歉，服务器出现了一些故障。
       title: 页面无法正确加载
     '503': 服务器出现临时故障，无法加载页面。
+    go_home: 回到主页
     noscript_html: 使用 Mastodon 网页版应用需要启用 JavaScript。你也可以选择适用于你的平台的 <a href="%{apps_path}">Mastodon 应用</a>。
   existing_username_validator:
     not_found: 在本站找不到此用户
@@ -1639,6 +1668,7 @@ zh-CN:
       incompatible_type: 与所选导入类型不兼容
       invalid_csv_file: 无效的 CSV 文件。错误：%{error}
       invalid_json_file: 无效的 JSON 文件。错误：%{error}
+      no_data: 此文件不包含任何匹配指定导入类型的数据
       over_rows_processing_limit: 包含行数超过了 %{count}
       status_not_found_warning: 你的部分过滤器将会隐藏此服务器暂时未知的特定嘟文。如果这些嘟文以后被服务器发现，则将不会被自动过滤。
       too_large: 文件过大
@@ -1866,6 +1896,7 @@ zh-CN:
     administration_emails: 管理员电子邮件通知
     email_events: 邮件通知事件
     email_events_hint: 选择你想要收到通知的事件：
+    moderation_emails: 管理邮件通知
   number:
     human:
       decimal_units:
@@ -1889,7 +1920,7 @@ zh-CN:
     next: 下一页
     older: 更早
     prev: 上一页
-    truncate: "&hellip;"
+    truncate_html: "&hellip;"
   polls:
     errors:
       already_voted: 你已经在这里投过票了
@@ -2020,7 +2051,6 @@ zh-CN:
     appearance: 外观
     authorized_apps: 已授权的应用
     back: 返回 Mastodon
-    delete: 删除账号
     development: 开发
     edit_profile: 更改个人资料
     export: 导出

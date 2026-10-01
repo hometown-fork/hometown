@@ -64,6 +64,8 @@ es-AR:
       custom: Personalizar
       delete: Eliminar datos
       deleted: Eliminado
+      deletion_irreversible: Los datos de esta cuenta fueron eliminados irreversiblemente.
+      deletion_reversible_hint_html: Esta cuenta está pendiente de eliminación, y los datos se eliminarán completamente el %{date}.
       demote: Bajar de nivel
       destroyed_msg: Los datos de %{username} están ahora en cola para ser eliminados inminentemente
       disable: Congelar
@@ -198,6 +200,7 @@ es-AR:
         create_user_role: Crear rol
         create_username_block: Crear regla de nombre de usuario
         demote_user: Descender usuario
+        destroy_account: Eliminar datos de la cuenta
         destroy_announcement: Eliminar anuncio
         destroy_canonical_email_block: Eliminar bloqueo de correo electrónico
         destroy_custom_emoji: Eliminar emoji personalizado
@@ -266,6 +269,7 @@ es-AR:
         create_user_role_html: "%{name} creó el rol %{target}"
         create_username_block_html: "%{name} agregó una regla para los nombres de usuario que contienen %{target}"
         demote_user_html: "%{name} bajó de nivel al usuario %{target}"
+        destroy_account_html: "%{name} eliminó datos de la cuenta de %{target}"
         destroy_announcement_html: "%{name} eliminó el anuncio %{target}"
         destroy_canonical_email_block_html: "%{name} desbloqueó el correo electrónico con el hash %{target}"
         destroy_collection_html: "%{name} eliminó la colección de %{target}"
@@ -289,7 +293,11 @@ es-AR:
         enable_relay_html: "%{name} eliminó el relé %{target}"
         enable_sign_in_token_auth_user_html: "%{name} habilitó la autenticación de token por correo electrónico para %{target}"
         enable_user_html: "%{name} habilitó el inicio de sesión para el usuario %{target}"
+        listable_tag_html: puede ser recomendada
         memorialize_account_html: "%{name} convirtió la cuenta de %{target} en una cuenta conmemorativa"
+        not_listable_tag_html: no será sugerida
+        not_trendable_tag_html: no aparecerá bajo «Tendencias»
+        not_usable_tag_html: no puede ser usada
         promote_user_html: "%{name} promovió al usuario %{target}"
         publish_terms_of_service_html: "%{name} publicó actualizaciones de los términos del servicio"
         reject_appeal_html: "%{name} rechazó la solicitud de moderación de %{target}"
@@ -302,6 +310,7 @@ es-AR:
         sensitive_account_html: "%{name} marcó los medios de %{target} como sensibles"
         silence_account_html: "%{name} limitó la cuenta de %{target}"
         suspend_account_html: "%{name} suspendió la cuenta de %{target}"
+        trendable_tag_html: puede aparecer bajo «Tendencias»
         unassigned_report_html: "%{name} desasignó la denuncia %{target}"
         unblock_email_account_html: "%{name} desbloqueó la dirección de correo electrónico de %{target}"
         unsensitive_account_html: "%{name} desmarcó los medios de %{target} como sensibles"
@@ -314,8 +323,10 @@ es-AR:
         update_ip_block_html: "%{name} cambió la regla para la dirección IP %{target}"
         update_report_html: "%{name} actualizó la denuncia %{target}"
         update_status_html: "%{name} actualizó el mensaje de %{target}"
+        update_tag_html: "%{name} cambió la configuración de %{target} a: "
         update_user_role_html: "%{name} cambió el rol %{target}"
         update_username_block_html: "%{name} actualizó una regla para los nombres de usuario que contienen %{target}"
+        usable_tag_html: puede ser usada;
       deleted_account: cuenta eliminada
       empty: No se encontraron registros.
       filter_by_action: Filtrar por acción
@@ -730,6 +741,8 @@ es-AR:
       new:
         title: Crear nueva regla de dirección IP
       no_ip_block_selected: No se cambió ninguna regla de dirección IP, ya que no se seleccionó ninguna
+      reset: Restablecer
+      search: Buscar
       title: Reglas de dirección IP
     relationships:
       title: Relaciones de %{acct}
@@ -1004,13 +1017,17 @@ es-AR:
       critical_update: Crítica — por favor, actualizá cuanto antes
       description: Se recomienda mantener actualizada tu instalación de Mastodon para beneficiarte de las últimas correcciones y funciones. Además, a veces es crítico actualizar Mastodon inmediatamente para evitar problemas de seguridad. Por estas razones, Mastodon comprueba si hay actualizaciones cada 30 minutos, y te notificará de acuerdo a tu configuración de notificaciones por correo electrónico.
       documentation_link: Aprendé más
+      nearing_eol: El soporte para la rama que estás ejecutando finalizará en %{date}; por favor, considerá actualizar.
       release_notes: Notas de lanzamiento
+      supported_until: El soporte termina en %{date}
       title: Actualización disponible
       type: Tipo
       types:
         major: Lanzamiento importante
         minor: Lanzamiento menor
         patch: Lanzamiento parche — correcciones de errores y cambios fáciles de aplicar
+      unsupported_branch: La rama que estás ejecutando no está soportada; por favor, actualizá lo antes posible.
+      unsupported_since: Sin soporte desde %{date}
       version: Versión
     statuses:
       account: Autor
@@ -1276,6 +1293,15 @@ es-AR:
     auto_close_registrations:
       body: Debido a la falta de actividad reciente por parte de moderadores, los registros en %{instance} fueron cambiados automáticamente para requerir revisión manual, para evitar que %{instance} se use como una plataforma para potenciales malos actores. Podés volver a cambiar esto para abrir los registros en cualquier momento.
       subject: Los registros de %{instance} se cambiaron automáticamente para requerir aprobación
+    end_of_support_out_of_support_warning:
+      body: La versión de Mastodon que está actualmente en uso en tu servidor ya no es compatible. ¡Te recomendamos que actualicés lo antes posible!
+      subject: "¡Mastodon %{branch} usado en %{instance} no es compatible!"
+    end_of_support_three_months_warning:
+      body: La versión de Mastodon que está actualmente en uso en tu servidor dejará de ser soportada en 3 meses. Puede ser una buena idea actualizar a una rama más reciente con anticipación.
+      subject: El soporte para Mastodon %{branch} usado en %{instance} finalizará en 3 meses.
+    end_of_support_two_weeks_warning:
+      body: La versión de Mastodon que está actualmente en uso en tu servidor dejará de ser soportada en 2 semanas. Puede ser una buena idea actualizar a una rama más reciente con anticipación.
+      subject: El soporte para Mastodon %{branch} usado en %{instance} finalizará en 2 semanas.
     new_appeal:
       actions:
         delete_statuses: para eliminar sus mensajes
@@ -1470,9 +1496,11 @@ es-AR:
   deletes:
     challenge_not_passed: La información que ingresaste no es correcta
     confirm_password: Ingresá tu contraseña actual para verificar tu identidad
-    confirm_username: Ingresá tu nombre de usuario para confirmar el procedimiento
+    confirm_username: Confirmar nombre de usuario
+    confirm_username_hint_html: Por favor, escribí <code>%{username}</code> para confirmar la cuenta que querés eliminar
     proceed: Eliminar cuenta
     success_msg: Tu cuenta fue eliminada exitosamente
+    title: Eliminar cuenta %{acct}
     warning:
       before: 'Antes de proceder, por favor, leé estas notas cuidadosamente:'
       caches: El contenido que fue almacenado en caché por otros servidores puede persistir
@@ -1572,6 +1600,7 @@ es-AR:
       content: Lo sentimos, pero algo salió mal en nuestro lado.
       title: Esta página no es correcta
     '503': La página no se pudo cargar debido a un fallo temporal del servidor.
+    go_home: Ir a la página principal
     noscript_html: Para usar la aplicación web de Mastodon, por favor, activá Javascript. Alternativamente, probá alguna de las <a href="%{apps_path}">aplicaciones nativas</a> de Mastodon para tu plataforma.
   existing_username_validator:
     not_found: no se pudo encontrar un usuario local con ese nombre de usuario
@@ -1668,6 +1697,7 @@ es-AR:
       incompatible_type: Incompatible con el tipo de importación seleccionado
       invalid_csv_file: 'Archivo CSV no válido. Error: %{error}'
       invalid_json_file: 'Archivo JSON no válido. Error: %{error}'
+      no_data: Este archivo no contiene ningún dato que coincida con el tipo importado
       over_rows_processing_limit: contiene más de %{count} filas
       status_not_found_warning: Algunos de tus filtros ocultan mensajes específicos que no son conocidos por este servidor. Estos mensajes no serán filtrados automáticamente si son descubiertos más tarde por el servidor.
       too_large: El archivo es demasiado grande
@@ -1911,6 +1941,7 @@ es-AR:
     administration_emails: Notificaciones de administración por correo electrónico
     email_events: Eventos para notificaciones por correo electrónico
     email_events_hint: 'Seleccioná los eventos para los que querés recibir notificaciones:'
+    moderation_emails: Notificaciones de correo de moderación
   number:
     human:
       decimal_units:
@@ -1934,7 +1965,7 @@ es-AR:
     next: Siguiente
     older: Más antiguos
     prev: Anterior
-    truncate: "&hellip;"
+    truncate_html: "&hellip;"
   polls:
     errors:
       already_voted: Ya votaste en esta encuesta
@@ -2065,7 +2096,6 @@ es-AR:
     appearance: Apariencia
     authorized_apps: Aplicaciones autorizadas
     back: Volver a Mastodon
-    delete: Eliminación de la cuenta
     development: Desarrollo
     edit_profile: Editar perfil
     export: Exportar

@@ -6,7 +6,7 @@ import { defineMessages } from 'react-intl';
 
 import classNames from 'classnames';
 
-import Overlay from 'react-overlays/Overlay';
+import { Popover } from '../../../components/popover';
 
 import Link from '@/material-icons/400-24px/link.svg?react';
 import LinkOff from '@/material-icons/400-24px/link_off.svg?react';
@@ -99,10 +99,6 @@ class FederationDropdown extends PureComponent {
     this.target = c;
   };
 
-  findTarget = () => {
-    return this.target;
-  };
-
   handleOverlayEnter = (state) => {
     this.setState({ placement: state.placement });
   };
@@ -129,7 +125,7 @@ class FederationDropdown extends PureComponent {
           <span className='dropdown-button__label'>{valueOption.text}</span>
         </button>
 
-        <Overlay show={open} offset={[5, 5]} placement={placement} flip target={this.findTarget} container={container} popperConfig={{ strategy: 'fixed', onFirstUpdate: this.handleOverlayEnter }}>
+        <Popover isOpen={open} offset={5} placement={placement} flip reference={this.target} container={container} strategy='fixed'>
           {({ props, placement }) => (
             <div {...props}>
               <div className={`dropdown-animation privacy-dropdown__dropdown ${placement}`}>
@@ -142,7 +138,7 @@ class FederationDropdown extends PureComponent {
               </div>
             </div>
           )}
-        </Overlay>
+        </Popover>
       </div>
     );
   }

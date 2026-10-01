@@ -1,0 +1,9 @@
+fy:
+  simple_form:
+    hints:
+      defaults:
+        setting_default_quote_policy: It is foar brûkers dy’t fermeld wurde altyd tastien om te sitearjen. Dizze ynstelling is allinnich fan tapassing foar berjochten dy’t makke binne mei de folgjende Mastodon-ferzje, mar jo kinne jo foarkar no al ynstelle
+    labels:
+      defaults:
+        setting_default_privacy: Sichtberheid fan nije berjochten
+        setting_missing_alt_text_modal: Befêstigingsfinster toane foar it pleatsen fan media sûnder alt-tekst

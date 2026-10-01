@@ -532,6 +532,7 @@ lt:
       new:
         title: Kurti naują IP taisyklę
       no_ip_block_selected: IP taisyklės nebuvo pakeistos, nes nė viena nebuvo pasirinkta
+      reset: Išvalyti
       title: IP taisyklės
     relays:
       add_new: Pridėti naują pamainą
@@ -968,7 +969,6 @@ lt:
   deletes:
     challenge_not_passed: Įvesta informacija buvo neteisinga
     confirm_password: Įvesk dabartinį slaptažodį, kad patvirtintum savo tapatybę
-    confirm_username: Procedūros patvirtinimui įvesk savo naudotojo vardą
     proceed: Ištrinti paskyrą
     success_msg: Tavo paskyra buvo sėkmingai ištrinta
   disputes:
@@ -1048,6 +1048,7 @@ lt:
     today: šiandien
   imports:
     errors:
+      no_data: Šiame faile nėra jokių duomenų, atitinkančių nurodytą importo tipą.
       too_large: Failas per didelis.
     modes:
       merge: Sujungti
@@ -1156,7 +1157,6 @@ lt:
     next: Kitas
     older: Senesnis
     prev: Ankstesnis
-    truncate: "&hellip;"
   polls:
     errors:
       over_character_limit: negali būti ilgesnis nei %{max} simbolių
@@ -1235,7 +1235,6 @@ lt:
     appearance: Išvaizda
     authorized_apps: Leidžiamos programėlės
     back: Grįžti į Mastodon
-    delete: Paskyros trynimas
     development: Kūrimas
     edit_profile: Redaguoti profilį
     export: Eksportuoti
