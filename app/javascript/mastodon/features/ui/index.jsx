@@ -86,7 +86,7 @@ import {
   Quotes,
 } from './util/async-components';
 import { ColumnsContextProvider } from './util/columns_context';
-import { focusColumn, getFocusedItemIndex, focusItemSibling, focusFirstItem, getFocusedColumnIndex } from './util/focusUtils';
+import { focusColumn, getFocusedItemIndex, focusItemSibling, focusFirstItem, getFocusedColumnIndex, focusFirstVisibleItemInColumn } from './util/focusUtils';
 import { WrappedSwitch, WrappedRoute } from './util/react_router_helpers';
 import { CustomHomepage } from 'mastodon/features/custom_homepage';
 
@@ -523,7 +523,9 @@ class UI extends PureComponent {
   handleMoveUp = () => {
     const currentItemIndex = getFocusedItemIndex();
     if (currentItemIndex === -1) {
-      return focusColumn(getFocusedColumnIndex());
+      return isRedesignEnabled()
+        ? focusFirstVisibleItemInColumn(getFocusedColumnIndex())
+        : focusColumn(getFocusedColumnIndex);
     } else {
       return focusItemSibling(currentItemIndex, -1);
     }
@@ -532,7 +534,9 @@ class UI extends PureComponent {
   handleMoveDown = () => {
     const currentItemIndex = getFocusedItemIndex();
     if (currentItemIndex === -1) {
-      return focusColumn(getFocusedColumnIndex());
+      return isRedesignEnabled()
+        ? focusFirstVisibleItemInColumn(getFocusedColumnIndex())
+        : focusColumn(getFocusedColumnIndex);
     } else {
       return focusItemSibling(currentItemIndex, 1);
     }
