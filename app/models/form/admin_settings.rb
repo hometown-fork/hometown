@@ -49,6 +49,8 @@ class Form::AdminSettings
     landing_page
     wrapstodon
     email_footer_text
+    opt_in_server_directory
+    opt_in_server_recommendation
   ).freeze
 
   INTEGER_KEYS = %i(
@@ -72,6 +74,8 @@ class Form::AdminSettings
     default_federation
     require_invite_text
     captcha_enabled
+    opt_in_server_directory
+    opt_in_server_recommendation
     wrapstodon
   ).freeze
 
