@@ -8,6 +8,14 @@ sv:
     hosted_on: Mastodon-värd på %{domain}
     title: Om
   accounts:
+    api_errors:
+      2fa_required: Ditt konto kan inte användas utan att en andra autentiseringsfaktor har konfigurerats.
+      account_deleted: Ditt konto har tagits bort
+      account_suspended: Ditt konto har blivit avstängt
+      login_disabled: Ditt konto  är för närvarande inaktiverat
+      memorial: Ditt konto har gjorts om till ett minneskonto.
+      pending_approval: Ditt konto väntar för närvarande på modereringsgodkännande
+      pending_confirmation: Ditt konto saknar en bekräftad e-postadress
     errors:
       cannot_be_added_to_collections: Detta konto kan inte läggas till i samlingar.
     followers:
@@ -999,6 +1007,13 @@ sv:
         disabled: För ingen
         users: För inloggade lokala användare
       external:
+        directory: Serverkatalog
+        opt_in_server_directory:
+          description: Låt din server listas i serverkataloger, till exempel den som finns på https://joinmastodon.org/servers.
+          title: Låt din server listas i serverkatalogen.
+        opt_in_server_recommendation:
+          description: Tillåt att din server rekommenderas vid registrering i applikationer som de officiella Mastodon-klienterna.
+          title: Tillåt serverrekommendationer för din server
         preamble: Kontrollera hur mycket information om din server som delas med andra tjänster och hur identifierbar din server ska vara.
         privacy: Integritet
         publish_statistics: Publicera statistik

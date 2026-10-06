@@ -8,6 +8,14 @@ es-AR:
     hosted_on: Mastodon alojado en %{domain}
     title: Información
   accounts:
+    api_errors:
+      2fa_required: No se puede usar tu cuenta sin un segundo factor de autenticación configurado
+      account_deleted: Tu cuenta fue eliminada
+      account_suspended: Tu cuenta fue suspendida
+      login_disabled: Tu cuenta está actualmente deshabilitada
+      memorial: Tu cuenta se convirtó en una cuenta conmemorativa
+      pending_approval: Tu cuenta está pendiente de aprobación de moderación
+      pending_confirmation: A tu cuenta le falta una dirección de correo electrónico confirmada
     errors:
       cannot_be_added_to_collections: Esta cuenta no puede ser agregada a colecciones.
     followers:
@@ -999,6 +1007,13 @@ es-AR:
         disabled: A nadie
         users: A usuarios locales con sesiones abiertas
       external:
+        directory: Directorio del servidor
+        opt_in_server_directory:
+          description: Permití que tu servidor aparezca en los directorios del servidor como el que aparece en https://joinmastodon.org/servers.
+          title: Optá para que tu servidor aparezca en el directorio del servidor
+        opt_in_server_recommendation:
+          description: Permití que tu servidor sea recomendado al momento de registrarse en aplicaciones como los clientes oficiales de Mastodon.
+          title: Optá para que tu servidor sea recomendado
         preamble: Controlá cuánta información sobre tu servidor se comparte con otros servicios y cuán visible debería ser tu servidor.
         privacy: Privacidad
         publish_statistics: Publicar estadísticas

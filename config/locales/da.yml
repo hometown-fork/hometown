@@ -8,6 +8,14 @@ da:
     hosted_on: Mastodon hostet på %{domain}
     title: Om
   accounts:
+    api_errors:
+      2fa_required: Din konto kan ikke bruges uden at have oprettet en anden autentificeringsfaktor
+      account_deleted: Din konto er blevet slettet
+      account_suspended: Din konto er blevet suspenderet
+      login_disabled: Din konto er pt. deaktiveret
+      memorial: Din konto er blevet omdannet til et mindesmærke
+      pending_approval: Din konto afventer i øjeblikket moderationsgodkendelse
+      pending_confirmation: Din konto mangler en bekræftet e-mailadresse
     errors:
       cannot_be_added_to_collections: Denne konto kan ikke tilføjes til samlinger.
     followers:
@@ -999,6 +1007,13 @@ da:
         disabled: Til ingen
         users: Til indloggede lokale brugere
       external:
+        directory: Serverkatalog
+        opt_in_server_directory:
+          description: Tillad din server at blive opført i serverkateloger som det, der vises på https://joinmastodon.org/servers.
+          title: Lad din server blive en del af serverkataloget
+        opt_in_server_recommendation:
+          description: Tillad, at din server anbefales ved tilmelding i apps såsom de officielle Mastodon-klienter.
+          title: Lad din server komme i betragtning til serveranbefalinger
         preamble: Bestem, hvor mange oplysninger om din server der deles med andre tjenester, og hvor synlig din server skal være.
         privacy: Privatliv
         publish_statistics: Offentliggør statistikker

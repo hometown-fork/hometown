@@ -8,6 +8,14 @@ vi:
     hosted_on: "%{domain} vận hành nhờ Mastodon"
     title: Giới thiệu
   accounts:
+    api_errors:
+      2fa_required: Tài khoản của bạn không thể được sử dụng nếu chưa thiết lập yếu tố xác thực thứ hai
+      account_deleted: Tài khoản của bạn đã bị xóa
+      account_suspended: Tài khoản của bạn đã bị vô hiệu hóa
+      login_disabled: Tài khoản của bạn tạm thời bị cấm đăng nhập
+      memorial: Tài khoản của bạn đã được chuyển thành tài khoản tưởng niệm
+      pending_approval: Tài khoản của bạn hiện đang chờ phê duyệt kiểm duyệt
+      pending_confirmation: Tài khoản của bạn chưa được xác minh địa chỉ email
     errors:
       cannot_be_added_to_collections: Tài khoản này không thể thêm vào gói khởi đầu.
     followers:
@@ -983,6 +991,13 @@ vi:
         disabled: Không ai
         users: Để đăng nhập người cục bộ
       external:
+        directory: Danh mục Máy chủ
+        opt_in_server_directory:
+          description: Hãy cho phép máy chủ của bạn được liệt kê trong các danh mục máy chủ, chẳng hạn như danh mục có trên trang https://joinmastodon.org/servers.
+          title: Đăng ký máy chủ của bạn vào danh mục máy chủ
+        opt_in_server_recommendation:
+          description: Cho phép máy chủ của bạn được đề xuất khi người dùng đăng ký trên các ứng dụng như ứng dụng Mastodon chính thức.
+          title: Cho phép máy chủ của bạn tham gia tính năng đề xuất máy chủ
         preamble: Kiểm soát thông tin về máy chủ của bạn được chia sẻ với các dịch vụ khác và mức độ dễ dàng tìm thấy máy chủ của bạn.
         privacy: Riêng tư
         publish_statistics: Công khai số liệu thống kê
