@@ -8,6 +8,14 @@ it:
     hosted_on: Mastodon ospitato su %{domain}
     title: Info
   accounts:
+    api_errors:
+      2fa_required: Il tuo account non può essere utilizzato senza un secondo fattore di autenticazione impostato
+      account_deleted: Il tuo account è stato eliminato
+      account_suspended: Il tuo account è stato sospeso
+      login_disabled: Il tuo profilo è attualmente disabilitato
+      memorial: Il tuo account è stato trasformato in un memoriale
+      pending_approval: Il tuo account è attualmente in attesa di approvazione della moderazione
+      pending_confirmation: Al tuo account manca un indirizzo e-mail confermato
     errors:
       cannot_be_added_to_collections: Questo account non può essere aggiunto alle collezioni.
     followers:
@@ -999,6 +1007,13 @@ it:
         disabled: A nessuno
         users: Agli utenti locali connessi
       external:
+        directory: Directory dei Server
+        opt_in_server_directory:
+          description: Permetti al tuo server di essere elencato nelle directory dei server come quella presente su https://joinmastodon.org/servers.
+          title: Includi il tuo server nella directory dei server
+        opt_in_server_recommendation:
+          description: Consenti al tuo server di essere consigliato al momento dell'iscrizione in applicazioni come i client Mastodon ufficiali.
+          title: Includi il tuo server nei server consigliati
         preamble: Controlla quante informazioni sul tuo server vengono condivise con altri servizi e quanto dovrebbe essere individuabile il tuo server.
         privacy: Privacy
         publish_statistics: Pubblica le statistiche

@@ -8,6 +8,14 @@ de:
     hosted_on: Mastodon, eingerichtet auf %{domain}
     title: Über
   accounts:
+    api_errors:
+      2fa_required: Dein Konto darf ohne eine zweite Authentisierungsmethode nicht verwendet werden
+      account_deleted: Dein Konto wurde gelöscht
+      account_suspended: Dein Konto wurde gesperrt
+      login_disabled: Dein Konto wurde deaktiviert
+      memorial: Dein Konto wurde in eine Gedenkseite umgewandelt
+      pending_approval: Dein Konto steht noch zur Überprüfung aus
+      pending_confirmation: Dein Konto hat noch keine bestätigte E-Mail-Adresse
     errors:
       cannot_be_added_to_collections: Dieses Konto darf keinen Sammlungen hinzugefügt werden.
     followers:
@@ -269,7 +277,7 @@ de:
         update_user_role: Rolle bearbeiten
         update_username_block: Regel für Profilnamen aktualisieren
       actions:
-        approve_appeal_html: "%{name} genehmigte den Einspruch gegen eine Moderationsmaßnahme von %{target}"
+        approve_appeal_html: "%{name} genehmigte den Einspruch gegen eine Moderationsentscheidung von %{target}"
         approve_user_html: "%{name} genehmigte die Registrierung von %{target}"
         assigned_to_self_report_html: "%{name} wies sich die Meldung %{target} selbst zu"
         change_email_user_html: "%{name} änderte die E-Mail-Adresse von %{target}"
@@ -319,7 +327,7 @@ de:
         not_usable_tag_html: darf nicht verwendet werden
         promote_user_html: "%{name} beförderte %{target}"
         publish_terms_of_service_html: "%{name} aktualisierte die Nutzungsbedingungen"
-        reject_appeal_html: "%{name} lehnte den Einspruch gegen eine Moderationsmaßnahme von %{target} ab"
+        reject_appeal_html: "%{name} lehnte den Einspruch gegen eine Moderationsentscheidung von %{target} ab"
         reject_user_html: "%{name} hat die Registrierung von %{target} abgelehnt"
         remove_avatar_user_html: "%{name} entfernte das Profilbild von %{target}"
         reopen_report_html: "%{name} öffnete die Meldung %{target} wieder"
@@ -527,7 +535,7 @@ de:
       resolved_dns_records_hint_html: Die Domain wird zu den folgenden MX-Domains aufgelöst, die für die Annahme von E-Mails zuständig sind. Das Sperren einer MX-Domain sperrt Anmeldungen aller E-Mail-Adressen, die dieselbe MX-Domain verwenden, auch wenn die sichtbare Domain anders lautet. <strong>Achte daher darauf, keine großen E-Mail-Anbieter versehentlich zu sperren.</strong>
       resolved_through_html: Durch %{domain} aufgelöst
       search: Suchen
-      title: E-Mail-Domains
+      title: Gesperrte E-Mail-Domains
     email_subscriptions:
       accounts:
         account: Konto
@@ -999,6 +1007,13 @@ de:
         disabled: Niemandem
         users: Für angemeldete lokale Benutzer*innen
       external:
+        directory: Serververzeichnis
+        opt_in_server_directory:
+          description: Erlaubt die Aufnahme deines Servers in öffentlichen Verzeichnissen (wie z. B. unter https://joinmastodon.org/servers).
+          title: Diesen Server in Serververzeichnissen aufnehmen
+        opt_in_server_recommendation:
+          description: Ermöglicht, dass dieser Server bei Registrierungen in Apps (wie den offiziellen Mastodon-Apps) empfohlen wird.
+          title: Diesen Server in Serverempfehlungen aufnehmen
         preamble: Lege fest, wie viele Informationen über deinen Server mit anderen Diensten und Servern geteilt werden – und bestimme so, wie gut sich die Inhalte deines Servers verbreiten dürfen.
         privacy: Datenschutz
         publish_statistics: Statistiken bekanntgeben
@@ -2435,7 +2450,7 @@ de:
     follow_limit_reached: Du kannst nicht mehr als %{limit} Profilen folgen
     generic_access_help_html: Falls du Probleme hast, auf dein Konto zuzugreifen, tritt bitte mit uns über die E-Mail %{email} in Kontakt
     go_to_sso_account_settings: Kontoeinstellungen des Identitätsanbieters aufrufen
-    inactive_sign_in_confirmation: Du hast dich nach längerer Zeit wieder in dein Konto angemeldet. Um einen unbefugten Zugriff zu erschweren, haben wir einen Sicherheitscode an deine E-Mail-Adresse verschickt.
+    inactive_sign_in_confirmation: Du hast dich nach längerer Zeit wieder in dein Konto angemeldet. Um sicherzugehen, dass du das warst, haben wir einen Sicherheitscode an deine E-Mail-Adresse verschickt.
     inactive_sign_in_title: Sicherheitscode bestätigen
     invalid_otp_token: Ungültiger Code der Zwei-Faktor-Authentisierung (2FA)
     invalid_sign_in_token: Ungültiger Sicherheitscode
