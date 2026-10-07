@@ -339,6 +339,8 @@ kab:
     export_domain_blocks:
       no_file: Ulac afaylu yettwafernen
     fasp:
+      capabilities:
+        enable: Rmed
       debug:
         callbacks:
           delete: Kkes
@@ -520,6 +522,8 @@ kab:
         all: I medden akk
         disabled: Ɣef ula yiwen
         users: Ɣef yimseqdacen idiganen i yeqqnen
+      external:
+        directory: Akaram n uqeddac
       feed_access:
         modes:
           public: Yal yiwen

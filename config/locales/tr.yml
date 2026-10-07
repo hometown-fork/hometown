@@ -8,6 +8,14 @@ tr:
     hosted_on: Mastodon %{domain} üzerinde barındırılıyor
     title: Hakkında
   accounts:
+    api_errors:
+      2fa_required: İkinci bir kimlik doğrulama faktörü ayarlanmadan hesabınız kullanılamaz
+      account_deleted: Hesabınız silindi
+      account_suspended: Hesabınız askıya alındı
+      login_disabled: Hesabınız şu an devre dışı
+      memorial: Hesabınız anma hesabına dönüştürüldü
+      pending_approval: Hesabınız şu anda moderasyon onayı bekliyor
+      pending_confirmation: Hesabınızda onaylanmış bir e-posta adresi bulunmuyor
     errors:
       cannot_be_added_to_collections: Bu hesap koleksiyonlara eklenemez.
     followers:
@@ -999,6 +1007,13 @@ tr:
         disabled: Hiç kimseye
         users: Oturum açan yerel kullanıcılara
       external:
+        directory: Sunucu Dizini
+        opt_in_server_directory:
+          description: Sunucunuzun, https://joinmastodon.org/servers adresinde yer alan gibi sunucu dizinlerinde listelenmesine izin verin.
+          title: Sunucunuzu sunucu dizinine ekleyin
+        opt_in_server_recommendation:
+          description: Resmi Mastodon istemcileri gibi uygulamalarda, kayıt sırasında sunucunuzun önerilmesine izin verin.
+          title: Sunucunuzu sunucu önerilerine ekleyin
         preamble: Sunucunuzla ilgili bilgilerin diğer hizmetlerle ne ölçüde paylaşılacağını ve sunucunuzun ne kadar kolay bulunabilir olacağını kontrol edin.
         privacy: Gizlilik
         publish_statistics: İstatistikleri yayınla

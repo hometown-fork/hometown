@@ -10,6 +10,14 @@ zh-TW:
     hosted_on: 於 %{domain} 託管之 Mastodon 站點
     title: 關於本站
   accounts:
+    api_errors:
+      2fa_required: 您的帳號必須設定兩階段驗證方能使用
+      account_deleted: 您的帳號已被刪除
+      account_suspended: 您的帳號已被停權
+      login_disabled: 您的帳號目前已被停用
+      memorial: 您的帳號已被轉換為紀念帳號
+      pending_approval: 您的帳號目前正在等待管理員審核
+      pending_confirmation: 您的帳號欠缺已驗證之電子郵件地址
     errors:
       cannot_be_added_to_collections: 此帳號無法被加至收藏名單中。
     followers:
@@ -987,6 +995,13 @@ zh-TW:
         disabled: 至沒有人
         users: 套用至所有登入的本站使用者
       external:
+        directory: 伺服器目錄
+        opt_in_server_directory:
+          description: 允許您的伺服器被列於像是 https://joinmastodon.org/servers 上推薦之伺服器目錄中。
+          title: 將您的伺服器加入伺服器目錄中
+        opt_in_server_recommendation:
+          description: 允許您的伺服器於註冊流程時被像是官方 Mastodon 客戶端等應用程式中推薦。
+          title: 允許您的伺服器加入伺服器推薦中
         preamble: 控制您的伺服器與其他伺服器分享多少資訊以及您的伺服器之可發現性。
         privacy: 隱私權
         publish_statistics: 公開統計資料
