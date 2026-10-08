@@ -257,6 +257,8 @@ nl:
         setting_display_media_default: Standaard
         setting_display_media_hide_all: Alles verbergen
         setting_display_media_show_all: Alles tonen
+        setting_display_own_boosts: Mijn eigen boosts op mijn hoofdtijdlijn weergeven
+        setting_display_own_posts: Mijn eigen berichten op mijn hoofdtijdlijn weergeven
         setting_emoji_style: Emoji-stijl
         setting_expand_spoilers: Berichten met inhoudswaarschuwingen altijd uitklappen
         setting_hide_network: Jouw volgers en wie je volgt verbergen
