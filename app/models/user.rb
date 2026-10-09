@@ -117,6 +117,7 @@ class User < ApplicationRecord
   after_create :increment_invite_uses
   after_commit :send_pending_devise_notifications
   after_create_commit :trigger_webhooks
+  after_commit :reload_home_feed, if: :saved_change_to_settings, on: [:create, :update]
 
   normalizes :locale, with: ->(locale) { I18n.available_locales.exclude?(locale.to_sym) ? nil : locale }
   normalizes :time_zone, with: ->(time_zone) { ActiveSupport::TimeZone[time_zone].nil? ? nil : time_zone }
@@ -543,7 +544,19 @@ class User < ApplicationRecord
     TriggerWebhookWorker.perform_async('account.created', 'Account', account_id)
   end
 
-  def increment_invite_uses
-    invite&.increment!(:uses)
+  def reload_home_feed
+    reblog_setting = initial_setting_display_own_boosts
+    post_setting = initial_setting_display_own_posts
+
+    # hand the initial status of the settings, to check at execution, to which it changed
+    MultiMergeIntoOwnHomeWorker.perform_async(account.id, post_setting, reblog_setting)
+  end
+
+  def initial_setting_display_own_boosts
+    saved_change_to_settings.first['display_own_boosts']
+  end
+
+  def initial_setting_display_own_posts
+    saved_change_to_settings.first['display_own_posts']
   end
 end
