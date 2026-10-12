@@ -8,7 +8,7 @@ RSpec.describe Rake::Task do
     subject { described_class['dev:populate_sample_data'] }
 
     before do
-      Rails.application.load_tasks unless described_class.tasks.any?
+      Rails.application.load_tasks
       subject.reenable
     end
 
