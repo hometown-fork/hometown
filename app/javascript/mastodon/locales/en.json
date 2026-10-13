@@ -1447,6 +1447,7 @@
   "status.media.show": "Click to show",
   "status.media_hidden": "Media hidden",
   "status.mention": "Mention @{name}",
+  "status.message": "Message @{name}",
   "status.more": "More",
   "status.mute": "Mute @{name}",
   "status.mute_conversation": "Mute conversation",
