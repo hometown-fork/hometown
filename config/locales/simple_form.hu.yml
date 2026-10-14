@@ -65,7 +65,7 @@ hu:
         setting_display_media_hide_all: Figyelmeztetés az összes média megjelenítése előtt
         setting_display_media_show_all: Figyelmeztetés minden média megjelenítése esetén, köztük a kényesnek jelöltek esetén is
         setting_emoji_style: Az emodzsik megjelenítési módja. Az „Automatikus” megpróbálja a natív emodzsikat használni, de az örökölt böngészők esetén a Twemojira vált vissza.
-        setting_quick_boosting_html: Ha engedélyezve van, akkor a %{boost_icon} Megtolás azonnal megtörténik, ahelyett hogy megnyitná a megtolás/idézés legördülő menüje. Az idézési műveletet áthelyezi a %{options_icon} (Beállítások) menübe.
+        setting_quick_boosting_html: Ha engedélyezve van, akkor a %{boost_icon} Megtolás azonnal megtörténik, ahelyett hogy megnyitná a megtolás/idézés legördülő menüjét. Az idézési műveletet áthelyezi a %{options_icon} (Beállítások) menübe.
         setting_use_blurhash: A kihomályosítás az eredeti képből történik, de minden részletet elrejt
         setting_use_pending_items: Idővonal frissítése csak kattintásra automatikus görgetés helyett
         username: Betűk, számok és alávonások használhatók
@@ -345,6 +345,7 @@ hu:
       notification_emails:
         appeal: Valaki fellebbez egy moderátori döntéssel szemben
         digest: Összevont e-mailek küldése
+        end_of_support: A jelenlegi Mastodon-verzió közelít a támogatásá végéhez
         favourite: Valaki kedvencnek jelölte a bejegyzésedet
         follow: E-mail küldése, amikor valaki követni kezd téged
         follow_request: E-mail küldése, amikor valaki követni szeretne téged

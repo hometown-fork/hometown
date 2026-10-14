@@ -64,6 +64,8 @@ da:
       custom: Tilpasset
       delete: Slet data
       deleted: Slettet
+      deletion_irreversible: Denne kontos data er blevet slettet permanent.
+      deletion_reversible_hint_html: Denne konto afventer sletning, og dataene vil blive fuldstændigt slettet %{date}.
       demote: Degradér
       destroyed_msg: "%{username}s data er nu sat i kø mhp. snarlig sletning"
       disable: Frys
@@ -198,6 +200,7 @@ da:
         create_user_role: Opret rolle
         create_username_block: Opret brugernavn-regel
         demote_user: Degradér bruger
+        destroy_account: Slet kontodata
         destroy_announcement: Slet bekendtgørelse
         destroy_canonical_email_block: Slet e-mailblokering
         destroy_custom_emoji: Slet tilpasset emoji
@@ -266,6 +269,7 @@ da:
         create_user_role_html: "%{name} oprettede %{target}-rolle"
         create_username_block_html: "%{name} tilføjede regel for brugernavne indeholdende %{target}"
         demote_user_html: "%{name} degraderede brugeren %{target}"
+        destroy_account_html: "%{name} slettede kontodata for %{target}"
         destroy_announcement_html: "%{name} slettede bekendtgørelsen %{target}"
         destroy_canonical_email_block_html: "%{name} afblokerede e-mailen med hash'et %{target}"
         destroy_collection_html: "%{name} fjernede samling af %{target}"
@@ -289,7 +293,11 @@ da:
         enable_relay_html: "%{name} aktiverede videresendelsen %{target}"
         enable_sign_in_token_auth_user_html: "%{name} aktiverede e-mailtoken godkendelse for %{target}"
         enable_user_html: "%{name} aktiverede indlogning for brugeren %{target}"
+        listable_tag_html: kan foreslås
         memorialize_account_html: "%{name} gjorde %{target}s konto til en mindeside"
+        not_listable_tag_html: foreslås ikke
+        not_trendable_tag_html: vises ikke under trends
+        not_usable_tag_html: kan ikke anvendes
         promote_user_html: "%{name} forfremmede brugeren %{target}"
         publish_terms_of_service_html: "%{name} offentliggjorde opdateringer til tjenestevilkårene"
         reject_appeal_html: "%{name} afviste moderationsafgørelsesappellen fra %{target}"
@@ -302,6 +310,7 @@ da:
         sensitive_account_html: "%{name} markerede %{target}s medier som sensitive"
         silence_account_html: "%{name} begrænsede %{target}s konto"
         suspend_account_html: "%{name} suspenderede %{target}s konto"
+        trendable_tag_html: kan vises under trends
         unassigned_report_html: "%{name} fjernede tildelingen af rapporten %{target}"
         unblock_email_account_html: "%{name} afblokerede %{target}s e-mailadresse"
         unsensitive_account_html: "%{name} fjernede sensitivmarkeringen af %{target}s medier"
@@ -314,8 +323,10 @@ da:
         update_ip_block_html: "%{name} ændrede reglen for IP'en %{target}"
         update_report_html: "%{name} opdaterede rapporten %{target}"
         update_status_html: "%{name} opdaterede indlægget fra %{target}"
+        update_tag_html: "%{name} ændrede %{target}-indstillinger til: "
         update_user_role_html: "%{name} ændrede %{target}-rolle"
         update_username_block_html: "%{name} opdaterede regel for brugernavne indeholdende %{target}"
+        usable_tag_html: kan anvendes;
       deleted_account: slettet konto
       empty: Ingen logger fundet.
       filter_by_action: Filtrér efter handling
@@ -730,6 +741,8 @@ da:
       new:
         title: Opret ny IP-regel
       no_ip_block_selected: Ingen IP-regler blev ændret (ingen var valgt)
+      reset: Nulstil
+      search: Søg
       title: IP-regler
     relationships:
       title: "%{acct}-relationer"
@@ -1004,13 +1017,17 @@ da:
       critical_update: Kritisk – opdatér hurtigst muligt
       description: Det anbefales at holde din Mastodon-installation opdateret for at drage fordel af de nyeste fejlrettelser og funktioner. Desuden er det nogle gange afgørende at opdatere Mastodon rettidigt for at undgå sikkerhedsproblemer. Af disse grunde tjekker Mastodon for opdateringer hvert 30. minut og giver dig besked i henhold til dine præferencer for e-mail-notifikationer.
       documentation_link: Læs mere
+      nearing_eol: Udnerstøttelse af den version, du kører, ophører %{date}. Overvej at opdatere.
       release_notes: Udgivelsesnoter
+      supported_until: Support ophører %{date}
       title: Tilgængelige opdateringer
       type: Type
       types:
         major: Større version
         minor: Mindre version
         patch: Patch-version – fejlrettelser og ukomplicerede ændringer
+      unsupported_branch: Den version, du kører i øjeblikket, understøttes ikke. Opdater venligst så snart som muligt.
+      unsupported_since: Ikke længere understøttet siden %{date}
       version: Version
     statuses:
       account: Forfatter
@@ -1276,6 +1293,15 @@ da:
     auto_close_registrations:
       body: Grundet manglende nylig moderatoraktivitet er registreringsproceduren på %{instance} automatisk ændret til at kræve manuel gennemgang for at forhindre, at %{instance} bruges som platform for potentielle dårlige aktører. Proceduren kan til enhver tid ændre igen til åbne registreringer.
       subject: Registreringsproceduren for %{instance} er automatisk ændret til at kræve godkendelse
+    end_of_support_out_of_support_warning:
+      body: Den version af Mastodon, der i øjeblikket er i brug på din server, understøttes ikke længere. Vi anbefaler, at du opdaterer så hurtigt som muligt!
+      subject: Mastodon %{branch} brugt på %{instance} er nu ikke understøttet!
+    end_of_support_three_months_warning:
+      body: Den version af Mastodon, der i øjeblikket er i brug på din server, vil ikke længere være understøttet om 3 måneder. Du bør måske opdatere til en nyere version (branch) i god tid.
+      subject: Mastodon %{branch}, som bruges på %{instance}, understøttes ikke længere om 3 måneder.
+    end_of_support_two_weeks_warning:
+      body: Den version af Mastodon, der i øjeblikket er i brug på din server, vil ikke længere være understøttet om to uger. Vi anbefaler, at du opdaterer til en nyere version (branch) i god tid.
+      subject: Mastodon %{branch}, som bruges på %{instance}, understøttes ikke længere om 2 uger.
     new_appeal:
       actions:
         delete_statuses: for sletning af vedkommendes indlæg
@@ -1470,9 +1496,11 @@ da:
   deletes:
     challenge_not_passed: De angivne oplysninger er forkerte
     confirm_password: Angiv din nuværende adgangskode for at bekræfte din identitet
-    confirm_username: Angiv dit brugernavn for at bekræfte proceduren
+    confirm_username: Bekræft brugernavn
+    confirm_username_hint_html: Skriv venligst <code>%{username}</code> for at bekræfte den konto, du vil slette
     proceed: Slet konto
     success_msg: Din konto er nu slettet
+    title: Slet konto %{acct}
     warning:
       before: 'Inder der fortsættes, læs venligst disse notater omhyggeligt:'
       caches: Indhold, cachelagret af andre servere, kan fortsat eksistere
@@ -1572,6 +1600,7 @@ da:
       content: Beklager, noget gik galt hos os.
       title: Denne side er forkert
     '503': Siden kunne ikke vises grundet en midlertidig serverfejl.
+    go_home: Gå hjem
     noscript_html: For brug af Mastodon-webapplikationen, så aktivér JavaScript. Alternativt, prøv en af disse <a href="%{apps_path}">apps</a> til Mastodon til din platform.
   existing_username_validator:
     not_found: kunne ikke finde en lokal bruger med dette brugenavn
@@ -1668,6 +1697,7 @@ da:
       incompatible_type: Inkompatibel med valgte importtype
       invalid_csv_file: 'Ugyldig CSV-fil. Fejl: %{error}'
       invalid_json_file: 'Ugyldig JSON-fil. Fejl: %{error}'
+      no_data: Denne fil indeholder ikke nogen data, der matcher den givne importtype
       over_rows_processing_limit: indeholder mere end %{count} rækker
       status_not_found_warning: Nogle af dine filtre skjuler bestemte indlæg, som denne server ikke kender til. Disse indlæg bliver ikke automatisk filtreret, hvis serveren finder dem senere.
       too_large: Filen for stor
@@ -1911,6 +1941,7 @@ da:
     administration_emails: Admin e-mailnotifikationer
     email_events: Begivenheder for e-mailnotifikationer
     email_events_hint: 'Vælg begivenheder, for hvilke notifikationer skal modtages:'
+    moderation_emails: Moderator e-mailnotifikationer
   number:
     human:
       decimal_units:
@@ -1934,7 +1965,7 @@ da:
     next: Næste
     older: Ældre
     prev: Foregående
-    truncate: "&hellip;"
+    truncate_html: "&hellip;"
   polls:
     errors:
       already_voted: Du har allerede stemt i denne afstemning
@@ -2065,7 +2096,6 @@ da:
     appearance: Udseende
     authorized_apps: Godkendte apps
     back: Tilbage til Mastodon
-    delete: Kontosletning
     development: Udvikling
     edit_profile: Redigér profil
     export: Eksport

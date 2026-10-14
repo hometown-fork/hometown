@@ -42,12 +42,13 @@
   }
 
   p {
+    overflow: hidden;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
+    line-clamp: 2;
     font-size: 16px;
     line-height: 24px;
-    text-overflow: ellipsis;
   }
 }
 
@@ -79,7 +80,7 @@
   :global(.skeleton) {
     height: 40px;
     border-radius: 12px;
-    background: var(--color-bg-overlay-highlight);
+    background: var(--color-bg-highlight);
   }
 }
 

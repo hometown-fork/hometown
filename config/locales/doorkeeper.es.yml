@@ -82,7 +82,7 @@ es:
       messages:
         access_denied: El propietario del recurso o servidor de autorización denegó la petición.
         credential_flow_not_configured: Las credenciales de contraseña del propietario del recurso falló debido a que Doorkeeper.configure.resource_owner_from_credentials está sin configurar.
-        invalid_client: La autenticación del cliente falló debido o a que es un cliente desconocido o no está incluida la autenticación del cliente o el método de autenticación no está confirmado.
+        invalid_client: La autentificación del cliente falló debido o a que es un cliente desconocido o no está incluida la autentificación del cliente o el método de autentificación no está confirmado.
         invalid_code_challenge_method:
           one: El code_challenge_method tiene que ser %{challenge_methods}.
           other: El code_challenge_method tiene que ser uno entre %{challenge_methods}.
@@ -169,7 +169,7 @@ es:
       admin:write:reports: realizar acciones de moderación en informes
       crypto: usar cifrado de extremo a extremo
       follow: modificar las relaciones entre cuentas
-      profile: leer solo la información del perfil de tu cuenta
+      profile: leer sólo la información del perfil de tu cuenta
       push: recibir tus notificaciones push
       read: leer los datos de tu cuenta
       read:accounts: ver información de cuentas
