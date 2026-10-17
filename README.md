@@ -56,8 +56,6 @@ Mastodon has a feature called "quote tweeting" that lets you embed what someone 
 
 <img width="600" src="http://tinysubversions.com/pics/quote-tweet.png" alt="An example of a quote tweet from Twitter.">
 
-> Hometown doesn't support quoting articles yet... but it will.
-
 ## Better list management
 
 If Hometown is going to be a universal reader, you're going to need better control over organizing your feeds than mainline Mastodon provides.
