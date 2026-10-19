@@ -23,6 +23,7 @@ defaults: &defaults
   noindex: false
   norss: false
   theme: 'default'
+  theme_color: 'indigo'
   thumbnail_description: ''
   trends: true
   trends_as_landing_page: false
