@@ -8,6 +8,14 @@ eo:
     hosted_on: "%{domain} estas nodo de Mastodon"
     title: Prio
   accounts:
+    api_errors:
+      2fa_required: Via konto ne povas esti uzita sen agordado de dua faktoro por aŭtentigo
+      account_deleted: Via konto estis forigita
+      account_suspended: Via konto estis limigita
+      login_disabled: Via konto estas nune malŝaltita
+      memorial: Via konto estis memorigaĵigita
+      pending_approval: Via konto nune necesas aprobon de moderigantoj
+      pending_confirmation: En via konto mankas konfirmita retpoŝtadreso
     errors:
       cannot_be_added_to_collections: Ĉi tiu konto ne povas esti aldonita al kolektoj.
     followers:
@@ -73,6 +81,10 @@ eo:
       disable_sign_in_token_auth: Malebligu retpoŝtan ĵeton-aŭtentikigon
       disable_two_factor_authentication: Malŝalti 2FA-n
       disabled: Frostigita
+      discoverable:
+        disabled: Autoro ne permesis esti malkovrebla
+        enabled: Autoro permesis esti malkovrebla
+        title: Malkovreblaj
       display_name: Montrata nomo
       domain: Domajno
       edit: Redakti
@@ -81,8 +93,15 @@ eo:
       enable: Malfrostigi
       enable_sign_in_token: Ŝalti defion de sekureca kodo
       enable_sign_in_token_auth: Ebligu retpoŝtan ĵeton-aŭtentikigon
+      enable_unconfirmed: Permesi konfirman retpoŝton
       enabled: Ebligita
       enabled_msg: Sukcese malfrostigis konton de %{username}
+      follow_recommendations:
+        allowed: Permesita
+        suppress: Subremi rekomendaĵojn de sekvado
+        suppressed: Subpremita
+        title: Rekomendoj de sekvado
+        unsuppress: Restarigi ĉiujn sekvorekomendojn
       followers: Sekvoj
       follows: Sekvatoj
       header: Kapa bildo
@@ -128,6 +147,7 @@ eo:
       push_subscription_expires: Eksvalidiĝo de la abono al PuSH
       redownload: Aktualigi profilon
       redownloaded_msg: Sukcese aktualigis profilon de %{username} el origino
+      registration_app: Aplikaĵo de registrado
       reject: Malakcepti
       rejected_msg: Sukcese malaprobis aliĝ-peton de %{username}
       remote_suspension_irreversible: La informoj de ĉi tiu konto estis neinversigeble forigitaj.
@@ -167,6 +187,12 @@ eo:
       suspension_irreversible: La datumoj de ĉi tiu konto estas porĉiame forigitaj. Vi povas malsuspendi tiun konton por igi ĝin uzebla, sed ĝi ne rehavos ajnan datumon kiun ĝi antaŭe havis.
       suspension_reversible_hint_html: La konto estas suspendita, kaj la datumoj estos komplete forigitaj je %{date}. Ĝis tiam, la konto povas esti malsuspendita sen flankefiko. Se vi deziras tuj forigi ĉiujn datumojn de la konto, vi povas fari tion sube.
       title: Kontoj
+      trends:
+        allow: Permesi
+        allowed: Permesita
+        disallow: Malpermesi
+        disallowed: Malpermesita
+        title: Aktualaĵoj
       unblock_email: Malbloki retpoŝtadresojn
       unblocked_email_msg: Sukcese malblokis la retpoŝtadreson de %{username}
       unconfirmed_email: Nekonfirmita retpoŝto
@@ -1106,9 +1132,6 @@ eo:
     warning_presets:
       add_new: Aldoni novan
       delete: Forigi
-      edit_preset: Redakti avertan antaŭagordon
-      empty: Vi ankoraŭ ne difinis iun ajn antaŭagordon de averto.
-      title: Antaŭdifinoj de averto
     webhooks:
       add_new: Aldoni finpunkton
       delete: Forigi
