@@ -16,6 +16,7 @@ vi:
       account_migration:
         acct: Nhập tên_người_dùng@máy chủ của tài khoản bạn muốn chuyển sang
       account_warning_preset:
+        action_category: Chọn hành động kiểm duyệt mà phản hồi này nên dùng. Chọn "Tất cả hành động" nếu phản hồi áp dụng nhiều hơn một hành động.
         text: Bạn có thể dùng URL, hashtag và nhắc đến
         title: Tùy chọn. Không cho người nhận xem
       admin_account_action:
@@ -192,6 +193,7 @@ vi:
       account_migration:
         acct: Tài khoản mới
       account_warning_preset:
+        action_category: Gán hành động kiểm duyệt
         text: Nội dung phản hồi
         title: Tựa đề
       admin_account_action:
@@ -200,6 +202,7 @@ vi:
         text: Tùy chỉnh phản hồi
         type: Hành động
         types:
+          all_actions: Mọi hành động
           disable: Khóa
           none: Cảnh cáo
           sensitive: Nhạy cảm
@@ -272,7 +275,6 @@ vi:
         setting_system_scrollbars_ui: Thanh cuộn mặc định hệ thống
         setting_theme: Giao diện
         setting_theme_color: Màu chủ đề
-        setting_trends: Hiện xu hướng trong ngày
         setting_unfollow_modal: Hỏi trước khi bỏ theo dõi ai đó
         setting_use_blurhash: Làm mờ phương tiện bị ẩn
         setting_use_pending_items: Chế độ chậm
@@ -358,6 +360,7 @@ vi:
         follow: Ai đó theo dõi bạn
         follow_request: Ai đó yêu cầu theo dõi bạn
         mention: Ai đó nhắc đến bạn
+        moderation_suggestions: Đã có những đề xuất kiểm duyệt tự động
         pending_account: Phê duyệt tài khoản mới
         quote: Ai đó trích dẫn bạn
         reblog: Ai đó đăng lại tút của bạn
