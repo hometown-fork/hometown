@@ -14,7 +14,7 @@ tr:
       account_suspended: Hesabınız askıya alındı
       login_disabled: Hesabınız şu an devre dışı
       memorial: Hesabınız anma hesabına dönüştürüldü
-      pending_approval: Hesabınız şu anda moderasyon onayı bekliyor
+      pending_approval: Hesabınız şu anda denetim onayı bekliyor
       pending_confirmation: Hesabınızda onaylanmış bir e-posta adresi bulunmuyor
     errors:
       cannot_be_added_to_collections: Bu hesap koleksiyonlara eklenemez.
@@ -689,7 +689,7 @@ tr:
       unsuppress: Takip önerisini geri getir
     instances:
       advisories:
-        title: Moderasyon aboneliklerinden gelen uyarılar
+        title: Denetim aboneliklerinden gelen uyarılar
       audit_log:
         title: En Son Denetim Günlükleri
         view_all: Tüm denetim günlüklerini görüntüle
@@ -713,7 +713,7 @@ tr:
         comment: İç not
         description_html: Bu alan adındaki ve alt alan adlarındaki tüm hesaplara uygulanacak içerik ilkeleri belirleyebilirsiniz.
         limited_federation_mode_description_html: Bu alan adıyla birleştirmeye izin verip vermediğinizi seçebilirsiniz.
-        moderation_subscription: Moderasyon aboneliği
+        moderation_subscription: Denetim aboneliği
         policies:
           reject_media: Medyayı reddet
           reject_reports: Şikayetleri reddet
@@ -811,8 +811,8 @@ tr:
         never: Önerilen eylemleri asla otomatik olarak uygulamayın. Bunun yerine her zaman bir öneri oluşturun.
         safely: Yerel kullanıcılarla olan mevcut takip ilişkilerini bozmayacaksa, önerilen eylemleri uygulayın. Böyle durumlarda, bunun yerine bir öneri oluşturulacaktır.
       delete: Sil
-      destroyed_msg: Moderasyon aboneliği başarıyla silindi
-      empty: Henüz hiçbir moderasyon listesine abone olunmamıştır.
+      destroyed_msg: Denetim aboneliği başarıyla silindi
+      empty: Henüz hiçbir denetim listesine abone olunmamıştır.
       last_synced_at: Son senkronizasyon zamanı
       list_action: Abonelik türü
       list_actions:
@@ -830,7 +830,7 @@ tr:
       name: Ad
       new:
         create: Abone ol
-        title: Yeni moderasyon aboneliği
+        title: Yeni denetim aboneliği
       override_unattributed: Manuel engellemeleri geçersiz kıl
       override_unattributed_hint: Bu aboneliğin, güvenlik bildirimlerini otomatik olarak uygularken mevcut manuel engellemeleri otomatik olarak yükseltmesine veya devralmasına izin verin.
       policies:
@@ -838,25 +838,25 @@ tr:
         apply_advisories_safely: İlişkileri bozmayan önerileri otomatik olarak uygular
         apply_retractions: Geri çekmeleri otomatik olarak uygular
       priority: Öncelik
-      priority_hint: Moderasyon abonelikleri öncelik sırasına göre değerlendirilir; daha düşük numaralı abonelikler, daha yüksek numaralı aboneliklere göre önceliklidir.
+      priority_hint: Denetim abonelikleri öncelik sırasına göre değerlendirilir; daha düşük numaralı abonelikler, daha yüksek numaralı aboneliklere göre önceliklidir.
       retract_automatically: Uyarıları otomatik olarak geri çek
       retract_automatically_hint: Abonelik kapsamında ilgili öğe kaldırıldığında, politika değişikliklerinin geri alınması veya alt sınıfa indirilmesine izin verilip verilmeyeceği. Otomatik geri alma özelliği etkinleştirildiğinde ve daha düşük öncelikli bir listede eşdeğer bir öneri varsa, bu öneri benimsenir. Otomatik geri alma özelliği devre dışı bırakıldığında ise bunun yerine bir öneri oluşturulur.
       show:
-        delete_confirm: Bu moderasyon aboneliğini silmek istediğinizden emin misiniz?
+        delete_confirm: Bu denetim aboneliğini silmek istediğinizden emin misiniz?
         edit: Aboneliği düzenle
         empty: Bu abonelik için henüz herhangi bir öneri yoktur.
-        title: 'Moderasyon aboneliği: %{name}'
+        title: 'Denetim aboneliği: %{name}'
       tabs:
         logs: Günlükler
         subscriptions: Abonelikler
         suggestions: Öneriler
-      title: Moderasyon abonelikleri
+      title: Denetim abonelikleri
       type: Tür
       types:
         csv_list: CSV listesi
       url: URL
     moderation_subscriptions_logs:
-      title: Moderasyon abonelikleri günlükleri
+      title: Denetim abonelikleri günlükleri
     moderation_suggestions:
       actions:
         accept: İzin ver
@@ -872,13 +872,13 @@ tr:
         accept: şu an izin verilmiş
         limit: şu an sınırlanmış
         reject: şu an askıya alınmış
-      description: Aşağıda, moderasyon aboneliklerinizden gelen öneriler, öncelik sırasına göre listelenmiştir.
+      description: Aşağıda, denetim aboneliklerinizden gelen öneriler, öncelik sırasına göre listelenmiştir.
       destroyed_msg: "%{target_key} için öneri başarıyla reddedildi"
       dismiss: Önerileri görmezden gel
-      empty: Şu anda herhangi bir moderasyon önerisi yoktur.
+      empty: Şu anda herhangi bir denetim önerisi yoktur.
       retracted_msg: "%{target_key} için politika başarıyla geri çekildi"
       suggested_from_html: "%{link} tarafından önerilmiştir"
-      title: Moderasyon önerileri
+      title: Denetim önerileri
       unable_to_apply_msg: "%{target_key} için öneri uygulanamadı"
     relationships:
       title: "%{acct} kişisinin ilişkileri"
@@ -1424,10 +1424,17 @@ tr:
     warning_presets:
       add_new: Yeni ekle
       delete: Sil
+      dropdown:
+        all_actions: Tüm eylemler
+        disable: Dondur
+        none: Uyarı
+        sensitive: Hassas
+        silence: Sınırla
+        suspend: Askıya al
       edit_preset: Hazır yanıtı düzenle
       empty: Henüz hazır bir yanıt tanımlanmadı.
       navigation_title: Hazır Yanıtlar
-      title: Hazır Moderasyon Yanıtları
+      title: Hazır Denetim Yanıtları
     webhooks:
       add_new: Uç nokta ekle
       delete: Sil
@@ -1477,13 +1484,13 @@ tr:
       body: Mastodon'un yeni kritik sürümleri yayınlandı, en kısa sürede güncellemek isteyebilirsiniz!
       subject: "%{instance} için kritik Mastodon güncellemeleri mevcut!"
     new_moderation_suggestions:
-      body: Sunucunuzun abone olduğu moderasyon listelerinde yeni öneriler yayınlandı.
-      subject: "%{instance}'da yeni moderasyon önerileri mevcut!"
+      body: Sunucunuzun abone olduğu denetim listelerinde yeni öneriler yayınlandı.
+      subject: "%{instance}'da yeni denetim önerileri mevcut!"
     new_pending_account:
       body: Yeni hesabın detayları aşağıdadır. Bu başvuruyu onaylayabilir ya da reddedebilirsiniz.
       subject: "%{instance} üzerinde gözden geçirmek için yeni hesap (%{username})"
     new_pending_accounts:
-      body: "%{instance} üzerinde yeni hesaplar oluşturuldu. Sunucunuz, moderasyon onayı sonrasında onay e-postalarının gönderilmesini ertelemek üzere yapılandırıldığından, bu hesaplar henüz e-posta adreslerini doğrulama fırsatı bulamadılar. Yeni hesapların ayrıntıları aşağıda yer almaktadır. Bu başvuruları onaylayabilir veya reddedebilirsiniz."
+      body: "%{instance} üzerinde yeni hesaplar oluşturuldu. Sunucunuz, denetim onayı sonrasında onay e-postalarının gönderilmesini ertelemek üzere yapılandırıldığından, bu hesaplar henüz e-posta adreslerini doğrulama fırsatı bulamadılar. Yeni hesapların ayrıntıları aşağıda yer almaktadır. Bu başvuruları onaylayabilir veya reddedebilirsiniz."
       subject: "%{instance} üzerinde incelenecek yeni hesaplar"
     new_report:
       body: "%{reporter}, %{target} kişisini bildirdi"
@@ -1692,6 +1699,7 @@ tr:
       action_taken: Yapılan işlem
       appeal: İtiraz
       appeal_approved: Eyleme başarılı bir şekilde itiraz edildi ve artık geçerli değil
+      appeal_handled_by: İtirazı ele alan
       appeal_rejected: İtiraz reddedildi
       appeal_submitted_at: İtiraz gönderildi
       appealed_msg: İtiraz gönderildi. Kabul edilirse bilgilendirileceksiniz.
