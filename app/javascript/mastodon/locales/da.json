@@ -903,7 +903,7 @@
   "hashtag.unfeature": "Fremhæv ikke på profil",
   "hashtag.unfollow": "Følg ikke længere hashtag",
   "hashtags.add_more_tags": "Tilføj flere tags til denne kolonne…",
-  "hashtags.add_more_tags_to_column": "Tilføj flere tags til #{tag}",
+  "hashtags.add_more_tags_to_column": "Tilføj flere etiketter til kolonne",
   "hashtags.and_other": "…og {count, plural, one {}other {# flere}}",
   "hints.profiles.followers_may_be_missing": "Der kan mangle følgere for denne profil.",
   "hints.profiles.follows_may_be_missing": "Fulgte kan mangle for denne profil.",

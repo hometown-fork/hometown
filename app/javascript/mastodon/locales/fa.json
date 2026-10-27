@@ -889,7 +889,6 @@
   "hashtag.unfeature": "معرّفی نکردن در نمایه",
   "hashtag.unfollow": "پی‌نگرفتن برچسب",
   "hashtags.add_more_tags": "افزودن برچسب‌های بیش‌تر به این ستون…",
-  "hashtags.add_more_tags_to_column": "افزودن برچسب‌های بیش‌تر به #{tag}",
   "hashtags.and_other": "…و {count, plural, other {# بیش‌تر}}",
   "hints.profiles.followers_may_be_missing": "شاید پی‌گیرندگان این نمایه نباشند.",
   "hints.profiles.follows_may_be_missing": "شاید پی‌گرفته‌های این نمایه نباشند.",
