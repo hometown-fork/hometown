@@ -98,10 +98,10 @@ GEM
       activesupport (>= 6.0.0)
     ast (2.4.3)
     attr_required (1.0.2)
-    aws-eventstream (1.4.0)
+    aws-eventstream (1.4.1)
     aws-partitions (1.1279.0)
-    aws-sdk-core (3.257.0)
-      aws-eventstream (~> 1, >= 1.3.0)
+    aws-sdk-core (3.261.0)
+      aws-eventstream (~> 1, >= 1.4.1)
       aws-partitions (~> 1, >= 1.992.0)
       aws-sigv4 (~> 1.9)
       base64
@@ -112,8 +112,8 @@ GEM
     aws-sdk-kms (1.130.0)
       aws-sdk-core (~> 3, >= 3.254.0)
       aws-sigv4 (~> 1.5)
-    aws-sdk-s3 (1.232.3)
-      aws-sdk-core (~> 3, >= 3.256.0)
+    aws-sdk-s3 (1.235.0)
+      aws-sdk-core (~> 3, >= 3.258.0)
       aws-sdk-kms (~> 1)
       aws-sigv4 (~> 1.5)
     aws-sigv4 (1.12.1)
@@ -179,9 +179,10 @@ GEM
     crack (1.0.1)
       bigdecimal
       rexml
-    crass (1.0.7)
-    css_parser (3.0.0)
+    crass (1.0.8)
+    css_parser (3.3.0)
       addressable
+      base64
       ssrf_filter (~> 1.5)
     csv (3.3.6)
     database_cleaner-active_record (2.2.2)
@@ -229,7 +230,7 @@ GEM
     erubi (1.13.1)
     et-orbi (1.4.1)
       tzinfo
-    excon (1.7.0)
+    excon (1.8.0)
       logger
     fabrication (3.0.0)
     faker (3.8.0)
@@ -593,7 +594,7 @@ GEM
     pastel (0.8.0)
       tty-color (~> 0.5)
     pg (1.6.3)
-    pghero (4.0.1)
+    pghero (4.1.0)
       activerecord (>= 7.2)
     playwright-ruby-client (1.62.0)
       base64
@@ -808,8 +809,8 @@ GEM
       fugit (~> 1.1, >= 1.11.1)
     safety_net_attestation (0.5.0)
       jwt (>= 2.0, < 4.0)
-    sanitize (7.0.0)
-      crass (~> 1.0.2)
+    sanitize (7.0.1)
+      crass (~> 1.0.8)
       nokogiri (>= 1.16.8)
     scenic (1.9.0)
       activerecord (>= 4.0.0)
