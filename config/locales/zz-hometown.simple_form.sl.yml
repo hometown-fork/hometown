@@ -1,0 +1,5 @@
+sl:
+  simple_form:
+    labels:
+      defaults:
+        setting_missing_alt_text_modal: Pred objavo predstavnosti brez nadomestnega besedila pokaži potrditveno okno

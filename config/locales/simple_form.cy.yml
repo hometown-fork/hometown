@@ -276,6 +276,7 @@ cy:
         setting_use_pending_items: Modd araf
         severity: Difrifoldeb
         sign_in_token_attempt: Cod diogelwch
+        sign_in_token_resend: Ail anfon y cod diogelwch
         title: Teitl
         type: Modd mewnforio
         username: Enw defnyddiwr
@@ -349,6 +350,7 @@ cy:
       notification_emails:
         appeal: Mae rhywun yn apelio yn erbyn penderfyniad y cymedrolwr
         digest: Anfonwch e-byst crynhoi
+        end_of_support: Mae'r fersiwn Mastodon presennol yn agosáu at ddiwedd y gefnogaeth
         favourite: Mae rhywun wedi ffafrio eich postiad
         follow: Mae rhywun yn eich dilyn chi
         follow_request: Mae rhywun yn ceisio eich dilyn chi

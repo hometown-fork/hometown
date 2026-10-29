@@ -141,6 +141,15 @@ RSpec.describe Auth::RegistrationsController do
         expect(response).to have_http_status(403)
       end
     end
+
+    context 'when deleted' do
+      let(:user) { Fabricate(:user, account_attributes: { username: 'test', requested_deletion_at: Time.now.utc }) }
+
+      it 'returns http forbidden' do
+        put :update
+        expect(response).to have_http_status(403)
+      end
+    end
   end
 
   describe 'GET #new' do
@@ -271,6 +280,37 @@ RSpec.describe Auth::RegistrationsController do
 
       def username_error_text
         response.parsed_body.css('.user_account_username .error').text
+      end
+    end
+
+    context 'with an invalid date of birth' do
+      subject do
+        Setting.registrations_mode = 'open'
+        Setting.min_age = 16
+        post :create, params: {
+          user: {
+            :account_attributes => { username: 'test' },
+            :email => 'test@example.com',
+            :password => '12345678',
+            :password_confirmation => '12345678',
+            :agreement => 'true',
+            'date_of_birth(1i)' => '2019',
+            'date_of_birth(2i)' => '32',
+            'date_of_birth(3i)' => '01',
+          },
+        }
+      end
+
+      it 'responds with an error message about the date of birth' do
+        expect { subject }.to_not raise_error
+
+        expect(response).to have_http_status(:success)
+        expect(date_of_birth_error_text).to eq(I18n.t('errors.messages.invalid'))
+        expect(User.find_by(email: 'test@example.com')).to be_nil
+      end
+
+      def date_of_birth_error_text
+        response.parsed_body.css('.user_date_of_birth .error').text
       end
     end
 

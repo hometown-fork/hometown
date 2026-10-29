@@ -272,6 +272,7 @@ is:
         setting_use_pending_items: Rólegur hamur
         severity: Mikilvægi
         sign_in_token_attempt: Öryggiskóði
+        sign_in_token_resend: Senda aftur öryggiskóða
         title: Titill
         type: Tegund innflutnings
         username: Notandanafn
@@ -345,6 +346,7 @@ is:
       notification_emails:
         appeal: Einhver áfrýjar ákvörðun umsjónarmanns
         digest: Senda uppsafnaðan tölvupóst
+        end_of_support: Fyrirliggjandi útgáfa Mastodon nálgast lok þess að hafa stuðning
         favourite: Einhver setti færslu þína í eftirlæti
         follow: Einhver fylgist núna með þér
         follow_request: Einhver hefur beðið um að fylgjast með þér

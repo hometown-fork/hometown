@@ -76,9 +76,12 @@ cy:
       custom: Cyfaddas
       delete: Dileu data
       deleted: Wedi dileu
+      deletion_irreversible: Mae data'r cyfrif hwn wedi'i ddileu a does dim modd ei adfer.
+      deletion_reversible_hint_html: Mae'r cyfrif hwn yn aros i gael ei ddileu, a bydd y data'n cael ei ddileu'n llwyr ar %{date}.
       demote: Diraddio
       destroyed_msg: Mae data %{username} bellach mewn ciw i gael ei ddileu yn fuan
       disable: Rhewi
+      disable_sign_in_token: Analluogi her cod diogelwch dros dro
       disable_sign_in_token_auth: Analluogi dilysu tocyn e-bost
       disable_two_factor_authentication: Diffodd 2FA
       disabled: Wedi rhewi
@@ -88,6 +91,7 @@ cy:
       email: E-bost
       email_status: Statws e-bost
       enable: Dadrewi
+      enable_sign_in_token: Galluogi her cod diogelwch
       enable_sign_in_token_auth: Galluogi dilysu tocyn e-bost
       enabled: Wedi ei alluogi
       enabled_msg: Wedi dadrewi cyfrif %{username} yn llwyddiannus
@@ -214,6 +218,7 @@ cy:
         create_user_role: Creu Rôl
         create_username_block: Creu Rheol Enw Defnyddiwr
         demote_user: Diraddio Defnyddiwr
+        destroy_account: Dileu Data Cyfrif
         destroy_announcement: Dileu Cyhoeddiad
         destroy_canonical_email_block: Dileu Rhwystr E-bost
         destroy_custom_emoji: Dileu Emoji Addasedig
@@ -282,6 +287,7 @@ cy:
         create_user_role_html: Mae %{name} wedi creu rôl %{target}
         create_username_block_html: Mae %{name} wedi ychwanegu rheol ar gyfer enwau defnyddwyr sy'n cynnwys %{target}
         demote_user_html: Mae %{name} wedi israddio defnyddiwr %{target}
+        destroy_account_html: Mae %{name} wedi dileu data cyfrif ar gyfer %{target}
         destroy_announcement_html: Mae %{name} wedi dileu cyhoeddiad %{target}
         destroy_canonical_email_block_html: Mae %{name} wedi dad-rwystro parth e-bost %{target}
         destroy_collection_html: Mae %{name} wedi tynnu casgliad gan %{target}
@@ -305,7 +311,11 @@ cy:
         enable_relay_html: Galluogodd %{name} y cyfnewidiad %{target}
         enable_sign_in_token_auth_user_html: Mae %{name} wedi galluogi dilysiad tocyn e-bost %{target}
         enable_user_html: Mae %{name} wedi galluogi mewngofnodi defnyddiwr %{target}
+        listable_tag_html: mae modd ei awgrymu
         memorialize_account_html: Newidiodd %{name} gyfrif %{target} i dudalen memoriam
+        not_listable_tag_html: fydd ddim yn cael ei awgrymu
+        not_trendable_tag_html: fydd ddim yn ymddangos o dan trendiau
+        not_usable_tag_html: does dim modd ei ddefnyddio
         promote_user_html: Mae %{name} wedi hyrwyddo defnyddiwr %{target}
         publish_terms_of_service_html: Mae %{name} wedi cyhoeddi diweddariadau i'r telerau gwasanaeth
         reject_appeal_html: Mae %{name} wedi gwrthod apêl penderfyniad cymedroli %{target}
@@ -318,6 +328,7 @@ cy:
         sensitive_account_html: Mae %{name} wedi marcio cyfrwng %{target} fel un sensitif
         silence_account_html: Mae %{name} wedi cyfyngu cyfrif %{target}
         suspend_account_html: Mae %{name} wedi atal cyfrif %{target}
+        trendable_tag_html: gall ymddangos o dan trendiau
         unassigned_report_html: Mae %{name} wedi dad neilltuo adroddiad %{target}
         unblock_email_account_html: Mae %{name} wedi dad rwystro cyfeiriad e-bost %{target}
         unsensitive_account_html: Mae %{name} wedi dad farcio cyfryngau %{target} fel rhai sensitif
@@ -330,8 +341,10 @@ cy:
         update_ip_block_html: Mae %{name} wedi newid rheol IP %{target}
         update_report_html: Mae %{name} wedi diweddaru adroddiad %{target}
         update_status_html: Mae %{name} wedi diweddaru postiad gan %{target}
+        update_tag_html: 'Newidiodd %{name} osodiadau %{target} i: '
         update_user_role_html: Mae %{name} wedi newid rôl %{target}
         update_username_block_html: Mae %{name} wedi diweddaru rheol ar gyfer enwau defnyddwyr sy'n cynnwys %{target}
+        usable_tag_html: mae modd ei ddefnyddio;
       deleted_account: cyfrif wedi'i ddileu
       empty: Dim logiau ar gael.
       filter_by_action: Hidlo yn ôl gweithred
@@ -782,6 +795,8 @@ cy:
       new:
         title: Creu rheol IP newydd
       no_ip_block_selected: Heb newid unrhyw reolau IP gan na ddewiswyd yr un ohonyn nhw
+      reset: Ailosod
+      search: Chwilio
       title: Rheolau IP
     relationships:
       title: Perthnasau %{acct}
@@ -1068,13 +1083,17 @@ cy:
       critical_update: Hanfodol - diweddarwch yn fuan
       description: Argymhellir cadw'ch gosodiad Mastodon yn gyfredol i elwa o'r atgyweiriadau a'r nodweddion diweddaraf. Hefyd, weithiau mae'n hanfodol diweddaru Mastodon mewn modd amserol er mwyn osgoi materion diogelwch. Am y rhesymau hyn, mae Mastodon yn gwirio am ddiweddariadau bob 30 munud, a bydd yn eich hysbysu yn unol â'ch dewisiadau hysbysu e-bost.
       documentation_link: Dysgu rhagor
+      nearing_eol: Bydd y gefnogaeth i'r gangen rydych chi'n ei rhedeg ar hyn o bryd yn dod i ben ar %{date}, ystyriwch ddiweddaru.
       release_notes: Nodiadau ryddhau
+      supported_until: Cymorthyn dod i ben ar %{date}
       title: Diweddariadau ar gael
       type: Math
       types:
         major: Rhyddhad mawr
         minor: Ryddhad llai
         patch: Rhyddhad cywiro - cywiriadau gwallau a newidiadau hawdd eu gosod
+      unsupported_branch: Nid yw'r gangen rydych chi'n ei rhedeg ar hyn o bryd yn cael ei chefnogi, diweddarwch cyn gynted â phosibl.
+      unsupported_since: Heb ei gynnal ers %{date}
       version: Fersiwn
     statuses:
       account: Awdur
@@ -1360,6 +1379,15 @@ cy:
     auto_close_registrations:
       body: Oherwydd diffyg gweithgarwch cymedrolwr diweddar, mae cofrestriadau ar %{instance} wedi'u newid yn awtomatig i'r angen i gael adolygiad â llaw, er mwyn atal %{instance} rhag cael ei ddefnyddio fel llwyfan ar gyfer actorion drwg posibl. Gallwch ei newid yn ôl i agor cofrestriadau ar unrhyw adeg.
       subject: Mae cofrestriadau ar gyfer %{instance} wedi'u newid yn awtomatig i'r angen i gael cymeradwyaeth
+    end_of_support_out_of_support_warning:
+      body: Nid yw'r fersiwn Mastodon sy'n cael ei ddefnyddio ar eich gweinydd ar hyn o bryd yn cael ei gefnogi mwyach. Rydym yn argymell eich bod yn ei ddiweddaru cyn gynted â phosibl!
+      subject: Nid yw Mastodon %{branch} sy'n cael ei ddefnyddio ar %{instance} bellach yn cael ei gynnal!
+    end_of_support_three_months_warning:
+      body: Bydd y fersiwn Mastodon sy'n cael ei ddefnyddio ar hyn o bryd ar eich gweinydd yn peidio cael ei gefnogi ymhen 3 mis. Efallai y byddwch am ddiweddaru i gangen newydd ymlaen llaw.
+      subject: Bydd cefnogaeth ar gyfer Mastodon %{branch} sy'n cael ei ddefnyddio ar %{instance} i ddod i ben ymhen 3 mis.
+    end_of_support_two_weeks_warning:
+      body: Bydd y fersiwn Mastodon sy'n cael ei defnyddio ar hyn o bryd ar eich gweinydd yn peidio cael ei chefnogi mewn 2 wythnos. Rydym yn argymell eich bod yn diweddaru i gangen newydd ymlaen llaw.
+      subject: Bydd cefnogaeth ar gyfer Mastodon %{branch} sy'n cael ei ddefnyddio ar %{instance} i ddod i ben ymhen pythefnos.
     new_appeal:
       actions:
         delete_statuses: i ddileu eu postiadau
@@ -1554,9 +1582,11 @@ cy:
   deletes:
     challenge_not_passed: Nid oedd y wybodaeth a roesoch yn gywir
     confirm_password: Mewnbynnwch eich cyfrinair presennol i gadarnhau mai chi sydd yno
-    confirm_username: Rhowch eich enw defnyddiwr i gadarnhau'r weithdrefn
+    confirm_username: Cadarnhau enw defnyddiwr
+    confirm_username_hint_html: Teipiwch <code>%{username}</code> i gadarnhau'r cyfrif rydych chi am ei ddileu
     proceed: Dileu cyfrif
     success_msg: Llwyddwyd i ddileu eich cyfrif
+    title: Dileu cyfrif %{acct}
     warning:
       before: 'Cyn bwrw ymlaen, darllenwch y nodiadau hyn yn ofalus:'
       caches: Efallai bydd cynnwys sydd wedi'i storio dros dro gan weinyddion eraill yn parhau
@@ -1660,6 +1690,7 @@ cy:
       content: Ymddiheuriadau, ond fe aeth rhywbeth o'i le ar ein pen ni.
       title: Nid yw'r dudalen hon yn gywir
     '503': Ni fu modd gwasanaethu'r dudalen oherwydd methiant gweinydd dros dro.
+    go_home: Mynd adref
     noscript_html: I ddefnyddio ap gwe Mastodon, galluogwch JavaScript os gwelwch yn dda. Fel arall, gallwch drio un o'r <a href="%{apps_path}">apiau cynhenid</a> ar gyfer Mastodon ar eich platfform.
   existing_username_validator:
     not_found: methu dod o hyd i ddefnyddiwr lleol gyda'r enw defnyddiwr hwnnw
@@ -1784,6 +1815,7 @@ cy:
       incompatible_type: Nid yw'n gydnaws â'r math mewnforio a ddewiswyd
       invalid_csv_file: 'Ffeil CSV annilys. Gwall: %{error}'
       invalid_json_file: 'Ffeil JSON annilys. Gwall: %{error}'
+      no_data: Dyw'r ffeil hon ddim yn cynnwys unrhyw ddata sy'n cyfateb i'r math mewnforio sy'n cael ei roi
       over_rows_processing_limit: yn cynnwys mwy na %{count} o resi
       status_not_found_warning: Mae rhai o'ch hidlau yn cuddio postiadau penodol nad yw'r gweinydd hwn yn eu hadnabod. Fydd y cofnodion hyn ddim yn cael eu hidlo'n awtomatig os fyddan nhw'n cael eu darganfod yn ddiweddarach gan y gweinydd.
       too_large: Mae'r ffeil yn rhy fawr
@@ -2091,6 +2123,7 @@ cy:
     administration_emails: E-byst hysbysiadau gweinyddol
     email_events: Digwyddiadau ar gyfer hysbysiadau e-bost
     email_events_hint: 'Dewiswch ddigwyddiadau yr ydych am dderbyn hysbysiadau ar eu cyfer:'
+    moderation_emails: Hysbysiadau e-byst cymedroli
   number:
     human:
       decimal_units:
@@ -2114,7 +2147,7 @@ cy:
     next: Nesaf
     older: Hŷn
     prev: Blaenorol
-    truncate: "&hellip;"
+    truncate_html: "&hellip;"
   polls:
     errors:
       already_voted: Rydych chi eisoes wedi pleidleisio ar yr arolwg hwn
@@ -2245,7 +2278,6 @@ cy:
     appearance: Golwg
     authorized_apps: Apiau awdurdodedig
     back: Nôl i Mastodon
-    delete: Dileu cyfrif
     development: Datblygu
     edit_profile: Golygu'r proffil
     export: Allforio
@@ -2465,6 +2497,14 @@ cy:
       further_actions_html: Os nad chi oedd hwn, rydym yn argymell eich bod yn %{action} ar unwaith oherwydd gall fod o dan fygythiad.
       subject: Methiant dilysu ail ffactor
       title: Wedi methu dilysu ail ffactor
+    sign_in_token:
+      change_password: newidiwch eich cyfrinair
+      details: 'Dyma fanylion yr ymgais:'
+      explanation: 'Rydym weddi canfod ymgais i fewngofnodi i''ch cyfrif ar ôl cyfnod hir o anweithgarwch. Os mai chi yw hwn, nodwch y cod diogelwch isod ar y dudalen her mewngofnodi:'
+      further_actions: 'Os nad chi oedd hyn, newidiwch eich cyfrinair a galluogwch ddilysu dau ffactor ar eich cyfrif. Gallwch wneud hynny yma:'
+      further_actions_html: Os nad chi oedd hyn, rydym yn argymell eich bod yn %{action} ar unwaith ac yn galluogi dilysu dau ffactor i gadw'ch cyfrif yn ddiogel.
+      subject: Cadarnhewch yr ymgais i fewngofnodi
+      title: Ymgais mewngofnodi
     suspicious_sign_in:
       change_password: newidiwch eich cyfrinair
       details: 'Dyma fanylion y mewngofnodi:'
@@ -2558,8 +2598,12 @@ cy:
       title: Croeso, %{name}!
   users:
     follow_limit_reached: Nid oes modd i chi ddilyn mwy na %{limit} o bobl
+    generic_access_help_html: Problemau wrth gael mynediad i'ch cyfrif? Gallwch gysylltu â %{email} am gymorth
     go_to_sso_account_settings: Ewch i osodiadau cyfrif eich darparwr hunaniaeth
+    inactive_sign_in_confirmation: Mae hi wedi bod yn amser ers i chi fewngofnodi, felly rydym yn anfon cod diogelwch i'ch cyfeiriad e-bost i gadarnhau mai chi ydyw.
+    inactive_sign_in_title: Cadarnhewch y cod diogelwch
     invalid_otp_token: Côd dau-ffactor annilys
+    invalid_sign_in_token: Cod diogelwch annilys
     otp_lost_help_html: Os colloch chi fynediad i'r ddau, mae modd i chi gysylltu a %{email}
     rate_limited: Gormod o geisiadau dilysu, ceisiwch eto yn nes ymlaen.
     seamless_external_login: Rydych chi wedi mewngofnodi trwy wasanaeth allanol, felly nid yw gosodiadau cyfrinair ac e-bost ar gael.

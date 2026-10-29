@@ -1,0 +1,18 @@
+en:
+  about:
+    about_hashtag_html: These are public posts tagged with <strong>#%{hashtag}</strong>. You can interact with them if you have an account anywhere in the fediverse.
+    about_mastodon_html: Hometown is adapted from Mastodon, a decentralized social network with no ads, no corporate surveillance, and ethical design.
+  admin:
+    settings:
+      hometown:
+        preamble: These site-wide settings are provided to you by Hometown. As the server admin, you should think carefully about what you want each setting to be, since this will have an impact in shaping your community.
+        privacy: Privacy
+        title: Hometown
+  errors:
+    noscript_html: To use the web application, please enable JavaScript. Alternatively, try one of the <a href="%{apps_path}">native apps</a> for Hometown/Mastodon for your platform.
+  statuses:
+    local_only: Local-only
+    open_in_web: Open in web
+  statuses_cleanup:
+    keep_local: Keep local-only messages
+    keep_local_hint: Doesn't delete any of your local-only posts

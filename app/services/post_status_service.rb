@@ -20,6 +20,15 @@ class PostStatusService < BaseService
     end
   end
 
+  class IdempotencyError < StandardError
+    attr_reader :status
+
+    def initialize(status)
+      super()
+      @status = status
+    end
+  end
+
   # Post a text status update, fetch and notify remote users mentioned
   # @param [Account] account Account from which to post
   # @param [Hash] options
@@ -46,9 +55,10 @@ class PostStatusService < BaseService
     @in_reply_to = @options[:thread]
     @quoted_status = @options[:quoted_status]
 
+    preprocess_attributes!
+
     with_idempotency do
       validate_media!
-      preprocess_attributes!
 
       if scheduled?
         schedule_status!
@@ -63,7 +73,7 @@ class PostStatusService < BaseService
     end
 
     @status
-  rescue Antispam::SilentlyDrop => e
+  rescue Antispam::SilentlyDrop, IdempotencyError => e
     e.status
   end
 
@@ -156,7 +166,7 @@ class PostStatusService < BaseService
       raise ActiveRecord::RecordInvalid
     end
   rescue Antispam::SilentlyDrop
-    @status = @account.scheduled_status.new(scheduled_status_attributes).tap(&:delete)
+    @status = @account.scheduled_statuses.new(scheduled_status_attributes).tap(&:delete)
   end
 
   def local_only_option(local_only, in_reply_to, federation_setting, text, spoiler_text)
@@ -182,7 +192,7 @@ class PostStatusService < BaseService
     LinkCrawlWorker.perform_async(@status.id)
     DistributionWorker.perform_async(@status.id)
     process_email_subscriptions!
-    ActivityPub::DistributionWorker.perform_async(@status.id)
+    ActivityPub::DistributionWorker.perform_async(@status.id) unless @status.local_only?
     PollExpirationNotifyWorker.perform_at(@status.poll.expires_at, @status.poll.id) if @status.poll
     ActivityPub::QuoteRequestWorker.perform_async(@status.quote.id) if @status.quote&.quoted_status.present? && !@status.quote&.quoted_status&.local?
   end
@@ -254,7 +264,7 @@ class PostStatusService < BaseService
     return yield unless idempotency_given?
 
     with_redis_lock("idempotency:lock:status:#{@account.id}:#{@options[:idempotency]}") do
-      return idempotency_duplicate if idempotency_duplicate?
+      raise IdempotencyError, idempotency_duplicate if idempotency_duplicate?
 
       yield
 
