@@ -4,3 +4,13 @@
   hometown-pastel theme.
 */
 @use 'hometown-pastel';
+
+.unused-macaron {
+  --unused-variable: red;
+  // This selector does nothing and only is there to circumvent a
+  // bug in current Vite versions which results in wrong manifests
+  // (public/packs/.vite/manifest.json).
+  //
+  // I've been told by another developer that it's easy to circumvent this by
+  // having a bogus selector doing nothing in the entrypoints.
+}
