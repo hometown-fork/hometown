@@ -2,7 +2,7 @@
 
 require 'rails_helper'
 
-RSpec.describe SoftwareUpdateCheckService do
+RSpec.describe SoftwareUpdateCheckService, skip: 'version checks currently skipped in Hometown' do
   subject { described_class.new }
 
   shared_examples 'when the feature is enabled' do
@@ -66,20 +66,27 @@ RSpec.describe SoftwareUpdateCheckService do
     end
 
     context 'when the server returns new versions' do
+      let(:deprecation_date) { nil }
+
       let(:server_json) do
         {
+          currentVersion: {
+            endOfSupport: deprecation_date&.iso8601,
+          },
           updatesAvailable: [
             {
               version: '4.2.1',
               urgent: false,
               type: 'patch',
               releaseNotes: 'https://github.com/mastodon/mastodon/releases/v4.2.1',
+              endOfSupport: '2026-01-08',
             },
             {
               version: '4.3.0',
               urgent: false,
               type: 'minor',
               releaseNotes: 'https://github.com/mastodon/mastodon/releases/v4.3.0',
+              endOfSupport: '2026-05-06',
             },
             {
               version: '5.0.0',
@@ -96,15 +103,96 @@ RSpec.describe SoftwareUpdateCheckService do
       end
 
       it 'updates the list of known updates' do
-        skip('version checks currently skipped in Hometown')
-
         expect { subject.call }.to change { SoftwareUpdate.pluck(:version).sort }.from(['3.5.0', '42.13.12', 'Malformed']).to(['4.2.1', '4.3.0', '5.0.0'])
+      end
+
+      context 'when server returns deprecation in the distant future' do
+        let(:deprecation_date) { 5.years.from_now.to_date }
+
+        it 'updates the software deprecation info' do
+          expect { subject.call }
+            .to change { SoftwareDeprecation.pluck(:end_of_support, :warning_issued) }.from([]).to([[deprecation_date, 'none']])
+        end
+
+        context 'when an irrelevant deprecation was stored' do
+          before do
+            SoftwareDeprecation.create!(branch: '4.3', end_of_support: '2026-05-06'.to_date, warning_issued: :out_of_support_warning)
+          end
+
+          it 'updates the software deprecation info' do
+            expect { subject.call }
+              .to change { SoftwareDeprecation.pluck(:end_of_support, :warning_issued) }.from([['2026-05-06'.to_date, 'out_of_support_warning']]).to([[deprecation_date, 'none']])
+          end
+        end
+      end
+
+      context 'when server returns deprecation in 2 months' do
+        let(:deprecation_date) { 2.months.from_now.to_date }
+
+        it 'updates the software deprecation info' do
+          expect { subject.call }
+            .to change { SoftwareDeprecation.pluck(:end_of_support, :warning_issued) }.from([]).to([[deprecation_date, 'three_months_warning']])
+        end
+
+        context 'when an irrelevant deprecation was stored' do
+          before do
+            SoftwareDeprecation.create!(branch: '4.3', end_of_support: '2026-05-06'.to_date, warning_issued: :out_of_support_warning)
+          end
+
+          it 'updates the software deprecation info and sends email' do
+            expect { subject.call }
+              .to change { SoftwareDeprecation.pluck(:end_of_support, :warning_issued) }.from([['2026-05-06'.to_date, 'out_of_support_warning']]).to([[deprecation_date, 'three_months_warning']])
+              .and(have_enqueued_mail(AdminMailer, :end_of_support_three_months_warning).with(hash_including(params: { recipient: owner_user.account })).once)
+          end
+        end
+      end
+
+      context 'when server returns deprecation in 1 week' do
+        let(:deprecation_date) { 1.week.from_now.to_date }
+
+        it 'updates the software deprecation info' do
+          expect { subject.call }
+            .to change { SoftwareDeprecation.pluck(:end_of_support, :warning_issued) }.from([]).to([[deprecation_date, 'two_weeks_warning']])
+            .and(have_enqueued_mail(AdminMailer, :end_of_support_two_weeks_warning).with(hash_including(params: { recipient: owner_user.account })).once)
+        end
+
+        context 'when an irrelevant deprecation was stored' do
+          before do
+            SoftwareDeprecation.create!(branch: '4.3', end_of_support: '2026-05-06'.to_date, warning_issued: :out_of_support_warning)
+          end
+
+          it 'updates the software deprecation info and sends email' do
+            expect { subject.call }
+              .to change { SoftwareDeprecation.pluck(:end_of_support, :warning_issued) }.from([['2026-05-06'.to_date, 'out_of_support_warning']]).to([[deprecation_date, 'two_weeks_warning']])
+              .and(have_enqueued_mail(AdminMailer, :end_of_support_two_weeks_warning).with(hash_including(params: { recipient: owner_user.account })).once)
+          end
+        end
+      end
+
+      context 'when server returns deprecation in the past' do
+        let(:deprecation_date) { 1.week.ago.to_date }
+
+        it 'updates the software deprecation info' do
+          expect { subject.call }
+            .to change { SoftwareDeprecation.pluck(:end_of_support, :warning_issued) }.from([]).to([[deprecation_date, 'out_of_support_warning']])
+            .and(have_enqueued_mail(AdminMailer, :end_of_support_out_of_support_warning).with(hash_including(params: { recipient: owner_user.account })).once)
+        end
+
+        context 'when an irrelevant deprecation was stored' do
+          before do
+            SoftwareDeprecation.create!(branch: '4.3', end_of_support: '2026-05-06'.to_date, warning_issued: :out_of_support_warning)
+          end
+
+          it 'updates the software deprecation info and sends email' do
+            expect { subject.call }
+              .to change { SoftwareDeprecation.pluck(:end_of_support, :warning_issued) }.from([['2026-05-06'.to_date, 'out_of_support_warning']]).to([[deprecation_date, 'out_of_support_warning']])
+              .and(have_enqueued_mail(AdminMailer, :end_of_support_out_of_support_warning).with(hash_including(params: { recipient: owner_user.account })).once)
+          end
+        end
       end
 
       context 'when no update is urgent' do
         it 'sends e-mail notifications according to settings', :aggregate_failures do
-          skip('version checks currently skipped in Hometown')
-
           expect { subject.call }.to have_enqueued_mail(AdminMailer, :new_software_updates)
             .with(hash_including(params: { recipient: owner_user.account })).once
             .and(have_enqueued_mail(AdminMailer, :new_software_updates).with(hash_including(params: { recipient: patch_user.account })).once)
@@ -115,6 +203,9 @@ RSpec.describe SoftwareUpdateCheckService do
       context 'when an update is urgent' do
         let(:server_json) do
           {
+            currentVersion: {
+              endOfSupport: nil,
+            },
             updatesAvailable: [
               {
                 version: '5.0.0',
@@ -127,8 +218,6 @@ RSpec.describe SoftwareUpdateCheckService do
         end
 
         it 'sends e-mail notifications according to settings', :aggregate_failures do
-          skip('version checks currently skipped in Hometown')
-
           expect { subject.call }.to have_enqueued_mail(AdminMailer, :new_critical_software_updates)
             .with(hash_including(params: { recipient: owner_user.account })).once
             .and(have_enqueued_mail(AdminMailer, :new_critical_software_updates).with(hash_including(params: { recipient: patch_user.account })).once)
