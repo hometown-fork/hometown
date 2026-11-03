@@ -584,4 +584,8 @@ class User < ApplicationRecord
   def initial_setting_display_own_posts
     saved_change_to_settings.first['display_own_posts']
   end
+
+  def increment_invite_uses
+    invite&.increment!(:uses)
+  end
 end
