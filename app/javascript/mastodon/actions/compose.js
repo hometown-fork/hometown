@@ -16,7 +16,6 @@ import { importFetchedAccounts, importFetchedStatus } from './importer';
 import { openModal } from './modal';
 import { updateTimeline } from './timelines';
 import { insertStatusIntoAccountTimelines } from './timelines_typed';
-import { isRedesignEnabled } from '../utils/environment';
 import { initializeComposer, requestComposerFocus } from '../reducers/slices/composer';
 
 /** @type {AbortController | undefined} */
@@ -96,12 +95,6 @@ const messages = defineMessages({
   messageSaved: { id: 'compose.message.saved.body', defaultMessage: 'Message saved' },
 });
 
-export const ensureComposeIsVisible = (getState) => {
-  if (!getState().getIn(['compose', 'mounted']) && !isRedesignEnabled()) {
-    browserHistory.push('/publish', { focusTarget: false });
-  }
-};
-
 export function setComposeToStatus(status, text, spoiler_text) {
   return (dispatch, getState) => {
     const maxOptions = getState().server.server.item?.configuration.polls.max_options;
@@ -124,13 +117,11 @@ export function changeCompose(text) {
 }
 
 export function replyCompose(status) {
-  return (dispatch, getState) => {
+  return (dispatch) => {
     dispatch({
       type: COMPOSE_REPLY,
       status: status,
     });
-
-    ensureComposeIsVisible(getState);
 
     dispatch(initializeComposer({selectAfterFirstSpace: true}));
   };
@@ -148,26 +139,22 @@ export function resetCompose() {
   };
 }
 
-export const focusCompose = (defaultText = '', caretStart = false) => (dispatch, getState) => {
+export const focusCompose = (defaultText = '', caretStart = false) => (dispatch) => {
   dispatch({
     type: COMPOSE_FOCUS,
     defaultText,
     caretStart,
   });
 
-  ensureComposeIsVisible(getState);
-
   dispatch(initializeComposer({ noSelect: caretStart }));
 };
 
 export function mentionCompose(account) {
-  return (dispatch, getState) => {
+  return (dispatch) => {
     dispatch({
       type: COMPOSE_MENTION,
       account: account,
     });
-
-    ensureComposeIsVisible(getState);
 
     dispatch(initializeComposer());
   };
@@ -185,8 +172,6 @@ export function directCompose(account) {
       type: COMPOSE_DIRECT,
       account: account,
     });
-
-    ensureComposeIsVisible(getState);
 
     dispatch(initializeComposer());
   };
@@ -293,7 +278,7 @@ export function submitCompose(successCallback) {
       dispatch(insertStatusIntoAccountTimelines({ ...response.data }));
 
       let message = statusId === null ? messages.published : messages.saved;
-      if (isRedesignEnabled() && response.data.visibility === 'direct') {
+      if (response.data.visibility === 'direct') {
         message = statusId === null ? messages.messagePublished : messages.messageSaved;
       }
 
@@ -690,7 +675,7 @@ export function selectComposeSuggestion(position, token, suggestion, path) {
       });
     }
 
-    if (isRedesignEnabled() && path.length === 1 && path[0] === 'text') {
+    if (path.length === 1 && path[0] === 'text') {
       const caretPosition = startPosition + (inserted ? completion.length : token.length) + 1;
       dispatch(requestComposerFocus({ start: caretPosition, end: caretPosition }));
     }
