@@ -272,6 +272,7 @@ pt-PT:
         setting_use_pending_items: Modo lento
         severity: Gravidade
         sign_in_token_attempt: Código de segurança
+        sign_in_token_resend: Reenviar código de segurança
         title: Título
         type: Tipo de importação
         username: Nome de utilizador
@@ -345,6 +346,7 @@ pt-PT:
       notification_emails:
         appeal: Alguém contestou uma decisão de moderação
         digest: Enviar e-mails de resumo
+        end_of_support: A versão atual do Mastodon está a aproximar-se do fim do suporte
         favourite: Quando alguém adiciona uma publicação sua aos favoritos
         follow: Alguém começou a segui-lo
         follow_request: Alguém pediu para ser seu seguidor

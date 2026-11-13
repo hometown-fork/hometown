@@ -736,6 +736,8 @@ ru:
       new:
         title: Новое правило для IP-адресов
       no_ip_block_selected: Ничего не изменилось, так как ни одно правило не было выделено
+      reset: Сбросить
+      search: Поиск
       title: Правила для IP-адресов
     relationships:
       title: Отношения пользователя %{acct}
@@ -1466,7 +1468,6 @@ ru:
   deletes:
     challenge_not_passed: Данные введены неверно
     confirm_password: Введите свой пароль, чтобы подтвердить, что это ваша учётная запись
-    confirm_username: Введите своё имя пользователя для подтверждения
     proceed: Удалить учётную запись
     success_msg: Ваша учётная запись удалена
     warning:
@@ -1930,7 +1931,6 @@ ru:
     next: Вперёд
     older: Раньше
     prev: Назад
-    truncate: "&hellip;"
   polls:
     errors:
       already_voted: Вы уже проголосовали в этом опросе
@@ -2061,7 +2061,6 @@ ru:
     appearance: Внешний вид
     authorized_apps: Приложения
     back: Назад в Mastodon
-    delete: Удаление учётной записи
     development: Разработчикам
     edit_profile: " Данные профиля"
     export: Экспорт

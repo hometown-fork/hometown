@@ -62,8 +62,12 @@ class ActivityPub::Parser::StatusParser
   def spoiler_text
     if @object['summary'].present?
       @object['summary']
-    elsif @object['preview'].present? && @object['preview']['type'] == 'Note' && @object['preview']['content'].present?
-      @object['preview']['content']
+    # Hometown: Display preview for other types
+    elsif @object['preview'].present?
+      # 'preview' can be an object (when?) or an array (e.g. for PeerTube instances).
+      # We convert it to an Array in all cases (Ruby skips the conversion if it's already an Array.)
+      preview = Array(@object['preview'])
+      preview.find { |x| x['type'] == 'Note' && x['content'].present? }
     elsif summary_language_map?
       @object['summaryMap'].values.first
     end

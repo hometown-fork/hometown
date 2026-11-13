@@ -2,7 +2,7 @@
 @use 'variables' as *;
 
 code {
-  font-family: $font-monospace, monospace;
+  font-family: var(--font-monospace);
   font-weight: 400;
 }
 
@@ -686,6 +686,34 @@ code {
         background: var(--color-bg-error-base-hover);
       }
     }
+
+    &.secondary {
+      color: var(--color-text-brand);
+      background: transparent;
+      border: 1px solid transparent;
+      border-color: var(--color-border-brand);
+
+      &:active,
+      &:focus,
+      &:hover {
+        border-color: var(--color-border-brand);
+        color: var(--color-text-brand);
+        background-color: transparent;
+        text-decoration: none;
+      }
+
+      &:disabled {
+        border-color: var(--color-text-disabled);
+        color: var(--color-text-disabled);
+
+        &:active,
+        &:focus,
+        &:hover {
+          border-color: var(--color-text-disabled);
+          color: var(--color-text-disabled);
+        }
+      }
+    }
   }
 
   select {
@@ -895,7 +923,7 @@ code {
     width: 100%;
     border: 0;
     padding: 10px;
-    font-family: $font-monospace, monospace;
+    font-family: var(--font-monospace);
     background: var(--color-bg-secondary);
     color: var(--color-text-primary);
     font-size: 14px;
@@ -1146,7 +1174,7 @@ code {
 .form_admin_settings_custom_css,
 .form_admin_settings_closed_registrations_message {
   textarea {
-    font-family: $font-monospace, monospace;
+    font-family: var(--font-monospace);
   }
 }
 
@@ -1171,7 +1199,7 @@ code {
     border: 0;
     padding: 10px;
     font-size: 14px;
-    font-family: $font-monospace, monospace;
+    font-family: var(--font-monospace);
   }
 
   button {

@@ -65,22 +65,15 @@ RSpec.describe UserMailer do
         .and match(Rails.configuration.x.local_domain)
     end
 
-    it_behaves_like 'localized subject',
-                    'devise.mailer.confirmation_instructions.subject',
-                    instance: Rails.configuration.x.local_domain
-    it_behaves_like 'delivery to memorialized user'
-  end
+    context 'when the user needs to reconfirm' do
+      before { receiver.update!(email: 'new-email@example.com', locale: nil) }
 
-  describe '#reconfirmation_instructions' do
-    let(:mail) { described_class.confirmation_instructions(receiver, 'spec') }
-
-    it 'renders reconfirmation instructions' do
-      receiver.update!(email: 'new-email@example.com', locale: nil)
-
-      expect(mail.text_part.body)
-        .to match(I18n.t('devise.mailer.reconfirmation_instructions.title'))
-        .and match('spec')
-        .and match(Rails.configuration.x.local_domain)
+      it 'renders reconfirmation instructions' do
+        expect(mail.text_part.body)
+          .to match(I18n.t('devise.mailer.reconfirmation_instructions.title'))
+          .and match('spec')
+          .and match(Rails.configuration.x.local_domain)
+      end
     end
 
     it_behaves_like 'localized subject',
@@ -210,6 +203,15 @@ RSpec.describe UserMailer do
       expect(mail.text_part.body)
         .to match(I18n.t('user_mailer.appeal_approved.title'))
     end
+
+    context 'when user is missing' do
+      let(:mail) { described_class.appeal_approved(nil, appeal) }
+
+      it 'handles missing value without sending' do
+        expect { mail.deliver }
+          .to_not send_email
+      end
+    end
   end
 
   describe '#appeal_rejected' do
@@ -221,6 +223,15 @@ RSpec.describe UserMailer do
         .to send_email(subject: I18n.t('user_mailer.appeal_rejected.subject', date: I18n.l(appeal.created_at)))
       expect(mail.text_part.body)
         .to match(I18n.t('user_mailer.appeal_rejected.title'))
+    end
+
+    context 'when user is missing' do
+      let(:mail) { described_class.appeal_rejected(nil, appeal) }
+
+      it 'handles missing value without sending' do
+        expect { mail.deliver }
+          .to_not send_email
+      end
     end
   end
 
@@ -362,5 +373,21 @@ RSpec.describe UserMailer do
     end
 
     it_behaves_like 'optional bulk mailer settings'
+  end
+
+  describe '#sign_in_token' do
+    let(:ip) { '192.168.0.1' }
+    let(:agent) { 'NCSA_Mosaic/2.0 (Windows 3.1)' }
+    let(:timestamp) { Time.now.utc }
+    let(:mail) { described_class.sign_in_token(receiver, ip, agent, timestamp) }
+
+    it 'renders security code notification' do
+      receiver.update!(locale: nil)
+
+      expect(mail.text_part.body)
+        .to match(I18n.t('user_mailer.sign_in_token.explanation'))
+    end
+
+    it_behaves_like 'localized subject', 'user_mailer.sign_in_token.subject'
   end
 end

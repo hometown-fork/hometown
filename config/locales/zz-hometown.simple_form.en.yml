@@ -1,0 +1,18 @@
+en:
+  simple_form:
+    hints:
+      defaults:
+        setting_default_federation_html: <ul><li>If checked, your new posts federate to other instances unless manually changed while composing in the web interface.</li><li>If unchecked, your new posts stay local unless manually changed while composing in the web interface.</li><li>Third party apps will make new posts that respect this setting. <a href="https://github.com/hometown-fork/hometown/wiki/Local-only-posting#note-on-3rd-party-apps">See here for more info on third-party apps</a></li></ul>
+        setting_noindex_html: Affects your public profile and post pages. Public replies you make to other people may still be indexed on their pages. <a href="https://github.com/hometown-fork/hometown/issues/1234">See here for more information.</a>
+      form_admin_settings:
+        default_federation: Affects all users who have not changed this setting themselves. Unchecking this means new users will post local-only by default unless they change it in their preferences.
+        norss: Affects all users who have not changed this setting themselves.
+    labels:
+      defaults:
+        setting_default_federation: Allow my posts to reach other servers by default
+        setting_expand_usernames: Show full username (including domain) for remote users
+        setting_noindex: Opt-out of search engine indexing
+        setting_norss: Opt-out of an RSS feed for your public posts
+      form_admin_settings:
+        default_federation: Set the default posting privacy for new users to federated
+        norss: Opt users out of having an RSS feed of their public posts by default

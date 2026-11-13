@@ -25,6 +25,21 @@ RSpec.describe User do
   describe 'Associations' do
     it { is_expected.to belong_to(:account).required }
     it { is_expected.to have_many(:login_activities) }
+    it { is_expected.to belong_to(:invite).optional }
+    it { is_expected.to have_many(:invites).inverse_of(:user).dependent(false) }
+    it { is_expected.to have_one(:invite_request).inverse_of(:user).dependent(:destroy).class_name(UserInviteRequest) }
+
+    describe 'invite' do
+      let(:invite) { Fabricate(:invite) }
+
+      it 'increments invite uses on creation but does not decrement it on deletion' do
+        expect { Fabricate(:user, email: 'alice@example.com', invite: invite) }
+          .to change { invite.reload.uses }.by(1)
+
+        expect { described_class.find_by(email: 'alice@example.com').destroy }
+          .to_not(change { invite.reload.uses })
+      end
+    end
   end
 
   describe 'Validations' do
@@ -74,16 +89,19 @@ RSpec.describe User do
       end
     end
 
-    describe 'account_not_suspended' do
+    describe 'account_available' do
       it 'returns with linked accounts that are not suspended' do
         suspended_account = Fabricate(:account, suspended_at: 10.days.ago)
         non_suspended_account = Fabricate(:account, suspended_at: nil)
         suspended_user = Fabricate(:user, account: suspended_account)
         non_suspended_user = Fabricate(:user, account: non_suspended_account)
+        deleted_account = Fabricate(:account, requested_deletion_at: 10.days.ago)
+        deleted_user = Fabricate(:user, account: deleted_account)
 
-        expect(described_class.account_not_suspended)
+        expect(described_class.account_available)
           .to include(non_suspended_user)
           .and not_include(suspended_user)
+          .and not_include(deleted_user)
       end
     end
 

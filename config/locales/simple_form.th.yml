@@ -208,7 +208,6 @@ th:
         setting_display_media_show_all: แสดงทั้งหมด
         setting_expand_spoilers: ขยายโพสต์ที่มีการทำเครื่องหมายด้วยคำเตือนเนื้อหาเสมอ
         setting_hide_network: ซ่อนกราฟทางสังคมของคุณ
-        setting_missing_alt_text_modal: แสดงกล่องโต้ตอบการยืนยันก่อนที่จะโพสต์สื่อโดยไม่มีข้อความแสดงแทน
         setting_reduce_motion: ลดการเคลื่อนไหวในภาพเคลื่อนไหว
         setting_system_font_ui: ใช้แบบอักษรเริ่มต้นของระบบ
         setting_system_scrollbars_ui: ใช้แถบเลื่อนเริ่มต้นของระบบ

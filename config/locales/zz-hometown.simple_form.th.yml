@@ -1,0 +1,5 @@
+th:
+  simple_form:
+    labels:
+      defaults:
+        setting_missing_alt_text_modal: แสดงกล่องโต้ตอบการยืนยันก่อนที่จะโพสต์สื่อโดยไม่มีข้อความแสดงแทน

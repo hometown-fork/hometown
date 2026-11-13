@@ -3,6 +3,7 @@ import {
   cloneElement,
   createContext,
   forwardRef,
+  isValidElement,
   useCallback,
   useContext,
 } from 'react';
@@ -92,10 +93,8 @@ export const ColumnsArea = forwardRef<
   }
 >(({ children, minimalShell, singleColumn }, ref) => {
   const renderComposePanel = !useBreakpoint('full');
-  const columns = useAppSelector((state) =>
-    (state.settings as Record<{ columns: List<Record<Column>> }>).get(
-      'columns',
-    ),
+  const columns = useAppSelector(
+    (state) => state.settings.get('columns') as List<Record<Column>>,
   );
   const isModalOpen = useAppSelector(
     (state) => !state.modal.get('stack').isEmpty(),
@@ -179,7 +178,9 @@ export const ColumnsArea = forwardRef<
 
       <ColumnIndexContext.Provider value={columns.size}>
         {Children.map(children, (child) =>
-          cloneElement(child, { multiColumn: true }),
+          isValidElement<{ multiColumn?: boolean }>(child)
+            ? cloneElement(child, { multiColumn: true })
+            : child,
         )}
       </ColumnIndexContext.Provider>
     </main>
