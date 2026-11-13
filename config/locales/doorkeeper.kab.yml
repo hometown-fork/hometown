@@ -78,9 +78,6 @@ kab:
         title: Isnasen-ik·im yettusirgen
     errors:
       messages:
-        invalid_code_challenge_method:
-          one: Tarrayt n ucqirrew n tengalt ilaq ad tili d yiwet seg %{challenge_methods}.
-          other: Tarrayt n ucqirrew n tengalt ilaq ad tili d yiwet seg %{challenge_methods}.
         invalid_redirect_uri: URI n uwelleh mačči d ameγtu.
     flash:
       applications:
