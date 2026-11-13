@@ -208,6 +208,7 @@
   "bundle_modal_error.close": "Затваряне",
   "bundle_modal_error.message": "Нещо се обърка, зареждайки този екран.",
   "bundle_modal_error.retry": "Нов опит",
+  "card.delete": "Премахване на това",
   "closed_registrations.other_server_instructions": "Откак e децентрализирана Mastodon, може да създадете акаунт на друг сървър и още може да взаимодействате с този.",
   "closed_registrations_modal.description": "Създаването на акаунт в {domain} сега не е възможно, но обърнете внимание, че нямате нужда от акаунт конкретно на {domain}, за да ползвате Mastodon.",
   "closed_registrations_modal.find_another_server": "Намиране на друг сървър",
