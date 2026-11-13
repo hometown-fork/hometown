@@ -173,7 +173,7 @@ class PostStatusService < BaseService
     # This is intended for third party clients. The admin can set a custom :local_only:
     # emoji that users can append to force a post to be local only.
     if text.include?(':local_only:') ||
-       spoiler_text&.include?(':local_only')
+        spoiler_text&.include?(':local_only')
       return true
     end
 
