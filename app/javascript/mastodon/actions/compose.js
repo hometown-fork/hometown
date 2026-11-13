@@ -1,20 +1,23 @@
 import { defineMessages } from 'react-intl';
 
-import axios from 'axios';
+import { isCancel } from 'axios';
 import { throttle } from 'lodash';
 
-import api from 'mastodon/api';
-import { browserHistory } from 'mastodon/components/router';
-import { countableText } from 'mastodon/features/compose/util/counter';
-import { tagHistory } from 'mastodon/settings';
+import api from '@/mastodon/api';
+import { browserHistory } from '@/mastodon/components/router';
+import { countableText } from '@/mastodon/features/compose/util/counter';
+import { tagHistory } from '@/mastodon/settings';
 import { emojiMartSearch } from '@/mastodon/features/emoji/picker';
 
 import { showAlert, showAlertForError } from './alerts';
-import { useEmoji } from './emojis';
+import { isStandaloneComposePath } from './compose_path';
+import { emojiUse } from './emojis';
 import { importFetchedAccounts, importFetchedStatus } from './importer';
 import { openModal } from './modal';
 import { updateTimeline } from './timelines';
 import { insertStatusIntoAccountTimelines } from './timelines_typed';
+import { isRedesignEnabled } from '../utils/environment';
+import { initializeComposer, requestComposerFocus } from '../reducers/slices/composer';
 
 /** @type {AbortController | undefined} */
 let fetchComposeSuggestionsAccountsController;
@@ -89,10 +92,12 @@ const messages = defineMessages({
   published: { id: 'compose.published.body', defaultMessage: 'Post published.' },
   saved: { id: 'compose.saved.body', defaultMessage: 'Post saved.' },
   blankPostError: { id: 'compose.error.blank_post', defaultMessage: 'Post can\'t be blank.' },
+  messagePublished: { id: 'compose.message.published.body', defaultMessage: 'Message sent' },
+  messageSaved: { id: 'compose.message.saved.body', defaultMessage: 'Message saved' },
 });
 
 export const ensureComposeIsVisible = (getState) => {
-  if (!getState().getIn(['compose', 'mounted'])) {
+  if (!getState().getIn(['compose', 'mounted']) && !isRedesignEnabled()) {
     browserHistory.push('/publish', { focusTarget: false });
   }
 };
@@ -126,18 +131,8 @@ export function replyCompose(status) {
     });
 
     ensureComposeIsVisible(getState);
-  };
-}
 
-export function replyComposeById(statusId) {
-  return (dispatch, getState) => {
-    const state = getState();
-    const status = state.statuses.get(statusId);
-
-    if (status) {
-      const account = state.accounts.get(status.get('account'));
-      dispatch(replyCompose(status.set('account', account)));
-    }
+    dispatch(initializeComposer({selectAfterFirstSpace: true}));
   };
 }
 
@@ -161,6 +156,8 @@ export const focusCompose = (defaultText = '', caretStart = false) => (dispatch,
   });
 
   ensureComposeIsVisible(getState);
+
+  dispatch(initializeComposer({ noSelect: caretStart }));
 };
 
 export function mentionCompose(account) {
@@ -171,6 +168,8 @@ export function mentionCompose(account) {
     });
 
     ensureComposeIsVisible(getState);
+
+    dispatch(initializeComposer());
   };
 }
 
@@ -188,6 +187,8 @@ export function directCompose(account) {
     });
 
     ensureComposeIsVisible(getState);
+
+    dispatch(initializeComposer());
   };
 }
 
@@ -255,7 +256,7 @@ export function submitCompose(successCallback) {
         'Idempotency-Key': getState().getIn(['compose', 'idempotencyKey']),
       },
     }).then(function (response) {
-      if ((browserHistory.location.pathname === '/publish' || browserHistory.location.pathname === '/statuses/new') && window.history.state) {
+      if (isStandaloneComposePath(browserHistory.location.pathname) && window.history.state) {
         browserHistory.goBack();
       }
 
@@ -289,10 +290,15 @@ export function submitCompose(successCallback) {
         insertIfOnline(`account:${response.data.account.id}`);
       }
 
-      dispatch(insertStatusIntoAccountTimelines({ ...response.data }))
+      dispatch(insertStatusIntoAccountTimelines({ ...response.data }));
+
+      let message = statusId === null ? messages.published : messages.saved;
+      if (isRedesignEnabled() && response.data.visibility === 'direct') {
+        message = statusId === null ? messages.messagePublished : messages.messageSaved;
+      }
 
       dispatch(showAlert({
-        message: statusId === null ? messages.published : messages.saved,
+        message,
         action: messages.open,
         dismissAfter: 10000,
         onClick: () => browserHistory.push(
@@ -333,14 +339,23 @@ export function uploadCompose(files) {
       dispatch(showAlert({ message: messages.uploadQuote }));
       return;
     }
-    const uploadLimit = getState().getIn(['server', 'server', 'item', 'configuration', 'statuses', 'max_media_attachments']);
+
     const media = getState().getIn(['compose', 'media_attachments']);
     const pending = getState().getIn(['compose', 'pending_media_attachments']);
+    const serverConfiguration = getState().getIn(['server', 'server', 'item', 'configuration']);
+    const maxMediaAttachments = serverConfiguration?.statuses.max_media_attachments ?? 4;
+    const videoSizeLimit = serverConfiguration?.media_attachments.video_size_limit;
+    const imageSizeLimit = serverConfiguration?.media_attachments.image_size_limit;
+
+    const filesArray = Array.from(files);
     const progress = new Array(files.length).fill(0);
+    const total = filesArray.reduce((a, v) => a + v.size, 0);
 
-    let total = Array.from(files).reduce((a, v) => a + v.size, 0);
-
-    if (files.length + media.size + pending > uploadLimit) {
+    if (files.length + media.size + pending > maxMediaAttachments
+      || filesArray.some(file => (
+        file.type.startsWith('video/') && videoSizeLimit && file.size > videoSizeLimit)
+        || (file.type.startsWith('image/') && imageSizeLimit && file.size > imageSizeLimit)))
+    {
       dispatch(showAlert({ message: messages.uploadErrorLimit }));
       return;
     }
@@ -348,7 +363,7 @@ export function uploadCompose(files) {
     dispatch(uploadComposeRequest());
 
     for (const [i, file] of Array.from(files).entries()) {
-      if (media.size + i > (uploadLimit - 1)) break;
+      if (media.size + i > (maxMediaAttachments - 1)) break;
 
       const data = new FormData();
       data.append('file', file);
@@ -530,7 +545,7 @@ const fetchComposeSuggestionsAccounts = throttle((dispatch, token) => {
     dispatch(importFetchedAccounts(response.data));
     dispatch(readyComposeSuggestionsAccounts(token, response.data));
   }).catch(error => {
-    if (!axios.isCancel(error)) {
+    if (!isCancel(error)) {
       dispatch(showAlertForError(error));
     }
   }).finally(() => {
@@ -580,7 +595,7 @@ const fetchComposeSuggestionsTags = throttle((dispatch, token) => {
   }).then(({ data }) => {
     dispatch(readyComposeSuggestionsTags(token, data.hashtags));
   }).catch(error => {
-    if (!axios.isCancel(error)) {
+    if (!isCancel(error)) {
       dispatch(showAlertForError(error));
     }
   }).finally(() => {
@@ -635,7 +650,7 @@ export function selectComposeSuggestion(position, token, suggestion, path) {
       completion    = suggestion.native || `:${suggestion.id}:`;
       startPosition = position - 1;
 
-      dispatch(useEmoji(suggestion));
+      dispatch(emojiUse(suggestion));
     } else if (suggestion.type === 'hashtag') {
       // TODO: it could make sense to keep the “most capitalized” of the two
       const tokenName = token.slice(1); // strip leading '#'
@@ -655,7 +670,9 @@ export function selectComposeSuggestion(position, token, suggestion, path) {
 
     // We don't want to replace hashtags that vary only in case due to accessibility, but we need to fire off an event so that
     // the suggestions are dismissed and the cursor moves forward.
-    if (suggestion.type !== 'hashtag' || token.slice(1).localeCompare(suggestion.name, undefined, { sensitivity: 'accent' }) !== 0) {
+    const inserted = suggestion.type !== 'hashtag' || token.slice(1).localeCompare(suggestion.name, undefined, { sensitivity: 'accent' }) !== 0;
+
+    if (inserted) {
       dispatch({
         type: COMPOSE_SUGGESTION_SELECT,
         position: startPosition,
@@ -671,6 +688,11 @@ export function selectComposeSuggestion(position, token, suggestion, path) {
         completion,
         path,
       });
+    }
+
+    if (isRedesignEnabled() && path.length === 1 && path[0] === 'text') {
+      const caretPosition = startPosition + (inserted ? completion.length : token.length) + 1;
+      dispatch(requestComposerFocus({ start: caretPosition, end: caretPosition }));
     }
   };
 }

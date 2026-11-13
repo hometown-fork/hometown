@@ -63,6 +63,10 @@ he:
         prompt_html: היישום %{client_name} מבקש גישה לחשבונך. <strong>אשרו רק אם אתם מזהים את הבקשה וסומכים על מקור הבקשה.</strong>
         review_permissions: עיון בהרשאות
         title: נדרשת הרשאה
+      require_reauth:
+        log_out_and_continue: להתנתק ולהמשיך
+        prompt_html: אתם מחוברים כרגע בתור <strong>%{handle}</strong>, אבל כדי להמשיך, יש להתנתק.
+        title: נדרש אימות מחדש
       show:
         title: יש להעתיק את קוד ההרשאה הזה ולהדביקו ביישום שביקש אותו.
     authorized_applications:
@@ -86,7 +90,7 @@ he:
         invalid_code_challenge_method:
           one: הערך של code_challenge_method חייב להיות %{challenge_methods}.
           other: 'הערך של code_challenge_method חייב להיות אחד מאלו: %{challenge_methods}.'
-          two: 'הערך של code_challenge_method חייב להיות אחד מאלו: %{challenge_methods}.'
+          zero: שרת ההרשאה לא תומך PKCE שכן אין ערכי code_challenge_method נתמכים.
         invalid_grant: חוזה ההרשאה המצורף אינו חוקי, אינו תקף, מבוטל, או שאינו מתאים לקישורית ההפניה שבשימוש על ידי בקשת ההרשאה, או שהופק על ידי לקוח אחר.
         invalid_redirect_uri: קישורית ההפניה המצורפת אינה חוקית.
         invalid_request:

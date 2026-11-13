@@ -3,6 +3,11 @@
 namespace :admin do
   get '/dashboard', to: 'dashboard#index'
 
+  resources :server_checks, only: [:index]
+  get '/server_health', to: redirect('/admin/server_checks')
+  post '/ignored_server_checks/:key', to: 'ignored_server_checks#create', as: 'ignored_server_check'
+  delete '/ignored_server_checks/:key', to: 'ignored_server_checks#destroy'
+
   concern :batch do
     collection { post :batch }
   end
@@ -84,6 +89,7 @@ namespace :admin do
     resource :appearance, only: [:show, :update], controller: 'appearance'
     resource :discovery, only: [:show, :update], controller: 'discovery'
     resource :hometown, only: [:show, :update], controller: 'hometown'
+    resource :external, only: [:show, :update], controller: 'external'
   end
 
   resources :site_uploads, only: [:destroy]
@@ -109,6 +115,18 @@ namespace :admin do
     end
 
     resources :moderation_notes, module: :instances, only: [:create, :destroy]
+  end
+
+  resources :moderation_subscriptions do
+    collection do
+      get :logs
+    end
+  end
+
+  resources :moderation_suggestions do
+    member do
+      post :apply
+    end
   end
 
   resources :rules, only: [:index, :new, :create, :edit, :update, :destroy] do
@@ -174,6 +192,14 @@ namespace :admin do
       collection do
         post :resend
       end
+    end
+
+    namespace :trends do
+      resource :approval, only: [:create, :destroy]
+    end
+
+    namespace :follow_recommendations do
+      resource :suppression, only: [:create, :destroy]
     end
   end
 

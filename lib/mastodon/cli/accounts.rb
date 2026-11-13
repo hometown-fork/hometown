@@ -65,7 +65,7 @@ module Mastodon::CLI
       With the --approve option, the account will be approved.
     LONG_DESC
     def create(username)
-      role_id  = nil
+      role_id = nil
 
       if options[:role]
         role = UserRole.find_by(name: options[:role])
@@ -262,16 +262,6 @@ module Mastodon::CLI
       from_account.destroy
 
       say('OK', :green)
-    end
-
-    desc 'fix-duplicates', 'Find duplicate remote accounts and merge them'
-    option :dry_run, type: :boolean
-    long_desc <<-LONG_DESC
-      This command is deprecated as of Mastodon v4.7.0.
-    LONG_DESC
-    def fix_duplicates
-      # TODO: remove this after 4.7.0
-      say('This command is deprecated as Mastodon v4.7.0 migrations enforce ActivityPub actor identifier uniqueness', :yellow)
     end
 
     desc 'backup USERNAME', 'Request a backup for a user'
@@ -620,7 +610,7 @@ module Mastodon::CLI
       old_key = account.keypair
       new_key = OpenSSL::PKey::RSA.new(2048)
 
-      account.update(private_key: nil, public_key: '', keypairs: [account.keypairs.build(local_fragment: '#main-key', type: :rsa, public_key: new_key.public_key.to_pem, private_key: new_key.to_pem)])
+      account.update(public_key: '', keypairs: [account.keypairs.build(local_fragment: '#main-key', type: :rsa, public_key: new_key.public_key.to_pem, private_key: new_key.to_pem)])
 
       ActivityPub::UpdateDistributionWorker.perform_in(
         delay,

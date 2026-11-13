@@ -63,6 +63,10 @@ zh-TW:
         prompt_html: "%{client_name} 想要請求存取您帳號之權限。<strong>請僅於您所識別且信任此來源時允許請求。</strong>"
         review_permissions: 檢視權限
         title: 需要授權
+      require_reauth:
+        log_out_and_continue: 登出並繼續
+        prompt_html: 您現在正以 <strong>%{handle}</strong> 身分登入，但如欲繼續操作，您必須先登出。
+        title: 需要重新登入驗證
       show:
         title: 複製此授權碼並貼上到應用程式中。
     authorized_applications:
@@ -84,7 +88,9 @@ zh-TW:
         credential_flow_not_configured: 因為 Doorkeeper.configure.resource_owner_from_credentials 未設定，所以資源持有者密碼認證程序失敗。
         invalid_client: 用戶端驗證失敗，可能是因為未知的用戶端程式、未包含用戶端驗證、或使用了不支援的認證方法。
         invalid_code_challenge_method:
+          one: code_challenge_method 必須是 %{challenge_methods}。
           other: code_challenge_method 必須是 %{challenge_methods} 其中之一。
+          zero: 授權伺服器不支援 PKCE ，因為沒有被接受的  code_challenge_method 值。
         invalid_grant: 授權申請不正確、逾期、已被註銷、與授權請求內的重新導向 URI 不符、或屬於別的用戶端程式。
         invalid_redirect_uri: 包含的重新導向 URI 是不正確的。
         invalid_request:
@@ -185,7 +191,7 @@ zh-TW:
       read:statuses: 檢視所有嘟文
       write: 修改您帳號的所有資料
       write:accounts: 修改您的個人檔案
-      write:blocks: 封鎖帳號及站台
+      write:blocks: 封鎖帳號及站點
       write:bookmarks: 書籤狀態
       write:conversations: 靜音及刪除對話
       write:favourites: 加到最愛

@@ -753,7 +753,6 @@ id:
         shared_by_over_week:
           other: Dibagikan oleh %{count} orang selama seminggu terakhir
         title: Tautan sedang tren
-        usage_comparison: Dibagikan %{today} kali hari ini, dibandingkan %{yesterday} kemarin
       only_allowed: Yang diizinkan saja
       pending_review: Tinjauan tertunda
       preview_card_providers:
@@ -792,15 +791,12 @@ id:
         trendable: Dapat muncul di bawah tren
         trending_rank: 'Sedang tren #%{rank}'
         usable: Dapat digunakan
-        usage_comparison: Digunakan %{today} kali hari ini, dibandingkan %{yesterday} kemarin
         used_by_over_week:
           other: Digunakan oleh %{count} orang selama seminggu terakhir
       trending: Sedang tren
     warning_presets:
       add_new: Tambah baru
       delete: Hapus
-      edit_preset: Sunting preset peringatan
-      empty: Anda belum mendefinisikan peringatan apapun.
     webhooks:
       add_new: Tambah titik akhir
       delete: Hapus
@@ -858,7 +854,6 @@ id:
     remove: Hapus tautan alias
   appearance:
     animations_and_accessibility: Animasi dan aksesibilitas
-    discovery: Jelajah
     localization:
       body: Mastodon diterjemahkan oleh sukarelawan.
       guide_link: https://crowdin.com/project/mastodon
@@ -1079,7 +1074,6 @@ id:
   imports:
     errors:
       invalid_csv_file: 'Berkas CVS tidak sah. Kesalahan: %{error}'
-      over_rows_processing_limit: berisi lebih dari %{count} baris
     modes:
       merge: Gabung
       merge_long: Pertahankan rekaman yang sudah ada dan buat baru
@@ -1146,7 +1140,6 @@ id:
     incoming_migrations_html: Untuk pindah dari akun lain ke sini, Anda harus <a href="%{path}">membuat alias akun</a> terlebih dahulu.
     moved_msg: Akun Anda dialihkan ke %{acct} dan pengikut Anda akan ikut dipindahkan.
     not_redirecting: Saat ini akun Anda tidak dialihkan ke akun lain.
-    on_cooldown: Anda baru saja memindahkan akun Anda. Fungsi ini akan tersedia kembali %{count} hari lagi.
     past_migrations: Migrasi lampau
     proceed_with_move: Pindahkan pengikut
     redirected_msg: Akun Anda sedang dialihkan ke %{acct}.
@@ -1275,9 +1268,6 @@ id:
     descriptions:
       account: Kiriman publik dari @%{acct}
       tag: 'Kiriman publik ditagari #%{hashtag}'
-  scheduled_statuses:
-    over_daily_limit: Anda telah melampaui batas %{limit} kiriman terjadwal untuk sehari
-    over_total_limit: Anda telah melampaui batas %{limit} kiriman terjadwal
   sessions:
     activity: Aktivitas terakhir
     browser: Peramban

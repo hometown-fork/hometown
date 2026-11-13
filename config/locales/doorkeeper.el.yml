@@ -63,6 +63,10 @@ el:
         prompt_html: Το %{client_name} επιθυμεί το δικαίωμα πρόσβασης στον λογαριασμό σας. <strong>Εγκρίνετε αυτό το αίτημα μόνο αν αναγνωρίζετε και εμπιστεύεστε αυτήν την πηγή.</strong>
         review_permissions: Ανασκόπηση δικαιωμάτων
         title: Απαιτείται έγκριση
+      require_reauth:
+        log_out_and_continue: Αποσύνδεση και συνέχεια
+        prompt_html: Αυτή τη στιγμή έχεις συνδεθεί ως <strong>%{handle}</strong>, αλλά για να συνεχίσεις, θα πρέπει να αποσυνδεθείς.
+        title: Απαιτείται επαναταυτοποίηση
       show:
         title: Αντέγραψε αυτό τον κωδικό έγκρισης στην εφαρμογή.
     authorized_applications:
@@ -86,6 +90,7 @@ el:
         invalid_code_challenge_method:
           one: Το code_challenge_method πρέπει να είναι %{challenge_methods}.
           other: Το code_challenge_method πρέπει να είναι ένα από %{challenge_methods}.
+          zero: Ο διακομιστής εξουσιοδότησης δεν υποστηρίζει PKCE καθώς δεν υπάρχουν αποδεκτές τιμές code_challenge_method.
         invalid_grant: Η άδεια πιστοποίησης που δόθηκε είναι άκυρη, ληγμένη, έχει ανακληθεί, δεν συμφωνεί με το URI ανακατεύθυνσης που δόθηκε στο αίτημα πιστοποίησης ή εκδόθηκε προς άλλο πελάτη.
         invalid_redirect_uri: Το uri ανακατεύθυνσης που δόθηκε δεν είναι έγκυρο.
         invalid_request:

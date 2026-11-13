@@ -72,6 +72,10 @@ gl:
       disable_sign_in_token_auth: Desactivar a autenticación con token por correo
       disable_two_factor_authentication: Desactivar 2FA
       disabled: Desactivado
+      discoverable:
+        disabled: A persoa autora elixiu non poder ser atopada
+        enabled: A persoa autora elixiu poder ser atopada
+        title: Atopable
       display_name: Nome a amosar
       domain: Dominio
       edit: Editar
@@ -81,6 +85,12 @@ gl:
       enable_sign_in_token_auth: Activar autenticación con token por correo
       enabled: Activado
       enabled_msg: Desbloqueada a conta de %{username}
+      follow_recommendations:
+        allowed: Permitido
+        suppress: Eliminar calquera suxestión de seguimento
+        suppressed: Eliminada
+        title: Recomendacións de seguimento
+        unsuppress: Restablecer as recomendacións de seguimento
       followers: Seguidoras
       follows: Seguimentos
       header: Cabeceira
@@ -126,6 +136,7 @@ gl:
       push_subscription_expires: A subscrición PuSH expira
       redownload: Actualizar perfil
       redownloaded_msg: Actualizado o perfil de %{username} desde a orixe
+      registration_app: Aplicación coa que creou a conta
       reject: Rexeitar
       rejected_msg: Rexeitada a solicitude de rexistro de %{username}
       remote_suspension_irreversible: Elimináronse de xeito irreversible os datos desta conta.
@@ -165,6 +176,12 @@ gl:
       suspension_irreversible: Elimináronse de xeito irreversible os datos desta conta. Podes reactivar a conta para facela usable novamente pero non recuperará os datos eliminados.
       suspension_reversible_hint_html: Esta conta foi suspendida, e os datos serán totalmente eliminados o %{date}. Ata entón, a conta pode ser restaurada sen danos. Se desexas eliminar agora mesmo todos os datos da conta, podes facelo aquí embaixo.
       title: Contas
+      trends:
+        allow: Permitir
+        allowed: Permitido
+        disallow: Denegar
+        disallowed: Denegado
+        title: Publicacións populares
       unblock_email: Desbloquear enderezo de correo
       unblocked_email_msg: Enderezo de correo de %{username} desbloqueado
       unconfirmed_email: Enderezo de correo sen confirmar
@@ -626,8 +643,6 @@ gl:
           description: Recibiches unha solicitude de rexistro desde un FASP. Rexeitaa se non iniciaches ti o proceso. Se foi iniciada por ti, compara con atención o nome e impresión dixital antes de confirmar o rexistro.
           reject: Rexeitar
           title: Confirmar o rexistro do FASP
-        save: Gardar
-        select_capabilities: Seleccionar funcións
         sign_in: Acceder
         status: Estado
         title: Provedores de Servizos Auxiliares do Fediverso
@@ -966,10 +981,8 @@ gl:
       discovery:
         follow_recommendations: Recomendacións de seguimento
         preamble: Destacar contido interesante é importante para axudar a que as novas usuarias se sintan cómodas se non coñecen a ninguén en Mastodon. Xestiona os diferentes xeitos de promocionar contidos.
-        privacy: Privacidade
         profile_directory: Directorio de perfís
         public_timelines: Cronoloxías públicas
-        publish_statistics: Publicar estatísticas
         title: Descubrir
         trends: Tendencias
         wrapstodon: Wrapstodon
@@ -1005,7 +1018,6 @@ gl:
         warning_hint: Recomendamos utilizar "Requerir aprobación para o rexistro" a menos que confíes en que o equipo de moderación é quen de xestionar áxilmente o spam e a creación de contas maliciosas.
       security:
         authorized_fetch: Require autenticación desde os servidores federados
-        authorized_fetch_hint: Ao requerir autenticación desde os servidores federados activas un reforzamento das políticas de bloqueo a nivel usuaria e nivel servidor. Este proceder ten un custo no rendemento, reducindo o alcance das túas respostas e podería introducir problemas de compatibilidade con algúns servizos federados. Ademais, non evitará que contas con tal propósito vexan as túas publicacións públicas e contas.
         authorized_fetch_overridden_hint: Actualmente non podes cambiar este axuste porque está controlado por unha variable xeral do sistema.
         federation_authentication: Reforzo da autenticación na federación
       title: Axustes do servidor
@@ -1192,7 +1204,9 @@ gl:
           one: Compartido por unha persoa na última semana
           other: Compartido por %{count} persoas na última semana
         title: Ligazóns en voga
-        usage_comparison: Compartido %{today} veces hoxe, comparado con %{yesterday} onte
+        usage_comparison:
+          one: Compartido hoxe %{count} vez, comparado con %{yesterday} onte
+          other: Compartido hoxe %{count} veces, comparado con %{yesterday} onte
       not_allowed_to_trend: Non permitido como tendencia
       only_allowed: Só as permitidas
       pending_review: Revisión pendente
@@ -1237,7 +1251,9 @@ gl:
         trendable: Pode aparecer nas tendencias
         trending_rank: 'En voga #%{rank}'
         usable: Pode ser usado
-        usage_comparison: Utilizado %{today} veces hoxe, comparado coas %{yesterday} de onte
+        usage_comparison:
+          one: Utilizado %{count} vez hoxe, comparado con %{yesterday} de onte
+          other: Utilizado %{count} veces hoxe, comparado coas %{yesterday} de onte
         used_by_over_week:
           one: Utilizado por unha persoa na última semana
           other: Utilizado por %{count} persoas na última semana
@@ -1266,9 +1282,6 @@ gl:
     warning_presets:
       add_new: Engadir novo
       delete: Eliminar
-      edit_preset: Editar aviso preestablecido
-      empty: Non definiches os avisos prestablecidos.
-      title: Preestablecidos de advertencia
     webhooks:
       add_new: Engadir punto de extremo
       delete: Eliminar
@@ -1348,7 +1361,6 @@ gl:
     animations_and_accessibility: Animacións e accesibilidade
     boosting_preferences: Preferencias das promocións
     boosting_preferences_info_html: "<strong>Info:</strong> Independentemente dos axustes, <kbd>Maiús</kbd> + <kbd>Click</kbd> na icona %{icon} Promover promoverá inmediatamente."
-    discovery: Descubrir
     localization:
       body: Mastodon tradúceno persoas voluntarias.
       guide_link: https://crowdin.com/project/mastodon
@@ -1695,7 +1707,9 @@ gl:
       invalid_csv_file: 'Ficheiro CSV non válido. Erro: %{error}'
       invalid_json_file: 'Ficheiro JSON non válido. Erro: %{error}'
       no_data: Este ficheiro non contén datos que concorden co tipo de importación indicado
-      over_rows_processing_limit: contén máis de %{count} filas
+      over_rows_processing_limit:
+        one: contén máis de %{count} fila
+        other: contén máis de %{count} filas
       status_not_found_warning: Algún dos teus filtros oculta publicacións concretas que non son coñecidas por este servidor. Estas publicacións non se van filtrar automaticamente se son descubertas máis tarde polo servidor.
       too_large: O ficheiro é demasiado grande
     failures: Erros
@@ -1846,7 +1860,9 @@ gl:
     incoming_migrations_html: Para migrar doutra conta cara esta, primeiro debes <a href="%{path}">crear un alcume da conta</a>.
     moved_msg: A túa conta foi redirixida a %{acct} e os teus seguimentos movéronse alí.
     not_redirecting: Neste momento a túa conta non está redirixindo cara a ningunha outra.
-    on_cooldown: Migraches recentemente a conta. Esta función estará dispoñible de novo en %{count} días.
+    on_cooldown:
+      one: Migraches recentemente a conta. Esta función estará dispoñible de novo en %{count} día.
+      other: Migraches recentemente a conta. Esta función estará dispoñible de novo en %{count} días.
     past_migrations: Migracións pasadas
     proceed_with_move: Mover seguidoras
     redirected_msg: Agora a conta redirixe a %{acct}.
@@ -2034,8 +2050,12 @@ gl:
       account: Publicacións públicas de @%{acct}
       tag: 'Publicacións públicas con #%{hashtag}'
   scheduled_statuses:
-    over_daily_limit: Excedeches o límite de %{limit} publicacións programadas para ese día
-    over_total_limit: Excedeches o límite de %{limit} publicacións programadas
+    over_daily_limit:
+      one: Excedeches o límite de %{count} publicación programada para hoxe
+      other: Excedeches o límite de %{count} publicacións programadas para hoxe
+    over_total_limit:
+      one: Excedeches o límite de %{count} publicación programada
+      other: Excedeches o límite de %{count} publicacións programadas
     too_soon: a data ten que estar no futuro
   self_destruct:
     lead_html: Desafortunadamente, <strong>%{domain}</strong> vai deixar de dar servizo. Se tes unha conta aquí non poderás seguir usándoa, mais podes solicitar un ficheiro cos teus datos.

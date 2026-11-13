@@ -63,6 +63,10 @@ sv:
         prompt_html: "%{client_name} vill ha behörighet att komma åt ditt konto. <strong>Godkänn endast den här begäran om du känner igen och litar på källan.</strong>"
         review_permissions: Granska behörigheter
         title: Godkännande krävs
+      require_reauth:
+        log_out_and_continue: Logga ut och fortsätt
+        prompt_html: Du är inloggad som <strong>%{handle}</strong>, men för att fortsätta måste du logga ut.
+        title: Återautentisering krävs
       show:
         title: Kopiera denna behörighetskod och klistra in den i applikationen.
     authorized_applications:
@@ -84,8 +88,9 @@ sv:
         credential_flow_not_configured: Resurs Ägare Lösenord Credentials flöde misslyckades på grund av att Doorkeeper.configure.resource_owner_from_credentials är okonfigurerad.
         invalid_client: Klientautentisering misslyckades på grund av okänd klient, ingen klientautentisering inkluderad eller icke godkänd autentiseringsmetod.
         invalid_code_challenge_method:
-          one: Code_challenge_method måste vara %{challenge_methods}.
-          other: Code_challenge_method måste vara ett av %{challenge_methods}.
+          one: code_challenge_method måste vara %{challenge_methods}.
+          other: code_challenge_method måste vara en av %{challenge_methods}.
+          zero: Auktoriseringsservern stöder inte PKCE eftersom det inte finns några accepterade code_challenge_metod-värden.
         invalid_grant: Det beviljade godkännandetillskottet är ogiltigt, upphört, återkallat, matchar inte den omdirigering URI som användes i auktorisationsförfrågan eller har utfärdats till en annan klient.
         invalid_redirect_uri: Den omdirigerade uri är inte giltig.
         invalid_request:

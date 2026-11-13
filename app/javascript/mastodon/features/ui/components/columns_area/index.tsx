@@ -1,0 +1,67 @@
+import classNames from 'classnames';
+
+import { Column } from '@/mastodon/components/column';
+import { ComposeButton } from '@/mastodon/features/compose/trigger';
+import { DiscoveryPanel } from '@/mastodon/features/discovery_panel';
+import { RedesignNavigationPanel } from '@/mastodon/features/navigation_panel/redesign';
+import { RedesignMobileNavigation } from '@/mastodon/features/navigation_panel/redesign/mobile_nav';
+import { Footer } from 'mastodon/features/custom_homepage/components/footer';
+
+import { useBreakpoint } from '../../hooks/useBreakpoint';
+
+import { MultiColumnContent } from './multi_column_content';
+import classes from './styles.module.scss';
+import multiColClasses from './styles_multi_column.module.scss';
+
+export const ColumnsArea: React.FC<{
+  singleColumn?: boolean;
+  minimalShell?: boolean;
+  children: React.ReactElement | React.ReactElement[];
+  ref?: React.Ref<HTMLDivElement>;
+}> = ({ children, minimalShell, singleColumn, ref }) => {
+  const isMobile = useBreakpoint('openable');
+
+  if (minimalShell) {
+    return (
+      <div ref={ref} className={classNames(classes.root, classes.rootMinimal)}>
+        {isMobile && <RedesignMobileNavigation />}
+        <div className={classes.main}>
+          <div>{children}</div>
+
+          <Footer />
+        </div>
+      </div>
+    );
+  }
+
+  if (singleColumn) {
+    return (
+      <div ref={ref} className={classes.root}>
+        <div className={classes.navigationWrapper}>
+          <RedesignNavigationPanel />
+        </div>
+        {isMobile ? <RedesignMobileNavigation /> : <ComposeButton />}
+
+        <main className={classes.main}>{children}</main>
+
+        <div className={classes.discoveryWrapper}>
+          <DiscoveryPanel />
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <main ref={ref} className={multiColClasses.root}>
+      <div className={multiColClasses.navigationWrapper}>
+        <RedesignNavigationPanel multiColumn />
+      </div>
+      <ComposeButton />
+      <MultiColumnContent>{children}</MultiColumnContent>
+
+      <Column className={multiColClasses.discoveryColumn}>
+        <DiscoveryPanel />
+      </Column>
+    </main>
+  );
+};

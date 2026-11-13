@@ -63,6 +63,10 @@ zh-CN:
         prompt_html: "%{client_name} 请求获得访问你账号的权限。 <strong>请在确保自己了解并信任此来源后再批准该请求。</strong>"
         review_permissions: 检查权限
         title: 需要授权
+      require_reauth:
+        log_out_and_continue: 退出登录并继续
+        prompt_html: 你当前以 <strong>%{handle}</strong> 登录，但要继续此操作，你需要退出登录。
+        title: 需要重新认证
       show:
         title: 接下来请复制此处的授权代码并粘贴到应用中。
     authorized_applications:
@@ -84,7 +88,9 @@ zh-CN:
         credential_flow_not_configured: 由于 Doorkeeper.configure.resource_owner_from_credentials 尚未配置，应用验证授权流程失败。
         invalid_client: 由于应用信息未知、未提交认证信息或使用了不支持的认证方式，认证失败
         invalid_code_challenge_method:
-          other: code_challenge_method 必须是 %{challenge_methods}。
+          one: code_challenge_method 必须是 %{challenge_methods}。
+          other: code_challenge_method 必须是 %{challenge_methods} 的其中之一。
+          zero: 授权服务器不支持 PKCE，因为没有被接受的 code_challenge_method 值。
         invalid_grant: 授权方式无效、过期或已被撤销、与授权请求中的回调地址不一致，或使用了其他应用的回调地址
         invalid_redirect_uri: 登录回调地址无效。
         invalid_request:

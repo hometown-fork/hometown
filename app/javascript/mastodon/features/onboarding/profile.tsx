@@ -7,21 +7,19 @@ import { useHistory } from 'react-router-dom';
 
 import { Helmet } from '@unhead/react/helmet';
 
+import { Button } from '@/mastodon/components/button/redesign';
+import { Column } from '@/mastodon/components/column';
+import { ColumnHeader } from '@/mastodon/components/column_header';
 import AddPhotoAlternateIcon from '@/material-icons/400-24px/add_photo_alternate.svg?react';
 import EditIcon from '@/material-icons/400-24px/edit.svg?react';
-import PersonIcon from '@/material-icons/400-24px/person.svg?react';
 import { updateAccount } from 'mastodon/actions/accounts';
 import { closeOnboarding } from 'mastodon/actions/onboarding';
-import { Button } from 'mastodon/components/button';
-import { Column } from 'mastodon/components/column';
-import { ColumnHeader } from 'mastodon/components/column_header';
 import {
   TextAreaField,
   TextInputField,
   Toggle,
 } from 'mastodon/components/form_fields';
 import { Icon } from 'mastodon/components/icon';
-import { LoadingIndicator } from 'mastodon/components/loading_indicator';
 import { me } from 'mastodon/initial_state';
 import { useAppSelector, useAppDispatch } from 'mastodon/store';
 import { unescapeHTML } from 'mastodon/utils/html';
@@ -163,13 +161,7 @@ export const Profile: React.FC<{
       bindToDocument={!multiColumn}
       label={intl.formatMessage(messages.title)}
     >
-      <ColumnHeader
-        title={intl.formatMessage(messages.title)}
-        icon='person'
-        iconComponent={PersonIcon}
-        multiColumn={multiColumn}
-        showBackButton
-      />
+      <ColumnHeader withBackButton title={intl.formatMessage(messages.title)} />
 
       <div className='scrollable scrollable--flex'>
         <div className='simple_form app-form'>
@@ -301,15 +293,16 @@ export const Profile: React.FC<{
         <div className='spacer' />
 
         <div className='column-footer'>
-          <Button block onClick={handleSubmit} disabled={isSaving}>
-            {isSaving ? (
-              <LoadingIndicator />
-            ) : (
-              <FormattedMessage
-                id='onboarding.profile.finish'
-                defaultMessage='Finish'
-              />
-            )}
+          <Button
+            variant='solid'
+            color='accent'
+            onClick={handleSubmit}
+            loading={isSaving}
+          >
+            <FormattedMessage
+              id='onboarding.profile.finish'
+              defaultMessage='Finish'
+            />
           </Button>
         </div>
       </div>

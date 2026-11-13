@@ -1,5 +1,12 @@
 ---
-default: styles/application.scss
+default:
+  path: styles/application.scss
+  colors:
+    - indigo
+    - lime
+    - pink
+    - orange
+    - cyan
 hometown-pastel: styles/hometown-pastel.scss
 macaron: styles/macaron.scss
 fairy-floss: styles/fairy-floss.scss

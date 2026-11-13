@@ -432,7 +432,6 @@ hy:
         title: Թրենդային գրառումներ
   appearance:
     animations_and_accessibility: Անիմացիաներ եւ հասանելիութիւն
-    discovery: Բացայայտում
     localization:
       body: Մաստոդոնը թարգմանուում է կամաւորների կողմից։
       guide_link_text: Աջակցել կարող են բոլորը։
@@ -558,8 +557,6 @@ hy:
     save_changes: Պահպանել փոփոխութիւնները
     today: այսօր
   imports:
-    errors:
-      over_rows_processing_limit: տողերի քանակը աւելին է քան %{count}-ը
     modes:
       merge: Միաւորել
       overwrite: Վերագրել

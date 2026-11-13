@@ -63,6 +63,10 @@ is:
         prompt_html: "%{client_name} vill fá heimild til að skoða aðganginn þinn. <strong>Ekki samþykkja þessa beiðni nema þú þekkir og treystir viðkomandi.</strong>"
         review_permissions: Yfirfara heimildir
         title: Auðkenning er nauðsynleg
+      require_reauth:
+        log_out_and_continue: Skrá út og halda áfram
+        prompt_html: Þú ert núna skráð/ur inn sem <strong>%{handle}</strong>, en til að halda áfram þarftu að skrá þig út.
+        title: Krafist er endurauðkenningar
       show:
         title: Afritaðu þennan auðkenningarkóða og límdu hann inn hjá forritinu.
     authorized_applications:
@@ -86,6 +90,7 @@ is:
         invalid_code_challenge_method:
           one: code_challenge_method verður að vera %{challenge_methods}.
           other: code_challenge_method verður að vera eitt af %{challenge_methods}.
+          zero: Auðkenningarþjónninn styður ekki PKCE þar sem það eru engin samþykkt gildi fyrir code_challenge_method.
         invalid_grant: Uppgefin auðkenningarheimild er ógild, útrunnin, afturkölluð, samsvarar ekki endurbirtingarslóðinni í auðkenningarbeiðninni, eða var gefin út til annars biðlara.
         invalid_redirect_uri: Endurbeiningarslóðin sem fylgdi er ekki gild.
         invalid_request:

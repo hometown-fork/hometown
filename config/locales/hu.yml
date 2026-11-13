@@ -8,6 +8,14 @@ hu:
     hosted_on: "%{domain} Mastodon-kiszolgáló"
     title: Névjegy
   accounts:
+    api_errors:
+      2fa_required: A fiók nem használható második hitelesítési lépcső beállítása nélkül
+      account_deleted: A fiókodat törölték
+      account_suspended: A fiókodat felfüggesztették
+      login_disabled: A fiókod jelenleg le van tiltva
+      memorial: A fiókodat emlékfiókká alakították
+      pending_approval: A fiókod jelenleg moderátori jóváhagyásra vár
+      pending_confirmation: A fiókodból hiányzik egy megerősített e-mail-cím
     errors:
       cannot_be_added_to_collections: Ez a fiók nem adható hozzá gyűjteményekhez.
     followers:
@@ -73,6 +81,10 @@ hu:
       disable_sign_in_token_auth: Tokenes e-mail-hitelesítés letiltása
       disable_two_factor_authentication: Kétlépcsős hitelesítés kikapcsolása
       disabled: Befagyasztva
+      discoverable:
+        disabled: A szerző nem járult hozzá, hogy mások rátalálhassanak
+        enabled: A szerző hozzájárult, hogy mások rátalálhassanak
+        title: Felfedezhető
       display_name: Megjelenítendő név
       domain: Domain
       edit: Szerkesztés
@@ -81,8 +93,15 @@ hu:
       enable: Kiolvasztás
       enable_sign_in_token: Biztonsági kódos kihívás engedélyezése
       enable_sign_in_token_auth: Tokenes e-mail-hitelesítés engedélyezése
+      enable_unconfirmed: Megerősítő e-mail engedélyezése
       enabled: Bekapcsolva
       enabled_msg: "%{username} fiókja befagyasztása sikeresen visszavonva"
+      follow_recommendations:
+        allowed: Engedélyezve
+        suppress: Követési ajánlatok elnémítása
+        suppressed: Elnémítva
+        title: Ajánlások követése
+        unsuppress: Követési ajánlatok helyreállítása
       followers: Követő
       follows: Követett
       header: Fejléc
@@ -128,6 +147,7 @@ hu:
       push_subscription_expires: A PuSH feliratkozás elévül
       redownload: Profilkép frissítése
       redownloaded_msg: "%{username} profilját sikeresen frissítettük az eredetiből"
+      registration_app: Regisztrációs alkalmazás
       reject: Elutasítás
       rejected_msg: A %{username} fiók regisztrációs kérelmét sikeresen elutasítottuk
       remote_suspension_irreversible: A fiók adatait véglegesen törölték.
@@ -167,6 +187,12 @@ hu:
       suspension_irreversible: Ennek a fióknak az adatait visszaállíthatatlanul törölték. Visszavonhatod a fiók felfüggesztését, hogy újra használható legyen, de a régi adatok ettől még nem fognak visszatérni.
       suspension_reversible_hint_html: 'A fiókot felfüggesztettük, az adatai ekkor lesznek teljesen eltávolítva: %{date}. Eddig az időpontig a fiók probléma nélkül visszaállítható. Ha mégis azonnal törölni szeretnéd a fiókot, alább megteheted.'
       title: Fiókok
+      trends:
+        allow: Engedélyezés
+        allowed: Engedélyezve
+        disallow: Letiltás
+        disallowed: Letiltva
+        title: Felkapott bejegyzések
       unblock_email: E-mail-cím tiltásának feloldása
       unblocked_email_msg: A(z) %{username} e-mail-cím tiltása sikeresen feloldva
       unconfirmed_email: Nem megerősített e-mail
@@ -448,6 +474,8 @@ hu:
       undo: Eltávolítás az engedélyező-listáról
     domain_blocks:
       add_new: Új tiltott domain hozzáadása
+      confirm_downgrade:
+        cancel: Mégse
       confirm_suspension:
         cancel: Mégsem
         confirm: Felfüggesztés
@@ -605,6 +633,11 @@ hu:
         title: Domain tiltások importálása
       no_file: Nincs fájl kiválasztva
     fasp:
+      capabilities:
+        activation_msg: A képesség sikeresen engedélyezve.
+        deactivation_msg: A képesség sikeresen letiltva.
+        disable: Letiltás
+        enable: Engedélyezés
       debug:
         callbacks:
           created_at: Létrehozva
@@ -616,6 +649,7 @@ hu:
         active: Aktív
         base_url: Alapwebcím
         callback: Visszahívás
+        capabilities: Képességek
         delete: Törlés
         edit: Szolgáltató szerkesztése
         finish_registration: Regisztráció befejezése
@@ -628,8 +662,6 @@ hu:
           description: Regisztrációt kaptál egy FASP-től. Ha nem te kérted, utasítsd el. Ha te kérted, akkor a regisztráció megerősítése előtt figyelmesen hasonlítsd össze a nevét és a kulcsának ujjlenyomatát.
           reject: Elutasítás
           title: FASP regisztráció megerősítése
-        save: Mentés
-        select_capabilities: Képességek kiválasztása
         sign_in: Bejelentkezés
         status: Állapot
         title: A Födiverzum segédszolgáltatói
@@ -746,6 +778,49 @@ hu:
       reset: Visszaállítás
       search: Keresés
       title: IP szabály
+    moderation_subscriptions:
+      advisory_action: 'Művelet: %{action}'
+      advisory_actions:
+        accept: engedélyezés
+        limit: némítás
+        reject: felfüggesztés
+      apply_conditions:
+        always: Mindig
+        never: Soha
+      delete: Törlés
+      last_synced_at: 'Utolsó szinkronizálás:'
+      list_actions:
+        default: Vegyes (engedélyezése és elutasítás)
+      list_actions_short:
+        accept: Engedélyezési lista
+        default: Vegyes
+        reject: Tiltólista
+      name: Név
+      priority: Prioritás
+      tabs:
+        logs: Naplók
+        suggestions: Javaslatok
+      type: Típus
+      types:
+        csv_list: CSV-lista
+      url: Webcím
+    moderation_suggestions:
+      actions:
+        accept: Engedélyezés
+        limit: Korlátozás
+        reject: Felfüggesztés
+      apply_accept: Engedélyezés
+      apply_limit: Korlátozás
+      apply_reject: Felfüggesztés
+      apply_retract: Visszavonás
+      current_states:
+        accept: jelenleg engedélyezve
+        limit: jelenleg korlátozva
+        reject: jelenleg felfüggesztve
+      dismiss: Javaslatok eltüntetése
+      empty: Most nincsenek moderációs javaslatok.
+      suggested_from_html: 'Javasolta: %{link}'
+      title: Moderációs javaslatok
     relationships:
       title: "%{acct} kapcsolatai"
     relays:
@@ -968,10 +1043,8 @@ hu:
       discovery:
         follow_recommendations: Ajánlottak követése
         preamble: Az érdekes tartalmak felszínre hozása fontos szerepet játszik az új felhasználók bevonásában, akik esetleg nem ismerik a Mastodont. Szabályozd, hogy a különböző felfedezési funkciók hogyan működjenek a kiszolgálón.
-        privacy: Adatvédelem
         profile_directory: Profiladatbázis
         public_timelines: Nyilvános idővonalak
-        publish_statistics: Statisztikák közzététele
         title: Felfedezés
         trends: Trendek
         wrapstodon: Wrapstodon
@@ -979,6 +1052,18 @@ hu:
         all: Mindenkinek
         disabled: Senkinek
         users: Bejelentkezett helyi felhasználóknak
+      external:
+        directory: Kiszolgálócímtár
+        opt_in_server_directory:
+          description: Engedélyezés, hogy a kiszolgálódat felsorolják a kiszolgálócímtárakban, például a https://joinmastodon.org/servers címen találhatóban.
+          title: A kiszolgáló szerepelhet a kiszolgálócímtárban
+        opt_in_server_recommendation:
+          description: Engedélyezés, hogy a kiszolgálódat javasolják az alkalmazásokban történő regisztrációkor, mint például a hivatalos Mastodon-kliensekben.
+          title: A kiszolgáló szerepelhet a kiszolgálójavaslatokban
+        preamble: Állítsd be, hogy a kiszolgálódról mennyi információt osztasz meg más szolgáltatásokkal, és hogy a kiszolgálód mennyire legyen felfedezhező.
+        privacy: Adatvédelem
+        publish_statistics: Statisztikák közzététele
+        title: Külső felfedezés
       feed_access:
         modes:
           authenticated: Csak hitelesített felhasználók
@@ -1007,7 +1092,15 @@ hu:
         warning_hint: Javasoljuk a "Jóváhagyás szükséges a regisztrációhoz” lehetőség használatát, hacsak nem vagy biztos abban, hogy a moderátor csapatod időben tudja kezelni a szemetet és a rosszindulatú regisztrációkat.
       security:
         authorized_fetch: Hitelesítés szükséges a föderációs kiszolgálóktól
-        authorized_fetch_hint: A hitelesítés megkövetelése föderált kiszolgálók felé lehetővé teszi a felhasználó- és kiszolgáló szintű letiltások szigorúbb kikényszerítését. Azonban ennek az ára teljesítménycsökkenés, a válaszaid elérésének csökkenése, és vezethet kombatibilitási problémákhoz is bizonyos föderációs szolgáltatásokkal. Ráadásul ez nem akadályozza meg, hogy eltökélt aktorok letöltsék a nyilvános bejegyzéseidet és fiókjaidat.
+        authorized_fetch_hint: Döntsd el, hogy mikor kell a távoli kiszolgálóknak hitelesíteniük, amikor tartalmat kérnek le erről a kiszolgálóról.
+        authorized_fetch_hints:
+          actors: A profilok kötelező hitelesítésének engedélyezése lehetővé teszi annak nyomon követését, hogy melyik kiszolgáló fedezte fel az egyes helyi fiókjaidat, ami jelentősen csökkentheti a fiók törléséről szóló értesítés során végrehajtott felesleges kérések számát. Ez a lehetőség a profilok kiszolgálásakor enyhe teljesítménycsökkenéssel jár, mivel a nyomon követés miatt a fordított proxy nem tudja gyorsítótárazni az ezekre a kérésekre adott válaszokat. Ez emellett kompatibilitási problémákat is okozhat egyes föderált szolgáltatásoknál.
+          all: A profilok kötelező hitelesítésének előnyei és hátrányai mellett, a föderált kiszolgálóktól feltétel nélkül megkövetelt hitelesítés lehetővé teszi mind a felhasználó-, mind a kiszolgálószintű blokkolás szigorúbb érvényesítését, ugyanakkor megakadályozza a legtöbb kérés gyorsítótárazását is. Emellett csökkenti a válaszok elérését is, mivel a válaszok továbbítása le lesz tiltva.
+          none: Ha a hitelesítést csak akkor követeled meg, amikor az feltétlenül szükséges, a fordított proxy több kérést tud gyorsítótárazni. Ez az lehetőség a jövőben eltűnhet. Csak akkor használd, ha a többi választás problémákat okoz.
+        authorized_fetch_modes:
+          actors: Profilokhoz és privát tartalomhoz
+          all: Minden kéréshez
+          none: Csak privát tartalomhoz
         authorized_fetch_overridden_hint: Jelenleg nem lehet ezt a beállítást megváltoztatni, mert azt egy környezeti változó felülbírálja.
         federation_authentication: Föderációs hitelesítés kikényszerítése
       title: Kiszolgáló-beállítások
@@ -1194,7 +1287,9 @@ hu:
           one: Egy ember osztotta meg a múlt héten
           other: "%{count} ember osztotta meg a múlt héten"
         title: Felkapott hivatkozások
-        usage_comparison: "%{today} alkalommal lett ma megosztva, a tegnapi %{yesterday} alkalomhoz képest"
+        usage_comparison:
+          one: "%{count} alkalommal lett ma megosztva, a tegnapi %{yesterday} alkalomhoz képest"
+          other: "%{count} alkalommal lett ma megosztva, a tegnapi %{yesterday} alkalomhoz képest"
       not_allowed_to_trend: Nem engedélyezett a trendekben
       only_allowed: Csak engedélyezett
       pending_review: Áttekintésre vár
@@ -1239,7 +1334,9 @@ hu:
         trendable: Megjelenhet a trendek alatt
         trending_rank: "%{rank}. felkapott"
         usable: Használható
-        usage_comparison: "%{today} alkalommal lett ma használva, a tegnapi %{yesterday} alkalomhoz képest"
+        usage_comparison:
+          one: "%{count} alkalommal lett ma használva, a tegnapi %{yesterday} alkalomhoz képest"
+          other: "%{count} alkalommal lett ma használva, a tegnapi %{yesterday} alkalomhoz képest"
         used_by_over_week:
           one: Egy ember használta a múlt héten
           other: "%{count} ember használta a múlt héten"
@@ -1268,9 +1365,8 @@ hu:
     warning_presets:
       add_new: Új hozzáadása
       delete: Törlés
-      edit_preset: Figyelmeztetés szerkesztése
-      empty: Nem definiáltál még egyetlen figyelmeztetést sem.
-      title: Figyelmeztető szövegek
+      navigation_title: Konzervválaszok
+      title: Moderátori konzervválaszok
     webhooks:
       add_new: Végpont hozzáadása
       delete: Törlés
@@ -1350,7 +1446,6 @@ hu:
     animations_and_accessibility: Animáció és akadálymentesítés
     boosting_preferences: Megtolási beállítások
     boosting_preferences_info_html: "<strong>Tipp:</strong> A beállításoktól függetlenül, ha <kbd>Shift</kbd> + <kbd>katinttást</kbd> használsz a %{icon} Megtolás ikonon, akkor azonnal megteszi."
-    discovery: Felfedezés
     localization:
       body: A Mastodont önkéntesek fordítják.
       guide_link: https://crowdin.com/project/mastodon
@@ -1435,6 +1530,7 @@ hu:
       link_not_received: Nem kaptad meg a hivatkozást?
       new_confirmation_instructions_sent: Néhány perc múlva új e-mailt fogsz kapni a megerősítési hivatkozással.
       title: Bejövő postaláda ellenőrzése
+      wrong_email: Hibás e-mail-cím?
     sign_in:
       preamble_html: Jelentkezz be a <strong>%{domain}</strong> hitelesítéső adataiddal. Ha másik kiszolgálón található a fiókod, akkor itt nem fogsz tudni belépni.
       title: 'Bejelentkezés ide: %{domain}'
@@ -1471,6 +1567,12 @@ hu:
     auto: Automatikus
     dark: Sötét
     light: Világos
+  color_theme:
+    cyan: Cián
+    indigo: Indigókék
+    lime: Lime
+    orange: Narancs
+    pink: Rózsaszín
   contrast:
     auto: Automatikus
     high: Magas
@@ -1700,7 +1802,9 @@ hu:
       invalid_csv_file: 'Érvénytelen CSV-fájl. Hiba: %{error}'
       invalid_json_file: 'Érvénytelen JSON-fájl. Hiba: %{error}'
       no_data: Ez a fájl nem tartalmaz az adott importálási típusnak megfelelő adatot
-      over_rows_processing_limit: több mint %{count} sort tartalmaz
+      over_rows_processing_limit:
+        one: több mint %{count} sort tartalmaz
+        other: több mint %{count} sort tartalmaz
       status_not_found_warning: A szűrőid olyan bejegyzéseket rejtenek el, melyeket ez a kiszolgáló nem ismer. Ezek a bejegyzések nem lesznek automatikusan kiszűrve, ha a kiszolgáló később felfedezi őket.
       too_large: A fájl túl nagy
     failures: Hibák
@@ -1851,7 +1955,9 @@ hu:
     incoming_migrations_html: Ahhoz, hogy egy másik fiókból ebbe költözz, először <a href="%{path}">hozz létre egy fiókálnevet</a>.
     moved_msg: A fiókod mostantól ide %{acct} irányít át, a követőidet átköltöztetjük.
     not_redirecting: A fiókod nincs átirányítva jelenleg sehová sem.
-    on_cooldown: Nemrég költöztetted a fiókod. Ez a funkció %{count} nap múlva lesz megint elérhető.
+    on_cooldown:
+      one: Nemrég költöztetted a fiókod. Ez a funkció %{count} nap múlva lesz megint elérhető.
+      other: Nemrég költöztetted a fiókod. Ez a funkció %{count} nap múlva lesz megint elérhető.
     past_migrations: Eddigi költözések
     proceed_with_move: Követők átköltöztetése
     redirected_msg: A fiókodat ide irányítjuk át %{acct}.
@@ -2039,8 +2145,12 @@ hu:
       account: Nyilvános bejegyzések a(z) @%{acct} fióktól
       tag: 'Ezzel jelölt nyilvános bejegyzések: #%{hashtag}'
   scheduled_statuses:
-    over_daily_limit: Túllépted az időzített bejegyzésekre vonatkozó %{limit} db-os napi limitet
-    over_total_limit: Túllépted az időzített bejegyzésekre vonatkozó %{limit} db-os limitet
+    over_daily_limit:
+      one: Túllépted az időzített bejegyzésekre vonatkozó %{count} darabos napi korlátot
+      other: Túllépted az időzített bejegyzésekre vonatkozó %{count} darabos napi korlátot
+    over_total_limit:
+      one: Túllépted az időzített bejegyzésekre vonatkozó %{count} darabos korlátot
+      other: Túllépted az időzített bejegyzésekre vonatkozó %{count} darabos korlátot
     too_soon: a dátumnak a jövőben kell lennie
   self_destruct:
     lead_html: Sajnos a <strong>%{domain}</strong> végleg bezár. Ha volt itt fiókod, nem fogod tudni tovább használni, de kérheted majd az adataid biztonsági mentését.
