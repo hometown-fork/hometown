@@ -5,6 +5,10 @@ require 'rails_helper'
 RSpec.describe Admin::ServerCheck::SoftwareVersionRunner do
   subject(:runner) { described_class.new }
 
+  before do
+    skip('version checks currently skipped in Hometown')
+  end
+
   let(:user) { Fabricate(:user) }
 
   it_behaves_like 'a check runner available to devops users'
