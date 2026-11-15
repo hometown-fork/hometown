@@ -63,7 +63,7 @@ RSpec.describe 'The well-known node-info endpoints' do
 
     let(:expected_metadata) do
       {
-        nodeName:	'Mastodon',
+        nodeName:	'Hometown',
         nodeDescription:	'',
         optInServerDirectory: 'true',
         optInServerRecommendation: false,
