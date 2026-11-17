@@ -220,6 +220,9 @@ export function submitCompose(successCallback) {
     }
 
     const visibility = getState().getIn(['compose', 'privacy']);
+
+    const sensitive = !!getState().getIn(['compose', 'sensitive']) && !!getState().getIn(['compose', 'spoiler'])
+
     api().request({
       url: statusId === null ? '/api/v1/statuses' : `/api/v1/statuses/${statusId}`,
       method: statusId === null ? 'post' : 'put',
@@ -229,8 +232,8 @@ export function submitCompose(successCallback) {
         in_reply_to_id: getState().getIn(['compose', 'in_reply_to'], null),
         media_ids: media.map(item => item.get('id')),
         media_attributes,
-        sensitive: getState().getIn(['compose', 'sensitive']),
-        visibility: visibility,
+        sensitive,
+        visibility,
         poll: getState().getIn(['compose', 'poll'], null),
         local_only: !getState().getIn(['compose', 'federation']),
         language: getState().getIn(['compose', 'language']),
