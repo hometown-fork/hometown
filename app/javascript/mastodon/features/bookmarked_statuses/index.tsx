@@ -1,24 +1,27 @@
-import { useEffect, useRef, useCallback } from 'react';
+import { useEffect, useCallback } from 'react';
 
 import { defineMessages, useIntl, FormattedMessage } from 'react-intl';
 
 import { Helmet } from '@unhead/react/helmet';
 
-import BookmarksIcon from '@/material-icons/400-24px/bookmarks-fill.svg?react';
+import { Column } from '@/mastodon/components/column';
+import {
+  ColumnHeader,
+  ColumnSettingsMenu,
+} from '@/mastodon/components/column_header';
+import { MultiColumnMenuItems } from '@/mastodon/components/column_header/multicolumn_settings';
 import {
   fetchBookmarkedStatuses,
   expandBookmarkedStatuses,
 } from 'mastodon/actions/bookmarks';
 import { addColumn, removeColumn, moveColumn } from 'mastodon/actions/columns';
-import { Column } from 'mastodon/components/column';
-import type { ColumnRef } from 'mastodon/components/column';
-import { ColumnHeader } from 'mastodon/components/column_header';
 import StatusList from 'mastodon/components/status_list';
 import { getStatusList } from 'mastodon/selectors';
 import { useAppDispatch, useAppSelector } from 'mastodon/store';
 
 const messages = defineMessages({
   heading: { id: 'column.bookmarks', defaultMessage: 'Bookmarks' },
+  heading_redesign: { id: 'column.saved_posts', defaultMessage: 'Saved Posts' },
 });
 
 const Bookmarks: React.FC<{
@@ -27,7 +30,6 @@ const Bookmarks: React.FC<{
 }> = ({ columnId, multiColumn }) => {
   const intl = useIntl();
   const dispatch = useAppDispatch();
-  const columnRef = useRef<ColumnRef>(null);
   const statusIds = useAppSelector((state) =>
     getStatusList(state, 'bookmarks'),
   );
@@ -58,10 +60,6 @@ const Bookmarks: React.FC<{
     [dispatch, columnId],
   );
 
-  const handleHeaderClick = useCallback(() => {
-    columnRef.current?.scrollTop();
-  }, []);
-
   const handleLoadMore = useCallback(() => {
     dispatch(expandBookmarkedStatuses());
   }, [dispatch]);
@@ -78,18 +76,24 @@ const Bookmarks: React.FC<{
   return (
     <Column
       bindToDocument={!multiColumn}
-      ref={columnRef}
       label={intl.formatMessage(messages.heading)}
     >
       <ColumnHeader
-        icon='bookmarks'
-        iconComponent={BookmarksIcon}
-        title={intl.formatMessage(messages.heading)}
-        onPin={handlePin}
-        onMove={handleMove}
-        onClick={handleHeaderClick}
-        pinned={pinned}
-        multiColumn={multiColumn}
+        title={intl.formatMessage(messages.heading_redesign)}
+        withBackButton={multiColumn && !pinned && 'auto'}
+        extraButtons={
+          multiColumn && (
+            <ColumnSettingsMenu
+              labelPrefix={intl.formatMessage(messages.heading_redesign)}
+            >
+              <MultiColumnMenuItems
+                pinned={pinned}
+                onPin={handlePin}
+                onMove={handleMove}
+              />
+            </ColumnSettingsMenu>
+          )
+        }
       />
 
       <StatusList
@@ -105,7 +109,7 @@ const Bookmarks: React.FC<{
       />
 
       <Helmet>
-        <title>{intl.formatMessage(messages.heading)}</title>
+        <title>{intl.formatMessage(messages.heading_redesign)}</title>
         <meta name='robots' content='noindex' />
       </Helmet>
     </Column>

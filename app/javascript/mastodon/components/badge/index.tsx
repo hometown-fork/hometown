@@ -11,13 +11,13 @@ import IconVerified from '@/images/icons/icon_verified.svg?react';
 import type { OnAttributeHandler } from '@/mastodon/utils/html';
 import BlockIcon from '@/material-icons/400-24px/block.svg?react';
 import GroupsIcon from '@/material-icons/400-24px/group.svg?react';
-import PersonIcon from '@/material-icons/400-24px/person.svg?react';
 import SmartToyIcon from '@/material-icons/400-24px/smart_toy.svg?react';
 import VolumeOffIcon from '@/material-icons/400-24px/volume_off.svg?react';
 
 import { EmojiHTML } from '../emoji/html';
 import { Icon } from '../icon';
 
+import redesignClasses from './redesign.module.scss';
 import classes from './styles.module.scss';
 
 interface BadgeProps extends React.ComponentPropsWithoutRef<'div'> {
@@ -28,6 +28,7 @@ interface BadgeProps extends React.ComponentPropsWithoutRef<'div'> {
   variant?:
     | 'default'
     | 'subtle'
+    | 'accent'
     | 'inverted'
     | 'success'
     | 'warning'
@@ -40,7 +41,7 @@ type PresetBadgeProps = Omit<
 >;
 
 export const Badge: FC<BadgeProps> = ({
-  icon = <PersonIcon />,
+  icon,
   variant = 'default',
   label,
   className,
@@ -52,7 +53,8 @@ export const Badge: FC<BadgeProps> = ({
     {...otherProps}
     className={classNames(
       classes.badge,
-      !icon && classes.badgeWithoutIcon,
+      redesignClasses.badge,
+      !icon && [classes.badgeWithoutIcon, redesignClasses.badgeWithoutIcon],
       classes[variant],
       className,
     )}
@@ -195,9 +197,8 @@ export const VerifiedBadge: React.FC<{ link: string; className?: string }> = ({
   className,
 }) => (
   <Badge
-    variant='success'
     icon={<Icon id='verified' icon={IconVerified} noFill />}
     label={<EmojiHTML as='span' htmlString={link} onAttribute={onAttribute} />}
-    className={className}
+    className={classNames(className, classes.verified)}
   />
 );

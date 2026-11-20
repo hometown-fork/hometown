@@ -63,6 +63,10 @@ fr:
         prompt_html: "%{client_name} aimerait avoir la permission d'accéder à votre compte. <strong>Approuver cette demande uniquement si vous reconnaissez et faites confiance à cette source.</strong>"
         review_permissions: Examiner les autorisations
         title: Autorisation requise
+      require_reauth:
+        log_out_and_continue: Se déconnecter et continuer
+        prompt_html: Vous êtes connecté·e en tant que <strong>%{handle}</strong>, mais pour continuer, vous devrez vous déconnecter.
+        title: Réauthentification requise
       show:
         title: Copiez ce code d’autorisation et collez-le dans l’application.
     authorized_applications:
@@ -86,6 +90,7 @@ fr:
         invalid_code_challenge_method:
           one: Le code de la méthode de défi doit être %{challenge_methods}.
           other: 'Le code de la méthode de défi doit être l''une de ces valeurs : %{challenge_methods}.'
+          zero: Le serveur d'autorisation ne supporte pas PKCE car il n'y a aucune valeur de code de méthode de défi acceptée.
         invalid_grant: L’autorisation accordée est invalide, expirée, annulée, ne concorde pas avec l’URL de redirection utilisée dans la requête d’autorisation, ou a été délivrée à un autre client.
         invalid_redirect_uri: L’URL de redirection n’est pas valide.
         invalid_request:

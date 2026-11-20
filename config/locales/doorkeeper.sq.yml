@@ -63,6 +63,10 @@ sq:
         prompt_html: "%{client_name} do të donte leje të hyjë në llogarinë tuaj. <strong>Miratojeni këtë kërkesë vetëm nëse e njihni dhe e besoni këtë burim.</strong>"
         review_permissions: Shqyrtoni leje
         title: Lypset autorizim
+      require_reauth:
+        log_out_and_continue: Dilni dhe vazhdoni
+        prompt_html: Tani jeni i futur si <strong>%{handle}</strong>, por që të vazhdohet, duhet të bëni daljen.
+        title: Lypset rimirëfilltësim
       show:
         title: Kopjojeni këtë kod autorizimi dhe ngjiteni te aplikacioni.
     authorized_applications:
@@ -86,6 +90,7 @@ sq:
         invalid_code_challenge_method:
           one: code_challenge_method duhet të jetë %{challenge_methods}.
           other: code_challenge_method duhet të jetë një nga %{challenge_methods}.
+          zero: Shërbyesi i autorizimeve s’mbulon PKCE, ngaqë s’ka vlera code_challenge_method të pranuara.
         invalid_grant: Autorizimi i dhënë është i pavlefshëm, ka skaduar, është shfuqizuar, s’përputhet me URI-n e ridrejtimit të përdorur te kërkesa e autorizimit, ose është emetuar për klient tjetër.
         invalid_redirect_uri: URI e ridrejtimit s’është e vlefshme.
         invalid_request:

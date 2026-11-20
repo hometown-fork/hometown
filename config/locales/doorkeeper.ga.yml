@@ -63,6 +63,10 @@ ga:
         prompt_html: Ba mhaith le %{client_name} cead rochtain a fháil ar do chuntas. <strong>Ní cheadaigh an t-iarratas seo ach amháin má aithníonn tú an fhoinse seo agus go bhfuil muinín agat as.</strong>
         review_permissions: Ceadanna a athbhreithniú
         title: Tá údarú ag teastáil
+      require_reauth:
+        log_out_and_continue: Logáil amach agus lean ar aghaidh
+        prompt_html: Tá tú logáilte isteach faoi láthair mar <strong>%{handle}</strong>, ach chun leanúint ar aghaidh, beidh ort logáil amach.
+        title: Teastaíonn athfhíordheimhniú
       show:
         title: Cóipeáil an cód údaraithe seo agus greamaigh don fheidhmchlár é.
     authorized_applications:
@@ -84,11 +88,9 @@ ga:
         credential_flow_not_configured: Theip ar shreabhadh Dintiúir Pasfhocal Úinéir Acmhainne toisc go raibh Doorkeeper.configure.resource_owner_from_credentials díchumraithe.
         invalid_client: Theip ar fhíordheimhniú cliant de bharr cliant anaithnid, níl fíordheimhniú cliant san áireamh, nó modh fíordheimhnithe nach dtacaítear leis.
         invalid_code_challenge_method:
-          few: Ní mór don code_challenge_method a bheith ar cheann de %{challenge_methods}.
-          many: Ní mór don code_challenge_method a bheith ar cheann de %{challenge_methods}.
           one: Ní mór don code_challenge_method a bheith %{challenge_methods}.
           other: Ní mór don code_challenge_method a bheith ar cheann de %{challenge_methods}.
-          two: Ní mór don code_challenge_method a bheith ar cheann de %{challenge_methods}.
+          zero: Ní thacaíonn an freastalaí údaraithe le PKCE mar nach bhfuil aon luachanna code_challenge_method glactha ann.
         invalid_grant: Tá an deonú údaraithe ar choinníoll neamhbhailí, imithe in éag, cúlghairthe, nach ionann é agus an URI atreoraithe a úsáideadh san iarratas ar údarú, nó gur eisíodh é chuig cliant eile.
         invalid_redirect_uri: Níl an uri atreoraithe atá san áireamh bailí.
         invalid_request:
