@@ -1,4 +1,4 @@
-import { useEffect, useCallback, useRef } from 'react';
+import { useEffect, useCallback } from 'react';
 
 import { defineMessages, useIntl, FormattedMessage } from 'react-intl';
 
@@ -6,22 +6,20 @@ import { isFulfilled } from '@reduxjs/toolkit';
 
 import { Helmet } from '@unhead/react/helmet';
 
-import TagIcon from '@/material-icons/400-24px/tag.svg?react';
+import { Column } from '@/mastodon/components/column';
+import { ColumnHeader } from '@/mastodon/components/column_header';
 import {
   fetchFollowedHashtags,
   unfollowHashtag,
 } from 'mastodon/actions/tags_typed';
 import type { ApiHashtagJSON } from 'mastodon/api_types/tags';
 import { Button } from 'mastodon/components/button';
-import { Column } from 'mastodon/components/column';
-import type { ColumnRef } from 'mastodon/components/column';
-import { ColumnHeader } from 'mastodon/components/column_header';
 import { Hashtag } from 'mastodon/components/hashtag';
 import ScrollableList from 'mastodon/components/scrollable_list';
 import { useAppDispatch, useAppSelector } from 'mastodon/store';
 
 const messages = defineMessages({
-  heading: { id: 'followed_tags', defaultMessage: 'Followed hashtags' },
+  heading: { id: 'followed_tags', defaultMessage: 'Followed Hashtags' },
 });
 
 const FollowedTag: React.FC<{
@@ -52,7 +50,7 @@ const FollowedTag: React.FC<{
       withGraph={false}
       people={people}
     >
-      <Button onClick={handleClick}>
+      <Button onClick={handleClick} size='sm' color='destructive'>
         <FormattedMessage id='account.unfollow' defaultMessage='Unfollow' />
       </Button>
     </Hashtag>
@@ -86,11 +84,6 @@ const FollowedTags: React.FC<{ multiColumn: boolean }> = ({ multiColumn }) => {
     [dispatch],
   );
 
-  const columnRef = useRef<ColumnRef>(null);
-  const handleHeaderClick = useCallback(() => {
-    columnRef.current?.scrollTop();
-  }, []);
-
   const emptyMessage = (
     <FormattedMessage
       id='empty_column.followed_tags'
@@ -101,16 +94,11 @@ const FollowedTags: React.FC<{ multiColumn: boolean }> = ({ multiColumn }) => {
   return (
     <Column
       bindToDocument={!multiColumn}
-      ref={columnRef}
       label={intl.formatMessage(messages.heading)}
     >
       <ColumnHeader
-        icon='hashtag'
-        iconComponent={TagIcon}
+        withBackButton
         title={intl.formatMessage(messages.heading)}
-        onClick={handleHeaderClick}
-        multiColumn={multiColumn}
-        showBackButton
       />
 
       <ScrollableList

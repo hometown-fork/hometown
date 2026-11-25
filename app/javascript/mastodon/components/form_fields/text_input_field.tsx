@@ -25,7 +25,16 @@ interface Props extends TextInputProps, CommonFieldWrapperProps {}
 
 export const TextInputField = forwardRef<HTMLInputElement, Props>(
   (
-    { id, label, hint, status, required, wrapperClassName, ...otherProps },
+    {
+      id,
+      label,
+      hint,
+      status,
+      required,
+      compact,
+      wrapperClassName,
+      ...otherProps
+    },
     ref,
   ) => (
     <FormFieldWrapper
@@ -34,6 +43,7 @@ export const TextInputField = forwardRef<HTMLInputElement, Props>(
       required={required}
       status={status}
       inputId={id}
+      compact={compact}
       className={wrapperClassName}
     >
       {(inputProps) => <TextInput {...otherProps} {...inputProps} ref={ref} />}
@@ -44,13 +54,22 @@ export const TextInputField = forwardRef<HTMLInputElement, Props>(
 TextInputField.displayName = 'TextInputField';
 
 export const TextInput = forwardRef<HTMLInputElement, TextInputProps>(
-  ({ type = 'text', icon, className, ...otherProps }, ref) => (
+  ({ type = 'text', icon, className, autoComplete, ...otherProps }, ref) => (
     <WrapFieldWithIcon icon={icon}>
       <input
         type={type}
         {...otherProps}
+        autoComplete={autoComplete}
         className={classNames(className, classes.input)}
         ref={ref}
+        // Disable password manager autocomplete if normal autocomplete is disabled.
+        {...(autoComplete === 'off'
+          ? {
+              'data-1p-ignore': true,
+              'data-lpignore': 'true',
+              'data-protonpass-ignore': 'true',
+            }
+          : null)}
       />
     </WrapFieldWithIcon>
   ),

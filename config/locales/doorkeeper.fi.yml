@@ -63,6 +63,10 @@ fi:
         prompt_html: "%{client_name} haluaisi käyttöoikeuden tiliisi. <strong>Hyväksy tämä pyyntö vain, jos tunnistat lähteen ja luotat siihen.</strong>"
         review_permissions: Tarkista käyttöoikeudet
         title: Valtuutus vaaditaan
+      require_reauth:
+        log_out_and_continue: Kirjaudu ulos ja jatka
+        prompt_html: Olet tällä hetkellä kirjautuneena sisään käyttäjänä <strong>%{handle}</strong>, mutta jotta voit jatkaa, sinun tulee kirjautua ulos.
+        title: Uudelleentodennus vaaditaan
       show:
         title: Kopioi tämä valtuutuskoodi ja liitä se sovellukseen.
     authorized_applications:
@@ -86,6 +90,7 @@ fi:
         invalid_code_challenge_method:
           one: Muuttujan code_challenge_method arvon on oltava %{challenge_methods}.
           other: 'Muuttujan code_challenge_method arvon on oltava jokin seuraavista: %{challenge_methods}.'
+          zero: Valtuutuspalvelin ei tue PKCE:tä, koska hyväksyttäviä code_challenge_method-arvoja ei ole.
         invalid_grant: Valtuutuslupa on virheellinen, vanhentunut, peruttu, valtuutuspyynnössä käytettyä uudelleenohjaus-URI:tä vastaamaton tai myönnetty toiselle asiakkaalle.
         invalid_redirect_uri: Uudelleenohjaus-URI on virheellinen.
         invalid_request:

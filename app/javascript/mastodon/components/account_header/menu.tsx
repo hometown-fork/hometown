@@ -1,7 +1,16 @@
 import { useMemo } from 'react';
 import type { FC } from 'react';
 
-import { defineMessages, useIntl } from 'react-intl';
+import { defineMessages, FormattedMessage, useIntl } from 'react-intl';
+
+import {
+  DotsThreeIcon,
+  LinkIcon,
+  ProhibitIcon,
+  ShareNetworkIcon,
+  UserMinusIcon,
+  WarningOctagonIcon,
+} from '@phosphor-icons/react';
 
 import {
   followAccount,
@@ -13,7 +22,7 @@ import {
 import { removeAccountFromFollowers } from '@/mastodon/actions/accounts_typed';
 import { showAlert } from '@/mastodon/actions/alerts';
 import { initBlockModal } from '@/mastodon/actions/blocks';
-import { directCompose, mentionCompose } from '@/mastodon/actions/compose';
+import { directCompose } from '@/mastodon/actions/compose';
 import {
   initDomainBlockModal,
   unblockDomain,
@@ -21,6 +30,13 @@ import {
 import { openModal } from '@/mastodon/actions/modal';
 import { initMuteModal } from '@/mastodon/actions/mutes';
 import { initReport } from '@/mastodon/actions/reports';
+import { IconButton } from '@/mastodon/components/button';
+import {
+  Menu,
+  MenuList,
+  MenuTrigger,
+  LegacyDropdownMenuItems,
+} from '@/mastodon/components/menu';
 import {
   canAccountBeAdded,
   canAccountBeAddedByFollowers,
@@ -28,7 +44,7 @@ import {
 import { useAccount } from '@/mastodon/hooks/useAccount';
 import { useIdentity } from '@/mastodon/identity_context';
 import type { Account } from '@/mastodon/models/account';
-import type { MenuItem } from '@/mastodon/models/dropdown_menu';
+import type { MenuItem as DropdownMenuItem } from '@/mastodon/models/dropdown_menu';
 import type { Relationship } from '@/mastodon/models/relationship';
 import {
   PERMISSION_MANAGE_FEDERATION,
@@ -36,16 +52,6 @@ import {
 } from '@/mastodon/permissions';
 import type { AppDispatch } from '@/mastodon/store';
 import { useAppDispatch, useAppSelector } from '@/mastodon/store';
-import BlockIcon from '@/material-icons/400-24px/block.svg?react';
-import LinkIcon from '@/material-icons/400-24px/link_2.svg?react';
-import MoreHorizIcon from '@/material-icons/400-24px/more_horiz.svg?react';
-import PersonRemoveIcon from '@/material-icons/400-24px/person_remove.svg?react';
-import ReportIcon from '@/material-icons/400-24px/report.svg?react';
-import ShareIcon from '@/material-icons/400-24px/share.svg?react';
-
-import { Dropdown } from '../dropdown_menu';
-
-import classes from './styles.module.scss';
 
 export const AccountMenu: FC<{ accountId: string }> = ({ accountId }) => {
   const intl = useIntl();
@@ -75,14 +81,24 @@ export const AccountMenu: FC<{ accountId: string }> = ({ accountId }) => {
       dispatch,
     });
   }, [account, signedIn, isMe, permissions, intl, relationship, dispatch]);
+
   return (
-    <Dropdown
-      disabled={menuItems.length === 0}
-      items={menuItems}
-      icon='ellipsis-v'
-      iconComponent={MoreHorizIcon}
-      className={classes.buttonMenu}
-    />
+    <Menu>
+      <MenuTrigger
+        as={IconButton}
+        size='sm'
+        icon={DotsThreeIcon}
+        disabled={menuItems.length === 0}
+      >
+        <FormattedMessage
+          id='account.menu.label'
+          defaultMessage='More account options'
+        />
+      </MenuTrigger>
+      <MenuList>
+        <LegacyDropdownMenuItems items={menuItems} />
+      </MenuList>
+    </Menu>
   );
 };
 
@@ -96,82 +112,6 @@ interface MenuItemsParams {
 }
 
 const messages = defineMessages({
-  unblock: { id: 'account.unblock', defaultMessage: 'Unblock @{name}' },
-  mention: { id: 'account.mention', defaultMessage: 'Mention @{name}' },
-  direct: { id: 'account.direct', defaultMessage: 'Privately mention @{name}' },
-  unmute: { id: 'account.unmute', defaultMessage: 'Unmute @{name}' },
-  block: { id: 'account.block', defaultMessage: 'Block @{name}' },
-  mute: { id: 'account.mute', defaultMessage: 'Mute @{name}' },
-  report: { id: 'account.report', defaultMessage: 'Report @{name}' },
-  blockDomain: {
-    id: 'account.block_domain',
-    defaultMessage: 'Block domain {domain}',
-  },
-  unblockDomain: {
-    id: 'account.unblock_domain',
-    defaultMessage: 'Unblock domain {domain}',
-  },
-  hideReblogs: {
-    id: 'account.hide_reblogs',
-    defaultMessage: 'Hide boosts from @{name}',
-  },
-  showReblogs: {
-    id: 'account.show_reblogs',
-    defaultMessage: 'Show boosts from @{name}',
-  },
-  addNote: {
-    id: 'account.add_note',
-    defaultMessage: 'Add a personal note',
-  },
-  editNote: {
-    id: 'account.edit_note',
-    defaultMessage: 'Edit personal note',
-  },
-  endorse: { id: 'account.endorse', defaultMessage: 'Feature on profile' },
-  unendorse: {
-    id: 'account.unendorse',
-    defaultMessage: "Don't feature on profile",
-  },
-  add_or_remove_from_list: {
-    id: 'account.add_or_remove_from_list',
-    defaultMessage: 'Add or Remove from lists',
-  },
-  admin_account: {
-    id: 'status.admin_account',
-    defaultMessage: 'Open moderation interface for @{name}',
-  },
-  admin_domain: {
-    id: 'status.admin_domain',
-    defaultMessage: 'Open moderation interface for {domain}',
-  },
-  languages: {
-    id: 'account.languages',
-    defaultMessage: 'Change subscribed languages',
-  },
-  openOriginalPage: {
-    id: 'account.open_original_page',
-    defaultMessage: 'Open original page',
-  },
-  removeFromFollowers: {
-    id: 'account.remove_from_followers',
-    defaultMessage: 'Remove {name} from followers',
-  },
-  confirmRemoveFromFollowersTitle: {
-    id: 'confirmations.remove_from_followers.title',
-    defaultMessage: 'Remove follower?',
-  },
-  confirmRemoveFromFollowersMessage: {
-    id: 'confirmations.remove_from_followers.message',
-    defaultMessage:
-      '{name} will stop following you. Are you sure you want to proceed?',
-  },
-  confirmRemoveFromFollowersButton: {
-    id: 'confirmations.remove_from_followers.confirm',
-    defaultMessage: 'Remove follower',
-  },
-});
-
-const redesignMessages = defineMessages({
   share: { id: 'account.menu.share', defaultMessage: 'Share…' },
   copy: { id: 'account.menu.copy', defaultMessage: 'Copy link' },
   copied: {
@@ -186,6 +126,12 @@ const redesignMessages = defineMessages({
   direct: {
     id: 'account.menu.direct',
     defaultMessage: 'Privately mention',
+  },
+  redesignMessage: {
+    id: 'account.menu.message',
+    defaultMessage: 'Message',
+    description:
+      'Message refers to a direct message. For languages where this is confusing, "chat" or "direct message" can be used.',
   },
   mute: { id: 'account.menu.mute', defaultMessage: 'Mute account' },
   unmute: {
@@ -214,9 +160,9 @@ const redesignMessages = defineMessages({
     id: 'account.menu.show_reblogs',
     defaultMessage: 'Show boosts in timeline',
   },
-  addToList: {
-    id: 'account.menu.add_to_list',
-    defaultMessage: 'Add to list…',
+  addToCustomFeed: {
+    id: 'account.menu.add_to_feed',
+    defaultMessage: 'Add to custom feed…',
   },
   addToCollection: {
     id: 'account.menu.add_to_collection',
@@ -234,6 +180,52 @@ const redesignMessages = defineMessages({
     id: 'account.menu.remove_follower',
     defaultMessage: 'Remove follower',
   },
+  addNote: {
+    id: 'account.add_note',
+    defaultMessage: 'Add a personal note',
+  },
+  editNote: {
+    id: 'account.edit_note',
+    defaultMessage: 'Edit personal note',
+  },
+  endorse: { id: 'account.endorse', defaultMessage: 'Feature on profile' },
+  unendorse: {
+    id: 'account.unendorse',
+    defaultMessage: "Don't feature on profile",
+  },
+  admin_account: {
+    id: 'status.admin_account',
+    defaultMessage: 'Open moderation interface for @{name}',
+  },
+  admin_domain: {
+    id: 'status.admin_domain',
+    defaultMessage: 'Open moderation interface for {domain}',
+  },
+  enableNotifications: {
+    id: 'account.notify_me',
+    defaultMessage: 'Notify me about new posts',
+  },
+  disableNotifications: {
+    id: 'account.stop_notifying_me',
+    defaultMessage: 'Stop notifying me about new posts',
+  },
+  languages: {
+    id: 'account.languages',
+    defaultMessage: 'Change subscribed languages',
+  },
+  confirmRemoveFromFollowersTitle: {
+    id: 'confirmations.remove_from_followers.title',
+    defaultMessage: 'Remove follower?',
+  },
+  confirmRemoveFromFollowersMessage: {
+    id: 'confirmations.remove_from_followers.message',
+    defaultMessage:
+      '{name} will stop following you. Are you sure you want to proceed?',
+  },
+  confirmRemoveFromFollowersButton: {
+    id: 'confirmations.remove_from_followers.confirm',
+    defaultMessage: 'Remove follower',
+  },
 });
 
 function getMenuItems({
@@ -243,8 +235,8 @@ function getMenuItems({
   intl,
   relationship,
   dispatch,
-}: MenuItemsParams): MenuItem[] {
-  const items: MenuItem[] = [];
+}: MenuItemsParams): DropdownMenuItem[] {
+  const items: DropdownMenuItem[] = [];
   const isRemote = account.acct !== account.username;
   const remoteDomain = isRemote ? account.acct.split('@')[1] : null;
 
@@ -252,20 +244,20 @@ function getMenuItems({
   if (account.url) {
     if ('share' in navigator) {
       items.push({
-        text: intl.formatMessage(redesignMessages.share),
+        text: intl.formatMessage(messages.share),
         action: () => {
           void navigator.share({
             url: account.url,
           });
         },
-        icon: ShareIcon,
+        icon: ShareNetworkIcon,
       });
     }
     items.push({
-      text: intl.formatMessage(redesignMessages.copy),
+      text: intl.formatMessage(messages.copy),
       action: () => {
         void navigator.clipboard.writeText(account.url);
-        dispatch(showAlert({ message: redesignMessages.copied }));
+        dispatch(showAlert({ message: messages.copied }));
       },
       icon: LinkIcon,
     });
@@ -275,8 +267,8 @@ function getMenuItems({
   if (isRemote) {
     items.push({
       text: account.invalid_handle
-        ? intl.formatMessage(redesignMessages.openOriginalPageInvalid)
-        : intl.formatMessage(redesignMessages.openOriginalPage, {
+        ? intl.formatMessage(messages.openOriginalPageInvalid)
+        : intl.formatMessage(messages.openOriginalPage, {
             domain: remoteDomain,
           }),
       href: account.url,
@@ -285,25 +277,16 @@ function getMenuItems({
 
   // Mention and direct message options
   if (signedIn && !account.suspended) {
-    if (account.invalid_handle) items.push(null);
-    else {
-      items.push(
-        null,
-        {
-          text: intl.formatMessage(redesignMessages.mention),
-          action: () => {
-            dispatch(mentionCompose(account));
-          },
-        },
-
-        {
-          text: intl.formatMessage(redesignMessages.direct),
+    if (!account.invalid_handle) {
+      if (!relationship?.following) {
+        items.push(null, {
+          text: intl.formatMessage(messages.redesignMessage),
           action: () => {
             dispatch(directCompose(account));
           },
-        },
-        null,
-      );
+        });
+      }
+      items.push(null);
     }
   }
 
@@ -314,7 +297,7 @@ function getMenuItems({
   // Add to list
   if (relationship?.following) {
     items.push({
-      text: intl.formatMessage(redesignMessages.addToList),
+      text: intl.formatMessage(messages.addToCustomFeed),
       action: () => {
         dispatch(
           openModal({
@@ -334,7 +317,7 @@ function getMenuItems({
     (canAccountBeAddedByFollowers(account) && relationship?.following)
   ) {
     items.push({
-      text: intl.formatMessage(redesignMessages.addToCollection),
+      text: intl.formatMessage(messages.addToCollection),
       action: () => {
         dispatch(
           openModal({
@@ -369,7 +352,7 @@ function getMenuItems({
       text: intl.formatMessage(
         relationship?.note ? messages.editNote : messages.addNote,
       ),
-      description: intl.formatMessage(redesignMessages.noteDescription),
+      description: intl.formatMessage(messages.noteDescription),
       action: () => {
         dispatch(
           openModal({
@@ -389,13 +372,24 @@ function getMenuItems({
     items.push(
       {
         text: intl.formatMessage(
-          relationship.showing_reblogs
-            ? redesignMessages.hideReblogs
-            : redesignMessages.showReblogs,
+          relationship.notifying
+            ? messages.disableNotifications
+            : messages.enableNotifications,
         ),
         action: () => {
           dispatch(
-            // @ts-expect-error this action is not typed yet
+            followAccount(account.id, { notify: !relationship.notifying }),
+          );
+        },
+      },
+      {
+        text: intl.formatMessage(
+          relationship.showing_reblogs
+            ? messages.hideReblogs
+            : messages.showReblogs,
+        ),
+        action: () => {
+          dispatch(
             followAccount(account.id, {
               reblogs: !relationship.showing_reblogs,
             }),
@@ -421,7 +415,7 @@ function getMenuItems({
   items.push(
     {
       text: intl.formatMessage(
-        relationship?.muting ? redesignMessages.unmute : redesignMessages.mute,
+        relationship?.muting ? messages.unmute : messages.mute,
       ),
       action: () => {
         if (relationship?.muting) {
@@ -436,7 +430,7 @@ function getMenuItems({
 
   if (relationship?.followed_by) {
     items.push({
-      text: intl.formatMessage(redesignMessages.removeFollower),
+      text: intl.formatMessage(messages.removeFollower),
       action: () => {
         dispatch(
           openModal({
@@ -462,15 +456,13 @@ function getMenuItems({
         );
       },
       dangerous: true,
-      icon: PersonRemoveIcon,
+      icon: UserMinusIcon,
     });
   }
 
   items.push({
     text: intl.formatMessage(
-      relationship?.blocking
-        ? redesignMessages.unblock
-        : redesignMessages.block,
+      relationship?.blocking ? messages.unblock : messages.block,
     ),
     action: () => {
       if (relationship?.blocking) {
@@ -480,17 +472,17 @@ function getMenuItems({
       }
     },
     dangerous: true,
-    icon: BlockIcon,
+    icon: ProhibitIcon,
   });
 
   if (!account.suspended) {
     items.push({
-      text: intl.formatMessage(redesignMessages.report),
+      text: intl.formatMessage(messages.report),
       action: () => {
         dispatch(initReport(account));
       },
       dangerous: true,
-      icon: ReportIcon,
+      icon: WarningOctagonIcon,
     });
   }
 
@@ -498,8 +490,8 @@ function getMenuItems({
     items.push(null, {
       text: intl.formatMessage(
         relationship?.domain_blocking
-          ? redesignMessages.domainUnblock
-          : redesignMessages.domainBlock,
+          ? messages.domainUnblock
+          : messages.domainBlock,
         {
           domain: remoteDomain,
         },
@@ -512,7 +504,7 @@ function getMenuItems({
         }
       },
       dangerous: true,
-      icon: BlockIcon,
+      icon: ProhibitIcon,
       iconId: 'domain-block',
     });
   }

@@ -6,6 +6,12 @@ module Admin
     include AccountableConcern
     include Admin::PermissionsConcern
 
+    content_security_policy do |p|
+      policy = ContentSecurityPolicy.new
+      p.img_src(*p.img_src, *policy.admin_media_hosts)
+      p.media_src(*p.media_src, *policy.admin_media_hosts)
+    end
+
     layout 'admin'
 
     before_action :set_referrer_policy_header
