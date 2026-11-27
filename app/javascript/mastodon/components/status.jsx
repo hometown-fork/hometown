@@ -616,7 +616,7 @@ class Status extends ImmutablePureComponent {
             {matchedFilters && <FilterWarning title={matchedFilters.join(', ')} expanded={this.state.showDespiteFilter} onClick={this.handleFilterToggle} />}
 
             {(statusActivityObjectType !== 'Article' && status.get('spoiler_text').length > 0 && (!matchedFilters || this.state.showDespiteFilter)) && <ContentWarning statusId={status.get('id')} expanded={expanded} onClick={this.handleExpandedToggle} />}
-            {(statusActivityObjectType === 'Article' && (!matchedFilters || this.state.showDespiteFilter)) && <StatusContent statusId={status.get('id')} onClick={this.handleClick} onTranslate={this.handleTranslate} collapsible onCollapsedToggle={this.handleCollapsedToggle} statusActivityObjectType={statusActivityObjectType} {...statusContentProps} />}
+            {(statusActivityObjectType === 'Article' && (!matchedFilters || this.state.showDespiteFilter)) && <StatusContent status={status} onClick={this.handleClick} onTranslate={this.handleTranslate} collapsible onCollapsedToggle={this.handleCollapsedToggle} statusActivityObjectType={statusActivityObjectType} {...statusContentProps} />}
 
             {expanded && (
               <>
